@@ -1,3 +1,0 @@
-- 2016-11-24: Initial ingestion
-  Files downloaded from Eduardo's web server and made available on HeDaM:
-  readme, gama9_catalogue.fits.bz2 gama9_masterlist.fits.bz2.
