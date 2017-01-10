@@ -10,16 +10,16 @@ from astropy.table import Column, Table
 import pyvo as vo
 
 
-def add_gaia_star_flag(catalogue, gaia_cat):
-    """Add a flag indicating the probability of the object being as star
+def add_gaia_object_flag(catalogue, gaia_cat):
+    """Add a flag indicating the probability of the object being a Gaia object
 
     This flag is based on the Gaia positions:
-    - 1 if the object is possibly a star (the nearest Gaia source is between
-      1.5 arcsec and 2 arcsec).
-    - 2 if the object is probably a star (the nearest Gaia source is between
-      0.6 arcsec and 1.5 arcsec).
-    - 3 if the object is definitely a star (the nearest Gaia source is nearer
-      than 0.6 arcsec).
+    - 1 if the object is possibly a Gaia object (the nearest Gaia source is
+      between 1.5 arcsec and 2 arcsec).
+    - 2 if the object is probably a Gaia object (the nearest Gaia source is
+      between 0.6 arcsec and 1.5 arcsec).
+    - 3 if the object is definitely a Gaia object (the nearest Gaia source is
+      nearer than 0.6 arcsec).
     - 0 otherwise (the nearest Gaia source is farer than 2 arcsec).
 
 
@@ -41,38 +41,38 @@ def add_gaia_star_flag(catalogue, gaia_cat):
 
     flag = np.full(len(catalogue), 0, dtype=int)
 
-    # Star positions
-    star_ra = np.array(gaia_cat['ra'])
-    star_dec = np.array(gaia_cat['dec'])
-    star_pmra = np.array(gaia_cat['pmra'])
-    star_pmdec = np.array(gaia_cat['pmdec'])
+    # Gaia positions
+    gaia_ra = np.array(gaia_cat['ra'])
+    gaia_dec = np.array(gaia_cat['dec'])
+    gaia_pmra = np.array(gaia_cat['pmra'])
+    gaia_pmdec = np.array(gaia_cat['pmdec'])
 
     # The proper motion is not available everywhere. We set it to 0 where it's
     # not available.
-    star_pmra[np.isnan(star_pmra)] = 0.0
-    star_pmdec[np.isnan(star_pmdec)] = 0.0
+    gaia_pmra[np.isnan(gaia_pmra)] = 0.0
+    gaia_pmdec[np.isnan(gaia_pmdec)] = 0.0
 
-    # Correct star positions with proper motion. Gaia gives positions at epoch
+    # Correct Gaia positions with proper motion. Gaia gives positions at epoch
     # 2015 while the catalogue positions are J2000.
-    star_ra += star_pmra / 1000. / 3600. * (2000-2015) * \
-        np.cos(np.deg2rad(np.array(star_dec)))
-    star_dec += star_pmdec / 1000. / 36000. * (2000-2015)
+    gaia_ra += gaia_pmra / 1000. / 3600. * (2000-2015) * \
+        np.cos(np.deg2rad(np.array(gaia_dec)))
+    gaia_dec += gaia_pmdec / 1000. / 36000. * (2000-2015)
 
-    # Star and master list positions
-    star_pos = coord.SkyCoord(star_ra * u.degree, star_dec * u.degree)
+    # Gaia and master list positions
+    gaia_pos = coord.SkyCoord(gaia_ra * u.degree, gaia_dec * u.degree)
     catalogue_pos = coord.SkyCoord(catalogue['ra'], catalogue['dec'])
 
-    # Get all the catalogue sources within 2 arcsec of a starc
-    idx_galaxy, idx_star, d2d, _ = star_pos.search_around_sky(
+    # Get all the catalogue sources within 2 arcsec of a Gaia object.
+    idx_galaxy, _, d2d, _ = gaia_pos.search_around_sky(
         catalogue_pos, 2 * u.arcsec)
 
-    # All these sources are possible stars.
+    # All these sources are possible Gaia objects.
     flag[idx_galaxy] = 1
 
-    # Those that are nearer the 1.5 arcsec are probable stars.
+    # Those that are nearer the 1.5 arcsec are probable Gaia objects.
     flag[idx_galaxy[d2d <= 1.5 * u.arcsec]] = 2
 
-    # Those that are nearer the 0.6 arcsec are definitely stars.
+    # Those that are nearer the 0.6 arcsec are definitely Gaia objects.
     flag[idx_galaxy[d2d <= .6 * u.arcsec]] = 3
 
     catalogue.add_column(Column(flag, 'gaia_flag'))
@@ -104,7 +104,7 @@ def command(catalogue, gaia_cat_or_field):
         ).table
 
 
-    updated_catalogue = add_gaia_star_flag(Table.read(catalogue), gaia_cat)
+    updated_catalogue = add_gaia_object_flag(Table.read(catalogue), gaia_cat)
     updated_catalogue.write("{}_flagged.fits".format(catalogue[:-5]))
 
 if __name__ == "__main__":

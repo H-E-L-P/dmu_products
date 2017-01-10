@@ -4,9 +4,9 @@ Script to flag GAIA stars
 This product is a Python script to add a `gaia_flag` column to a catalogue base
 of Seb's prescriptions:
 
-- 1 (possibly a star) if the nearest Gaia source is between 1.5” and 2”;
-- 2 (probably a star) if the nearest Gaia source is between 0.6” and 1.5”;
-- 3 (definitely a star) if the nearest Gaia source is closer that 0.6”;
+- 1 (possibly a Gaia object) if the nearest Gaia source is between 1.5” and 2”;
+- 2 (probably a Gaia object) if the nearest Gaia source is between 0.6” and 1.5”;
+- 3 (definitely a Gaia object) if the nearest Gaia source is closer that 0.6”;
 - 0 otherwise.
 
 The script needs these Python modules: astropy, click, numpy, and pyvo. It is
