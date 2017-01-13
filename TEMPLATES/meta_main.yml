@@ -2,6 +2,8 @@ Product: Name of the HELP data product (required)
 
 Version: Version of the data product (required)
 
+Author: HELP author(s) of the product
+
 Fields: List of the HELP fields separated by comas if more than one (required)
 
 Selection filter: Filter ID for which the catalogue is filter selected (required)
