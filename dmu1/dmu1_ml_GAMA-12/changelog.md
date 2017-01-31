@@ -8,3 +8,8 @@ Files downloaded from Eduardo's web server and made available on HeDaM:
 See report. The updated files are
 `gama12_masterlist_helplimited_helpid_20161124.fits.bz2` and
 `gama12_catalogue_helplimited_helpid_20161124.fits`.
+
+## 2017-01-31: Addition of depth maps
+
+Depth maps where downloaded from Eduardo's web pages and added to the data
+folder.

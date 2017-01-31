@@ -14,3 +14,7 @@ See report. The updated files are
 `xmm-lss_masterlist_helplimited_helpid_20161124.fits.bz2` and
 `xmm-lss_catalogue_helplimited_helpid_20161124.fits.bz2`.
 
+## 2017-01-31: Addition of depth maps
+
+Depth maps where downloaded from Eduardo's web pages and added to the data
+folder.
