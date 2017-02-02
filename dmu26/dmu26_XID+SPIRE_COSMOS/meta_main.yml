@@ -1,0 +1,18 @@
+Product: dmu26_XID+SPIRE_COSMOS
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: COSMOS
+
+Selection filter: F_SPIRE_250,F_SPIRE_350,F_SPIRE_500
+
+Rights: None
+
+Acknowledgements: Hurley, P.  et al. 2017, MNRAS 464, 885
+		  Oliver, S. et al. 2012, MNRAS 424, 1614
+		  Le Floc’h E., et al., 2009, Astrophys. J., 703, 222
+		  
+
+Related products: cosmos2015.hsel, COSMOS-Nest_image_250_SMAP_v6.0.fits,COSMOS-Nest_image_350_SMAP_v6.0.fits, COSMOS-Nest_image_500_SMAP_v6.0.fits

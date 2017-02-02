@@ -1,0 +1,30 @@
+Survey: HerMES
+
+Telescope: Herschel
+
+Instrument: SPIRE
+
+Filters: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+P.I.: Oliver
+
+Reference:   Oliver, S. et al. 2012, MNRAS 424, 1614
+
+Proposal ID: 
+
+Observation dates: 2009-2013
+
+Publication date: July 1st, 2016
+
+URL: http://hedam.oamp.fr/HerMES/
+
+Acknowledgement:
+
+This research has made use of data from HerMES project (http://hermes.sussex.ac.uk/). HerMES is a Herschel Key Programme utilising Guaranteed Time from the SPIRE instrument team, ESAC scientists and a mission scientist.
+The HerMES data was accessed through the Herschel Database in Marseille (HeDaM - http://hedam.lam.fr) operated by CeSAM and hosted by the Laboratoire d'Astrophysique de Marseille.
+ See Oliver et al. (2012) for description on observations and Levenson et al. (2010) and Viero et al. (2013) for the image maps.
+
+Herschel is an ESA space observatory with science instruments provided by European-led Principal Investigator consortia and with important participation from NASA.
+Reference to Herschel and its instruments should be made using the following standard references as appropriate. By means of an example:
+
+In the present paper we will be discussing observations performed with the ESA Herschel Space Observatory (Pilbratt et al. 2010), in particular employing Herschel's large telescope and powerful science payload to do photometry with the SPIRE (Griffin et al. 2010) instrument.
