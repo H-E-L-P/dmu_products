@@ -1,0 +1,41 @@
+# sparcs ugryz bonn catalog work
+
+# EN1
+
+stilts -Xmx1024M -disk tcat in="ELAIS_N1_P1_rugz_finalmask_photoz.cat ELAIS_N1_P2_rugz_finalmask_photoz.cat ELAIS_N1_P3_rugz_finalmask_photoz.cat ELAIS_N1_P6_rugz_finalmask_photoz.cat ELAIS_N1_P4_rugz_finalmask_photoz.cat ELAIS_N1_P5_rugz_finalmask_photoz.cat ELAIS_N1_P7_rugz_finalmask_photoz.cat ELAIS_N1_P8_rugz_finalmask_photoz.cat ELAIS_N1_P9_rugz_finalmask_photoz.cat ELAIS_N1_P10_rugz_finalmask_photoz.cat ELAIS_N1_P11_rugz_finalmask_photoz.cat ELAIS_N1_P12_rugz_finalmask_photoz.cat" ocmd='sort -down NBPZ_FILT' out=tmp.fits
+
+stilts -Xmx1024M -disk tmatch1 matcher=sky values='ALPHA_J2000 DELTA_J2000' params=1.0 action=keep1 ocmd='sort ALPHA_J2000 ; addcol -before 1 ID index' in=tmp.fits out=en1-sparcs-ugryz-bonn.fits ; gzip -f en1-sparcs-ugryz-bonn.fits
+
+# stilts -Xmx1024M -disk tpipe cmd="keepcols 'ID ALPHA_J2000 DELTA_J2000'" in=en1-sparcs-ugryz-bonn.fits.gz out=en1-sparcs-ugryz-bonn-idradec.fits ; gzip -f en1-sparcs-ugryz-bonn-idradec.fits
+
+rm -f tmp.fits
+
+# EN2
+
+stilts -Xmx1024M -disk tcat in="ELAIS_N2_P1_rugz_finalmask_photoz.cat ELAIS_N2_P2_rugz_finalmask_photoz.cat ELAIS_N2_P3_rugz_finalmask_photoz.cat ELAIS_N2_P4_rugz_finalmask_photoz.cat ELAIS_N2_P5_rugz_finalmask_photoz.cat" ocmd='sort -down NBPZ_FILT' out=tmp.fits
+
+stilts -Xmx1024M -disk tmatch1 matcher=sky values='ALPHA_J2000 DELTA_J2000' params=1.0 action=keep1 ocmd='sort ALPHA_J2000 ; addcol -before 1 ID index' in=tmp.fits out=en2-sparcs-ugryz-bonn.fits ; gzip -f en2-sparcs-ugryz-bonn.fits
+
+# stilts -Xmx1024M -disk tpipe cmd="keepcols 'ID ALPHA_J2000 DELTA_J2000'" in=en2-sparcs-ugryz-bonn.fits.gz out=en2-sparcs-ugryz-bonn-idradec.fits ; gzip -f en2-sparcs-ugryz-bonn-idradec.fits
+
+rm -f tmp.fits
+
+# LH
+
+stilts -Xmx1024M -disk tcat in="Lockmann_P1_rugz_finalmask_photoz.cat Lockmann_P2_rugz_finalmask_photoz.cat Lockmann_P3_rugz_finalmask_photoz.cat Lockmann_P6_rugz_finalmask_photoz.cat Lockmann_P4_rugz_finalmask_photoz.cat Lockmann_P5_rugz_finalmask_photoz.cat Lockmann_P7_rugz_finalmask_photoz.cat Lockmann_P8_rugz_finalmask_photoz.cat Lockmann_P9_rugz_finalmask_photoz.cat Lockmann_P10_rugz_finalmask_photoz.cat Lockmann_P11_rugz_finalmask_photoz.cat Lockmann_P12_rugz_finalmask_photoz.cat Lockmann_P13_rugz_finalmask_photoz.cat Lockmann_P14_rugz_finalmask_photoz.cat Lockmann_P15_rugz_finalmask_photoz.cat" ocmd='sort -down NBPZ_FILT' out=tmp.fits
+
+stilts -Xmx1024M -disk tmatch1 matcher=sky values='ALPHA_J2000 DELTA_J2000' params=1.0 action=keep1 ocmd='sort ALPHA_J2000 ; addcol -before 1 ID index' in=tmp.fits out=lh-sparcs-ugryz-bonn.fits ; gzip -f lh-sparcs-ugryz-bonn.fits
+
+# stilts -Xmx1024M -disk tpipe cmd="keepcols 'ID ALPHA_J2000 DELTA_J2000'" in=lh-sparcs-ugryz-bonn.fits.gz out=lh-sparcs-ugryz-bonn-idradec.fits ; gzip -f lh-sparcs-ugryz-bonn-idradec.fits
+
+rm -f tmp.fits
+
+# XMM
+
+stilts -Xmx1024M -disk tcat in="XMM_LSS_A_ruygz_finalmask_photoz.cat XMM_LSS_B_ruygz_finalmask_photoz.cat XMM_LSS_C_ruygz_finalmask_photoz.cat" ocmd='sort -down NBPZ_FILT' out=tmp.fits
+
+stilts -Xmx1024M -disk tmatch1 matcher=sky values='ALPHA_J2000 DELTA_J2000' params=1.0 action=keep1 ocmd='sort ALPHA_J2000 ; addcol -before 1 ID index' in=tmp.fits out=xmm-sparcs-ugryz-bonn.fits ; gzip -f xmm-sparcs-ugryz-bonn.fits
+
+# stilts -Xmx1024M -disk tpipe cmd="keepcols 'ID ALPHA_J2000 DELTA_J2000'" in=xmm-sparcs-ugryz-bonn.fits.gz out=xmm-sparcs-ugryz-bonn-idradec.fits ; gzip -f xmm-sparcs-ugryz-bonn-idradec.fits
+
+rm -f tmp.fits
