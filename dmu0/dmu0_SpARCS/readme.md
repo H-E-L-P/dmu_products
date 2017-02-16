@@ -19,3 +19,9 @@ coverage and add a ``field`` column.  Then we remove the ``ID`` column and
 replaced it with an ``internal_id`` one containing an incrementing index after
 having ordered the row by ``ALPHA_J2000`` and ``DELTA_J2000``.  Then we produced
 one catalogue per field.
+
+We contacted Hendrik Hildebrandt and Alexandru Tudorica to have more
+informations. The magnitude/flux to use are those labelled with the band that
+were extracted on the PDF-homogenised maps. The first flux / magnitudes without
+a band in the name are the r values computed on the non-convolved images (the
+catalogue seems to be r selected).
