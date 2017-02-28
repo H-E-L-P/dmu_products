@@ -13,3 +13,7 @@ HELP coverage. A `help_id` column was added containing a unique identifier based
 on the position. The new files produced are
 `bootes_masterlist_20170131_helplimited_helpid.fits` and
 `bootes_catalogue_20170131_helplimited_helpid.fits`.
+
+## Addition 2017-02-28
+
+- The filter bandpass are not provided.

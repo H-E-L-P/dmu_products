@@ -13,3 +13,7 @@ coverage. Maybe we should remove them.** A `help_id` column was added containing
 a unique identifier based on the position. The new files produced are
 `xmm-lss_masterlist_helplimited_helpid_20161124.fits.bz2` and
 `xmm-lss_catalogue_helplimited_helpid_20161124.fits.bz2`.
+
+## Addition 2017-02-28
+
+- The filter bandpass are not provided.
