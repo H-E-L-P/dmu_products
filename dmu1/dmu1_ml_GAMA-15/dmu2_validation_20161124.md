@@ -12,3 +12,7 @@ HELP coverage. A `help_id` column was added containing a unique identifier based
 on the position. The new files produced are
 `gama15_masterlist_helplimited_helpid_20161124.fits.bz2` and
 `gama15_catalogue_helplimited_helpid_20161124.fits`.
+
+## Addition 2017-02-28
+
+- The filter bandpass are not provided.
