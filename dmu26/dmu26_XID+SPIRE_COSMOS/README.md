@@ -1,4 +1,4 @@
-                              HELP COSMOS-XID+                      November 2016
+                              HELP XID+MIPS_COSMOS                 February 2017
 ================================================================================
 
 Description:
