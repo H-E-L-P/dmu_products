@@ -34,12 +34,4 @@ Alexandru also gave us the information on the apertures:
 
 The size above are the diameter of the apertures.
 
-The fluxes are indicated as counts and the magnitudes are Vega ones.  The
-CFHT/Megacam [specification
-page](http://www.cfht.hawaii.edu/Instruments/Imaging/Megacam/specsinformation.html)
-give the AB to Vega magnitude offsets (the maps used are from 2012, so they are
-the new filters):
-
-| u      | g      | r      | i      | z      |
-|--------|--------|--------|--------|--------|
-| -0.612 | +0.087 | -0.181 | -0.392 | -0.526 |
+Alexandru told the magnitudes are in the AB system.
