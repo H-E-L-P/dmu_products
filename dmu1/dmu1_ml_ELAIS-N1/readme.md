@@ -23,3 +23,8 @@ in the `master_catalogue_ELAIS-N1.ipynb` Jupyter notebook.
 - SpARCS (Spitzer Adaptation of the Red-sequence Cluster Survey) catalogue. This
   catalogue comes from `dmu0_SpARCS`.
 
+## Additional notebook
+
+The `sparcs_aperture_correction.ipynb` notebook is used to analyse the aperture
+magnitudes in SpARCS data and to make choice for the aperture correction in the
+main notebook.
