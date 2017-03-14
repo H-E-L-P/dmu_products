@@ -6,11 +6,12 @@ Author: Aayush Saxena
 
 Fields: Bootes
 
-Selection filter: Filter ID for which the catalogue is filter selected (required)
+Selection filter: LOFAR150
 
 Rights: Data now part of paper that has been accepted for publication
 
-Acknowledgements: This data product is based on the LOFAR Bootes image produced by Wendy Williams (Leiden/Hertfordshire). 
-The relevant paper can be found at: http://adsabs.harvard.edu/abs/2016MNRAS.460.2385W
+Acknowledgements: This data product is based on the LOFAR Bootes image produced
+  by Wendy Williams (Leiden/Hertfordshire). The relevant paper can be found at
+  http://adsabs.harvard.edu/abs/2016MNRAS.460.2385W
 
 Related products: List of related HELP data products
