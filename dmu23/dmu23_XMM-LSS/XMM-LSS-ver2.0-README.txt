@@ -1,0 +1,169 @@
+XMM-LSS Spectroscopic Merged Catalogue README - version 2.0
+
+Description of columns:
+
+Column 0, "RA":
+The RA coordinates of the object targeted in degrees.
+
+Column 1, "DEC":
+The DEC coordinates of the object targeted in degrees.
+
+Column 2, "Z_SPEC":
+The spectroscopic redshift.
+
+Column 3, "Z_SOURCE":
+The source of the spectroscopic redshift, as the source of the redshift can be multiple surveys the source number can be a combination of the following values:
+; VVDS - Le Fevre et al. (2013)		 		- 1
+; XMM-AGN follow-up (Garcet et al. 2007) 		- 2
+; Mid-IR Selected Quasars/AGNs (Lacy et al. 2007)	- 4
+; X-ray Sources (Stalin et al. 2010) 			- 8
+; Supernova Host Sources (Lidman et al. 2012)  		- 16
+; Old Passive Galaxies (Yamada et al. 2005) 		- 32
+; Lyman-alpha Emitters (Ouchi et al. 2008)		- 64
+; Lyman-alpha Emitters (Ono et al. 2010)		- 128
+; SFRs of Starburst Galaxies (Sargsyan & Weedman, 2009)	- 256
+; UDSz Survey* 						- 512
+; UDS catalogue*, CJS-VIMOS 				- 1024
+; UDS catalogue*, CJS-ISIS 				- 2048
+; UDS catalogue*, CVB-DEIMOS				- 4096
+; UDS catalogue*, JEG-LDSS2 				- 8192
+; UDS catalogue*, Doi-FOCAS 				- 16384
+; UDS catalogue*, SJC-AAOmega 				- 32768
+; UDS catalogue*, IRS-AAOmega 				- 65536
+; UDS catalogue*, Aki-FOCAS 				- 131072
+; UDS catalogue*, Aki-2df 				- 262144
+; SDSS DR12 						- 524288
+; 6dF Galaxy Survey 					- 1048576 
+; VIPERS PDR2						- 2097152
+; PRIMUS						- 4194304
+; IMACS (Weiner/Cooper)					- 8388608
+
+See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
+
+Column 4, "Z_QUAL":
+
+The quality flag (Q) is designated using the method from Colless et al. (2001) method (same as for the GAMA database which covers many Help fields). The quality flag (Q), is ranked on a five-point scale, with the interpretation: Q = 1 means no redshift could be estimated; Q = 2 means a possible, but doubtful, redshift estimate; Q = 3 means a probable redshift (notionally 90 per cent confidence), Q = 4 means a reliable redshift (notionally 99 per cent confidence); Q = 5 means a reliable redshift and a high-quality spectrum. Note that this quality parameter is determined entirely by the subjective judgement of the user. Please see next column for more reliability info. 
+
+Note that in reality collecting spectra from all these sources it is often difficult to choose whether Q should be 3, 4 or 5. We have tried to be conservative where possible, but often we also have a lack of information.
+
+Column 5, "Reliability":
+
+The expected reliability of the redshift, provided where the information is availiable. The value is given as a probability between 0 and 1 (i.e., 60% reliability would be 0.6). This column is of particular use for VVDS which has a flag corresponding to 75-85% reliability (and so is put as Q=2 or Lidman et al. (2012) redshifts which also placed in Q=2 with a 79% reliability. 
+
+Column 6, "OBJID"
+
+Object ID where the name depends on the source of the spectroscopic measurement. 
+
+Column 7, "QSO/AGN Flag"
+
+If the source of the data provides infomation on AGN based on the spectroscopic data, or the survey is deticated to targting QSO/AGNs this flag is set to 1. Note if a source provides infomation based on photometry we do not include this as will be repeated by HELP's own photometry measurements. This should not be treated as an accurate AGN/QSO determination.
+
+Information on selection functions/completness can be found in the seperate pdf document.
+
+
+Other info:
+
+To make this the redshifts have been prioritised in order of quality flags and the highest priority redshift is used. For catalogues which included redshifts for stars have been removed. Catalogues are typically matched given a 2" positional accuracy, however we check all matches up to 5" and assess which are real associations. Given the large number of redshifts we have very few conflicts, any conflicts where it was not obvious what was causing the problem are listed below and the choice made. During the making of this catalogue it was found that the same object could have more than one DR1, an arbitary choice of which ID to go with was made.
+
+Both the UDSz (Source 512) and the UDS catalogue (Sources 1024-524288) are not published catalogues but are publically available on UKIDSS UDS website (www.nottingham.ac.uk/astronomy/UDS/). The UDSz propream is an ESO large program (180.A-0776) and a data release paper is in prep (Alamanti et al. in prep), but for now it is recommended to reference Bradshaw et al. (2013) and McLure et al. (2013). There is also a complimation of redshifts from various sources on the UDS website which we have named the UDS catalogue (Sources 1024-262144). Some of the data we can associate to papers and get some infomation on selection and criteria (which is why we split the data into the different surveys). However, many of the sources are unpublished and we have very little information about them. Please note the catalogue itself does state the quality flags on the catalogue are not guaranteed so users may wish to bear this in mind. A couple of other bits of info:
+
+SJC-AAOmega - two were listed of quality of Z (quality flag unavailable), as the rest from this survey were quality A (multiple-features) we have put them as Q = 2.
+IRS-AAOmega - many of the sources were written as quality D (very dubius) and the rest from this survey were A (multiple-features) we have put them as Q = 2.
+Aki-2df - All spectra listed with quality Z (Not provided). We have assumed all redshifts are reliable (Q = 3), but this maybe wrong. You may wish to treat galaxies with only Source 262144 with caution. 
+UDSz includes 7 objects withh an UDS ID = 0 as they are serendipitous targets, we have included them in the catalogue.
+
+
+Conflicts:
+
+This is a record of any conflicting sources when merging the catalohues (only for sources considered reliable Q >= 3) and don't have an obvious solution. The number of conflicts are very small considering the ~15000 redshifts collected.
+
+VVDS-J022545.55-043445.1 from Source 1 and XLSS J022545.4-043446 rom Source 8 are differenct. Went with VVDS at has Q=4.
+XLSS J022527.5-035953 from Source 2 and XLSS J022527.5-035953 from Source 8 conflict. Went with Source 8.
+XLSS J022557.6-045004 from Source 2 and from Source 8 conflict. Went with Source 8.
+Sources 8192 and 32768 disagree on "UDS DR1 110" went with Source 8192
+Sources 1024 and 65536 disagree on "UDS DR1 7821" went with Source 1024
+Sources 1024 and 8192 disagree on "UDS DR1 15008" went with Source 1024
+Slight disagreement "SXDS J021905.91-043141.6" between source 32 and 131072, went with Source 131072 as higher Q
+Very slight ddisagreement "SXDS J021653.58-045632.2" between source 32 and 131072, went with Source 131072 as higher Q
+Very slight ddisagreement "SXDS J021927.36-045111.5" between source 32 and 131072, went with Source 131072 as higher Q
+Very slight ddisagreement "SXDS J021936.04-044826.8" between source 32 and 131072, went with Source 131072 as higher Q
+Very slight ddisagreement "R-RS-026242_SDS7_017" between source 1024 and 131072, went with Source 1024
+Slight disagreement "UDS DR1 36885" between source 1024 and 131072, went with Source 1024
+Slight disagreement "UDS DR1 72238" between source 1024 and 131072, went with Source 1024
+Slight disagreement "UDS DR1 73948" between source 1024 and 131072, went with Source 1024
+Slight disagreement "VVDS-J022525.68-043509.4" between source 1 and 52428, went with Source 52428
+Slight disagreement "XLSS J022729.4-043224" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "XLSS J022624.7-040458" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "XLSS J022330.0-043001" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "XLSS J022751.3-050101" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "SWIRE2 J022431.58-052818.8" between source 4 and 52428, went with Source 52428 as higher Q
+disagreement "XLSS J022127.7-043407" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "XLSS J022403.7-043303" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement "SXDS-iE-161469" between source 32776 and 52428, went with Source 52428
+Slight disagreement "XLSS J022245.5-041928" between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022255.4-044409 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022302.3-044437 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022332.0-045739 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022335.1-043424 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022336.5-041827 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022403.1-050313 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022515.2-044006 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022555.9-043220 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022636.1-043430 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement XLSS J022740.5-040250 between source 8 and 52428, went with Source 52428 as higher Q
+Slight disagreement UDS DR1 7821 between source 1024 and 52428, went with Source 52428 
+Slight disagreement UDS DR1 73948 between source 1024 and 52428, went with Source 52428 
+Slight disagreement SXDS-iW-116197 between source 32768 and 52428, went with Source 52428 
+Disaggreement UDS DR1 30882 between source 32768 and 52428, went with Source 52428 
+Slight disagreement UDS DR1 92252 between source 32768 and 52428, went with Source 52428 
+Large  disagreement UDS DR1 90590 between source 65536 and 52428, went with Source 52428 
+Slight disagreement SXDS-iE-148724 between source 131072 and 52428, went with Source 52428 
+Slight disagreement UDS DR1 38186 between source 131072 and 52428, went with Source 52428 
+Slight disagreement NB570-N-34841 between source 131072 and 64, went with Source 131072 as higher Q
+Conflict VVDS-J022544.64-044859.9 between source 1 and 2097152, went with Source 1 as higher Q
+Conflict VVDS-J022736.90-044815.6 between source 1 and 2097152, went with Source 1 as higher Q
+Conflict VVDS-J022538.46-044130.5 between source 1 and 2097152, went with Source 2097152 as higher Q
+Conflict  VVDS-J022646.76-044106.0 between source 1 and 2097152, went with Source 1 as higher reliability
+Conflict VVDS-J022621.68-043538.8 between source 1 and 2097152, went with Source 2097152 as higher Q
+Conflict VVDS-J022725.53-043418.6 between source 1 and 2097152, went with Source 1 as higher Q
+Conflict VVDS-J022528.75-043345.6 between source 1 and 2097152, went with Source 2097152 as higher Q
+Conflict VVDS-J022705.84-043143.3 0.0681660422817 between source 1 and 2097152, went with Source 1 as higher Q
+Conflict VVDS-J022509.84-042943.4 0.0834375625969 between source 1 and 2097152, went with Source 1 as higher Q
+Conflict VVDS-J022515.23-041527.1 0.049808444648 between source 1 and 2097152, went with Source 1 as higher Q
+Slight disagreement SDSS 1237679322861273294 between source 524296 and 2097152, went with Source 524296
+Slight disagreement XLSS J022236.0-043309 between source 8 and 2097152, went with Source 2097152 as higher Q
+Conflict XLSS J022324.9-041451 between source 8 and 2097152, went with Source 2097152 
+Confict SNLS-P04D1bg between source 16 and 2097152, went with Source 16 as higher reliability
+Confict SXDS J021907.20-043150.7 between source 32 and 2097152, went with Source 2097152 as higher Q
+Slight disagreement UDS DR1 47304 between source 512 and 2097152, went with Source 2097152 
+Slight disagreement UDS DR1 58087 between source 512 and 2097152, went with Source 2097152 as higher Q
+Slight disagreement UDS DR1 71732 between source 512 and 2097152, went with Source 512 as higher Q
+Slight disagreement UDS DR1 75933 between source 512 and 2097152, went with Source 2097152 
+Slight disagreement UDS DR1 77870 between source 512 and 2097152, went with Source 2097152 
+Confict NB503-N-85090 between source 1024 and 2097152, went with Source 2097152
+Confict UDS DR1 72665 between source 1024 and 2097152, went with Source 2097152
+Slight disagreement UDS DR1 54043 between source 4096 and 2097152, went with Source 4096 as higher Q
+Slight disagreement UDS DR1 54783 between source 4096 and 2097152, went with Source 4096 as higher Q
+Slight disagreement SDSS 1237679322861207784 between source 524288 and 2097152, went with Source 2097152 as higher Q
+onfict UDS DR1 54667 between source 65536 and 2097152, went with Source 2097152 as higher Q
+Confict UDS DR1 56462 between source 65536 and 2097152, went with Source 2097152
+Confict UDS DR1 54667 between source 65536 and 2097152, went with Source 2097152 as higher Q
+Confict UDS DR1 89531 between source 65536 and 2097152, went with Source 2097152 as higher Q
+Confict SXDS-iN-095212 between source 131072 and 2097152, went with Source 131072 as higher Q
+Confict UDS DR1 49956 between source 131072 and 2097152, went with Source 131072 as higher Q
+Conflict UDS DR1 73829 between source 131072 and 2097152, went with Source 131072 as higher Q
+Confict UDS DR1 48318 between source 48318 and 2097152, went with Source 2097152
+Slight disagreement SDSS 1237679254134850113 between source 524288 and 2097152, went with Source 2097152
+Slight disagreement SDSS 1237679322861273521 between source 524288 and 2097152, went with Source 2097152
+Conflict SDSS 1237679253598044894 between source 524288 and 2097152, went with Source 2097152
+Conflict SDSS 1237679323398603402 between source 524288 and 2097152, went with Source 524288 as higher Q
+Conflict SDSS 1237679323397882147 between source 524288 and 2097152, went with Source 2097152 as higher Q
+Slight disagreement SDSS 1237679254135439695 between source 524288 and 2097152, went with Source 2097152 as higher Q
+Conflict SDSS 1237679254671196430 between source 524288 and 2097152, went with Source 524288 as higher Q
+Conflict SDSS 1237669769764602081 between source 524288 and 2097152, went with Source 2097152 as higher Q
+Conflict SDSS 1237679254135767139 between source 524288 and 2097152, went with Source 2097152 as higher Q
+Slight disagreement SDSS 1237679254135439695 between source 524288 and 2097152, went with Source 524288 as higher Q
+Conflict disagreement SDSS 1237679254135439695 between source 524288 and 2097152, went with Source 524288 as higher Q
+Slight disagreement SDSS 1237669770301472845 between source 524288 and 2097152, went with Source 2097152 as higher Q
+Conflict disagreement SDSS 1237679322862518459 between source 524288 and 2097152, went with Source 524288 as higher Q
+Slight disagreement SDSS 1237669770838409493 between source 524288 and 2097152, went with Source 524288 as higher Q
