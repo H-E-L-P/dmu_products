@@ -1,0 +1,31 @@
+; SDSS				- 1
+; 2dF				- 2
+; PRIMUS			- 4
+; 3DHST* 			- 8
+; MOIRCS* (M. Onodere)		- 16
+; FAST*				- 32
+; AzTEC* (M Yun)		- 64
+; FMOS* (Rosemberg)		- 128
+; FORS2* (Johan Comparat)	- 256
+; 2MASS*			- 512
+; Gemini-S* (M. Balough)	- 1024
+; HST_GRISM* (Schawinksi/Brusa)	- 2048
+; MOSFIRE* (A. Shapley)		- 4096
+; WFC3_grism* (Schawinksi/Brusa)- 8192
+; zBRIGHT*			- 16384
+; GAMA (Davies et al) 		- 32768
+; Magellan IMACS spectrum 	- 65536
+; Magellan IMACS (Weiner/Cooper)- 131072
+
+private numbers:
+; DEIMOS*			- 262144
+; FMOS*				- 524288
+; FOCAS*			- 1048576
+; FORS1*			- 2097152
+; FORS2*			- 4194304
+; IMACS*			- 8388608
+; LRIS*				- 16777216
+; MOIRCS			- 33554432
+; MOSFIRE			- 67108864
+; SINFONI			- 134217728
+; zDEEP				- 268435456

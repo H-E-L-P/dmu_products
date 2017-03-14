@@ -16,3 +16,4 @@ Files received by mail from Matt: `COSMOS-specz-v2.5-public.csv` and
 
 See report. The updated file is
 `COSMOS-specz-v2.5-public_helpcoverage_helpid_20160512.fits`
+## 2017-03-14: New private catalogue
