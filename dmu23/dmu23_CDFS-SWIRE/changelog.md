@@ -9,4 +9,6 @@ See report. The catalogue extracted from the database is
 
 ## 2017-02-02: Update
 
+File received from Matt: `CDFS_SWIRE-specz-v2.1.csv`.
 Update to version v2.1 catalogue. Add the survey flag codes.
+Modified catalogue ingested in HeDaM: `CDFS_SWIRE-specz-v2.1_hedam.csv`.
