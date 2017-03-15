@@ -32,3 +32,7 @@ the columns `ra` and `dec` were added with the position in decimal degrees.
 *Note: Eduardo used the VIDEO catalogue on XMM-LSS for his master list.  His
 catalogue has different column names and slightly less sources.  I don't know
 where he took it from.*
+
+In his queries, Eduardo was limiting to row with `PRIORSEC = 0` to remove
+duplicated source; we probably want to do the same thing while using these
+catalogues.
