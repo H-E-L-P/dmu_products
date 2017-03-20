@@ -10,3 +10,8 @@ with scripts provided by Eduardo.
 
 The columns are described at
 http://horus.roe.ac.uk/wsa/www/WSA_TABLE_lasSourceSchema.html#lasSource
+
+# Privacy concerns
+
+Eduardo's script is querying the `lasSource` table in the `UKIDSSDR10PLUS`
+database. Is this data public?
