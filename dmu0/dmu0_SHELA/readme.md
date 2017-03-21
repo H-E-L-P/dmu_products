@@ -16,3 +16,8 @@ Large-Area (SHELA) survey.
 The data was downloaded from http://irsa.ipac.caltech.edu/data/SPITZER/SHELA/
 and is the combined epoch catalogue.  It is described in
 [2016ApJS..224...28P](https://ui.adsabs.harvard.edu/#abs/2016ApJS..224...28P/abstract).
+
+# Note on aperture fluxes
+
+The finite aperture fluxes have been corrected for light falling outside of the
+aperture using the filter point-response functions.
