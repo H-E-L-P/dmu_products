@@ -9,3 +9,5 @@ They were downloaded from http://www.stsci.edu/science/goods/DataProducts/ and
 there is a readme in the `data` folder.
 
 Note that the sources are detected in the z band.
+
+Use `ID_IAU` to uniquely identify each source.

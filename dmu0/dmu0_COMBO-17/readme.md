@@ -8,3 +8,4 @@ Notes:
 
 - The sources are detected in R band.
 - All the sources are on HELP coverage.
+- Use the `Seq` column to uniquely identify each source.
