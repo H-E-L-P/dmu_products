@@ -21,3 +21,6 @@ added to uniquely identify each source.  There are three catalogues:
 - `SpIES_ch2_only_HELP-coverage.fits` contains the sources found only in IRAC2;
 - `SpIES_ch1andch2_HELP-coverage.fits` contains the sources found both in IRAC1
     and IRAC2.
+
+*Note: The “channel 2 only” catalogue seems to have zone of really different
+depth (see the MOC).*
