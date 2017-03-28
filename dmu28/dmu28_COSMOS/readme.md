@@ -1,17 +1,2 @@
-# SAMPLE
+This folder contains detailed information about the catalog used for SED fitting,  SED fitting procedures and the results. 
 
-## CATALOGUE
-
-### PROCEDURE TO CREATE CATALOGUE
-
-### FILTERS
-
-### BASIC PROPERTIES OF THE CATALOG 
-
-### SAMPLE SELECTION
-
-# SED fitting
-
-## MODULES
-
-## RESULTS
