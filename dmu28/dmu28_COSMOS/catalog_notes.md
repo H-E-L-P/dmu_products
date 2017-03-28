@@ -57,6 +57,7 @@ NEW_NAME = {
 ```
 ## Redshift distribution
 
+png: ![](https://github.com/H-E-L-P/dmu_products/edit/master/dmu28/dmu28_COSMOS/COSMOS_redshift.png?raw=true)
 
 ## Filters
 
