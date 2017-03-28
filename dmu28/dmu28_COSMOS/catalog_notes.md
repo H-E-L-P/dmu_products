@@ -55,6 +55,9 @@ NEW_NAME = {
     "spire500": "PLW"
 }
 ```
+## Redshift distribution
+
+
 ## Filters
 
 Our catalog contains the following bands:  FUV, NUV, CFHT u, SUBARU B,  SUBARU V, SUBARU r, SUBARU i, SUBARU z, yHSC, UKIRT WFCJ, CFHT H, CFHT wircam Ks, IRAC1, IRAC2, IRAC3, IRAC4, MIPS1, PACS green, PACS red,  PSW,  PMW and PLW.  We removed double bands (WFCAM Ks, WIRCAM Y, WFCAM H, z++), and narrow bands (IA484 SCam, IA527 SCam, IA624 SCam, IA679 SCam, IA738 SCam, IA773 SCam, IA427 SCam, IA464 SCam, IA505 SCam, IA574 SCam, IA709 SCam, IA827 SCam, NB717 and NB816) as it gave us very dense coverage of the optical passbands in comparison with the infrared part of the spectra. 
