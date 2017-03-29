@@ -13,3 +13,5 @@ corresponding apertures, if the values are in Vega or AB system, nor if the
 magnitudes are aperture corrected.
 
 We asked Jim Geach for more information.
+
+We added an `internal_id` column because the `VICS82ID` contains duplicates.
