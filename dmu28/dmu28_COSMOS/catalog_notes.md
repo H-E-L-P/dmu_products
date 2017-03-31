@@ -74,7 +74,7 @@ To pick one filter over two similar ones, we decided to check the number of meas
 
 # Sample selection
 
-To make a test of our approach we used the best sample selected from COSMOS field  for which PACS  and SPIRE fluxes are available (marked with a good flag). We selected ** 1012** galaxies. We used photometric redshifts provided by Ken. The measurements in the HELP-COSMOS catalog are not k-corrected but as the mean Galactic extinction  at the object position  is very low (mean value equal to 0.019$\pm$0.001, and median: 0.019) we used not corrected fluxes.
+To make a test of our approach we used the best sample selected from COSMOS field  for which PACS  and SPIRE fluxes are available (marked with a good flag). We selected **1012** galaxies. We used photometric redshifts provided by Ken. The measurements in the HELP-COSMOS catalog are not k-corrected but as the mean Galactic extinction  at the object position  is very low (mean value equal to 0.019$\pm$0.001, and median: 0.019) we used not corrected fluxes.
 
 
 
