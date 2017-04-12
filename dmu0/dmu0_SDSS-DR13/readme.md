@@ -3,7 +3,7 @@ Sloan Digital Sky Survey - 13<sup>th</sup> Data Release
 
 This product contains the catalogues from the 13<sup>th</sup> data release of
 the Sload Digital Sky Survey (SDSS-DR13).  Mattia queried the SDSS database and
-sent us several files.
+sent us several files that we merged in a single table.
 
 Because of overlaps between query coverages, we removed the duplicated rows
 using the `objID` column:
