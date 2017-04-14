@@ -2,7 +2,7 @@ CANDELS Ultra Deep Survey (UDS) Multiwavelength catalog (Galametz et al. 2013)
 ==============================================================================
 
 This product contains the CANDELS multi-wavelength catalogue on the deep UDS
-field within HELP. Here is its description on the survey web site:
+field within HELP XMM-LSS field. Here is its description on the survey web site:
 
 > The catalog presents the multiwavelength (ultraviolet to mid-infrared)
 > photometry available in the UKIDSS Ultra-Deep Survey (UDS) field observed as
