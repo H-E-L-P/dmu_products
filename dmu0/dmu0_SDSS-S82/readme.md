@@ -88,16 +88,16 @@ queried only a selection of columns described in the following table.
 | psfMagErr_r   | real     | 4    | mag  | PSF flux error                                                                                    |
 | psfMagErr_i   | real     | 4    | mag  | PSF flux error                                                                                    |
 | psfMagErr_z   | real     | 4    | mag  | PSF flux error                                                                                    |
-| fiberMag_u    | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius                                                            |
-| fiberMag_g    | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius                                                            |
-| fiberMag_r    | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius                                                            |
-| fiberMag_i    | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius                                                            |
-| fiberMag_z    | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius                                                            |
-| fiberMagErr_u | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius error                                                      |
-| fiberMagErr_g | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius error                                                      |
-| fiberMagErr_r | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius error                                                      |
-| fiberMagErr_i | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius error                                                      |
-| fiberMagErr_z | real     | 4    | mag  | Flux in 3 arcsec diameter fiber radius error                                                      |
+| fiberMag_u    | real     | 4    | mag  | Flux in 3 arcsec diameter                                                                         |
+| fiberMag_g    | real     | 4    | mag  | Flux in 3 arcsec diameter                                                                         |
+| fiberMag_r    | real     | 4    | mag  | Flux in 3 arcsec diameter                                                                         |
+| fiberMag_i    | real     | 4    | mag  | Flux in 3 arcsec diameter                                                                         |
+| fiberMag_z    | real     | 4    | mag  | Flux in 3 arcsec diameter                                                                         |
+| fiberMagErr_u | real     | 4    | mag  | Flux in 3 arcsec diameter error                                                                   |
+| fiberMagErr_g | real     | 4    | mag  | Flux in 3 arcsec diameter error                                                                   |
+| fiberMagErr_r | real     | 4    | mag  | Flux in 3 arcsec diameter error                                                                   |
+| fiberMagErr_i | real     | 4    | mag  | Flux in 3 arcsec diameter error                                                                   |
+| fiberMagErr_z | real     | 4    | mag  | Flux in 3 arcsec diameter error                                                                   |
 | petroMag_u    | real     | 4    | mag  | Petrosian flux                                                                                    |
 | petroMag_g    | real     | 4    | mag  | Petrosian flux                                                                                    |
 | petroMag_r    | real     | 4    | mag  | Petrosian flux                                                                                    |
