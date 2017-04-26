@@ -1,3 +1,9 @@
+To make a test of our approach we used the best sample selected from COSMOS field  for which PACS  and SPIRE fluxes are available (marked with a good flag). We selected 1012 galaxies. We used photometric redshifts provided by HELP team. 
+The measurements in the HELP-COSMOS catalog are not k-corrected but as the mean Galactic extinction  at the object position  is very low (mean value equal to 0.019$\pm$0.001, and median: 0.019) we used not corrected fluxes.
+
+Our catalog contains the following bands:  FUV, NUV, CFHT u, SUBARU B,  SUBARU V, SUBARU r, SUBARU i, SUBARU z, yHSC, UKIRT WFCJ, CFHT H, CFHT wircam Ks, IRAC1, IRAC2, IRAC3, IRAC4, MIPS1, PACS green, PACS red,  PSW,  PMW and PLW.  We removed double bands (WFCAM Ks, WIRCAM Y, WFCAM H, z$++$), and narrow bands (IA484 SCam, IA527 SCam, IA624 SCam, IA679 SCam, IA738 SCam, IA773 SCam, IA427 SCam, IA464 SCam, IA505 SCam, IA574 SCam, IA709 SCam, IA827 SCam, NB717 and NB816) as it gave us very dense coverage of the optical passbands in comparison with the infrared part of the spectra. To pick one filter over two similar ones, we decided to check the number of measurements in the full catalog of 694478 HELP-COSMOS galaxies, the depth of which filter and the distribution of uncertainties. 
+
+
 In order to	define the best modules to be used	within HELP we have run CIGALE with different modules and parameters:
 
 * <strong>Star Formation History</strong>: delayed star formation history with an additional, almost flat, burst,
