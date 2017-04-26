@@ -26,7 +26,7 @@ In order to	define the best modules to be used	within HELP we have run CIGALE wi
   * minimum radiation field (umin) : 5.0, 10.0, 25.0
   * power law slope dU/dM  ($U^{\alpha}$) : 2.0, 2.8
   * fraction illuminated from Umin to Umax ($\gamma$) : 0.005, 0.02, 0.05
-* <strong>AGN emission</strong>: Fritz 2006 
+* <strong>AGN emission</strong>: Fritz 2006 (for our analysis we used templates built based on average parameters from previous studies: Hatziminaoglou+09,Buat+15,Ciesla+15,Malek+2017)
   * ratio of the maximum to minimum radius of the dust torus : 60 
   * optical depth at 9.7 microns : 1.0, 6.0
   * radial dust distribution in the torus : -0.5 
@@ -34,6 +34,8 @@ In order to	define the best modules to be used	within HELP we have run CIGALE wi
   * angular opening angle of the torus [deg] : 100.0 
   * angle between equatorial axis and the line of sight [deg] : 0.001  
   * fractional contribution of AGN: 0.0, 0.1, 0.15, 0.25, 0.4
+  
+We decided to run CIGALE with AGN module for all galaxies as it is almost impossible to find a sufficient criterion which includes errors. We build our conclusion based on the tests with four AGN selection criteria: Stern+2005,Donley+2012, Lacy+2007, and Lacy+2013. We have found that usage of different criteria results in large discrepancy between sample of AGN candidates. 
 
 The quality of the fitted SEDs is calculated making use of the $\chi^2$ value of the best model, marginalized over all parameters except the one assigned for the further physical analysis. The final output values of analyzed parameters are calculated as the mean  and standard deviation determined from the PDFs. 
 
