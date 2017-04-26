@@ -44,4 +44,8 @@ Below we have attached a few examples how the best model for different galaxies 
 
 <p>HELP_J095747.72+021353.48: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095747.72%2B021353.48.ipynb">z=0.7, log(Ldust)= 11.23, log(Mstar)=10.78, AGN component = 0</a>.</p>
 <p>HELP_J095814.87+024145.31: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095814.87%2B024145.31.ipynb">z=1.8, log(Ldust)=12.62, log(Mstar)=11.46, AGN component = 0.25</a>.</p>
-<p>HELP_J095747.72+021353.48: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095759.54%2B023009.11.ipynb">z=1.2, log(Ldust)= 11.79, log(Mstar)=10.58, AGN component = 0</a>.</p>
+<p>ELP_J095759.54+023009.11: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095759.54%2B023009.11.ipynb">z=1.2, log(Ldust)= 11.79, log(Mstar)=10.58, AGN component = 0</a>.</p>
+<p>HELP_J095835.93+024422.84: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095835.93%2B024422.84.ipynb">z=0.9, log(Ldust)= 11.91, log(Mstar)=10.98, AGN component = 0</a>.</p>
+
+
+
