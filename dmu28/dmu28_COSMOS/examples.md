@@ -40,12 +40,6 @@ The quality of the fitted SEDs is calculated making use of the $\chi^2$ value of
 Firstly CIGALE search for the best parameters for each modules from the given ones. At the end, based on the PDF analysis, final quanitities are computed.
 
 Below we have attached a few examples how the best model for different galaxies is computed, and where analized galaxy is located in the global redshift -- stellar mass, redshift -- dust luminosity, and redshift -- star formation rate relations. 
-reduced $\chi^2$ : 0.6773938902916605 
-bayesian stellar mass 10.780886769559045 +/- 3.364478045074963 [M sun]:
-bayesian dust luminosity: 11.232695851639296 +/- 2.843564187753497 [L sun]
-bayesian SFR 16.215375774529605 +/- 2.5427437135289894 [M sun / yr]:
-bayesian AGN fraction 1.3516930515065185e-05 +/- 0.001164416553238685:
-
 
 
 <p>HELP_J095747.72+021353.48: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095747.72%2B021353.48.ipynb">z=0.7, log(Ldust)= 11.23, log(Mstar)=10.78, AGN component = 0</a>.</p>
