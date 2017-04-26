@@ -1,0 +1,2 @@
+<p>HELP_J095747.72+021353.48: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095747.72%2B021353.48_z%3D0.7_without_AGN_component.ipynb">redshift=0.7, without AGN component</a>.</p>
+<p>HELP_J095814.87+024145.31: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095814.87%2B024145.31_z%3D1.8_with_AGN_component.ipynb">redshift=1.8, with AGN component</a>.</p>
