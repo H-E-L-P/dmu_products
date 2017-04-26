@@ -44,6 +44,6 @@ Firstly CIGALE search for the best parameters for each modules from the given on
 Below we have attached a few examples how the best model for different galaxies is computed, and where analized galaxy is located in the global redshift -- stellar mass, redshift -- dust luminosity, and redshift -- star formation rate relations. 
 
 <p>HELP_J100311.24+023142.75: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J100311.24%2B023142.75.ipynb">z=0.36, log(Ldust)= 10.69, log(Mstar)=10.21, AGN component = 0.0</a>.</p>
-<p>HELP_J100311.24+023142.75: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J100232.92%2B020027.45.ipynb">z=0.58, log(Ldust)= 11.21, log(Mstar)=10.73, AGN component = 0.25</a>.</p>
+<p>HELP_J100232.92+020027.45: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J100232.92%2B020027.45.ipynb">z=0.58, log(Ldust)= 11.21, log(Mstar)=10.73, AGN component = 0.25</a>.</p>
 <p>HELP_J095814.87+024145.31: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095759.54%2B023009.11.ipynb">z=1.2, log(Ldust)= 11.79, log(Mstar)=10.58, AGN component = 0.0</a>.</p>
 <p>HELP_J095741.11+020226.47: <a href="https://github.com/H-E-L-P/dmu_products/blob/master/dmu28/dmu28_COSMOS/SEDs_HELP_J095741.11%2B020226.47.ipynb">z=1.5, log(Ldust)= 12.12, log(Mstar)=10.95, AGN component = 0.29</a>.</p>
