@@ -11,8 +11,8 @@ There are four catalogues:
 - 'fls_intwfc_v2.1.fits'
 - 'lh_intwfc_v2.1.fits'
 
-We may limit the catalogues to HELP coverage, for instance
-`en1_intwfc_v2.1_HELP_coverage.fits` is the catalogue on ELAIS-N1 HELP coverage.
+The `XXX_HELP_coverage.fits` catalogues are limited to HELP coverage and are the
+one to use for HELP.
 
 The magnitudes are AB ones and are aperture corrected. The aperture closest to
 2 arc-seconds is aperture 4 (1.7 arc-seconds).

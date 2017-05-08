@@ -34,3 +34,12 @@ We did add three columns at the beginning of the catalog
 
 The table contains aperture corrected fluxes from the SWIRE Data release
 documented in Surace+ (2005) and Surace+ (in prep) with no cut applied.
+
+# Boötes and xFLS catalogues
+
+On Boötes and xFLS there are catalogues extracted by the Data Fusion team and
+described as:
+
+    Bootes-xFLS Spitzer Imaging: IRAC-1234 - Vaccari/Marchetti/Gonzalez-Solares
+    (priv comm) MIPS-24 - Shupe/Vaccari (priv comm) MIPS-Ge - Seymour/Tugwell
+    (priv comm)
