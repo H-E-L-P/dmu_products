@@ -6,3 +6,9 @@ Initial version of the notebook for master-catalogue creation.
 
 Updated notebook and new one with analysis to make choices for aperture
 correction of the SpARCS data.
+
+## 2017-05-10: IRAC1 and IRAC2 flux selection
+
+Both SERVS and SWIRE provide IRAC1 and IRAC2 fluxes. We use only one value,
+preferably SERVS except when its flux is over 2000 μJy (SERVS tends to
+underestimate large fluxes).
