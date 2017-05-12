@@ -1,0 +1,22 @@
+Survey: UKIDSS Ultra-Deep Survey
+
+Telescope: UK Infrared Telescope (UKIRT)
+
+Instrument: Wide Field Infrared Camera (WFCAM)
+
+Filters: J, H, K
+
+P.I.: Omar Almaini
+
+Reference: 2007ASPC..379..163A
+
+Publication date: June 2016 (DR11)
+
+URL: http://www.nottingham.ac.uk/astronomy/UDS/
+
+Acknowledgement: The UKIDSS project is defined in Lawrence et al (2007). Further
+  details on the UDS can be found in Almaini et al. (in prep). UKIDSS uses the
+  UKIRT Wide Field Camera (WFCAM; Casali et al, 2007). The photometric system
+  is described in Hewett et al (2006), and the calibration is described in
+  Hodgkin et al. (2009). The pipeline processing and science archive are
+  described in Irwin et al (in prep) and Hambly et al (2008).
