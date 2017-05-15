@@ -1,0 +1,34 @@
+Survey: Red Cluster Sequence Lensing Survey (RCSLenS)
+
+Telescope: Canada-France-Hawaii Telescope (CFHT)
+
+Instrument: MegaPrime/MegaCam
+
+Filters: g, r, i, y, z
+
+P.I.: Hendrik Hildebrandt
+
+Reference: 2016MNRAS.463..635H
+
+URL: http://www.rcslens.org/
+
+Acknowledgement: We use data from the Red Cluster Sequence Lensing Survey
+  (Hildebrandt et al. 2016), hereafter referred to as RCSLenS which is based on
+  the Red Sequence Cluster Survey 2 (Gilbank et al. 2011). The RCSLenS team
+  combined weak lensing data processing with THELI (Erben et al. 2012), shear
+  measurement with lensfit (Miller et al. 2012), and photometric redshift
+  measurement with PSF-matched photometry (Hildebrandt et al. 2012). A full
+  systematic error analysis of the shear measurements in combination with the
+  photometric redshifts is presented in Hildebrandt et al. (2016), with
+  additional error analyses of the photometric redshift measurements presented
+  in Choi et al.  (2016).
+  .
+  This work is based on observations obtained with MegaPrime/MegaCam, a joint
+  project of CFHT and CEA/DAPNIA, at the Canada-France-Hawaii Telescope (CFHT)
+  which is operated by the National Research Council (NRC) of Canada, the
+  Institut National des Sciences de l'Univers of the Centre National de la
+  Recherche Scientifique (CNRS) of France, and the University of Hawaii. This
+  research used the facilities of the Canadian Astronomy Data Centre operated by
+  the National Research Council of Canada with the support of the Canadian Space
+  Agency.  RCSLenS data processing was made possible thanks to significant
+  computing support from the NSERC Research Tools and Instruments grant program.
