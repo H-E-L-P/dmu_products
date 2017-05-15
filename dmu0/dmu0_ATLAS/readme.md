@@ -52,7 +52,7 @@ SELECT * FROM ATLASDR3.atlasSource
 WHERE (priOrSec<=0 OR priOrSec=frameSetID) AND
 ra BETWEEN 53 AND 55.5 AND dec BETWEEN -30.50 AND -25.92
 
-# HATLAS-SGP (not queried)
+# HATLAS-SGP (queried by people at the Royal Observatory of Edinburgh)
 SELECT * FROM ATLASDR3.atlasSource
 WHERE (priOrSec<=0 OR priOrSec=frameSetID) AND
 (ra >= 333.5 OR ra <= 28.2) AND dec BETWEEN -37.1 AND -26.0
@@ -63,6 +63,3 @@ only the sources on HELP coverage.
 
 The description of the columns is available
 [there](http://osa.roe.ac.uk/ATLASDR3/ATLASDR3_TABLE_atlasSourceSchema).
-
-    Note: for now we have only the CDFS-SWIRE data as we experience
-    difficulties querying HATLAS-SGP.
