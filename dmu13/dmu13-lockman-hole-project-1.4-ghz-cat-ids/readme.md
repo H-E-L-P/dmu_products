@@ -6,7 +6,7 @@ the paper.
 
 The Lockman Hole Project is aimed at improving the extensive multi-band coverage available in the Lockman Hole region, through novel deep, wide-area, multi-frequency (60, 150, 350 MHz and 1.4 GHz) radio surveys. This multi-frequency, multi-band information will be exploited to get a comprehensive view of star formation and AGN activities  in  the  high  redshift  Universe  from  a  radio  perspective. 1.4GHz observations are obtained with the Westerbork Synthesis Radio Telescope(WSRT). This is he largest microJy surveys available so far, covering an area of 6.6 sq deg, down to a rms noise of 11Jy/b. This catalogue contains(6000+ sources with flux densities >55Jy).
 
-dmu13-lockman-hole-1.4-ghz-cat.fits is availble on dropbox.
+This is available as: dmu13-lockman-hole-1.4-ghz-cat.fits
 
 ## Catalogue columns.
 
