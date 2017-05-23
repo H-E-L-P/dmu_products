@@ -6,6 +6,11 @@ Instrument: Dedicated instrument
 
 Filters: J, H, Ks
 
+Fields: AKARI-NEP, AKARI-SEP, Bootes, CDFS-SWIRE, COSMOS, EGS, ELAIS-N1,
+  ELAIS-N2, ELAIS-S1, GAMA-09, GAMA-12, GAMA-15, HATLAS-NGP, HATLAS-SGP, HDF-N,
+  Herschel-Stripe-82, Lockman-SWIRE, SA13, SPIRE-NEP, SSDF, XMM-13hr, XMM-LSS,
+  xFLS
+
 P.I.: M.F. Skrutskie
 
 Reference: 2006AJ....131.1163S

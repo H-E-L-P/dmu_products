@@ -7,6 +7,8 @@ Instrument: Wide Field Camera 3 (WFC3), Advanced Camera for Surveys (ACS)
 Filters: ACS_F435W, ACS_F606W, ACS_F775W, ACS_F814W, ACS_F850LP, WFC3_F098M,
   WFC3_F105W, WFC3_F125W, WFC3_F140W, WFC3_F160W
 
+Fields: CDFS-SWIRE
+
 P.I.: S. Faber, H. Ferguson
 
 Reference: 2011ApJS..197...35G

@@ -6,6 +6,8 @@ Instrument: MegaCam
 
 Filters: u, g, r, i, z
 
+Fields: EGS, GAMA-09, XMM-LSS
+
 Reference: 2012MNRAS.427..146H, 2013MNRAS.433.2545E
 
 URL: http://www.cfhtlens.org/

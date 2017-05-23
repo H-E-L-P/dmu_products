@@ -6,6 +6,8 @@ Instrument: IRAC
 
 Filters: IRAC1, IRAC2
 
+Fields: Herschel-Stripe-82
+
 Reference: 2016ApJS..225....1T
 
 URL: http://irsa.ipac.caltech.edu/data/SPITZER/SpIES/

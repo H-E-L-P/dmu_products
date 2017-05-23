@@ -6,4 +6,6 @@ Instrument: IRAC
 
 Filters: IRAC1, IRAC2, IRAC3, IRAC4
 
+Fields: XMM-LSS
+
 URL: http://irsa.ipac.caltech.edu/data/SPITZER/SpUDS/

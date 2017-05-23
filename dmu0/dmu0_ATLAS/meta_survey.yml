@@ -6,6 +6,8 @@ Instrument: OmegaCAM
 
 Filters: u, g, r, i, z
 
+  Fields: CDFS-SWIRE, HATLAS-SGP
+
 P.I.: T. Shanks
 
 Reference: 2015MNRAS.451.4238S

@@ -1,0 +1,21 @@
+Survey: UKIDSS Deep eXtra-Galactic (DXS)
+
+Telescope: United Kingdom Infrared Telescope (UKIRT)
+
+Instrument: WFCAM
+
+Filters: J, H, K
+
+Fields: ELAIS-N1, Lockman-SWIRE, XMM-LSS
+
+P.I.: A. M. Swinbank
+
+Reference: 2013ASSP...37..299S
+
+URL: http://www.ukidss.org/surveys/dxs/dxs.html
+
+Acknowledgement: The UKIDSS project is defined in Lawrence et al (2007). UKIDSS
+  uses the UKIRT Wide Field Camera (WFCAM; Casali et al, 2007). The photometric
+  system is described in Hewett et al (2006), and the calibration is described
+  in Hodgkin et al. (2009). The pipeline processing and science archive are
+  described in Irwin et al (2009, in prep) and Hambly et al (2008).
