@@ -1,0 +1,8 @@
+1 - The Australia Telescope Large Area Survey (Mao et al. 2012)
+2 - Sacchi et al (2009)
+4 - Feruglio et al. (2008)
+8 - PRIMUS
+16 - 2dF
+32 - 6dF
+64 - IRASpscz
+128 - PRIMUS
