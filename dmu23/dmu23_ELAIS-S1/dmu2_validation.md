@@ -6,3 +6,4 @@
 - I added a `specz_id` column with a position base identifier like we have in
   the specZ table on the VO server.
 - The update catalogue is `ELAIS-S1-specz-v2_hedam.fits`.
+- In the servey codes, PRIMUS corresponds to 2 codes.
