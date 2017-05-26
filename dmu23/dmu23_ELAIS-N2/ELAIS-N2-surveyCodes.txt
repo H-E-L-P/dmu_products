@@ -1,0 +1,9 @@
+1 - SDSS
+2 - Berta et al. (2007)
+4 - Swinbank et al. (2005)
+8 - UZC catalogue	
+16 - IRASpsz
+32 - Rowan-Robinson et al. (2013)/Perez-Fournon et al. (2004)
+64 - Rowan-Robinson et al. (2013)/Serjeant et al. (2004)
+128 - 2MRS
+
