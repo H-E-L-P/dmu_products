@@ -1,0 +1,49 @@
+from herschelhelp_internal import starmask
+
+
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_AKARI-NEP.fits',
+                         'dmu4_starmasks/starmask-GAIA_AKARI-NEP.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_AKARI-SEP.fits',
+                         'dmu4_starmasks/starmask-GAIA_AKARI-SEP.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_Bootes.fits',
+                         'dmu4_starmasks/starmask-Bootes.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_CDFS-SWIRE.fits',
+                         'dmu4_starmasks/starmask-CDFS-SWIRE.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_COSMOS.fits',
+                         'dmu4_starmasks/starmask-COSMOS.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_EGS.fits',
+                         'dmu4_starmasks/starmask-EGS.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_ELAIS-N1.fits',
+                         'dmu4_starmasks/starmask-ELAIS-N1.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_ELAIS-N2.fits',
+                         'dmu4_starmasks/starmask-ELAIS-N2.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_ELAIS-S1.fits',
+                         'dmu4_starmasks/starmask-ELAIS-S1.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_GAMA-09.fits',
+                         'dmu4_starmasks/starmask-GAMA-09.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_GAMA-12.fits',
+                         'dmu4_starmasks/starmask-GAMA-12.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_GAMA-15.fits',
+                         'dmu4_starmasks/starmask-GAMA-15.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_HDF-N.fits',
+                         'dmu4_starmasks/starmask-HDF-N.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_Herschel-Stripe-82.fits',
+                         'dmu4_starmasks/starmask-Herschel-Stripe-82.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_Lockman-SWIRE.fits',
+                         'dmu4_starmasks/starmask-Lockman-SWIRE.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_NGP.fits',
+                         'dmu4_starmasks/starmask-NGP.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_SA13.fits',
+                         'dmu4_starmasks/starmask-SA13.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_SGP.fits',
+                         'dmu4_starmasks/starmask-SGP.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_SPIRE-NEP.fits',
+                         'dmu4_starmasks/starmask-SPIRE-NEP.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_SSDF.fits',
+                         'dmu4_starmasks/starmask-SSDF.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_xFLS.fits',
+                         'dmu4_starmasks/starmask-xFLS.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/GAIA_XMM-13hr.fits',
+                         'dmu4_starmasks/starmask-XMM-13hr.reg')
+starmask.create_starmask('../dmu0/dmu0_GAIA/data/AIA_XMM-LSS.fits',
+                         'dmu4_starmasks/starmask-XMM-LSS.reg')
