@@ -1,4 +1,4 @@
-Survey: zBootes: z-band Observations of the NOAO Deep Wide-Field Survey Bootes
+Survey: zBootes - z-band Observations of the NOAO Deep Wide-Field Survey Bootes
   Field
 
 Telescope: Steward 2.3m Bok
@@ -6,6 +6,8 @@ Telescope: Steward 2.3m Bok
 Instrument: 90Prime imager
 
 Filters: z
+
+Fields: Bootes
 
 Reference: 2007ApJS..169...21C
 

@@ -6,6 +6,8 @@ Instrument: IRAC
 
 Filters: IRAC1 (3.6µm), IRAC2 (4.5µm), IRAC3 (5.8µm), IRAC4 (8.0µm)
 
+Fields: Bootes
+
 P.I.: Daniel Stern, JPL/Caltech
 
 Reference: Ashby et al., 2009 (2009ApJ...701..428A)

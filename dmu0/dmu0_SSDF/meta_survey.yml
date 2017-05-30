@@ -6,6 +6,8 @@ Instrument: IRAC
 
 Filters: IRAC1 (3.6µm), IRAC2 (4.5µm)
 
+Fields: SSDF
+
 Reference: Ashby et al., 2013 (2013ApJS..209...22A)
 
 URL: http://irsa.ipac.caltech.edu/data/SPITZER/SSDF/

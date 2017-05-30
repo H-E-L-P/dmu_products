@@ -6,6 +6,8 @@ Instrument: MegaPrime/MegaCam
 
 Filters: g, r, i, y, z
 
+Fields: ELAIS-N1, Lockman-SWIRE, ELAIS-N2, Herschel-Stripe-82
+
 P.I.: Hendrik Hildebrandt
 
 Reference: 2016MNRAS.463..635H

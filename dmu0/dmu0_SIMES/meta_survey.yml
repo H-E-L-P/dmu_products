@@ -6,6 +6,8 @@ Instrument: IRAC, MIPS, SPIRE
 
 Filters: IRAC1, IRAC2, MIPS24, MIPS70, SPIRE250, SPIRE350, SPIRE500
 
+Fields: AKARI-SEP
+
 P.I.: I. Baronchelli
 
 Reference: 2016ApJS..223....1B

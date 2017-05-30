@@ -1,0 +1,12 @@
+Survey: DataFusion-Spitzer catalogues
+
+Telescope: Spitzer
+
+Instrument: IRAC, MIPS
+
+Filters: IRAC1, IRAC2, IRAC3, IRAC4, MIPS1, MIPS2, MIPS3
+
+Fields: Bootes, CDFS-SWIRE, ELAIS-N1, ELAIS-S1, Lockman-SWIRE, XMM-LSS
+
+P.I.: M. Vaccari
+
