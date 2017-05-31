@@ -27,7 +27,14 @@ coverage and downloaded them.
 We merged all the catalogues used the `filterAndTag.sh` script to keep only the
 sources actually on HELP coverage and add the field information.  The we kept
 only the sources with `brick_primary` set to true and made one catalogue per
-field.
+field. The `full_catalogues` directory contains the catalogue not filtered.
 
 The columns of the catalogues are described (on this
 page)[http://legacysurvey.org/dr3/catalogs/].
+
+## Note
+
+Some bricks on HATLAS-NGP had slightly different column names and a different
+column order.  In the `full_catalogues` directory, we kept
+`DECaLS-full_HATLAS-NGP-a.fits.gz` and `DECaLS-full_HATLAS-NGP-b.fits.gz`
+separated.
