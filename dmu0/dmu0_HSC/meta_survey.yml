@@ -1,0 +1,53 @@
+Survey: Hyper Suprime-Cam Subaru Strategic Program
+
+Telescope: Subaru
+
+Instrument: Hyper Suprime-Cam
+
+Filters: g, r, i, z, y, N921, N816
+
+Fields: COSMOS, EGS, ELAIS-N1, GAMA-09, GAMA-12, GAMA-15, Herschel-Stripe-82,
+  XMM-LSS
+
+P.I.: Satoshi Miyazaki (NAOJ), Ikuru Iwata (NAOJ)
+
+Reference: Aihara et al. 2017ab
+
+Publication date: 28 February 2017 - Public Data Release 1 (PDR1)
+
+URL: http://hsc.mtk.nao.ac.jp/ssp/
+
+Acknowledgement: The Hyper Suprime-Cam (HSC) collaboration includes the
+  astronomical communities of Japan and Taiwan, and Princeton University. The
+  HSC instrumentation and software were developed by the National Astronomical
+  Observatory of Japan (NAOJ), the Kavli Institute for the Physics and
+  Mathematics of the Universe (Kavli IPMU), the University of Tokyo, the High
+  Energy Accelerator Research Organization (KEK), the Academia Sinica Institute
+  for Astronomy and Astrophysics in Taiwan (ASIAA), and Princeton University.
+  Funding was contributed by the FIRST program from Japanese Cabinet Office, the
+  Ministry of Education, Culture, Sports, Science and Technology (MEXT), the
+  Japan Society for the Promotion of Science (JSPS), Japan Science and
+  Technology Agency (JST), the Toray Science Foundation, NAOJ, Kavli IPMU, KEK,
+  ASIAA, and Princeton University.
+
+  This paper makes use of software developed for the Large Synoptic Survey
+  Telescope. We thank the LSST Project for making their code available as free
+  software at  http://dm.lsst.org
+
+  The Pan-STARRS1 Surveys (PS1) have been made possible through contributions of
+  the Institute for Astronomy, the University of Hawaii, the Pan-STARRS Project
+  Office, the Max-Planck Society and its participating institutes, the Max
+  Planck Institute for Astronomy, Heidelberg and the Max Planck Institute for
+  Extraterrestrial Physics, Garching, The Johns Hopkins University, Durham
+  University, the University of Edinburgh, Queen’s University Belfast, the
+  Harvard-Smithsonian Center for Astrophysics, the Las Cumbres Observatory
+  Global Telescope Network Incorporated, the National Central University of
+  Taiwan, the Space Telescope Science Institute, the National Aeronautics and
+  Space Administration under Grant No. NNX08AR22G issued through the Planetary
+  Science Division of the NASA Science Mission Directorate, the National Science
+  Foundation under Grant No. AST-1238877, the University of Maryland, and Eotvos
+  Lorand University (ELTE) and the Los Alamos National Laboratory.
+
+  Based [in part] on data collected at the Subaru Telescope and retrieved from
+  the HSC data archive system, which is operated by Subaru Telescope and
+  Astronomy Data Center at National Astronomical Observatory of Japan.
