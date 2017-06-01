@@ -20,6 +20,7 @@ The source of the spectroscopic redshift, as the source of the redshift can be m
 ; Rowan-Robinson et al. (2013), WIYN/Keck/Gemini (Smith)	- 16
 ; Rowan-Robinson et al. (2013), NED Source*			- 32
 ; UZC catalogue							- 64
+; Lacy et al. (2013)						- 128
 
 See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
 
