@@ -1,0 +1,11 @@
+1 - SDSS
+2 - UZC
+4 - Papovich - Hectospec
+8 - Marleau
+16 - Lacy et al. (2007)
+32 - Lacy et al. (2013)
+64 - Yan et al. (2007)
+128 - Sajina et al. (2008)
+256 - Yan and Choi Keck (see Choi 2006/11), courtesy of Sajina catalogue in M. Vaccari catalogue
+512 - NED sources in M. Vaccari catalogue
+
