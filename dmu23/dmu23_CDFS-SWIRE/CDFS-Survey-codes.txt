@@ -20,3 +20,4 @@ PRIMUS 							- 262144
 2MRS							- 524288
 IRASpsz							- 1048576
 ACES (Cooper et al. 2012)				- 2097152
+Lacy et al. (2013)                                      - 4194304
