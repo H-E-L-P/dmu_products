@@ -12,3 +12,6 @@ File received from Matt: `XMM-LSS-specz-v2.6.csv`.
 Update to version v2.6 catalogue. Add readme.
 Modified catalogue ingested in HeDaM: `XMM-LSS-specz-v2.6_hedam.csv`.
 
+## 2017-06-01: Update
+
+See report.
