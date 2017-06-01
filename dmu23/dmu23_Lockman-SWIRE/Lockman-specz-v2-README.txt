@@ -21,6 +21,7 @@ The source of the spectroscopic redshift, as the source of the redshift can be m
 ; 2MRS								- 32
 ; IRASpscz							- 64
 ; UZC								- 128
+; Lacy et al. (2013)                                            - 256
 
 See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
 
