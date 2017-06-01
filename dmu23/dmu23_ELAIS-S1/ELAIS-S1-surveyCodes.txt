@@ -5,4 +5,4 @@
 16 - 2dF
 32 - 6dF
 64 - IRASpscz
-128 - PRIMUS
+128 - Lacy et al. (2013)
