@@ -29,8 +29,8 @@ sources actually on HELP coverage and add the field information.  The we kept
 only the sources with `brick_primary` set to true and made one catalogue per
 field. The `full_catalogues` directory contains the catalogue not filtered.
 
-The columns of the catalogues are described (on this
-page)[http://legacysurvey.org/dr3/catalogs/].
+The columns of the catalogues are described [on this
+page](http://legacysurvey.org/dr3/catalogs/).
 
 ## Note
 
