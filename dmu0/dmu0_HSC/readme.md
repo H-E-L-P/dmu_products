@@ -238,3 +238,7 @@ names:
 | wide12h-wide-hsc-ssp-pdr1-forced-afterburner-20170526-plus.fits.gz  | HSC-PDR1_wide_GAMA-12.fits            |
 | xmm-lss-deep-hsc-ssp-pdr1-forced-afterburner-20170526-plus.fits.gz  | HSC-PDR1_deep_XMM-LSS.fits            |
 | xmm-lss-wide-hsc-ssp-pdr1-forced-afterburner-20170526-plus.fits.gz  | HSC-PDR1_wide_XMM-LSS.fits            |
+
+Some columns are associated to a column with the same name with *_isnull*
+added. For float columns, we've set their content to NaN when the value of the
+isnull column is true and we removed the isnull column.
