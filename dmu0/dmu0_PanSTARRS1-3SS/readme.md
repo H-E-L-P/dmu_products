@@ -27,26 +27,26 @@ there](https://confluence.stsci.edu/display/PANSTARRS/PS1+StackObjectThin+table+
 |      Field       |Coverage (%)|
 |------------------|-----------:|
 |            COSMOS|    100.0   |
-|           GAMA-15|      0.0   |
+|           GAMA-15|    100.0   |
 |           XMM-LSS|    100.0   |
 |            Bootes|    100.0   |
 |        CDFS-SWIRE|     98.4   |
 |          ELAIS-N1|     99.1   |
-|           GAMA-12|    100.0   |
-|           GAMA-09|    100.0   |
+|           GAMA-12|     99.9   |
+|           GAMA-09|     99.9   |
 |     Lockman-SWIRE|     95.7   |
-|               EGS|     96.4   |
+|               EGS|     96.3   |
 |          ELAIS-S1|      0.0   |
 |         AKARI-NEP|    100.0   |
-|          ELAIS-N2|     99.8   |
+|          ELAIS-N2|     99.7   |
 |              xFLS|    100.0   |
-|Herschel-Stripe-82|     99.6   |
+|Herschel-Stripe-82|     99.2   |
 |               NGP|    100.0   |
-|               SGP|      0.0   |
+|               SGP|     26.7   |
 |         AKARI-SEP|      0.0   |
 |         SPIRE-NEP|    100.0   |
 |              SSDF|      0.0   |
-|             HDF-N|    100.0   |
+|             HDF-N|     99.9   |
 |              SA13|      0.0   |
 |          XMM-13hr|      0.0   |
-|           __ALL__|     61.5   |
+|           __ALL__|     72.5   |

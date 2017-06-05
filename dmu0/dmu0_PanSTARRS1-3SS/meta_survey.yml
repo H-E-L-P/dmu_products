@@ -8,8 +8,8 @@ Instrument: Gigapixel Camera 1 (GPC1)
 Filters: g, r, i, z, y
 
 Fields: AKARI-NEP, Bootes, CDFS-SWIRE, COSMOS, EGS, ELAIS-N1, ELAIS-N2, GAMA-09,
-  GAMA-12, HDF-N, Herschel-Stripe-82, Lockman-SWIRE, HATLAS-NGP, SPIRE-NEP,
-  XMM-LSS, xFLS
+  GAMA-12, GAMA-15, HDF-N, Herschel-Stripe-82, Lockman-SWIRE, HATLAS-NGP, SGP,
+  SPIRE-NEP, XMM-LSS, xFLS
 
 Reference: arXiv:1612.05560
 
