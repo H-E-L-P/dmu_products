@@ -12,3 +12,8 @@ correction of the SpARCS data.
 Both SERVS and SWIRE provide IRAC1 and IRAC2 fluxes. We use only one value,
 preferably SERVS except when its flux is over 2000 μJy (SERVS tends to
 underestimate large fluxes).
+
+## 2017-06-06: New pristine catalogues and notebook split
+
+HSC-PSS and PanSTARRS-3SS were added.  The monolithic notebook was split and
+temporary files are saved in `data_tmp`.

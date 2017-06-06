@@ -1,4 +1,5 @@
 data/
+data_tmp/
 *~
 .ipynb_checkpoints
 dmu4/starmasks
