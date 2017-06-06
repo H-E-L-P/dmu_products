@@ -31,5 +31,5 @@ pristine catalogues into the master list.
 
 ## Diagnostics
 
-The [3_Checks and diagnostics.ipynb](3_Checks and diagnostics.ipynb) notebook
-presents some checks and diagnostic plots on the final master list.  @<BS>
+The [3_Checks_and_diagnostics.ipynb](3_Checks_and_diagnostics.ipynb) notebook
+presents some checks and diagnostic plots on the final master list.
