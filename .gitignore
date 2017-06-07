@@ -1,6 +1,5 @@
 data/
 data_tmp/
-notebook_output/
 *~
 .ipynb_checkpoints
 dmu4/starmasks
