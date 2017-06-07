@@ -11,3 +11,5 @@ These catalogues should be used in place of the catalogues in `dmu0_UKIDSS-DXS`.
 The descriptions of the columns of the DXS table in the UKIDSS database is
 available there: http://horus.roe.ac.uk/wsa/www/WSA_TABLE_dxsSourceSchema.html.
 
+*Note that there are H-band columns but no H-band data is available for DXS and
+these columns are empty.*
