@@ -3,8 +3,9 @@ Starmasks
 
 This product contains the starmasks for the HELP fields
 
-The script in this folder will produce a separate ds9 region file for each field named
-using the following convention:
+There is a folder per field containing holes (regions where sources are not detected due
+to saturation caused by bright stars) and star masks (regions where bright stars cause
+large numbers of artefacts) They are presented in both ds9 region format and MOC format.
 
-dmu4_starmasks/starmask_CDFS-SWIRE.reg
+e.g. dmu4_sm_ELAIS-N1/holes_ELAIS-N1.reg
 
