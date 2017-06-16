@@ -1,14 +1,14 @@
 ##2017-06-16
-- Will updated the three validation_report.ipynb, one for each SPIRE band:
+- Will updated the two validation_report.ipynb, one for each PACS band:
 --Added flux comparison with COSMOS2015 SPIRE data.
 --Added background value histograms
 --Generated the P-value histogram
---Plotted high flux objects (there were none), high background and high P-value objects onto the SPIRE maps
+--Plotted high flux objects, high background and high P-value objects onto the SPIRE maps
 
 ## 2017-02-02 Initial submission
 - Pete submitted the DMU product.
 - The data was downloaded from Pete's link and saved as
-  `dmu26_XID+SPIRE_COSMOS_20161129.fits` in the data folder.
+  `dmu26_XID+PACS_COSMOS_20170303.fits` in the data folder.
 
 ## 2017-02-03 DMU2 validation
 - See report.
