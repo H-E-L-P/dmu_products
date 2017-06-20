@@ -10,7 +10,6 @@ this readme and is easier to read from within Jupyter.*
 | VIKING     | VISTA/VIRCAM                |                                            | dmu0_VISTA-VIKING           |
 | VHS        | VISTA/VIRCAM                |                                            | dmu0_VISTA-VHS              |
 | VICS82     | VISTA+CFHT/VIRCAM+WIRCA     |   J,K                                      | dmu0_VICS82                 |
-| UKIDSS DXS | UKIRT/WFCAM                 |   J,K                                      | dmu0_UKIDSS-DXS, dmu0_UKIDSS-DXS_DR10plus |
 | UKIDSS LAS | UKIRT/WFCAM                 |   Y,J,H,K                                  | dmu0_UKIDSS-LAS             | 
 | PS1 3PSS   | Pan-STARRS1/Pan-STARRS1     |   grizy                                    | dmu0_PanSTARRS1-3SS         |
 | SHELA      | Spitzer/IRAC                |   IRAC12                                   | dmu0_SHELA                  |
@@ -27,11 +26,10 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.2_VIKING.ipynb](1.2_VIKING.ipynb)
 - [1.3_VHS.ipynb](1.3_VHS.ipynb) 
 - [1.4_VICS82.ipynb](1.4_VICS82.ipynb)
-- [1.5_UKIDSS-DXS.ipynb](1.5_UKIDSS-DXS.ipynb) 
-- [1.6_UKIDSS-LAS.ipynb](1.6_UKIDSS-LAS.ipynb) 
-- [1.7_PanSTARRS-3SS.ipynb](1.7_PanSTARRS-3SS.ipynb) 
-- [1.8_SHELA.ipynb](1.8_SHELA.ipynb)
-- [1.9_SpIES.ipynb](1.9_SpIES.ipynb)
+- [1.5_UKIDSS-LAS.ipynb](1.6_UKIDSS-LAS.ipynb) 
+- [1.6_PanSTARRS-3SS.ipynb](1.7_PanSTARRS-3SS.ipynb) 
+- [1.7_SHELA.ipynb](1.8_SHELA.ipynb)
+- [1.8_SpIES.ipynb](1.9_SpIES.ipynb)
 
 ## Catalogue merging
 
