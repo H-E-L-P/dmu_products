@@ -23,13 +23,13 @@ the selection of columns, the conversion of some magnitudes or fluxes when
 needed, the removal of duplicated sources, the correction of astrometry using
 Gaia as reference, and the flagging of possible Gaia objects.
 
-- [1.1_HSC.ipynb](1.1_HSC.ipynb) 
+- [1.1_HSC-SSP.ipynb](1.1_HSC-SSP.ipynb) 
 - [1.2_VIKING.ipynb](1.2_VIKING.ipynb)
 - [1.3_VHS.ipynb](1.3_VHS.ipynb) 
 - [1.4_VICS82.ipynb](1.4_VICS82.ipynb)
-- [1.5_DXS.ipynb](1.5_DXS.ipynb) 
-- [1.6_LAS.ipynb](1.6_SERVS.ipynb) 
-- [1.7_Pan-STARRS.ipynb](1.7_Pan-STARRS.ipynb) 
+- [1.5_UKIDSS-DXS.ipynb](1.5_UKIDSS-DXS.ipynb) 
+- [1.6_UKIDSS-LAS.ipynb](1.6_UKIDSS-LAS.ipynb) 
+- [1.7_PanSTARRS-3SS.ipynb](1.7_PanSTARRS-3SS.ipynb) 
 - [1.8_SHELA.ipynb](1.8_SHELA.ipynb)
 - [1.9_SpIES.ipynb](1.9_SpIES.ipynb)
 
