@@ -242,3 +242,7 @@ names:
 Some columns are associated to a column with the same name with *_isnull*
 added. For float columns, we've set their content to NaN when the value of the
 isnull column is true and we removed the isnull column.
+
+On 2017-06-20, the data was updated with a new extraction containing more
+aperture fluxes (for aperture correction). The SQL queries above were not
+updated.
