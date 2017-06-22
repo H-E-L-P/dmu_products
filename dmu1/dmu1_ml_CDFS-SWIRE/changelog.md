@@ -1,3 +1,6 @@
+## 2017-06-22: New multinotebook format
+Started migrating to new format with individual notebooks for each pristine catalogue.
+
 ## 2017-04-05: Initial notebook
 
 Initial version of the notebook for master-catalogue creation started at HELP Bootcamp, in 
