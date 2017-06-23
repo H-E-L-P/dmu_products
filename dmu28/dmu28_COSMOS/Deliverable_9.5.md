@@ -9,23 +9,23 @@ In order to	define the best modules to be used	within HELP we have run CIGALE wi
 * <strong>Star Formation History</strong>: delayed star formation history with an additional, almost flat, burst,
   * $\tau$ e-folding time of the main stellar population model [Myr] :  3000
   *	e-folding time of the late starburst population model [Myr] : 10 000
-  * mass fract. of the late burst population : 0.0, 0.005, 0.01, 0.05, 0.1, 0.15,  0.20, 0.3
-  * age [Myr] :   1000, 2000, 3000, 3500, 4000, 5000, 6500, 10000
-  * age of the late burst [Myr] :  10.0, 30.0, 50., 70.
+  * mass fract. of the late burst population : 0.001, 0.010, 0.030, 0.100, 0.200, 0.300
+  * age [Myr] :   11000, 2500,  4500, 6000, 7500, 10000
+  * age of the late burst [Myr] :   10.0,  30, 60 , 90, 1  
 * <strong>Single Stellar Population</strong>: Bruzual & Charlot 2003
   * initial mass function : Chabrier 2003
   * metallicities (solar metallicity) : 0.2 
   * age of the separation between the young and the old star population [Myr] : 10 
 * <strong>Dust attenuation</strong>: Charlot & Fall 2000,
-  * V-band attenuation in the birth clouds (Av BC) : 0.12,0.25, 0.5, 0.8,1.2,1.7,2.3,2.8,3.3, 3.8, 4.0   
+  * V-band attenuation in the birth clouds (Av BC) : 0.3, 0.8,1.2,1.7,2.3,2.8,3.3, 3.8
   * power law slope of the attenuation in the birth clouds : -0.7 
-  * BC to ISM factor : 0.44 
+  * BC to ISM factor :  0.3, 0.5, 0.8, 1.0 
   * power law slope of the attenuation in the ISM : -0.7 
 * <strong>Dust emission</strong>:  Drain & Li 2007
   * mass fraction of PAH :  0.47, 1.12, 2.5, 3.9
   * minimum radiation field (umin) : 5.0, 10.0, 25.0
-  * power law slope dU/dM  ($U^{\alpha}$) : 2.0, 2.8
-  * fraction illuminated from Umin to Umax ($\gamma$) : 0.005, 0.02, 0.05
+  * power law slope dU/dM  ($U^{\alpha}$) : 2.0
+  * fraction illuminated from Umin to Umax ($\gamma$) : 0.02
 * <strong>AGN emission</strong>: Fritz 2006 (for our analysis we used templates built based on average parameters from previous studies: Hatziminaoglou+09,Buat+15,Ciesla+15,Malek+2017)
   * ratio of the maximum to minimum radius of the dust torus : 60 
   * optical depth at 9.7 microns : 1.0, 6.0
@@ -33,7 +33,7 @@ In order to	define the best modules to be used	within HELP we have run CIGALE wi
   * angular dust distribution in the torus : 0.0 
   * angular opening angle of the torus [deg] : 100.0 
   * angle between equatorial axis and the line of sight [deg] : 0.001  
-  * fractional contribution of AGN: 0.0, 0.1, 0.15, 0.25, 0.4
+  * fractional contribution of AGN: 0.0, 0.1, 0.25
   
 We decided to run CIGALE with AGN module for all galaxies as it is almost impossible to find a sufficient criterion which includes errors. We build our conclusion based on the tests with four AGN selection criteria: Stern+2005,Donley+2012, Lacy+2007, and Lacy+2013. We have found that usage of different criteria results in large discrepancy between sample of AGN candidates. 
 
