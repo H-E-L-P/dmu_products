@@ -1,13 +1,12 @@
 # Master list on Herschel Stripe 82/HELMS
 
-This folder contains the Jupyter notebooks used to create HELP mater list on
-Herschel Stripe 82. *Note: The [0_main.ipynb](0_main.ipynb) contains the same thing than
-this readme and is easier to read from within Jupyter.*
+This folder contains the Jupyter notebooks used to create the HELP masterlist on
+Herschel Stripe 82. 
 
 | Survey     | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
 |------------|-----------------------------|:------------------------------------------:|-----------------------------|
 | HSC SSC PDR1 | Subaru/HSC                |                                            | dmu0_HSC                    |
-| VHS        | VISTA/VIRCAM                |                                            | dmu0_VISTA-VHS              |
+| VHS        | VISTA/VIRCAM                |   Y,J,H,K                                  | dmu0_VISTA-VHS              |
 | VICS82     | VISTA+CFHT/VIRCAM+WIRCA     |   J,K                                      | dmu0_VICS82                 |
 | UKIDSS LAS | UKIRT/WFCAM                 |   Y,J,H,K                                  | dmu0_UKIDSS-LAS             | 
 | PS1 3PSS   | Pan-STARRS1/Pan-STARRS1     |   grizy                                    | dmu0_PanSTARRS1-3SS         |
