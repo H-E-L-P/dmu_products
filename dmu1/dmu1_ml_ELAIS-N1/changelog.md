@@ -17,3 +17,9 @@ underestimate large fluxes).
 
 HSC-PSS and PanSTARRS-3SS were added.  The monolithic notebook was split and
 temporary files are saved in `data_tmp`.
+
+## 2017-06-27: Update notebook
+
+- Add aperture correction to HSC.
+- Compute stellarity for HSC.
+- Add HEALPix index to master list.
