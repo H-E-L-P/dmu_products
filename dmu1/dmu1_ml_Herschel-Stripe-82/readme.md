@@ -5,11 +5,13 @@ Herschel Stripe 82.
 
 | Survey     | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
 |------------|-----------------------------|:------------------------------------------:|-----------------------------|
-| HSC SSC PDR1 | Subaru/HSC                |                                            | dmu0_HSC                    |
+| HSC SSC PDR1 | Subaru/HSC                |   grizy,N921,N816                          | dmu0_HSC                    |
+| PS1 3PSS   | Pan-STARRS1/Pan-STARRS1     |   grizy                                    | dmu0_PanSTARRS1-3SS         |
+| DECaLS     | Blanco Telescope/Dark Energy Camera| ugrizY                              | dmu0_DECaLS                 |
+| RCSLenS    | CFHT/MegaPrime/MegaCam      |   grizy                                    | dmu0_RCSLenS                |
 | VHS        | VISTA/VIRCAM                |   Y,J,H,K                                  | dmu0_VISTA-VHS              |
 | VICS82     | VISTA+CFHT/VIRCAM+WIRCA     |   J,K                                      | dmu0_VICS82                 |
 | UKIDSS LAS | UKIRT/WFCAM                 |   Y,J,H,K                                  | dmu0_UKIDSS-LAS             | 
-| PS1 3PSS   | Pan-STARRS1/Pan-STARRS1     |   grizy                                    | dmu0_PanSTARRS1-3SS         |
 | SHELA      | Spitzer/IRAC                |   IRAC12                                   | dmu0_SHELA                  |
 | SpIES      | Spitzer/IRAC                |   IRAC12                                   | dmu0_SpIES                  |
 
@@ -27,6 +29,9 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.5_PanSTARRS-3SS.ipynb](1.5_PanSTARRS-3SS.ipynb) 
 - [1.6_SHELA.ipynb](1.6_SHELA.ipynb)
 - [1.7_SpIES.ipynb](1.7_SpIES.ipynb)
+- [1.8_DECaLS.ipynb](1.8_DECaLS.ipynb)
+- [1.9_RCSLenS.ipynb](1.9_RCSLenS.ipynb)
+
 
 ## Catalogue merging
 
