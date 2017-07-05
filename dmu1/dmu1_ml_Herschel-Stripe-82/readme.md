@@ -9,6 +9,7 @@ Herschel Stripe 82.
 | PS1 3PSS   | Pan-STARRS1/Pan-STARRS1     |   grizy                                    | dmu0_PanSTARRS1-3SS         |
 | DECaLS     | Blanco Telescope/Dark Energy Camera| ugrizY                              | dmu0_DECaLS                 |
 | RCSLenS    | CFHT/MegaPrime/MegaCam      |   grizy                                    | dmu0_RCSLenS                |
+| SDSS S82   | SDSS                        |   ugriz                                    | dmu0_SDSS-S82               |
 | VHS        | VISTA/VIRCAM                |   Y,J,H,K                                  | dmu0_VISTA-VHS              |
 | VICS82     | VISTA+CFHT/VIRCAM+WIRCA     |   J,K                                      | dmu0_VICS82                 |
 | UKIDSS LAS | UKIRT/WFCAM                 |   Y,J,H,K                                  | dmu0_UKIDSS-LAS             | 
@@ -31,6 +32,7 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.7_SpIES.ipynb](1.7_SpIES.ipynb)
 - [1.8_DECaLS.ipynb](1.8_DECaLS.ipynb)
 - [1.9_RCSLenS.ipynb](1.9_RCSLenS.ipynb)
+- [1.10_SDSS-S82.ipynb](1.10_SDSS-S82.ipynb)
 
 
 ## Catalogue merging
