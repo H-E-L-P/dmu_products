@@ -5,12 +5,12 @@ CDFS-SWIRE. The following table summarises the list of used catalogues.
 
 | Survey    | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
 |-----------|-----------------------------|:------------------------------------------:|-----------------------------|
-| VIDEO     | VISTA/VIRCAM                | **u**,**g**,**r**,**i**,**z** |dmu0_VISTA-VIDEO, dmu0_VISTA-VIDEO-private|
+| VIDEO     | VISTA/VIRCAM                | YJHK                                    |dmu0_VISTA-VIDEO, dmu0_VISTA-VIDEO-private|
 | SWIRE     | Spitzer / IRAC              | **IRAC1**,**IRAC2**,**IRAC3**,**IRAC4**    | dmu0_DataFusion-Spitzer     |
 | SERVS     | Spitzer / IRAC              | **IRAC1**, **IRAC2**                       | dmu0_DataFusion-Spitzer     |
 | PS1 3PSS  | Pan-STARRS1 / Pan-STARRS1   | grizy                                      | dmu0_PanSTARRS1-3SS         |
 | ATLAS	    | VST/OmegaCAM                | ugriz                                      | dmu0_ATLAS                  |
-| VHS	    | VISTA/VIRCAM                | YJHK                                       | dmu0_VISTA-VHS              |
+| VHS	    | VISTA/VIRCAM                | YJHKs                                      | dmu0_VISTA-VHS              |
 | PS1 MDS	| Pan-STARRS1 / Pan-STARRS1   |	grizy                                      | ...awaiting release         |
 | VOICE	    | VST/OmegaCAM	              | u,g,r,i                                    | ...waiting for Mattia       |
 | CTIO/CDFS | CTIO/MOSAIC	              | g,r,i                                      | ...waiting for Mattia       |
