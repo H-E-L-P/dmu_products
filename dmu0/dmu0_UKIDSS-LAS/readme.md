@@ -11,6 +11,15 @@ with scripts provided by Eduardo.
 The columns are described at
 http://horus.roe.ac.uk/wsa/www/WSA_TABLE_lasSourceSchema.html#lasSource
 
+The magnitudes are “*Vega like*”.  The AB offsets are given by Hewett *et al.*
+(2016):
+
+| Band | AB offset |
+|------|-----------|
+| J    | 0.938     |
+| H    | 1.379     |
+| K    | 1.900     |
+
 # Privacy concerns
 
 Eduardo's script is querying the `lasSource` table in the `UKIDSSDR10PLUS`

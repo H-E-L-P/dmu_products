@@ -13,3 +13,12 @@ available there: http://horus.roe.ac.uk/wsa/www/WSA_TABLE_dxsSourceSchema.html.
 
 *Note that there are H-band columns but no H-band data is available for DXS and
 these columns are empty.*
+
+The magnitudes are “*Vega like*”.  The AB offsets are given by Hewett *et al.*
+(2016):
+
+| Band | AB offset |
+|------|-----------|
+| J    | 0.938     |
+| H    | 1.379     |
+| K    | 1.900     |
