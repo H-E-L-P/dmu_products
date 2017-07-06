@@ -9,12 +9,14 @@ CDFS-SWIRE. The following table summarises the list of used catalogues.
 | SWIRE     | Spitzer / IRAC              | **IRAC1**,**IRAC2**,**IRAC3**,**IRAC4**    | dmu0_DataFusion-Spitzer     |
 | SERVS     | Spitzer / IRAC              | **IRAC1**, **IRAC2**                       | dmu0_DataFusion-Spitzer     |
 | PS1 3PSS  | Pan-STARRS1 / Pan-STARRS1   | grizy                                      | dmu0_PanSTARRS1-3SS         |
+| ATLAS	    | VST/OmegaCAM                | ugriz                                      | dmu0_ATLAS                  |
+| VHS	    | VISTA/VIRCAM                | YJHK                                       | dmu0_VISTA-VHS              |
 | PS1 MDS	| Pan-STARRS1 / Pan-STARRS1   |	grizy                                      | ...awaiting release         |
 | VOICE	    | VST/OmegaCAM	              | u,g,r,i                                    | ...waiting for Mattia       |
 | CTIO/CDFS | CTIO/MOSAIC	              | g,r,i                                      | ...waiting for Mattia       |
 | DES-DEEP	| Blanco/DECAM	              | grizy                                      | ...awaiting release         |
 | Fireworks	| HST	ACS	                  | U38, B435, B, V, V606, R, i775, I, z850, J, H, **Ks**, IRAC1, IRAC2, IRAC3, IRAC4   | dmu0_Fireworks              |
-| COMBO-17	| ESO/MPG 	/WFI	          |                                            | dmu0_COMBO-17               |
+| COMBO-17	| ESO/MPG 	/WFI	          | U, B, V, R, I, 420nm, 465nm, 486nm, 518nm, 571nm, 605nm, 646nm, 696nm, 752nm, 816nm, 856nm, 914nm                                           | dmu0_COMBO-17               |
 | GOODS	    | Spitzer		              |                                            | ...unknown status           |
 
 
@@ -33,6 +35,8 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.4_PanSTARRS.ipynb](1.4_PanSTARRS.ipynb) for PanSTARRS data
 - [1.5_Fireworks.ipynb](1.5_Fireworks.ipynb) for Fireworks data
 - [1.6_COMBO.ipynb](1.6_COMBO.ipynb) for COMBO data
+- [1.7_ATLAS.ipynb](1.7_ATLAS.ipynb) for ATLAS data
+- [1.8_VISTA-VHS.ipynb](1.8_VISTA-VHS.ipynb) for VHS data
 
 ## Catalogue merging
 
