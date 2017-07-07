@@ -11,9 +11,9 @@ CDFS-SWIRE. The following table summarises the list of used catalogues.
 | PS1 3PSS  | Pan-STARRS1 / Pan-STARRS1   | grizy                                      | dmu0_PanSTARRS1-3SS         |
 | ATLAS	    | VST/OmegaCAM                | ugriz                                      | dmu0_ATLAS                  |
 | VHS	    | VISTA/VIRCAM                | YJHKs                                      | dmu0_VISTA-VHS              |
-| COMBO-17	| ESO/MPG 	/WFI	          | U, B, V, R, I, 420nm, 465nm, 486nm, 518nm, 571nm, 605nm, 646nm, 696nm, 752nm, 816nm, 856nm, 914nm                                           | dmu0_COMBO-17               |
-
-| Fireworks	| HST	ACS	                  | U38, B435, B, V, V606, R, i775, I, z850, J, H, **Ks**, IRAC1, IRAC2, IRAC3, IRAC4   | dmu0_Fireworks  (No longer included in masterlist)            |
+| COMBO-17	| ESO/MPG 	/WFI	          | U, B, V, R, I, 420nm, 465nm, 486nm, 518nm, 571nm, 605nm, 646nm, 696nm, 752nm, 816nm, 856nm, 914nm       | dmu0_COMBO-17       |
+|-----------|-----------------------------|--------------------------------------------|-----------------------------|
+| Fireworks	| HST	ACS	                  | U38, B435, B, V, V606, R, i775, I, z850, J, H, **Ks**, IRAC1, IRAC2, IRAC3, IRAC4   | dmu0_Fireworks  (No longer included in masterlist)       |
 | GOODS	    | Spitzer		              |                                            | ...unknown status           |
 | PS1 MDS	| Pan-STARRS1 / Pan-STARRS1   |	grizy                                      | ...awaiting release         |
 | VOICE	    | VST/OmegaCAM	              | u,g,r,i                                    | ...waiting for Mattia       |
