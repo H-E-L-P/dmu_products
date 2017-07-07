@@ -23,3 +23,9 @@ temporary files are saved in `data_tmp`.
 - Add aperture correction to HSC.
 - Compute stellarity for HSC.
 - Add HEALPix index to master list.
+
+## 2017-07-07: UKIDSS magnitudes are Vega
+
+- UKIDSS and 2MASS manitudes are Vega ones.
+- Convert UKIDSS magnitudes to AB in the master list.
+- Take this into accound in the diagnostic plots.

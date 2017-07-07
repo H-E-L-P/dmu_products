@@ -11631,8 +11631,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11645,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11760,7 +11764,29 @@ div#notebook {
 <li>The magnitude for each band in apertude 3 (2 arcsec).</li>
 <li>The kron magnitude to be used as total magnitude (no “auto” magnitude is provided).</li>
 </ul>
-<p>The catalogue has been cross-matched with 2MASS catalogue to check that the magnitudes are AB ones.</p>
+<p>The magnitudes are “<em>Vega like</em>”.  The AB offsets are given by Hewett <em>et al.</em>
+(2016):</p>
+<table>
+<thead><tr>
+<th>Band</th>
+<th>AB offset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J</td>
+<td>0.938</td>
+</tr>
+<tr>
+<td>H</td>
+<td>1.379</td>
+</tr>
+<tr>
+<td>K</td>
+<td>1.900</td>
+</tr>
+</tbody>
+</table>
 <p>A query to the UKIDSS database with 242.9+55.071 position returns a list of images taken between 2007 and 2009. Let's take 2008 for the epoch.</p>
 
 </div>
@@ -11786,7 +11812,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-39887e6 (Tue Jun 27 15:21:21 2017 +0100)
+8d104c3 (Wed Jul 5 19:47:18 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11855,7 +11881,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">imported_columns</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span>
@@ -11905,7 +11931,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Adding flux and band-flag columns</span>
@@ -11916,7 +11942,15 @@ div#notebook {
         
         <span class="c1"># DXS uses a huge negative number for missing values</span>
         <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>        
+        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+        
+        <span class="c1"># Vega to AB correction</span>
+        <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;j&#39;</span><span class="p">):</span>
+            <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">+=</span> <span class="mf">0.938</span>
+        <span class="k">elif</span> <span class="n">col</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">):</span>
+            <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">+=</span> <span class="mf">1.900</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> column has wrong band...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">))</span>
 
         <span class="n">flux</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">mag_to_flux</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]))</span>
         
@@ -11954,7 +11988,7 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
@@ -11968,23 +12002,23 @@ Check the NumPy 1.11 release notes for more information.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table140291579520952-675966" class="table-striped table-bordered table-condensed">
+<table id="table140669454913608-803154" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>dxs_id</th><th>dxs_ra</th><th>dxs_dec</th><th>m_ap_ukidss_j</th><th>merr_ap_ukidss_j</th><th>m_ukidss_j</th><th>merr_ukidss_j</th><th>m_ap_ukidss_k</th><th>merr_ap_ukidss_k</th><th>m_ukidss_k</th><th>merr_ukidss_k</th><th>dxs_stellarity</th><th>f_ap_ukidss_j</th><th>ferr_ap_ukidss_j</th><th>f_ukidss_j</th><th>ferr_ukidss_j</th><th>flag_ukidss_j</th><th>f_ap_ukidss_k</th><th>ferr_ap_ukidss_k</th><th>f_ukidss_k</th><th>ferr_ukidss_k</th><th>flag_ukidss_k</th></tr></thead>
 <thead><tr><th></th><th></th><th>degrees</th><th>degrees</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
-<tr><td>0</td><td>446677390759</td><td>242.838870994</td><td>56.4868458056</td><td>21.7675</td><td>0.136046</td><td>21.7958</td><td>0.163164</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.05</td><td>7.12882</td><td>0.893264</td><td>6.94541</td><td>1.04375</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>1</td><td>446677390773</td><td>242.970853505</td><td>56.4879782693</td><td>18.4836</td><td>0.0127723</td><td>18.6248</td><td>0.0135608</td><td>18.1352</td><td>0.0199437</td><td>18.0826</td><td>0.0337254</td><td>0.993865</td><td>146.739</td><td>1.7262</td><td>128.848</td><td>1.60931</td><td>False</td><td>202.267</td><td>3.7154</td><td>212.296</td><td>6.59437</td><td>False</td></tr>
-<tr><td>2</td><td>446677390774</td><td>242.977347852</td><td>56.4884122094</td><td>20.4622</td><td>0.0470147</td><td>20.4355</td><td>0.0510341</td><td>18.8277</td><td>0.0345851</td><td>18.7041</td><td>0.0488704</td><td>0.00306749</td><td>23.7196</td><td>1.02711</td><td>24.3112</td><td>1.14273</td><td>False</td><td>106.882</td><td>3.40463</td><td>119.77</td><td>5.39102</td><td>False</td></tr>
-<tr><td>3</td><td>446677390775</td><td>243.037125114</td><td>56.488405672</td><td>18.6356</td><td>0.0139261</td><td>18.7394</td><td>0.0153815</td><td>17.8516</td><td>0.0161079</td><td>17.7516</td><td>0.0290177</td><td>0.993865</td><td>127.57</td><td>1.63627</td><td>115.941</td><td>1.64252</td><td>False</td><td>262.634</td><td>3.89642</td><td>287.985</td><td>7.69679</td><td>False</td></tr>
-<tr><td>4</td><td>446677390776</td><td>242.957527353</td><td>56.4885667371</td><td>21.5678</td><td>0.114633</td><td>21.9032</td><td>0.295541</td><td>19.9621</td><td>0.0911785</td><td>19.6646</td><td>0.150724</td><td>0.486486</td><td>8.5677</td><td>0.904584</td><td>6.29091</td><td>1.7124</td><td>False</td><td>37.5983</td><td>3.15745</td><td>49.451</td><td>6.86487</td><td>False</td></tr>
-<tr><td>5</td><td>446677390777</td><td>242.908962456</td><td>56.4885419471</td><td>21.143</td><td>0.0805846</td><td>21.347</td><td>0.0841347</td><td>19.4266</td><td>0.0575097</td><td>19.5967</td><td>0.0577902</td><td>0.486486</td><td>12.6703</td><td>0.940405</td><td>10.5002</td><td>0.813669</td><td>False</td><td>61.5686</td><td>3.26119</td><td>52.64</td><td>2.80185</td><td>False</td></tr>
-<tr><td>6</td><td>446677390778</td><td>242.812703145</td><td>56.4880902835</td><td>20.2971</td><td>0.0416058</td><td>20.2586</td><td>0.0424853</td><td>18.2194</td><td>0.0213113</td><td>18.1036</td><td>0.0240502</td><td>0.00306749</td><td>27.6171</td><td>1.0583</td><td>28.6117</td><td>1.11959</td><td>False</td><td>187.179</td><td>3.67402</td><td>208.236</td><td>4.61265</td><td>False</td></tr>
-<tr><td>7</td><td>446677390779</td><td>243.033567366</td><td>56.4888738571</td><td>21.1873</td><td>0.0833997</td><td>20.6956</td><td>0.0888386</td><td>19.7022</td><td>0.0725171</td><td>19.3659</td><td>0.101236</td><td>0.00306749</td><td>12.1641</td><td>0.934373</td><td>19.1313</td><td>1.56539</td><td>False</td><td>47.768</td><td>3.19046</td><td>65.1096</td><td>6.07093</td><td>False</td></tr>
-<tr><td>8</td><td>446677390780</td><td>243.038661985</td><td>56.488773294</td><td>20.1739</td><td>0.0379071</td><td>19.9875</td><td>0.0501981</td><td>18.2197</td><td>0.0212588</td><td>17.9836</td><td>0.0292497</td><td>0.00306749</td><td>30.9342</td><td>1.08003</td><td>36.7297</td><td>1.69817</td><td>False</td><td>187.117</td><td>3.66376</td><td>232.578</td><td>6.26565</td><td>False</td></tr>
-<tr><td>9</td><td>446677390781</td><td>242.838465115</td><td>56.4885370135</td><td>21.8282</td><td>0.143322</td><td>22.0132</td><td>0.159187</td><td>19.449</td><td>0.0584562</td><td>19.612</td><td>0.0594584</td><td>0.133333</td><td>6.74117</td><td>0.889863</td><td>5.68512</td><td>0.83353</td><td>False</td><td>60.3107</td><td>3.24714</td><td>51.904</td><td>2.84243</td><td>False</td></tr>
+<tr><td>0</td><td>446677390759</td><td>242.838870994</td><td>56.4868458056</td><td>22.7055</td><td>0.136046</td><td>22.7338</td><td>0.163164</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.05</td><td>3.00481</td><td>0.376513</td><td>2.92751</td><td>0.439945</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>1</td><td>446677390773</td><td>242.970853505</td><td>56.4879782693</td><td>19.4216</td><td>0.0127723</td><td>19.5628</td><td>0.0135608</td><td>20.0352</td><td>0.0199437</td><td>19.9826</td><td>0.0337254</td><td>0.993865</td><td>61.8509</td><td>0.727597</td><td>54.3098</td><td>0.678327</td><td>False</td><td>35.1499</td><td>0.645663</td><td>36.8928</td><td>1.14597</td><td>False</td></tr>
+<tr><td>2</td><td>446677390774</td><td>242.977347852</td><td>56.4884122094</td><td>21.4002</td><td>0.0470147</td><td>21.3735</td><td>0.0510341</td><td>20.7277</td><td>0.0345851</td><td>20.6041</td><td>0.0488704</td><td>0.00306749</td><td>9.99789</td><td>0.43293</td><td>10.2472</td><td>0.481662</td><td>False</td><td>18.574</td><td>0.591657</td><td>20.8137</td><td>0.936853</td><td>False</td></tr>
+<tr><td>3</td><td>446677390775</td><td>243.037125114</td><td>56.488405672</td><td>19.5736</td><td>0.0139261</td><td>19.6774</td><td>0.0153815</td><td>19.7516</td><td>0.0161079</td><td>19.6516</td><td>0.0290177</td><td>0.993865</td><td>53.7712</td><td>0.689693</td><td>48.8694</td><td>0.692328</td><td>False</td><td>45.6406</td><td>0.67712</td><td>50.0461</td><td>1.33755</td><td>False</td></tr>
+<tr><td>4</td><td>446677390776</td><td>242.957527353</td><td>56.4885667371</td><td>22.5058</td><td>0.114633</td><td>22.8412</td><td>0.295541</td><td>21.8621</td><td>0.0911785</td><td>21.5646</td><td>0.150724</td><td>0.486486</td><td>3.61131</td><td>0.381284</td><td>2.65164</td><td>0.721783</td><td>False</td><td>6.53385</td><td>0.548702</td><td>8.5936</td><td>1.19298</td><td>False</td></tr>
+<tr><td>5</td><td>446677390777</td><td>242.908962456</td><td>56.4885419471</td><td>22.081</td><td>0.0805846</td><td>22.285</td><td>0.0841347</td><td>21.3266</td><td>0.0575097</td><td>21.4967</td><td>0.0577902</td><td>0.486486</td><td>5.34057</td><td>0.396383</td><td>4.42585</td><td>0.342963</td><td>False</td><td>10.6994</td><td>0.56673</td><td>9.14779</td><td>0.486907</td><td>False</td></tr>
+<tr><td>6</td><td>446677390778</td><td>242.812703145</td><td>56.4880902835</td><td>21.2351</td><td>0.0416058</td><td>21.1966</td><td>0.0424853</td><td>20.1194</td><td>0.0213113</td><td>20.0036</td><td>0.0240502</td><td>0.00306749</td><td>11.6407</td><td>0.446074</td><td>12.0599</td><td>0.47191</td><td>False</td><td>32.5279</td><td>0.638472</td><td>36.1873</td><td>0.801587</td><td>False</td></tr>
+<tr><td>7</td><td>446677390779</td><td>243.033567366</td><td>56.4888738571</td><td>22.1253</td><td>0.0833997</td><td>21.6336</td><td>0.0888386</td><td>21.6022</td><td>0.0725171</td><td>21.2659</td><td>0.101236</td><td>0.00306749</td><td>5.1272</td><td>0.39384</td><td>8.0639</td><td>0.659815</td><td>False</td><td>8.30113</td><td>0.554438</td><td>11.3148</td><td>1.05501</td><td>False</td></tr>
+<tr><td>8</td><td>446677390780</td><td>243.038661985</td><td>56.488773294</td><td>21.1119</td><td>0.0379071</td><td>20.9255</td><td>0.0501981</td><td>20.1197</td><td>0.0212588</td><td>19.8836</td><td>0.0292497</td><td>0.00306749</td><td>13.0388</td><td>0.455235</td><td>15.4817</td><td>0.715783</td><td>False</td><td>32.5172</td><td>0.636689</td><td>40.4174</td><td>1.08885</td><td>False</td></tr>
+<tr><td>9</td><td>446677390781</td><td>242.838465115</td><td>56.4885370135</td><td>22.7662</td><td>0.143322</td><td>22.9512</td><td>0.159187</td><td>21.349</td><td>0.0584562</td><td>21.512</td><td>0.0594584</td><td>0.133333</td><td>2.84142</td><td>0.375079</td><td>2.39629</td><td>0.351335</td><td>False</td><td>10.4808</td><td>0.564288</td><td>9.01989</td><td>0.493958</td><td>False</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -11995,8 +12029,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140291579520952-675966').dataTable()");
-    $('#table140291579520952-675966').dataTable({
+    console.log("$('#table140669454913608-803154').dataTable()");
+    $('#table140669454913608-803154').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12034,7 +12068,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SORT_COLS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;merr_ap_ukidss_j&#39;</span><span class="p">,</span> <span class="s1">&#39;merr_ap_ukidss_k&#39;</span><span class="p">]</span>
@@ -12093,7 +12127,7 @@ The cleaned catalogue has 876 sources flagged as having been cleaned
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gaia</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_GAIA/data/GAIA_ELAIS-N1.fits&quot;</span><span class="p">)</span>
@@ -12107,7 +12141,7 @@ The cleaned catalogue has 876 sources flagged as having been cleaned
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_astcor_diag_plot</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">],</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">],</span> 
@@ -16381,7 +16415,7 @@ AABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">delta_ra</span><span class="p">,</span> <span class="n">delta_dec</span> <span class="o">=</span>  <span class="n">astrometric_correction</span><span class="p">(</span>
@@ -16415,7 +16449,7 @@ Dec correction: -0.033934257209011776 arcsec
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">]</span> <span class="o">+=</span>  <span class="n">delta_ra</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
@@ -16429,7 +16463,7 @@ Dec correction: -0.033934257209011776 arcsec
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_astcor_diag_plot</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">],</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">],</span> 
@@ -20638,7 +20672,7 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -20653,7 +20687,7 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">GAIA_FLAG_NAME</span> <span class="o">=</span> <span class="s2">&quot;dxs_flag_gaia&quot;</span>
@@ -20701,7 +20735,7 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/UKIDSS-DXS.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">),</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
