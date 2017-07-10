@@ -8,11 +8,10 @@ Lockman-SWIRE. The following table summarises the list of used catalogues.
 | INT        | WFC	                       | ugriz	                                    | dmu0_INTWFC	              | 
 | RCSLenS    | CFHT/MegaPrime/MegaCam      | grizy                                      | dmu0_RCSLenS                |
 | PS1 3PSS   | Pan-STARRS1	               | grizy                                      | dmu0_PanSTARRS1-3SS	      | 
-| SpARCS     | CFHT/MegaCam	               | 	                                        | dmu0_SpARCS	              | 
+| SpARCS     | CFHT/MegaCam	               | ugrz                                       | dmu0_SpARCS	              | 
 | UKIDSS DXS | UKIRT/WFCAM                 | J,K                                        | dmu0_UKIDSS-DXS	          | 
 | SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
 | SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
-|------------|-----------------------------|--------------------------------------------|-----------------------------|
 | PS1 MDS    | Pan-STARRS1	               | grizy	                                    | Awaiting release...         |
 [Relevant surveys]
 
