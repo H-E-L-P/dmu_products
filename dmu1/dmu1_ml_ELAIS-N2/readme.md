@@ -10,7 +10,7 @@ ELAIS N2.
 | PS1 3PSS   | Pan-STARRS1	               | grizy                                      | dmu0_PanSTARRS1-3SS	      | 
 | SpARCS     | CFHT/MegaCam	               | ugrzy                                      | dmu0_SpARCS	              | 
 | SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
-| SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
+
 
 
 ## Pristine catalogue preparations
@@ -25,7 +25,7 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.3_PanSTARRS-3SS.ipynb](1.3_PanSTARRS-3SS.ipynb)
 - [1.4_SpARCS.ipynb](1.4_SpARCS.ipynb) 
 - [1.5_SWIRE.ipynb](1.5_SWIRE.ipynb) 
-- [1.6_SERVS.ipynb](1.6_SERVS.ipynb)
+
 
 
 
