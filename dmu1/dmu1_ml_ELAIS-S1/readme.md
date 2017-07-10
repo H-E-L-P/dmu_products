@@ -1,17 +1,41 @@
-# Master-catalogue on ELAIS-S1
 
-This is the master-catalogue on the ELAIS-N1 field. The processing is described
-in the `master_catalogue_ELAIS-N1.ipynb` Jupyter notebook.
+# Master list on ELAIS S1
 
-## Data
+This folder contains the Jupyter notebooks used to create the HELP masterlist on
+ELAIS S1. 
 
-- VIDEO survey from VISTA telescope on ELAIS-S1: The catalogue comes from 
-  `dmu0_VISTA_VIDEO'.
+| Survey     | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
+|------------|-----------------------------|:------------------------------------------:|-----------------------------|
+| VIDEO      | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_INTWFC	              | 
+| VHS        | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_INTWFC	              |
+| ESIS       | ESO 2.2/WFI                 | BVR                                        | dmu0_ESIS-VOICE             |
+| SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
+| SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
+| DES-DEEP   | Blanco/DECAM	               | grizy                                      | ... awaiting release	      |        | 
 
-- Spitzer datafusion SERVS and SWIRE: the Spitzer catalogues produced by the
-  datafusion team are available in the HELP virtual observatory server. They are
-  described there: http://vohedamtest.lam.fr/browse/df_spitzer/q.
 
-- VOICE survey from VST telescope on ELAIS-S1: We do not currently have this data!!!
+
+## Pristine catalogue preparations
+
+For each pristine catalogue, a specific notebook is used for its preparation:
+the selection of columns, the conversion of some magnitudes or fluxes when
+needed, the removal of duplicated sources, the correction of astrometry using
+Gaia as reference, and the flagging of possible Gaia objects.
+
+- [1.1_VIDEO.ipynb](1.1_VIDEO.ipynb) 
+- [1.1_VHS.ipynb](1.1_VHS.ipynb) 
+- [1.2_ESIS.ipynb](1.2_ESIS.ipynb) 
+- [1.3_SWIRE.ipynb](1.3_SWIRE.ipynb) 
+- [1.4_SERVS.ipynb](1.4_SERVS.ipynb)
+
+## Catalogue merging
+
+The [2_Merging.ipynb](2_Merging.ipynb) notebook performs the merging of the
+pristine catalogues into the master list.
+
+## Diagnostics
+
+The [3_Checks_and_diagnostics.ipynb](3_Checks_and_diagnostics.ipynb) notebook
+presents some checks and diagnostic plots on the final master list.
 
 
