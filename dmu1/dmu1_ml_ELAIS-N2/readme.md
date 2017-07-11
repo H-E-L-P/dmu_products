@@ -1,24 +1,40 @@
-# Master-catalogue on ELAIS-N2
+# Master list on ELAIS N2
 
-This is the master-catalogue on the ELAIS-N2 field. The processing is described
-in the `master_catalogue_ELAIS-N2.ipynb` Jupyter notebook.
+This folder contains the Jupyter notebooks used to create the HELP masterlist on
+ELAIS N2. 
 
-## Data
-
-Data available on a field by field basis is available here:
-https://docs.google.com/spreadsheets/d/1b1rs4bn2ND4mrWA99yWfkt7ImyFJ9s7OX8fambYKnLE/edit#gid=0
-
-- Isaac Newton Telescope / Wide Field Camera (INT/WFC) catalogue: the catalogue
-  comes from `dmu0_INTWFC`.
-
-- UKIRT Infrared Deep Sky Survey / Deep Extragalactic Survey (UKIDSS/DXS) on
-  ELAIS-N2: The catalogue comes from `dmu0_ELAIS-N1_DXS`.
-
-- Spitzer datafusion SERVS and SWIRE: the Spitzer catalogues produced by the
-  datafusion team are available in the HELP virtual observatory server. They are
-  described there: http://vohedamtest.lam.fr/browse/df_spitzer/q.
-
-- SpARCS (Spitzer Adaptation of the Red-sequence Cluster Survey) catalogue. This
-  catalogue comes from `dmu0_SpARCS`.
+| Survey     | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
+|------------|-----------------------------|:------------------------------------------:|-----------------------------|
+| INT        | WFC	                       | ugriz	                                    | dmu0_INTWFC	              | 
+| RCSLenS    | CFHT/MegaPrime/MegaCam      | grizy                                      | dmu0_RCSLenS                |
+| PS1 3PSS   | Pan-STARRS1	               | grizy                                      | dmu0_PanSTARRS1-3SS	      | 
+| SpARCS     | CFHT/MegaCam	               | ugrzy                                      | dmu0_SpARCS	              | 
+| SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
 
 
+
+## Pristine catalogue preparations
+
+For each pristine catalogue, a specific notebook is used for its preparation:
+the selection of columns, the conversion of some magnitudes or fluxes when
+needed, the removal of duplicated sources, the correction of astrometry using
+Gaia as reference, and the flagging of possible Gaia objects.
+
+- [1.1_INT-WFC.ipynb](1.1_INT-WFC.ipynb) 
+- [1.2_RCSLenS.ipynb](1.2_RCSLenS.ipynb) 
+- [1.3_PanSTARRS-3SS.ipynb](1.3_PanSTARRS-3SS.ipynb)
+- [1.4_SpARCS.ipynb](1.4_SpARCS.ipynb) 
+- [1.5_SWIRE.ipynb](1.5_SWIRE.ipynb) 
+
+
+
+
+## Catalogue merging
+
+The [2_Merging.ipynb](2_Merging.ipynb) notebook performs the merging of the
+pristine catalogues into the master list.
+
+## Diagnostics
+
+The [3_Checks_and_diagnostics.ipynb](3_Checks_and_diagnostics.ipynb) notebook
+presents some checks and diagnostic plots on the final master list.
