@@ -22,11 +22,11 @@ the selection of columns, the conversion of some magnitudes or fluxes when
 needed, the removal of duplicated sources, the correction of astrometry using
 Gaia as reference, and the flagging of possible Gaia objects.
 
-- [1.1_VIDEO.ipynb](1.1_VIDEO.ipynb) 
-- [1.1_VHS.ipynb](1.1_VHS.ipynb) 
-- [1.2_ESIS.ipynb](1.2_ESIS.ipynb) 
-- [1.3_SWIRE.ipynb](1.3_SWIRE.ipynb) 
-- [1.4_SERVS.ipynb](1.4_SERVS.ipynb)
+- [1.1_VISTA-VIDEO.ipynb](1.1_VISTA-VIDEO.ipynb) 
+- [1.2_VISTA-VHS.ipynb](1.2_VISTA-VHS.ipynb) 
+- [1.3_ESIS-VOICE.ipynb](1.3_ESIS-VOICE.ipynb) 
+- [1.4_SWIRE.ipynb](1.4_SWIRE.ipynb) 
+- [1.5_SERVS.ipynb](1.5_SERVS.ipynb)
 
 ## Catalogue merging
 
