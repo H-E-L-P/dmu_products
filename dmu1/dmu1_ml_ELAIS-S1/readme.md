@@ -1,4 +1,3 @@
-
 # Master list on ELAIS S1
 
 This folder contains the Jupyter notebooks used to create the HELP masterlist on
@@ -6,8 +5,8 @@ ELAIS S1.
 
 | Survey     | Telescope / Instrument      |      Filters (detection band in bold)      | Location                    |
 |------------|-----------------------------|:------------------------------------------:|-----------------------------|
-| VIDEO      | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_INTWFC	              | 
-| VHS        | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_INTWFC	              |
+| VIDEO      | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_VISTA-VIDEO            | 
+| VHS        | VISTA/VIRCAM	               | Y,J,H,Ks	                                | dmu0_VISTA-VHS              |
 | ESIS       | ESO 2.2/WFI                 | BVR                                        | dmu0_ESIS-VOICE             |
 | SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
 | SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
