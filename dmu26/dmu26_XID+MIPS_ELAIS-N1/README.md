@@ -1,4 +1,4 @@
-### dmu26_XID+MIPS_ELAIS-N1
+# dmu26_XID+MIPS_ELAIS-N1
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -6,14 +6,21 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
+ELAIS-N1 was split into two regions, defined by the IRAC coverage. The deep region is defined by the SERVS survey,
+ the shallow region by the remaining SWIRE region.
+ 
+## SERVS
+
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
    prior object list see the Jupyter notebook [XID+MIPS_prior_SERVS.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
    
 
 ### Running on Apollo
+
 To run on Apollo, first run the notebook [XID+MIPS_prior_SERVS.ipynb](./XID+MIPS_prior_SERVS.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
  hierarchical tiles:
+ 
 ```bash
 mkdir output
 mv XID_plus_hier.sh
@@ -24,7 +31,7 @@ qsub -t 1-19 -q mps.q -jc mps.short XID_plus_hier.sh
 Then fit all 3364 tiles. Each tile requires 4 cores, 10GB memory and estimated to run for 4 hours:
 ```bash
 cd ..
-qsub -t 1-3364 -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10GB -q mps.q XID_plus_tile.sh
+qsub -t 1-3364 -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
@@ -38,18 +45,65 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
  ```bash
  ls *cat.fits | cat_files
 module load starlink/hikianalia-64bit
-stilts ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N1_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N1_SERVS_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting ELAIS-N1:
+ Details on computational cost of fitting ELAIS-N1 SERVS:
  
- SERVS:
  ```bash
  OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 ======================================================================================================================
 pdh21       9452753  27292626.579     71612.631  27412789.084       14541652.220            662.354              0.000
 ``` 
+
+## SWIRE (-SERVS)
+
+### Prior
+  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
+   prior object list see the Jupyter notebook [XID+MIPS_prior_SERVS.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
+   
+
+### Running on Apollo
+
+To run on Apollo, first run the notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+ hierarchical tiles:
+ 
+```bash
+mkdir output
+mv XID_plus_hier.sh
+cd output
+module load sge
+qsub -t 1-n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
+```
+Then fit all  tiles. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours:
+```bash
+cd ..
+qsub -t 1-ntiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
+```
+Then combine the Bayesian maps into one:
+ ```bash
+ python make_combined_map.py
+ ```
+ This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
+file, which you can then go back and fit by editing the `XIDp_run_script_mips_tile.py` file so it reads in
+ `failed_tiles.pkl` rather than `Tiles.pkl`.
+  
+ To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
+ ```bash
+ ls *cat.fits | cat_files
+module load starlink/hikianalia-64bit
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N1_SWIRE_cat.fits
+```
+#### Computation 
+ Details on computational cost of fitting ELAIS-N1 SWIRE:
+ 
+ ```bash 
+OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
+======================================================================================================================
+pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+```
+ 
  
 ### Final data products
 
