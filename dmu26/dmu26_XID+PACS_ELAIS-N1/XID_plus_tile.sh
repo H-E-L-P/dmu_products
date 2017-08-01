@@ -2,11 +2,11 @@
 #$ -S /bin/bash
 #$ -o /lustre/scratch/astro/pdh21/log/out
 #$ -e /lustre/scratch/astro/pdh21/log/err
-cd /lustre/scratch/astro/pdh21/ELAIS_N1/MIPS/
+cd /lustre/scratch/astro/pdh21/ELAIS_N1/PACS/
 echo "this is from the run script"
 
 module load use.own
 module load fir/software
 export PATH="/research/astro/fir/HELP/help_python/miniconda3/bin/":$PATH
 
-python XIDp_run_script_mips_tile.py
+python XIDp_run_script_PACS_tile.py
