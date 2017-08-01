@@ -61,4 +61,17 @@ This problem has not been encountered before and is not easily fixed and/or pred
 
 ## Plots for diagnostics and quality checking
 
-- In progress (new extensive notebook including additional statistics and diagnostics is in prep)
+![Chi2 Distributions](plots/dmu24_ELAIS-N1_chi2_distributions.png "$\Chi^{2} Distributions")
+
+![Star-Galaxy Chi2 Comparison](plots/dmu24_ELAIS-N1_chi2_galaxy_star_comparison.png "Star-Galaxy $\Chi^{2} Comparison")
+
+![Spec-z Comparison](plots/dmu24_ELAIS-N1_specz_vs_photz_pz.png "Photometric redshift vs spectroscopic redshift comparison")
+
+![Stats vs z](plots/dmu24_ELAIS-N1_stats_vs_z.png "Photometric redshift statistics as a function of spec-z")
+
+![Stats vs mag](plots/dmu24_ELAIS-N1_stats_vs_mag.png "Photometric redshift statistics as a function of optical magnitude")
+
+![PDF Accuracy Gal](plots/dmu24_ELAIS-N1_pz_accuracy_gal.png "Photometric redshift PDF accuracy for galaxy-like sources")
+
+![PDF Accuracy AGN](plots/dmu24_ELAIS-N1_pz_accuracy_agn.png "Photometric redshift PDF accuracy for identified AGN sources")
+
