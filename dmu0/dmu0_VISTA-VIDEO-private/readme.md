@@ -24,3 +24,7 @@ The video fields are fully included in HELP ones.
 
 The `ID` column is unique for each source in each field (but not cross-field).
 
+Detection is attempted in every band. The paper Jarvis et al. 2012 states:
+
+"Each tile catalogue contains objects detected in any of the Ks, H, J, Y , or Z bands, with measurements made in all the other bands based on the position in the detection image. Duplicate detections of objects are removed, by retaining only the longest wavelength detection (after matching the Ks −, H −, J−, Y − and Z−band detected catalogues with a 1 arcsecond tolerance)"
+
