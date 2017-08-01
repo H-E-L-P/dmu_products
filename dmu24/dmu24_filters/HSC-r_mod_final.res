@@ -2,10 +2,20 @@
 <!-- Produced with astropy.io.votable version 1.3.3
      http://www.astropy.org/ -->
 <VOTABLE version="1.2" xmlns="http://www.ivoa.net/xml/VOTable/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ivoa.net/xml/VOTable/v1.2">
+ <PARAM ID="ForegroundExtinction" arraysize="*" datatype="float" name="ForegroundExtinction" unit="" value="2.5739999999999998">
+  <DESCRIPTION>
+        Wavelength dependent extinction factor assuming Fitzpatrick
+   1999 MW extinction curve and a flat input spectrum.      Magnitudes
+   should be foreground corrected according to:           M_int,i =
+   M_obs,i - E(B-V)*Ai          where M_int,i and M_obs,i are the
+   intrinsic and observed magnitudes in the filter, i, and Ai is the
+   filter specific extinction value.
+  </DESCRIPTION>
+ </PARAM>
  <RESOURCE type="results">
-  <TABLE>
+  <TABLE nrows="126">
    <FIELD ID="Wavelength" datatype="float" name="Wavelength" ucd="em.wl" unit="AA" utype="spec:Data.SpectralAxis.Value"/>
-   <FIELD ID="Transmission" datatype="float" name="Transmission" ucd="phys.transmission" unit="" utype="spec:Data.FluxAxis.Value"/>
+   <FIELD ID="Transmission" datatype="float" name="Transmission" ucd="phys.transmission" utype="spec:Data.FluxAxis.Value"/>
    <PARAM ID="WavelengthUCD" arraysize="*" datatype="char" name="WavelengthUCD" ucd="meta.ucd" utype="PhotometryFilter.SpectralAxis.UCD" value="em.wl"/>
    <PARAM ID="Description" arraysize="*" datatype="char" name="Description" ucd="meta.note" utype="photdm:PhotometryFilter.description" value="filt"/>
    <PARAM ID="PhotSystem" arraysize="*" datatype="char" name="PhotSystem" utype="photdm:PhotometricSystem.description" value="HSC">
@@ -29,7 +39,7 @@
    <PARAM ID="ZeroPointType" arraysize="*" datatype="char" name="ZeroPointType" ucd="meta.code" utype="photdm:PhotCal.ZeroPoint.type" value="Pogson"/>
    <PARAM ID="AdditionalProcessing" arraysize="*" datatype="boolean" name="AdditionalProcessing" ucd="meta.note" value="T">
     <DESCRIPTION>
-      Filter convolved with HSC QE and throughput as well as Mauna Kea
+     Filter convolved with HSC QE and throughput as well as Mauna Kea
      airmass (assuming airmass=1.2)  QE information:
      http://www.naoj.org/Observing/Instruments/HSC/txt Optical
      throughput:  http://www.naoj.org/Observing/Instruments/HSC/txt/th

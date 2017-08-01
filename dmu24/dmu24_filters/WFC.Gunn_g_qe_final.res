@@ -4,11 +4,21 @@
 <VOTABLE version="1.1" xmlns="http://www.ivoa.net/xml/VOTable/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ivoa.net/xml/VOTable/v1.1">
  <PARAM ID="AdditionalProcessing" arraysize="*" datatype="boolean" name="AdditionalProcessing" ucd="meta.note" value="T">
   <DESCRIPTION>
-    Filter convolved with INT QE and INT airmass (assuming
+   Filter convolved with INT QE and INT airmass (assuming
    airmass=1.2)  QE information:
    http://www.ing.iac.es/Engineering/detectors/4280qe.htm ATM
    information:
    http://www.ing.iac.es/astronomy/observing/conditions/wlext.dat
+  </DESCRIPTION>
+ </PARAM>
+ <PARAM ID="ForegroundExtinction" arraysize="*" datatype="float" name="ForegroundExtinction" unit="" value="3.609">
+  <DESCRIPTION>
+        Wavelength dependent extinction factor assuming Fitzpatrick
+   1999 MW extinction curve and a flat input spectrum.      Magnitudes
+   should be foreground corrected according to:           M_int,i =
+   M_obs,i - E(B-V)*Ai          where M_int,i and M_obs,i are the
+   intrinsic and observed magnitudes in the filter, i, and Ai is the
+   filter specific extinction value.
   </DESCRIPTION>
  </PARAM>
  <INFO ID="QUERY_STATUS" name="QUERY_STATUS" value="OK"/>
