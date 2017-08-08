@@ -61,7 +61,7 @@ pdh21       9452753  27292626.579     71612.631  27412789.084       14541652.220
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
-   prior object list see the Jupyter notebook [XID+MIPS_prior_SERVS.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
+   prior object list see the Jupyter notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
    
 
 ### Running on Apollo
@@ -130,6 +130,7 @@ pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873
       * Rhat_MIPS_24             -  Convergence Statistic (ideally <1.2)
       * n_eff_MIPS_24            -  Number of effective samples (ideally >40)
       * Pval_res_MIPS_24               -  Local Goodness of fit measure: 0=good, 1=bad
+      * flag_mips_24         -  combined flag, 0=good, 1=bad
 
 
 Hurley, P.  et al. 2017, MNRAS 464, 885
