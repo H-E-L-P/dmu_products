@@ -90,4 +90,5 @@ Here is the list of the DMU numbers with their associated responsibility.
  29    |  Radiative transfer models
  30    |  Missing (supplementary) Sources
  31    |  Tools
+ 32    |  Merged catalogue
 
