@@ -3,6 +3,19 @@
 This folder contains the Jupyter notebooks used to create HELP mater list on
 GAMA-09. 
 
+| Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
+|--------|-------------------------|:---------------------------------:|-----------------|
+| CFHTLS        | Megacam          | u*g'r'i'z'                        | dmu0_CFHTLS     |
+| CFHTLenS      | Megacam          | ugriz                             | dmu0_CFHTLenS   |   
+| DECaLS        | DEC              | ugrizY                            | dmu0_DECaLS     |
+| HSC-SSP       | Hyper Suprime    | grizy N921                        | dmu0_HSC        | 
+| KIDS          | VLT OmegaCAM     | ugri                              | dmu0_KIDS       |  
+| PanSTARRS-3SS | GPC1             | grizy                          | dmu0_PanSTARRS-3SS |     
+| LAS           | UKIRT WFCAM      | UJHK                              | dmu0_UKIDSS-LAS |     
+| VHS           | VISTA VIRCAM     | YJHKs                             | dmu0_VISTA-VHS  |  
+| VIKING        | VISTA VIRCAM     | ZYHJKs                          | dmu0_VISTA-VIKING |
+
+
 ## Pristine catalogue preparations
 
 For each pristine catalogue, a specific notebook is used for its preparation:
