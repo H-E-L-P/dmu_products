@@ -33,3 +33,21 @@ pristine catalogues into the master list.
 
 The [3_Checks_and_diagnostics.ipynb](3_Checks_and_diagnostics.ipynb) notebook
 presents some checks and diagnostic plots on the final master list.
+
+## Used memory
+
+The following table presents an estimation of the memory that was used running
+the various notebooks, as well as of the time it took.
+
+|            Notebook            | Memory needed (GB) | Time (s) |
+|:------------------------------:|:------------------:|:--------:|
+| 1.1_INT-WFC.ipynb              |                4.5 |      103 |
+| 1.2_UKIDSS-DXS.ipynb           |                2.1 |       72 |
+| 1.3_HSC-SSP.ipynb              |               11.1 |      414 |
+| 1.4_PanSTARRS-3SS.ipynb        |                2.7 |      463 |
+| 1.5_SpARCS.ipynb               |               16.9 |      497 |
+| 1.6_SERVS.ipynb                |                0.8 |       24 |
+| 1.7_SWIRE.ipynb                |                2.2 |       47 |
+| 2_Merging.ipynb                |               43.8 |     2357 |
+| 3_Checks_and_diagnostics.ipynb |               16.6 |      461 |
+
