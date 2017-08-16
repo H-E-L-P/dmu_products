@@ -11776,7 +11776,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-56042ea (Thu Aug 3 18:51:31 2017 +0100)
+02dd669 (Tue Aug 15 19:17:47 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11805,7 +11805,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">pymoc</span> <span class="k">import</span> <span class="n">MOC</span>
 
-<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">merge_catalogues</span><span class="p">,</span> <span class="n">nb_merge_dist_plot</span>
+<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">merge_catalogues</span><span class="p">,</span> <span class="n">nb_merge_dist_plot</span><span class="p">,</span> <span class="n">specz_merge</span>
 <span class="kn">from</span> <span class="nn">herschelhelp_internal.utils</span> <span class="k">import</span> <span class="n">coords_to_hpidx</span><span class="p">,</span> <span class="n">ebv</span><span class="p">,</span> <span class="n">gen_help_id</span><span class="p">,</span> <span class="n">inMoc</span>
 </pre></div>
 
@@ -13893,7 +13893,7 @@ xCEKViIiIiIOUbASERERccj/D8uiTuUYRJbhAAAAAElFTkSuQmCC
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table139621341690624-763999" class="table-striped table-bordered table-condensed">
+<table id="table139901325079832-922825" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>wfc_id</th><th>ra</th><th>dec</th><th>wfc_stellarity</th><th>m_ap_wfc_u</th><th>merr_ap_wfc_u</th><th>m_wfc_u</th><th>merr_wfc_u</th><th>m_ap_wfc_g</th><th>merr_ap_wfc_g</th><th>m_wfc_g</th><th>merr_wfc_g</th><th>m_ap_wfc_r</th><th>merr_ap_wfc_r</th><th>m_wfc_r</th><th>merr_wfc_r</th><th>m_ap_wfc_i</th><th>merr_ap_wfc_i</th><th>m_wfc_i</th><th>merr_wfc_i</th><th>m_ap_wfc_z</th><th>merr_ap_wfc_z</th><th>m_wfc_z</th><th>merr_wfc_z</th><th>f_ap_wfc_u</th><th>ferr_ap_wfc_u</th><th>f_wfc_u</th><th>ferr_wfc_u</th><th>flag_wfc_u</th><th>f_ap_wfc_g</th><th>ferr_ap_wfc_g</th><th>f_wfc_g</th><th>ferr_wfc_g</th><th>flag_wfc_g</th><th>f_ap_wfc_r</th><th>ferr_ap_wfc_r</th><th>f_wfc_r</th><th>ferr_wfc_r</th><th>flag_wfc_r</th><th>f_ap_wfc_i</th><th>ferr_ap_wfc_i</th><th>f_wfc_i</th><th>ferr_wfc_i</th><th>flag_wfc_i</th><th>f_ap_wfc_z</th><th>ferr_ap_wfc_z</th><th>f_wfc_z</th><th>ferr_wfc_z</th><th>flag_wfc_z</th><th>wfc_flag_cleaned</th><th>wfc_flag_gaia</th><th>flag_merged</th><th>sparcs_intid</th><th>sparcs_stellarity</th><th>m_ap_megacam_u</th><th>merr_ap_megacam_u</th><th>f_ap_megacam_u</th><th>ferr_ap_megacam_u</th><th>m_megacam_u</th><th>merr_megacam_u</th><th>f_megacam_u</th><th>ferr_megacam_u</th><th>flag_megacam_u</th><th>m_ap_megacam_g</th><th>merr_ap_megacam_g</th><th>f_ap_megacam_g</th><th>ferr_ap_megacam_g</th><th>m_megacam_g</th><th>merr_megacam_g</th><th>f_megacam_g</th><th>ferr_megacam_g</th><th>flag_megacam_g</th><th>m_ap_megacam_r</th><th>merr_ap_megacam_r</th><th>f_ap_megacam_r</th><th>ferr_ap_megacam_r</th><th>m_megacam_r</th><th>merr_megacam_r</th><th>f_megacam_r</th><th>ferr_megacam_r</th><th>flag_megacam_r</th><th>m_ap_megacam_z</th><th>merr_ap_megacam_z</th><th>f_ap_megacam_z</th><th>ferr_ap_megacam_z</th><th>m_megacam_z</th><th>merr_megacam_z</th><th>f_megacam_z</th><th>ferr_megacam_z</th><th>flag_megacam_z</th><th>sparcs_flag_cleaned</th><th>sparcs_flag_gaia</th><th>hsc_id</th><th>m_ap_suprime_g</th><th>merr_ap_suprime_g</th><th>m_suprime_g</th><th>merr_suprime_g</th><th>m_ap_suprime_r</th><th>merr_ap_suprime_r</th><th>m_suprime_r</th><th>merr_suprime_r</th><th>m_ap_suprime_i</th><th>merr_ap_suprime_i</th><th>m_suprime_i</th><th>merr_suprime_i</th><th>m_ap_suprime_z</th><th>merr_ap_suprime_z</th><th>m_suprime_z</th><th>merr_suprime_z</th><th>m_ap_suprime_y</th><th>merr_ap_suprime_y</th><th>m_suprime_y</th><th>merr_suprime_y</th><th>m_ap_suprime_n921</th><th>merr_ap_suprime_n921</th><th>m_suprime_n921</th><th>merr_suprime_n921</th><th>hsc_stellarity</th><th>f_ap_suprime_g</th><th>ferr_ap_suprime_g</th><th>f_suprime_g</th><th>ferr_suprime_g</th><th>flag_suprime_g</th><th>f_ap_suprime_r</th><th>ferr_ap_suprime_r</th><th>f_suprime_r</th><th>ferr_suprime_r</th><th>flag_suprime_r</th><th>f_ap_suprime_i</th><th>ferr_ap_suprime_i</th><th>f_suprime_i</th><th>ferr_suprime_i</th><th>flag_suprime_i</th><th>f_ap_suprime_z</th><th>ferr_ap_suprime_z</th><th>f_suprime_z</th><th>ferr_suprime_z</th><th>flag_suprime_z</th><th>f_ap_suprime_y</th><th>ferr_ap_suprime_y</th><th>f_suprime_y</th><th>ferr_suprime_y</th><th>flag_suprime_y</th><th>f_ap_suprime_n921</th><th>ferr_ap_suprime_n921</th><th>f_suprime_n921</th><th>ferr_suprime_n921</th><th>flag_suprime_n921</th><th>hsc_flag_cleaned</th><th>hsc_flag_gaia</th><th>ps1_id</th><th>m_ap_gpc1_g</th><th>merr_ap_gpc1_g</th><th>m_gpc1_g</th><th>merr_gpc1_g</th><th>m_ap_gpc1_r</th><th>merr_ap_gpc1_r</th><th>m_gpc1_r</th><th>merr_gpc1_r</th><th>m_ap_gpc1_i</th><th>merr_ap_gpc1_i</th><th>m_gpc1_i</th><th>merr_gpc1_i</th><th>m_ap_gpc1_z</th><th>merr_ap_gpc1_z</th><th>m_gpc1_z</th><th>merr_gpc1_z</th><th>m_ap_gpc1_y</th><th>merr_ap_gpc1_y</th><th>m_gpc1_y</th><th>merr_gpc1_y</th><th>f_ap_gpc1_g</th><th>ferr_ap_gpc1_g</th><th>f_gpc1_g</th><th>ferr_gpc1_g</th><th>flag_gpc1_g</th><th>f_ap_gpc1_r</th><th>ferr_ap_gpc1_r</th><th>f_gpc1_r</th><th>ferr_gpc1_r</th><th>flag_gpc1_r</th><th>f_ap_gpc1_i</th><th>ferr_ap_gpc1_i</th><th>f_gpc1_i</th><th>ferr_gpc1_i</th><th>flag_gpc1_i</th><th>f_ap_gpc1_z</th><th>ferr_ap_gpc1_z</th><th>f_gpc1_z</th><th>ferr_gpc1_z</th><th>flag_gpc1_z</th><th>f_ap_gpc1_y</th><th>ferr_ap_gpc1_y</th><th>f_gpc1_y</th><th>ferr_gpc1_y</th><th>flag_gpc1_y</th><th>ps1_flag_cleaned</th><th>ps1_flag_gaia</th><th>dxs_id</th><th>m_ap_ukidss_j</th><th>merr_ap_ukidss_j</th><th>m_ukidss_j</th><th>merr_ukidss_j</th><th>m_ap_ukidss_k</th><th>merr_ap_ukidss_k</th><th>m_ukidss_k</th><th>merr_ukidss_k</th><th>dxs_stellarity</th><th>f_ap_ukidss_j</th><th>ferr_ap_ukidss_j</th><th>f_ukidss_j</th><th>ferr_ukidss_j</th><th>flag_ukidss_j</th><th>f_ap_ukidss_k</th><th>ferr_ap_ukidss_k</th><th>f_ukidss_k</th><th>ferr_ukidss_k</th><th>flag_ukidss_k</th><th>dxs_flag_cleaned</th><th>dxs_flag_gaia</th><th>servs_intid</th><th>f_ap_servs_irac_i1</th><th>ferr_ap_servs_irac_i1</th><th>f_servs_irac_i1</th><th>ferr_servs_irac_i1</th><th>servs_stellarity_irac_i1</th><th>f_ap_servs_irac_i2</th><th>ferr_ap_servs_irac_i2</th><th>f_servs_irac_i2</th><th>ferr_servs_irac_i2</th><th>servs_stellarity_irac_i2</th><th>m_ap_servs_irac_i1</th><th>merr_ap_servs_irac_i1</th><th>m_servs_irac_i1</th><th>merr_servs_irac_i1</th><th>flag_servs_irac_i1</th><th>m_ap_servs_irac_i2</th><th>merr_ap_servs_irac_i2</th><th>m_servs_irac_i2</th><th>merr_servs_irac_i2</th><th>flag_servs_irac_i2</th><th>servs_flag_cleaned</th><th>servs_flag_gaia</th><th>swire_intid</th><th>f_ap_swire_irac_i1</th><th>ferr_ap_swire_irac_i1</th><th>f_swire_irac_i1</th><th>ferr_swire_irac_i1</th><th>swire_stellarity_irac_i1</th><th>f_ap_swire_irac_i2</th><th>ferr_ap_swire_irac_i2</th><th>f_swire_irac_i2</th><th>ferr_swire_irac_i2</th><th>swire_stellarity_irac_i2</th><th>f_ap_irac_i3</th><th>ferr_ap_irac_i3</th><th>f_irac_i3</th><th>ferr_irac_i3</th><th>swire_stellarity_irac_i3</th><th>f_ap_irac_i4</th><th>ferr_ap_irac_i4</th><th>f_irac_i4</th><th>ferr_irac_i4</th><th>swire_stellarity_irac_i4</th><th>m_ap_swire_irac_i1</th><th>merr_ap_swire_irac_i1</th><th>m_swire_irac_i1</th><th>merr_swire_irac_i1</th><th>flag_swire_irac_i1</th><th>m_ap_swire_irac_i2</th><th>merr_ap_swire_irac_i2</th><th>m_swire_irac_i2</th><th>merr_swire_irac_i2</th><th>flag_swire_irac_i2</th><th>m_ap_irac_i3</th><th>merr_ap_irac_i3</th><th>m_irac_i3</th><th>merr_irac_i3</th><th>flag_irac_i3</th><th>m_ap_irac_i4</th><th>merr_ap_irac_i4</th><th>m_irac_i4</th><th>merr_irac_i4</th><th>flag_irac_i4</th><th>swire_flag_cleaned</th><th>swire_flag_gaia</th></tr></thead>
 <thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <tr><td>0</td><td>189636202384</td><td>240.664902664</td><td>55.6405269985</td><td>0.0</td><td>14.517</td><td>0.034</td><td>14.485</td><td>0.034</td><td>14.668</td><td>0.029</td><td>12.438</td><td>0.029</td><td>14.559</td><td>0.017</td><td>12.197</td><td>0.017</td><td>14.319</td><td>0.028</td><td>12.713</td><td>0.028</td><td>13.087</td><td>0.047</td><td>11.399</td><td>0.047</td><td>5665.0</td><td>177.4</td><td>5834.45</td><td>182.707</td><td>False</td><td>4929.47</td><td>131.666</td><td>38441.5</td><td>1026.77</td><td>False</td><td>5450.04</td><td>85.3345</td><td>47995.4</td><td>751.492</td><td>False</td><td>6798.29</td><td>175.321</td><td>29840.1</td><td>769.544</td><td>False</td><td>21144.6</td><td>915.321</td><td>100092.0</td><td>4332.84653723</td><td>False</td><td>False</td><td>2</td><td>True</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
@@ -13916,8 +13916,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139621341690624-763999').dataTable()");
-    $('#table139621341690624-763999').dataTable({
+    console.log("$('#table139901325079832-922825').dataTable()");
+    $('#table139901325079832-922825').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -14125,14 +14125,385 @@ require(["datatables"], function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VI---Choosing-between-multiple-values-for-the-same-filter">VI - Choosing between multiple values for the same filter<a class="anchor-link" href="#VI---Choosing-between-multiple-values-for-the-same-filter">&#182;</a></h2><p>Both SERVS and SWIRE provide IRAC1 and IRAC2 fluxes. SERVS is deeper but tends to under-estimate flux of bright sources (Mattia said over 2000 µJy) as illustrated by this comparison of SWIRE, SERVS, and Spitzer-EIP fluxes.</p>
-
+<h2 id="VI---Cross-matching-with-spec-z-catalogue">VI - Cross-matching with spec-z catalogue<a class="anchor-link" href="#VI---Cross-matching-with-spec-z-catalogue">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">specz</span> <span class="o">=</span>  <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu23/dmu23_ELAIS-N1/data/ELAIS-N1-specz-v2.1.fits&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_merge_dist_plot</span><span class="p">(</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">specz</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">specz</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">specz_merge</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">,</span> <span class="n">specz</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">1.</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">arcsec</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="VII---Choosing-between-multiple-values-for-the-same-filter">VII - Choosing between multiple values for the same filter<a class="anchor-link" href="#VII---Choosing-between-multiple-values-for-the-same-filter">&#182;</a></h2><p>Both SERVS and SWIRE provide IRAC1 and IRAC2 fluxes. SERVS is deeper but tends to under-estimate flux of bright sources (Mattia said over 2000 µJy) as illustrated by this comparison of SWIRE, SERVS, and Spitzer-EIP fluxes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seip</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_SEIP/data/SEIP_ELAIS-N1.fits&quot;</span><span class="p">)</span>
@@ -14163,7 +14534,7 @@ WARNING: UnitsWarning: &#39;image&#39; did not parse as fits unit: At col 0, Uni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -14685,7 +15056,7 @@ AAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -15137,7 +15508,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">irac_origin</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span>
@@ -15151,7 +15522,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC1 aperture flux and magnitudes</span>
@@ -15228,7 +15599,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC1 total flux and magnitudes</span>
@@ -15310,7 +15681,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC2 aperture flux and magnitudes</span>
@@ -15387,7 +15758,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC2 total flux and magnitudes</span>
@@ -15469,7 +15840,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">irac_origin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/elais-n1_irac_i_fluxes_origins</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
@@ -15485,7 +15856,7 @@ SUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VII.a-Wavelenght-domain-coverage">VII.a Wavelenght domain coverage<a class="anchor-link" href="#VII.a-Wavelenght-domain-coverage">&#182;</a></h2><p>We add a binary <code>flag_optnir_obs</code> indicating that a source was observed in a given wavelenght domain:</p>
+<h2 id="VIII.a-Wavelenght-domain-coverage">VIII.a Wavelenght domain coverage<a class="anchor-link" href="#VIII.a-Wavelenght-domain-coverage">&#182;</a></h2><p>We add a binary <code>flag_optnir_obs</code> indicating that a source was observed in a given wavelenght domain:</p>
 <ul>
 <li>1 for observation in optical;</li>
 <li>2 for observation in near-infrared;</li>
@@ -15500,7 +15871,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wfc_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_INTWFC/data/en1_intwfc_v2.1_HELP_coverage_MOC.fits&quot;</span><span class="p">)</span>
@@ -15519,7 +15890,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">was_observed_optical</span> <span class="o">=</span> <span class="n">inMoc</span><span class="p">(</span>
@@ -15544,7 +15915,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -15564,7 +15935,7 @@ SUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VII.b-Wavelenght-domain-detection">VII.b Wavelenght domain detection<a class="anchor-link" href="#VII.b-Wavelenght-domain-detection">&#182;</a></h2><p>We add a binary <code>flag_optnir_det</code> indicating that a source was detected in a given wavelenght domain:</p>
+<h2 id="VIII.b-Wavelength-domain-detection">VIII.b Wavelength domain detection<a class="anchor-link" href="#VIII.b-Wavelength-domain-detection">&#182;</a></h2><p>We add a binary <code>flag_optnir_det</code> indicating that a source was detected in a given wavelenght domain:</p>
 <ul>
 <li>1 for detection in optical;</li>
 <li>2 for detection in near-infrared;</li>
@@ -15579,7 +15950,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SpARCS is a catalogue of sources detected in r (with fluxes measured at </span>
@@ -15626,7 +15997,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">has_optical_flux</span> <span class="o">=</span> <span class="n">nb_optical_flux</span> <span class="o">&gt;=</span> <span class="mi">2</span>
@@ -15650,21 +16021,76 @@ SUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VIII---Cross-identification-table">VIII - Cross-identification table<a class="anchor-link" href="#VIII---Cross-identification-table">&#182;</a></h2><p>We are producing a table associating to each HELP identifier, the identifiers of the sources in the pristine catalogue. This can be used to easily get additional information from them.</p>
+<h2 id="IX---Cross-identification-table">IX - Cross-identification table<a class="anchor-link" href="#IX---Cross-identification-table">&#182;</a></h2><p>We are producing a table associating to each HELP identifier, the identifiers of the sources in the pristine catalogues. This can be used to easily get additional information from them.</p>
+<p>For convenience, we also cross-match the master list with the SDSS catalogue and add the objID associated with each source, if any. <strong>TODO: should we correct the astrometry with respect to Gaia positions?</strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Addind SDSS ids</span>
+<span class="c1">#</span>
+<span class="n">sdss</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_SDSS-DR13/data/SDSS-DR13_ELAIS-N1.fits&quot;</span><span class="p">)[</span><span class="s1">&#39;objID&#39;</span><span class="p">,</span> <span class="s1">&#39;ra&#39;</span><span class="p">,</span> <span class="s1">&#39;dec&#39;</span><span class="p">]</span>
+<span class="n">sdss_coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">sdss</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">sdss</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
+<span class="n">idx_ml</span><span class="p">,</span> <span class="n">d2d</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">sdss_coords</span><span class="o">.</span><span class="n">match_to_catalog_sky</span><span class="p">(</span><span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]))</span>
+<span class="n">idx_sdss</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sdss</span><span class="p">))</span>
+
+<span class="c1"># Limit the cross-match to 1 arcsec</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">d2d</span> <span class="o">&lt;=</span> <span class="mf">1.</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">arcsec</span>
+<span class="n">idx_ml</span> <span class="o">=</span> <span class="n">idx_ml</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+<span class="n">idx_sdss</span> <span class="o">=</span> <span class="n">idx_sdss</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+<span class="n">d2d</span> <span class="o">=</span> <span class="n">d2d</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+<span class="n">nb_orig_matches</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">idx_ml</span><span class="p">)</span>
+
+<span class="c1"># In case of multiple associations of one master list object to an SDSS object, we keep only the</span>
+<span class="c1"># association to the nearest one.</span>
+<span class="n">sort_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">d2d</span><span class="p">)</span>
+<span class="n">idx_ml</span> <span class="o">=</span> <span class="n">idx_ml</span><span class="p">[</span><span class="n">sort_idx</span><span class="p">]</span>
+<span class="n">idx_sdss</span> <span class="o">=</span> <span class="n">idx_sdss</span><span class="p">[</span><span class="n">sort_idx</span><span class="p">]</span>
+<span class="n">_</span><span class="p">,</span> <span class="n">unique_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">idx_ml</span><span class="p">,</span> <span class="n">return_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">idx_ml</span> <span class="o">=</span> <span class="n">idx_ml</span><span class="p">[</span><span class="n">unique_idx</span><span class="p">]</span>
+<span class="n">idx_sdss</span> <span class="o">=</span> <span class="n">idx_sdss</span><span class="p">[</span><span class="n">unique_idx</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> master list rows had multiple associations.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nb_orig_matches</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">idx_ml</span><span class="p">)))</span>
+
+<span class="c1"># Adding the ObjID to the master list</span>
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&gt;i8&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;sdss_id&quot;</span><span class="p">))</span>
+<span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;sdss_id&#39;</span><span class="p">][</span><span class="n">idx_ml</span><span class="p">]</span> <span class="o">=</span> <span class="n">sdss</span><span class="p">[</span><span class="s1">&#39;objID&#39;</span><span class="p">][</span><span class="n">idx_sdss</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>126 master list rows had multiple associations.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;wfc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;dxs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;servs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;swire_intid&#39;</span><span class="p">,</span> 
-                 <span class="s1">&#39;sparcs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;hsc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+                 <span class="s1">&#39;sparcs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;hsc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">,</span> <span class="s1">&#39;specz_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
     <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_list_cross_ident_elais-n1</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
 <span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">([</span><span class="s1">&#39;wfc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;dxs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;servs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;swire_intid&#39;</span><span class="p">,</span>
-                                 <span class="s1">&#39;sparcs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;hsc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">])</span>
+                                 <span class="s1">&#39;sparcs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;hsc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">,</span> <span class="s1">&#39;specz_id&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -15677,14 +16103,14 @@ SUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IX---Adding-HEALPix-index">IX - Adding HEALPix index<a class="anchor-link" href="#IX---Adding-HEALPix-index">&#182;</a></h2><p>We are adding a column with a HEALPix index at order 13 associated with each source.</p>
+<h2 id="X---Adding-HEALPix-index">X - Adding HEALPix index<a class="anchor-link" href="#X---Adding-HEALPix-index">&#182;</a></h2><p>We are adding a column with a HEALPix index at order 13 associated with each source.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span>
@@ -15703,13 +16129,13 @@ SUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IX---Saving-the-catalogue">IX - Saving the catalogue<a class="anchor-link" href="#IX---Saving-the-catalogue">&#182;</a></h2>
+<h2 id="XI---Saving-the-catalogue">XI - Saving the catalogue<a class="anchor-link" href="#XI---Saving-the-catalogue">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;help_id&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">,</span> <span class="s2">&quot;ra&quot;</span><span class="p">,</span> <span class="s2">&quot;dec&quot;</span><span class="p">,</span> <span class="s2">&quot;hp_idx&quot;</span><span class="p">]</span>
@@ -15722,7 +16148,8 @@ SUVORK5CYII=
                 <span class="s2">&quot;m_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
                 <span class="s2">&quot;flag_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">)]</span>    
     
-<span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;stellarity&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_cleaned&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_merged&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_gaia&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_obs&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_det&quot;</span><span class="p">,</span> <span class="s2">&quot;ebv&quot;</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;stellarity&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_cleaned&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_merged&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_gaia&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_obs&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_det&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;zspec&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_qual&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_association_flag&quot;</span><span class="p">,</span> <span class="s2">&quot;ebv&quot;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -15732,7 +16159,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We check for columns in the master catalogue that we will not save to disk.</span>
@@ -15760,7 +16187,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_elais-n1</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
