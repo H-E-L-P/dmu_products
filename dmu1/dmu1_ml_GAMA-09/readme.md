@@ -1,6 +1,6 @@
 # Master list on GAMA-09
 
-This folder contains the Jupyter notebooks used to create HELP mater list on
+This folder contains the Jupyter notebooks used to create the HELP master list on
 GAMA-09. 
 
 | Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
@@ -8,10 +8,10 @@ GAMA-09.
 | CFHTLS        | Megacam          | u*g'r'i'z'                        | dmu0_CFHTLS     |
 | CFHTLenS      | Megacam          | ugriz                             | dmu0_CFHTLenS   |   
 | DECaLS        | DEC              | ugrizY                            | dmu0_DECaLS     |
-| HSC-SSP       | Hyper Suprime    | grizy N921                        | dmu0_HSC        | 
+| HSC-SSP       | Hyper Suprime    | grizy                             | dmu0_HSC        | 
 | KIDS          | VLT OmegaCAM     | ugri                              | dmu0_KIDS       |  
 | PanSTARRS-3SS | GPC1             | grizy                          | dmu0_PanSTARRS-3SS |     
-| LAS           | UKIRT WFCAM      | UJHK                              | dmu0_UKIDSS-LAS |     
+| LAS           | UKIRT WFCAM      | YJHK                              | dmu0_UKIDSS-LAS |     
 | VHS           | VISTA VIRCAM     | YJHKs                             | dmu0_VISTA-VHS  |  
 | VIKING        | VISTA VIRCAM     | ZYHJKs                          | dmu0_VISTA-VIKING |
 
