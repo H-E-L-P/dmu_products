@@ -7,3 +7,6 @@ Modified catalogue ingested in HeDaM: `ELAIS-S1-specz-v2_hedam.fits`.
 
 See report.
 
+## 2017-08-19: Updated data
+
+No validation checks yet.

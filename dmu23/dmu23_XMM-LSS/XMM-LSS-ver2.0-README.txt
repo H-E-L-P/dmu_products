@@ -38,6 +38,7 @@ The source of the spectroscopic redshift, as the source of the redshift can be m
 ; PRIMUS						- 4194304
 ; IMACS (Weiner/Cooper)					- 8388608
 ; Lacy et al. (2013)                                    - 16777216
+; OzDES DR1 (Childress et al. 2017)                     - 33554432
 
 See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
 

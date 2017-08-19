@@ -16,3 +16,7 @@ Modified catalogue ingested in HeDaM: `CDFS_SWIRE-specz-v2.1_hedam.csv`.
 ## 2017-06-01: Update
 
 Updated data received from Matt. See report.
+
+## 2017-08-19: Updated data
+
+No validation checks yet.

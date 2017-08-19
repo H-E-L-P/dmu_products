@@ -15,3 +15,7 @@ Modified catalogue ingested in HeDaM: `XMM-LSS-specz-v2.6_hedam.csv`.
 ## 2017-06-01: Update
 
 See report.
+
+## 2017-08-19: Updated data
+
+No validation checks yet.
