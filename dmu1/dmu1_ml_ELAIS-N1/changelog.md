@@ -29,3 +29,8 @@ temporary files are saved in `data_tmp`.
 - UKIDSS and 2MASS manitudes are Vega ones.
 - Convert UKIDSS magnitudes to AB in the master list.
 - Take this into accound in the diagnostic plots.
+
+## 2017-08-15: Add spec-z and SDSS ObjIDs
+
+- Add the spec-z informations to the master catalogue.
+- Add the SDSS-DR13 ObjIDs to the cross-identification table.

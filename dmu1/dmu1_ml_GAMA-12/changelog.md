@@ -13,3 +13,7 @@ See report. The updated files are
 
 Depth maps where downloaded from Eduardo's web pages and added to the data
 folder.
+
+## 2017-08-29: Started rerun through notebook pipeline.
+
+Began reprocessing of GAMA-12 with well documented notebooks.

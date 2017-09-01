@@ -11631,10 +11631,8 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11645,11 +11643,9 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11812,7 +11808,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-8d104c3 (Wed Jul 5 19:47:18 2017 +0100)
+284b2ef (Mon Aug 14 20:02:12 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11881,7 +11877,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">imported_columns</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span>
@@ -11931,7 +11927,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Adding flux and band-flag columns</span>
@@ -11988,7 +11984,7 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
@@ -12002,11 +11998,11 @@ Check the NumPy 1.11 release notes for more information.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table140669454913608-803154" class="table-striped table-bordered table-condensed">
+<table id="table140125380985464-747663" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>dxs_id</th><th>dxs_ra</th><th>dxs_dec</th><th>m_ap_ukidss_j</th><th>merr_ap_ukidss_j</th><th>m_ukidss_j</th><th>merr_ukidss_j</th><th>m_ap_ukidss_k</th><th>merr_ap_ukidss_k</th><th>m_ukidss_k</th><th>merr_ukidss_k</th><th>dxs_stellarity</th><th>f_ap_ukidss_j</th><th>ferr_ap_ukidss_j</th><th>f_ukidss_j</th><th>ferr_ukidss_j</th><th>flag_ukidss_j</th><th>f_ap_ukidss_k</th><th>ferr_ap_ukidss_k</th><th>f_ukidss_k</th><th>ferr_ukidss_k</th><th>flag_ukidss_k</th></tr></thead>
 <thead><tr><th></th><th></th><th>degrees</th><th>degrees</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <tr><td>0</td><td>446677390759</td><td>242.838870994</td><td>56.4868458056</td><td>22.7055</td><td>0.136046</td><td>22.7338</td><td>0.163164</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.05</td><td>3.00481</td><td>0.376513</td><td>2.92751</td><td>0.439945</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
@@ -12029,8 +12025,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140669454913608-803154').dataTable()");
-    $('#table140669454913608-803154').dataTable({
+    console.log("$('#table140125380985464-747663').dataTable()");
+    $('#table140125380985464-747663').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12068,7 +12064,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SORT_COLS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;merr_ap_ukidss_j&#39;</span><span class="p">,</span> <span class="s1">&#39;merr_ap_ukidss_k&#39;</span><span class="p">]</span>
@@ -12127,7 +12123,7 @@ The cleaned catalogue has 876 sources flagged as having been cleaned
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gaia</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_GAIA/data/GAIA_ELAIS-N1.fits&quot;</span><span class="p">)</span>
@@ -12141,7 +12137,7 @@ The cleaned catalogue has 876 sources flagged as having been cleaned
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_astcor_diag_plot</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">],</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">],</span> 
@@ -16415,7 +16411,7 @@ AABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">delta_ra</span><span class="p">,</span> <span class="n">delta_dec</span> <span class="o">=</span>  <span class="n">astrometric_correction</span><span class="p">(</span>
@@ -16449,7 +16445,7 @@ Dec correction: -0.033934257209011776 arcsec
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">]</span> <span class="o">+=</span>  <span class="n">delta_ra</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
@@ -16463,7 +16459,7 @@ Dec correction: -0.033934257209011776 arcsec
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_astcor_diag_plot</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">],</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">],</span> 
@@ -20672,7 +20668,7 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -20687,7 +20683,7 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">GAIA_FLAG_NAME</span> <span class="o">=</span> <span class="s2">&quot;dxs_flag_gaia&quot;</span>
@@ -20720,22 +20716,13 @@ KaWUUsD/BwgN8x9+ew06AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="V---Flagging-objects-near-bright-stars">V - Flagging objects near bright stars<a class="anchor-link" href="#V---Flagging-objects-near-bright-stars">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#182;</a></h1>
+<h1 id="V---Saving-to-disk">V - Saving to disk<a class="anchor-link" href="#V---Saving-to-disk">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/UKIDSS-DXS.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">),</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>

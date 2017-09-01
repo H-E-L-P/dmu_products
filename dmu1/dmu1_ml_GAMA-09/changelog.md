@@ -13,3 +13,7 @@ See report. The updated files are
 
 Depth maps where downloaded from Eduardo's web pages and added to the data
 folder.
+
+## 2017-08-11: Rerunning field
+
+Started process of rerunning field with new Jupyter notebook format.

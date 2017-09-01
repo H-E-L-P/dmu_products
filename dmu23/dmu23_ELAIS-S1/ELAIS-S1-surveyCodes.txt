@@ -6,3 +6,4 @@
 32 - 6dF
 64 - IRASpscz
 128 - Lacy et al. (2013)
+256 - OzDES DR1 (Childress et al. 2017)
