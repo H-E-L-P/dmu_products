@@ -8,3 +8,7 @@ Files downloaded from Eduardo's web server and made available on HeDaM:
 See report. The updated files are
 `gama15_masterlist_helplimited_helpid_20161124.fits.bz2` and
 `gama15_catalogue_helplimited_helpid_20161124.fits`.
+
+## 2017-08-29: Reprocessing
+
+Started reprocessing with notebooks.
