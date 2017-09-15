@@ -1,7 +1,7 @@
 UKIRT Hemisphere Survey
 =======================================================================
 
-The UHS survey is J band only survey covering a alrge fraction of the northern sky.
+The UHS survey is a J band only survey covering a large fraction of the northern sky.
 
 The survey is described here:
 
