@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>2_Merging</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2_Merging</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13,8 +11,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1109,7 +1107,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2538,7 +2535,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3025,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8760,6 +8755,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8962,8 +8960,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8986,6 +8990,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9122,6 +9136,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9211,6 +9228,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9255,6 +9275,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9551,6 +9574,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9571,11 +9595,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11246,7 +11265,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11558,6 +11577,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11571,6 +11591,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11631,8 +11654,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11668,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11773,10 +11800,12 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-02dd669 (Tue Aug 15 19:17:47 2017 +0100)
+6b6e8f7 (Thu Oct 5 17:35:30 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11925,7 +11954,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -12225,7 +12256,9 @@ AAA88n8BnZbO/LRGQasAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -12543,7 +12576,9 @@ AAAAHiFYAQAAeOT/B47BYQAHMLYnAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -12854,7 +12889,9 @@ GLECAADwCMEKAADAIwQrAAAAjxCsAAAAPEKwAgAA8Mj/Bkhk+2L7sQ3mAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13182,7 +13219,9 @@ AElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13543,7 +13582,9 @@ iIgWSWAVERER0SIJrCIiIiJa5CE9yPVnRyezugAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13889,11 +13930,13 @@ xCEKViIiIiIOUbASERERccj/D8uiTuUYRJbhAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[19]:</div>
+
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table139901325079832-922825" class="table-striped table-bordered table-condensed">
+<table id="table140000223360280-221851" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>wfc_id</th><th>ra</th><th>dec</th><th>wfc_stellarity</th><th>m_ap_wfc_u</th><th>merr_ap_wfc_u</th><th>m_wfc_u</th><th>merr_wfc_u</th><th>m_ap_wfc_g</th><th>merr_ap_wfc_g</th><th>m_wfc_g</th><th>merr_wfc_g</th><th>m_ap_wfc_r</th><th>merr_ap_wfc_r</th><th>m_wfc_r</th><th>merr_wfc_r</th><th>m_ap_wfc_i</th><th>merr_ap_wfc_i</th><th>m_wfc_i</th><th>merr_wfc_i</th><th>m_ap_wfc_z</th><th>merr_ap_wfc_z</th><th>m_wfc_z</th><th>merr_wfc_z</th><th>f_ap_wfc_u</th><th>ferr_ap_wfc_u</th><th>f_wfc_u</th><th>ferr_wfc_u</th><th>flag_wfc_u</th><th>f_ap_wfc_g</th><th>ferr_ap_wfc_g</th><th>f_wfc_g</th><th>ferr_wfc_g</th><th>flag_wfc_g</th><th>f_ap_wfc_r</th><th>ferr_ap_wfc_r</th><th>f_wfc_r</th><th>ferr_wfc_r</th><th>flag_wfc_r</th><th>f_ap_wfc_i</th><th>ferr_ap_wfc_i</th><th>f_wfc_i</th><th>ferr_wfc_i</th><th>flag_wfc_i</th><th>f_ap_wfc_z</th><th>ferr_ap_wfc_z</th><th>f_wfc_z</th><th>ferr_wfc_z</th><th>flag_wfc_z</th><th>wfc_flag_cleaned</th><th>wfc_flag_gaia</th><th>flag_merged</th><th>sparcs_intid</th><th>sparcs_stellarity</th><th>m_ap_megacam_u</th><th>merr_ap_megacam_u</th><th>f_ap_megacam_u</th><th>ferr_ap_megacam_u</th><th>m_megacam_u</th><th>merr_megacam_u</th><th>f_megacam_u</th><th>ferr_megacam_u</th><th>flag_megacam_u</th><th>m_ap_megacam_g</th><th>merr_ap_megacam_g</th><th>f_ap_megacam_g</th><th>ferr_ap_megacam_g</th><th>m_megacam_g</th><th>merr_megacam_g</th><th>f_megacam_g</th><th>ferr_megacam_g</th><th>flag_megacam_g</th><th>m_ap_megacam_r</th><th>merr_ap_megacam_r</th><th>f_ap_megacam_r</th><th>ferr_ap_megacam_r</th><th>m_megacam_r</th><th>merr_megacam_r</th><th>f_megacam_r</th><th>ferr_megacam_r</th><th>flag_megacam_r</th><th>m_ap_megacam_z</th><th>merr_ap_megacam_z</th><th>f_ap_megacam_z</th><th>ferr_ap_megacam_z</th><th>m_megacam_z</th><th>merr_megacam_z</th><th>f_megacam_z</th><th>ferr_megacam_z</th><th>flag_megacam_z</th><th>sparcs_flag_cleaned</th><th>sparcs_flag_gaia</th><th>hsc_id</th><th>m_ap_suprime_g</th><th>merr_ap_suprime_g</th><th>m_suprime_g</th><th>merr_suprime_g</th><th>m_ap_suprime_r</th><th>merr_ap_suprime_r</th><th>m_suprime_r</th><th>merr_suprime_r</th><th>m_ap_suprime_i</th><th>merr_ap_suprime_i</th><th>m_suprime_i</th><th>merr_suprime_i</th><th>m_ap_suprime_z</th><th>merr_ap_suprime_z</th><th>m_suprime_z</th><th>merr_suprime_z</th><th>m_ap_suprime_y</th><th>merr_ap_suprime_y</th><th>m_suprime_y</th><th>merr_suprime_y</th><th>m_ap_suprime_n921</th><th>merr_ap_suprime_n921</th><th>m_suprime_n921</th><th>merr_suprime_n921</th><th>hsc_stellarity</th><th>f_ap_suprime_g</th><th>ferr_ap_suprime_g</th><th>f_suprime_g</th><th>ferr_suprime_g</th><th>flag_suprime_g</th><th>f_ap_suprime_r</th><th>ferr_ap_suprime_r</th><th>f_suprime_r</th><th>ferr_suprime_r</th><th>flag_suprime_r</th><th>f_ap_suprime_i</th><th>ferr_ap_suprime_i</th><th>f_suprime_i</th><th>ferr_suprime_i</th><th>flag_suprime_i</th><th>f_ap_suprime_z</th><th>ferr_ap_suprime_z</th><th>f_suprime_z</th><th>ferr_suprime_z</th><th>flag_suprime_z</th><th>f_ap_suprime_y</th><th>ferr_ap_suprime_y</th><th>f_suprime_y</th><th>ferr_suprime_y</th><th>flag_suprime_y</th><th>f_ap_suprime_n921</th><th>ferr_ap_suprime_n921</th><th>f_suprime_n921</th><th>ferr_suprime_n921</th><th>flag_suprime_n921</th><th>hsc_flag_cleaned</th><th>hsc_flag_gaia</th><th>ps1_id</th><th>m_ap_gpc1_g</th><th>merr_ap_gpc1_g</th><th>m_gpc1_g</th><th>merr_gpc1_g</th><th>m_ap_gpc1_r</th><th>merr_ap_gpc1_r</th><th>m_gpc1_r</th><th>merr_gpc1_r</th><th>m_ap_gpc1_i</th><th>merr_ap_gpc1_i</th><th>m_gpc1_i</th><th>merr_gpc1_i</th><th>m_ap_gpc1_z</th><th>merr_ap_gpc1_z</th><th>m_gpc1_z</th><th>merr_gpc1_z</th><th>m_ap_gpc1_y</th><th>merr_ap_gpc1_y</th><th>m_gpc1_y</th><th>merr_gpc1_y</th><th>f_ap_gpc1_g</th><th>ferr_ap_gpc1_g</th><th>f_gpc1_g</th><th>ferr_gpc1_g</th><th>flag_gpc1_g</th><th>f_ap_gpc1_r</th><th>ferr_ap_gpc1_r</th><th>f_gpc1_r</th><th>ferr_gpc1_r</th><th>flag_gpc1_r</th><th>f_ap_gpc1_i</th><th>ferr_ap_gpc1_i</th><th>f_gpc1_i</th><th>ferr_gpc1_i</th><th>flag_gpc1_i</th><th>f_ap_gpc1_z</th><th>ferr_ap_gpc1_z</th><th>f_gpc1_z</th><th>ferr_gpc1_z</th><th>flag_gpc1_z</th><th>f_ap_gpc1_y</th><th>ferr_ap_gpc1_y</th><th>f_gpc1_y</th><th>ferr_gpc1_y</th><th>flag_gpc1_y</th><th>ps1_flag_cleaned</th><th>ps1_flag_gaia</th><th>dxs_id</th><th>m_ap_ukidss_j</th><th>merr_ap_ukidss_j</th><th>m_ukidss_j</th><th>merr_ukidss_j</th><th>m_ap_ukidss_k</th><th>merr_ap_ukidss_k</th><th>m_ukidss_k</th><th>merr_ukidss_k</th><th>dxs_stellarity</th><th>f_ap_ukidss_j</th><th>ferr_ap_ukidss_j</th><th>f_ukidss_j</th><th>ferr_ukidss_j</th><th>flag_ukidss_j</th><th>f_ap_ukidss_k</th><th>ferr_ap_ukidss_k</th><th>f_ukidss_k</th><th>ferr_ukidss_k</th><th>flag_ukidss_k</th><th>dxs_flag_cleaned</th><th>dxs_flag_gaia</th><th>servs_intid</th><th>f_ap_servs_irac_i1</th><th>ferr_ap_servs_irac_i1</th><th>f_servs_irac_i1</th><th>ferr_servs_irac_i1</th><th>servs_stellarity_irac_i1</th><th>f_ap_servs_irac_i2</th><th>ferr_ap_servs_irac_i2</th><th>f_servs_irac_i2</th><th>ferr_servs_irac_i2</th><th>servs_stellarity_irac_i2</th><th>m_ap_servs_irac_i1</th><th>merr_ap_servs_irac_i1</th><th>m_servs_irac_i1</th><th>merr_servs_irac_i1</th><th>flag_servs_irac_i1</th><th>m_ap_servs_irac_i2</th><th>merr_ap_servs_irac_i2</th><th>m_servs_irac_i2</th><th>merr_servs_irac_i2</th><th>flag_servs_irac_i2</th><th>servs_flag_cleaned</th><th>servs_flag_gaia</th><th>swire_intid</th><th>f_ap_swire_irac_i1</th><th>ferr_ap_swire_irac_i1</th><th>f_swire_irac_i1</th><th>ferr_swire_irac_i1</th><th>swire_stellarity_irac_i1</th><th>f_ap_swire_irac_i2</th><th>ferr_ap_swire_irac_i2</th><th>f_swire_irac_i2</th><th>ferr_swire_irac_i2</th><th>swire_stellarity_irac_i2</th><th>f_ap_irac_i3</th><th>ferr_ap_irac_i3</th><th>f_irac_i3</th><th>ferr_irac_i3</th><th>swire_stellarity_irac_i3</th><th>f_ap_irac_i4</th><th>ferr_ap_irac_i4</th><th>f_irac_i4</th><th>ferr_irac_i4</th><th>swire_stellarity_irac_i4</th><th>m_ap_swire_irac_i1</th><th>merr_ap_swire_irac_i1</th><th>m_swire_irac_i1</th><th>merr_swire_irac_i1</th><th>flag_swire_irac_i1</th><th>m_ap_swire_irac_i2</th><th>merr_ap_swire_irac_i2</th><th>m_swire_irac_i2</th><th>merr_swire_irac_i2</th><th>flag_swire_irac_i2</th><th>m_ap_irac_i3</th><th>merr_ap_irac_i3</th><th>m_irac_i3</th><th>merr_irac_i3</th><th>flag_irac_i3</th><th>m_ap_irac_i4</th><th>merr_ap_irac_i4</th><th>m_irac_i4</th><th>merr_irac_i4</th><th>flag_irac_i4</th><th>swire_flag_cleaned</th><th>swire_flag_gaia</th></tr></thead>
 <thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th>uJy</th><th>uJy</th><th>uJy</th><th>uJy</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <tr><td>0</td><td>189636202384</td><td>240.664902664</td><td>55.6405269985</td><td>0.0</td><td>14.517</td><td>0.034</td><td>14.485</td><td>0.034</td><td>14.668</td><td>0.029</td><td>12.438</td><td>0.029</td><td>14.559</td><td>0.017</td><td>12.197</td><td>0.017</td><td>14.319</td><td>0.028</td><td>12.713</td><td>0.028</td><td>13.087</td><td>0.047</td><td>11.399</td><td>0.047</td><td>5665.0</td><td>177.4</td><td>5834.45</td><td>182.707</td><td>False</td><td>4929.47</td><td>131.666</td><td>38441.5</td><td>1026.77</td><td>False</td><td>5450.04</td><td>85.3345</td><td>47995.4</td><td>751.492</td><td>False</td><td>6798.29</td><td>175.321</td><td>29840.1</td><td>769.544</td><td>False</td><td>21144.6</td><td>915.321</td><td>100092.0</td><td>4332.84653723</td><td>False</td><td>False</td><td>2</td><td>True</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
@@ -13916,8 +13959,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139901325079832-922825').dataTable()");
-    $('#table139901325079832-922825').dataTable({
+    console.log("$('#table140000223360280-221851').dataTable()");
+    $('#table140000223360280-221851').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -14000,7 +14043,7 @@ require(["datatables"], function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Each prisitine catalogue may contain one or several stellarity columns indicating the probability (0 to 1) of each source being a star.  We merge these columns taking the highest value.</p>
+<p>Each prisitine catalogue may contain one or several stellarity columns indicating the probability (0 to 1) of each source being a star.  We merge these columns taking the highest value.  We keep trace of the origin of the stellarity.</p>
 
 </div>
 </div>
@@ -14013,11 +14056,7 @@ require(["datatables"], function(){
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stellarity_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
                       <span class="k">if</span> <span class="s1">&#39;stellarity&#39;</span> <span class="ow">in</span> <span class="n">column</span><span class="p">]</span>
 
-<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span>
-    <span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">([</span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">stellarity_columns</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;stellarity&quot;</span>
-<span class="p">))</span>
-<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">(</span><span class="n">stellarity_columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stellarity_columns</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -14028,14 +14067,47 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/numpy/lib/nanfunctions.py:343: RuntimeWarning: All-NaN slice encountered
-  warnings.warn(&#34;All-NaN slice encountered&#34;, RuntimeWarning)
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>wfc_stellarity, sparcs_stellarity, hsc_stellarity, dxs_stellarity, servs_stellarity_irac_i1, servs_stellarity_irac_i2, swire_stellarity_irac_i1, swire_stellarity_irac_i2, swire_stellarity_irac_i3, swire_stellarity_irac_i4
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We create an masked array with all the stellarities and get the maximum value, as well as its</span>
+<span class="c1"># origin.  Some sources may not have an associated stellarity.</span>
+<span class="n">stellarity_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">stellarity_columns</span><span class="p">])</span>
+<span class="n">stellarity_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">masked_array</span><span class="p">(</span><span class="n">stellarity_array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">stellarity_array</span><span class="p">))</span>
+
+<span class="n">max_stellarity</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">stellarity_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">max_stellarity</span><span class="o">.</span><span class="n">fill_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+<span class="n">no_stellarity_mask</span> <span class="o">=</span> <span class="n">max_stellarity</span><span class="o">.</span><span class="n">mask</span>
+
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">max_stellarity</span><span class="o">.</span><span class="n">filled</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;stellarity&quot;</span><span class="p">))</span>
+
+<span class="n">stellarity_origin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="s2">&quot;NO_INFORMATION&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;S20&quot;</span><span class="p">)</span>
+<span class="n">stellarity_origin</span><span class="p">[</span><span class="o">~</span><span class="n">no_stellarity_mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="s2">&quot;WFC&quot;</span><span class="p">,</span> <span class="s2">&quot;SPARCS&quot;</span><span class="p">,</span> <span class="s2">&quot;HSC&quot;</span><span class="p">,</span> <span class="s2">&quot;DXS&quot;</span><span class="p">,</span> <span class="s2">&quot;SERVS_IRAC1&quot;</span><span class="p">,</span> <span class="s2">&quot;SERVS_IRAC2&quot;</span><span class="p">,</span> <span class="s2">&quot;SWIRE_IRAC1&quot;</span><span class="p">,</span> <span class="s2">&quot;SWIRE_IRAC2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SWIRE_IRAC3&quot;</span><span class="p">,</span> <span class="s2">&quot;SWIRE_IRAC4&quot;</span><span class="p">])[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">stellarity_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="o">~</span><span class="n">no_stellarity_mask</span><span class="p">]]</span>
+
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">stellarity_origin</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;stellarity_origin&quot;</span><span class="p">))</span>
+
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">(</span><span class="n">stellarity_columns</span><span class="p">)</span>
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -14051,7 +14123,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -14075,7 +14147,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">gen_help_id</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
@@ -14091,7 +14163,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check that the HELP Ids are unique</span>
@@ -14109,7 +14181,9 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>OK!
 </pre>
@@ -14131,7 +14205,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">specz</span> <span class="o">=</span>  <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu23/dmu23_ELAIS-N1/data/ELAIS-N1-specz-v2.1.fits&quot;</span><span class="p">)</span>
@@ -14144,7 +14218,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_merge_dist_plot</span><span class="p">(</span>
@@ -14161,7 +14235,9 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -14480,7 +14556,7 @@ EQ2SxCoiIiKiQf4GybS520zhYSUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">specz_merge</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">,</span> <span class="n">specz</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">1.</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">arcsec</span><span class="p">)</span>
@@ -14503,7 +14579,7 @@ EQ2SxCoiIiKiQf4GybS520zhYSUAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seip</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_SEIP/data/SEIP_ELAIS-N1.fits&quot;</span><span class="p">)</span>
@@ -14520,7 +14596,9 @@ EQ2SxCoiIiKiQf4GybS520zhYSUAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>WARNING: UnitsWarning: &#39;e/count&#39; did not parse as fits unit: At col 0, Unit &#39;e&#39; not supported by the FITS standard.  [astropy.units.core]
 WARNING: UnitsWarning: &#39;image&#39; did not parse as fits unit: At col 0, Unit &#39;image&#39; not supported by the FITS standard.  [astropy.units.core]
@@ -14534,7 +14612,7 @@ WARNING: UnitsWarning: &#39;image&#39; did not parse as fits unit: At col 0, Uni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -14558,7 +14636,9 @@ WARNING: UnitsWarning: &#39;image&#39; did not parse as fits unit: At col 0, Uni
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15056,7 +15136,7 @@ AAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -15081,7 +15161,9 @@ AAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15508,7 +15590,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">irac_origin</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span>
@@ -15522,7 +15604,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC1 aperture flux and magnitudes</span>
@@ -15582,7 +15664,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>293912 sources with SERVS flux
 535110 sources with SWIRE flux
@@ -15599,7 +15683,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC1 total flux and magnitudes</span>
@@ -15664,7 +15748,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>293912 sources with SERVS flux
 535030 sources with SWIRE flux
@@ -15681,7 +15767,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC2 aperture flux and magnitudes</span>
@@ -15741,7 +15827,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>300193 sources with SERVS flux
 390203 sources with SWIRE flux
@@ -15758,7 +15846,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IRAC2 total flux and magnitudes</span>
@@ -15823,7 +15911,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>300193 sources with SERVS flux
 390193 sources with SWIRE flux
@@ -15840,7 +15930,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">irac_origin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/elais-n1_irac_i_fluxes_origins</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
@@ -15871,7 +15961,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wfc_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_INTWFC/data/en1_intwfc_v2.1_HELP_coverage_MOC.fits&quot;</span><span class="p">)</span>
@@ -15890,7 +15980,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">was_observed_optical</span> <span class="o">=</span> <span class="n">inMoc</span><span class="p">(</span>
@@ -15915,7 +16005,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -15950,7 +16040,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SpARCS is a catalogue of sources detected in r (with fluxes measured at </span>
@@ -15997,7 +16087,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">has_optical_flux</span> <span class="o">=</span> <span class="n">nb_optical_flux</span> <span class="o">&gt;=</span> <span class="mi">2</span>
@@ -16029,7 +16119,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#</span>
@@ -16070,7 +16160,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>126 master list rows had multiple associations.
 </pre>
@@ -16083,7 +16175,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;wfc_id&#39;</span><span class="p">,</span> <span class="s1">&#39;dxs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;servs_intid&#39;</span><span class="p">,</span> <span class="s1">&#39;swire_intid&#39;</span><span class="p">,</span> 
@@ -16110,7 +16202,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span>
@@ -16135,7 +16227,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;help_id&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">,</span> <span class="s2">&quot;ra&quot;</span><span class="p">,</span> <span class="s2">&quot;dec&quot;</span><span class="p">,</span> <span class="s2">&quot;hp_idx&quot;</span><span class="p">]</span>
@@ -16148,8 +16240,8 @@ SUVORK5CYII=
                 <span class="s2">&quot;m_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
                 <span class="s2">&quot;flag_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">)]</span>    
     
-<span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;stellarity&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_cleaned&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_merged&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_gaia&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_obs&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_det&quot;</span><span class="p">,</span> 
-            <span class="s2">&quot;zspec&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_qual&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_association_flag&quot;</span><span class="p">,</span> <span class="s2">&quot;ebv&quot;</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;stellarity&quot;</span><span class="p">,</span> <span class="s2">&quot;stellarity_origin&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_cleaned&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_merged&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_gaia&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_obs&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;flag_optnir_det&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_qual&quot;</span><span class="p">,</span> <span class="s2">&quot;zspec_association_flag&quot;</span><span class="p">,</span> <span class="s2">&quot;ebv&quot;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -16159,7 +16251,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We check for columns in the master catalogue that we will not save to disk.</span>
@@ -16174,7 +16266,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Missing columns: set()
 </pre>
@@ -16187,7 +16281,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_elais-n1</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
@@ -16201,4 +16295,8 @@ SUVORK5CYII=
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>
