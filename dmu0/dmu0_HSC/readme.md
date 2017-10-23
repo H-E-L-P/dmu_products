@@ -246,3 +246,6 @@ isnull column is true and we removed the isnull column.
 On 2017-06-20, the data was updated with a new extraction containing more
 aperture fluxes (for aperture correction). The SQL queries above were not
 updated.
+
+On 2017-10-23, the data was updated to correct a wrong extraction in the wide
+fields.  The catalogue names where changed to append v2 to them.
