@@ -9,4 +9,4 @@ See report.
 
 ## 2017-08-19: Updated data
 
-No validation checks yet.
+Validation done on 2017-10-24, see report.

@@ -29,3 +29,14 @@ The updated file is `XMM-LSS-specz-v2.5_helpid_20160512.fits`.
   the specZ table on the VO server.
 - The update catalogue is `XMM-LSS-specz-v2.7.fits`.
 - 1278 sources have no (NaN) spectroscopic redshift.
+
+# DMU2 validation report (2017-10-24)
+
+- There is no meta information files (the `yml` files).
+- Some source have a reliability to -.  As it's a float column, it's better to
+  use NaN.  That was changed.
+- I added a `specz_id` column with a position base identifier like we have in
+  the specZ table on the VO server.
+- The update catalogue is `XMM-LSS-specz-v2.8.fits`.
+- 1277 sources have no (NaN) spectroscopic redshift.
+- 27 sources have a negative spectroscopic redshift.

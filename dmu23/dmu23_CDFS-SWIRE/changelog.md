@@ -19,4 +19,4 @@ Updated data received from Matt. See report.
 
 ## 2017-08-19: Updated data
 
-No validation checks yet.
+Validation on 2017-10-24, see report.
