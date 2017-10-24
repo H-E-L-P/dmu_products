@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>1.4_HSC-SSP</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1.4_HSC-SSP</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13,8 +11,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1109,7 +1107,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2538,7 +2535,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3025,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8760,6 +8755,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8962,8 +8960,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8986,6 +8990,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9122,6 +9136,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9211,6 +9228,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9255,6 +9275,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9551,6 +9574,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9571,11 +9595,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11246,7 +11265,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11558,6 +11577,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11571,6 +11591,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11631,8 +11654,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11668,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11783,10 +11810,12 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-6b6e8f7 (Thu Oct 5 17:35:30 2017 +0100)
+91cdb7b (Fri Oct 20 11:48:11 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11853,7 +11882,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pritine HSC catalogue</span>
-<span class="n">orig_hsc</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_HSC/data/HSC-PDR1_wide_GAMA-09.fits&quot;</span><span class="p">)</span>
+<span class="n">orig_hsc</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_HSC/data/HSC-PDR1_wide_GAMA-09_v2.fits&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11918,7 +11947,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>No error column for a y band aperture magnitude.
 </pre>
@@ -11954,15 +11985,19 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:844: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:849: RuntimeWarning: invalid value encountered in greater
   mags = magnitudes[:, stellarity &gt; stel_threshold].copy()
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -12622,24 +12657,28 @@ TkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:897: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:902: RuntimeWarning: invalid value encountered in greater
   mask = stellarity &gt; .9
 /opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
   ma.MaskedArray.__setitem__(self, index, value)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13026,7 +13065,9 @@ J8ihRQghhBA5QQ4tQgghhMgJcmgRQgghRE6QQ4sQQgghcoIcWoQQQgiRE+TQIoQQQoic8Afy1Hw4
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Aperture correction for g band:
 Correction: -0.12408447265625
@@ -13036,13 +13077,15 @@ RMS: 0.023483843404198672
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
@@ -13077,15 +13120,19 @@ RMS: 0.023483843404198672
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:844: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:849: RuntimeWarning: invalid value encountered in greater
   mags = magnitudes[:, stellarity &gt; stel_threshold].copy()
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13725,24 +13772,28 @@ AEDgEHAAAEDgvAEIb/0axx37pgAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:897: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:902: RuntimeWarning: invalid value encountered in greater
   mask = stellarity &gt; .9
 /opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
   ma.MaskedArray.__setitem__(self, index, value)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -14099,7 +14150,9 @@ CCGECBv/H8lGIYdpHHWNAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Aperture correction for r band:
 Correction: -0.16170883178710938
@@ -14109,13 +14162,15 @@ RMS: 0.0376657609667549
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
@@ -14150,15 +14205,19 @@ RMS: 0.0376657609667549
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:844: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:849: RuntimeWarning: invalid value encountered in greater
   mags = magnitudes[:, stellarity &gt; stel_threshold].copy()
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -14815,24 +14874,28 @@ hBBCxJ3/AMBFGBygG+kMAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:897: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:902: RuntimeWarning: invalid value encountered in greater
   mask = stellarity &gt; .9
 /opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
   ma.MaskedArray.__setitem__(self, index, value)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15168,7 +15231,9 @@ ewo0IiIiEvYUaERERCTsKdCIiIhI2Pv/YusNSyXjQKMAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Aperture correction for i band:
 Correction: -0.09254837036132812
@@ -15178,13 +15243,15 @@ RMS: 0.012256088927246552
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
@@ -15219,15 +15286,19 @@ RMS: 0.012256088927246552
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:844: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:849: RuntimeWarning: invalid value encountered in greater
   mags = magnitudes[:, stellarity &gt; stel_threshold].copy()
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15931,24 +16002,28 @@ rkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:897: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:902: RuntimeWarning: invalid value encountered in greater
   mask = stellarity &gt; .9
 /opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
   ma.MaskedArray.__setitem__(self, index, value)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -16366,7 +16441,9 @@ uREREZG4ouZGRERE4oqaGxEREYkr/wUHh41olqUkxgAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Aperture correction for z band:
 Correction: -0.10509109497070312
@@ -16376,13 +16453,15 @@ RMS: 0.05780501082757794
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
@@ -16417,15 +16496,19 @@ RMS: 0.05780501082757794
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:844: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:849: RuntimeWarning: invalid value encountered in greater
   mags = magnitudes[:, stellarity &gt; stel_threshold].copy()
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -17067,24 +17150,28 @@ ERFJOgo4IiIiknQUcERERCTp/A35f9lwSLJ2OQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/masterlist.py:897: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/masterlist.py:902: RuntimeWarning: invalid value encountered in greater
   mask = stellarity &gt; .9
 /opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
   ma.MaskedArray.__setitem__(self, index, value)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -17465,7 +17552,9 @@ RIzyBedWrAYRPQrXAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Aperture correction for y band:
 Correction: -0.12488555908203125
@@ -17475,13 +17564,15 @@ RMS: 0.012975513965416236
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
+<pre>/opt/herschelhelp_internal/herschelhelp_internal/utils.py:129: RuntimeWarning: invalid value encountered in greater
   mask &amp;= (stellarity &gt; 0.9)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:131: RuntimeWarning: invalid value encountered in greater_equal
   mask &amp;= (mag &gt;= mag_min)
-/home/yroehlly/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
+/opt/herschelhelp_internal/herschelhelp_internal/utils.py:133: RuntimeWarning: invalid value encountered in less_equal
   mask &amp;= (mag &lt;= mag_max)
 </pre>
 </div>
@@ -17644,7 +17735,9 @@ P(star) = \frac{ \prod_{i} P(star)_i }{ \prod_{i} P(star)_i + \prod_{i} P(galaxy
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -17911,22 +18004,24 @@ AKNRdgAAgNH+B51UORAL592HAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[29]:</div>
+
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table140557619653880-358811" class="table-striped table-bordered table-condensed">
+<table id="table140316810215152-891511" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>hsc_id</th><th>hsc_ra</th><th>hsc_dec</th><th>m_ap_suprime_g</th><th>merr_ap_suprime_g</th><th>m_suprime_g</th><th>merr_suprime_g</th><th>m_ap_suprime_r</th><th>merr_ap_suprime_r</th><th>m_suprime_r</th><th>merr_suprime_r</th><th>m_ap_suprime_i</th><th>merr_ap_suprime_i</th><th>m_suprime_i</th><th>merr_suprime_i</th><th>m_ap_suprime_z</th><th>merr_ap_suprime_z</th><th>m_suprime_z</th><th>merr_suprime_z</th><th>m_ap_suprime_y</th><th>merr_ap_suprime_y</th><th>m_suprime_y</th><th>merr_suprime_y</th><th>hsc_stellarity</th><th>f_ap_suprime_g</th><th>ferr_ap_suprime_g</th><th>f_suprime_g</th><th>ferr_suprime_g</th><th>flag_suprime_g</th><th>f_ap_suprime_r</th><th>ferr_ap_suprime_r</th><th>f_suprime_r</th><th>ferr_suprime_r</th><th>flag_suprime_r</th><th>f_ap_suprime_i</th><th>ferr_ap_suprime_i</th><th>f_suprime_i</th><th>ferr_suprime_i</th><th>flag_suprime_i</th><th>f_ap_suprime_z</th><th>ferr_ap_suprime_z</th><th>f_suprime_z</th><th>ferr_suprime_z</th><th>flag_suprime_z</th><th>f_ap_suprime_y</th><th>ferr_ap_suprime_y</th><th>f_suprime_y</th><th>ferr_suprime_y</th><th>flag_suprime_y</th></tr></thead>
-<tr><td>0</td><td>40963435269193901</td><td>131.073449812</td><td>-0.276930276178</td><td>26.9142</td><td>0.360354</td><td>0.200162</td><td>nan</td><td>25.4399</td><td>0.170799</td><td>nan</td><td>nan</td><td>25.6999</td><td>0.249512</td><td>nan</td><td>nan</td><td>25.9632</td><td>0.497833</td><td>nan</td><td>nan</td><td>25.2058</td><td>0.488876</td><td>nan</td><td>nan</td><td>0.0</td><td>0.0622741</td><td>0.0206687</td><td>3.0195e+09</td><td>nan</td><td>False</td><td>0.242122</td><td>0.0380887</td><td>nan</td><td>nan</td><td>False</td><td>0.190561</td><td>0.0437926</td><td>nan</td><td>nan</td><td>False</td><td>0.149523</td><td>0.0685595</td><td>nan</td><td>nan</td><td>False</td><td>0.300399</td><td>0.135261</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>0</td><td>40963435269193901</td><td>131.073449812</td><td>-0.276930276178</td><td>26.9142</td><td>0.360354</td><td>nan</td><td>nan</td><td>25.4399</td><td>0.170799</td><td>nan</td><td>nan</td><td>25.6999</td><td>0.249512</td><td>nan</td><td>nan</td><td>25.9632</td><td>0.497833</td><td>nan</td><td>nan</td><td>25.2058</td><td>0.488876</td><td>nan</td><td>nan</td><td>0.0</td><td>0.0622741</td><td>0.0206687</td><td>nan</td><td>nan</td><td>False</td><td>0.242122</td><td>0.0380887</td><td>nan</td><td>nan</td><td>False</td><td>0.190561</td><td>0.0437926</td><td>nan</td><td>nan</td><td>False</td><td>0.149523</td><td>0.0685595</td><td>nan</td><td>nan</td><td>False</td><td>0.300399</td><td>0.135261</td><td>nan</td><td>nan</td><td>False</td></tr>
 <tr><td>1</td><td>40963435269193903</td><td>131.102652858</td><td>-0.276743077285</td><td>25.6517</td><td>0.103729</td><td>nan</td><td>nan</td><td>24.9508</td><td>0.095195</td><td>nan</td><td>nan</td><td>24.4947</td><td>0.0818356</td><td>nan</td><td>nan</td><td>24.6613</td><td>0.141584</td><td>nan</td><td>nan</td><td>24.4238</td><td>0.222534</td><td>nan</td><td>nan</td><td>0.0</td><td>0.199214</td><td>0.0190325</td><td>nan</td><td>nan</td><td>False</td><td>0.379919</td><td>0.0333105</td><td>nan</td><td>nan</td><td>False</td><td>0.578258</td><td>0.0435852</td><td>nan</td><td>nan</td><td>False</td><td>0.495987</td><td>0.0646783</td><td>nan</td><td>nan</td><td>False</td><td>0.617251</td><td>0.126513</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>2</td><td>40963435269193910</td><td>131.031830265</td><td>-0.276647844605</td><td>27.8932</td><td>0.935329</td><td>0.261878</td><td>1.11533</td><td>26.0427</td><td>0.308712</td><td>26.4181</td><td>0.512006</td><td>25.279</td><td>0.182517</td><td>25.2365</td><td>0.231047</td><td>25.4536</td><td>0.32883</td><td>25.4816</td><td>0.425254</td><td>24.8359</td><td>0.365362</td><td>26.2901</td><td>1.76111</td><td>1.0</td><td>0.0252762</td><td>0.0217747</td><td>2.85265e+09</td><td>2.93042e+09</td><td>False</td><td>0.138974</td><td>0.039515</td><td>0.0983458</td><td>0.0463774</td><td>False</td><td>0.28079</td><td>0.0472021</td><td>0.292022</td><td>0.062143</td><td>False</td><td>0.239082</td><td>0.0724092</td><td>0.232996</td><td>0.0912586</td><td>False</td><td>0.422332</td><td>0.142119</td><td>0.110653</td><td>0.179484</td><td>False</td></tr>
-<tr><td>3</td><td>40963435269193915</td><td>131.081280657</td><td>-0.27634783021</td><td>24.5946</td><td>0.0443133</td><td>0.156046</td><td>0.0440065</td><td>24.5061</td><td>0.0697917</td><td>24.818</td><td>0.0683966</td><td>24.1662</td><td>0.0674364</td><td>24.3184</td><td>0.0636798</td><td>23.7765</td><td>0.0738748</td><td>23.9592</td><td>0.0694896</td><td>23.7634</td><td>0.147234</td><td>23.9317</td><td>0.136121</td><td>0.0</td><td>0.527436</td><td>0.0215268</td><td>3.14471e+09</td><td>1.2746e+08</td><td>False</td><td>0.572229</td><td>0.0367832</td><td>0.429322</td><td>0.0270454</td><td>False</td><td>0.782562</td><td>0.0486059</td><td>0.680227</td><td>0.0398962</td><td>False</td><td>1.12051</td><td>0.0762411</td><td>0.946975</td><td>0.0606085</td><td>False</td><td>1.13404</td><td>0.153785</td><td>0.971251</td><td>0.121768</td><td>False</td></tr>
+<tr><td>2</td><td>40963435269193910</td><td>131.031830265</td><td>-0.276647844605</td><td>27.8932</td><td>0.935329</td><td>27.8437</td><td>1.11533</td><td>26.0427</td><td>0.308712</td><td>26.4181</td><td>0.512006</td><td>25.279</td><td>0.182517</td><td>25.2365</td><td>0.231047</td><td>25.4536</td><td>0.32883</td><td>25.4816</td><td>0.425254</td><td>24.8359</td><td>0.365362</td><td>26.2901</td><td>1.76111</td><td>1.0</td><td>0.0252762</td><td>0.0217747</td><td>0.0264547</td><td>0.0271758</td><td>False</td><td>0.138974</td><td>0.039515</td><td>0.0983458</td><td>0.0463774</td><td>False</td><td>0.28079</td><td>0.0472021</td><td>0.292022</td><td>0.062143</td><td>False</td><td>0.239082</td><td>0.0724092</td><td>0.232996</td><td>0.0912586</td><td>False</td><td>0.422332</td><td>0.142119</td><td>0.110653</td><td>0.179484</td><td>False</td></tr>
+<tr><td>3</td><td>40963435269193915</td><td>131.081280657</td><td>-0.27634783021</td><td>24.5946</td><td>0.0443133</td><td>24.8596</td><td>0.0440065</td><td>24.5061</td><td>0.0697917</td><td>24.818</td><td>0.0683966</td><td>24.1662</td><td>0.0674364</td><td>24.3184</td><td>0.0636798</td><td>23.7765</td><td>0.0738748</td><td>23.9592</td><td>0.0694896</td><td>23.7634</td><td>0.147234</td><td>23.9317</td><td>0.136121</td><td>0.0</td><td>0.527436</td><td>0.0215268</td><td>0.4132</td><td>0.0167476</td><td>False</td><td>0.572229</td><td>0.0367832</td><td>0.429322</td><td>0.0270454</td><td>False</td><td>0.782562</td><td>0.0486059</td><td>0.680227</td><td>0.0398962</td><td>False</td><td>1.12051</td><td>0.0762411</td><td>0.946975</td><td>0.0606085</td><td>False</td><td>1.13404</td><td>0.153785</td><td>0.971251</td><td>0.121768</td><td>False</td></tr>
 <tr><td>4</td><td>40963435269193932</td><td>131.099304057</td><td>-0.275991336971</td><td>27.721</td><td>0.67662</td><td>nan</td><td>nan</td><td>27.4155</td><td>0.925594</td><td>nan</td><td>nan</td><td>25.8259</td><td>0.287991</td><td>nan</td><td>nan</td><td>28.0264</td><td>3.28335</td><td>nan</td><td>nan</td><td>27.2616</td><td>3.17253</td><td>nan</td><td>nan</td><td>0.0</td><td>0.02962</td><td>0.0184589</td><td>nan</td><td>nan</td><td>False</td><td>0.0392473</td><td>0.0334585</td><td>nan</td><td>nan</td><td>False</td><td>0.169679</td><td>0.0450072</td><td>nan</td><td>nan</td><td>False</td><td>0.0223579</td><td>0.0676118</td><td>nan</td><td>nan</td><td>False</td><td>0.0452251</td><td>0.132148</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>5</td><td>40963435269193933</td><td>131.072161702</td><td>-0.275813834087</td><td>25.4396</td><td>0.100286</td><td>0.147511</td><td>0.480484</td><td>25.1226</td><td>0.123961</td><td>24.6473</td><td>0.358705</td><td>24.6382</td><td>0.0991602</td><td>24.163</td><td>0.318881</td><td>24.6129</td><td>0.13797</td><td>24.6019</td><td>0.666148</td><td>23.9812</td><td>0.159975</td><td>23.1006</td><td>0.340387</td><td>0.0</td><td>0.242184</td><td>0.0223698</td><td>3.16953e+09</td><td>1.40265e+09</td><td>False</td><td>0.3243</td><td>0.0370261</td><td>0.502426</td><td>0.165991</td><td>False</td><td>0.506649</td><td>0.0462722</td><td>0.784843</td><td>0.230509</td><td>False</td><td>0.518587</td><td>0.0658993</td><td>0.523903</td><td>0.321438</td><td>False</td><td>0.927973</td><td>0.13673</td><td>2.08812</td><td>0.654644</td><td>False</td></tr>
-<tr><td>6</td><td>40963435269193938</td><td>131.064570286</td><td>-0.275888076772</td><td>27.0934</td><td>0.449869</td><td>nan</td><td>8.50107</td><td>25.9476</td><td>0.246657</td><td>24.8279</td><td>0.345881</td><td>25.2735</td><td>0.182916</td><td>24.9505</td><td>0.577038</td><td>24.9601</td><td>0.216479</td><td>24.1195</td><td>0.399162</td><td>25.4562</td><td>0.654302</td><td>nan</td><td>nan</td><td>1.0</td><td>0.0528018</td><td>0.0218781</td><td>nan</td><td>nan</td><td>False</td><td>0.151692</td><td>0.0344613</td><td>0.425436</td><td>0.135531</td><td>False</td><td>0.282218</td><td>0.0475459</td><td>0.380018</td><td>0.201969</td><td>False</td><td>0.376682</td><td>0.0751045</td><td>0.816932</td><td>0.300338</td><td>False</td><td>0.238522</td><td>0.143741</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>7</td><td>40963435269193939</td><td>131.056995619</td><td>-0.275910789353</td><td>27.3104</td><td>0.57684</td><td>0.829323</td><td>0.581809</td><td>25.636</td><td>0.199654</td><td>25.4513</td><td>0.295752</td><td>25.3145</td><td>0.205602</td><td>24.8507</td><td>0.264895</td><td>24.9098</td><td>0.242218</td><td>25.3164</td><td>0.665424</td><td>25.2316</td><td>0.627343</td><td>25.2201</td><td>1.1766</td><td>0.0</td><td>0.0432353</td><td>0.0229705</td><td>1.6915e+09</td><td>9.06414e+08</td><td>False</td><td>0.20212</td><td>0.0371674</td><td>0.239605</td><td>0.0652678</td><td>False</td><td>0.271767</td><td>0.0514635</td><td>0.416609</td><td>0.101643</td><td>False</td><td>0.394532</td><td>0.0880166</td><td>0.271304</td><td>0.166276</td><td>False</td><td>0.293342</td><td>0.169494</td><td>0.296448</td><td>0.321257</td><td>False</td></tr>
-<tr><td>8</td><td>40963435269193941</td><td>131.076931122</td><td>-0.275762473797</td><td>24.5644</td><td>0.0489577</td><td>0.131306</td><td>0.0595079</td><td>24.327</td><td>0.0594946</td><td>24.2631</td><td>0.0708012</td><td>24.1211</td><td>0.0632811</td><td>23.9202</td><td>0.0738668</td><td>23.8983</td><td>0.0724527</td><td>23.838</td><td>0.0937361</td><td>23.3954</td><td>0.0931107</td><td>23.3778</td><td>0.124786</td><td>0.0</td><td>0.542296</td><td>0.0244531</td><td>3.2172e+09</td><td>1.76331e+08</td><td>False</td><td>0.674855</td><td>0.0369798</td><td>0.715779</td><td>0.0466762</td><td>False</td><td>0.815739</td><td>0.0475446</td><td>0.98158</td><td>0.0667807</td><td>False</td><td>1.0016</td><td>0.0668383</td><td>1.05879</td><td>0.0914097</td><td>False</td><td>1.59164</td><td>0.136496</td><td>1.6176</td><td>0.185914</td><td>False</td></tr>
-<tr><td>9</td><td>40963435269193944</td><td>131.107654784</td><td>-0.275660307597</td><td>25.0083</td><td>0.058539</td><td>nan</td><td>0.0647859</td><td>24.4645</td><td>0.059893</td><td>24.4459</td><td>0.0637685</td><td>23.8534</td><td>0.0470196</td><td>23.82</td><td>0.0552276</td><td>24.0038</td><td>0.07962</td><td>23.8419</td><td>0.0802273</td><td>24.0731</td><td>0.174533</td><td>24.0293</td><td>0.19552</td><td>0.0</td><td>0.360317</td><td>0.019427</td><td>nan</td><td>nan</td><td>False</td><td>0.594548</td><td>0.0327973</td><td>0.604853</td><td>0.0355248</td><td>False</td><td>1.04388</td><td>0.0452067</td><td>1.07642</td><td>0.0547537</td><td>False</td><td>0.908832</td><td>0.0666471</td><td>1.055</td><td>0.0779558</td><td>False</td><td>0.852601</td><td>0.137056</td><td>0.887734</td><td>0.159863</td><td>False</td></tr>
+<tr><td>5</td><td>40963435269193933</td><td>131.072161702</td><td>-0.275813834087</td><td>25.4396</td><td>0.100286</td><td>25.4583</td><td>0.480484</td><td>25.1226</td><td>0.123961</td><td>24.6473</td><td>0.358705</td><td>24.6382</td><td>0.0991602</td><td>24.163</td><td>0.318881</td><td>24.6129</td><td>0.13797</td><td>24.6019</td><td>0.666148</td><td>23.9812</td><td>0.159975</td><td>23.1006</td><td>0.340387</td><td>0.0</td><td>0.242184</td><td>0.0223698</td><td>0.238049</td><td>0.105347</td><td>False</td><td>0.3243</td><td>0.0370261</td><td>0.502426</td><td>0.165991</td><td>False</td><td>0.506649</td><td>0.0462722</td><td>0.784843</td><td>0.230509</td><td>False</td><td>0.518587</td><td>0.0658993</td><td>0.523903</td><td>0.321438</td><td>False</td><td>0.927973</td><td>0.13673</td><td>2.08812</td><td>0.654644</td><td>False</td></tr>
+<tr><td>6</td><td>40963435269193938</td><td>131.064570286</td><td>-0.275888076772</td><td>27.0934</td><td>0.449869</td><td>28.7857</td><td>8.50107</td><td>25.9476</td><td>0.246657</td><td>24.8279</td><td>0.345881</td><td>25.2735</td><td>0.182916</td><td>24.9505</td><td>0.577038</td><td>24.9601</td><td>0.216479</td><td>24.1195</td><td>0.399162</td><td>25.4562</td><td>0.654302</td><td>nan</td><td>nan</td><td>1.0</td><td>0.0528018</td><td>0.0218781</td><td>0.0111099</td><td>0.0869883</td><td>False</td><td>0.151692</td><td>0.0344613</td><td>0.425436</td><td>0.135531</td><td>False</td><td>0.282218</td><td>0.0475459</td><td>0.380018</td><td>0.201969</td><td>False</td><td>0.376682</td><td>0.0751045</td><td>0.816932</td><td>0.300338</td><td>False</td><td>0.238522</td><td>0.143741</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>7</td><td>40963435269193939</td><td>131.056995619</td><td>-0.275910789353</td><td>27.3104</td><td>0.57684</td><td>26.6599</td><td>0.581809</td><td>25.636</td><td>0.199654</td><td>25.4513</td><td>0.295752</td><td>25.3145</td><td>0.205602</td><td>24.8507</td><td>0.264895</td><td>24.9098</td><td>0.242218</td><td>25.3164</td><td>0.665424</td><td>25.2316</td><td>0.627343</td><td>25.2201</td><td>1.1766</td><td>0.0</td><td>0.0432353</td><td>0.0229705</td><td>0.0787085</td><td>0.0421772</td><td>False</td><td>0.20212</td><td>0.0371674</td><td>0.239605</td><td>0.0652678</td><td>False</td><td>0.271767</td><td>0.0514635</td><td>0.416609</td><td>0.101643</td><td>False</td><td>0.394532</td><td>0.0880166</td><td>0.271304</td><td>0.166276</td><td>False</td><td>0.293342</td><td>0.169494</td><td>0.296448</td><td>0.321257</td><td>False</td></tr>
+<tr><td>8</td><td>40963435269193941</td><td>131.076931122</td><td>-0.275762473797</td><td>24.5644</td><td>0.0489577</td><td>24.4862</td><td>0.0595079</td><td>24.327</td><td>0.0594946</td><td>24.2631</td><td>0.0708012</td><td>24.1211</td><td>0.0632811</td><td>23.9202</td><td>0.0738668</td><td>23.8983</td><td>0.0724527</td><td>23.838</td><td>0.0937361</td><td>23.3954</td><td>0.0931107</td><td>23.3778</td><td>0.124786</td><td>0.0</td><td>0.542296</td><td>0.0244531</td><td>0.582815</td><td>0.0319434</td><td>False</td><td>0.674855</td><td>0.0369798</td><td>0.715779</td><td>0.0466762</td><td>False</td><td>0.815739</td><td>0.0475446</td><td>0.98158</td><td>0.0667807</td><td>False</td><td>1.0016</td><td>0.0668383</td><td>1.05879</td><td>0.0914097</td><td>False</td><td>1.59164</td><td>0.136496</td><td>1.6176</td><td>0.185914</td><td>False</td></tr>
+<tr><td>9</td><td>40963435269193944</td><td>131.107654784</td><td>-0.275660307597</td><td>25.0083</td><td>0.058539</td><td>24.9753</td><td>0.0647859</td><td>24.4645</td><td>0.059893</td><td>24.4459</td><td>0.0637685</td><td>23.8534</td><td>0.0470196</td><td>23.82</td><td>0.0552276</td><td>24.0038</td><td>0.07962</td><td>23.8419</td><td>0.0802273</td><td>24.0731</td><td>0.174533</td><td>24.0293</td><td>0.19552</td><td>0.0</td><td>0.360317</td><td>0.019427</td><td>0.371423</td><td>0.0221628</td><td>False</td><td>0.594548</td><td>0.0327973</td><td>0.604853</td><td>0.0355248</td><td>False</td><td>1.04388</td><td>0.0452067</td><td>1.07642</td><td>0.0547537</td><td>False</td><td>0.908832</td><td>0.0666471</td><td>1.055</td><td>0.0779558</td><td>False</td><td>0.852601</td><td>0.137056</td><td>0.887734</td><td>0.159863</td><td>False</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -17937,8 +18032,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140557619653880-358811').dataTable()");
-    $('#table140557619653880-358811').dataTable({
+    console.log("$('#table140316810215152-891511').dataTable()");
+    $('#table140316810215152-891511').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -18006,7 +18101,9 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
@@ -18015,7 +18112,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 5500445 sources.
 The cleaned catalogue has 5500272 sources (173 removed).
@@ -18069,7 +18168,9 @@ The cleaned catalogue has 173 sources flagged as having been cleaned
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -18689,7 +18790,9 @@ hIecGUEQBJHwkDMjCIIgEp7/B7Y7Bh94Zg8rAAAAAElFTkSuQmCC
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -22931,7 +23034,9 @@ t9JxnBcirLV2sRvhOI7jOM7icj0EjuM4juO4hMBxHMdxHJcQOI7jOI6DSwgcx3Ecx8ElBI7jOI7j
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: -0.04088912146471557 arcsec
 Dec correction: -0.048413513806411235 arcsec
@@ -22974,7 +23079,9 @@ Dec correction: -0.048413513806411235 arcsec
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -23599,7 +23706,9 @@ AAmdAAAAAElFTkSuQmCC
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -27555,7 +27664,9 @@ SRIWAkmSBPwGspQ+o95vCasAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>55457 sources flagged.
 </pre>
@@ -27600,4 +27711,8 @@ SRIWAkmSBPwGspQ+o95vCasAAAAASUVORK5CYII=
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>

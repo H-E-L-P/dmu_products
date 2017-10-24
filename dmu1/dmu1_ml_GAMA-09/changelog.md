@@ -17,3 +17,11 @@ folder.
 ## 2017-08-11: Rerunning field
 
 Started process of rerunning field with new Jupyter notebook format.
+
+## 2017-10-06: Correction (some magnitude where Vega not AB).
+
+## 2017-10-24: Re-run with new HSC data.
+
+The SUPRIME g total magnitude was wrong in the pristine catalogue. It has been
+updated and the master list was re-generated.
+

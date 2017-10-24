@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>1.6_PanSTARRS-3SS</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1.6_PanSTARRS-3SS</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13,8 +11,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1109,7 +1107,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2538,7 +2535,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3025,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8760,6 +8755,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8962,8 +8960,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8986,6 +8990,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9122,6 +9136,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9211,6 +9228,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9255,6 +9275,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9551,6 +9574,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9571,11 +9595,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11246,7 +11265,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11558,6 +11577,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11571,6 +11591,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11631,8 +11654,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11668,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11782,10 +11809,12 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-6b6e8f7 (Thu Oct 5 17:35:30 2017 +0100)
+91cdb7b (Fri Oct 20 11:48:11 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11935,7 +11964,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
@@ -11964,11 +11995,13 @@ Check the NumPy 1.11 release notes for more information.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[6]:</div>
+
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table139733511664416-346148" class="table-striped table-bordered table-condensed">
+<table id="table139635619734528-718541" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>ps1_id</th><th>ps1_ra</th><th>ps1_dec</th><th>m_ap_gpc1_g</th><th>merr_ap_gpc1_g</th><th>m_gpc1_g</th><th>merr_gpc1_g</th><th>m_ap_gpc1_r</th><th>merr_ap_gpc1_r</th><th>m_gpc1_r</th><th>merr_gpc1_r</th><th>m_ap_gpc1_i</th><th>merr_ap_gpc1_i</th><th>m_gpc1_i</th><th>merr_gpc1_i</th><th>m_ap_gpc1_z</th><th>merr_ap_gpc1_z</th><th>m_gpc1_z</th><th>merr_gpc1_z</th><th>m_ap_gpc1_y</th><th>merr_ap_gpc1_y</th><th>m_gpc1_y</th><th>merr_gpc1_y</th><th>f_ap_gpc1_g</th><th>ferr_ap_gpc1_g</th><th>f_gpc1_g</th><th>ferr_gpc1_g</th><th>flag_gpc1_g</th><th>f_ap_gpc1_r</th><th>ferr_ap_gpc1_r</th><th>f_gpc1_r</th><th>ferr_gpc1_r</th><th>flag_gpc1_r</th><th>f_ap_gpc1_i</th><th>ferr_ap_gpc1_i</th><th>f_gpc1_i</th><th>ferr_gpc1_i</th><th>flag_gpc1_i</th><th>f_ap_gpc1_z</th><th>ferr_ap_gpc1_z</th><th>f_gpc1_z</th><th>ferr_gpc1_z</th><th>flag_gpc1_z</th><th>f_ap_gpc1_y</th><th>ferr_ap_gpc1_y</th><th>f_gpc1_y</th><th>ferr_gpc1_y</th><th>flag_gpc1_y</th></tr></thead>
 <tr><td>0</td><td>105121358581688567</td><td>135.8580989</td><td>-2.39330631</td><td>22.5258998871</td><td>0.0122210001573</td><td>nan</td><td>nan</td><td>21.9381999969</td><td>0.00842500012368</td><td>22.0634994507</td><td>0.0985359996557</td><td>21.352399826</td><td>0.00503099989146</td><td>21.5296993256</td><td>0.0575600005686</td><td>21.1212997437</td><td>0.00716299982741</td><td>21.3234996796</td><td>0.11396600306</td><td>20.595199585</td><td>0.00562199996784</td><td>20.6298999786</td><td>0.161436006427</td><td>3.54519432283</td><td>0.0399045552566</td><td>nan</td><td>nan</td><td>False</td><td>6.09144042647</td><td>0.0472678226272</td><td>5.42750484395</td><td>0.492573254066</td><td>False</td><td>10.4481661333</td><td>0.0484138987467</td><td>8.87401727409</td><td>0.470453538442</td><td>False</td><td>12.9264747603</td><td>0.0852806934794</td><td>10.7300100361</td><td>1.12629232704</td><td>False</td><td>20.9855408242</td><td>0.108664249494</td><td>20.3254424655</td><td>3.02215054274</td><td>False</td></tr>
 <tr><td>1</td><td>105121358581688567</td><td>135.8580989</td><td>-2.39330631</td><td>22.6905994415</td><td>0.0119899995625</td><td>23.1557998657</td><td>0.200140997767</td><td>21.8630008698</td><td>0.00734400004148</td><td>22.0741996765</td><td>0.100256003439</td><td>21.3078994751</td><td>0.00449299998581</td><td>21.4776000977</td><td>0.05527099967</td><td>21.182800293</td><td>0.00641300017014</td><td>21.3558006287</td><td>0.109927996993</td><td>20.4773006439</td><td>0.00473499996588</td><td>20.5387001038</td><td>0.164446994662</td><td>3.04621269281</td><td>0.0336399290122</td><td>1.984632293</td><td>0.365840510412</td><td>False</td><td>6.52829321196</td><td>0.0441578584276</td><td>5.3742780196</td><td>0.49625648777</td><td>False</td><td>10.885295168</td><td>0.0450455928625</td><td>9.31022037472</td><td>0.473950472503</td><td>False</td><td>12.2146178149</td><td>0.0721467569946</td><td>10.4154910133</td><td>1.0545416647</td><td>False</td><td>23.3926672073</td><td>0.102017670538</td><td>22.1064984689</td><td>3.34827854113</td><td>False</td></tr>
@@ -11990,8 +12023,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139733511664416-346148').dataTable()");
-    $('#table139733511664416-346148').dataTable({
+    console.log("$('#table139635619734528-718541').dataTable()");
+    $('#table139635619734528-718541').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12054,7 +12087,9 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
@@ -12063,7 +12098,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 1759002 sources.
 The cleaned catalogue has 1492108 sources (266894 removed).
@@ -12117,7 +12154,9 @@ The cleaned catalogue has 239715 sources flagged as having been cleaned
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -12382,7 +12421,9 @@ AABJRU5ErkJggg==
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15658,7 +15699,9 @@ EMPhTkREFGI43ImIiEIMhzsREVGI4XAnIiIKMRzuREREIeY/QzMGdhq17CQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: -0.001187913613875935 arcsec
 Dec correction: 3.918257998059005e-05 arcsec
@@ -15701,7 +15744,9 @@ Dec correction: 3.918257998059005e-05 arcsec
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -15966,7 +16011,9 @@ yeMAAAAASUVORK5CYII=
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -19223,7 +19270,9 @@ SUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>287040 sources flagged.
 </pre>
@@ -19268,4 +19317,8 @@ SUVORK5CYII=
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>1.9_VISTA-VIKING</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1.9_VISTA-VIKING</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13,8 +11,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1109,7 +1107,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2538,7 +2535,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3025,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8760,6 +8755,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8962,8 +8960,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8986,6 +8990,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9122,6 +9136,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9211,6 +9228,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9255,6 +9275,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9551,6 +9574,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9571,11 +9595,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11246,7 +11265,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11558,6 +11577,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11571,6 +11591,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11631,8 +11654,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11668,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11782,10 +11809,12 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-6b6e8f7 (Thu Oct 5 17:35:30 2017 +0100)
+91cdb7b (Fri Oct 20 11:48:11 2017 +0100)
 </pre>
 </div>
 </div>
@@ -11961,7 +11990,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
@@ -11990,11 +12021,13 @@ Check the NumPy 1.11 release notes for more information.
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table139863596283776-260355" class="table-striped table-bordered table-condensed">
+<table id="table140688380512128-704876" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>viking_id</th><th>viking_ra</th><th>viking_dec</th><th>viking_stellarity</th><th>m_viking_z</th><th>merr_viking_z</th><th>m_ap_viking_z</th><th>merr_ap_viking_z</th><th>m_viking_y</th><th>merr_viking_y</th><th>m_ap_viking_y</th><th>merr_ap_viking_y</th><th>m_viking_j</th><th>merr_viking_j</th><th>m_ap_viking_j</th><th>merr_ap_viking_j</th><th>m_viking_h</th><th>merr_viking_h</th><th>m_ap_viking_h</th><th>merr_ap_viking_h</th><th>m_viking_k</th><th>merr_viking_k</th><th>m_ap_viking_k</th><th>merr_ap_viking_k</th><th>f_viking_z</th><th>ferr_viking_z</th><th>flag_viking_z</th><th>f_ap_viking_z</th><th>ferr_ap_viking_z</th><th>f_viking_y</th><th>ferr_viking_y</th><th>flag_viking_y</th><th>f_ap_viking_y</th><th>ferr_ap_viking_y</th><th>f_viking_j</th><th>ferr_viking_j</th><th>flag_viking_j</th><th>f_ap_viking_j</th><th>ferr_ap_viking_j</th><th>f_viking_h</th><th>ferr_viking_h</th><th>flag_viking_h</th><th>f_ap_viking_h</th><th>ferr_ap_viking_h</th><th>f_viking_k</th><th>ferr_viking_k</th><th>flag_viking_k</th><th>f_ap_viking_k</th><th>ferr_ap_viking_k</th></tr></thead>
 <thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <tr><td>0</td><td>601298825832</td><td>128.813001354</td><td>1.17496377238</td><td>5.29221e-07</td><td>21.9806</td><td>0.341605</td><td>21.7432</td><td>0.0969538</td><td>21.4692</td><td>0.218458</td><td>21.7307</td><td>0.217564</td><td>21.182</td><td>0.186659</td><td>21.7733</td><td>0.22097</td><td>21.0144</td><td>0.318317</td><td>21.2719</td><td>0.203654</td><td>20.9243</td><td>0.369152</td><td>21.1476</td><td>0.226017</td><td>5.85807</td><td>1.84312</td><td>False</td><td>7.28987</td><td>0.650968</td><td>9.3821</td><td>1.88775</td><td>False</td><td>7.37446</td><td>1.47772</td><td>12.2235</td><td>2.10145</td><td>False</td><td>7.0904</td><td>1.44304</td><td>14.2639</td><td>4.18188</td><td>False</td><td>11.2524</td><td>2.11063</td><td>15.4986</td><td>5.26955</td><td>False</td><td>12.6167</td><td>2.6264</td></tr>
@@ -12017,8 +12050,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139863596283776-260355').dataTable()");
-    $('#table139863596283776-260355').dataTable({
+    console.log("$('#table140688380512128-704876').dataTable()");
+    $('#table140688380512128-704876').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12081,7 +12114,9 @@ require(["datatables"], function(){
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
 Check the NumPy 1.11 release notes for more information.
@@ -12090,7 +12125,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 3549363 sources.
 The cleaned catalogue has 3547809 sources (1554 removed).
@@ -12144,7 +12181,9 @@ The cleaned catalogue has 1549 sources flagged as having been cleaned
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -13236,7 +13275,9 @@ YII=
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -16925,7 +16966,9 @@ YRiGYTSw/w/gvmBBORBKxQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: -0.051234650595688436 arcsec
 Dec correction: -0.05147916371074368 arcsec
@@ -16968,7 +17011,9 @@ Dec correction: -0.05147916371074368 arcsec
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -18076,7 +18121,9 @@ VW7U9C4Nbk8AAAAASUVORK5CYII=
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 
 
 <div class="output_png output_subarea ">
@@ -21184,7 +21231,9 @@ IsYLeo/H4/F4FjH/H/mn5n5dIHYqAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>210025 sources flagged.
 </pre>
@@ -21229,4 +21278,8 @@ IsYLeo/H4/F4FjH/H/mn5n5dIHYqAAAAAElFTkSuQmCC
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>
