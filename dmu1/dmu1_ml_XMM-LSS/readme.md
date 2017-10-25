@@ -17,8 +17,6 @@ XMM-LSS.
 | PanSTARRS-3SS  | GPC1             | grizy                        | dmu0_PanSTARRS1-3SS |
 | SXDS           | Subaru/Suprime | B, V, r, i, z                  | dmu0_SXDS           |
 | SpARCS         | CFHT  | u, g, r, y, z                           | dmu0_SpARCS         |
-| SpIES          | Spitzer | IRAC12                                | dmu0_SpIES          |
-| SpUDS          | Spitzer | IRAC1234                              | dmu0_SpUDS          |
 | UKIDSS-DXS     | UKIRT WFCAM      | YJHK?                  |  dmu0_UKIDSS-DXS_DR10plus |
 | UKIDSS-UDS     | UKIRT WFCAM      | YJHK?                        |  dmu0_UKIDSS-UDS    |
 | VIPERS         | ZYHJKs?                                         | dmu0_VIPERS-MLS     |
@@ -45,8 +43,6 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.10_PanSTARRS1-3SS.ipynb](1.10_PanSTARRS1-3SS.ipynb) 
 - [1.11_SXDS.ipynb](1.11_) 
 - [1.12_SpARCS.ipynb](1.12_SpARCS.ipynb) 
-- [1.13_SpIES.ipynb](1.13_) 
-- [1.14_SpUDS.ipynb](1.14_) 
 - [1.15_UKIDSS-DXS.ipynb](1.15_UKIDSS-DXS.ipynb) 
 - [1.16_UKIDSS-UDS.ipynb](1.16_) 
 - [1.17_VIPERS-MLS.ipynb](1.17_) 
