@@ -2,7 +2,7 @@ VISTA-VIDEO catalogues (private)
 ================================
 
 This product contains the private version of the VISTA-VIDEO catalogues. We used
-the `VIDEO-all_2016-04-14_fullcat_errfix.fits` downloaded from
+the `VIDEO-all_2017-02-12_fullcat_errfix.fits` downloaded from
 http://www-astro.physics.ox.ac.uk/~video/data/VIDEO_all/cats/
 
 
