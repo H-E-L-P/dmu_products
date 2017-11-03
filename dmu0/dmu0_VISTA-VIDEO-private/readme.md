@@ -6,7 +6,7 @@ the `VIDEO-all_2017-02-12_fullcat_errfix.fits` downloaded from
 http://www-astro.physics.ox.ac.uk/~video/data/VIDEO_all/cats/
 
 
-In an electronic mail, Boris Haeussler described the `errfix` catalogue as:
+In an electronic mail, Boris Häußler described the `errfix` catalogue as:
 
     The errfix version of each catalogue fixes the error bars given by
     SExtractor by creating fake positions in all images and taking the
@@ -26,5 +26,19 @@ The `ID` column is unique for each source in each field (but not cross-field).
 
 Detection is attempted in every band. The paper Jarvis et al. 2012 states:
 
-"Each tile catalogue contains objects detected in any of the Ks, H, J, Y , or Z bands, with measurements made in all the other bands based on the position in the detection image. Duplicate detections of objects are removed, by retaining only the longest wavelength detection (after matching the Ks −, H −, J−, Y − and Z−band detected catalogues with a 1 arcsecond tolerance)"
+"Each tile catalogue contains objects detected in any of the Ks, H, J, Y , or
+Z bands, with measurements made in all the other bands based on the position in
+the detection image. Duplicate detections of objects are removed, by retaining
+only the longest wavelength detection (after matching the Ks −, H −, J−, Y − and
+Z−band detected catalogues with a 1 arcsecond tolerance)"
 
+# Wrong z band magnitudes
+
+We discovered that the catalogue contains some wrong z magnitudes in the
+CDFS-SWIRE field.  Strangely, Sextractor affected some magnitudes to sources
+which are not on the z image.  Boris found a way to get rid of these magnitudes,
+all the wrong sources have a Z_MAGERR_AUTO to 0 in the *not errfix* catalogue.
+
+The `data` folder contains the `VIDEO-cdfs_2017-02-12_fullcat.fits` in which we
+can look for the corresponding IDs and remove their z magnitudes in the `errfix`
+catalogue.
