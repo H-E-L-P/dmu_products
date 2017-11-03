@@ -13,3 +13,7 @@ catalogue.
 
 - Column renamed to instrument_band in the merge notebook.
 - Correction to VHS notebook to convert magnitudes from Vega to AB.
+
+## 2017-11-03
+
+Correct the wrong z band fluxes and magnitudes of some sources.
