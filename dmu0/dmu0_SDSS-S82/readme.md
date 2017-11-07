@@ -1,6 +1,16 @@
 SDSS Stripe-82 (DR7)
 ====================
 
+# November 2017 version
+
+Mattia did a new extraction from the SDSS database (not with the SQL queries
+below) trying to solve the problem of duplicated sources.
+
+# Old version
+
+**This is the description of the first extraction from the SDSS data which had
+problems of duplicated sources.***
+
 This product contains the catalogue from the Sloan Digital Sky Survey (SDSS)
 Stripe-82 observations (part of the SDSS-DR7).  The data was obtained querying
 http://skyserver.sdss.org/CasJobs/ with the following queries:
