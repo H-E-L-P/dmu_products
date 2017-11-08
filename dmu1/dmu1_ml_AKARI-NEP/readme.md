@@ -5,7 +5,7 @@ AKARI-NEP.
 
 | Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
 |--------|-------------------------|:---------------------------------:|-----------------|
-| AKARI-NEP-OptNIR | Megacam/WIRCAM | u*g'r'i'z'YJKs              | dmu0_KARI-NEP-OptNIR |  
+| AKARI-NEP-OptNIR | CFHT/Megacam/WIRCAM | u*g'r'i'z'YJKs        | dmu0_AKARI-NEP-OptNIR |  
 | PanSTARRS-3SS | GPC1             | grizy                          | dmu0_PanSTARRS-3SS |     
 
 
@@ -16,11 +16,7 @@ the selection of columns, the conversion of some magnitudes or fluxes when
 needed, the removal of duplicated sources, the correction of astrometry using
 Gaia as reference, and the flagging of possible Gaia objects.
 
-- [1.1_AKARI-NEP-OptNIR.ipynb](1.1_AKARI-NEP-OptNIR.ipynb) CFHt MEgacam/WIRcam data
-  Camera (INT/WFC) data
-- [1.2_PanSTARRS-3SS.ipynb](1.2_PanSTARRS-3SS.ipynb) for Pan-STARRS1 - 3pi
-  Steradian Survey (3SS) data
-
+- [1.1_AKARI-NEP-OptNIR.ipynb](1.1_AKARI-NEP-OptNIR.ipynb) CFHT Megacam/WIRcam data
 
 ## Catalogue merging
 
