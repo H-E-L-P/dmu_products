@@ -12,3 +12,10 @@ See report. The updated files are
 ## 2017-08-29: Reprocessing
 
 Started reprocessing with notebooks.
+
+## 2017-11-08: Processing on HeDaM
+
+- Use the corrected HSC wide catalogue (with correct g band).
+- Don't use the tiled version of the merge function.
+- TODO: Correct the detection band flags.
+- Diagnostic notebook to be corrected.
