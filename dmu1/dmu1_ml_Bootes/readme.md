@@ -1,11 +1,18 @@
-# Master list on AKARI-NEP
+# Master list on Bootes
 
-Bootes is based on a catalogue produced by Micahel Brown (reference). This is described in dmuo_Bootes_Brown.
+Bootes is based on a catalogue produced by Micahel Brown (reference). This is described in dmu_0_Bootes_Brown.
 
 | Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
 |--------|-------------------------|:---------------------------------:|-----------------|
-| AKARI-NEP-OptNIR | CFHT/Megacam/WIRCAM | u*g'r'i'z'YJKs        | dmu0_AKARI-NEP-OptNIR |  
-| PanSTARRS-3SS | GPC1             | grizy                          | dmu0_PanSTARRS-3SS |     
+|        |                         | u, g, r, i, z, Y          | dmu0_DECaLS  |
+|        |                         | IRAC1234                  | dmu0_DataFusion-Spitzer |
+|        |                         | J, H, Ks                  | dmu0_IBIS  |
+|        |                         | u, g, r, i, z, Y          | dmu0_LegacySurvey  |
+|        |                         | R, I, Bw, Ks              | dmu0_NDWFS  |
+|        |                         | g, r, i, z, y             | dmu0_PanSTARRS1-3SS  |
+|        |                         | IRAC12344                 | dmu0_SDWFS  |
+|        |                         | J                         | dmu0_UHS  |
+|        |                         | z                         | dmu0_zBootes  |
 
 Here all we do is astrometry correction and other things to make the catalogue into HELP format.
 
