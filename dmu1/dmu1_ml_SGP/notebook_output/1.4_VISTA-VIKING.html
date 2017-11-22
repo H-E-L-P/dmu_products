@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11810,7 +11807,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
@@ -11872,8 +11871,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11991,7 +11989,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12022,12 +12022,14 @@ Check the NumPy 1.11 release notes for more information.
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[7]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table masked=True length=10&gt;
-<table id="table140696663613168-702948" class="table-striped table-bordered table-condensed">
+<table id="table140323078559112-842065" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>viking_id</th><th>viking_ra</th><th>viking_dec</th><th>viking_stellarity</th><th>m_vista_z</th><th>merr_vista_z</th><th>m_ap_vista_z</th><th>merr_ap_vista_z</th><th>m_vista_y</th><th>merr_vista_y</th><th>m_ap_vista_y</th><th>merr_ap_vista_y</th><th>m_vista_j</th><th>merr_vista_j</th><th>m_ap_vista_j</th><th>merr_ap_vista_j</th><th>m_vista_h</th><th>merr_vista_h</th><th>m_ap_vista_h</th><th>merr_ap_vista_h</th><th>m_vista_k</th><th>merr_vista_k</th><th>m_ap_vista_k</th><th>merr_ap_vista_k</th><th>f_vista_z</th><th>ferr_vista_z</th><th>flag_vista_z</th><th>f_ap_vista_z</th><th>ferr_ap_vista_z</th><th>f_vista_y</th><th>ferr_vista_y</th><th>flag_vista_y</th><th>f_ap_vista_y</th><th>ferr_ap_vista_y</th><th>f_vista_j</th><th>ferr_vista_j</th><th>flag_vista_j</th><th>f_ap_vista_j</th><th>ferr_ap_vista_j</th><th>f_vista_h</th><th>ferr_vista_h</th><th>flag_vista_h</th><th>f_ap_vista_h</th><th>ferr_ap_vista_h</th><th>f_vista_k</th><th>ferr_vista_k</th><th>flag_vista_k</th><th>f_ap_vista_k</th><th>ferr_ap_vista_k</th></tr></thead>
 <thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <tr><td>0</td><td>601324958322</td><td>337.037589563</td><td>-29.9562818902</td><td>0.9</td><td>23.091</td><td>0.309086</td><td>23.3029</td><td>0.284804</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>2.10675</td><td>0.599749</td><td>False</td><td>1.73315</td><td>0.45463</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td></tr>
@@ -12050,8 +12052,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140696663613168-702948').dataTable()");
-    $('#table140696663613168-702948').dataTable({
+    console.log("$('#table140323078559112-842065').dataTable()");
+    $('#table140323078559112-842065').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12068,8 +12070,7 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12077,8 +12078,7 @@ require(["datatables"], function(){
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12115,7 +12115,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12126,7 +12128,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 12380676 sources.
@@ -12140,8 +12144,7 @@ The cleaned catalogue has 30050 sources flagged as having been cleaned
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12182,7 +12185,9 @@ The cleaned catalogue has 30050 sources flagged as having been cleaned
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13591,7 +13596,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14321,7 +14328,9 @@ oJRSSo1CGgAopZRSo9D/B9ReTMPNwNdHAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: 0.1248752627574845 arcsec
@@ -14366,7 +14375,9 @@ Dec correction: -0.11282892556891966 arcsec
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15817,7 +15828,9 @@ RabmNOiUmtsAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -16595,8 +16608,7 @@ lFJpSAcApZRSKg3pAKCUUkqlIR0AlFJKqTSkA4BSSimVhnQAUEoppdKQDgBKKaVUGtIBQCmllEpD
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16639,7 +16651,9 @@ lFJpSAcApZRSKg3pAKCUUkqlIR0AlFJKqTSkA4BSSimVhnQAUEoppdKQDgBKKaVUGtIBQCmllEpD
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>468817 sources flagged.
@@ -16651,8 +16665,7 @@ lFJpSAcApZRSKg3pAKCUUkqlIR0AlFJKqTSkA4BSSimVhnQAUEoppdKQDgBKKaVUGtIBQCmllEpD
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16660,8 +16673,7 @@ lFJpSAcApZRSKg3pAKCUUkqlIR0AlFJKqTSkA4BSSimVhnQAUEoppdKQDgBKKaVUGtIBQCmllEpD
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
