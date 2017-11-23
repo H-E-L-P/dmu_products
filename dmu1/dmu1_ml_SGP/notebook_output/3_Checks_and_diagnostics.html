@@ -11726,7 +11726,9 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}@media print {
+}
+
+@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11747,7 +11749,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11771,7 +11773,8 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11797,9 +11800,7 @@ div#notebook {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
@@ -11853,7 +11854,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">OUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;OUT_DIR&#39;</span><span class="p">,</span> <span class="s2">&quot;./data&quot;</span><span class="p">)</span>
 <span class="c1">#SUFFIX = os.environ.get(&#39;SUFFIX&#39;, time.strftime(&quot;_%Y%m%d&quot;))</span>
-<span class="n">SUFFIX</span> <span class="o">=</span> <span class="s2">&quot;_20171121&quot;</span>
+<span class="n">SUFFIX</span> <span class="o">=</span> <span class="s2">&quot;_20171122&quot;</span>
 
 <span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_hatlas-sgp</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
 </pre></div>
@@ -11863,7 +11864,8 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11911,9 +11913,7 @@ div#notebook {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -12241,9 +12241,7 @@ hK0QQiSBhK0QQiSBhK0QQiSBhK0QQiTB/wOoMzfamv6LJgAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -12680,7 +12678,8 @@ R/l/lwV5LQBnI/cAAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12707,7 +12706,8 @@ R/l/lwV5LQBnI/cAAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12735,9 +12735,7 @@ R/l/lwV5LQBnI/cAAAAASUVORK5CYII=
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -12968,9 +12966,7 @@ RU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -13151,9 +13147,7 @@ AAxBmAEAABiCMAMAADAEYQYAAGCI/w+bdCC7vGkMTAAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -13357,9 +13351,7 @@ AAMQ2gAAAAxAaAMAADAAoQ0AAMAA/xffezVcZrzfIgAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -13593,9 +13585,7 @@ zAAAAEyCpUwAAACTIJgBAACYBMEMAADAJAhmAAAAJkEwAwAAMAmCGQAAgEkQzAAAAEyCYAYAAGAS
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -13827,9 +13817,7 @@ QxDMAAAADEEwAwAAMATBDAAAwBD/H54uvhWN/SMqAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -14072,7 +14060,8 @@ EyC0AQAAmAChDQAAwAQIbQAAACZAaAMAADCB/x+w6yh9SySajQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14109,9 +14098,7 @@ EyC0AQAAmAChDQAAwAQIbQAAACZAaAMAADCB/x+w6yh9SySajQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 g (aperture) - OmegaCAM g (aperture):
@@ -14124,9 +14111,7 @@ EyC0AQAAmAChDQAAwAQIbQAAACZAaAMAADCB/x+w6yh9SySajQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -15591,9 +15576,7 @@ dJaotAqCIAiCIAiCIAg6S1RaBUEQBEEQBEEQBJ0lKq2CIAiCIAiCIAiCzhKVVkEQBEEQBEEQBEFn
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 g (total) - OmegaCAM g (total):
@@ -15606,9 +15589,7 @@ dJaotAqCIAiCIAiCIAg6S1RaBUEQBEEQBEEQBJ0lKq2CIAiCIAiCIAiCzhKVVkEQBEEQBEEQBEFn
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -17031,9 +17012,7 @@ hBCiyZJKqxBCCCGEEEKIJksqrUIIIYQQQgghmqz/As2EfpZ+OTBdAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 r (aperture) - OmegaCAM r (aperture):
@@ -17046,9 +17025,7 @@ hBCiyZJKqxBCCCGEEEKIJksqrUIIIYQQQgghmqz/As2EfpZ+OTBdAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -18446,9 +18423,7 @@ hBBCyIz1P15r0sv5miNbAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 r (total) - OmegaCAM r (total):
@@ -18461,9 +18436,7 @@ hBBCyIz1P15r0sv5miNbAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -19879,9 +19852,7 @@ aRUEQRAEQRAEQRCuW6LTKgiCIAiCIAiCIFy3RKdVEARBEARBEARBuG6JTqsgCIIgCIIgCIJw3fo/
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 i (aperture) - OmegaCAM i (aperture):
@@ -19894,9 +19865,7 @@ aRUEQRAEQRAEQRCuW6LTKgiCIAiCIAiCIFy3RKdVEARBEARBEARBuG6JTqsgCIIgCIIgCIJw3fo/
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -21293,9 +21262,7 @@ IYQQQgghkxZVWgkhhBBCCCGETFr/AvOiNQpZI8nNAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>GPC1 i (total) - OmegaCAM i (total):
@@ -21308,9 +21275,7 @@ IYQQQgghkxZVWgkhhBBCCCGETFr/AvOiNQpZI8nNAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -22766,9 +22731,7 @@ aRVCCCGEEEIIUWlJpVUIIYQQQgghRKX1fx3e+O5JVYEgAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA z (aperture) - GPC1 z (aperture):
@@ -22781,9 +22744,7 @@ aRVCCCGEEEIIUWlJpVUIIYQQQgghRKX1fx3e+O5JVYEgAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -24097,9 +24058,7 @@ nFZBEARBEARBEAShYPn/HD3w695M0lMAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA z (total) - GPC1 z (total):
@@ -24112,9 +24071,7 @@ nFZBEARBEARBEAShYPn/HD3w695M0lMAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -25543,9 +25500,7 @@ IsaVpAAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA y (aperture) - GPC1 y (aperture):
@@ -25558,9 +25513,7 @@ IsaVpAAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -26906,9 +26859,7 @@ O5u5qXAWoukAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA y (total) - GPC1 y (total):
@@ -26921,9 +26872,7 @@ O5u5qXAWoukAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -28213,7 +28162,8 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -28235,7 +28185,8 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -28263,8 +28214,7 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 </tbody>
 </table>
 <p>In addition, VISTA uses a K band whereas 2MASS uses a Ks (“short”) band, <a href="http://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec6_4b.html">this page</a> give a correction to convert the K band in a Ks band with the formula:</p>
-<p>$$K_{s(2MASS)} = K_{UKIRT} + 0.003 + 0.004 * (J−K)_{UKIRT}$$</p>
-
+$$K_{s(2MASS)} = K_{UKIRT} + 0.003 + 0.004 * (J−K)_{UKIRT}$$
 </div>
 </div>
 </div>
@@ -28321,9 +28271,7 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA J (total) - 2MASS J:
@@ -28336,9 +28284,7 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -29679,9 +29625,7 @@ AAAASUVORK5CYII=
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>VISTA Ks-like (total) - 2MASS Ks:
@@ -29694,9 +29638,7 @@ AAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -31023,7 +30965,8 @@ iVYAAACK9QBU+48bZS2hkwAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -31054,9 +30997,7 @@ iVYAAACK9QBU+48bZS2hkwAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 12930467 / 23641895 (54.69%)
@@ -31065,9 +31006,7 @@ iVYAAACK9QBU+48bZS2hkwAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -34680,9 +34619,7 @@ rkJggg==
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 943694 / 23641895 (3.99%)
@@ -34691,9 +34628,7 @@ rkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -37624,7 +37559,8 @@ dCSAW/yYAQAkwioTACARihkAQCIUMwCARChmAACJUMwAABLxBZ4yTpedNlUNAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37654,9 +37590,7 @@ dCSAW/yYAQAkwioTACARihkAQCIUMwCARChmAACJUMwAABLxBZ4yTpedNlUNAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 1863979 / 23641895 (7.88%)
@@ -37665,9 +37599,7 @@ dCSAW/yYAQAkwioTACARihkAQCIUMwCARChmAACJUMwAABLxBZ4yTpedNlUNAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -41214,9 +41146,7 @@ wv8HtUUox0S7+qIAAAAASUVORK5CYII=
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 376927 / 23641895 (1.59%)
@@ -41225,9 +41155,7 @@ wv8HtUUox0S7+qIAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -44032,9 +43960,7 @@ ErQw02g0Go1Go5kk/P9TFi5HvzgGEQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 6640916 / 23641895 (28.09%)
@@ -44043,9 +43969,7 @@ ErQw02g0Go1Go5kk/P9TFi5HvzgGEQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -47287,9 +47211,7 @@ YII=
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 376927 / 23641895 (1.59%)
@@ -47298,9 +47220,7 @@ YII=
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
@@ -50261,9 +50181,7 @@ IrITLMyIiIiI7AQLMyIiIiI7wcKMiIiIyE78A6l8hCD3XyTtAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of source used: 520388 / 23641895 (2.20%)
@@ -50272,9 +50190,7 @@ IrITLMyIiIiI7AQLMyIiIiI7wcKMiIiIyE78A6l8hCD3XyTtAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 
 
