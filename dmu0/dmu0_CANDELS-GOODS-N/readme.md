@@ -1,4 +1,4 @@
-CANDELS GOODS-N Multiwavelenght catalog (Barro et al. 2017 - in prep)
+CANDELS GOODS-N Multiwavelength catalog (Barro et al. 2017 - in prep)
 =========================================================
 
 Downloaded from:

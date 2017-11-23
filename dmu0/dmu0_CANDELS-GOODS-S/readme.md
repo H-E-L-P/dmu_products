@@ -1,4 +1,4 @@
-CANDELS GOODS-S Multiwavelenght catalog (Guo et al. 2013)
+CANDELS GOODS-S Multiwavelength catalog (Guo et al. 2013)
 =========================================================
 
 This product contains the CANDELS multi-wavelength catalogue on the deep
