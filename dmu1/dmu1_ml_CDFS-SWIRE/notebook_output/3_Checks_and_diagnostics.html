@@ -11804,7 +11804,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-04829ed (Thu Nov 2 16:57:19 2017 +0000)
+255270d (Fri Nov 24 10:35:51 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11839,7 +11839,8 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib_venn</span> <span class="k">import</span> <span class="n">venn3</span>
 
-<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span>
+<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="p">(</span><span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span><span class="p">,</span> <span class="n">find_last_ml_suffix</span><span class="p">,</span>
+                                              <span class="n">quick_checks</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11853,11 +11854,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">OUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;OUT_DIR&#39;</span><span class="p">,</span> <span class="s2">&quot;./data&quot;</span><span class="p">)</span>
-<span class="n">SUFFIX</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;SUFFIX&#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">))</span>
+<span class="n">SUFFIX</span> <span class="o">=</span> <span class="n">find_last_ml_suffix</span><span class="p">()</span>
 <span class="c1">#SUFFIX = &quot;_20170718&quot;</span>
 
-<span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_cdfs-swire</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Using masterlist &#39;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_cdfs-swire</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
+<span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_cdfs-swire_</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Using masterlist &#39;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_cdfs-swire_</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -11886,13 +11887,142 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+<h2 id="0---Quick-checks">0 - Quick checks<a class="anchor-link" href="#0---Quick-checks">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quick_checks</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The column merr_ap_gpc1_y contains 1 zero or negative values!it&#39;s minimum is 0.0.
+The column merr_ap_wfi_416nm contains 4974 zero or negative values!it&#39;s minimum is -104195.3828125.
+The column f_wfi_416nm contains only NaN!
+The column ferr_wfi_416nm contains only NaN!
+The column m_wfi_416nm contains only NaN!
+The column merr_wfi_416nm contains only NaN!
+The column merr_ap_wfi_461nm contains 2324 zero or negative values!it&#39;s minimum is -3028.6630859375.
+The column f_wfi_461nm contains only NaN!
+The column ferr_wfi_461nm contains only NaN!
+The column m_wfi_461nm contains only NaN!
+The column merr_wfi_461nm contains only NaN!
+The column merr_ap_wfi_485nm contains 5509 zero or negative values!it&#39;s minimum is -42080.02734375.
+The column f_wfi_485nm contains only NaN!
+The column ferr_wfi_485nm contains only NaN!
+The column m_wfi_485nm contains only NaN!
+The column merr_wfi_485nm contains only NaN!
+The column merr_ap_wfi_518nm contains 3219 zero or negative values!it&#39;s minimum is -2874.01708984375.
+The column f_wfi_518nm contains only NaN!
+The column ferr_wfi_518nm contains only NaN!
+The column m_wfi_518nm contains only NaN!
+The column merr_wfi_518nm contains only NaN!
+The column merr_ap_wfi_571nm contains 2103 zero or negative values!it&#39;s minimum is -4300.08154296875.
+The column f_wfi_571nm contains only NaN!
+The column ferr_wfi_571nm contains only NaN!
+The column m_wfi_571nm contains only NaN!
+The column merr_wfi_571nm contains only NaN!
+The column merr_ap_wfi_604nm contains 2143 zero or negative values!it&#39;s minimum is -2069.82080078125.
+The column f_wfi_604nm contains only NaN!
+The column ferr_wfi_604nm contains only NaN!
+The column m_wfi_604nm contains only NaN!
+The column merr_wfi_604nm contains only NaN!
+The column merr_ap_wfi_646nm contains 6128 zero or negative values!it&#39;s minimum is -15116.0361328125.
+The column f_wfi_646nm contains only NaN!
+The column ferr_wfi_646nm contains only NaN!
+The column m_wfi_646nm contains only NaN!
+The column merr_wfi_646nm contains only NaN!
+The column merr_ap_wfi_696nm contains 1729 zero or negative values!it&#39;s minimum is -1487.0557861328125.
+The column f_wfi_696nm contains only NaN!
+The column ferr_wfi_696nm contains only NaN!
+The column m_wfi_696nm contains only NaN!
+The column merr_wfi_696nm contains only NaN!
+The column merr_ap_wfi_753nm contains 3255 zero or negative values!it&#39;s minimum is -1593.0467529296875.
+The column f_wfi_753nm contains only NaN!
+The column ferr_wfi_753nm contains only NaN!
+The column m_wfi_753nm contains only NaN!
+The column merr_wfi_753nm contains only NaN!
+The column merr_ap_wfi_815nm contains 1825 zero or negative values!it&#39;s minimum is -3719.677978515625.
+The column f_wfi_815nm contains only NaN!
+The column ferr_wfi_815nm contains only NaN!
+The column m_wfi_815nm contains only NaN!
+The column merr_wfi_815nm contains only NaN!
+The column merr_ap_wfi_856nm contains 3318 zero or negative values!it&#39;s minimum is -4676.421875.
+The column f_wfi_856nm contains only NaN!
+The column ferr_wfi_856nm contains only NaN!
+The column m_wfi_856nm contains only NaN!
+The column merr_wfi_856nm contains only NaN!
+The column merr_ap_wfi_914nm contains 5206 zero or negative values!it&#39;s minimum is -2929.66845703125.
+The column f_wfi_914nm contains only NaN!
+The column ferr_wfi_914nm contains only NaN!
+The column m_wfi_914nm contains only NaN!
+The column merr_wfi_914nm contains only NaN!
+The column merr_ap_wfi_u contains 1932 zero or negative values!it&#39;s minimum is -2020.99658203125.
+The column f_wfi_u contains only NaN!
+The column ferr_wfi_u contains only NaN!
+The column m_wfi_u contains only NaN!
+The column merr_wfi_u contains only NaN!
+The column merr_ap_wfi_b contains 1383 zero or negative values!it&#39;s minimum is -8119.59130859375.
+The column f_wfi_b contains only NaN!
+The column ferr_wfi_b contains only NaN!
+The column m_wfi_b contains only NaN!
+The column merr_wfi_b contains only NaN!
+The column merr_ap_wfi_v contains 1581 zero or negative values!it&#39;s minimum is -2031.71240234375.
+The column f_wfi_v contains only NaN!
+The column ferr_wfi_v contains only NaN!
+The column m_wfi_v contains only NaN!
+The column merr_wfi_v contains only NaN!
+The column merr_ap_wfi_r contains 412 zero or negative values!it&#39;s minimum is -143.63204956054688.
+The column merr_ap_wfi_i contains 4736 zero or negative values!it&#39;s minimum is -17235.6953125.
+The column f_wfi_i contains only NaN!
+The column ferr_wfi_i contains only NaN!
+The column m_wfi_i contains only NaN!
+The column merr_wfi_i contains only NaN!
+The column f_ap_vista_z contains 7 zero or negative values!it&#39;s minimum is 0.0.
+The column f_vista_z contains 7 zero or negative values!it&#39;s minimum is 0.0.
+The column f_ap_irac_i1 contains 1740 zero or negative values!it&#39;s minimum is -18.1546001821824.
+The column merr_ap_irac_i1 contains 1740 zero or negative values!it&#39;s minimum is -2909.129325268022.
+The column f_irac_i1 contains 3715 zero or negative values!it&#39;s minimum is -105.264969317248.
+The column merr_irac_i1 contains 3715 zero or negative values!it&#39;s minimum is -14306.7009533757.
+The column f_ap_irac_i2 contains 3025 zero or negative values!it&#39;s minimum is -4.79809834087266.
+The column merr_ap_irac_i2 contains 3025 zero or negative values!it&#39;s minimum is -15785.007052201338.
+The column f_irac_i2 contains 3720 zero or negative values!it&#39;s minimum is -77.3439761659664.
+The column merr_irac_i2 contains 3720 zero or negative values!it&#39;s minimum is -4194.910621138069.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_obs</span> <span class="o">=</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;flag_optnir_obs&#39;</span><span class="p">]</span>
@@ -11906,7 +12036,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn3</span><span class="p">(</span>
@@ -12333,7 +12463,7 @@ SNgKIUQEJGyFECICErZCCBEBCVshhIjA/wPxIZKlIUG8sgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn3</span><span class="p">(</span>
@@ -12863,7 +12993,7 @@ UBJCCOEYEkpCCCEcQ0JJCCGEY0goCSGEcIz/D292Ru5Qx2vAAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">u_bands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;OmegaCAM u&quot;</span><span class="p">,</span> <span class="s2">&quot;WFI u&quot;</span><span class="p">]</span>
@@ -12891,7 +13021,7 @@ UBJCCOEYEkpCCCEcQ0JJCCGEY0goCSGEcIz/D292Ru5Qx2vAAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">bands</span> <span class="ow">in</span> <span class="p">[</span><span class="n">u_bands</span><span class="p">,</span> <span class="n">g_bands</span><span class="p">,</span> <span class="n">r_bands</span><span class="p">,</span> <span class="n">i_bands</span><span class="p">,</span> <span class="n">z_bands</span><span class="p">,</span> <span class="n">y_bands</span><span class="p">]:</span>
@@ -14188,7 +14318,7 @@ ftvRHLRXzQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">band_of_a_kind</span> <span class="ow">in</span> <span class="p">[</span><span class="n">u_bands</span><span class="p">,</span> <span class="n">g_bands</span><span class="p">,</span> <span class="n">r_bands</span><span class="p">,</span> <span class="n">i_bands</span><span class="p">,</span> <span class="n">z_bands</span><span class="p">,</span> <span class="n">y_bands</span><span class="p">]:</span>
@@ -40237,7 +40367,7 @@ EEIIIYQQmvv/KBe/ROa2h1UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue_coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">])</span>
@@ -40282,7 +40412,7 @@ EEIIIYQQmvv/KBe/ROa2h1UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The AB zero point is 3631 Jy</span>
@@ -40297,7 +40427,7 @@ EEIIIYQQmvv/KBe/ROa2h1UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twomass</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_2MASS-point-sources/data/2MASS-PSC_CDFS-SWIRE.fits&quot;</span><span class="p">)</span>
@@ -40317,7 +40447,7 @@ EEIIIYQQmvv/KBe/ROa2h1UAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_compare_mags</span><span class="p">(</span><span class="n">twomass</span><span class="p">[</span><span class="s1">&#39;jmag&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">j_2mass_to_ab</span><span class="p">,</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;m_vista_j&#39;</span><span class="p">][</span><span class="n">ml_twomass_idx</span><span class="p">],</span>
@@ -41428,7 +41558,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_compare_mags</span><span class="p">(</span><span class="n">twomass</span><span class="p">[</span><span class="s1">&#39;kmag&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">k_2mass_to_ab</span><span class="p">,</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;m_vista_ks&#39;</span><span class="p">][</span><span class="n">ml_twomass_idx</span><span class="p">],</span>
@@ -42587,7 +42717,7 @@ saRoFUIIIYQQQghRY0nRKoQQQgghhBCixvp/8vwJ8nWUxcoAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -45095,7 +45225,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -47693,7 +47823,7 @@ ERGJDAs4IiIiIpH5P+fLAPTo+FpmAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -50899,7 +51029,7 @@ vXkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -52846,7 +52976,7 @@ BFFkkIAjCIIgCIIoMkjAEQRBEARBFBkk4AiCIAiCIIqM/wdJ0HQ609X4IAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -55429,7 +55559,7 @@ TkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -58246,7 +58376,7 @@ nCAIgiAIwijj/wPghKB+qhP8HwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>

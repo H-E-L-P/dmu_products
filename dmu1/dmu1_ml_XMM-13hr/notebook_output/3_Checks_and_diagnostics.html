@@ -11805,7 +11805,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-04829ed (Thu Nov 2 16:57:19 2017 +0000)
+255270d (Fri Nov 24 10:35:51 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11840,7 +11840,8 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib_venn</span> <span class="k">import</span> <span class="n">venn3</span><span class="p">,</span> <span class="n">venn2</span>
 
-<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span><span class="p">,</span> <span class="n">find_last_ml_suffix</span>
+<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="p">(</span><span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span><span class="p">,</span> <span class="n">find_last_ml_suffix</span><span class="p">,</span>
+                                              <span class="n">quick_checks</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11889,13 +11890,59 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+<h2 id="0---Quick-checks">0 - Quick checks<a class="anchor-link" href="#0---Quick-checks">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quick_checks</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The column merr_ap_bass_g contains 2055 zero or negative values!it&#39;s minimum is -2633.04052734375.
+The column f_bass_g contains 2094 zero or negative values!it&#39;s minimum is -20246.65625.
+The column merr_bass_g contains 1631 zero or negative values!it&#39;s minimum is -17914.501953125.
+The column merr_ap_bass_r contains 662 zero or negative values!it&#39;s minimum is -2159.73193359375.
+The column f_bass_r contains 502 zero or negative values!it&#39;s minimum is -319.38751220703125.
+The column merr_bass_r contains 502 zero or negative values!it&#39;s minimum is -1078.204345703125.
+The column merr_ap_bass_z contains 821 zero or negative values!it&#39;s minimum is -874.3051147460938.
+The column f_bass_z contains 620 zero or negative values!it&#39;s minimum is -2101.958740234375.
+The column merr_bass_z contains 283 zero or negative values!it&#39;s minimum is -288.25738525390625.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_obs</span> <span class="o">=</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;flag_optnir_obs&#39;</span><span class="p">]</span>
@@ -11909,7 +11956,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn2</span><span class="p">(</span>
@@ -12223,7 +12270,7 @@ kcIVQogYkcIVQogYkcIVQogYkcIVQogYkcIVQogY+f+GpUlmXgN3+wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn2</span><span class="p">(</span>
@@ -12601,7 +12648,7 @@ q8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwI/r/9upABgAAAGCQv/U9vpII
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">u_bands</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12629,7 +12676,7 @@ q8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwIyIiq8NwI/r/9upABgAAAGCQv/U9vpII
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">bands</span> <span class="ow">in</span> <span class="p">[</span><span class="n">g_bands</span> <span class="o">+</span> <span class="n">r_bands</span> <span class="o">+</span> <span class="n">z_bands</span><span class="p">]:</span>
@@ -12859,7 +12906,7 @@ EMIAAAAMIIQBAAAYQAgDAAAw4P8DglY3/DCZO1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#for band_of_a_kind in [u_bands, g_bands, r_bands, i_bands, z_bands, y_bands]:</span>
@@ -12893,7 +12940,7 @@ EMIAAAAMIIQBAAAYQAgDAAAw4P8DglY3/DCZO1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue_coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">])</span>
@@ -12938,7 +12985,7 @@ EMIAAAAMIIQBAAAYQAgDAAAw4P8DglY3/DCZO1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The AB zero point is 3631 Jy</span>
@@ -12953,7 +13000,7 @@ EMIAAAAMIIQBAAAYQAgDAAAw4P8DglY3/DCZO1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twomass</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_2MASS-point-sources/data/2MASS-PSC_XMM-13hr.fits&quot;</span><span class="p">)</span>
@@ -12973,7 +13020,7 @@ EMIAAAAMIIQBAAAYQAgDAAAw4P8DglY3/DCZO1EAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_compare_mags</span><span class="p">(</span><span class="n">twomass</span><span class="p">[</span><span class="s1">&#39;jmag&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">j_2mass_to_ab</span><span class="p">,</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;m_wfcam_j&#39;</span><span class="p">][</span><span class="n">ml_twomass_idx</span><span class="p">],</span>
@@ -14055,7 +14102,7 @@ hKUhAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">error_column</span> <span class="ow">in</span> <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span> <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;merr_&#39;</span><span class="p">)]:</span>
@@ -14081,7 +14128,7 @@ hKUhAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -15596,7 +15643,7 @@ gg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
