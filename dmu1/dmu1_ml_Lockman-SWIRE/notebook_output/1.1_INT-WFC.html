@@ -11814,7 +11814,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-04829ed (Thu Nov 2 16:57:19 2017 +0000)
+255270d (Fri Nov 24 10:35:51 2017 +0000)
 </pre>
 </div>
 </div>
@@ -12002,7 +12002,7 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table140234684070320-40132" class="table-striped table-bordered table-condensed">
+<table id="table139817605671344-116221" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>wfc_id</th><th>wfc_ra</th><th>wfc_dec</th><th>wfc_stellarity</th><th>m_ap_wfc_u</th><th>merr_ap_wfc_u</th><th>m_wfc_u</th><th>merr_wfc_u</th><th>m_ap_wfc_g</th><th>merr_ap_wfc_g</th><th>m_wfc_g</th><th>merr_wfc_g</th><th>m_ap_wfc_r</th><th>merr_ap_wfc_r</th><th>m_wfc_r</th><th>merr_wfc_r</th><th>m_ap_wfc_i</th><th>merr_ap_wfc_i</th><th>m_wfc_i</th><th>merr_wfc_i</th><th>m_ap_wfc_z</th><th>merr_ap_wfc_z</th><th>m_wfc_z</th><th>merr_wfc_z</th><th>f_ap_wfc_u</th><th>ferr_ap_wfc_u</th><th>f_wfc_u</th><th>ferr_wfc_u</th><th>flag_wfc_u</th><th>f_ap_wfc_g</th><th>ferr_ap_wfc_g</th><th>f_wfc_g</th><th>ferr_wfc_g</th><th>flag_wfc_g</th><th>f_ap_wfc_r</th><th>ferr_ap_wfc_r</th><th>f_wfc_r</th><th>ferr_wfc_r</th><th>flag_wfc_r</th><th>f_ap_wfc_i</th><th>ferr_ap_wfc_i</th><th>f_wfc_i</th><th>ferr_wfc_i</th><th>flag_wfc_i</th><th>f_ap_wfc_z</th><th>ferr_ap_wfc_z</th><th>f_wfc_z</th><th>ferr_wfc_z</th><th>flag_wfc_z</th></tr></thead>
 <tr><td>0</td><td>445739200533</td><td>161.321275594</td><td>57.639319015</td><td>0.00306748</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>23.116</td><td>0.116</td><td>23.049</td><td>0.144</td><td>22.746</td><td>0.147</td><td>22.568</td><td>0.174</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>2.05873</td><td>0.219955</td><td>2.18978</td><td>0.290428</td><td>False</td><td>2.89468</td><td>0.391916</td><td>3.41036</td><td>0.546543</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
 <tr><td>1</td><td>445739200534</td><td>161.174982572</td><td>57.639143809</td><td>0.000171409</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>22.184</td><td>0.066</td><td>22.105</td><td>0.113</td><td>21.859</td><td>0.067</td><td>21.907</td><td>0.089</td><td>21.923</td><td>0.11</td><td>22.042</td><td>0.141</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>4.85736</td><td>0.29527</td><td>5.22396</td><td>0.543693</td><td>False</td><td>6.55239</td><td>0.404344</td><td>6.26903</td><td>0.513885</td><td>False</td><td>6.17731</td><td>0.625847</td><td>5.53605</td><td>0.718943</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
@@ -12024,8 +12024,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140234684070320-40132').dataTable()");
-    $('#table140234684070320-40132').dataTable({
+    console.log("$('#table139817605671344-116221').dataTable()");
+    $('#table139817605671344-116221').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -17247,8 +17247,8 @@ Dec correction: -0.12125572829972953 arcsec
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">]</span> <span class="o">+=</span>  <span class="n">delta_ra</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
-<span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">]</span> <span class="o">+=</span> <span class="n">delta_dec</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">]</span> <span class="o">=</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">RA_COL</span><span class="p">]</span> <span class="o">+</span> <span class="n">delta_ra</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
+<span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">]</span> <span class="o">=</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">DEC_COL</span><span class="p">]</span> <span class="o">+</span> <span class="n">delta_dec</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
 </pre></div>
 
 </div>
