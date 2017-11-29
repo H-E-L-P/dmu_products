@@ -11785,6 +11785,12 @@ div#notebook {
 <li>The position;</li>
 <li>The g, r, i, z, y auto magnitudes.</li>
 </ul>
+<h3 id="Strange-magnitudes">Strange magnitudes<a class="anchor-link" href="#Strange-magnitudes">&#182;</a></h3><p>The missing values seems to be encoded as -99. but there are also quite some 99. magnitudes.</p>
+<p>The “sensible” range of magnitudes seems to go from 14 to 37 (depending on the bands and given that 37 is really
+faint and may not be reliable). In addition to that there are some very low magnitudes under -40. and very high ones
+above 90. We don't know the meaning of these extreme values so we are removing all the negative magnitudes and and
+those above 80.</p>
+<p>We are also removing the sources for which we have no magnitude information given the modifications above.</p>
 
 </div>
 </div>
@@ -11926,13 +11932,11 @@ div#notebook {
     <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;m_&#39;</span><span class="p">):</span>
         
         <span class="n">errcol</span> <span class="o">=</span> <span class="s2">&quot;merr</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-        <span class="c1">#Replace 99.0 and -99.0 with nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="mf">99.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="mf">99.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]</span> <span class="o">==</span> <span class="mf">99.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mf">99.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+        
+        <span class="c1"># Remove missing values (-99, 99?) and extreme magnitudes (see above).</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">)</span>
+        <span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+        <span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">][</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
         
         <span class="n">flux</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">mag_to_flux</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">col</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="n">errcol</span><span class="p">]))</span>
         
@@ -11940,17 +11944,18 @@ div#notebook {
         <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">flux</span> <span class="o">*</span> <span class="mf">1.e6</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;f</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
         <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">error</span> <span class="o">*</span> <span class="mf">1.e6</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;f</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">errcol</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
 
-        <span class="c1">#We add NAN filled aperture columns because no aperture fluxes are present</span>
-        <span class="n">nancol</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">catalogue</span><span class="p">))</span>
-        <span class="n">nancol</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
-        <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">nancol</span><span class="p">,</span> 
-                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;m_ap</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
-        <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">nancol</span><span class="p">,</span> 
-                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;merr_ap</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
-        <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">nancol</span><span class="p">,</span> 
-                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;f_ap</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
-        <span class="n">catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">nancol</span><span class="p">,</span> 
-                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;ferr_ap</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
+        <span class="c1"># We add NAN filled aperture columns because no aperture fluxes are present</span>
+        <span class="c1"># EDIT: Better not add empty columns if we can avoid.</span>
+        <span class="c1">#nancol = np.zeros(len(catalogue))</span>
+        <span class="c1">#nancol.fill(np.nan)</span>
+        <span class="c1">#catalogue.add_column(Column(nancol, </span>
+         <span class="c1">#                           name=&quot;m_ap{}&quot;.format(col[1:])))</span>
+        <span class="c1">#catalogue.add_column(Column(nancol, </span>
+        <span class="c1">#                            name=&quot;merr_ap{}&quot;.format(col[1:])))</span>
+        <span class="c1">#catalogue.add_column(Column(nancol, </span>
+        <span class="c1">#                           name=&quot;f_ap{}&quot;.format(col[1:])))</span>
+        <span class="c1">#catalogue.add_column(Column(nancol, </span>
+        <span class="c1">#                           name=&quot;ferr_ap{}&quot;.format(col[1:])))</span>
         
         <span class="c1"># Band-flag column</span>
         <span class="k">if</span> <span class="s1">&#39;ap&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">col</span><span class="p">:</span>
@@ -11960,23 +11965,6 @@ div#notebook {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/ipykernel/__main__.py:8: RuntimeWarning: invalid value encountered in less
-/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/ipykernel/__main__.py:10: RuntimeWarning: invalid value encountered in less
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12003,18 +11991,18 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table140400267564760-879382" class="table-striped table-bordered table-condensed">
-<thead><tr><th>idx</th><th>rcs_id</th><th>rcs_ra</th><th>rcs_dec</th><th>rcs_stellarity</th><th>m_rcs_g</th><th>merr_rcs_g</th><th>m_rcs_r</th><th>merr_rcs_r</th><th>m_rcs_i</th><th>merr_rcs_i</th><th>m_rcs_z</th><th>merr_rcs_z</th><th>m_rcs_y</th><th>merr_rcs_y</th><th>f_rcs_g</th><th>ferr_rcs_g</th><th>m_ap_rcs_g</th><th>merr_ap_rcs_g</th><th>f_ap_rcs_g</th><th>ferr_ap_rcs_g</th><th>flag_rcs_g</th><th>f_rcs_r</th><th>ferr_rcs_r</th><th>m_ap_rcs_r</th><th>merr_ap_rcs_r</th><th>f_ap_rcs_r</th><th>ferr_ap_rcs_r</th><th>flag_rcs_r</th><th>f_rcs_i</th><th>ferr_rcs_i</th><th>m_ap_rcs_i</th><th>merr_ap_rcs_i</th><th>f_ap_rcs_i</th><th>ferr_ap_rcs_i</th><th>flag_rcs_i</th><th>f_rcs_z</th><th>ferr_rcs_z</th><th>m_ap_rcs_z</th><th>merr_ap_rcs_z</th><th>f_ap_rcs_z</th><th>ferr_ap_rcs_z</th><th>flag_rcs_z</th><th>f_rcs_y</th><th>ferr_rcs_y</th><th>m_ap_rcs_y</th><th>merr_ap_rcs_y</th><th>f_ap_rcs_y</th><th>ferr_ap_rcs_y</th><th>flag_rcs_y</th></tr></thead>
-<tr><td>0</td><td>CDE1040A1_012221</td><td>164.8274632</td><td>55.9342951</td><td>0.59</td><td>26.4383</td><td>0.192844</td><td>24.954</td><td>0.0591562</td><td>24.3109</td><td>0.0468637</td><td>24.2471</td><td>0.128944</td><td>nan</td><td>nan</td><td>0.096534</td><td>0.017146</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.378791</td><td>0.0206384</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.68492</td><td>0.0295633</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.726372</td><td>0.0862653</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>1</td><td>CDE1040A1_012351</td><td>164.8598581</td><td>55.9352114</td><td>0.51</td><td>nan</td><td>nan</td><td>24.0958</td><td>0.111241</td><td>24.3293</td><td>0.179642</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.834987</td><td>0.08555</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.673411</td><td>0.11142</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>2</td><td>CDE1040A1_012523</td><td>164.8440663</td><td>55.9366953</td><td>0.05</td><td>24.9588</td><td>0.0891576</td><td>24.0017</td><td>0.0422543</td><td>23.8614</td><td>0.0494575</td><td>23.3469</td><td>0.096879</td><td>nan</td><td>nan</td><td>0.37712</td><td>0.0309681</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.910584</td><td>0.0354378</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>1.03619</td><td>0.0472006</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>1.66433</td><td>0.148506</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>3</td><td>CDE1040A1_012541</td><td>164.856439</td><td>55.936853</td><td>0.05</td><td>24.7429</td><td>0.0641804</td><td>24.0179</td><td>0.0365814</td><td>23.8584</td><td>0.0421868</td><td>23.8193</td><td>0.125855</td><td>nan</td><td>nan</td><td>0.460086</td><td>0.0271968</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.897098</td><td>0.0302257</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>1.03906</td><td>0.0403731</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>1.07716</td><td>0.124861</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>4</td><td>CDE1040A1_012593</td><td>164.844011</td><td>55.9373469</td><td>0.69</td><td>25.0123</td><td>0.0667518</td><td>25.01</td><td>0.067012</td><td>24.947</td><td>0.0838051</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.358988</td><td>0.0220708</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.359749</td><td>0.0222038</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.381241</td><td>0.029427</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>5</td><td>CDE1040A1_012610</td><td>164.8309266</td><td>55.9375784</td><td>0.53</td><td>25.7485</td><td>0.158175</td><td>25.0131</td><td>0.0894123</td><td>24.6255</td><td>0.0859212</td><td>24.1334</td><td>0.171663</td><td>nan</td><td>nan</td><td>0.182222</td><td>0.0265469</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.358724</td><td>0.0295415</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.512625</td><td>0.0405673</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.806566</td><td>0.127524</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>6</td><td>CDE1040A1_012657</td><td>164.8606267</td><td>55.9380141</td><td>0.7</td><td>25.164</td><td>0.0863055</td><td>24.5895</td><td>0.0555585</td><td>24.4154</td><td>0.0632862</td><td>24.1565</td><td>0.154603</td><td>nan</td><td>nan</td><td>0.312176</td><td>0.024815</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.529907</td><td>0.027116</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.622071</td><td>0.0362597</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.789587</td><td>0.112433</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>7</td><td>CDE1040A1_012667</td><td>164.8430236</td><td>55.9382088</td><td>0.48</td><td>nan</td><td>0.0</td><td>nan</td><td>0.0</td><td>nan</td><td>0.0</td><td>nan</td><td>0.0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>8</td><td>CDE1040A1_012677</td><td>164.8294469</td><td>55.9382729</td><td>0.9</td><td>nan</td><td>nan</td><td>24.0691</td><td>0.0291555</td><td>nan</td><td>nan</td><td>23.2083</td><td>0.0539764</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.855776</td><td>0.0229803</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>1.89095</td><td>0.0940069</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
-<tr><td>9</td><td>CDE1040A1_012702</td><td>164.8438543</td><td>55.9384471</td><td>0.58</td><td>25.2618</td><td>0.104723</td><td>25.1174</td><td>0.0949201</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.285285</td><td>0.0275167</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.325867</td><td>0.0284888</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td></tr>
+<table id="table139869543102784-116803" class="table-striped table-bordered table-condensed">
+<thead><tr><th>idx</th><th>rcs_id</th><th>rcs_ra</th><th>rcs_dec</th><th>rcs_stellarity</th><th>m_rcs_g</th><th>merr_rcs_g</th><th>m_rcs_r</th><th>merr_rcs_r</th><th>m_rcs_i</th><th>merr_rcs_i</th><th>m_rcs_z</th><th>merr_rcs_z</th><th>m_rcs_y</th><th>merr_rcs_y</th><th>f_rcs_g</th><th>ferr_rcs_g</th><th>flag_rcs_g</th><th>f_rcs_r</th><th>ferr_rcs_r</th><th>flag_rcs_r</th><th>f_rcs_i</th><th>ferr_rcs_i</th><th>flag_rcs_i</th><th>f_rcs_z</th><th>ferr_rcs_z</th><th>flag_rcs_z</th><th>f_rcs_y</th><th>ferr_rcs_y</th><th>flag_rcs_y</th></tr></thead>
+<tr><td>0</td><td>CDE1040A1_012221</td><td>164.8274632</td><td>55.9342951</td><td>0.59</td><td>26.4383</td><td>0.192844</td><td>24.954</td><td>0.0591562</td><td>24.3109</td><td>0.0468637</td><td>24.2471</td><td>0.128944</td><td>nan</td><td>nan</td><td>0.096534</td><td>0.017146</td><td>False</td><td>0.378791</td><td>0.0206384</td><td>False</td><td>0.68492</td><td>0.0295633</td><td>False</td><td>0.726372</td><td>0.0862653</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>1</td><td>CDE1040A1_012351</td><td>164.8598581</td><td>55.9352114</td><td>0.51</td><td>nan</td><td>nan</td><td>24.0958</td><td>0.111241</td><td>24.3293</td><td>0.179642</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.834987</td><td>0.08555</td><td>False</td><td>0.673411</td><td>0.11142</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>2</td><td>CDE1040A1_012523</td><td>164.8440663</td><td>55.9366953</td><td>0.05</td><td>24.9588</td><td>0.0891576</td><td>24.0017</td><td>0.0422543</td><td>23.8614</td><td>0.0494575</td><td>23.3469</td><td>0.096879</td><td>nan</td><td>nan</td><td>0.37712</td><td>0.0309681</td><td>False</td><td>0.910584</td><td>0.0354378</td><td>False</td><td>1.03619</td><td>0.0472006</td><td>False</td><td>1.66433</td><td>0.148506</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>3</td><td>CDE1040A1_012541</td><td>164.856439</td><td>55.936853</td><td>0.05</td><td>24.7429</td><td>0.0641804</td><td>24.0179</td><td>0.0365814</td><td>23.8584</td><td>0.0421868</td><td>23.8193</td><td>0.125855</td><td>nan</td><td>nan</td><td>0.460086</td><td>0.0271968</td><td>False</td><td>0.897098</td><td>0.0302257</td><td>False</td><td>1.03906</td><td>0.0403731</td><td>False</td><td>1.07716</td><td>0.124861</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>4</td><td>CDE1040A1_012593</td><td>164.844011</td><td>55.9373469</td><td>0.69</td><td>25.0123</td><td>0.0667518</td><td>25.01</td><td>0.067012</td><td>24.947</td><td>0.0838051</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.358988</td><td>0.0220708</td><td>False</td><td>0.359749</td><td>0.0222038</td><td>False</td><td>0.381241</td><td>0.029427</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>5</td><td>CDE1040A1_012610</td><td>164.8309266</td><td>55.9375784</td><td>0.53</td><td>25.7485</td><td>0.158175</td><td>25.0131</td><td>0.0894123</td><td>24.6255</td><td>0.0859212</td><td>24.1334</td><td>0.171663</td><td>nan</td><td>nan</td><td>0.182222</td><td>0.0265469</td><td>False</td><td>0.358724</td><td>0.0295415</td><td>False</td><td>0.512625</td><td>0.0405673</td><td>False</td><td>0.806566</td><td>0.127524</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>6</td><td>CDE1040A1_012657</td><td>164.8606267</td><td>55.9380141</td><td>0.7</td><td>25.164</td><td>0.0863055</td><td>24.5895</td><td>0.0555585</td><td>24.4154</td><td>0.0632862</td><td>24.1565</td><td>0.154603</td><td>nan</td><td>nan</td><td>0.312176</td><td>0.024815</td><td>False</td><td>0.529907</td><td>0.027116</td><td>False</td><td>0.622071</td><td>0.0362597</td><td>False</td><td>0.789587</td><td>0.112433</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>7</td><td>CDE1040A1_012667</td><td>164.8430236</td><td>55.9382088</td><td>0.48</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>8</td><td>CDE1040A1_012677</td><td>164.8294469</td><td>55.9382729</td><td>0.9</td><td>nan</td><td>nan</td><td>24.0691</td><td>0.0291555</td><td>nan</td><td>nan</td><td>23.2083</td><td>0.0539764</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.855776</td><td>0.0229803</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>1.89095</td><td>0.0940069</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
+<tr><td>9</td><td>CDE1040A1_012702</td><td>164.8438543</td><td>55.9384471</td><td>0.58</td><td>25.2618</td><td>0.104723</td><td>25.1174</td><td>0.0949201</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>0.285285</td><td>0.0275167</td><td>False</td><td>0.325867</td><td>0.0284888</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -12025,8 +12013,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140400267564760-879382').dataTable()");
-    $('#table140400267564760-879382').dataTable({
+    console.log("$('#table139869543102784-116803').dataTable()");
+    $('#table139869543102784-116803').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12079,7 +12067,7 @@ require(["datatables"], function(){
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>481323 out of  2607590  objects removed due to all nan magnitudes.
+<pre>481360 out of  2607590  objects removed due to all nan magnitudes.
 </pre>
 </div>
 </div>
@@ -12141,8 +12129,8 @@ require(["datatables"], function(){
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The initial catalogue had 2126267 sources.
-The cleaned catalogue has 2052676 sources (73591 removed).
+<pre>The initial catalogue had 2126230 sources.
+The cleaned catalogue has 2052639 sources (73591 removed).
 The cleaned catalogue has 72807 sources flagged as having been cleaned
 </pre>
 </div>
