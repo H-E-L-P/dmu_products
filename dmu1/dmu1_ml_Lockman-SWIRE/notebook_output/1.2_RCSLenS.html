@@ -11783,7 +11783,7 @@ div#notebook {
 <ul>
 <li>The <code>id</code> as unique object identifier;</li>
 <li>The position;</li>
-<li>The g, r, i, z, y auto magnitudes.</li>
+<li>The g, r, i, z, y  auto magnitudes.</li>
 </ul>
 <h3 id="Strange-magnitudes">Strange magnitudes<a class="anchor-link" href="#Strange-magnitudes">&#182;</a></h3><p>The missing values seems to be encoded as -99. but there are also quite some 99. magnitudes.</p>
 <p>The “sensible” range of magnitudes seems to go from 14 to 37 (depending on the bands and given that 37 is really
@@ -11817,7 +11817,7 @@ those above 80.</p>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-255270d (Fri Nov 24 10:35:51 2017 +0000)
+44f1ae0 (Thu Nov 30 18:27:54 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11991,7 +11991,7 @@ those above 80.</p>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table139869543102784-116803" class="table-striped table-bordered table-condensed">
+<table id="table140007978907464-806230" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>rcs_id</th><th>rcs_ra</th><th>rcs_dec</th><th>rcs_stellarity</th><th>m_rcs_g</th><th>merr_rcs_g</th><th>m_rcs_r</th><th>merr_rcs_r</th><th>m_rcs_i</th><th>merr_rcs_i</th><th>m_rcs_z</th><th>merr_rcs_z</th><th>m_rcs_y</th><th>merr_rcs_y</th><th>f_rcs_g</th><th>ferr_rcs_g</th><th>flag_rcs_g</th><th>f_rcs_r</th><th>ferr_rcs_r</th><th>flag_rcs_r</th><th>f_rcs_i</th><th>ferr_rcs_i</th><th>flag_rcs_i</th><th>f_rcs_z</th><th>ferr_rcs_z</th><th>flag_rcs_z</th><th>f_rcs_y</th><th>ferr_rcs_y</th><th>flag_rcs_y</th></tr></thead>
 <tr><td>0</td><td>CDE1040A1_012221</td><td>164.8274632</td><td>55.9342951</td><td>0.59</td><td>26.4383</td><td>0.192844</td><td>24.954</td><td>0.0591562</td><td>24.3109</td><td>0.0468637</td><td>24.2471</td><td>0.128944</td><td>nan</td><td>nan</td><td>0.096534</td><td>0.017146</td><td>False</td><td>0.378791</td><td>0.0206384</td><td>False</td><td>0.68492</td><td>0.0295633</td><td>False</td><td>0.726372</td><td>0.0862653</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
 <tr><td>1</td><td>CDE1040A1_012351</td><td>164.8598581</td><td>55.9352114</td><td>0.51</td><td>nan</td><td>nan</td><td>24.0958</td><td>0.111241</td><td>24.3293</td><td>0.179642</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>0.834987</td><td>0.08555</td><td>False</td><td>0.673411</td><td>0.11142</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td></tr>
@@ -12013,8 +12013,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139869543102784-116803').dataTable()");
-    $('#table139869543102784-116803').dataTable({
+    console.log("$('#table140007978907464-806230').dataTable()");
+    $('#table140007978907464-806230').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12050,7 +12050,8 @@ require(["datatables"], function(){
         <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="s1">&#39;m_rcs_r&#39;</span><span class="p">])</span>
         <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="s1">&#39;m_rcs_i&#39;</span><span class="p">])</span>
         <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="s1">&#39;m_rcs_z&#39;</span><span class="p">])</span>
-        <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="s1">&#39;m_rcs_y&#39;</span><span class="p">]))</span>
+        <span class="o">&amp;</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">catalogue</span><span class="p">[</span><span class="s1">&#39;m_rcs_y&#39;</span><span class="p">])</span>
+        <span class="p">)</span>
 <span class="n">catalogue</span> <span class="o">=</span> <span class="n">catalogue</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">orig_len</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">catalogue</span><span class="p">),</span> <span class="s1">&#39;out of &#39;</span><span class="p">,</span> <span class="n">orig_len</span><span class="p">,</span> <span class="s1">&#39; objects removed due to all nan magnitudes.&#39;</span><span class="p">)</span>
 </pre></div>
