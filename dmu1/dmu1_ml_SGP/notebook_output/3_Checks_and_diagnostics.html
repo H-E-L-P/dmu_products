@@ -11804,7 +11804,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-04829ed (Thu Nov 2 16:57:19 2017 +0000)
+44f1ae0 (Thu Nov 30 18:27:54 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11839,7 +11839,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib_venn</span> <span class="k">import</span> <span class="n">venn3</span><span class="p">,</span> <span class="n">venn2</span>
 
-<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span>
+<span class="kn">from</span> <span class="nn">herschelhelp_internal.masterlist</span> <span class="k">import</span> <span class="n">nb_compare_mags</span><span class="p">,</span> <span class="n">nb_ccplots</span><span class="p">,</span> <span class="n">nb_histograms</span><span class="p">,</span> <span class="n">quick_checks</span>
 </pre></div>
 
 </div>
@@ -11869,13 +11869,135 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+<h2 id="0---Quick-checks">0 - Quick checks<a class="anchor-link" href="#0---Quick-checks">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quick_checks</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">)</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/numpy/core/numeric.py:301: FutureWarning: in the future, full(128, False) will return an array of dtype(&#39;bool&#39;)
+  format(shape, fill_value, array(fill_value).dtype), FutureWarning)
+/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/numpy/core/numeric.py:301: FutureWarning: in the future, full(128, 0) will return an array of dtype(&#39;int64&#39;)
+  format(shape, fill_value, array(fill_value).dtype), FutureWarning)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Table shows only problematic columns.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+&lt;Table length=40&gt;
+<table id="table139636940809496-350560" class="table-striped table-bordered table-condensed">
+<thead><tr><th>idx</th><th>Column</th><th>All nan</th><th>#Measurements</th><th>#Zeros</th><th>#Negative</th><th>Minimum value</th></tr></thead>
+<tr><td>0</td><td>ferr_ap_gpc1_g</td><td>0.0</td><td>1004211.0</td><td>732.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>1</td><td>m_ap_gpc1_g</td><td>0.0</td><td>1004211.0</td><td>0.0</td><td>8.0</td><td>-0.39348500967</td></tr>
+<tr><td>2</td><td>merr_ap_gpc1_g</td><td>0.0</td><td>1004211.0</td><td>732.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>3</td><td>ferr_gpc1_g</td><td>0.0</td><td>1016026.0</td><td>3139.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>4</td><td>m_gpc1_g</td><td>0.0</td><td>1016026.0</td><td>0.0</td><td>23.0</td><td>-2.22170996666</td></tr>
+<tr><td>5</td><td>merr_gpc1_g</td><td>0.0</td><td>1016026.0</td><td>3139.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>6</td><td>ferr_ap_gpc1_r</td><td>0.0</td><td>1082713.0</td><td>998.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>7</td><td>m_ap_gpc1_r</td><td>0.0</td><td>1082713.0</td><td>0.0</td><td>1.0</td><td>-0.190017998219</td></tr>
+<tr><td>8</td><td>merr_ap_gpc1_r</td><td>0.0</td><td>1082713.0</td><td>998.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>9</td><td>ferr_gpc1_r</td><td>0.0</td><td>1086218.0</td><td>1125.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>10</td><td>m_gpc1_r</td><td>0.0</td><td>1086218.0</td><td>0.0</td><td>1.0</td><td>-0.590920984745</td></tr>
+<tr><td>11</td><td>merr_gpc1_r</td><td>0.0</td><td>1086218.0</td><td>1125.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>12</td><td>ferr_ap_gpc1_i</td><td>0.0</td><td>1133782.0</td><td>465.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>13</td><td>merr_ap_gpc1_i</td><td>0.0</td><td>1133782.0</td><td>465.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>14</td><td>ferr_gpc1_i</td><td>0.0</td><td>1135481.0</td><td>272.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>15</td><td>m_gpc1_i</td><td>0.0</td><td>1135481.0</td><td>0.0</td><td>7.0</td><td>-2.24709010124</td></tr>
+<tr><td>16</td><td>merr_gpc1_i</td><td>0.0</td><td>1135481.0</td><td>272.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>17</td><td>ferr_ap_gpc1_z</td><td>0.0</td><td>1061778.0</td><td>3449.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>18</td><td>m_ap_gpc1_z</td><td>0.0</td><td>1061778.0</td><td>0.0</td><td>2.0</td><td>-0.506438970566</td></tr>
+<tr><td>19</td><td>merr_ap_gpc1_z</td><td>0.0</td><td>1061778.0</td><td>3449.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>20</td><td>ferr_gpc1_z</td><td>0.0</td><td>1067459.0</td><td>1616.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>21</td><td>m_gpc1_z</td><td>0.0</td><td>1067459.0</td><td>0.0</td><td>1.0</td><td>-1.07805001736</td></tr>
+<tr><td>22</td><td>merr_gpc1_z</td><td>0.0</td><td>1067459.0</td><td>1616.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>23</td><td>ferr_ap_gpc1_y</td><td>0.0</td><td>1019793.0</td><td>6661.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>24</td><td>merr_ap_gpc1_y</td><td>0.0</td><td>1019793.0</td><td>6661.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>25</td><td>ferr_gpc1_y</td><td>0.0</td><td>1019192.0</td><td>2697.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>26</td><td>m_gpc1_y</td><td>0.0</td><td>1019192.0</td><td>0.0</td><td>1.0</td><td>-1.45949995518</td></tr>
+<tr><td>27</td><td>merr_gpc1_y</td><td>0.0</td><td>1019192.0</td><td>2697.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>28</td><td>f_ap_omegacam_u</td><td>0.0</td><td>7467153.0</td><td>11.0</td><td>262518.0</td><td>-56.0997009277</td></tr>
+<tr><td>29</td><td>ferr_ap_omegacam_u</td><td>0.0</td><td>7467153.0</td><td>11.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>30</td><td>merr_ap_omegacam_u</td><td>0.0</td><td>7467142.0</td><td>0.0</td><td>262518.0</td><td>-637016.5</td></tr>
+<tr><td>31</td><td>f_ap_omegacam_g</td><td>0.0</td><td>11440462.0</td><td>5.0</td><td>77648.0</td><td>-549.62310791</td></tr>
+<tr><td>32</td><td>ferr_ap_omegacam_g</td><td>0.0</td><td>11440462.0</td><td>5.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>33</td><td>merr_ap_omegacam_g</td><td>0.0</td><td>11440457.0</td><td>0.0</td><td>77648.0</td><td>-50232.65625</td></tr>
+<tr><td>34</td><td>f_ap_omegacam_r</td><td>0.0</td><td>12959145.0</td><td>3.0</td><td>28675.0</td><td>-1094.06738281</td></tr>
+<tr><td>35</td><td>ferr_ap_omegacam_r</td><td>0.0</td><td>12959145.0</td><td>3.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>36</td><td>merr_ap_omegacam_r</td><td>0.0</td><td>12959142.0</td><td>0.0</td><td>28675.0</td><td>-632775.5</td></tr>
+<tr><td>37</td><td>f_ap_omegacam_i</td><td>0.0</td><td>11300674.0</td><td>99323.0</td><td>141896.0</td><td>-39.0862464905</td></tr>
+<tr><td>38</td><td>ferr_ap_omegacam_i</td><td>0.0</td><td>11300674.0</td><td>99323.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>39</td><td>merr_ap_omegacam_i</td><td>0.0</td><td>11201351.0</td><td>0.0</td><td>141896.0</td><td>-1007319.875</td></tr>
+</table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
+.dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
+display: inline-block; margin-right: 1em; }
+.paginate_button { margin-right: 5px; }
+</style>
+<script>
+require.config({paths: {
+    datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
+}});
+require(["datatables"], function(){
+    console.log("$('#table139636940809496-350560').dataTable()");
+    $('#table139636940809496-350560').dataTable({
+        "order": [],
+        "iDisplayLength": 50,
+        "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
+        "pagingType": "full_numbers"
+    });
+});
+</script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="I---Summary-of-wavelength-domains">I - Summary of wavelength domains<a class="anchor-link" href="#I---Summary-of-wavelength-domains">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_obs</span> <span class="o">=</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;flag_optnir_obs&#39;</span><span class="p">]</span>
@@ -11889,7 +12011,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn2</span><span class="p">(</span>
@@ -12214,7 +12336,7 @@ hK0QQiSBhK0QQiSBhK0QQiSBhK0QQiTB/wOoMzfamv6LJgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">venn2</span><span class="p">(</span>
@@ -12690,7 +12812,7 @@ R/l/lwV5LQBnI/cAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">u_bands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;OmegaCAM u&quot;</span><span class="p">]</span>
@@ -12718,7 +12840,7 @@ R/l/lwV5LQBnI/cAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">bands</span> <span class="ow">in</span> <span class="p">[</span><span class="n">u_bands</span><span class="p">,</span> <span class="n">g_bands</span><span class="p">,</span> <span class="n">r_bands</span><span class="p">,</span> <span class="n">i_bands</span><span class="p">,</span> <span class="n">z_bands</span><span class="p">,</span> <span class="n">y_bands</span><span class="p">]:</span>
@@ -14072,7 +14194,7 @@ EyC0AQAAmAChDQAAwAQIbQAAACZAaAMAADCB/x+w6yh9SySajQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">band_of_a_kind</span> <span class="ow">in</span> <span class="p">[</span><span class="n">u_bands</span><span class="p">,</span> <span class="n">g_bands</span><span class="p">,</span> <span class="n">r_bands</span><span class="p">,</span> <span class="n">i_bands</span><span class="p">,</span> <span class="n">z_bands</span><span class="p">,</span> <span class="n">y_bands</span><span class="p">]:</span>
@@ -28174,7 +28296,7 @@ giAIzUJJK0EQBEEQBEEQBKFZKGklCIIgCIIgCIIgNMv/B8hXlgX7TaeEAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue_coords</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">])</span>
@@ -28220,7 +28342,7 @@ $$K_{s(2MASS)} = K_{UKIRT} + 0.003 + 0.004 * (J−K)_{UKIRT}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The AB zero point is 3631 Jy</span>
@@ -28235,7 +28357,7 @@ $$K_{s(2MASS)} = K_{UKIRT} + 0.003 + 0.004 * (J−K)_{UKIRT}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twomass</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;../../dmu0/dmu0_2MASS-point-sources/data/2MASS-PSC_HATLAS-SGP.fits&quot;</span><span class="p">)</span>
@@ -28255,7 +28377,7 @@ $$K_{s(2MASS)} = K_{UKIRT} + 0.003 + 0.004 * (J−K)_{UKIRT}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_compare_mags</span><span class="p">(</span><span class="n">twomass</span><span class="p">[</span><span class="s1">&#39;jmag&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">j_2mass_to_ab</span><span class="p">,</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;m_vista_j&#39;</span><span class="p">][</span><span class="n">ml_twomass_idx</span><span class="p">],</span>
@@ -29607,7 +29729,7 @@ AAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vista_ks_like</span> <span class="o">=</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;m_vista_k&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.003</span> <span class="o">+</span> <span class="mf">0.004</span> <span class="o">*</span> <span class="p">(</span>
@@ -30976,7 +31098,7 @@ iVYAAACK9QBU+48bZS2hkwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -34598,7 +34720,7 @@ rkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -37570,7 +37692,7 @@ dCSAW/yYAQAkwioTACARihkAQCIUMwCARChmAACJUMwAABLxBZ4yTpedNlUNAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -41126,7 +41248,7 @@ wv8HtUUox0S7+qIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -43940,7 +44062,7 @@ ErQw02g0Go1Go5kk/P9TFi5HvzgGEQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -47191,7 +47313,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
@@ -50161,7 +50283,7 @@ IrITLMyIiIiI7AQLMyIiIiI7wcKMiIiIyE78A6l8hCD3XyTtAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_ccplots</span><span class="p">(</span>
