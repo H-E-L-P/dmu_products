@@ -11805,7 +11805,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-44f1ae0 (Thu Nov 30 18:27:54 2017 +0000)
+33f5ec7 (Wed Dec 6 16:56:17 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11879,6 +11879,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ps1</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/PS1.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
 <span class="n">akari</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/AKARI.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
+<span class="n">nep</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/NEP-Spitzer.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12192,6 +12193,308 @@ GzkT37JopAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Add-NEP-Spitzer">Add NEP-Spitzer<a class="anchor-link" href="#Add-NEP-Spitzer">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_merge_dist_plot</span><span class="p">(</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">nep</span><span class="p">[</span><span class="s1">&#39;nep_ra&#39;</span><span class="p">],</span> <span class="n">nep</span><span class="p">[</span><span class="s1">&#39;nep_dec&#39;</span><span class="p">])</span>
+<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+HfYeQ4mURhJJvXF0TDu7h7ItZu6df71Gw6a6eESdS2q0tC6uJbUxLa2LqbkmpiU1MTXVRNVcm33d
+VJO9ZMok4cDCZTJOI4mUBsazQWlmkMq9HhxPamB8SoPe8mytUFL2Z0VtLKzaeES1sYiW1Ma0qrla
+dfFIdl08Mr1cF48UpGVqMpnWGwPj2t8/pteOjOqxvf16dE+/2urjuui0pTq3s0nxCN0h5kLoOkn9
+I5N65s1j+tz7uoIuBYtQLBJSS138hFMWZZzT+FRao4mURiaT2WfvL9axyZTqq6PqG0no5Z5hHR2d
+0lQ6c9z3qo2F1VQTU0N1VI3VETVURdVQHfWes6/rqiKqj0dU7y3XTf/AD6s2FuHOTVSMTMZpbCrl
+/dGTmr5UNzyR9EJUtpU6t/xWuEq+o+tATthMNbGwauJh1cQiqomFtbalTjWxsGpjYdXEI9lnb1tt
+PKJ4JOR761I8Gtb69nqtb8/eRDSZTGvXoWH9av9R3ffrQ3r4pcM6v7NZF522lL7OJ0DoOkn/3zMH
+5JwYhR4lK2Q2HXw6VHXCfZ1zmkpnND6Z1vhUWuNTKY1NpTWRTGtiKqUJb3l8KntjwOtHxjWRTCuR
+TGsydfywli/3F3mN94ujNu+XS3U0rGrvuSaWvfQRj4RVFQ2pKhJW3HuORUKKRUKK5z+H31ofDVt2
+Oez/LyOUFuecJlMZTUylNeZ9D497j4lkShNTmez3dzKtRO57PZn29ktl95t66//D6GTuD5a0RidT
+Jzx3LkBV532vr22p05nH+T9QG8t+D5fj92w8GtZ5q5t1bmeTDgyM64n9R/Wr/Uf1xKtHtXVNs963
+qV0NVdGgyyw5hK6T8MLBQX31kT16/6Y2bVpWH3Q5wIKZmeKRbNBpnv2K5nGlM05TqYwSybQSqbQS
+yYwmU2lNJjOaTHnLqYwmvYA2lc5oKpXR0dEp9aQTmkxllEpnFA5Z9pdcMq1ZroqetGjYFA2H8h7Z
+15GwKRrKPkfCIYVNioRCCodMkbApZKZwKPscsuwlnFDIFPbWm2V/qYYsuz5kmj7GZlv23sfsrfcM
+5b1/yLL7Wm4/Zbdb9h9Gln2Sydsv77WmX5t3XPb9pLfeN2w2/d65r8u85dy2cChX49vrzJ1TM2rI
+edvyjPpya2dyzskp2xKbyWSfUxmnVDqjZNoplckolXZvfe8kM0p4z+NTaY0nU0rkwlAyrfHJ1HSY
+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
+JP3MzF5Q9o+1R5xzDGsAlDlGpAcAAPABLV0AAAA+IHQBAAD4gNAFAADgA0IXAACADwhdAAAAPiB0
+AQAA+IDQBWBBzCztjdW1y8x+bWZ/bGYhb9tWM/vaCY5dY2Yf96/ad5x7wpvfsCSY2cfMbJ+ZMSYX
+UIEIXQAWasI5t8U5d4ayI6dfI+nPJMk5t8M594cnOHaNpEBCl+dVb37DeTOzcLGKcc59R9Kni/X+
+AIJF6AJQMM65PknbJN1iWVfmWm3M7Iq8EeyfM7N6SX8p6TJv3R95rU+/MLNnvccl3rFXmtmjZvbP
+ZvaKmX3Lm45IZvYuM3vCa2V72szqzSxsZl8xs+1m9oKZfWY+9ZvZD8zsGa/Vblve+lEz+29m9mtJ
+Fx/nnGd4y8975+zyjv3tvPXfyIU2M7va+xp/bWb/WsB/BgAlKhJ0AQAqi3Nuvxcs2mZs+neSPuuc
+e9zM6iQlJH1B0r9zzn1EksysRtIHnHMJL7TcI2mrd/y5ks6QdEjS45LebWZPS/qOpI8557abWYOk
+CUmfkjTknHuXmcUlPW5mDzvnXpuj/N9zzg148x1uN7PvOeeOSqqV9JRz7o+9eVNfmeWcN0v6W+fc
+t7x9wma2SdLHJL3bOZc0s7+X9Akze0DSP0i63Dn3mpktOekPGkDZIXQB8Mvjkv7GzL4l6fvOuYNe
+Y1W+qKRbzWyLpLSk9XnbnnbOHZQkrx/WGklDknqcc9slyTk37G2/StLZZna9d2yjpC5Jc4WuPzSz
+67zlVd4xR71avuet33Ccc/5K0n80s5Xe17fXzN4n6XxlA5wkVUvqk3SRpMdyIdA5NzBHXQAqAKEL
+QEGZ2WnKhpQ+SZty651zf2lmP5b0IWVbnj44y+F/JKlX0jnKdn9I5G2bzFtO68Q/v0zSHzjnHjqJ
+uq+U9H5JFzvnxs3sUUlV3uaEcy59ouOdc3eb2VOSPizpfu+Spkn6n865L84410fnWxeAykGfLgAF
+Y2atkm6XdKtzzs3Ydrpz7kXn3F9J2i5po6QRSfV5uzUq24qUkXSTpLk6re+WtMzM3uWdo97MIpIe
+kvT7Zhb11q83s9o53qtR0jEvcG1UtjVq3uf0wuZ+59zXJP1Q0tmS/lXS9WbW5u27xMxWS3pS0uVm
+tja3fo7aAFQAWroALFS1d7kvKikl6R8l/c0s+33ezN4jKSNpl6QHvOW010H9Lkl/L+l7ZvY7kh6U
+NHaiEzvnpszsY5L+zuuHNaFsa9U3lb38+KzX4b5f0m/M8XU8KOlmM3tZ2WD15Eme87ck3WRmSUmH
+Jf1Xr3/YlyQ9bNlhNJLK9mt70uuo/31vfZ+yd34CqGA2449RAFgUzGyNpB85584MuJS38S5zTt9c
+AKBycHkRwGKVltRoJTY4qrKtfceCrgVA4dHSBQAA4ANaugAAAHxA6AIAAPABoQsAAMAHhC4AAAAf
+ELoAAAB88P8D7nrNkV6RzrEAAAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Given the graph above, we use 1 arc-second radius</span>
+<span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">merge_catalogues</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">,</span> <span class="n">nep</span><span class="p">,</span> <span class="s2">&quot;nep_ra&quot;</span><span class="p">,</span> <span class="s2">&quot;nep_dec&quot;</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">1.</span><span class="o">*</span><span class="n">u</span><span class="o">.</span><span class="n">arcsec</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Cleaning">Cleaning<a class="anchor-link" href="#Cleaning">&#182;</a></h3><p>When we merge the catalogues, astropy masks the non-existent values (e.g. when a row comes only from a catalogue and has no counterparts in the other, the columns from the latest are masked for that row). We indicate to use NaN for masked values for floats columns, False for flag columns and -1 for ID columns.</p>
 
 </div>
@@ -12199,7 +12502,7 @@ GzkT37JopAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span><span class="p">:</span>
@@ -12220,7 +12523,7 @@ GzkT37JopAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
@@ -12235,24 +12538,24 @@ GzkT37JopAAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table139756350891568-611847" class="table-striped table-bordered table-condensed">
-<thead><tr><th>idx</th><th>ps1_id</th><th>ra</th><th>dec</th><th>m_ap_gpc1_g</th><th>merr_ap_gpc1_g</th><th>m_gpc1_g</th><th>merr_gpc1_g</th><th>m_ap_gpc1_r</th><th>merr_ap_gpc1_r</th><th>m_gpc1_r</th><th>merr_gpc1_r</th><th>m_ap_gpc1_i</th><th>merr_ap_gpc1_i</th><th>m_gpc1_i</th><th>merr_gpc1_i</th><th>m_ap_gpc1_z</th><th>merr_ap_gpc1_z</th><th>m_gpc1_z</th><th>merr_gpc1_z</th><th>m_ap_gpc1_y</th><th>merr_ap_gpc1_y</th><th>m_gpc1_y</th><th>merr_gpc1_y</th><th>f_ap_gpc1_g</th><th>ferr_ap_gpc1_g</th><th>f_gpc1_g</th><th>ferr_gpc1_g</th><th>flag_gpc1_g</th><th>f_ap_gpc1_r</th><th>ferr_ap_gpc1_r</th><th>f_gpc1_r</th><th>ferr_gpc1_r</th><th>flag_gpc1_r</th><th>f_ap_gpc1_i</th><th>ferr_ap_gpc1_i</th><th>f_gpc1_i</th><th>ferr_gpc1_i</th><th>flag_gpc1_i</th><th>f_ap_gpc1_z</th><th>ferr_ap_gpc1_z</th><th>f_gpc1_z</th><th>ferr_gpc1_z</th><th>flag_gpc1_z</th><th>f_ap_gpc1_y</th><th>ferr_ap_gpc1_y</th><th>f_gpc1_y</th><th>ferr_gpc1_y</th><th>flag_gpc1_y</th><th>ps1_flag_cleaned</th><th>ps1_flag_gaia</th><th>flag_merged</th><th>akari_id</th><th>akari_stellarity</th><th>m_megacam_u</th><th>merr_megacam_u</th><th>m_megacam_g</th><th>merr_megacam_g</th><th>m_megacam_r</th><th>merr_megacam_r</th><th>m_megacam_i</th><th>merr_megacam_i</th><th>m_megacam_z</th><th>merr_megacam_z</th><th>m_wircam_y</th><th>merr_wircam_y</th><th>m_wircam_j</th><th>merr_wircam_j</th><th>m_wircam_k</th><th>merr_wircam_k</th><th>f_megacam_u</th><th>ferr_megacam_u</th><th>m_ap_megacam_u</th><th>merr_ap_megacam_u</th><th>f_ap_megacam_u</th><th>ferr_ap_megacam_u</th><th>flag_megacam_u</th><th>f_megacam_g</th><th>ferr_megacam_g</th><th>m_ap_megacam_g</th><th>merr_ap_megacam_g</th><th>f_ap_megacam_g</th><th>ferr_ap_megacam_g</th><th>flag_megacam_g</th><th>f_megacam_r</th><th>ferr_megacam_r</th><th>m_ap_megacam_r</th><th>merr_ap_megacam_r</th><th>f_ap_megacam_r</th><th>ferr_ap_megacam_r</th><th>flag_megacam_r</th><th>f_megacam_i</th><th>ferr_megacam_i</th><th>m_ap_megacam_i</th><th>merr_ap_megacam_i</th><th>f_ap_megacam_i</th><th>ferr_ap_megacam_i</th><th>flag_megacam_i</th><th>f_megacam_z</th><th>ferr_megacam_z</th><th>m_ap_megacam_z</th><th>merr_ap_megacam_z</th><th>f_ap_megacam_z</th><th>ferr_ap_megacam_z</th><th>flag_megacam_z</th><th>f_wircam_y</th><th>ferr_wircam_y</th><th>m_ap_wircam_y</th><th>merr_ap_wircam_y</th><th>f_ap_wircam_y</th><th>ferr_ap_wircam_y</th><th>flag_wircam_y</th><th>f_wircam_j</th><th>ferr_wircam_j</th><th>m_ap_wircam_j</th><th>merr_ap_wircam_j</th><th>f_ap_wircam_j</th><th>ferr_ap_wircam_j</th><th>flag_wircam_j</th><th>f_wircam_k</th><th>ferr_wircam_k</th><th>m_ap_wircam_k</th><th>merr_ap_wircam_k</th><th>f_ap_wircam_k</th><th>ferr_ap_wircam_k</th><th>flag_wircam_k</th><th>akari_flag_cleaned</th><th>akari_flag_gaia</th></tr></thead>
-<thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
-<tr><td>0</td><td>188302712307623275</td><td>271.230859611</td><td>66.9187748222</td><td>18.1931991577</td><td>0.0</td><td>18.0580997467</td><td>0.0</td><td>14.9997997284</td><td>0.0</td><td>15.198800087</td><td>0.0</td><td>24.2761993408</td><td>1.82103002071</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>21.7894992828</td><td>1.73686003685</td><td>nan</td><td>nan</td><td>191.743361539</td><td>0.0</td><td>217.150133812</td><td>0.0</td><td>False</td><td>3631.45033224</td><td>0.0</td><td>3023.29109741</td><td>0.0</td><td>False</td><td>0.707164195365</td><td>1.1860774502</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>6.9855448745</td><td>11.174826514</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>1</td><td>188022684866307729</td><td>268.486689971</td><td>66.6891811122</td><td>12.988699913</td><td>0.000928000023123</td><td>13.0527000427</td><td>6.60000005155e-05</td><td>12.6289997101</td><td>0.0</td><td>12.6779003143</td><td>0.0</td><td>12.7679004669</td><td>0.118096001446</td><td>12.7590999603</td><td>0.0408620014787</td><td>12.5409002304</td><td>0.00223400001414</td><td>12.6300001144</td><td>0.00158499996178</td><td>12.5078001022</td><td>0.00114599999506</td><td>12.557299614</td><td>0.00124799995683</td><td>23148.3497108</td><td>19.7853483864</td><td>21823.2778929</td><td>1.32659880537</td><td>False</td><td>32240.3773281</td><td>0.0</td><td>30820.5137876</td><td>0.0</td><td>False</td><td>28368.7247301</td><td>3085.67858571</td><td>28599.6037425</td><td>1076.35450056</td><td>False</td><td>34965.5132753</td><td>71.9446922826</td><td>32210.6845177</td><td>47.0224106976</td><td>False</td><td>36047.8991281</td><td>38.0487378441</td><td>34441.3490668</td><td>39.588623793</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>2</td><td>187962713425060228</td><td>271.342700741</td><td>66.6326925022</td><td>13.8274002075</td><td>0.00108600000385</td><td>14.4595003128</td><td>0.00139999995008</td><td>12.8380002975</td><td>0.0</td><td>13.6963996887</td><td>0.438279986382</td><td>13.1340999603</td><td>0.00108600000385</td><td>12.7460002899</td><td>0.00108600000385</td><td>12.9916000366</td><td>0.0716150030494</td><td>14.184800148</td><td>0.046234998852</td><td>12.2341003418</td><td>0.0168340001255</td><td>13.0011997223</td><td>0.00216699996963</td><td>10691.53143</td><td>10.6941291294</td><td>5973.10122725</td><td>7.70200107846</td><td>False</td><td>26594.9930388</td><td>0.0</td><td>12062.577719</td><td>4869.31022031</td><td>False</td><td>20246.9689046</td><td>20.251888269</td><td>28946.7549123</td><td>28.9537880458</td><td>False</td><td>23086.6003699</td><td>1522.78882167</td><td>7692.7202753</td><td>327.586859072</td><td>False</td><td>46383.1098335</td><td>719.155604592</td><td>22883.3767628</td><td>45.6724907327</td><td>False</td><td>False</td><td>2</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>3</td><td>186792714635338532</td><td>271.463609651</td><td>65.6648103922</td><td>9.87423038483</td><td>0.00108600000385</td><td>13.4039001465</td><td>0.0688100010157</td><td>9.89247989655</td><td>0.0</td><td>13.2831001282</td><td>0.0443940013647</td><td>11.4362001419</td><td>0.00181799998973</td><td>11.8547000885</td><td>0.00163399998564</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>10.9961996078</td><td>0.0259390007704</td><td>10.8029003143</td><td>0.0374159999192</td><td>407669.148331</td><td>407.768198866</td><td>15792.1020362</td><td>1000.84583381</td><td>False</td><td>400874.140131</td><td>0.0</td><td>17650.6193336</td><td>721.705341824</td><td>False</td><td>96720.8140796</td><td>161.953187369</td><td>65783.9526417</td><td>99.0028491276</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>145050.809501</td><td>3465.36575175</td><td>173316.485664</td><td>5972.73037886</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>4</td><td>189282683802378966</td><td>268.380286101</td><td>67.7402703322</td><td>12.6859998703</td><td>0.00108600000385</td><td>12.725399971</td><td>0.00108600000385</td><td>13.079000473</td><td>0.0</td><td>13.068400383</td><td>0.357650011778</td><td>11.7777004242</td><td>0.0018609999679</td><td>12.1333999634</td><td>0.0018230000278</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.5986003876</td><td>0.00640799989924</td><td>11.64220047</td><td>0.000553000019863</td><td>30591.4492493</td><td>30.5988819908</td><td>29501.2224004</td><td>29.5083902518</td><td>False</td><td>21300.9910939</td><td>0.0</td><td>21509.9720864</td><td>7085.55331979</td><td>False</td><td>70618.7181838</td><td>121.043612341</td><td>50890.88632</td><td>85.448092059</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>83283.6681422</td><td>491.539044866</td><td>80005.4941603</td><td>40.74934562</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>5</td><td>189672700208609845</td><td>270.020707021</td><td>68.0660103222</td><td>9.79051017761</td><td>0.00108600000385</td><td>10.765999794</td><td>0.00108600000385</td><td>10.0614995956</td><td>0.0</td><td>nan</td><td>nan</td><td>11.5613002777</td><td>0.0024830000475</td><td>nan</td><td>nan</td><td>8.02291965485</td><td>0.00108600000385</td><td>8.1945104599</td><td>0.00108600000385</td><td>8.62779998779</td><td>0.116720996797</td><td>8.76799964905</td><td>0.0866530016065</td><td>440347.899394</td><td>440.454889818</td><td>179308.171728</td><td>179.351737866</td><td>False</td><td>343083.760549</td><td>0.0</td><td>nan</td><td>nan</td><td>False</td><td>86194.5663248</td><td>197.120729088</td><td>nan</td><td>nan</td><td>False</td><td>2243014.79422</td><td>2243.55977491</td><td>1915119.22527</td><td>1915.58453785</td><td>False</td><td>1284931.58562</td><td>138135.299194</td><td>1129276.10924</td><td>90127.9372272</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>6</td><td>188862729192286378</td><td>272.919139581</td><td>67.3880696222</td><td>12.1258001328</td><td>0.00108600000385</td><td>12.1787996292</td><td>0.00108600000385</td><td>11.9393997192</td><td>0.0</td><td>12.3819999695</td><td>0.0</td><td>13.5096998215</td><td>0.0029879999347</td><td>13.2274999619</td><td>0.00123599998187</td><td>11.9168996811</td><td>0.0210500005633</td><td>11.9743995667</td><td>0.0172850005329</td><td>11.377699852</td><td>0.0998089984059</td><td>11.3923997879</td><td>0.114196002483</td><td>51248.3570284</td><td>51.2608087363</td><td>48806.7791065</td><td>48.8186375893</td><td>False</td><td>60847.1319321</td><td>0.0</td><td>40476.2260065</td><td>0.0</td><td>False</td><td>14325.8391765</td><td>39.4254205915</td><td>18578.0452037</td><td>21.1492104936</td><td>False</td><td>62121.2416425</td><td>1204.39215883</td><td>58916.938747</td><td>937.962014321</td><td>False</td><td>102075.157618</td><td>9383.5124953</td><td>100702.461168</td><td>10591.7242653</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>7</td><td>186902667922886906</td><td>266.792259031</td><td>65.7551261422</td><td>11.7940998077</td><td>0.00108600000385</td><td>11.8548002243</td><td>0.00108600000385</td><td>11.0108995438</td><td>0.0</td><td>11.1646003723</td><td>0.0</td><td>13.9546003342</td><td>0.00485400017351</td><td>13.8699998856</td><td>0.0317500010133</td><td>11.3480997086</td><td>0.358653992414</td><td>11.423500061</td><td>0.342835009098</td><td>11.2146997452</td><td>0.00518599990755</td><td>11.2793998718</td><td>0.00930999964476</td><td>69560.0806563</td><td>69.5769815261</td><td>65777.8857673</td><td>65.793867685</td><td>False</td><td>143100.180808</td><td>0.0</td><td>124210.940754</td><td>0.0</td><td>False</td><td>9509.5478124</td><td>42.5143294744</td><td>10280.1640648</td><td>300.621106715</td><td>False</td><td>104896.287187</td><td>34650.6564158</td><td>97858.8202106</td><td>30900.1665139</td><td>False</td><td>118609.671183</td><td>566.537010641</td><td>111748.075171</td><td>958.220362908</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>8</td><td>189982707079134663</td><td>270.707588281</td><td>68.3201312422</td><td>11.4463996887</td><td>0.00108600000385</td><td>11.4177999496</td><td>0.00108600000385</td><td>11.5573997498</td><td>0.0</td><td>11.2904996872</td><td>0.0</td><td>14.203499794</td><td>0.0385710000992</td><td>13.8180999756</td><td>0.0192779991776</td><td>14.2924003601</td><td>0.0</td><td>nan</td><td>nan</td><td>13.0896997452</td><td>0.0750240013003</td><td>12.7922000885</td><td>0.0766479969025</td><td>95816.4606572</td><td>95.8397409857</td><td>98373.9296628</td><td>98.3978313743</td><td>False</td><td>86504.7788313</td><td>0.0</td><td>110611.460089</td><td>0.0</td><td>False</td><td>7561.36290537</td><td>268.618959278</td><td>10783.506632</td><td>191.468637661</td><td>False</td><td>6966.90447666</td><td>0.0</td><td>nan</td><td>nan</td><td>False</td><td>21092.1136095</td><td>1457.45785388</td><td>27740.8628107</td><td>1958.37769568</td><td>False</td><td>False</td><td>2</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
-<tr><td>9</td><td>185752699446475438</td><td>269.944904651</td><td>64.7955847922</td><td>12.5055999756</td><td>0.00108600000385</td><td>12.567199707</td><td>0.00108600000385</td><td>11.1925001144</td><td>0.0</td><td>11.3108997345</td><td>0.0</td><td>11.1764001846</td><td>0.0734449997544</td><td>11.1373996735</td><td>0.0223639998585</td><td>13.0180997849</td><td>0.0328960008919</td><td>nan</td><td>nan</td><td>11.5947999954</td><td>0.0586309991777</td><td>11.6434001923</td><td>0.0530639998615</td><td>36121.0203466</td><td>36.1297965967</td><td>34128.7291824</td><td>34.1370213696</td><td>False</td><td>121059.800595</td><td>0.0</td><td>108552.569074</td><td>0.0</td><td>False</td><td>122868.321702</td><td>8311.46996638</td><td>127362.076343</td><td>2623.40469521</td><td>False</td><td>22529.9426413</td><td>682.619783677</td><td>nan</td><td>nan</td><td>False</td><td>83575.6959697</td><td>4513.18334988</td><td>79917.1381093</td><td>3905.85023045</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td></tr>
+<table id="table139795661499640-759746" class="table-striped table-bordered table-condensed">
+<thead><tr><th>idx</th><th>ps1_id</th><th>ra</th><th>dec</th><th>m_ap_gpc1_g</th><th>merr_ap_gpc1_g</th><th>m_gpc1_g</th><th>merr_gpc1_g</th><th>m_ap_gpc1_r</th><th>merr_ap_gpc1_r</th><th>m_gpc1_r</th><th>merr_gpc1_r</th><th>m_ap_gpc1_i</th><th>merr_ap_gpc1_i</th><th>m_gpc1_i</th><th>merr_gpc1_i</th><th>m_ap_gpc1_z</th><th>merr_ap_gpc1_z</th><th>m_gpc1_z</th><th>merr_gpc1_z</th><th>m_ap_gpc1_y</th><th>merr_ap_gpc1_y</th><th>m_gpc1_y</th><th>merr_gpc1_y</th><th>f_ap_gpc1_g</th><th>ferr_ap_gpc1_g</th><th>f_gpc1_g</th><th>ferr_gpc1_g</th><th>flag_gpc1_g</th><th>f_ap_gpc1_r</th><th>ferr_ap_gpc1_r</th><th>f_gpc1_r</th><th>ferr_gpc1_r</th><th>flag_gpc1_r</th><th>f_ap_gpc1_i</th><th>ferr_ap_gpc1_i</th><th>f_gpc1_i</th><th>ferr_gpc1_i</th><th>flag_gpc1_i</th><th>f_ap_gpc1_z</th><th>ferr_ap_gpc1_z</th><th>f_gpc1_z</th><th>ferr_gpc1_z</th><th>flag_gpc1_z</th><th>f_ap_gpc1_y</th><th>ferr_ap_gpc1_y</th><th>f_gpc1_y</th><th>ferr_gpc1_y</th><th>flag_gpc1_y</th><th>ps1_flag_cleaned</th><th>ps1_flag_gaia</th><th>flag_merged</th><th>akari_id</th><th>akari_stellarity</th><th>m_megacam_u</th><th>merr_megacam_u</th><th>m_megacam_g</th><th>merr_megacam_g</th><th>m_megacam_r</th><th>merr_megacam_r</th><th>m_megacam_i</th><th>merr_megacam_i</th><th>m_megacam_z</th><th>merr_megacam_z</th><th>m_wircam_y</th><th>merr_wircam_y</th><th>m_wircam_j</th><th>merr_wircam_j</th><th>m_wircam_k</th><th>merr_wircam_k</th><th>f_megacam_u</th><th>ferr_megacam_u</th><th>flag_megacam_u</th><th>f_megacam_g</th><th>ferr_megacam_g</th><th>flag_megacam_g</th><th>f_megacam_r</th><th>ferr_megacam_r</th><th>flag_megacam_r</th><th>f_megacam_i</th><th>ferr_megacam_i</th><th>flag_megacam_i</th><th>f_megacam_z</th><th>ferr_megacam_z</th><th>flag_megacam_z</th><th>f_wircam_y</th><th>ferr_wircam_y</th><th>flag_wircam_y</th><th>f_wircam_j</th><th>ferr_wircam_j</th><th>flag_wircam_j</th><th>f_wircam_k</th><th>ferr_wircam_k</th><th>flag_wircam_k</th><th>akari_flag_cleaned</th><th>akari_flag_gaia</th><th>nep_id</th><th>m_irac_i1</th><th>merr_irac_i1</th><th>m_ap_irac_i1</th><th>merr_ap_irac_i1</th><th>m_irac_i2</th><th>merr_irac_i2</th><th>m_ap_irac_i2</th><th>merr_ap_irac_i2</th><th>irac_stellarity</th><th>f_irac_i1</th><th>ferr_irac_i1</th><th>flag_irac_i1</th><th>f_ap_irac_i1</th><th>ferr_ap_irac_i1</th><th>f_irac_i2</th><th>ferr_irac_i2</th><th>flag_irac_i2</th><th>f_ap_irac_i2</th><th>ferr_ap_irac_i2</th><th>nep_flag_cleaned</th><th>nep_flag_gaia</th></tr></thead>
+<thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
+<tr><td>0</td><td>188302712307623275</td><td>271.230859611</td><td>66.9187748222</td><td>18.1931991577</td><td>0.0</td><td>18.0580997467</td><td>0.0</td><td>14.9997997284</td><td>0.0</td><td>15.198800087</td><td>0.0</td><td>24.2761993408</td><td>1.82103002071</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>21.7894992828</td><td>1.73686003685</td><td>nan</td><td>nan</td><td>191.743361539</td><td>0.0</td><td>217.150133812</td><td>0.0</td><td>False</td><td>3631.45033224</td><td>0.0</td><td>3023.29109741</td><td>0.0</td><td>False</td><td>0.707164195365</td><td>1.1860774502</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>6.9855448745</td><td>11.174826514</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>1</td><td>189672700208609845</td><td>270.020707021</td><td>68.0660103222</td><td>9.79051017761</td><td>0.00108600000385</td><td>10.765999794</td><td>0.00108600000385</td><td>10.0614995956</td><td>0.0</td><td>nan</td><td>nan</td><td>11.5613002777</td><td>0.0024830000475</td><td>nan</td><td>nan</td><td>8.02291965485</td><td>0.00108600000385</td><td>8.1945104599</td><td>0.00108600000385</td><td>8.62779998779</td><td>0.116720996797</td><td>8.76799964905</td><td>0.0866530016065</td><td>440347.899394</td><td>440.454889818</td><td>179308.171728</td><td>179.351737866</td><td>False</td><td>343083.760549</td><td>0.0</td><td>nan</td><td>nan</td><td>False</td><td>86194.5663248</td><td>197.120729088</td><td>nan</td><td>nan</td><td>False</td><td>2243014.79422</td><td>2243.55977491</td><td>1915119.22527</td><td>1915.58453785</td><td>False</td><td>1284931.58562</td><td>138135.299194</td><td>1129276.10924</td><td>90127.9372272</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>2</td><td>189982707079134663</td><td>270.707588281</td><td>68.3201312422</td><td>11.4463996887</td><td>0.00108600000385</td><td>11.4177999496</td><td>0.00108600000385</td><td>11.5573997498</td><td>0.0</td><td>11.2904996872</td><td>0.0</td><td>14.203499794</td><td>0.0385710000992</td><td>13.8180999756</td><td>0.0192779991776</td><td>14.2924003601</td><td>0.0</td><td>nan</td><td>nan</td><td>13.0896997452</td><td>0.0750240013003</td><td>12.7922000885</td><td>0.0766479969025</td><td>95816.4606572</td><td>95.8397409857</td><td>98373.9296628</td><td>98.3978313743</td><td>False</td><td>86504.7788313</td><td>0.0</td><td>110611.460089</td><td>0.0</td><td>False</td><td>7561.36290537</td><td>268.618959278</td><td>10783.506632</td><td>191.468637661</td><td>False</td><td>6966.90447666</td><td>0.0</td><td>nan</td><td>nan</td><td>False</td><td>21092.1136095</td><td>1457.45785388</td><td>27740.8628107</td><td>1958.37769568</td><td>False</td><td>False</td><td>2</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>3</td><td>185752699446475438</td><td>269.944904651</td><td>64.7955847922</td><td>12.5055999756</td><td>0.00108600000385</td><td>12.567199707</td><td>0.00108600000385</td><td>11.1925001144</td><td>0.0</td><td>11.3108997345</td><td>0.0</td><td>11.1764001846</td><td>0.0734449997544</td><td>11.1373996735</td><td>0.0223639998585</td><td>13.0180997849</td><td>0.0328960008919</td><td>nan</td><td>nan</td><td>11.5947999954</td><td>0.0586309991777</td><td>11.6434001923</td><td>0.0530639998615</td><td>36121.0203466</td><td>36.1297965967</td><td>34128.7291824</td><td>34.1370213696</td><td>False</td><td>121059.800595</td><td>0.0</td><td>108552.569074</td><td>0.0</td><td>False</td><td>122868.321702</td><td>8311.46996638</td><td>127362.076343</td><td>2623.40469521</td><td>False</td><td>22529.9426413</td><td>682.619783677</td><td>nan</td><td>nan</td><td>False</td><td>83575.6959697</td><td>4513.18334988</td><td>79917.1381093</td><td>3905.85023045</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>4</td><td>189682715123431188</td><td>271.511946301</td><td>68.0670293722</td><td>10.5746002197</td><td>0.00108600000385</td><td>10.5073003769</td><td>0.00108600000385</td><td>12.1459999084</td><td>0.0</td><td>13.7888002396</td><td>0.0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>13.2459001541</td><td>0.00337999989279</td><td>12.6120996475</td><td>0.00108600000385</td><td>10.317899704</td><td>0.170213997364</td><td>10.251999855</td><td>0.179143995047</td><td>213874.945612</td><td>213.926910368</td><td>227551.576791</td><td>227.60686453</td><td>False</td><td>50303.7123502</td><td>0.0</td><td>11078.4730149</td><td>0.0</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>18265.8521649</td><td>56.863332077</td><td>32746.1420173</td><td>32.7540982802</td><td>False</td><td>270919.408295</td><td>42472.8172895</td><td>287872.419518</td><td>47498.292007</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>5</td><td>188582724662465602</td><td>272.466542951</td><td>67.1539773722</td><td>14.3395996094</td><td>0.00124600005802</td><td>14.782699585</td><td>0.00166599999648</td><td>11.3811998367</td><td>0.0</td><td>12.700799942</td><td>0.0</td><td>15.1021995544</td><td>0.0526169985533</td><td>14.2220001221</td><td>0.0852300003171</td><td>12.3631000519</td><td>0.00108600000385</td><td>12.6736001968</td><td>0.00108600000385</td><td>11.4131002426</td><td>0.0629139989614</td><td>11.4104003906</td><td>0.0537000000477</td><td>6670.52715155</td><td>7.65515341703</td><td>4435.2710527</td><td>6.80566930143</td><td>False</td><td>101746.637416</td><td>0.0</td><td>30177.2751849</td><td>0.0</td><td>False</td><td>3304.60973739</td><td>160.148151097</td><td>7433.61306078</td><td>583.536627729</td><td>False</td><td>41186.9828825</td><td>41.1969899991</td><td>30942.8221591</td><td>30.950340273</td><td>False</td><td>98800.6730171</td><td>5725.09732322</td><td>99046.6619799</td><td>4898.8011358</td><td>False</td><td>False</td><td>3</td><td>True</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>6</td><td>187862661494997604</td><td>266.149401101</td><td>66.5558201522</td><td>13.8338003159</td><td>0.00156000000425</td><td>13.8058996201</td><td>0.00289799994789</td><td>14.8861999512</td><td>0.0</td><td>16.9433994293</td><td>0.0</td><td>14.2459001541</td><td>0.0012009999482</td><td>13.9694004059</td><td>0.00149000005331</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>12.2529001236</td><td>0.14440099895</td><td>13.3059997559</td><td>0.110051997006</td><td>10628.6932599</td><td>15.2714457323</td><td>10905.3636462</td><td>29.1081232622</td><td>False</td><td>4031.99532173</td><td>0.0</td><td>606.233914298</td><td>0.0</td><td>False</td><td>7271.76672313</td><td>8.04375079278</td><td>9380.7991534</td><td>12.873653082</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>45586.8884793</td><td>6062.97570863</td><td>17282.2426156</td><td>1751.75636978</td><td>False</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>7</td><td>186862710807715078</td><td>271.080191351</td><td>65.7204442022</td><td>15.5595998764</td><td>0.00189499999397</td><td>14.8201999664</td><td>0.00173899997026</td><td>14.1222000122</td><td>0.0</td><td>13.7220001221</td><td>0.557276010513</td><td>14.8261995316</td><td>0.0017419999931</td><td>14.1684999466</td><td>0.00122500001453</td><td>13.1771001816</td><td>0.00108600000385</td><td>13.6571998596</td><td>0.00133300002199</td><td>12.7678003311</td><td>0.0566169992089</td><td>12.3655996323</td><td>0.123037002981</td><td>2168.50311051</td><td>3.78481749371</td><td>4284.69599361</td><td>6.86270400931</td><td>False</td><td>8149.29417074</td><td>0.0</td><td>11781.4827354</td><td>6047.08369119</td><td>False</td><td>4261.0848999</td><td>6.83666053844</td><td>7809.08268615</td><td>8.81072802221</td><td>False</td><td>19460.7658534</td><td>19.4654941956</td><td>12506.0469898</td><td>15.3541540195</td><td>False</td><td>28371.3412552</td><td>1479.45716313</td><td>41092.271332</td><td>4656.62827508</td><td>False</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>8</td><td>189832699068197946</td><td>269.906870011</td><td>68.1976963422</td><td>13.8600997925</td><td>0.00241199997254</td><td>13.8908996582</td><td>0.00148900004569</td><td>13.5975999832</td><td>0.0</td><td>13.6458997726</td><td>0.0</td><td>13.5144996643</td><td>0.0140399998054</td><td>13.5620002747</td><td>0.00759800011292</td><td>13.4785995483</td><td>0.00248200003989</td><td>13.5390996933</td><td>0.00299800001085</td><td>13.4570999146</td><td>0.00146199995652</td><td>13.5225000381</td><td>0.000950000016019</td><td>10374.3305861</td><td>23.0469288756</td><td>10084.1694954</td><td>13.8296289409</td><td>False</td><td>13211.7396439</td><td>0.0</td><td>12636.8866779</td><td>0.0</td><td>False</td><td>14262.6470233</td><td>184.434819945</td><td>13652.1134971</td><td>95.5377184973</td><td>False</td><td>14742.1281011</td><td>33.7006009145</td><td>13943.1250593</td><td>38.5005942475</td><td>False</td><td>15036.9596442</td><td>20.2480439076</td><td>14157.9373021</td><td>12.3879452531</td><td>False</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>9</td><td>188132687099408163</td><td>268.709846131</td><td>66.7812211522</td><td>23.9218997955</td><td>0.0362819992006</td><td>23.4186000824</td><td>0.227112993598</td><td>23.5261993408</td><td>0.0</td><td>23.0874996185</td><td>6.40987014771</td><td>nan</td><td>nan</td><td>24.4820995331</td><td>8.40647983551</td><td>22.1450996399</td><td>0.421413987875</td><td>21.6875</td><td>1.21950995922</td><td>20.7359008789</td><td>0.629887998104</td><td>20.7674007416</td><td>0.395965009928</td><td>0.98003160573</td><td>0.0327496732446</td><td>1.55797314369</td><td>0.325894948568</td><td>False</td><td>1.41097806951</td><td>0.0</td><td>2.1134897824</td><td>12.4774277622</td><td>False</td><td>nan</td><td>nan</td><td>0.585005820045</td><td>4.52949768859</td><td>False</td><td>5.03454403785</td><td>1.95409093924</td><td>7.67361489362</td><td>8.61908237469</td><td>False</td><td>18.4348517078</td><td>10.6949476186</td><td>17.907695594</td><td>6.53088736709</td><td>False</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -12263,8 +12566,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table139756350891568-611847').dataTable()");
-    $('#table139756350891568-611847').dataTable({
+    console.log("$('#table139795661499640-759746').dataTable()");
+    $('#table139795661499640-759746').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12293,7 +12596,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_cleaned_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12324,7 +12627,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_gaia_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12354,7 +12657,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stellarity_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12375,7 +12678,7 @@ require(["datatables"], function(){
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>akari_stellarity
+<pre>akari_stellarity, irac_stellarity
 </pre>
 </div>
 </div>
@@ -12386,7 +12689,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We create an masked array with all the stellarities and get the maximum value, as well as its</span>
@@ -12425,7 +12728,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -12449,7 +12752,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">gen_help_id</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
@@ -12465,7 +12768,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check that the HELP Ids are unique</span>
@@ -12516,11 +12819,12 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ps1_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_PanSTARRS1-3SS/data/PanSTARRS1-3SS_AKARI-NEP_MOC.fits&quot;</span><span class="p">)</span>
 <span class="n">akari_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_AKARI-NEP-OptNIR/data/AKARI-NEP_OptNIR_MOC.fits&quot;</span><span class="p">)</span>
+<span class="n">nep_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_NEP-Spitzer/data/NEP-Spitzer-APJ_MOC.fits&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12530,7 +12834,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">was_observed_optical</span> <span class="o">=</span> <span class="n">inMoc</span><span class="p">(</span>
@@ -12542,7 +12846,10 @@ require(["datatables"], function(){
     <span class="n">akari_moc</span>
 <span class="p">)</span>
 
-<span class="n">was_observed_mir</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+<span class="n">was_observed_mir</span> <span class="o">=</span> <span class="n">inMoc</span><span class="p">(</span>
+    <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">],</span>
+    <span class="n">nep_moc</span>
+<span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12552,7 +12859,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -12587,7 +12894,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SpARCS is a catalogue of sources detected in r (with fluxes measured at </span>
@@ -12613,7 +12920,10 @@ require(["datatables"], function(){
     <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_wircam_k&#39;</span><span class="p">])</span>
 <span class="p">)</span>
 
-<span class="n">nb_mir_flux</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+<span class="n">nb_mir_flux</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_irac_i1&#39;</span><span class="p">])</span> <span class="o">+</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_irac_i2&#39;</span><span class="p">])</span> 
+<span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12623,7 +12933,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">has_optical_flux</span> <span class="o">=</span> <span class="n">nb_optical_flux</span> <span class="o">&gt;=</span> <span class="mi">2</span>
@@ -12655,7 +12965,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#</span>
@@ -12700,7 +13010,7 @@ require(["datatables"], function(){
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>32 master list rows had multiple associations.
+<pre>33 master list rows had multiple associations.
 </pre>
 </div>
 </div>
@@ -12711,12 +13021,12 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;akari_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;akari_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">,</span> <span class="s1">&#39;nep_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
     <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_list_cross_ident_akari-nep</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
-<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">([</span><span class="s1">&#39;akari_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">])</span>
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">([</span><span class="s1">&#39;akari_id&#39;</span><span class="p">,</span> <span class="s1">&#39;ps1_id&#39;</span><span class="p">,</span> <span class="s1">&#39;sdss_id&#39;</span><span class="p">,</span> <span class="s1">&#39;nep_id&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -12736,7 +13046,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span>
@@ -12761,7 +13071,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;help_id&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">,</span> <span class="s2">&quot;ra&quot;</span><span class="p">,</span> <span class="s2">&quot;dec&quot;</span><span class="p">,</span> <span class="s2">&quot;hp_idx&quot;</span><span class="p">]</span>
@@ -12771,8 +13081,12 @@ require(["datatables"], function(){
     <span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;f_ap_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;ferr_ap_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
                 <span class="s2">&quot;m_ap_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_ap_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
                 <span class="s2">&quot;f_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;ferr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
-                <span class="s2">&quot;m_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
-                <span class="s2">&quot;flag_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">)]</span>    
+                <span class="s2">&quot;m_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">)]</span>
+
+<span class="c1"># Some band have no aperture measurements</span>
+<span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;megacam_u&#39;</span><span class="p">,</span> <span class="s1">&#39;megacam_g&#39;</span><span class="p">,</span> <span class="s1">&#39;megacam_r&#39;</span><span class="p">,</span> <span class="s1">&#39;megacam_i&#39;</span><span class="p">,</span> <span class="s1">&#39;megacam_z&#39;</span><span class="p">,</span> <span class="s1">&#39;wircam_j&#39;</span><span class="p">,</span><span class="s1">&#39;wircam_k&#39;</span><span class="p">,</span> <span class="s1">&#39;wircam_y&#39;</span><span class="p">]:</span>
+    <span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;f_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;ferr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span>
+                <span class="s2">&quot;m_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">),</span> <span class="s2">&quot;merr_</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">band</span><span class="p">)]</span>    
     
 <span class="n">columns</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;stellarity&quot;</span><span class="p">,</span> <span class="s2">&quot;stellarity_origin&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_cleaned&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_merged&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_gaia&quot;</span><span class="p">,</span> <span class="s2">&quot;flag_optnir_obs&quot;</span><span class="p">,</span> 
             <span class="s2">&quot;flag_optnir_det&quot;</span><span class="p">,</span> <span class="s2">&quot;ebv&quot;</span><span class="p">]</span>
@@ -12785,7 +13099,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We check for columns in the master catalogue that we will not save to disk.</span>
@@ -12804,7 +13118,7 @@ require(["datatables"], function(){
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Missing columns: set()
+<pre>Missing columns: {&#39;flag_megacam_i&#39;, &#39;flag_irac_i2&#39;, &#39;flag_megacam_z&#39;, &#39;flag_megacam_g&#39;, &#39;flag_irac_i1&#39;, &#39;flag_gpc1_r&#39;, &#39;flag_megacam_r&#39;, &#39;flag_wircam_y&#39;, &#39;flag_wircam_j&#39;, &#39;flag_gpc1_z&#39;, &#39;flag_gpc1_i&#39;, &#39;flag_gpc1_y&#39;, &#39;flag_megacam_u&#39;, &#39;flag_gpc1_g&#39;, &#39;flag_wircam_k&#39;}
 </pre>
 </div>
 </div>
@@ -12815,7 +13129,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_akari-nep</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
