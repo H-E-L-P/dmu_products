@@ -11,6 +11,6 @@
 #$ -m eas
 #$ -M raphael.shirley@sussex.ac.uk
 
-ls ./data/sub_catalogue_herschel-stripe-82_20171206_*.fits > fits_list.lis
+ls ./data/sub_catalogue_herschel-stripe-82_20171213_*.fits > fits_list.lis
 
-stilts tcat in=@fits_list.lis out=./data/master_catalogue_herschel-stripe-82_20171206.fits
+stilts tcat in=@fits_list.lis out=./data/master_catalogue_herschel-stripe-82_20171213.fits
