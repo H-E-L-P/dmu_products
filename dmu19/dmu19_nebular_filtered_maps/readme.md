@@ -1,9 +1,9 @@
 Nebular filtered HerMES maps
 ============================
 
-This product contains the HerMES SPIRE signal maps filtered using the nebular
-software from Casutools (version 1.0.36) using the same parameters used to
-filter the HerMES-ATLAS maps.
+This product contains the SPIRE signal maps filtered using the nebular software
+from Casutools (version 1.0.36) using the same parameters used to filter the
+HerMES-ATLAS maps.
 
 The script was provided my Matt Smith and we are using these parameters:
 
