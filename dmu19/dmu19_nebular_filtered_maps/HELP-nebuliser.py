@@ -68,7 +68,7 @@ def nebulising(folder, fitsFile, ext, nebPath, nebParam, extractExt):
         os.environ["PATH"] = nebPath + ":" + os.environ["PATH"]
 
     command = ("nebuliser " + fitsFile + " " + "nebMask-"+fitsFile +
-               " " + destdir + fitsFile[:-11] + "_nebfiltered.fits " +
+               " " + destdir + fitsFile[:-9] + "_nebfiltered.fits " +
                str(int(np.round(nebParam["medFilt"]) / pixSize)) + " " +
                str(int(np.round(nebParam["linFilt"] / pixSize))))
     if nebParam["twod"]:
