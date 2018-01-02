@@ -190,28 +190,6 @@ for f in glob("{}/*.fits".format(folder)):
 for f in glob("{}SPIREcal*.fits".format(destdir)):
     os.rename(f, f.replace("SPIREcal", "SPIRE-NEP_SPIREcal"))
 
-# SSDF maps ####################################################################
-folder = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_SSDF-itermap/data/"
-
-for f in glob("{}/spt_itermap_20150304_P*.fits".format(folder)):
-    filename = f.split("/")[-1]
-    print("Processing {}...".format(filename))
-    if "250" in filename or "PSW" in filename:
-        nebParam = nebParamDict['250']
-    elif "350" in filename or "PMW" in filename:
-        nebParam = nebParamDict['350']
-    elif "500" in filename or "PLW" in filename:
-        nebParam = nebParamDict['500']
-    else:
-        raise StandardError("Unknown band")
-
-    nebulising(folder, filename, extension, pathInfo, nebParam, extractExt)
-
-# Renaming the maps
-for f in glob("{}spt*.fits".format(destdir)):
-    os.rename(f, f.replace("spt", "SSDF_spt"))
-
-
 print("Finished successfully")
 
 ###############################################################################
