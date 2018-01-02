@@ -34,7 +34,7 @@ pathInfo = None
 #folder = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_HerMES/data/"
 
 # Destination directory to put the maps in
-destdir = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_nebular_filtered_maps/data"
+destdir = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_nebular_filtered_maps/data/"
 
 ###############################################################################
 
