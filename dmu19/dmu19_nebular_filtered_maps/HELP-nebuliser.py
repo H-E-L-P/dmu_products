@@ -31,10 +31,10 @@ nebParamDict = {
 pathInfo = None
 
 # Directory where to to be processed maps are
-folder = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_HerMES/data/"
+#folder = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_HerMES/data/"
 
 # Destination directory to put the maps in
-destdir = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_HerMES_nebular_filtered/data/"
+destdir = "/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_nebular_filtered_maps/data"
 
 ###############################################################################
 
