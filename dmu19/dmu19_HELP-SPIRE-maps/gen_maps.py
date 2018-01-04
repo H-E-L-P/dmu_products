@@ -51,28 +51,43 @@ for row in hermes_maps:
     image_hdu.header['EXTNAME'] = "IMAGE"
     image_hdu.header['BUNIT'] = "Jy / beam"
 
-    error_hdu = orig_hdu_list[2]
-    assert error_hdu.header['EXTNAME'] == "error"
-    error_hdu.header['EXTNAME'] = "ERROR"
-    error_hdu.header['BUNIT'] = "Jy / beam"
+    if filename == 'hers-helms-xmm_itermap_20160623_PSW.fits':
+        # FIXME The Herschel-Strip-82 SPIRE250 map is corrupted; we can only
+        # access the image data.
+        error_hdu = fits.ImageHDU()
+        error_hdu.header['EXTNAME'] = "ERROR"
+        error_hdu.header.add_comment("The error map is not available.")
+        exposure_hdu = fits.ImageHDU()
+        exposure_hdu.header['EXTNAME'] = "EXPOSURE"
+        exposure_hdu.header.add_comment("The exposure map is not available.")
+        mask_hdu = fits.ImageHDU()
+        mask_hdu.header['EXTNAME'] = "MASK"
+        mask_hdu.header.add_comment("The mask map is not available.")
 
-    exposure_hdu = orig_hdu_list[3]
-    assert exposure_hdu.header['EXTNAME'] == "exposure"
-    exposure_hdu.header['EXTNAME'] = "EXPOSURE"
-    exposure_hdu.header['BUNIT'] = "s"
-
-    mask_hdu = orig_hdu_list[4]
-    if "hers-helms-xmm" not in filename:
-        assert mask_hdu.header['EXTNAME'] == "flag"
     else:
-        assert mask_hdu.header['EXTNAME'] == "mask"
-        # The Herschel-Stripe-82 mask is 0 for bad and 1 for good while we use
-        # the reverse for HELP
-        good_mask = mask_hdu.data == 1
-        bad_mask = mask_hdu.data == 0
-        mask_hdu.data[good_mask] = 0
-        mask_hdu.data[bad_mask] = 1
-    mask_hdu.header['EXTNAME'] = "MASK"
+        error_hdu = orig_hdu_list[2]
+        assert error_hdu.header['EXTNAME'] == "error"
+        error_hdu.header['EXTNAME'] = "ERROR"
+        error_hdu.header['BUNIT'] = "Jy / beam"
+
+        exposure_hdu = orig_hdu_list[3]
+        assert exposure_hdu.header['EXTNAME'] == "exposure"
+        exposure_hdu.header['EXTNAME'] = "EXPOSURE"
+        exposure_hdu.header['BUNIT'] = "s"
+
+        mask_hdu = orig_hdu_list[4]
+        if "hers-helms-xmm" not in filename:
+            assert mask_hdu.header['EXTNAME'] == "flag"
+        else:
+            assert mask_hdu.header['EXTNAME'] == "mask"
+            # The Herschel-Stripe-82 mask is 0 for bad and 1 for good while we use
+            # the reverse for HELP
+            good_mask = mask_hdu.data == 1
+            bad_mask = mask_hdu.data == 0
+            mask_hdu.data[good_mask] = 0
+            mask_hdu.data[bad_mask] = 1
+        mask_hdu.header['EXTNAME'] = "MASK"
+
 
     nebfilt_map_name = filename.replace(".fits", "_nebfiltered.fits")
     nebfilt_map = fits.open(

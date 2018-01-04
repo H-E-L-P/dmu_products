@@ -20,6 +20,13 @@ HDU is empty.
     - 0: no mask (*i.e.* good data);
     - 1: regions with low depth relative to the rest of the map.
 
+### Fixme
+
+The `hers-helms-xmm_itermap_20160623_PSW.fits` is corrupted and we can only
+access the first HDU with the image map. I checked with Marco and the file is
+also corrupted on Caltech servers. Someone should recreate the maps with only
+the Herschel-Stripe-82 ObsIDs (i.e. without XMM-LSS, to get smaller files).
+
 ### Notes
 
 - Some original maps does not contain exposure information but coverage maps
