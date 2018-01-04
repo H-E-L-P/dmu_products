@@ -103,9 +103,9 @@ for row in hermes_maps:
         keyword = "OBSID" + str(idx).zfill(3)
         primary_hdu.header.append((keyword, obs_id))
 
-    if "hers-helms-xmm" not in filename:
-        primary_hdu.add_comment("These maps also contain some observations "
-                                "on the XMM-LSS field.")
+    if "hers-helms-xmm" in filename:
+        primary_hdu.header.add_comment(
+            "These maps also contain some observations on the XMM-LSS field.")
 
     hdu_list = fits.HDUList([primary_hdu, image_hdu, nebfilt_hdu, error_hdu,
                              exposure_hdu, mask_hdu])
