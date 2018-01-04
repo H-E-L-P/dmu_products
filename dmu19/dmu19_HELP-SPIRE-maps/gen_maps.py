@@ -62,7 +62,16 @@ for row in hermes_maps:
     exposure_hdu.header['BUNIT'] = "s"
 
     mask_hdu = orig_hdu_list[4]
-    assert mask_hdu.header['EXTNAME'] == "flag"
+    if "hers-helms-xmm" not in filename:
+        assert mask_hdu.header['EXTNAME'] == "flag"
+    else:
+        assert mask_hdu.header['EXTNAME'] == "mask"
+        # The Herschel-Stripe-82 mask is 0 for bad and 1 for good while we use
+        # the reverse for HELP
+        good_mask = mask_hdu.data == 1
+        bad_mask = mask_hdu.data == 0
+        mask_hdu.data[good_mask] = 0
+        mask_hdu.data[bad_mask] = 1
     mask_hdu.header['EXTNAME'] = "MASK"
 
     nebfilt_map_name = filename.replace(".fits", "_nebfiltered.fits")
