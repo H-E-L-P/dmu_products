@@ -76,12 +76,12 @@ for row in hermes_maps:
         exposure_hdu.header['BUNIT'] = "s"
 
         mask_hdu = orig_hdu_list[4]
-        if "hers-helms-xmm" not in filename:
+        if "hers-helms-xmm" not in filename and "SSDF" not in filename:
             assert mask_hdu.header['EXTNAME'] == "flag"
         else:
             assert mask_hdu.header['EXTNAME'] == "mask"
-            # The Herschel-Stripe-82 mask is 0 for bad and 1 for good while we use
-            # the reverse for HELP
+            # The Herschel-Stripe-82 and SSDF masks are 0 for bad and 1 for
+            # good while we use the reverse for HELP
             good_mask = mask_hdu.data == 1
             bad_mask = mask_hdu.data == 0
             mask_hdu.data[good_mask] = 0
