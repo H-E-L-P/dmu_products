@@ -317,9 +317,9 @@ hatlas_coverage_maps = {
     "HATLAS-NGP_500": "NGP-PLWmap-mosaic_MS-20131121-full_coverage.fits",
     "HATLAS-NGP_350": "NGP-PMWmap-mosaic_MS-20131121-full_coverage.fits",
     "HATLAS-NGP_250": "NGP-PSWmap-mosaic_MS-20131121-full_coverage.fits",
-    "HATLAS_SGP_500": "SGP-PLWmap-mosaic_MS-full_coverage.fits",
-    "HATLAS_SGP_350": "SGP-PMWmap-mosaic_MS-full_coverage.fits",
-    "HATLAS_SGP_250": "SGP-PSWmap-mosaic_MS-full_coverage.fits",
+    "HATLAS-SGP_500": "SGP-PLWmap-mosaic_MS-full_coverage.fits",
+    "HATLAS-SGP_350": "SGP-PMWmap-mosaic_MS-full_coverage.fits",
+    "HATLAS-SGP_250": "SGP-PSWmap-mosaic_MS-full_coverage.fits",
 }
 
 for field, band in product(hatlas_field_basenames, ["250", "350", "500"]):
