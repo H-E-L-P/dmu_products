@@ -1,0 +1,16 @@
+1 - SDSS DR14
+2 - DEEP3
+4 - 3DHST
+8 - Steidel et al. (2003)
+16 - Liu et al. (1999)
+32 - Team Keck Tresury Redshift - Wirth et al. (2004)
+64 - Reddy et al. (2006)
+128 - Cohen et al. (2000), and included references (see Table 1)
+256 - Chapman et al. (2004)
+512 - Chapman et al. (2005)
+1024 - Swinbank et al. (2004)
+2048 - Dawson et al. (2001)
+4096 - Pope et al. (2008)
+8192 - Barger et al. (2003) - sources 1, 3, 7, 12 and 14 (see their table 6)
+16384 - Vanden Berk et al. (2000)
+32768 - Cowie et al. (2004)

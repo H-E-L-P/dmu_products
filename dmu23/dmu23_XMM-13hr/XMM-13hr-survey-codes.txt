@@ -1,0 +1,4 @@
+1 - SDSS DR14
+2 - Page et al. (2006)
+4 - Jeltema et al. (2007)
+8 - MCXC catalogue, Piffaretti et al. (2011)

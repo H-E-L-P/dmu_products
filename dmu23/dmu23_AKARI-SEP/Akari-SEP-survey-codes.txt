@@ -1,0 +1,9 @@
+1 - Sedgwich et al. (2017) - via Vaccari catalogue
+2 - 6dF
+4 - 2MRS
+8 - IRASpscz
+16 - Chincarini et al. (1984)
+32 - Dressler et al. (1988)
+64 - Loveday et al. (1996)
+128 - Maza et al. (1995)
+256 - Tully et al. (2008)
