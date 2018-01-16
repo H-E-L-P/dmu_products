@@ -1,11 +1,13 @@
 Dark Energy Survey - Public Data Release 1 (DR1)
 ====================================================================================
 
-Downloaded from https://des.ncsa.illinois.edu/easyweb/db-access
+Downloaded from https://des.ncsa.illinois.edu/easyweb/db-access using SQL given below. HELP coverage then limited using filter_and_tag.sh.
 
 ## SQL QUERIES
 
-1. First test sql
+Job 1a49d93e-9aec-4706-a6c2-aa72182825b3 submitted
+
+1. SQL used to download raw unfiltered data on HELP coverage.
 
 ```sql
 -- Insert Query --
