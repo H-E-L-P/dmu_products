@@ -25,3 +25,11 @@ We also limited the catalogue to HELP coverage in
 
 Note that the tiles probably overlap and the catalogue will need to be cleaned
 for duplicates.
+
+The catalogues have been uploaded to CDS and can be downloaded here:
+
+ftp://cdsarc.u-strasbg.fr/pub/cats/J/MNRAS/456/1359
+
+and via
+
+http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=J/MNRAS/456/1359
