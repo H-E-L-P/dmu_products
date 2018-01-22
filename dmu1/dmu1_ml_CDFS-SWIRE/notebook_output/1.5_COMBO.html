@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,12 +11771,11 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="CDFS-SWIRE-master-catalogue">CDFS SWIRE master catalogue<a class="anchor-link" href="#CDFS-SWIRE-master-catalogue">&#182;</a></h1><h2 id="Preparation-of-COMBO-data">Preparation of COMBO data<a class="anchor-link" href="#Preparation-of-COMBO-data">&#182;</a></h2><p>Classifying Objects by Medium-Band Observations - a spectrophotometric 17-filter survey (COMBO-17). COMBO catalogue: the catalogue comes from <code>dmu0_COMBO-17</code>.</p>
+<h1 id="CDFS-SWIRE-master-catalogue">CDFS SWIRE master catalogue<a class="anchor-link" href="#CDFS-SWIRE-master-catalogue">&#194;&#182;</a></h1><h2 id="Preparation-of-COMBO-data">Preparation of COMBO data<a class="anchor-link" href="#Preparation-of-COMBO-data">&#194;&#182;</a></h2><p>Classifying Objects by Medium-Band Observations - a spectrophotometric 17-filter survey (COMBO-17). COMBO catalogue: the catalogue comes from <code>dmu0_COMBO-17</code>.</p>
 <p>In the catalogue, we keep:</p>
 <ul>
 <li>The identifier (it's unique in the catalogue);</li>
@@ -11809,7 +11806,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
@@ -11872,12 +11871,11 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#182;</a></h2>
+<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11972,7 +11970,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>WARNING: UnitsWarning: &#39;Mpc @H0=100&#39; did not parse as fits unit: Invalid character at col 4 [astropy.units.core]
@@ -12003,7 +12003,9 @@ WARNING: UnitsWarning: &#39;phot/m^2/s/nm&#39; did not parse as fits unit: At co
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[5]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12049,12 +12051,11 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Unit-conversion">Unit conversion<a class="anchor-link" href="#Unit-conversion">&#182;</a></h2><h3 id="Using-mid-wavelength">Using mid wavelength<a class="anchor-link" href="#Using-mid-wavelength">&#182;</a></h3><p>The flux is presented in $\textrm{photons} .\textrm{s}^{-1} .  \textrm{m}^{-2}  .\textrm{nm}^{-1}$. We wish to convert these to micro Jansky; $10^{-32} \textrm{ W} . \textrm{m}^{-2}  . \textrm{Hz}^{-1} $.</p>
+<h2 id="Unit-conversion">Unit conversion<a class="anchor-link" href="#Unit-conversion">&#194;&#182;</a></h2><h3 id="Using-mid-wavelength">Using mid wavelength<a class="anchor-link" href="#Using-mid-wavelength">&#194;&#182;</a></h3><p>The flux is presented in $\textrm{photons} .\textrm{s}^{-1} .  \textrm{m}^{-2}  .\textrm{nm}^{-1}$. We wish to convert these to micro Jansky; $10^{-32} \textrm{ W} . \textrm{m}^{-2}  . \textrm{Hz}^{-1} $.</p>
 <p>To convert $\textrm{photons} . \textrm{s}^{-1} $ to $\textrm{W}$ we must multiply by the average photon energy $h c / \lambda$. We presume that the COMBO mid point wavelength was used.</p>
 <p>To convert $\textrm{nm}^{-1}$ to $\textrm{Hz}^{-1}$ we must differenciate:</p>
 <p>$c = \nu \lambda $</p>
@@ -12093,7 +12094,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>flux_lambda: 0.0064185 1 / (m2 nm s)
@@ -12107,12 +12110,11 @@ flux_nu in Jy: 1.7862359564718896e-07 Jy
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Using-Vega-flux">Using Vega flux<a class="anchor-link" href="#Using-Vega-flux">&#182;</a></h3><p>The paper provides fluxes of Vega in each band allowing conversion to Vega mag. It then provides the difference between Vega mag and AB mag per band to convert to AB. We can therefore calculate the AB magnitude and convert that back to flux to get the flux in Jy.</p>
+<h3 id="Using-Vega-flux">Using Vega flux<a class="anchor-link" href="#Using-Vega-flux">&#194;&#182;</a></h3><p>The paper provides fluxes of Vega in each band allowing conversion to Vega mag. It then provides the difference between Vega mag and AB mag per band to convert to AB. We can therefore calculate the AB magnitude and convert that back to flux to get the flux in Jy.</p>
 
 </div>
 </div>
@@ -12196,7 +12198,9 @@ flux_nu in Jy: 1.7862359564718896e-07 Jy
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>25.9718565988
@@ -12281,7 +12285,9 @@ flux_nu in Jy: 1.7862359564718896e-07 Jy
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12313,7 +12319,9 @@ Check the NumPy 1.11 release notes for more information.
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[10]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12358,17 +12366,15 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="II---Removal-of-duplicated-sources">II - Removal of duplicated sources<a class="anchor-link" href="#II---Removal-of-duplicated-sources">&#182;</a></h2>
+<h2 id="II---Removal-of-duplicated-sources">II - Removal of duplicated sources<a class="anchor-link" href="#II---Removal-of-duplicated-sources">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12409,7 +12415,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12420,7 +12428,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 63501 sources.
@@ -12434,12 +12444,11 @@ The cleaned catalogue has 0 sources flagged as having been cleaned
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="III---Astrometry-correction">III - Astrometry correction<a class="anchor-link" href="#III---Astrometry-correction">&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
+<h2 id="III---Astrometry-correction">III - Astrometry correction<a class="anchor-link" href="#III---Astrometry-correction">&#194;&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
 
 </div>
 </div>
@@ -12476,7 +12485,9 @@ The cleaned catalogue has 0 sources flagged as having been cleaned
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13216,7 +13227,9 @@ CYIgCG2eKGaCIAhCm/c/9IAKoQBiQpAAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14142,7 +14155,9 @@ FApFQlTAoFAoFAqFIiEqYFAoFAqFQpEQFTAoFAqFQqFIyP8HXMKlZopcD4UAAAAASUVORK5CYII=
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: 0.18399366377366277 arcsec
@@ -14187,7 +14202,9 @@ Dec correction: -0.283546868710971 arcsec
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14968,7 +14985,9 @@ QmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15868,12 +15887,11 @@ ociKMhgUCoVCoVBk5f8DbXNphbh+RI4AAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IV---Flagging-Gaia-objects">IV - Flagging Gaia objects<a class="anchor-link" href="#IV---Flagging-Gaia-objects">&#182;</a></h2>
+<h2 id="IV---Flagging-Gaia-objects">IV - Flagging Gaia objects<a class="anchor-link" href="#IV---Flagging-Gaia-objects">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15912,7 +15930,9 @@ ociKMhgUCoVCoVBk5f8DbXNphbh+RI4AAAAASUVORK5CYII=
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>667 sources flagged.
@@ -15924,21 +15944,19 @@ ociKMhgUCoVCoVBk5f8DbXNphbh+RI4AAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="V---Flagging-objects-near-bright-stars">V - Flagging objects near bright stars<a class="anchor-link" href="#V---Flagging-objects-near-bright-stars">&#182;</a></h2>
+<h2 id="V---Flagging-objects-near-bright-stars">V - Flagging objects near bright stars<a class="anchor-link" href="#V---Flagging-objects-near-bright-stars">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#182;</a></h1>
+<h1 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#194;&#182;</a></h1>
 </div>
 </div>
 </div>

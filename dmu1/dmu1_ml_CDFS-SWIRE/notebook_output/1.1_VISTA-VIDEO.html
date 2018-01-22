@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,12 +11771,11 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="CDFS-SWIRE-Master-List-Creation">CDFS-SWIRE Master List Creation<a class="anchor-link" href="#CDFS-SWIRE-Master-List-Creation">&#182;</a></h1><h2 id="Preparation-of-VIDEO/VISTA/VIRCAM-data">Preparation of VIDEO/VISTA/VIRCAM data<a class="anchor-link" href="#Preparation-of-VIDEO/VISTA/VIRCAM-data">&#182;</a></h2><p>The catalogue comes from <code>dmu0_VISTA_VIDEO-private</code>.</p>
+<h1 id="CDFS-SWIRE-Master-List-Creation">CDFS-SWIRE Master List Creation<a class="anchor-link" href="#CDFS-SWIRE-Master-List-Creation">&#194;&#182;</a></h1><h2 id="Preparation-of-VIDEO/VISTA/VIRCAM-data">Preparation of VIDEO/VISTA/VIRCAM data<a class="anchor-link" href="#Preparation-of-VIDEO/VISTA/VIRCAM-data">&#194;&#182;</a></h2><p>The catalogue comes from <code>dmu0_VISTA_VIDEO-private</code>.</p>
 <p>There is an old public version of the catalogue but we are using the newer private version in the hope that it will be public by the time we publish the masterlist.</p>
 <p>Filters: Z, Y, J, H, Ks</p>
 <p>In the catalogue, we keep:</p>
@@ -11812,7 +11809,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
@@ -11872,7 +11871,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[3]:</div>
+
 
 
 
@@ -11921,12 +11922,11 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#182;</a></h2>
+<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12062,7 +12062,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[8]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12107,12 +12109,11 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="II---Correct-z-band-fluxes-and-magnitudes">II - Correct z band fluxes and magnitudes<a class="anchor-link" href="#II---Correct-z-band-fluxes-and-magnitudes">&#182;</a></h2><p>We discovered that the catalogue contains some wrong z magnitudes in the CDFS-SWIRE field. Strangely, Sextractor affected some magnitudes to sources which are not on the z image. Boris found a way to get rid of these magnitudes: all the wrong sources have a Z_MAGERR_AUTO to 0.</p>
+<h2 id="II---Correct-z-band-fluxes-and-magnitudes">II - Correct z band fluxes and magnitudes<a class="anchor-link" href="#II---Correct-z-band-fluxes-and-magnitudes">&#194;&#182;</a></h2><p>We discovered that the catalogue contains some wrong z magnitudes in the CDFS-SWIRE field. Strangely, Sextractor affected some magnitudes to sources which are not on the z image. Boris found a way to get rid of these magnitudes: all the wrong sources have a Z_MAGERR_AUTO to 0.</p>
 <p>But we have to look at these sources in another catalogue because the VIDEO catalogue we use has been processed to correct for wrong error. We use the <code>video_id</code> column (which is unique within a field) to find the sources identified in the other catalogue and set their flux, magnitudes, and associated errors to NaN.</p>
 
 </div>
@@ -12185,17 +12186,15 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="III---Removal-of-duplicated-sources">III - Removal of duplicated sources<a class="anchor-link" href="#III---Removal-of-duplicated-sources">&#182;</a></h2>
+<h2 id="III---Removal-of-duplicated-sources">III - Removal of duplicated sources<a class="anchor-link" href="#III---Removal-of-duplicated-sources">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12232,7 +12231,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 1073655 sources.
@@ -12246,12 +12247,11 @@ The cleaned catalogue has 2319 sources flagged as having been cleaned
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IV---Astrometry-correction">IV - Astrometry correction<a class="anchor-link" href="#IV---Astrometry-correction">&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
+<h2 id="IV---Astrometry-correction">IV - Astrometry correction<a class="anchor-link" href="#IV---Astrometry-correction">&#194;&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
 
 </div>
 </div>
@@ -12288,7 +12288,9 @@ The cleaned catalogue has 2319 sources flagged as having been cleaned
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13249,7 +13251,9 @@ RK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -16827,7 +16831,9 @@ AABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: 0.13464397878237833 arcsec
@@ -16872,7 +16878,9 @@ Dec correction: -0.05622936663485234 arcsec
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -17893,7 +17901,9 @@ m4bXXnut0qIUDaHLunXrKi2KhEQS5DKjhISEhETVQ87MJCQkJCSqHrIzk5CQkJCoesjOTEJCQkKi
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -21487,12 +21497,11 @@ IHBB/n/r3cOo5UNz0QAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="V---Flagging-Gaia-objects">V - Flagging Gaia objects<a class="anchor-link" href="#V---Flagging-Gaia-objects">&#182;</a></h2>
+<h2 id="V---Flagging-Gaia-objects">V - Flagging Gaia objects<a class="anchor-link" href="#V---Flagging-Gaia-objects">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -21531,7 +21540,9 @@ IHBB/n/r3cOo5UNz0QAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>13687 sources flagged.
@@ -21543,12 +21554,11 @@ IHBB/n/r3cOo5UNz0QAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#182;</a></h2>
+<h2 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>

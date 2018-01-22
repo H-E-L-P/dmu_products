@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,12 +11771,11 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="AKARI-SEP-master-catalogue">AKARI-SEP master catalogue<a class="anchor-link" href="#AKARI-SEP-master-catalogue">&#182;</a></h1><p>This notebook presents the merge of the various pristine catalogues to produce HELP mater catalogue on AKARI-SEP.</p>
+<h1 id="AKARI-SEP-master-catalogue">AKARI-SEP master catalogue<a class="anchor-link" href="#AKARI-SEP-master-catalogue">&#194;&#182;</a></h1><p>This notebook presents the merge of the various pristine catalogues to produce HELP mater catalogue on AKARI-SEP.</p>
 
 </div>
 </div>
@@ -11801,11 +11798,13 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
-44f1ae0 (Thu Nov 30 18:27:54 2017 +0000)
+33f5ec7 (Wed Dec 6 16:56:17 2017 +0000)
 </pre>
 </div>
 </div>
@@ -11863,12 +11862,11 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Reading-the-prepared-pristine-catalogues">I - Reading the prepared pristine catalogues<a class="anchor-link" href="#I---Reading-the-prepared-pristine-catalogues">&#182;</a></h2>
+<h2 id="I---Reading-the-prepared-pristine-catalogues">I - Reading the prepared pristine catalogues<a class="anchor-link" href="#I---Reading-the-prepared-pristine-catalogues">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11879,6 +11877,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vhs</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/VISTA-VHS.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
 <span class="n">simes</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/SIMES.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
+<span class="n">des</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/DES.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TMP_DIR</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -11886,23 +11885,21 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="II---Merging-tables">II - Merging tables<a class="anchor-link" href="#II---Merging-tables">&#182;</a></h2><p>We first merge the optical catalogues and then add the infrared ones: WFC, DXS, SpARCS, HSC, PS1, SERVS, SWIRE.</p>
+<h2 id="II---Merging-tables">II - Merging tables<a class="anchor-link" href="#II---Merging-tables">&#194;&#182;</a></h2><p>We first merge the optical catalogues and then add the infrared ones: WFC, DXS, SpARCS, HSC, PS1, SERVS, SWIRE.</p>
 <p>At every step, we look at the distribution of the distances to the nearest source in the merged catalogue to determine the best crossmatching radius.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="WFC">WFC<a class="anchor-link" href="#WFC">&#182;</a></h3>
+<h3 id="WFC">WFC<a class="anchor-link" href="#WFC">&#194;&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11921,12 +11918,11 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Add-SIMES">Add SIMES<a class="anchor-link" href="#Add-SIMES">&#182;</a></h3>
+<h3 id="Add-SIMES">Add SIMES<a class="anchor-link" href="#Add-SIMES">&#194;&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11950,7 +11946,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -12194,19 +12192,322 @@ Wo6cagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Cleaning">Cleaning<a class="anchor-link" href="#Cleaning">&#182;</a></h3><p>When we merge the catalogues, astropy masks the non-existent values (e.g. when a row comes only from a catalogue and has no counterparts in the other, the columns from the latest are masked for that row). We indicate to use NaN for masked values for floats columns, False for flag columns and -1 for ID columns.</p>
-
+<h3 id="Add-DES">Add DES<a class="anchor-link" href="#Add-DES">&#194;&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_merge_dist_plot</span><span class="p">(</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
+    <span class="n">SkyCoord</span><span class="p">(</span><span class="n">des</span><span class="p">[</span><span class="s1">&#39;des_ra&#39;</span><span class="p">],</span> <span class="n">des</span><span class="p">[</span><span class="s1">&#39;des_dec&#39;</span><span class="p">])</span>
+<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Given the graph above, we use 0.8 arc-second radius</span>
+<span class="n">master_catalogue</span> <span class="o">=</span> <span class="n">merge_catalogues</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">,</span> <span class="n">des</span><span class="p">,</span> <span class="s2">&quot;des_ra&quot;</span><span class="p">,</span> <span class="s2">&quot;des_dec&quot;</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">0.8</span><span class="o">*</span><span class="n">u</span><span class="o">.</span><span class="n">arcsec</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Cleaning">Cleaning<a class="anchor-link" href="#Cleaning">&#194;&#182;</a></h3><p>When we merge the catalogues, astropy masks the non-existent values (e.g. when a row comes only from a catalogue and has no counterparts in the other, the columns from the latest are masked for that row). We indicate to use NaN for masked values for floats columns, False for flag columns and -1 for ID columns.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span><span class="p">:</span>
@@ -12227,7 +12528,7 @@ Wo6cagAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
@@ -12242,24 +12543,26 @@ Wo6cagAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[9]:</div>
+
+<div class="prompt output_prompt">Out[11]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 &lt;Table length=10&gt;
-<table id="table140593379056552-344142" class="table-striped table-bordered table-condensed">
-<thead><tr><th>idx</th><th>vhs_id</th><th>ra</th><th>dec</th><th>vhs_stellarity</th><th>m_vista_j</th><th>merr_vista_j</th><th>m_ap_vista_j</th><th>merr_ap_vista_j</th><th>m_vista_h</th><th>merr_vista_h</th><th>m_ap_vista_h</th><th>merr_ap_vista_h</th><th>m_vista_k</th><th>merr_vista_k</th><th>m_ap_vista_k</th><th>merr_ap_vista_k</th><th>f_vista_j</th><th>ferr_vista_j</th><th>flag_vista_j</th><th>f_ap_vista_j</th><th>ferr_ap_vista_j</th><th>f_vista_h</th><th>ferr_vista_h</th><th>flag_vista_h</th><th>f_ap_vista_h</th><th>ferr_ap_vista_h</th><th>f_vista_k</th><th>ferr_vista_k</th><th>flag_vista_k</th><th>f_ap_vista_k</th><th>ferr_ap_vista_k</th><th>vhs_flag_cleaned</th><th>vhs_flag_gaia</th><th>flag_merged</th><th>simes_id</th><th>f_irac_i1</th><th>ferr_irac_i1</th><th>f_ap_irac_i1</th><th>ferr_ap_irac_i1</th><th>simes_stellarity</th><th>f_irac_i2</th><th>ferr_irac_i2</th><th>f_ap_irac_i2</th><th>ferr_ap_irac_i2</th><th>m_irac_i1</th><th>merr_irac_i1</th><th>flag_irac_i1</th><th>m_ap_irac_i1</th><th>merr_ap_irac_i1</th><th>m_irac_i2</th><th>merr_irac_i2</th><th>flag_irac_i2</th><th>m_ap_irac_i2</th><th>merr_ap_irac_i2</th><th>servs_flag_cleaned</th><th>servs_flag_gaia</th></tr></thead>
-<thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
-<tr><td>0</td><td>473261599295</td><td>70.0662858102</td><td>-55.0800249925</td><td>0.999657</td><td>10.657</td><td>0.000251238</td><td>11.3333</td><td>0.000394861</td><td>11.1073</td><td>0.000413448</td><td>11.829</td><td>0.000494089</td><td>11.2748</td><td>0.000460911</td><td>11.5659</td><td>0.000488391</td><td>198243.0</td><td>45.8733</td><td>False</td><td>106338.0</td><td>38.673</td><td>130943.0</td><td>49.8631</td><td>False</td><td>67362.6</td><td>30.6549</td><td>112221.0</td><td>47.6395</td><td>False</td><td>85831.2</td><td>38.609</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>1</td><td>473240268068</td><td>74.0205586698</td><td>-52.5468267737</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>10.5228</td><td>0.000334772</td><td>12.0846</td><td>0.000542435</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>224332.0</td><td>69.1696</td><td>False</td><td>53230.4</td><td>26.594</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>2</td><td>473253400939</td><td>68.3641045144</td><td>-55.1677704037</td><td>0.999657</td><td>11.9303</td><td>0.000495456</td><td>12.0499</td><td>0.000496829</td><td>11.7972</td><td>0.000562197</td><td>11.9672</td><td>0.000544386</td><td>12.0511</td><td>0.000708134</td><td>12.1461</td><td>0.000631379</td><td>61359.8</td><td>28.0004</td><td>False</td><td>54959.8</td><td>25.1494</td><td>69361.0</td><td>35.9153</td><td>False</td><td>59308.3</td><td>29.7371</td><td>54897.9</td><td>35.8053</td><td>False</td><td>50298.6</td><td>29.2497</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>3</td><td>473241073155</td><td>72.5319041476</td><td>-54.1991924401</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>12.4234</td><td>0.000781284</td><td>12.2797</td><td>0.000546547</td><td>10.7157</td><td>0.000283474</td><td>12.1113</td><td>0.000581437</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>38960.2</td><td>28.0353</td><td>False</td><td>44477.0</td><td>22.3892</td><td>187819.0</td><td>49.0375</td><td>False</td><td>51937.1</td><td>27.8135</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>4</td><td>473261599240</td><td>69.9190202455</td><td>-55.0806405496</td><td>0.999657</td><td>11.4874</td><td>0.000393718</td><td>11.7392</td><td>0.000464437</td><td>11.5024</td><td>0.000504695</td><td>11.9818</td><td>0.000547107</td><td>11.6796</td><td>0.000578466</td><td>11.9017</td><td>0.00057286</td><td>92263.7</td><td>33.4574</td><td>False</td><td>73165.4</td><td>31.2974</td><td>90995.7</td><td>42.2986</td><td>False</td><td>58516.3</td><td>29.4866</td><td>77296.8</td><td>41.1827</td><td>False</td><td>62999.9</td><td>33.2402</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>5</td><td>473217594908</td><td>72.0984017991</td><td>-52.8002588788</td><td>0.993865</td><td>11.8091</td><td>0.000490375</td><td>12.205</td><td>0.000507264</td><td>11.2926</td><td>0.000430158</td><td>12.0033</td><td>0.000548339</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>68607.6</td><td>30.9868</td><td>False</td><td>47645.2</td><td>22.2602</td><td>110398.0</td><td>43.7385</td><td>False</td><td>57368.3</td><td>28.9732</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>6</td><td>473217594108</td><td>72.0680038123</td><td>-52.765420957</td><td>0.993865</td><td>12.0926</td><td>0.00052578</td><td>12.247</td><td>0.000517318</td><td>11.3748</td><td>0.000445297</td><td>12.0235</td><td>0.000555183</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>52838.4</td><td>25.5876</td><td>False</td><td>45836.5</td><td>21.8396</td><td>102348.0</td><td>41.9765</td><td>False</td><td>56310.4</td><td>28.7939</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>7</td><td>473240268075</td><td>74.0224515147</td><td>-52.5476032209</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.2501</td><td>0.000452232</td><td>12.1402</td><td>0.000557317</td><td>12.0647</td><td>0.000694496</td><td>11.9762</td><td>0.00057904</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>114801.0</td><td>47.8169</td><td>False</td><td>50571.6</td><td>25.9588</td><td>54215.6</td><td>34.6793</td><td>False</td><td>58817.6</td><td>31.3684</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>8</td><td>473187627082</td><td>72.3544906596</td><td>-52.3696412826</td><td>0.999657</td><td>11.0974</td><td>0.000278077</td><td>11.6854</td><td>0.000444584</td><td>11.7597</td><td>0.000463727</td><td>12.1585</td><td>0.000557352</td><td>12.0751</td><td>0.000737383</td><td>11.9134</td><td>0.000559303</td><td>132143.0</td><td>33.8441</td><td>False</td><td>76881.3</td><td>31.4811</td><td>71797.7</td><td>30.6654</td><td>False</td><td>49729.7</td><td>25.5282</td><td>53700.1</td><td>36.4706</td><td>False</td><td>62323.1</td><td>32.105</td><td>False</td><td>3</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
-<tr><td>9</td><td>473240268074</td><td>74.0222147308</td><td>-52.5467514449</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>10.6836</td><td>0.000310992</td><td>12.1597</td><td>0.00056267</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>193452.0</td><td>55.4113</td><td>False</td><td>49671.1</td><td>25.7414</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<table id="table140607835825320-599026" class="table-striped table-bordered table-condensed">
+<thead><tr><th>idx</th><th>vhs_id</th><th>ra</th><th>dec</th><th>vhs_stellarity</th><th>m_vista_j</th><th>merr_vista_j</th><th>m_ap_vista_j</th><th>merr_ap_vista_j</th><th>m_vista_h</th><th>merr_vista_h</th><th>m_ap_vista_h</th><th>merr_ap_vista_h</th><th>m_vista_k</th><th>merr_vista_k</th><th>m_ap_vista_k</th><th>merr_ap_vista_k</th><th>f_vista_j</th><th>ferr_vista_j</th><th>flag_vista_j</th><th>f_ap_vista_j</th><th>ferr_ap_vista_j</th><th>f_vista_h</th><th>ferr_vista_h</th><th>flag_vista_h</th><th>f_ap_vista_h</th><th>ferr_ap_vista_h</th><th>f_vista_k</th><th>ferr_vista_k</th><th>flag_vista_k</th><th>f_ap_vista_k</th><th>ferr_ap_vista_k</th><th>vhs_flag_cleaned</th><th>vhs_flag_gaia</th><th>flag_merged</th><th>simes_id</th><th>f_irac_i1</th><th>ferr_irac_i1</th><th>f_ap_irac_i1</th><th>ferr_ap_irac_i1</th><th>simes_stellarity</th><th>f_irac_i2</th><th>ferr_irac_i2</th><th>f_ap_irac_i2</th><th>ferr_ap_irac_i2</th><th>m_irac_i1</th><th>merr_irac_i1</th><th>flag_irac_i1</th><th>m_ap_irac_i1</th><th>merr_ap_irac_i1</th><th>m_irac_i2</th><th>merr_irac_i2</th><th>flag_irac_i2</th><th>m_ap_irac_i2</th><th>merr_ap_irac_i2</th><th>servs_flag_cleaned</th><th>servs_flag_gaia</th><th>des_id</th><th>des_stellarity</th><th>m_decam_g</th><th>merr_decam_g</th><th>m_ap_decam_g</th><th>merr_ap_decam_g</th><th>m_decam_r</th><th>merr_decam_r</th><th>m_ap_decam_r</th><th>merr_ap_decam_r</th><th>m_decam_i</th><th>merr_decam_i</th><th>m_ap_decam_i</th><th>merr_ap_decam_i</th><th>m_decam_z</th><th>merr_decam_z</th><th>m_ap_decam_z</th><th>merr_ap_decam_z</th><th>m_decam_y</th><th>merr_decam_y</th><th>m_ap_decam_y</th><th>merr_ap_decam_y</th><th>f_decam_g</th><th>ferr_decam_g</th><th>flag_decam_g</th><th>f_ap_decam_g</th><th>ferr_ap_decam_g</th><th>f_decam_r</th><th>ferr_decam_r</th><th>flag_decam_r</th><th>f_ap_decam_r</th><th>ferr_ap_decam_r</th><th>f_decam_i</th><th>ferr_decam_i</th><th>flag_decam_i</th><th>f_ap_decam_i</th><th>ferr_ap_decam_i</th><th>f_decam_z</th><th>ferr_decam_z</th><th>flag_decam_z</th><th>f_ap_decam_z</th><th>ferr_ap_decam_z</th><th>f_decam_y</th><th>ferr_decam_y</th><th>flag_decam_y</th><th>f_ap_decam_y</th><th>ferr_ap_decam_y</th><th>des_flag_cleaned</th><th>des_flag_gaia</th></tr></thead>
+<thead><tr><th></th><th></th><th>deg</th><th>deg</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
+<tr><td>0</td><td>473240268068</td><td>74.0205586698</td><td>-52.5468267737</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>10.5228</td><td>0.000334772</td><td>12.0846</td><td>0.000542435</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>224332.0</td><td>69.1696</td><td>False</td><td>53230.4</td><td>26.594</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>1</td><td>473241073155</td><td>72.5319041476</td><td>-54.1991924401</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>12.4234</td><td>0.000781284</td><td>12.2797</td><td>0.000546547</td><td>10.7157</td><td>0.000283474</td><td>12.1113</td><td>0.000581437</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>38960.2</td><td>28.0353</td><td>False</td><td>44477.0</td><td>22.3892</td><td>187819.0</td><td>49.0375</td><td>False</td><td>51937.1</td><td>27.8135</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>2</td><td>473240268075</td><td>74.0224515147</td><td>-52.5476032209</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.2501</td><td>0.000452232</td><td>12.1402</td><td>0.000557317</td><td>12.0647</td><td>0.000694496</td><td>11.9762</td><td>0.00057904</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>114801.0</td><td>47.8169</td><td>False</td><td>50571.6</td><td>25.9588</td><td>54215.6</td><td>34.6793</td><td>False</td><td>58817.6</td><td>31.3684</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>3</td><td>473240268074</td><td>74.0222147308</td><td>-52.5467514449</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>10.6836</td><td>0.000310992</td><td>12.1597</td><td>0.00056267</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>193452.0</td><td>55.4113</td><td>False</td><td>49671.1</td><td>25.7414</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>4</td><td>473241073156</td><td>72.5325882644</td><td>-54.1996653806</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>14.3291</td><td>0.00324278</td><td>12.3684</td><td>0.00057022</td><td>11.5011</td><td>0.000421049</td><td>12.2385</td><td>0.000617738</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>6735.19</td><td>20.1161</td><td>False</td><td>40986.8</td><td>21.5259</td><td>91112.0</td><td>35.3332</td><td>False</td><td>46193.9</td><td>26.2824</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>5</td><td>473261606593</td><td>69.8075179383</td><td>-54.1758906408</td><td>0.993865</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>12.5002</td><td>0.00130824</td><td>12.0244</td><td>0.000574719</td><td>12.0012</td><td>0.00058516</td><td>11.9361</td><td>0.000579327</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>36300.2</td><td>43.7394</td><td>False</td><td>56263.8</td><td>29.7824</td><td>57480.4</td><td>30.9792</td><td>False</td><td>61033.9</td><td>32.5665</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>6</td><td>473193631103</td><td>74.0790931604</td><td>-52.3797058828</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.9629</td><td>0.00055748</td><td>12.18</td><td>0.000584537</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>59542.1</td><td>30.5724</td><td>False</td><td>48753.4</td><td>26.2478</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>2</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>7</td><td>473193626813</td><td>72.5373778649</td><td>-52.413495839</td><td>0.993865</td><td>11.2308</td><td>0.000317518</td><td>11.93</td><td>0.000526698</td><td>10.6199</td><td>0.000265465</td><td>12.1789</td><td>0.000585264</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>116862.0</td><td>34.1757</td><td>False</td><td>61376.4</td><td>29.7741</td><td>205136.0</td><td>50.1564</td><td>False</td><td>48802.4</td><td>26.3069</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>8</td><td>473261606601</td><td>69.8080872881</td><td>-54.1764864978</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.0584</td><td>0.000318878</td><td>12.067</td><td>0.00058775</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>136980.0</td><td>40.2308</td><td>False</td><td>54098.1</td><td>29.2853</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
+<tr><td>9</td><td>473261606598</td><td>69.8096965887</td><td>-54.1759148497</td><td>0.9</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>11.5238</td><td>0.000639829</td><td>12.0972</td><td>0.000596377</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>89221.3</td><td>52.5785</td><td>False</td><td>52616.2</td><td>28.9012</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>False</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td><td>-1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td><td>False</td><td>nan</td><td>nan</td><td>False</td><td>0</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -12270,8 +12573,8 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140593379056552-344142').dataTable()");
-    $('#table140593379056552-344142').dataTable({
+    console.log("$('#table140607835825320-599026').dataTable()");
+    $('#table140607835825320-599026').dataTable({
         "order": [],
         "iDisplayLength": 50,
         "aLengthMenu": [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -12288,19 +12591,18 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="III---Merging-flags-and-stellarity">III - Merging flags and stellarity<a class="anchor-link" href="#III---Merging-flags-and-stellarity">&#182;</a></h2><p>Each pristine catalogue contains a flag indicating if the source was associated to a another nearby source that was removed during the cleaning process.  We merge these flags in a single one.</p>
+<h2 id="III---Merging-flags-and-stellarity">III - Merging flags and stellarity<a class="anchor-link" href="#III---Merging-flags-and-stellarity">&#194;&#182;</a></h2><p>Each pristine catalogue contains a flag indicating if the source was associated to a another nearby source that was removed during the cleaning process.  We merge these flags in a single one.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_cleaned_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12319,8 +12621,7 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12331,7 +12632,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flag_gaia_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12349,8 +12650,7 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12361,7 +12661,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stellarity_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">master_catalogue</span><span class="o">.</span><span class="n">colnames</span>
@@ -12379,10 +12679,12 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>vhs_stellarity, simes_stellarity
+<pre>vhs_stellarity, simes_stellarity, des_stellarity
 </pre>
 </div>
 </div>
@@ -12393,7 +12695,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We create an masked array with all the stellarities and get the maximum value, as well as its</span>
@@ -12421,18 +12723,17 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IV---Adding-E(B-V)-column">IV - Adding E(B-V) column<a class="anchor-link" href="#IV---Adding-E(B-V)-column">&#182;</a></h2>
+<h2 id="IV---Adding-E(B-V)-column">IV - Adding E(B-V) column<a class="anchor-link" href="#IV---Adding-E(B-V)-column">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -12445,23 +12746,22 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="V---Adding-HELP-unique-identifiers-and-field-columns">V - Adding HELP unique identifiers and field columns<a class="anchor-link" href="#V---Adding-HELP-unique-identifiers-and-field-columns">&#182;</a></h2>
+<h2 id="V---Adding-HELP-unique-identifiers-and-field-columns">V - Adding HELP unique identifiers and field columns<a class="anchor-link" href="#V---Adding-HELP-unique-identifiers-and-field-columns">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">gen_help_id</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">]),</span>
                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;help_id&quot;</span><span class="p">))</span>
-<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="s2">&quot;ELAIS-N1&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U18&#39;</span><span class="p">),</span>
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="s2">&quot;AKARI-SEP&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U18&#39;</span><span class="p">),</span>
                                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;field&quot;</span><span class="p">))</span>
 </pre></div>
 
@@ -12472,7 +12772,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check that the HELP Ids are unique</span>
@@ -12491,7 +12791,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>OK!
@@ -12503,12 +12805,11 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VI.a-Wavelength-domain-coverage">VI.a Wavelength domain coverage<a class="anchor-link" href="#VI.a-Wavelength-domain-coverage">&#182;</a></h2><p>We add a binary <code>flag_optnir_obs</code> indicating that a source was observed in a given wavelength domain:</p>
+<h2 id="VI.a-Wavelength-domain-coverage">VI.a Wavelength domain coverage<a class="anchor-link" href="#VI.a-Wavelength-domain-coverage">&#194;&#182;</a></h2><p>We add a binary <code>flag_optnir_obs</code> indicating that a source was observed in a given wavelength domain:</p>
 <ul>
 <li>1 for observation in optical;</li>
 <li>2 for observation in near-infrared;</li>
@@ -12523,11 +12824,12 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">simes_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_SIMES/data/SEP_catalog7.2_mJy_HELP-coverage_MOC.fits&quot;</span><span class="p">)</span>
 <span class="n">vhs_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_VISTA-VHS/data/VHS_AKARI-SEP_MOC.fits&quot;</span><span class="p">)</span>
+<span class="n">des_moc</span> <span class="o">=</span> <span class="n">MOC</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;../../dmu0/dmu0_DES/data/DES-DR1_AKARI-SEP.fits&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12537,10 +12839,13 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">was_observed_optical</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">was_observed_optical</span> <span class="o">=</span><span class="n">inMoc</span><span class="p">(</span>
+    <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">],</span>
+    <span class="n">des_moc</span>
+<span class="p">)</span>
 
 <span class="n">was_observed_nir</span> <span class="o">=</span> <span class="n">inMoc</span><span class="p">(</span>
     <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;ra&#39;</span><span class="p">],</span> <span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;dec&#39;</span><span class="p">],</span>
@@ -12560,7 +12865,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span>
@@ -12575,12 +12880,11 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VIII.b-Wavelength-domain-detection">VIII.b Wavelength domain detection<a class="anchor-link" href="#VIII.b-Wavelength-domain-detection">&#182;</a></h2><p>We add a binary <code>flag_optnir_det</code> indicating that a source was detected in a given wavelength domain:</p>
+<h2 id="VIII.b-Wavelength-domain-detection">VIII.b Wavelength domain detection<a class="anchor-link" href="#VIII.b-Wavelength-domain-detection">&#194;&#182;</a></h2><p>We add a binary <code>flag_optnir_det</code> indicating that a source was detected in a given wavelength domain:</p>
 <ul>
 <li>1 for detection in optical;</li>
 <li>2 for detection in near-infrared;</li>
@@ -12595,14 +12899,20 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SpARCS is a catalogue of sources detected in r (with fluxes measured at </span>
 <span class="c1"># this prior position in the other bands).  Thus, we are only using the r</span>
 <span class="c1"># CFHT band.</span>
 <span class="c1"># Check to use catalogue flags from HSC and PanSTARRS.</span>
-<span class="n">nb_optical_flux</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+<span class="n">nb_optical_flux</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_decam_g&#39;</span><span class="p">])</span> <span class="o">+</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_decam_r&#39;</span><span class="p">])</span> <span class="o">+</span>    
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_decam_i&#39;</span><span class="p">])</span> <span class="o">+</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_decam_z&#39;</span><span class="p">])</span> <span class="o">+</span>
+    <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_decam_y&#39;</span><span class="p">])</span> 
+<span class="p">)</span>
 
 <span class="n">nb_nir_flux</span> <span class="o">=</span> <span class="p">(</span>
     <span class="mi">1</span> <span class="o">*</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;f_vista_j&#39;</span><span class="p">])</span> <span class="o">+</span>
@@ -12623,7 +12933,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">has_optical_flux</span> <span class="o">=</span> <span class="n">nb_optical_flux</span> <span class="o">&gt;=</span> <span class="mi">2</span>
@@ -12642,24 +12952,23 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IX---Cross-identification-table">IX - Cross-identification table<a class="anchor-link" href="#IX---Cross-identification-table">&#182;</a></h2><p>We are producing a table associating to each HELP identifier, the identifiers of the sources in the pristine catalogues. This can be used to easily get additional information from them.</p>
+<h2 id="IX---Cross-identification-table">IX - Cross-identification table<a class="anchor-link" href="#IX---Cross-identification-table">&#194;&#182;</a></h2><p>We are producing a table associating to each HELP identifier, the identifiers of the sources in the pristine catalogues. This can be used to easily get additional information from them.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;vhs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;simes_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
-    <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_list_cross_ident_elais-n1</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
-<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">([</span><span class="s1">&#39;vhs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;simes_id&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="s1">&#39;help_id&#39;</span><span class="p">,</span> <span class="s1">&#39;vhs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;simes_id&#39;</span><span class="p">,</span> <span class="s1">&#39;des_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+    <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_list_cross_ident_akari-sep</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
+<span class="n">master_catalogue</span><span class="o">.</span><span class="n">remove_columns</span><span class="p">([</span><span class="s1">&#39;vhs_id&#39;</span><span class="p">,</span> <span class="s1">&#39;simes_id&#39;</span><span class="p">,</span> <span class="s1">&#39;des_id&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -12667,19 +12976,18 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="X---Adding-HEALPix-index">X - Adding HEALPix index<a class="anchor-link" href="#X---Adding-HEALPix-index">&#182;</a></h2><p>We are adding a column with a HEALPix index at order 13 associated with each source.</p>
+<h2 id="X---Adding-HEALPix-index">X - Adding HEALPix index<a class="anchor-link" href="#X---Adding-HEALPix-index">&#194;&#182;</a></h2><p>We are adding a column with a HEALPix index at order 13 associated with each source.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="n">Column</span><span class="p">(</span>
@@ -12693,18 +13001,17 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="XI---Saving-the-catalogue">XI - Saving the catalogue<a class="anchor-link" href="#XI---Saving-the-catalogue">&#182;</a></h2>
+<h2 id="XI---Saving-the-catalogue">XI - Saving the catalogue<a class="anchor-link" href="#XI---Saving-the-catalogue">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;help_id&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">,</span> <span class="s2">&quot;ra&quot;</span><span class="p">,</span> <span class="s2">&quot;dec&quot;</span><span class="p">,</span> <span class="s2">&quot;hp_idx&quot;</span><span class="p">]</span>
@@ -12728,7 +13035,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We check for columns in the master catalogue that we will not save to disk.</span>
@@ -12744,7 +13051,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Missing columns: set()
@@ -12758,7 +13067,7 @@ require(["datatables"], function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">master_catalogue</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/master_catalogue_akari-sep</span><span class="si">{}</span><span class="s2">.fits&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUT_DIR</span><span class="p">,</span> <span class="n">SUFFIX</span><span class="p">))</span>
