@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,12 +11771,11 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ELAIS-S1-master-catalogue">ELAIS S1 master catalogue<a class="anchor-link" href="#ELAIS-S1-master-catalogue">&#182;</a></h1><h2 id="Preparation-of-VHS-data">Preparation of VHS data<a class="anchor-link" href="#Preparation-of-VHS-data">&#182;</a></h2><p>VISTA telescope/VHS catalogue: the catalogue comes from <code>dmu0_VHS</code>.</p>
+<h1 id="ELAIS-S1-master-catalogue">ELAIS S1 master catalogue<a class="anchor-link" href="#ELAIS-S1-master-catalogue">&#194;&#182;</a></h1><h2 id="Preparation-of-VHS-data">Preparation of VHS data<a class="anchor-link" href="#Preparation-of-VHS-data">&#194;&#182;</a></h2><p>VISTA telescope/VHS catalogue: the catalogue comes from <code>dmu0_VHS</code>.</p>
 <p>In the catalogue, we keep:</p>
 <ul>
 <li>The identifier (it's unique in the catalogue);</li>
@@ -11810,7 +11807,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>This notebook was run with herschelhelp_internal version: 
@@ -11872,12 +11871,11 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#182;</a></h2>
+<h2 id="I---Column-selection">I - Column selection<a class="anchor-link" href="#I---Column-selection">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11987,7 +11985,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12018,7 +12018,9 @@ Check the NumPy 1.11 release notes for more information.
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[7]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12064,17 +12066,15 @@ require(["datatables"], function(){
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="II---Removal-of-duplicated-sources">II - Removal of duplicated sources<a class="anchor-link" href="#II---Removal-of-duplicated-sources">&#182;</a></h2>
+<h2 id="II---Removal-of-duplicated-sources">II - Removal of duplicated sources<a class="anchor-link" href="#II---Removal-of-duplicated-sources">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12111,7 +12111,9 @@ require(["datatables"], function(){
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/anaconda3/envs/herschelhelp_internal/lib/python3.6/site-packages/astropy/table/column.py:1096: MaskedArrayFutureWarning: setting an item on a masked array which has a shared mask will not copy the mask and also change the original mask array in the future.
@@ -12122,7 +12124,9 @@ Check the NumPy 1.11 release notes for more information.
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The initial catalogue had 242383 sources.
@@ -12136,12 +12140,11 @@ The cleaned catalogue has 112 sources flagged as having been cleaned
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="III---Astrometry-correction">III - Astrometry correction<a class="anchor-link" href="#III---Astrometry-correction">&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
+<h2 id="III---Astrometry-correction">III - Astrometry correction<a class="anchor-link" href="#III---Astrometry-correction">&#194;&#182;</a></h2><p>We match the astrometry to the Gaia one. We limit the Gaia catalogue to sources with a g band flux between the 30th and the 70th percentile. Some quick tests show that this give the lower dispersion in the results.</p>
 
 </div>
 </div>
@@ -12178,7 +12181,9 @@ The cleaned catalogue has 112 sources flagged as having been cleaned
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13684,7 +13689,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -16508,7 +16515,9 @@ HA6HY0FcweBwOBwOh2NBXMHgcDgcDodjQVzB4HA4HA6HY0H+PzvtAhmpxVOuAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>RA correction: 0.15926903843137552 arcsec
@@ -16553,7 +16562,9 @@ Dec correction: -0.08703663225020364 arcsec
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -18056,7 +18067,9 @@ CCFmvb8B37zIk3MUMEUAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -21041,12 +21054,11 @@ AABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IV---Flagging-Gaia-objects">IV - Flagging Gaia objects<a class="anchor-link" href="#IV---Flagging-Gaia-objects">&#182;</a></h2>
+<h2 id="IV---Flagging-Gaia-objects">IV - Flagging Gaia objects<a class="anchor-link" href="#IV---Flagging-Gaia-objects">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -21085,7 +21097,9 @@ AABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>18175 sources flagged.
@@ -21097,21 +21111,19 @@ AABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="V---Flagging-objects-near-bright-stars">V - Flagging objects near bright stars<a class="anchor-link" href="#V---Flagging-objects-near-bright-stars">&#182;</a></h2>
+<h2 id="V---Flagging-objects-near-bright-stars">V - Flagging objects near bright stars<a class="anchor-link" href="#V---Flagging-objects-near-bright-stars">&#194;&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#182;</a></h1>
+<h1 id="VI---Saving-to-disk">VI - Saving to disk<a class="anchor-link" href="#VI---Saving-to-disk">&#194;&#182;</a></h1>
 </div>
 </div>
 </div>
