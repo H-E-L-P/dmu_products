@@ -14,9 +14,7 @@ Each field will contain:
 HELP Data Release 1
 ---------------------------------------
 
-As new surveys and data releases are coming out all the time we decided to define a masterlist across all HELP field called Data Release 1 (DR1). There is a soft link to the appropriately dated file in every folder according to the following naming convention:
-
-dmu_products/dmu1/dmu1_ml_FIELD/data/master_catalogue_field_dr1.fits
+As new surveys and data releases are coming out all the time we decided to define a masterlist across all HELP field called Data Release 1 (DR1). 
 
 In some cases there may be newer data and a newer masterlist. You must take care in those cases when using subsequent HELP data products as we can't guarantee that the IDs and other data will properly match up.
 
@@ -37,7 +35,7 @@ Notably the DES DR1 data is not included in all of the HELP masterlist DR1 catal
  EGS                   |
  ELAIS-N1              |  master_catalogue_elais-n1_20171016.fits
  ELAIS-N2              |
- ELAIS-S1              |
+ ELAIS-S1              |  master_catalogue_elais-s1_20171207.fits  
  GAMA-09               |
  GAMA-12               |
  GAMA-15               |
