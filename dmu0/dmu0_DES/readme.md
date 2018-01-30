@@ -3,6 +3,38 @@ Dark Energy Survey - Public Data Release 1 (DR1)
 
 Downloaded from https://des.ncsa.illinois.edu/easyweb/db-access using SQL given below. HELP coverage then limited using filter_and_tag.sh.
 
+## Columns in catalogue:
+
+Column name            | Content
+-----------------------|------------------------------------------
+COADD_OBJECT_ID        | Unique identifier for the coadded objects
+RA                     | Right ascension, with quantized precision for indexing (ALPHAWIN_J2000 has full precision but not indexed) [degrees]
+DEC                    | Declination, with quantized precision for indexing (DELTAWIN_J2000 has full precision but not indexed) [degrees]
+CLASS_STAR_$BAND       | $BAND-band simple morphological extended source classifier. Values between 0 (galaxies) and 1 (stars). SPREAD_MODEL exhibits better performance
+MAG_AUTO_$BAND         | $BAND-band magnitude estimation, for an elliptical model based on the Kron radius [mag]
+MAGERR_AUTO_$BAND      | $BAND-band uncertainty in magnitude estimation, for an elliptical model based on the Kron radius [mag]
+MAG_APER_$AP_$BAND     | Aperture $AP equivalent to **See below** [pixel], g-band magnitude estimation for circular apertures [mag]
+MAGERR_APER_4_$BAND    | Aperture 4 equivalent to 7.41 [pixel], $BAND-band uncertainty in magnitude estimation for circular apertures [mag]
+
+
+### Apertures
+
+Aperture number   | Size
+------------------|------------------------------------------
+1                 |  1.85  [pixel] = 0.49 arcsec
+2                 |  3.7   [pixel] = 0.97 arcsec
+3                 |  5.55  [pixel] = 1.46 arcsec
+4                 |  7.41  [pixel] = 1.95 arcsec
+5                 |  11.11 [pixel] = 2.92 arcsec
+6                 |  14.81 [pixel] = 3.90 arcsec
+7                 |  18.52 [pixel] = 4.87 arcsec
+8                 |  22.22 [pixel] = 5.84 arcsec
+9                 |  25.93 [pixel] = 6.82 arcsec
+10                |  29.63 [pixel] = 7.79 arcsec
+11                |  44.44 [pixel] = 11.69 arcsec
+
+The catalogues were downloaded using the following SQL query and then filtered to HELP coverage using filter_and_tag.sh. 
+
 ## SQL QUERIES
 
 Job 1a49d93e-9aec-4706-a6c2-aa72182825b3 submitted
