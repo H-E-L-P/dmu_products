@@ -10,7 +10,7 @@ ELAIS S1.
 | ESIS       | ESO 2.2/WFI                 | BVR                                        | dmu0_ESIS-VOICE             |
 | SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
 | SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
-| DES-DEEP   | Blanco/DECAM	               | grizy                                      | ... awaiting release	      |        | 
+| DES-DEEP   | Blanco/DECAM	               | grizy                                      | dmu0_DES	      |        | 
 
 
 
@@ -26,6 +26,7 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.3_ESIS-VOICE.ipynb](1.3_ESIS-VOICE.ipynb) 
 - [1.4_SWIRE.ipynb](1.4_SWIRE.ipynb) 
 - [1.5_SERVS.ipynb](1.5_SERVS.ipynb)
+- [1.5_DES.ipynb](1.5_DES.ipynb)
 
 ## Catalogue merging
 

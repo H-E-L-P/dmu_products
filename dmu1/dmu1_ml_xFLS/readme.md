@@ -3,6 +3,17 @@
 This folder contains the Jupyter notebooks used to create HELP mater list on
 xFLS. 
 
+| Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
+|--------|-------------------------|:---------------------------------:|-----------------|
+| DataFusion  | Spitzer/IRAC       |  IRAC12                   | dmu0_DataFusion-Spitzer |
+| INT-WFC | INT/WFC                | ugriz                             | dmu0_INT-WFC    |   
+| KPNO-FLS        |               | R                             | dmu0_KPNO-FLS        |
+| PanSTARRS-3SS | PanSTARRS/GPC1   | ugriz                          | dmu0_PanSTARRS-322 |
+| Legacy Survey | BASS             | grz                             | dmu0_LegacySurvey |
+| UHS    | UKIRT                   | J                                 | dmu0_UHS        |
+
+
+
 ## Pristine catalogue preparations
 
 For each pristine catalogue, a specific notebook is used for its preparation:

@@ -17,7 +17,8 @@ CDFS-SWIRE. The following table summarises the list of used catalogues.
 | PS1 MDS	| Pan-STARRS1 / Pan-STARRS1   |	grizy                                  | ...awaiting release         |
 | VOICE	    | VST/OmegaCAM	              | u,g,r,i                                    | ...waiting for Mattia       |
 | CTIO/CDFS | CTIO/MOSAIC	              | g,r,i                                      | ...waiting for Mattia       |
-| DES-DEEP	| Blanco/DECAM	              | grizy                                      | ...awaiting release         |
+| DES-DEEP	| Blanco/DECAM	              | grizy                                      | dmu0_DES       |
+| CANDELS-GOODS-S     | HST + forced photometry  | WFC3 and ACS  | dmu0_CANDELS-GOODS-S     |
 
 ## Pristine catalogue preparations
 
@@ -35,11 +36,13 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.6_COMBO.ipynb](1.6_COMBO.ipynb) for COMBO data
 - [1.7_ATLAS.ipynb](1.7_ATLAS.ipynb) for ATLAS data
 - [1.8_VISTA-VHS.ipynb](1.8_VISTA-VHS.ipynb) for VHS data
+- [1.9_DES.ipynb](1.9_DES.ipynb)
+- [1.10_CANDELS-GOODS-S.ipynb](1.10_CANDELS-GOODS-S.ipynb) 
 
 ## Catalogue merging
+The merging notebook performs the merging of the pristine catalogues into the master list.
 
-The [2_Merging.ipynb](2_Merging.ipynb) notebook performs the merging of the
-pristine catalogues into the master list.
+- [2_Merging.ipynb](2_Merging.ipynb) 
 
 ## Diagnostics
 

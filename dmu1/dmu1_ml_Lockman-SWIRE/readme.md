@@ -13,7 +13,7 @@ Lockman-SWIRE. The following table summarises the list of used catalogues.
 | SWIRE      | Spitzer/IRAC MIPS           | IRAC1234 & MIPS123                         | dmu0_DataFusion-Spitzer	  | 
 | SERVS      | Spitzer/IRAC                | IRAC12                                     | dmu0_DataFusion-Spitzer	  | 
 | PS1 MDS    | Pan-STARRS1	               | grizy	                                    | Awaiting release...         |
-[Relevant surveys]
+| UHS        | UKIRT                       | J                        | dmu0_UHS         |                
 
 ## Pristine catalogue preparations
 
@@ -29,7 +29,7 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.5_UKIDSS-DXS.ipynb](1.5_UKIDSS-DXS.ipynb) 
 - [1.6_SWIRE.ipynb](1.6_SWIRE.ipynb) 
 - [1.7_SERVS.ipynb](1.7_SERVS.ipynb) 
-
+- [1.8_UHS.ipynb](1.8_UHS.ipynb) 
 
 ## Catalogue merging
 

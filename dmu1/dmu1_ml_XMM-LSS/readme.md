@@ -23,6 +23,7 @@ XMM-LSS.
 | VHS            | VISTA VIRCAM     | ZYHJKs?                      | dmu0_VISTA-VHS      |
 | VIDEO          | VISTA VIRCAM     | ZYHJKs?                 | dmu0_VISTA-VIDEO-private |
 | VIKING         | VISTA VIRCAM     | ZYHJKs                       | dmu0_VISTA-VIKING   |
+| DES            | Blanco/DECam     | grizy                        | dmu0_DES            |
 
 ## Pristine catalogue preparations
 
@@ -34,26 +35,38 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.1_CANDELS-3D-HST.ipynb](1.1_CANDELS-3D-HST.ipynb) 
 - [1.2_CANDELS-UDS.ipynb](1.2) 
 - [1.3_CFHT-WIRDS.ipynb](1.3_CFHT-WIRDS.ipynb)
-- [1.4_CFHTLS.ipynb](1.4_CFHTLS.ipynb) 
+- [1.4.1_CFHTLS-WIDE.ipynb](1.4.1_CFHTLS-WIDE.ipynb) 
+- [1.4.2_CFHTLS-WIDE.ipynb](1.4.2_CFHTLS-WIDE.ipynb) 
 - [1.5_CFHTLenS.ipynb](1.5_CFHTLenS.ipynb) 
-- [1.6_DECaLS.ipynb](1.6_DECaLS.ipynb) 
+- [1.6.1_DECaLS.ipynb](1.6.1_DECaLS.ipynb) 
+- [1.6.2_DES.ipynb](1.6.2_DES.ipynb) 
 - [1.7_SWIRE.ipynb](1.7_SWIRE.ipynb) 
 - [1.8_SERVS.ipynb](1.8_SERVS.ipynb) 
-- [1.9_HSC.ipynb](1.9_HSC.ipynb) 
+- [1.9.1_HSC-WIDE.ipynb](1.9.1_HSC-WIDE.ipynb) 
+- [1.9.2_HSC-DEEP.ipynb](1.9.2_HSC-DEEP.ipynb) 
+- [1.9.3_HSC-UDEEP.ipynb](1.9.3_HSC-UDEEP.ipynb) 
 - [1.10_PanSTARRS1-3SS.ipynb](1.10_PanSTARRS1-3SS.ipynb) 
 - [1.11_SXDS.ipynb](1.11_) 
 - [1.12_SpARCS.ipynb](1.12_SpARCS.ipynb) 
-- [1.15_UKIDSS-DXS.ipynb](1.15_UKIDSS-DXS.ipynb) 
-- [1.16_UKIDSS-UDS.ipynb](1.16_) 
-- [1.17_VIPERS-MLS.ipynb](1.17_) 
-- [1.18_VISTA-VHS.ipynb](1.18_VISTA-VHS.ipynb) 
-- [1.19_VISTA-VIDEO.ipynb](1.19_VISTA-VIDEO.ipynb) 
-- [1.20_VISTA-VIKING.ipynb](1.20_VISTA-VIKING.ipynb) 
+- [1.13_UKIDSS-DXS.ipynb](1.13_UKIDSS-DXS.ipynb) 
+- [1.14_UKIDSS-UDS.ipynb](1.14_UKIDSS-UDS.ipynb) 
+- [1.15_VIPERS.ipynb](1.15_VIPERS.ipynb) 
+- [1.17_VISTA-VIDEO.ipynb](1.17_VISTA-VIDEO.ipynb) 
+- [1.18_VISTA-VIKING.ipynb](1.18_VISTA-VIKING.ipynb) 
+
 
 ## Catalogue merging
 
-The [2_Merging.ipynb](2_Merging.ipynb) notebook performs the merging of the
-pristine catalogues into the master list.
+The merging notebooks performs the merging of the pristine catalogues into the master list. Because XMM-LSS has so much data we must merge the similar bands first and then do the final merge on tiles as for HS82 and SGP. THe final stage is then to concatenate the tables using Stilts.
+
+- [2.1_Megacam_merge.ipynb](2.1_Megacam_merge.ipynb)
+- [2.2_UKIDSS_merge.ipynb](2.2_UKIDSS_merge.ipynb)
+- [2.3_HSC_merge.ipynb](2.3_HSC_merge.ipynb)
+- [2.4_VIRCAM_merge.ipynb](2.4_VIRCAM_merge.ipynb)
+- [2.5_IRAC_merge.ipynb](2.5_IRAC_merge.ipynb)
+- [2.6_DECAM_merging.ipynb](2.6_DECAM_merging.ipynb)
+- [2.7_Merging.ipynb](2.7_Merging.ipynb)
+
 
 ## Diagnostics
 

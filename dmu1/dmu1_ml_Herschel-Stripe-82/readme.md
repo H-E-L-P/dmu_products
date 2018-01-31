@@ -30,15 +30,20 @@ Gaia as reference, and the flagging of possible Gaia objects.
 - [1.5_PanSTARRS-3SS.ipynb](1.5_PanSTARRS-3SS.ipynb) 
 - [1.6_SHELA.ipynb](1.6_SHELA.ipynb)
 - [1.7_SpIES.ipynb](1.7_SpIES.ipynb)
-- [1.8_DECaLS.ipynb](1.8_DECaLS.ipynb)
+- [1.8.1_DECaLS.ipynb](1.8.1_DECaLS.ipynb)
+- [1.8.1_DES.ipynb](1.8.2_DES.ipynb)
 - [1.9_RCSLenS.ipynb](1.9_RCSLenS.ipynb)
-- [1.10_SDSS-S82.ipynb](1.10_SDSS-S82.ipynb)
+- [1.10.1_SDSS-S82-IAC.ipynb](1.10_SDSS-S82-IAC.ipynb) A rereduction that we use here
+- [1.10.2_SDSS-S82.ipynb](1.10_SDSS-S82.ipynb)
 
 
 ## Catalogue merging
 
-The [2_Merging.ipynb](2_Merging.ipynb) notebook performs the merging of the
-pristine catalogues into the master list.
+The merging notebook performs the merging of the pristine catalogues into the master list. Due to the large size of Stripe 82 we must merge similar bands first and then merge the full catalogue in tiles followed by a stilts concatenation at the end.
+
+- [2.3_IRAC_merging.ipynb](2.3_IRAC_merging.ipynb)
+- [2.3_DECAM_merging.ipynb](2.3_DECAM_merging.ipynb)
+- [2.3_Merging.ipynb](2.3_Merging.ipynb)
 
 ## Diagnostics
 

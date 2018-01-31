@@ -4,6 +4,15 @@ This folder contains the Jupyter notebooks used to create HELP mater list on
 ELAIS-N1. *Note: The [0_main.ipynb](0_main.ipynb) contains the same thing than
 this readme and is easier to read from within Jupyter.*
 
+| Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
+|--------|-------------------------|:---------------------------------:|-----------------|
+| INT-WFC | INT/WFC                | ugriz                             | dmu0_INT-WFC    |   
+| UKIDSS-DXS |                     | JHK                               | dmu0_UKIDSS-DXS |
+| HSC    | Subaru/HyperSuprimeCam  | grizy                             | dmu0_HSC        |
+| PanSTARRS-3SS | PanSTARRS/GPC1   | ugriz                          | dmu0_PanSTARRS-322 |
+| SpARCS | CFHT/Megacam            | ugrz                              | dmu-_SpARCS     | | SERVS    | Spitzer/IRAC          | IRAC12                   | dmu0_DataFusion-Spitzer  |
+| SWIRE    | Spitzer/IRAC          | IRAC1234                 | dmu0_DataFusion-Spitzer  |
+
 ## Pristine catalogue preparations
 
 For each pristine catalogue, a specific notebook is used for its preparation:
@@ -31,8 +40,15 @@ pristine catalogues into the master list.
 
 ## Diagnostics
 
-The [3_Checks_and_diagnostics.ipynb](3_Checks_and_diagnostics.ipynb) notebook
-presents some checks and diagnostic plots on the final master list.
+The notebook presents some checks and diagnostic plots on the final master list.
+
+- [3.1_Checks_and_diagnostics.ipynb](3.1_Checks_and_diagnostics.ipynb)
+- [3.2_Flagging.ipynb](3.2_Flagging.ipynb)
+
+## Depths
+This computes means errors which can be used to calculated depths on order 10 HEALpix cells
+
+- [4_Selection_function.ipynb](4_Selection_function.ipynb)
 
 ## Used memory
 
