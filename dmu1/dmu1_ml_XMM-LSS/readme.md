@@ -62,7 +62,7 @@ The merging notebooks performs the merging of the pristine catalogues into the m
 - [2.1_Megacam_merge.ipynb](2.1_Megacam_merge.ipynb)
 - [2.2_UKIDSS_merge.ipynb](2.2_UKIDSS_merge.ipynb)
 - [2.3_HSC_merge.ipynb](2.3_HSC_merge.ipynb)
-- [2.4_VIRCAM_merge.ipynb](2.4_VIRCAM_merge.ipynb)
+- [2.4_VISTA_merge.ipynb](2.4_VISTA_merge.ipynb)
 - [2.5_IRAC_merge.ipynb](2.5_IRAC_merge.ipynb)
 - [2.6_DECAM_merging.ipynb](2.6_DECAM_merging.ipynb)
 - [2.7_Merging.ipynb](2.7_Merging.ipynb)
