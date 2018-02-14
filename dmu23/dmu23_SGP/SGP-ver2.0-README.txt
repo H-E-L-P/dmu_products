@@ -1,0 +1,72 @@
+Stripe-82 Spectroscopic Merged Catalogue README - version 2.0
+
+Description of columns:
+
+Column 0, "RA":
+The RA coordinates of the object targeted in degrees.
+
+Column 1, "DEC":
+The DEC coordinates of the object targeted in degrees.
+
+Column 2, "Z_SPEC":
+The spectroscopic redshift.
+
+Column 3, "Z_SOURCE":
+The source of the spectroscopic redshift, as the source of the redshift can be multiple surveys the source number can be a combination of the following values:
+; 2dF									- 1
+; 6dF									- 2
+; 2MRS (Huchra et al. 2012)*						- 4
+; SRSS2 (Da Costa et al. 1998)*						- 8
+
+
+See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
+
+
+Column 4, "Z_QUAL":
+
+The quality flag (Q) is designated using the method from Colless et al. (2001) method (same as for the GAMA database which covers many Help fields). The quality flag (Q), is ranked on a five-point scale, with the interpretation: Q = 1 means no redshift could be estimated; Q = 2 means a possible, but doubtful, redshift estimate; Q = 3 means a probable redshift (notionally 90 per cent confidence), Q = 4 means a reliable redshift (notionally 99 per cent confidence); Q = 5 means a reliable redshift and a high-quality spectrum. Note that this quality parameter is determined entirely by the subjective judgement of the user. Please see next column for more reliability info. 
+
+Note that in reality collecting spectra from all these sources it is often difficult to choose whether Q should be 3, 4 or 5. We have tried to be conservative where possible, but often we also have a lack of information.
+
+
+Column 5, "Reliability":
+
+The expected reliability of the redshift, provided where the information is availiable. The value is given as a probability between 0 and 1 (i.e., 60% reliability would be 0.6).
+
+
+Column 5, "OBJID"
+
+Object ID where the name depends on the source of the spectroscopic measurement. 
+
+
+Column 7, "QSO/AGN Flag"
+
+If the source of the data provides infomation on AGN based on the spectroscopic data, or the survey is deticated to targting QSO/AGNs this flag is set to 1. Note if a source provides infomation based on photometry we do not include this as will be repeated by HELP's own photometry measurements. This should not be treated as an accurate AGN/QSO determination.
+
+
+Information on selection functions/completness can be found in the seperate pdf document.
+
+
+Other info:
+
+* The 2MRS (2MASS redshift survey) and SRSS2 (Southern Sky Redshift Survey) catalogues are a complimation of redshifts from NED, their own data, and many other sources. Before combining we remove SDSS and 6dF redshifts from the catalogues to prevent repeated entries. No known reliability is known but as they are all local galaxies we assume they are all reliable with Q=3.
+
+
+To make this the redshifts have been prioritised in order of quality flags and the highest priority redshift is used. For catalogues which included redshifts for stars have been removed. Catalogues are typically matched given a 2" positional accuracy, however we check all matches up to 5" and assess which are real associations. Given the large number of redshifts we have very few conflicts, any conflicts where it was not obvious what was causing the problem are listed below and the choice made. 
+
+Conflicts:
+2dF and 6dF conflict on TGS503Z178, went with 2dF as higher Q
+Very slight disagreement on TGS480Z121 between 2dF and 6dF. Went wiht 2dF as higher Q
+2dF and 6dF conflict on TGS411Z053, went with 2dF as higher Q
+2dF and 6dF conflict on TGS538Z197, went with 2dF as higher Q
+2dF and 6dF conflict on TGS371Z068, went with 2dF as higher Q
+2dF and 6dF conflict on TGS371Z122, went with 2dF as higher Q
+2dF and 6dF conflict on TGS444Z191, went with 2dF as higher Q
+2dF and 6dF conflict on TGS296Z090, went with 6dF
+2dF and 6dF conflict on TGS266Z273, went with 2dF as higher Q
+2df and 6df conflict with SRSS2 went with 2df for TGS536Z029
+2df and 2MRS conflict with SRSS2 went with 2df for TGS534Z238
+2df conflicts with SRSS2 went with 2df for TGS285Z011
+2df and 6df conflict with SRSS2 went with 2df for TGS208Z061
+2df and 6df conflict with SRSS2 went with 2df for TGS369Z258
+2df conflicts with SRSS2 went with 6df for 6dF g0031136-282444
