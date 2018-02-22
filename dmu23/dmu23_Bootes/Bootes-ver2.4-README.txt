@@ -1,0 +1,57 @@
+Bootes Spectroscopic Merged Catalogue README - version 2.0
+
+Description of columns:
+
+Column 0, "RA":
+The RA coordinates of the object targeted in degrees.
+
+Column 1, "DEC":
+The DEC coordinates of the object targeted in degrees.
+
+Column 2, "Z_SPEC":
+The spectroscopic redshift.
+
+Column 3, "Z_SOURCE":
+The source of the spectroscopic redshift, as the source of the redshift can be multiple surveys the source number can be a combination of the following values:
+; AGES: The AGN and Galaxy Evolution Survey (Kochanek et al. 2012)	- 1
+; SDSS DR12 								- 2
+; Spitzer Infrared Spectrograph  (Houck et al. 2004)			- 4
+; Spitzer Infrared Spectrograph (Weedman et al. 2009)			- 8 
+
+See below for more infomation on the different sources and any overlap. (* see info about these catalogues in other info)
+
+Column 4, "Z_QUAL":
+
+The quality flag (Q) is designated using the method from Colless et al. (2001) method (same as for the GAMA database which covers many Help fields). The quality flag (Q), is ranked on a five-point scale, with the interpretation: Q = 1 means no redshift could be estimated; Q = 2 means a possible, but doubtful, redshift estimate; Q = 3 means a probable redshift (notionally 90 per cent confidence), Q = 4 means a reliable redshift (notionally 99 per cent confidence); Q = 5 means a reliable redshift and a high-quality spectrum. Note that this quality parameter is determined entirely by the subjective judgement of the user. Please see next column for more reliability info. 
+
+Note that in reality collecting spectra from all these sources it is often difficult to choose whether Q should be 3, 4 or 5. We have tried to be conservative where possible, but often we also have a lack of information.
+
+Column 5, "Reliability":
+
+The expected reliability of the redshift, provided where the information is availiable. The value is given as a probability between 0 and 1 (i.e., 60% reliability would be 0.6). 
+
+Column 6, "OBJID"
+
+Object ID where the name depends on the source of the spectroscopic measurement. 
+
+Column 7, "QSO/AGN Flag"
+
+If the source of the data provides infomation on AGN based on the spectroscopic data, or the survey is deticated to targting QSO/AGNs this flag is set to 1. Note if a source provides infomation based on photometry we do not include this as will be repeated by HELP's own photometry measurements. This should not be treated as an accurate AGN/QSO determination.
+
+Information on selection functions/completness can be found in the seperate pdf document.
+
+
+Other info:
+
+To make this the redshifts have been prioritised in order of quality flags and the highest priority redshift is used. For catalogues which included redshifts for stars have been removed. Catalogues are typically matched given a 2" positional accuracy, however we check all matches up to 5" and assess which are real associations. Given the large number of redshifts we have very few conflicts, any conflicts where it was not obvious what was causing the problem are listed below and the choice made. During the making of this catalogue it was found that the same object could have more than one DR1, an arbitary choice of which ID to go with was made.
+
+Conflicts:
+
+Several AGES and SDSS (+ 1 Weedman) conflict very slightly (~0.01), went with SDSS
+
+AGES 13466 disagrees with SDSS. 1.94 vs 2.72 went with SDSS
+AGES 16156 disagrees with SDSS. 0.35 vs 0.48 went with SDSS
+AGES 19544 disagrees with SDSS. 0.27 vs 0.62 went with SDSS
+
+SDSS 1237662225153327319 and SDSS 1237662685756326031 disagrees with Weedman went with SDSS
+

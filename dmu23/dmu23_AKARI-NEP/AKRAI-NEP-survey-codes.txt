@@ -1,0 +1,5 @@
+1 - Shim et al (2013)
+2 - 2MRS
+4 - IRASpsz
+8 - UZC
+16 - Vaccari catalogue - NED redshifts
