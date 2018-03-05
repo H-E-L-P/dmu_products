@@ -20,7 +20,7 @@ In some cases there may be newer data and a newer masterlist. You must take care
 
 The following table defines the DR1 masterlist in terms of the dated file that was used on a given field.
 
-Notably the DES DR1 data is not included in all of the HELP masterlist DR1 catalogues as it was released after the creation of the masterlist on some fields.
+The file dr1_overview.fits gives an overview of the current DR1 definition. When a field has been run through to the final stage through all parts of help we will add the final used masterlist below. Occasionally, different partts fo the pipeline may have been conducted with a different masterlist file. In those case care was taken to ensure HELP ids do not change. It is however possible that new sources or photometry may have been added and that selection functions might be altered. In those cases one should take care to note which masterlist was used at any given stage.
 
 
 
@@ -30,12 +30,12 @@ Notably the DES DR1 data is not included in all of the HELP masterlist DR1 catal
  AKARI-SEP             |
  Bootes	               |
  XMM-LSS               |
- CDFS-SWIRE            |  master_catalogue_cdfs-swire_20171103.fits
+ CDFS-SWIRE            |  master_catalogue_cdfs-swire_20180221.fits
  COSMOS                |
  EGS                   |
  ELAIS-N1              |  master_catalogue_elais-n1_20171016.fits
  ELAIS-N2              |
- ELAIS-S1              |  master_catalogue_elais-s1_20171207.fits  
+ ELAIS-S1              |  
  GAMA-09               |
  GAMA-12               |
  GAMA-15               |
