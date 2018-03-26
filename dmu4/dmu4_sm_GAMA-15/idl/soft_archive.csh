@@ -1,0 +1,9 @@
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/RadialDependence.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/archive_software.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/mrd_hread.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/readcol.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/remchar.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/fxmove.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/fxposit.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/gettok.pro code
+cp /research/astrodata2/fir/HELP/rs548/stars/HELP_stars/mrdfits.pro code
