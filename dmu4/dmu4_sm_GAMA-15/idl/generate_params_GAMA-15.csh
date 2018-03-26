@@ -13,9 +13,9 @@
 # updated 21-25 October 2017 to work with dmu1_ml_Lockman-SWIRE and made more general 
 # and with better comments
 #
-# Raphael Shirley 22 January 2018
-# Running code on ELAIS-S1
-# TODO: link to files through dmu structure instead of downloading new files everytime.
+# Raphael Shirley 26 March 2018
+# Running code on GAMA-15
+# 
 ######################################################################
 
 
@@ -23,7 +23,7 @@
 #
 # PREAMBLE
 #
-# this preamble is just stuff I need to do due to some weirdness in my mac startups
+# load required modeules for apollo at Sussex
 ######################################################################
 module load mps/software
 module load idl
@@ -44,7 +44,7 @@ stilts -version
 
 set field=gama-15
 
-set master=master_catalogue_gama-15_20180213.fits
+set master=../../../dmu1/dmu1_ml_GAMA-15/data/master_catalogue_gama-15_20180213.fits
 
 # this bit is slow and requires internt connectivity so don't run if you've already generated the file
 # i.e. while debugging.
@@ -56,7 +56,7 @@ set master=master_catalogue_gama-15_20180213.fits
 # this is the gaia catalogue retrieved from HeDAM when script run and thus name is arbitrary or
 # extracted from the master list (also free choice of name)
 
-set star=gaia-dr1-$field.fits
+set star=../../../dmu0/dmu0_GAIA/data/GAIA_GAMA-15.fits
 set master_star=master_gaia.fits
 
 
@@ -74,7 +74,7 @@ stilts tcat in=$master omode=meta > ! meta.txt
 grep m_ap meta.txt >! meta_ap.txt
 
 # from examining this file we can decide what are the relevant columns
-set columns="irac_i1"
+set columns="ukidss_k suprime_g decam_g gpc1_g"
 
 
 ######################################################################
@@ -120,10 +120,10 @@ stilts -Xmx2048M -disk tmatch2 in1=$star in2=$master_star \
 
 # This strips down the masked catalogue and keeps only the relevant columns and creates a new single band detection column
 
-stilts tcat in=$master  \
- out=multi.fits \
-    ocmd='colmeta -name irac1mag m_ap_irac1' \
-    ocmd='keepcols "RA DEC irac1mag"'
+#stilts tcat in=$master  \
+# out=multi.fits \
+#    ocmd='colmeta -name irac1mag m_ap_irac1' \
+#    ocmd='keepcols "RA DEC irac1mag"'
 
 ######################################################################
 
