@@ -41,7 +41,7 @@ ELAIS-S1               | 20180416
 GAMA-09                | 20171206 
 GAMA-12                | 20180218 
 GAMA-15                | 20180213 
-HDF-N                  | 20180219 
+HDF-N                  | 20180427 
 Herschel-Stripe-82     | 20180307 
 Lockman-SWIRE          | 20180219 
 NGP                    | 20180219 
