@@ -1,6 +1,6 @@
 # Master list on Bootes
 
-Bootes is based on a catalogue produced by Micahel Brown (reference). This is described in dmu_0_Bootes_Brown.
+Bootes is based on a catalogue produced by Michael Brown (currently unpublished). This is described in dmu_0_Bootes_Brown. We decided to also make a catalogue using the standard HELP process in order to check the Bootes Brown catalogue. After doing this we found that the aperture matched catalogue of Brown performed better in the photometric redshift pipeline. This may be due to the fact that there are no 5+ band surveys on Bootes so the extra constraints from aperture matching all the bands simultaneously yield a larger fraction of good redshifts.
 
 | Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
 |--------|-------------------------|:---------------------------------:|-----------------|
@@ -16,7 +16,7 @@ Bootes is based on a catalogue produced by Micahel Brown (reference). This is de
 
 Here all we do is astrometry correction and other things to make the catalogue into HELP format.
 
-- [1.0_Reformatting.ipynb](1.0_Reformatting.ipynb) - Michael Brown catalogue for comparison
+
 - [1.1_DECaLS.ipynb](1.1_DECaLS.ipynb)
 - [1.2_DataFusion-Spitzer.ipynb](1.2_DataFusion-Spitzer.ipynb)
 - [1.3_IBIS.ipynb](1.3_IBIS.ipynb)
@@ -29,13 +29,16 @@ Here all we do is astrometry correction and other things to make the catalogue i
 
 ## Merging
 
-- [2_HELP_Merging.ipynb](2_HELP_Merging.ipynb) 
+- [2.0_Brown_Reformatting.ipynb](2.0_Brown_Reformatting.ipynb) 
+- [2.1_HELP_Merging.ipynb](2_HELP_Merging.ipynb) 
 
 ## Diagnostics
-There are two diagnostics to allow comparisons between teh HELP masterlist and Michael Brown's
+There are two diagnostics to allow comparisons between the HELP masterlist and Michael Brown's
 
 -[3.0_Brown_Checks_and_diagnostics.ipynb](3.0_Brown_Checks_and_diagnostics.ipynb) 
 -[3.1_HELP_Checks_and_diagnostics.ipynb](3.0_HELP_Checks_and_diagnostics.ipynb) 
 
+## Depth map production
 
+-[4_Selection_function.ipynb](4_Selection_function.ipynb) 
 
