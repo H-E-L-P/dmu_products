@@ -1,0 +1,23 @@
+circle_fit_params     0.095194717      0.80549510    0.0016234716
+---------------------
+data about spikes
+---------------------
+-170.2 -20.3 109.7 159.8
+   1.1   1.1   1.2   1.2
+  17.9  20.1  17.7  17.7
+circle_fit_params     0.011239347      0.96573385    0.0014820706
+circle_fit_params     0.023741473      0.94624000    0.0015966709
+circle_fit_params     0.032138051      0.93001110    0.0015255110
+circle_fit_params     0.091670708      0.84720077    0.0016110090
+circle_fit_params      0.18424051      0.73465615    0.0016218036
+circle_fit_params     0.068220479      0.66427779    0.0017000589
+circle_fit_params    0.0018327592      0.31284513    0.0016907153
+circle_fit_params  -2.5822583e-07      0.98248477    0.0017233687
+circle_fit_params   5.9498012e-05      0.86837645    0.0017069610
+circle_fit_params   1.9299533e-06      0.99511248    0.0017017349
+circle_fit_params   0.00058107491      0.73983196    0.0016977900
+circle_fit_params   0.00036136659      0.85299513    0.0017076592
+artefact linear params      3.91745    -0.235523
+zerox linear params      3.16317    -0.141077
+edges linear params      1.64558   -0.0622042
+50% cross linear params      3.44489    -0.161751
