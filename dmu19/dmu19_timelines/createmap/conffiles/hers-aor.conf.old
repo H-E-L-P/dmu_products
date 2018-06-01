@@ -1,0 +1,7 @@
+include=aor.conf
+datadirbase=/data/hersdaq/reprocessed
+dataversion=ntL1a
+pixsize=6
+dataname=hers
+shortname=hers
+include=hers.badscan

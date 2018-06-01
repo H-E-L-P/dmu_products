@@ -1,0 +1,8 @@
+include=general.conf
+dataname=LockmanSw
+shortname=lockman-swire
+include=lockman-swire.badscan
+jackknife=half1 0 80
+jackknife=half2 80 80
+jackknife=ang1 0 80 80 40
+jackknife=ang2 40 80 80 40

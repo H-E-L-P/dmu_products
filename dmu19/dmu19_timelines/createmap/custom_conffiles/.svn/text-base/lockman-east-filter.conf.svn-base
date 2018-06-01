@@ -1,0 +1,17 @@
+include=filter.conf
+dataname=Lockman-East
+dataname=LockmanNorth
+dataname=LockmanSw
+shortname=lockman-east-filter
+fixeddir=/data/spire/maps/lockman-nest/20110713
+fixedname=lockman-nest
+fixeddate=20110713
+include=lockman-east.badscan
+include=lockman-north.badscan
+include=lockman-swire.badscan
+crvalx=163.19020
+crvaly=57.521129
+nxpix=1416 1020 708
+nypix=1330 958 665
+crpixx=708.0 510.0 354.0
+crpixy=665.0 479.0 332.5

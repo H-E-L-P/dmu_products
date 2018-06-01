@@ -1,0 +1,6 @@
+include=general.conf
+dataname=ADFS
+shortname=adfs
+include=adfs.badscan
+jackknife=ang1 0 35
+jackknife=ang2 35 97

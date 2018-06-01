@@ -1,0 +1,7 @@
+include=aor.conf
+pixsize=6
+aor_pixsize=4.5
+dataname=SPT
+shortname=spt
+store_pixinfo
+include=spt.badscan

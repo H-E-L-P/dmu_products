@@ -1,0 +1,8 @@
+include=redmap.conf
+dataname=ADFS
+shortname=adfs-redmap
+include=adfs.badscan
+fixeddir=/data/spire/maps/adfs/20111129
+fixedname=adfs
+fixeddate=20111129
+

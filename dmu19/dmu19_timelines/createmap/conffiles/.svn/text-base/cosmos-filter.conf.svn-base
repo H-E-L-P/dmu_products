@@ -1,0 +1,9 @@
+include=filter.conf
+dataname=COSMOS
+dataname=COSMOS2
+shortname=cosmos-filter
+fixeddir=/data/spire/maps/cosmos-nest/20111130
+fixedname=cosmos-nest
+fixeddate=20111130
+include=cosmos.badscan
+include=cosmos2.badscan

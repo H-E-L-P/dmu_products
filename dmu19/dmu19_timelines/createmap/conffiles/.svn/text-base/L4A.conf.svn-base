@@ -1,0 +1,4 @@
+# This is a repeat of a scan in HeLMS
+include=general.conf
+dataname=L4A-1-2
+shortname=l4a

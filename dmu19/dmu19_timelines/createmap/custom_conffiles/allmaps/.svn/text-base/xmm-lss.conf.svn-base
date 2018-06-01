@@ -1,0 +1,7 @@
+include=general.conf
+dataname=XMM-LSS
+shortname=xmm-lss
+badscan=P?W 1342189003 a103000d
+badscan=PSW 1342190313 a103001f
+jackknife=ang1 0 111
+jackknife=ang2 111 111

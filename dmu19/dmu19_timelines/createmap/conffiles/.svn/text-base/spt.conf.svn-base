@@ -1,0 +1,9 @@
+datadirbase=/data/sptdaq/reprocessed
+dataversion=ntL1a
+do_tdc
+first_clip=5
+grow_clip=5
+clipsigma=10.0
+dataname=spt01
+shortname=spt
+include=spt.badscan

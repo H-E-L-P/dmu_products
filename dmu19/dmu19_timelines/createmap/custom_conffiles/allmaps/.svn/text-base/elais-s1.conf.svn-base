@@ -1,0 +1,6 @@
+include=general.conf
+dataname=ELAIS-S1-NewSWIRE
+shortname=elais-s1
+jackknife=ang1 0 50
+jackknife=ang2 50 72
+badscan=PMW 1342195729 a1030027

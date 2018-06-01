@@ -1,0 +1,5 @@
+include=general.conf
+dataname=XMM13hr
+shortname=xmm13hr
+jackknife=half1 0 18
+jackknife=half2 18 18

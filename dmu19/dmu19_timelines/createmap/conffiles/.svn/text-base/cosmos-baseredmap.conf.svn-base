@@ -1,0 +1,14 @@
+include=general.conf
+pixsize=4 4 4
+do_jkbolo=0
+do_fixeddeglitch=1
+iterdiag=0
+store_pixinfo=1
+dataname=COSMOS
+dataname=COSMOS2
+shortname=cosmos-redmap
+fixeddir=/data/spire/maps/cosmos-nest/20120529
+fixedname=cosmos-nest
+fixeddate=20120529
+include=cosmos.badscan
+include=cosmos2.badscan

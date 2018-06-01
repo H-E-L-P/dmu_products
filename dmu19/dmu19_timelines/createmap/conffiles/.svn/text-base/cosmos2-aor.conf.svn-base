@@ -1,0 +1,5 @@
+include=aor.conf
+dataname=COSMOS2
+shortname=cosmos2
+include=cosmos2.badscan
+

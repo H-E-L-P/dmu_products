@@ -1,0 +1,15 @@
+include=general.conf
+dataname=COSMOS2
+shortname=cosmos2
+include=cosmos2.badscan
+jackknife=third1 0 256
+jackknife=third2 256 296
+jackknife=third3 552 200
+jackknife=half1a 0 256
+jackknife=half2a 256 256
+jackknife=half1b 512 160
+jackknife=half2b 672 160
+jackknife=ang1a 0 256 32 16
+jackknife=ang2a 16 256 32 16
+jackknife=ang1b 512 160 40 20
+jackknife=ang2b 532 160 40 20

@@ -1,0 +1,5 @@
+include=aor.conf
+dataname=GOODS-N
+shortname=goodsn
+include=goodsn.badscan
+nolatlon=1

@@ -1,0 +1,7 @@
+include=general.conf
+dataname=S1_video-1
+shortname=s1-video
+include=s1-video.badscan
+jackknife=half1 0 84
+jackknife=half2 84 84
+

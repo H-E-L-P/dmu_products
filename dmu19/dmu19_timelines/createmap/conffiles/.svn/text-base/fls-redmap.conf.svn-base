@@ -1,0 +1,7 @@
+include=redmap.conf
+dataname=FLS
+shortname=fls-redmap
+include=fls.badscan
+fixeddir=/data/spire/maps/fls/20111129
+fixedname=fls
+fixeddate=20111129

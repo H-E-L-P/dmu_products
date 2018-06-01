@@ -1,0 +1,8 @@
+include=general.conf
+dataname=MS1358p62
+shortname=ms1358
+nolatlon=1
+jackknife=half1 0 48
+jackknife=half2 48 48
+jackknife=ang1 0 48 2 1
+jackknife=ang2 1 48 2 1

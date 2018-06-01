@@ -1,0 +1,6 @@
+include=general.conf
+dataname=EGS_MayNov
+shortname=egs-maynov
+include=egs-maynov.badscan
+jackknife=half1 0 83
+jackknife=half2 83 83

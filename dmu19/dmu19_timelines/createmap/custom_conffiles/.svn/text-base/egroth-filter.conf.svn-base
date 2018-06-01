@@ -1,0 +1,15 @@
+include=filter.conf
+dataname=EGroth
+dataname=EGS-SCUBA
+shortname=egroth-filter
+fixeddir=/data/spire/maps/egs-nest/20110719
+fixedname=egs-nest
+fixeddate=20110719
+include=egroth.badscan
+include=egs-scuba.badscan
+crvalx=214.79197
+crvaly=52.845670
+nxpix=1588 1143 794
+nypix=1792 1290 896
+crpixx=794.0 571.5 397.0
+crpixy=896.0 645.0 448.0

@@ -1,0 +1,8 @@
+include=general.conf
+dataname=Global_Epicentre-1
+shortname=global-epicentre1
+include=global-epicentre1.badscan
+jackknife=half1 0 46
+jackknife=half2 46 46
+jackknife=ang1 0 60 23 15
+jackknife=ang2 15 32 23 8

@@ -1,0 +1,4 @@
+include=aor.conf
+dataname=ELAIS-N2-SWIRE
+shortname=elais-n2
+include=elais-n2.badscan

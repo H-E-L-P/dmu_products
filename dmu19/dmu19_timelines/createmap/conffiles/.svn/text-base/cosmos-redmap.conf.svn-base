@@ -1,0 +1,10 @@
+include=redmap.conf
+dataname=COSMOS
+dataname=COSMOS2
+shortname=cosmos-redmap
+fixeddir=/data/spire/maps/cosmos-nest/20120529
+fixedname=cosmos-nest
+fixeddate=20120529
+include=cosmos.badscan
+include=cosmos2.badscan
+store_pixinfo=1

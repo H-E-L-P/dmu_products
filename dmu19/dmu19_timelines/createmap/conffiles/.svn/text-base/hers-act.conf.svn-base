@@ -1,0 +1,38 @@
+include=general.conf
+datadirbase=/data/hersdaq/reprocessed
+dataversion=ntL1a
+dataname=hers
+shortname=hers-act
+include=hers.badscan
+fixeddir=/data/gmarsden/hersspire/maps/hers/20120927
+fixedname=hers
+fixeddate=20120927
+# hack together jackknife definition
+#jackknife=ang1 0 13
+#jackknife=ang1 55 13
+#jackknife=ang1 90 13
+#jackknife=ang1 123 26
+#jackknife=ang1 191 13
+#jackknife=ang1 226 13
+#jackknife=ang1 259 13
+#jackknife=ang1 294 26
+#jackknife=ang1 340 13
+#jackknife=ang2 13 42
+#jackknife=ang2 68 22
+#jackknife=ang2 103 20
+#jackknife=ang2 149 42
+#jackknife=ang2 204 22
+#jackknife=ang2 239 20
+#jackknife=ang2 272 22
+#jackknife=ang2 320 20
+do_jkbolo=0
+store_pixinfo
+do_oneband
+projtype=CEA
+pixsize=7.425 9.900 14.850 # ACT pixels (0.00825 deg) / 4-3-2
+crvalx=0.0
+crvaly=0.0
+nxpix=10988 8241 5494
+nypix=2192 1644 1096
+crpixx=17546.5 13160 8773.5
+crpixy=1086.5 815 543.5

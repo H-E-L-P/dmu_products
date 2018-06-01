@@ -1,0 +1,20 @@
+datadirbase=/data/spiredaq/reprocessed
+dataversion=ntL1i
+shortname=fineScanMaps
+iterdiag=2
+pixsize=1.2 1.66667 2.4
+do_tdc
+todmean=1
+first_clip=5
+grow_clip=5
+clipsigma=10.0
+allowedobsids=1342186522,1342186523,1342186524,1342186525
+noastrom=1
+lin_basetime=1635479014.0
+lin_ra_slope=-3.9069241e-08
+lin_dec_slope=-1.4425887e-08
+# Deglitcher is not trustworthy on Neptune
+nomask=maskGlitch*
+# Truncation masking is causing issues
+nomask=maskTruncated
+nomask=maskUncorrectedTruncation

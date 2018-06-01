@@ -1,0 +1,13 @@
+To add a new parameter to the config file system, it has to appear in 
+the following places:
+
+1. in the info structure definition at the top of createmap_read_conf.pro
+2. in the CASE statement further down in that function
+3. in the tests for value set in create_itermap_from_conf.pro
+4. in the call to CREATE_ITERMAP further down in that function
+5. in the parameter list to CREATE_ITERMAP, as well as whatever effect
+   the parameter will have there
+6. add description to conffiles/template.conf
+
+If you are storing data in pointers, you will have to add the destruct 
+function to CREATEMAP_FREE_CONF in createmap_read_conf.pro.

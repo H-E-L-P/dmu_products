@@ -1,0 +1,6 @@
+include=spt_general.conf
+dataname=spt02
+shortname=spt90
+jackknife=half1 0 34
+jackknife=half2 35 69
+

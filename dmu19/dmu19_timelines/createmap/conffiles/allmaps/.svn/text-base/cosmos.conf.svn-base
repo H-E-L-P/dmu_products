@@ -1,0 +1,9 @@
+include=general.conf
+dataname=COSMOS
+shortname=cosmos
+badscan=PMW 1342195860 a103001c
+badscan=PMWA13 1342195858 a103001f
+jackknife=half1 0 128
+jackknife=half2 128 128
+jackknife=ang1 0 128 32 16
+jackknife=ang2 16 128 32 16

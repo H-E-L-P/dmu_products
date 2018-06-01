@@ -1,0 +1,15 @@
+include=redmap.conf
+dataname=Lockman-East
+dataname=LockmanNorth
+dataname=Global_Epicentre-1
+dataname=Lockman-SWIRE3
+dataname=LockmanSw
+shortname=lockman-swire-redmap
+include=lockman-swire.badscan
+include=lockman-east.badscan
+include=global-epicentre1.badscan
+include=lockman-north.badscan
+include=lockman-swire3.badscan
+fixeddir=/data/spire/maps/lockman-nest/20111207
+fixedname=lockman-nest
+fixeddate=20111207

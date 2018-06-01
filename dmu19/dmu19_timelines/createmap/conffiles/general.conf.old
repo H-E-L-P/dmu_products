@@ -1,0 +1,16 @@
+datadirbase=/data/spiredaq/reprocessed
+dataversion=ntL1g
+do_tdc
+<<<<<<< .mine
+niter=10
+iterdiag=3
+first_wt=6
+first_clip=0
+
+=======
+todmean=1
+do_jkbolo
+first_clip=5
+grow_clip=5
+clipsigma=10.0
+>>>>>>> .r916

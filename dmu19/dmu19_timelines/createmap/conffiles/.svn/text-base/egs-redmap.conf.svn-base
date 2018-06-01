@@ -1,0 +1,10 @@
+include=redmap.conf
+dataname=EGroth
+dataname=EGS-SCUBA
+shortname=egs-redmap
+include=egroth.badscan
+include=egs-scuba.badscan
+fixeddir=/data/spire/maps/egs-nest/20111129
+fixedname=egs-nest
+fixeddate=20111129
+

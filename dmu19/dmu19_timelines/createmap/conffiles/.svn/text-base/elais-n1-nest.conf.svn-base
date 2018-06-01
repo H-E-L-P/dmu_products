@@ -1,0 +1,8 @@
+include=nest.conf
+dataname=ELAIS-N1-SCUBA
+dataname=en1_new_ivan
+shortname=elais-n1-nest
+include=elais-n1.badscan
+include=elais-n1-new-ivan.badscan
+jackknife=elais-n1 0 200
+jackknife=en1-new-ivan 200 153

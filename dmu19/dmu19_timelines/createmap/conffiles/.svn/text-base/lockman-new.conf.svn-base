@@ -1,0 +1,6 @@
+include=general.conf
+dataname=Lockman
+shortname=lockman-new
+include=lockman-new.badscan
+jackknife=half1 0 168
+jackknife=half2 168 168

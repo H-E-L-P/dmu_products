@@ -1,0 +1,7 @@
+include=general.conf
+dataname=EGS-SCUBA
+shortname=egs-scuba
+include=egs-scuba.conf
+# ignore final 19 scans
+jackknife=ang1 0 65
+jackknife=ang2 65 19

@@ -1,0 +1,7 @@
+include=filter.conf
+dataname=GOODS-N
+shortname=goodsn-filter
+fixeddir=/data/spire/maps/goodsn/20110816
+fixedname=goodsn
+fixeddate=20110816
+include=goodsn.badscan

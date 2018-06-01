@@ -1,0 +1,7 @@
+include=general.conf
+dataname=Abell2218
+shortname=abell2218
+jackknife=half1 0 200
+jackknife=half2 200 200
+jackknife=ang1 0 200 4 2
+jackknife=ang2 2 200 4 2
