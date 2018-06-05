@@ -103,6 +103,9 @@ pdh21       1728249   5508697.155      9271.880   5517969.040        2589627.605
 ``` 
 
 ### Final data products
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_ELAIS-N1_final_processing.ipynb](XID+SPIRE_ELAIS-N1_final_processing.ipynb).
+  This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
+  We also add notebooks based on this flux level and the `Pval_res statistic`.
 
   The resulting marginalised flux probability distributions for each source, are
   described by the 50th, 84th and 16th percentiles. For those wanting to assume
