@@ -20,11 +20,11 @@ dmu23/dmu23_NGP/data/NGP-specz-v2.0.csv
 
 | Telescope / Instrument | Filter         | Available | Used |
 |------------------------|----------------|-----------|------|
-| Pan-STARRS1/Pan-STARRS1| gpc1_g         | Yes    | No   |
-| Pan-STARRS1/Pan-STARRS1| gpc1_r         | Yes    | No   |
-| Pan-STARRS1/Pan-STARRS1| gpc1_i         | Yes    | No   |
-| Pan-STARRS1/Pan-STARRS1| gpc1_z         | Yes    | No   |
-| Pan-STARRS1/Pan-STARRS1| gpc1_y         | Yes    | No   |
+| Pan-STARRS1/Pan-STARRS1| gpc1_g         | Yes    | Yes   |
+| Pan-STARRS1/Pan-STARRS1| gpc1_r         | Yes    | Yes   |
+| Pan-STARRS1/Pan-STARRS1| gpc1_i         | Yes    | Yes   |
+| Pan-STARRS1/Pan-STARRS1| gpc1_z         | Yes    | Yes   |
+| Pan-STARRS1/Pan-STARRS1| gpc1_y         | Yes    | Yes   |
 | UKIRT/WFCAM           | ukidss_y       | Yes    | No    | 
 | UKIRT/WFCAM           | ukidss_j       | Yes    | Yes   | 
 | UKIRT/WFCAM           | ukidss_h       | Yes    | Yes   | 
