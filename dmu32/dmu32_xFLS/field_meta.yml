@@ -1,0 +1,15 @@
+field: xFLS
+
+surveys: DataFusion-Spitzer, INT-WFC, KPNO-FLS, PanSTARRS-3SS, LegacySurvey, UHS
+
+masterlist: dmu_products/dmu1/dmu1_ml_xFLS/data/master_catalogue_xfls_20180501.fits
+
+flags: dmu_products/dmu6/dmu6_v_xFLS/data/xfls_20180501_flags.fits
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_xFLS/data/xFLS_20180501_cigale.fits

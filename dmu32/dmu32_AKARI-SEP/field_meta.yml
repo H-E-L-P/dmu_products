@@ -1,0 +1,15 @@
+field: AKARI-SEP
+
+surveys: SIMES, VISTA-VHS, DES
+
+masterlist: dmu_products/dmu1/dmu1_ml_AKARI-SEP/data/master_catalogue_akari-sep_20180221.fits
+
+flags: dmu_products/dmu6/dmu6_v_AKARI-SEP/data/akari-sep_20180221_flags.fits
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_AKARI-SEP/data/AKARI-SEP_20180221_cigale.fits

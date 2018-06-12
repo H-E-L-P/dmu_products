@@ -1,0 +1,15 @@
+field: Bootes
+
+surveys: DECaLS, DataFusion-Spitzer, IBIS, LegacySurvey, NDWFS, PanSTARRS-3SS, SDWFS, UHS, zBootes, BootesBrown
+
+masterlist: dmu_products/dmu1/dmu1_ml_Bootes/data/master_catalogue_bootes_20180520.fits
+
+flags: dmu_products/dmu6/dmu6_v_Bootes/data/bootes_20180520_flags.fits
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_Bootes/data/Bootes_20180520_cigale.fits

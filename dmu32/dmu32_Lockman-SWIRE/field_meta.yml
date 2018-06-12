@@ -1,0 +1,15 @@
+field: Lockman-SWIRE
+
+surveys: INT-WFC, RCSLenS, PanSTARRS-3SS, SpARCS, UKIDSS-DXS, SWIRE, SERVS, UHS
+
+masterlist: dmu_products/dmu1/dmu1_ml_Lockman-SWIRE/data/master_catalogue_lockman-swire_20180219.fits
+
+flags: dmu_products/dmu6/dmu6_v_Lockman-SWIRE/data/lockman-swire_20180219_flags.fits
+
+xid: dmu_producst/dmu26/dmu26_XID+MIPS_Lockman-SWIRE/data/dmu26_XID+MIPS_Lockman-SWIRE_cat_20171214.fits, dmu_products/dmu26/dmu26_XID+PACS_Lockman-SWIRE/data/dmu26_XID+PACS_Lockman-SWIRE_cat_20180220.fits, dmu_products/dmu26/dmu26_XID+SPIRE_Lockman-SWIRE/data/dmu26_XID+SPIRE_Lockman-SWIRE_20180220.fits
+
+photoz: dmu_products/dmu24/dmu24_Lockman-SWIRE/data/master_catalogue_Lockman-SWIRE_20170710_photoz_20170802_r_and_irac1_optimised_UPDATED_IDs_20180219.fits
+
+cigale: dmu_products/dmu28/dmu28_Lockman-SWIRE/data/best_extcor/HELP_final_results.fits
+
+final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits

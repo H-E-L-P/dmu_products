@@ -1,0 +1,15 @@
+field: HDF-N
+
+surveys: CANDELS-3D-HST, GOODS-ACS, Hawaii-HDFN, Ultradeep-Ks-GOODS-N, PanSTARRS1-3SS, CANDELS-GOODS-N
+
+masterlist: dmu_products/dmu1/dmu1_ml_HDF-N/data/master_catalogue_hdf-n_20180427.fits
+
+flags: dmu_products/dmu6/dmu6_v_HDF-N/data/hdf-n_20180427_flags.fits
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_HDF-N/data/HDF-N_20180427_cigale.fits

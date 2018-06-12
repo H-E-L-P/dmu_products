@@ -1,0 +1,15 @@
+field: SSDF
+
+surveys: SSDF, VISTA-VHS, DES
+
+masterlist: dmu_products/dmu1/dmu1_ml_SSDF/data/master_catalogue_ssdf_20180221.fits
+
+flags: None
+
+xid: None
+
+photoz: dmu_products/dmu24/dmu24_SSDF/data/master_catalogue_ssdf_20180221_photoz_20180612_r_optimised.fits
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_SSDF/data/SSDF_20180221_cigale.fits
