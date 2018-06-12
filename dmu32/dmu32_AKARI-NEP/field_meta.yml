@@ -4,7 +4,7 @@ surveys: AKARI-NEP-OptNIR, PanSTARRS-3SS, NEP-Spitzer
 
 masterlist: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
 
-flags: dmu_products/dmu6/dmu6_v_AKARI-NEP/data/
+flags: dmu_products/dmu6/dmu6_v_AKARI-NEP/data/akari-nep_20180215_flags.fits
 
 xid: None
 
