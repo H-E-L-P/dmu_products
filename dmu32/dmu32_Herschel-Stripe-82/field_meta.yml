@@ -1,8 +1,12 @@
 field: Herschel-Stripe-82
 
-surveys: HSC-SSP, VISTA-VHS, VICS82, UKIDSS-LAS, PanSTARRS-3SS, SHELA, SpIES, DECaLS, DES, RCSLenS, SDSS-S82, SDSS-S81-IAC
+region: dmu_products/dmu2/dmu2_field_coverages/Herschel-Stripe-82_MOC.fits
+
+surveys: [ HSC-SSP, VISTA-VHS, VICS82, UKIDSS-LAS, PanSTARRS-3SS, SHELA, SpIES, DECaLS, DES, RCSLenS, SDSS-S82, SDSS-S81-IAC ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_Herschel-Stripe-82/data/master_catalogue_herschel-stripe-82_20180307.fits
+
+depths: dmu_products/dmu1/dmu1_ml_Herschel-Stripe-82/data/depths_herschel-stripe-82_20180307.fits
 
 flags: dmu6/dmu6_v_Herschel-Stripe-82/data/tiles/herschel-stripe-82_20180307_FILENUM_flags.fits
 

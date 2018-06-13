@@ -1,8 +1,12 @@
 field: NGP
 
-surveys: DECaLS, PanSTARRS-3SS, UKIDSS-LAS, LegacySurvey
+region: dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.fits
+
+surveys: [ DECaLS, PanSTARRS-3SS, UKIDSS-LAS, LegacySurvey ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_NGP/data/master_catalogue_ngp_20180219.fits
+
+depths: dmu_products/dmu1/dmu1_ml_NGP/data/depths_ngp_20180219.fits
 
 flags: dmu_products/dmu6/dmu6_v_NGP/data/ngp_20180219_flags.fits
 

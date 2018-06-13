@@ -1,8 +1,12 @@
 field: ELAIS-N2
 
-surveys: INT-WFC, RCSLenS, PanSTARRS-3SS, SpARCS, SWIRE,
+region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N2_MOC.fits
+
+surveys: [ INT-WFC, RCSLenS, PanSTARRS-3SS, SpARCS, SWIRE ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/master_catalogue_elais-n2_20180218.fits
+
+depths: dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/depths_elais-n2_20180218.fits
 
 flags: dmu_products/dmu6/dmu6_v_ELAIS-N2/data/elais-n2_20180218_flags.fits
 

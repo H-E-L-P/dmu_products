@@ -1,8 +1,12 @@
 field: xFLS
 
-surveys: DataFusion-Spitzer, INT-WFC, KPNO-FLS, PanSTARRS-3SS, LegacySurvey, UHS
+region: dmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits
+
+surveys: [ DataFusion-Spitzer, INT-WFC, KPNO-FLS, PanSTARRS-3SS, LegacySurvey, UHS ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_xFLS/data/master_catalogue_xfls_20180501.fits
+
+depths: dmu_products/dmu1/dmu1_ml_xFLS/data/depths_xfls_20180501.fits
 
 flags: dmu_products/dmu6/dmu6_v_xFLS/data/xfls_20180501_flags.fits
 

@@ -1,8 +1,12 @@
 field: Bootes
 
-surveys: DECaLS, DataFusion-Spitzer, IBIS, LegacySurvey, NDWFS, PanSTARRS-3SS, SDWFS, UHS, zBootes, BootesBrown
+region: dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits
+
+surveys: [ DECaLS, DataFusion-Spitzer, IBIS, LegacySurvey, NDWFS, PanSTARRS-3SS, SDWFS, UHS, zBootes, BootesBrown ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_Bootes/data/master_catalogue_bootes_20180520.fits
+
+depths: dmu_products/dmu1/dmu1_ml_Bootes/data/depths_bootes_20180520.fits
 
 flags: dmu_products/dmu6/dmu6_v_Bootes/data/bootes_20180520_flags.fits
 

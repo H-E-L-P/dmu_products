@@ -1,8 +1,12 @@
 field: COSMOS
 
-surveys: CANDELS-3D-HST, CFHTLS, DECaLS, HSC-DEEP, HSC-UDEEP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, CFHT-WIRDS, COSMOS2015
+region: dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.fits
+
+surveys: [ CANDELS-3D-HST, CFHTLS, DECaLS, HSC-DEEP, HSC-UDEEP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, CFHT-WIRDS, COSMOS2015 ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_COSMOS/data/master_catalogue_cosmos_20180516.fits
+
+depths: dmu_products/dmu1/dmu1_ml_COSMOS/data/depths_cosmos_20180516.fits
 
 flags: dmu_products/dmu6/dmu6_v_COSMOS/data/cosmos_20180516_flags.fits
 

@@ -1,8 +1,12 @@
 field: ELAIS-S1
 
-surveys: VISTA-VIDEO, VISTA-VHS, ESIS-VOICE, SWIRE, SERVS, DES
+region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-S1_MOC.fits
+
+surveys: [ VISTA-VIDEO, VISTA-VHS, ESIS-VOICE, SWIRE, SERVS, DES ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_ELAIS-S1/data/master_catalogue_elais-s1_20180416.fits
+
+depths: dmu_products/dmu1/dmu1_ml_ELAIS-S1/data/depths_elais-s1_20180416.fits
 
 flags: dmu_products/dmu6/dmu6_v_ELAIS-S1/data/elais-s1_20180416_flags.fits
 

@@ -1,8 +1,12 @@
 field: GAMA-15
 
-surveys: DECaLS, HSC-SSP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, VISTA-VIKING
+region: dmu_products/dmu2/dmu2_field_coverages/GAMA-15_MOC.fits
+
+surveys: [ DECaLS, HSC-SSP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, VISTA-VIKING ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_GAMA-15/data/master_catalogue_gama-15_20180213.fits
+
+depths: dmu_products/dmu1/dmu1_ml_GAMA-15/data/depths_gama-15_20180213.fits
 
 flags: dmu_products/dmu6/dmu6_v_GAMA-15/data/gama-15_20180213_flags.fits
 

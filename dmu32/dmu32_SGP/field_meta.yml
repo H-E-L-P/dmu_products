@@ -1,8 +1,12 @@
 field: SGP
 
-surveys: ATLAS, KIDS, PanSTARRS-3SS, VISTA-VIKING, DES
+region: dmu_products/dmu2/dmu2_field_coverages/SGP_MOC.fits
+
+surveys: [ ATLAS, KIDS, PanSTARRS-3SS, VISTA-VIKING, DES ]
 
 masterlist: dmu_products/dmu1/dmu1_ml_SGP/data/master_catalogue_sgp_20180221.fits
+
+depths: dmu_products/dmu1/dmu1_ml_SGP/data/depths_sgp_20180221.fits
 
 flags: dmu_products/dmu6/dmu6_v_SGP/data/tiles/sgp_20180221_FILENUM_flags.fits.fits
 
