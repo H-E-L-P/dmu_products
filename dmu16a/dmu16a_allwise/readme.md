@@ -140,3 +140,8 @@ And the errors with: FErr_WISE_Wx = ln(10) / 2.5 × F_WISE_x × errmag
 | ph_qual           | Photometry quality flag. Copied from the AllWise catalog. See AllWise explanatory supplement for details          |
 | cntr              | Unique identification number for this object in the AllWISE Catalog/Reject Tab. Copied from the AllWise catalog.  |
 | tmass_key         | 2MASS PSC association. Copied from the AllWise catalog. See AllWise explanatory supplement for details            |
+
+# Filtering (added 17th June 2018, Seb Oliver)
+
+subsets of the Allwise catalogue are created for stacking purposes
+using the code make_wise_samples_for_stacking.csh 
