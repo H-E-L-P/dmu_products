@@ -1,0 +1,19 @@
+field: EGS
+
+region: dmu_products/dmu2/dmu2_field_coverages/EGS_MOC.fits
+
+surveys: [ PanSTARRS1-3SS, LegacySurvey, UHS, AEGIS, CANDELS-3D-HST, CFHT-WIRDS, CFHTLS-WIDE, CFHTLS-DEEP, CFHTLenS, CANDELS-EGS, DEEP2, IRAC-EGS, HSC ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_EGS/data/master_catalogue_egs_20180406.fits
+
+depths: dmu_products/dmu1/dmu1_ml_EGS/data/depths_egs_20180406.fits
+
+flags: dmu_products/dmu6/dmu6_v_EGS/data/egs_20180501_flags.fits
+
+xid: None
+
+photoz: dmu_products/dmu24/dmu24_EGS/data/master_catalogue_egs_20180501_photoz_20180608.fits
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_EGS/data/EGS_20180406_cigale.fits

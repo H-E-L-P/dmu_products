@@ -1,0 +1,19 @@
+field: CDFS-SWIRE
+
+region: dmu_products/dmu2/dmu2_field_coverages/CDFS-SWIRE_MOC.fits
+
+surveys: [ CANDELS-GOODS-S, VISTA-VIDEO, SERVS, SWIRE, PanSTARRS-3SS, COMBO, Fireworks, ATLAS, VISTA-VHS, DES ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_CDFS-SWIRE/data/master_catalogue_cdfs-swire_20180221.fits
+
+depths: dmu_products/dmu1/dmu1_ml_CDFS-SWIRE/data/depths_cdfs-swire_20180221.fits
+
+flags: dmu_products/dmu6/dmu6_v_CDFS-SWIRE/data/cdfs-swire_20180221_flags.fits
+
+xid: dmu_products/dmu26/dmu26_XID+SPIRE_CDFS-SWIRE/data/dmu26_XID+SPIRE_CDFS-SWIRE_cat_20170919.fits, dmu_products/dmu26/dmu26_XID+MIPS_CDFS-SWIRE/data/dmu26_XID+MIPS_CDFS-SWIRE_cat_20170901.fits, dmu_products/dmu26/dmu26_XID+PACS_CDFS-SWIRE/data/dmu26_XID+PACS_CDFS-SWIRE_cat_20171019.fits
+
+photoz: dmu_products/dmu24/dmu24_CDFS-SWIRE/data/master_catalogue_cdfs-swire_20171103_photoz_20180210.fits
+
+cigale: dmu_products/dmu28/dmu28_CDFS-SWIRE/data/zphot/HELP_final_results.fits
+
+final: dmu_products/dmu32/dmu32_CDFS-SWIRE/data/CDFS-SWIRE_20180221.fits

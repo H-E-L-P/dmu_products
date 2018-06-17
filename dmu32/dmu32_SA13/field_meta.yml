@@ -1,0 +1,19 @@
+field: SA13
+
+region: dmu_products/dmu2/dmu2_field_coverages/SA13_MOC.fits
+
+surveys: [ LegacySurvey, UHS ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_SA13/data/master_catalogue_sa13_20180501.fits
+
+depths: dmu_products/dmu1/dmu1_ml_SA13/data/depths_sa13_20180501.fits
+
+flags: None
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_SA13/data/SA13_20180501_cigale.fits

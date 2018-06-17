@@ -1,0 +1,19 @@
+field: ELAIS-N1
+
+region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N1_MOC.fits
+
+surveys: [ INT-WFC, UKIDSS-DXS, HSC-SSP, PanSTARRS-3SS, SpARCS, SERVS, SWIRE, KPNO-FLS, UHS, LegacySurvey ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_ELAIS-N1/data/master_catalogue_elais-n1_20171016.fits
+
+depths: dmu_products/dmu1/dmu1_ml_ELAIS-N1/data/depths_elais-n1_20171016.fits
+
+flags: dmu_products/dmu6/dmu6_v_ELAIS-N1/data/elais-n1_20171016_flags.fits
+
+xid: [ dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-N1/data/dmu26_XID+MIPS_ELAIS-N1_SERVS_cat_20170725.fits, dmu_products/dmu26/dmu26_XID+PACS_ELAIS-N1/data/dmu26_XID+PACS_ELAIS-N1_SWIRE_cat_20170808.fits, dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N1/data/dmu26_XID+SPIRE_ELAIS-N1_SERVS_cat_20170725.fits ]
+
+photoz: dmu_products/dmu24/dmu24_ELAIS-N1/data/master_catalogue_elais-n1_20170706_photoz_20170725_irac1_optimised.fits
+
+cigale: dmu_products/dmu28/dmu28_ELAIS-N1/data/zphot/HELP_final_results.fits
+
+final: dmu_products/dmu32/dmu32_ELAIS-N1/data/ELAIS-N1_20171016.fits

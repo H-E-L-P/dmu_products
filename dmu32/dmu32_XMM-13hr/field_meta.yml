@@ -1,0 +1,19 @@
+field: XMM-13hr
+
+region: dmu_products/dmu2/dmu2_field_coverages/XMM-13hr_MOC.fits
+
+surveys: [ LegacySurvey, UHS ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_XMM-13hr/data/master_catalogue_xmm-13hr_20180501.fits
+
+depths: dmu_products/dmu1/dmu1_ml_XMM-13hr/data/depths_xmm-13hr_20180501.fits
+
+flags: None
+
+xid: None
+
+photoz: None
+
+cigale: None
+
+final: dmu_products/dmu32/dmu32_XMM-13hr/data/XMM-13hr_20180501_cigale.fits

@@ -1,0 +1,19 @@
+field: GAMA-09
+
+region: dmu_products/dmu2/dmu2_field_coverages/GAMA-09_MOC.fits
+
+surveys: [ CFHTLS, CFHTLenS, DECaLS, HSC-SSP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, VISTA-VHS, VISTA-VIKING ]
+
+masterlist: dmu_products/dmu1/dmu1_ml_GAMA-09/data/master_catalogue_gama-09_20180601.fits
+
+depths: dmu_products/dmu1/dmu1_ml_GAMA-09/data/depths_gama-09_20180601.fits
+
+flags: dmu_products/dmu6/dmu6_v_GAMA-09/data/gama-09_20171206_flags.fits
+
+xid: dmu_producst/dmu26/dmu26_XID+SPIRE_GAMA-09/data/dmu26_XID+SPIRE_GAMA-09_20180508.fits
+
+photoz: dmu_products/dmu24/dmu24_GAMA-09/data/master_catalogue_gama-09_20171206_photoz_20180213_r_optimised.fits
+
+cigale: dmu_products/dmu28/dmu28_GAMA-09/data/zphot/HELP_final_results.fits
+
+final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits
