@@ -19,18 +19,18 @@ ELAIS-N1 was split into two regions, defined by the IRAC coverage. The deep regi
 
 ### Running on Apollo
 To run on Apollo, first run the notebook [XID+PACS_prior_SERVS.ipynb](./XID+PACS_prior_SERVS.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles:
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
 ```bash
 mkdir output
 mv XID_plus_hier.sh
 cd output
 module load sge
-qsub -t 1-n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
+qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
 ```
-Then fit all tiles. Each tile requires 4 cores, 13G memory and estimated to run for 4 hours:
+Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13G memory and estimated to run for 4 hours:
 ```bash
 cd ..
-qsub -t 1-n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
@@ -64,18 +64,18 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
 
 ### Running on Apollo
 To run on Apollo, first run the notebook [XID+PACS_prior_SWIRE.ipynb](./XID+PACS_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles:
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
 ```bash
 mkdir output
 mv XID_plus_hier.sh
 cd output
 module load sge
-qsub -t 1-n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
+qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
 ```
-Then fit all tiles. Each tile requires 4 cores, 13G memory and estimated to run for 4 hours:
+Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13G memory and estimated to run for 4 hours:
 ```bash
 cd ..
-qsub -t 1-n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
@@ -87,7 +87,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load starlink/hikianalia-64bit
 stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
 ```
@@ -95,7 +95,7 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
 #### Computation 
  Details on computational cost of fitting ELAIS-N1:
 
-````bash
+```bash
  OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 ======================================================================================================================
 pdh21      17055281  59784320.915     69961.341  59854282.790       37406648.330           1784.232              0.000
@@ -103,6 +103,9 @@ pdh21      17055281  59784320.915     69961.341  59854282.790       37406648.330
 
 
 ### Final data products
+  Final stage requires examination and validation of catalogues using [XID+PACS_ELAIS-N1_final_processing.ipynb](XID+PACS_ELAIS-N1_final_processing.ipynb).
+  This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
+  We also add notebooks based on this flux level and the `Pval_res statistic`.
 
   The resulting marginalised flux probability distributions for each source, are
   described by the 50th, 84th and 16th percentiles. For those wanting to assume
