@@ -1,0 +1,17 @@
+Product: dmu26_XID+PACS_Lockman-SWIRE
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: Lockman-SWIRE
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: Lockman-SWIRE_PACS100_20160921_img_gls.fits, Lockman-SWIRE_PACS100_20160921_img_noise.fits,
+ Lockman-SWIRE_PACS160_20160921_img_gls.fits, Lockman-SWIRE_PACS160_20160921_img_noise.fits,
+  dmu18_PACS_100_PSF_Lockman-SWIRE_20171214.fits, dmu18_PACS_160_PSF_Lockman-SWIRE_20171214.fits, dmu26_XID+MIPS_Lockman-SWIRE_cat_20171214.fits
