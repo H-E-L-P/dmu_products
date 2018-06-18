@@ -4,11 +4,11 @@ This repository contains all the HELP photometric redshifts (photo-zs) across th
 
 Each field will contain:
 
-- Notebook 1_Photo-z_QC_and_Diagnostics.ipynb which presents an overview of the photometric redshifts for the field, including information of the input catalogue used, steps applied in the photo-z estimation and the filters used. A series of diagnostic plots are also included to enable assessment of the photo-z quality.
+- Notebook 1_Photo-z_QC_and_Diagnostics.ipynb : which presents an overview of the photometric redshifts for the field, including information of the input catalogue used, steps applied in the photo-z estimation and the filters used. A series of diagnostic plots are also included to enable assessment of the photo-z quality.
 
-- Notebook 2_Photo-z_Selection_Function.ipynb which describes the creation of selection function maps to describe the likelihood of a source having a photo-z in a given HEALpix cell as a function of a specified magnitude.
+- Notebook 2_Photo-z_Selection_Function.ipynb : which describes the creation of selection function maps to describe the likelihood of a source having a photo-z in a given HEALpix cell as a function of a specified magnitude.
 
-All of the DMU 24 Data can be found on [HeDAM](http://hedam.lam.fr/HELP/data/dmu_products/dmu24/) following the folder structure outlined in this repository.
+All of the DMU 24 Data can be found on [HeDAM](http://hedam.lam.fr/HELP/data/dmu_products/dmu24/) following the folder structure outlined in this repository. In [Column Descriptions](https://github.com/H-E-L-P/dmu_products/tree/master/dmu24/dmu24_columns.csv) we list the name, description and Universal Content Descriptor (UCD) for all columns in the DMU 24 Photo-z catalogs.
 
 ## HELP Photometric Redshift Methodology
 
@@ -17,6 +17,8 @@ The photo-z method employed to produce the HELP products are based on the templa
 An overview of the photo-z method as applied to the HELP datasets in outlined in [METHOD NOTEBOOK](Method). This notebook serves both as a reference for the HELP data products and a tutorial for reproducing the results and/or applying the method to new datasets.
 
 All zeropoint offset files used during the photo-z estimation are stored in the [dmu24_zeropoints](https://github.com/H-E-L-P/dmu_products/tree/master/dmu24/dmu24_zeropoints) folder structure for reference.
+
+
 
 ## Fields
 

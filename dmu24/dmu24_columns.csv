@@ -1,0 +1,36 @@
+name, desc, ucd
+help_id, HELP ID, meta.id
+RA, Right Ascension of source (deg), pos.eq.ra
+DEC, Declination of source (deg), pos.eq.dec
+z1_median, Median of the primary redshift peak above 80% HPD credible interval, src.redshift.phot
+z1_min, Minimum redshift of the primary redshift peak above 80% HPD credible interval, src.redshift.phot;stat.min
+z1_max, Maximum redshift of the primary redshift peak above 80% HPD credible interval, src.redshift.phot;stat.max
+z1_area, Integrated area of primary redshift peak above 80% HPD credible interval - lte 0.8 by definition, src.redshift.phot;stat.value
+z2_median, Median of the secondary redshift peak above 80% HPD credible interval, src.redshift.phot
+z2_min, Minimum redshift of the secondary redshift peak above 80% HPD credible interval,  src.redshift.phot;stat.min
+z2_max, Maximum redshift of the secondary redshift peak above 80% HPD credible interval, src.redshift.phot;stat.max
+z2_area, Integrated area of secondary redshift peak above 80% HPD credible interval - lte 0.8 by definition, src.redshift.phot;stat.value
+za_hb, Peak of the Hierarchical Bayesian redshift PDF, src.redshift.phot
+za_eazy, Peak of the eazy templates redshift PDF, src.redshift.phot
+zm_eazy, Median of the eazy templates redshift PDF, src.redshift.phot
+zpeak_eazy, "z_peak" output for the eazy templates, src.redshift.phot
+chi_r_eazy, Best-fit chi-squared for the eazy templates normalised by nfilt_eazy, stat.chi
+l68_eazy, "l68" lower estimate for the eazy templates, src.redshift.phot;stat.min
+u68_eazy, "l68" upper estimate for the eazy templates, src.redshift.phot;stat.max
+nfilt_eazy, Number of filters used in fitting with eazy templates, meta.number
+za_atlas, Peak of the Atlas templates redshift PDF, src.redshift.phot
+zm_atlas, Median of the Atlas templates redshift PDF, src.redshift.phot
+zpeak_atlas, "z_peak" output for the Atlas templates, src.redshift.phot
+chi_r_atlas, Best-fit chi-squared for the Atlas templates normalised by nfilt_atlas, stat.chi
+l68_atlas, "l68" lower estimate for the Atlas templates, src.redshift.phot;stat.min
+u68_atlas, "l68" upper estimate for the Atlas templates, src.redshift.phot;stat.max
+nfilt_atlas, Number of filters used in fitting with Atlas templates, meta.number
+za_cosmos, Peak of the xmm-cosmos templates redshift PDF, src.redshift.phot
+zm_cosmos, Median of the xmm-cosmos templates redshift PDF, src.redshift.phot
+zpeak_cosmos, "z_peak" output for the xmm-cosmos templates, src.redshift.phot
+chi_r_cosmos, Best-fit chi-squared for the xmm-cosmos templates normalised by nfilt_cosmos, stat.chi
+l68_cosmos, "l68" lower estimate for the xmm-cosmos templates, src.redshift.phot;stat.min
+u68_cosmos, "l68" upper estimate for the xmm-cosmos templates, src.redshift.phot;stat.max
+nfilt_cosmos, Number of filters used in fitting with xmm-cosmos templates, meta.number
+chi_r_stellar, Normalised best-fit chi-squared for the Pickles stellar library fit, stat.chi
+stellar_type, Stellar type of the best-fit Pickles stellar SED, src.class
