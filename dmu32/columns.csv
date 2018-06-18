@@ -1,0 +1,1406 @@
+Column,Unit,Description
+field,,Name of the field in HELP survey
+help_id,,"HELP identifier, based on J2000 position"
+ra,deg,Right Ascension (J2000)
+dec,deg,Declination (J2000)
+hp_idx,,HEALPix index of the source position at order 13 using the nested scheme.
+ebv,,Galactic extinction (Schlegel et al. 1998) at the object position
+redshift,,Photometric redshift obtained with EAZY.
+zspec,,Spectroscopic redshift collated from the literature.
+zspec_qual,,Spectroscopic redshift quality flag. FIXME code meaning.
+zspec_association_flag,,Boolean flag set to true when the association of a source to it's redshift may be problematic (possible mis-cross-association).
+pointsourceness,,Index evaluation is the source is point-source: for 0 (not point source) to 1 (point source). Generally name stellarity index.
+f_90prime_g,uJy,Total flux density in the B band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+ferr_90prime_g,uJy,Uncertainty on f_90prime_g.
+f_ap_90prime_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+ferr_ap_90prime_g,uJy,Uncertainty on f_ap_90prime_g.
+m_90prime_g,mag,Total AB magnitude in the B band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+merr_90prime_g,mag,Mean error on m_90prime_g.
+m_ap_90prime_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+merr_ap_90prime_g,mag,Mean error on m_ap_90prime_g
+flag_90prime_g,mag,Flag set to true for sources for which niether the 90prime_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_90prime_r,uJy,Total flux density in the R band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+ferr_90prime_r,uJy,Uncertainty on f_90prime_r.
+f_ap_90prime_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+ferr_ap_90prime_r,uJy,Uncertainty on f_ap_90prime_r.
+m_90prime_r,mag,Total AB magnitude in the R band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+merr_90prime_r,mag,Mean error on m_90prime_r.
+m_ap_90prime_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+merr_ap_90prime_r,mag,Mean error on m_ap_90prime_r
+flag_90prime_r,mag,Flag set to true for sources for which niether the 90prime_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_90prime_z,uJy,Total flux density in the I band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+ferr_90prime_z,uJy,Uncertainty on f_90prime_z.
+f_ap_90prime_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+ferr_ap_90prime_z,uJy,Uncertainty on f_ap_90prime_z.
+m_90prime_z,mag,Total AB magnitude in the I band of The 90-inch prime focus camera (90prime) on The Bok Telescope.
+merr_90prime_z,mag,Mean error on m_90prime_z.
+m_ap_90prime_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The 90-inch prime focus camera (90prime) on The Bok Telescope."
+merr_ap_90prime_z,mag,Mean error on m_ap_90prime_z
+flag_90prime_z,mag,Flag set to true for sources for which niether the 90prime_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_acs_f435w,uJy,Total flux density in the B band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+ferr_acs_f435w,uJy,Uncertainty on f_acs_f435w.
+f_ap_acs_f435w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+ferr_ap_acs_f435w,uJy,Uncertainty on f_ap_acs_f435w.
+m_acs_f435w,mag,Total AB magnitude in the B band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+merr_acs_f435w,mag,Mean error on m_acs_f435w.
+m_ap_acs_f435w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+merr_ap_acs_f435w,mag,Mean error on m_ap_acs_f435w
+flag_acs_f435w,mag,Flag set to true for sources for which niether the acs_f435w aperture nor total flux should not be used for SED fitting (see documentation).
+f_acs_f606w,uJy,Total flux density in the R band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+ferr_acs_f606w,uJy,Uncertainty on f_acs_f606w.
+f_ap_acs_f606w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+ferr_ap_acs_f606w,uJy,Uncertainty on f_ap_acs_f606w.
+m_acs_f606w,mag,Total AB magnitude in the R band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+merr_acs_f606w,mag,Mean error on m_acs_f606w.
+m_ap_acs_f606w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+merr_ap_acs_f606w,mag,Mean error on m_ap_acs_f606w
+flag_acs_f606w,mag,Flag set to true for sources for which niether the acs_f606w aperture nor total flux should not be used for SED fitting (see documentation).
+f_acs_f775w,uJy,Total flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+ferr_acs_f775w,uJy,Uncertainty on f_acs_f775w.
+f_ap_acs_f775w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+ferr_ap_acs_f775w,uJy,Uncertainty on f_ap_acs_f775w.
+m_acs_f775w,mag,Total AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+merr_acs_f775w,mag,Mean error on m_acs_f775w.
+m_ap_acs_f775w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+merr_ap_acs_f775w,mag,Mean error on m_ap_acs_f775w
+flag_acs_f775w,mag,Flag set to true for sources for which niether the acs_f775w aperture nor total flux should not be used for SED fitting (see documentation).
+f_acs_f814w,uJy,Total flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+ferr_acs_f814w,uJy,Uncertainty on f_acs_f814w.
+f_ap_acs_f814w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+ferr_ap_acs_f814w,uJy,Uncertainty on f_ap_acs_f814w.
+m_acs_f814w,mag,Total AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+merr_acs_f814w,mag,Mean error on m_acs_f814w.
+m_ap_acs_f814w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+merr_ap_acs_f814w,mag,Mean error on m_ap_acs_f814w
+flag_acs_f814w,mag,Flag set to true for sources for which niether the acs_f814w aperture nor total flux should not be used for SED fitting (see documentation).
+f_acs_f850lp,uJy,Total flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+ferr_acs_f850lp,uJy,Uncertainty on f_acs_f850lp.
+f_ap_acs_f850lp,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+ferr_ap_acs_f850lp,uJy,Uncertainty on f_ap_acs_f850lp.
+m_acs_f850lp,mag,Total AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST).
+merr_acs_f850lp,mag,Mean error on m_acs_f850lp.
+m_ap_acs_f850lp,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space Telescope (HST)."
+merr_ap_acs_f850lp,mag,Mean error on m_ap_acs_f850lp
+flag_acs_f850lp,mag,Flag set to true for sources for which niether the acs_f850lp aperture nor total flux should not be used for SED fitting (see documentation).
+f_bessell_b,uJy,Total flux density in the B band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+ferr_bessell_b,uJy,Uncertainty on f_bessell_b.
+f_ap_bessell_b,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+ferr_ap_bessell_b,uJy,Uncertainty on f_ap_bessell_b.
+m_bessell_b,mag,Total AB magnitude in the B band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+merr_bessell_b,mag,Mean error on m_bessell_b.
+m_ap_bessell_b,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+merr_ap_bessell_b,mag,Mean error on m_ap_bessell_b
+flag_bessell_b,mag,Flag set to true for sources for which niether the bessell_b aperture nor total flux should not be used for SED fitting (see documentation).
+f_bessell_i,uJy,Total flux density in the I band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+ferr_bessell_i,uJy,Uncertainty on f_bessell_i.
+f_ap_bessell_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+ferr_ap_bessell_i,uJy,Uncertainty on f_ap_bessell_i.
+m_bessell_i,mag,Total AB magnitude in the I band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+merr_bessell_i,mag,Mean error on m_bessell_i.
+m_ap_bessell_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+merr_ap_bessell_i,mag,Mean error on m_ap_bessell_i
+flag_bessell_i,mag,Flag set to true for sources for which niether the bessell_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_bessell_r,uJy,Total flux density in the R band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+ferr_bessell_r,uJy,Uncertainty on f_bessell_r.
+f_ap_bessell_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+ferr_ap_bessell_r,uJy,Uncertainty on f_ap_bessell_r.
+m_bessell_r,mag,Total AB magnitude in the R band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+merr_bessell_r,mag,Mean error on m_bessell_r.
+m_ap_bessell_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+merr_ap_bessell_r,mag,Mean error on m_ap_bessell_r
+flag_bessell_r,mag,Flag set to true for sources for which niether the bessell_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_bessell_u,uJy,Total flux density in the U band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+ferr_bessell_u,uJy,Uncertainty on f_bessell_u.
+f_ap_bessell_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+ferr_ap_bessell_u,uJy,Uncertainty on f_ap_bessell_u.
+m_bessell_u,mag,Total AB magnitude in the U band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+merr_bessell_u,mag,Mean error on m_bessell_u.
+m_ap_bessell_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+merr_ap_bessell_u,mag,Mean error on m_ap_bessell_u
+flag_bessell_u,mag,Flag set to true for sources for which niether the bessell_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_bessell_v,uJy,Total flux density in the V band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+ferr_bessell_v,uJy,Uncertainty on f_bessell_v.
+f_ap_bessell_v,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+ferr_ap_bessell_v,uJy,Uncertainty on f_ap_bessell_v.
+m_bessell_v,mag,Total AB magnitude in the V band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown).
+merr_bessell_v,mag,Mean error on m_bessell_v.
+m_ap_bessell_v,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of Standard camera response (camera unknown) on Standardised telescope response (telescope uknown)."
+merr_ap_bessell_v,mag,Mean error on m_ap_bessell_v
+flag_bessell_v,mag,Flag set to true for sources for which niether the bessell_v aperture nor total flux should not be used for SED fitting (see documentation).
+f_cfht12k_b,uJy,Total flux density in the B band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+ferr_cfht12k_b,uJy,Uncertainty on f_cfht12k_b.
+f_ap_cfht12k_b,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_cfht12k_b,uJy,Uncertainty on f_ap_cfht12k_b.
+m_cfht12k_b,mag,Total AB magnitude in the B band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+merr_cfht12k_b,mag,Mean error on m_cfht12k_b.
+m_ap_cfht12k_b,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+merr_ap_cfht12k_b,mag,Mean error on m_ap_cfht12k_b
+flag_cfht12k_b,mag,Flag set to true for sources for which niether the cfht12k_b aperture nor total flux should not be used for SED fitting (see documentation).
+f_cfht12k_i,uJy,Total flux density in the I band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+ferr_cfht12k_i,uJy,Uncertainty on f_cfht12k_i.
+f_ap_cfht12k_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_cfht12k_i,uJy,Uncertainty on f_ap_cfht12k_i.
+m_cfht12k_i,mag,Total AB magnitude in the I band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+merr_cfht12k_i,mag,Mean error on m_cfht12k_i.
+m_ap_cfht12k_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+merr_ap_cfht12k_i,mag,Mean error on m_ap_cfht12k_i
+flag_cfht12k_i,mag,Flag set to true for sources for which niether the cfht12k_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_cfht12k_r,uJy,Total flux density in the R band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+ferr_cfht12k_r,uJy,Uncertainty on f_cfht12k_r.
+f_ap_cfht12k_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_cfht12k_r,uJy,Uncertainty on f_ap_cfht12k_r.
+m_cfht12k_r,mag,Total AB magnitude in the R band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT).
+merr_cfht12k_r,mag,Mean error on m_cfht12k_r.
+m_ap_cfht12k_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The CFH12K prime focus 12K camera on Canada France Hawaii Telescope (CFHT)."
+merr_ap_cfht12k_r,mag,Mean error on m_ap_cfht12k_r
+flag_cfht12k_r,mag,Flag set to true for sources for which niether the cfht12k_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_decam_g,uJy,Total flux density in the B band of The Dark Energy Camera (DECam) on Blanco.
+ferr_decam_g,uJy,Uncertainty on f_decam_g.
+f_ap_decam_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Dark Energy Camera (DECam) on Blanco."
+ferr_ap_decam_g,uJy,Uncertainty on f_ap_decam_g.
+m_decam_g,mag,Total AB magnitude in the B band of The Dark Energy Camera (DECam) on Blanco.
+merr_decam_g,mag,Mean error on m_decam_g.
+m_ap_decam_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Dark Energy Camera (DECam) on Blanco."
+merr_ap_decam_g,mag,Mean error on m_ap_decam_g
+flag_decam_g,mag,Flag set to true for sources for which niether the decam_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_decam_i,uJy,Total flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+ferr_decam_i,uJy,Uncertainty on f_decam_i.
+f_ap_decam_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Dark Energy Camera (DECam) on Blanco."
+ferr_ap_decam_i,uJy,Uncertainty on f_ap_decam_i.
+m_decam_i,mag,Total AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+merr_decam_i,mag,Mean error on m_decam_i.
+m_ap_decam_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco."
+merr_ap_decam_i,mag,Mean error on m_ap_decam_i
+flag_decam_i,mag,Flag set to true for sources for which niether the decam_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_decam_r,uJy,Total flux density in the R band of The Dark Energy Camera (DECam) on Blanco.
+ferr_decam_r,uJy,Uncertainty on f_decam_r.
+f_ap_decam_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Dark Energy Camera (DECam) on Blanco."
+ferr_ap_decam_r,uJy,Uncertainty on f_ap_decam_r.
+m_decam_r,mag,Total AB magnitude in the R band of The Dark Energy Camera (DECam) on Blanco.
+merr_decam_r,mag,Mean error on m_decam_r.
+m_ap_decam_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Dark Energy Camera (DECam) on Blanco."
+merr_ap_decam_r,mag,Mean error on m_ap_decam_r
+flag_decam_r,mag,Flag set to true for sources for which niether the decam_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_decam_y,uJy,Total flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+ferr_decam_y,uJy,Uncertainty on f_decam_y.
+f_ap_decam_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Dark Energy Camera (DECam) on Blanco."
+ferr_ap_decam_y,uJy,Uncertainty on f_ap_decam_y.
+m_decam_y,mag,Total AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+merr_decam_y,mag,Mean error on m_decam_y.
+m_ap_decam_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco."
+merr_ap_decam_y,mag,Mean error on m_ap_decam_y
+flag_decam_y,mag,Flag set to true for sources for which niether the decam_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_decam_z,uJy,Total flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+ferr_decam_z,uJy,Uncertainty on f_decam_z.
+f_ap_decam_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Dark Energy Camera (DECam) on Blanco."
+ferr_ap_decam_z,uJy,Uncertainty on f_ap_decam_z.
+m_decam_z,mag,Total AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+merr_decam_z,mag,Mean error on m_decam_z.
+m_ap_decam_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco."
+merr_ap_decam_z,mag,Mean error on m_ap_decam_z
+flag_decam_z,mag,Flag set to true for sources for which niether the decam_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_galex_fuv,uJy,Total flux density in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+ferr_galex_fuv,uJy,Uncertainty on f_galex_fuv.
+f_ap_galex_fuv,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX)."
+ferr_ap_galex_fuv,uJy,Uncertainty on f_ap_galex_fuv.
+m_galex_fuv,mag,Total AB magnitude in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+merr_galex_fuv,mag,Mean error on m_galex_fuv.
+m_ap_galex_fuv,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX)."
+merr_ap_galex_fuv,mag,Mean error on m_ap_galex_fuv
+flag_galex_fuv,mag,Flag set to true for sources for which niether the galex_fuv aperture nor total flux should not be used for SED fitting (see documentation).
+f_galex_nuv,uJy,Total flux density in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+ferr_galex_nuv,uJy,Uncertainty on f_galex_nuv.
+f_ap_galex_nuv,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX)."
+ferr_ap_galex_nuv,uJy,Uncertainty on f_ap_galex_nuv.
+m_galex_nuv,mag,Total AB magnitude in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+merr_galex_nuv,mag,Mean error on m_galex_nuv.
+m_ap_galex_nuv,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX)."
+merr_ap_galex_nuv,mag,Mean error on m_ap_galex_nuv
+flag_galex_nuv,mag,Flag set to true for sources for which niether the galex_nuv aperture nor total flux should not be used for SED fitting (see documentation).
+f_gpc1_g,uJy,Total flux density in the B band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+ferr_gpc1_g,uJy,Uncertainty on f_gpc1_g.
+f_ap_gpc1_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+ferr_ap_gpc1_g,uJy,Uncertainty on f_ap_gpc1_g.
+m_gpc1_g,mag,Total AB magnitude in the B band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+merr_gpc1_g,mag,Mean error on m_gpc1_g.
+m_ap_gpc1_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+merr_ap_gpc1_g,mag,Mean error on m_ap_gpc1_g
+flag_gpc1_g,mag,Flag set to true for sources for which niether the gpc1_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_gpc1_i,uJy,Total flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+ferr_gpc1_i,uJy,Uncertainty on f_gpc1_i.
+f_ap_gpc1_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+ferr_ap_gpc1_i,uJy,Uncertainty on f_ap_gpc1_i.
+m_gpc1_i,mag,Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+merr_gpc1_i,mag,Mean error on m_gpc1_i.
+m_ap_gpc1_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+merr_ap_gpc1_i,mag,Mean error on m_ap_gpc1_i
+flag_gpc1_i,mag,Flag set to true for sources for which niether the gpc1_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_gpc1_r,uJy,Total flux density in the R band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+ferr_gpc1_r,uJy,Uncertainty on f_gpc1_r.
+f_ap_gpc1_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+ferr_ap_gpc1_r,uJy,Uncertainty on f_ap_gpc1_r.
+m_gpc1_r,mag,Total AB magnitude in the R band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+merr_gpc1_r,mag,Mean error on m_gpc1_r.
+m_ap_gpc1_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+merr_ap_gpc1_r,mag,Mean error on m_ap_gpc1_r
+flag_gpc1_r,mag,Flag set to true for sources for which niether the gpc1_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_gpc1_y,uJy,Total flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+ferr_gpc1_y,uJy,Uncertainty on f_gpc1_y.
+f_ap_gpc1_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+ferr_ap_gpc1_y,uJy,Uncertainty on f_ap_gpc1_y.
+m_gpc1_y,mag,Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+merr_gpc1_y,mag,Mean error on m_gpc1_y.
+m_ap_gpc1_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+merr_ap_gpc1_y,mag,Mean error on m_ap_gpc1_y
+flag_gpc1_y,mag,Flag set to true for sources for which niether the gpc1_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_gpc1_z,uJy,Total flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+ferr_gpc1_z,uJy,Uncertainty on f_gpc1_z.
+f_ap_gpc1_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+ferr_ap_gpc1_z,uJy,Uncertainty on f_ap_gpc1_z.
+m_gpc1_z,mag,Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS).
+merr_gpc1_z,mag,Mean error on m_gpc1_z.
+m_ap_gpc1_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)."
+merr_ap_gpc1_z,mag,Mean error on m_ap_gpc1_z
+flag_gpc1_z,mag,Flag set to true for sources for which niether the gpc1_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_hawki_k,uJy,Total flux density in the K band of The High Acuity Wide field K-band Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal.
+ferr_hawki_k,uJy,Uncertainty on f_hawki_k.
+f_ap_hawki_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The High Acuity Wide field K-band Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal."
+ferr_ap_hawki_k,uJy,Uncertainty on f_ap_hawki_k.
+m_hawki_k,mag,Total AB magnitude in the K band of The High Acuity Wide field K-band Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal.
+merr_hawki_k,mag,Mean error on m_hawki_k.
+m_ap_hawki_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The High Acuity Wide field K-band Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal."
+merr_ap_hawki_k,mag,Mean error on m_ap_hawki_k
+flag_hawki_k,mag,Flag set to true for sources for which niether the hawki_k aperture nor total flux should not be used for SED fitting (see documentation).
+f_irac_i1,uJy,Total flux density in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+ferr_irac_i1,uJy,Uncertainty on f_irac_i1.
+f_ap_irac_i1,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+ferr_ap_irac_i1,uJy,Uncertainty on f_ap_irac_i1.
+m_irac_i1,mag,Total AB magnitude in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+merr_irac_i1,mag,Mean error on m_irac_i1.
+m_ap_irac_i1,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+merr_ap_irac_i1,mag,Mean error on m_ap_irac_i1
+flag_irac_i1,mag,Flag set to true for sources for which niether the irac_i1 aperture nor total flux should not be used for SED fitting (see documentation).
+f_irac_i2,uJy,Total flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+ferr_irac_i2,uJy,Uncertainty on f_irac_i2.
+f_ap_irac_i2,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+ferr_ap_irac_i2,uJy,Uncertainty on f_ap_irac_i2.
+m_irac_i2,mag,Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+merr_irac_i2,mag,Mean error on m_irac_i2.
+m_ap_irac_i2,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+merr_ap_irac_i2,mag,Mean error on m_ap_irac_i2
+flag_irac_i2,mag,Flag set to true for sources for which niether the irac_i2 aperture nor total flux should not be used for SED fitting (see documentation).
+f_irac_i3,uJy,Total flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+ferr_irac_i3,uJy,Uncertainty on f_irac_i3.
+f_ap_irac_i3,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+ferr_ap_irac_i3,uJy,Uncertainty on f_ap_irac_i3.
+m_irac_i3,mag,Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+merr_irac_i3,mag,Mean error on m_irac_i3.
+m_ap_irac_i3,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+merr_ap_irac_i3,mag,Mean error on m_ap_irac_i3
+flag_irac_i3,mag,Flag set to true for sources for which niether the irac_i3 aperture nor total flux should not be used for SED fitting (see documentation).
+f_irac_i4,uJy,Total flux density in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+ferr_irac_i4,uJy,Uncertainty on f_irac_i4.
+f_ap_irac_i4,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+ferr_ap_irac_i4,uJy,Uncertainty on f_ap_irac_i4.
+m_irac_i4,mag,Total AB magnitude in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope.
+merr_irac_i4,mag,Mean error on m_irac_i4.
+m_ap_irac_i4,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+merr_ap_irac_i4,mag,Mean error on m_ap_irac_i4
+flag_irac_i4,mag,Flag set to true for sources for which niether the irac_i4 aperture nor total flux should not be used for SED fitting (see documentation).
+f_isaac_k,uJy,Total flux density in the K band of The Infrared Spectrometer And Array Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal.
+ferr_isaac_k,uJy,Uncertainty on f_isaac_k.
+f_ap_isaac_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Infrared Spectrometer And Array Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal."
+ferr_ap_isaac_k,uJy,Uncertainty on f_ap_isaac_k.
+m_isaac_k,mag,Total AB magnitude in the K band of The Infrared Spectrometer And Array Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal.
+merr_isaac_k,mag,Mean error on m_isaac_k.
+m_ap_isaac_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Infrared Spectrometer And Array Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal."
+merr_ap_isaac_k,mag,Mean error on m_ap_isaac_k
+flag_isaac_k,mag,Flag set to true for sources for which niether the isaac_k aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_g,uJy,Total flux density in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_g,uJy,Uncertainty on f_egacam_g.
+f_ap_egacam_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_g,uJy,Uncertainty on f_ap_egacam_g.
+m_egacam_g,mag,Total AB magnitude in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_g,mag,Mean error on m_egacam_g.
+m_ap_egacam_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_g,mag,Mean error on m_ap_egacam_g
+flag_egacam_g,mag,Flag set to true for sources for which niether the egacam_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_i,uJy,Total flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_i,uJy,Uncertainty on f_egacam_i.
+f_ap_egacam_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_i,uJy,Uncertainty on f_ap_egacam_i.
+m_egacam_i,mag,Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_i,mag,Mean error on m_egacam_i.
+m_ap_egacam_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_i,mag,Mean error on m_ap_egacam_i
+flag_egacam_i,mag,Flag set to true for sources for which niether the egacam_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_r,uJy,Total flux density in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_r,uJy,Uncertainty on f_egacam_r.
+f_ap_egacam_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_r,uJy,Uncertainty on f_ap_egacam_r.
+m_egacam_r,mag,Total AB magnitude in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_r,mag,Mean error on m_egacam_r.
+m_ap_egacam_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_r,mag,Mean error on m_ap_egacam_r
+flag_egacam_r,mag,Flag set to true for sources for which niether the egacam_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_u,uJy,Total flux density in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_u,uJy,Uncertainty on f_egacam_u.
+f_ap_egacam_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_u,uJy,Uncertainty on f_ap_egacam_u.
+m_egacam_u,mag,Total AB magnitude in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_u,mag,Mean error on m_egacam_u.
+m_ap_egacam_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_u,mag,Mean error on m_ap_egacam_u
+flag_egacam_u,mag,Flag set to true for sources for which niether the egacam_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_y,uJy,Total flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_y,uJy,Uncertainty on f_egacam_y.
+f_ap_egacam_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_y,uJy,Uncertainty on f_ap_egacam_y.
+m_egacam_y,mag,Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_y,mag,Mean error on m_egacam_y.
+m_ap_egacam_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_y,mag,Mean error on m_ap_egacam_y
+flag_egacam_y,mag,Flag set to true for sources for which niether the egacam_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_egacam_z,uJy,Total flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+ferr_egacam_z,uJy,Uncertainty on f_egacam_z.
+f_ap_egacam_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_egacam_z,uJy,Uncertainty on f_ap_egacam_z.
+m_egacam_z,mag,Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT).
+merr_egacam_z,mag,Mean error on m_egacam_z.
+m_ap_egacam_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope (CFHT)."
+merr_ap_egacam_z,mag,Mean error on m_ap_egacam_z
+flag_egacam_z,mag,Flag set to true for sources for which niether the egacam_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_ips_24,uJy,Total flux density in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope.
+ferr_ips_24,uJy,Uncertainty on f_ips_24.
+f_ap_ips_24,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope."
+ferr_ap_ips_24,uJy,Uncertainty on f_ap_ips_24.
+m_ips_24,mag,Total AB magnitude in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope.
+merr_ips_24,mag,Mean error on m_ips_24.
+m_ap_ips_24,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope."
+merr_ap_ips_24,mag,Mean error on m_ap_ips_24
+flag_ips_24,mag,Flag set to true for sources for which niether the ips_24 aperture nor total flux should not be used for SED fitting (see documentation).
+f_t_g,uJy,Total flux density in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+ferr_t_g,uJy,Uncertainty on f_t_g.
+f_ap_t_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+ferr_ap_t_g,uJy,Uncertainty on f_ap_t_g.
+m_t_g,mag,Total AB magnitude in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+merr_t_g,mag,Mean error on m_t_g.
+m_ap_t_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+merr_ap_t_g,mag,Mean error on m_ap_t_g
+flag_t_g,mag,Flag set to true for sources for which niether the t_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_t_i,uJy,Total flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+ferr_t_i,uJy,Uncertainty on f_t_i.
+f_ap_t_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+ferr_ap_t_i,uJy,Uncertainty on f_ap_t_i.
+m_t_i,mag,Total AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+merr_t_i,mag,Mean error on m_t_i.
+m_ap_t_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+merr_ap_t_i,mag,Mean error on m_ap_t_i
+flag_t_i,mag,Flag set to true for sources for which niether the t_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_t_r,uJy,Total flux density in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+ferr_t_r,uJy,Uncertainty on f_t_r.
+f_ap_t_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+ferr_ap_t_r,uJy,Uncertainty on f_ap_t_r.
+m_t_r,mag,Total AB magnitude in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+merr_t_r,mag,Mean error on m_t_r.
+m_ap_t_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+merr_ap_t_r,mag,Mean error on m_ap_t_r
+flag_t_r,mag,Flag set to true for sources for which niether the t_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_t_u,uJy,Total flux density in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+ferr_t_u,uJy,Uncertainty on f_t_u.
+f_ap_t_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+ferr_ap_t_u,uJy,Uncertainty on f_ap_t_u.
+m_t_u,mag,Total AB magnitude in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+merr_t_u,mag,Mean error on m_t_u.
+m_ap_t_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+merr_ap_t_u,mag,Mean error on m_ap_t_u
+flag_t_u,mag,Flag set to true for sources for which niether the t_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_t_z,uJy,Total flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+ferr_t_z,uJy,Uncertainty on f_t_z.
+f_ap_t_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+ferr_ap_t_z,uJy,Uncertainty on f_ap_t_z.
+m_t_z,mag,Total AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+merr_t_z,mag,Mean error on m_t_z.
+m_ap_t_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory."
+merr_ap_t_z,mag,Mean error on m_ap_t_z
+flag_t_z,mag,Flag set to true for sources for which niether the t_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_oircs_k,uJy,Total flux density in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope.
+ferr_oircs_k,uJy,Uncertainty on f_oircs_k.
+f_ap_oircs_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope."
+ferr_ap_oircs_k,uJy,Uncertainty on f_ap_oircs_k.
+m_oircs_k,mag,Total AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope.
+merr_oircs_k,mag,Mean error on m_oircs_k.
+m_ap_oircs_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope."
+merr_ap_oircs_k,mag,Mean error on m_ap_oircs_k
+flag_oircs_k,mag,Flag set to true for sources for which niether the oircs_k aperture nor total flux should not be used for SED fitting (see documentation).
+f_oircs_ks,uJy,Total flux density in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope.
+ferr_oircs_ks,uJy,Uncertainty on f_oircs_ks.
+f_ap_oircs_ks,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope."
+ferr_ap_oircs_ks,uJy,Uncertainty on f_ap_oircs_ks.
+m_oircs_ks,mag,Total AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope.
+merr_oircs_ks,mag,Mean error on m_oircs_ks.
+m_ap_oircs_ks,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph (MOIRCS) on The Subaru telescope."
+merr_ap_oircs_ks,mag,Mean error on m_ap_oircs_ks
+flag_oircs_ks,mag,Flag set to true for sources for which niether the oircs_ks aperture nor total flux should not be used for SED fitting (see documentation).
+f_osaic_b,uJy,Total flux density in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+ferr_osaic_b,uJy,Uncertainty on f_osaic_b.
+f_ap_osaic_b,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+ferr_ap_osaic_b,uJy,Uncertainty on f_ap_osaic_b.
+m_osaic_b,mag,Total AB magnitude in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+merr_osaic_b,mag,Mean error on m_osaic_b.
+m_ap_osaic_b,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+merr_ap_osaic_b,mag,Mean error on m_ap_osaic_b
+flag_osaic_b,mag,Flag set to true for sources for which niether the osaic_b aperture nor total flux should not be used for SED fitting (see documentation).
+f_osaic_i,uJy,Total flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+ferr_osaic_i,uJy,Uncertainty on f_osaic_i.
+f_ap_osaic_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+ferr_ap_osaic_i,uJy,Uncertainty on f_ap_osaic_i.
+m_osaic_i,mag,Total AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+merr_osaic_i,mag,Mean error on m_osaic_i.
+m_ap_osaic_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+merr_ap_osaic_i,mag,Mean error on m_ap_osaic_i
+flag_osaic_i,mag,Flag set to true for sources for which niether the osaic_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_osaic_r,uJy,Total flux density in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+ferr_osaic_r,uJy,Uncertainty on f_osaic_r.
+f_ap_osaic_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+ferr_ap_osaic_r,uJy,Uncertainty on f_ap_osaic_r.
+m_osaic_r,mag,Total AB magnitude in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+merr_osaic_r,mag,Mean error on m_osaic_r.
+m_ap_osaic_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+merr_ap_osaic_r,mag,Mean error on m_ap_osaic_r
+flag_osaic_r,mag,Flag set to true for sources for which niether the osaic_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_osaic_u,uJy,Total flux density in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+ferr_osaic_u,uJy,Uncertainty on f_osaic_u.
+f_ap_osaic_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+ferr_ap_osaic_u,uJy,Uncertainty on f_ap_osaic_u.
+m_osaic_u,mag,Total AB magnitude in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+merr_osaic_u,mag,Mean error on m_osaic_u.
+m_ap_osaic_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+merr_ap_osaic_u,mag,Mean error on m_ap_osaic_u
+flag_osaic_u,mag,Flag set to true for sources for which niether the osaic_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_osaic_z,uJy,Total flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+ferr_osaic_z,uJy,Uncertainty on f_osaic_z.
+f_ap_osaic_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+ferr_ap_osaic_z,uJy,Uncertainty on f_ap_osaic_z.
+m_osaic_z,mag,Total AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory.
+merr_osaic_z,mag,Mean error on m_osaic_z.
+m_ap_osaic_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National Observatory."
+merr_ap_osaic_z,mag,Mean error on m_ap_osaic_z
+flag_osaic_z,mag,Flag set to true for sources for which niether the osaic_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_h,uJy,Total flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_h,uJy,Uncertainty on f_newfirm_h.
+f_ap_newfirm_h,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_h,uJy,Uncertainty on f_ap_newfirm_h.
+m_newfirm_h,mag,Total AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_h,mag,Mean error on m_newfirm_h.
+m_ap_newfirm_h,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_h,mag,Mean error on m_ap_newfirm_h
+flag_newfirm_h,mag,Flag set to true for sources for which niether the newfirm_h aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_h1,uJy,Total flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_h1,uJy,Uncertainty on f_newfirm_h1.
+f_ap_newfirm_h1,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_h1,uJy,Uncertainty on f_ap_newfirm_h1.
+m_newfirm_h1,mag,Total AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_h1,mag,Mean error on m_newfirm_h1.
+m_ap_newfirm_h1,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_h1,mag,Mean error on m_ap_newfirm_h1
+flag_newfirm_h1,mag,Flag set to true for sources for which niether the newfirm_h1 aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_h2,uJy,Total flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_h2,uJy,Uncertainty on f_newfirm_h2.
+f_ap_newfirm_h2,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_h2,uJy,Uncertainty on f_ap_newfirm_h2.
+m_newfirm_h2,mag,Total AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_h2,mag,Mean error on m_newfirm_h2.
+m_ap_newfirm_h2,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_h2,mag,Mean error on m_ap_newfirm_h2
+flag_newfirm_h2,mag,Flag set to true for sources for which niether the newfirm_h2 aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_j,uJy,Total flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_j,uJy,Uncertainty on f_newfirm_j.
+f_ap_newfirm_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_j,uJy,Uncertainty on f_ap_newfirm_j.
+m_newfirm_j,mag,Total AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_j,mag,Mean error on m_newfirm_j.
+m_ap_newfirm_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_j,mag,Mean error on m_ap_newfirm_j
+flag_newfirm_j,mag,Flag set to true for sources for which niether the newfirm_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_j1,uJy,Total flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_j1,uJy,Uncertainty on f_newfirm_j1.
+f_ap_newfirm_j1,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_j1,uJy,Uncertainty on f_ap_newfirm_j1.
+m_newfirm_j1,mag,Total AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_j1,mag,Mean error on m_newfirm_j1.
+m_ap_newfirm_j1,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_j1,mag,Mean error on m_ap_newfirm_j1
+flag_newfirm_j1,mag,Flag set to true for sources for which niether the newfirm_j1 aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_j2,uJy,Total flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_j2,uJy,Uncertainty on f_newfirm_j2.
+f_ap_newfirm_j2,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_j2,uJy,Uncertainty on f_ap_newfirm_j2.
+m_newfirm_j2,mag,Total AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_j2,mag,Mean error on m_newfirm_j2.
+m_ap_newfirm_j2,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_j2,mag,Mean error on m_ap_newfirm_j2
+flag_newfirm_j2,mag,Flag set to true for sources for which niether the newfirm_j2 aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_j3,uJy,Total flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_j3,uJy,Uncertainty on f_newfirm_j3.
+f_ap_newfirm_j3,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_j3,uJy,Uncertainty on f_ap_newfirm_j3.
+m_newfirm_j3,mag,Total AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_j3,mag,Mean error on m_newfirm_j3.
+m_ap_newfirm_j3,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_j3,mag,Mean error on m_ap_newfirm_j3
+flag_newfirm_j3,mag,Flag set to true for sources for which niether the newfirm_j3 aperture nor total flux should not be used for SED fitting (see documentation).
+f_newfirm_k,uJy,Total flux density in the K band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+ferr_newfirm_k,uJy,Uncertainty on f_newfirm_k.
+f_ap_newfirm_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+ferr_ap_newfirm_k,uJy,Uncertainty on f_ap_newfirm_k.
+m_newfirm_k,mag,Total AB magnitude in the K band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory.
+merr_newfirm_k,mag,Mean error on m_newfirm_k.
+m_ap_newfirm_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of National Optical Astronomy Observatory (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini Observatory."
+merr_ap_newfirm_k,mag,Mean error on m_ap_newfirm_k
+flag_newfirm_k,mag,Flag set to true for sources for which niether the newfirm_k aperture nor total flux should not be used for SED fitting (see documentation).
+f_nicmos_f110w,uJy,Total flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+ferr_nicmos_f110w,uJy,Uncertainty on f_nicmos_f110w.
+f_ap_nicmos_f110w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST)."
+ferr_ap_nicmos_f110w,uJy,Uncertainty on f_ap_nicmos_f110w.
+m_nicmos_f110w,mag,Total AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+merr_nicmos_f110w,mag,Mean error on m_nicmos_f110w.
+m_ap_nicmos_f110w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST)."
+merr_ap_nicmos_f110w,mag,Mean error on m_ap_nicmos_f110w
+flag_nicmos_f110w,mag,Flag set to true for sources for which niether the nicmos_f110w aperture nor total flux should not be used for SED fitting (see documentation).
+f_nicmos_f160w,uJy,Total flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+ferr_nicmos_f160w,uJy,Uncertainty on f_nicmos_f160w.
+f_ap_nicmos_f160w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST)."
+ferr_ap_nicmos_f160w,uJy,Uncertainty on f_ap_nicmos_f160w.
+m_nicmos_f160w,mag,Total AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+merr_nicmos_f160w,mag,Mean error on m_nicmos_f160w.
+m_ap_nicmos_f160w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST)."
+merr_ap_nicmos_f160w,mag,Mean error on m_ap_nicmos_f160w
+flag_nicmos_f160w,mag,Flag set to true for sources for which niether the nicmos_f160w aperture nor total flux should not be used for SED fitting (see documentation).
+f_omega2000_j,uJy,Total flux density in the J band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto.
+ferr_omega2000_j,uJy,Uncertainty on f_omega2000_j.
+f_ap_omega2000_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto."
+ferr_ap_omega2000_j,uJy,Uncertainty on f_ap_omega2000_j.
+m_omega2000_j,mag,Total AB magnitude in the J band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto.
+merr_omega2000_j,mag,Mean error on m_omega2000_j.
+m_ap_omega2000_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto."
+merr_ap_omega2000_j,mag,Mean error on m_ap_omega2000_j
+flag_omega2000_j,mag,Flag set to true for sources for which niether the omega2000_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_omega2000_ks,uJy,Total flux density in the K band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto.
+ferr_omega2000_ks,uJy,Uncertainty on f_omega2000_ks.
+f_ap_omega2000_ks,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto."
+ferr_ap_omega2000_ks,uJy,Uncertainty on f_ap_omega2000_ks.
+m_omega2000_ks,mag,Total AB magnitude in the K band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto.
+merr_omega2000_ks,mag,Mean error on m_omega2000_ks.
+m_ap_omega2000_ks,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Infrared Wide-Field Camera OMEGA2000 on The 3.5m telescope at Calar Alto."
+merr_ap_omega2000_ks,mag,Mean error on m_ap_omega2000_ks
+flag_omega2000_ks,mag,Flag set to true for sources for which niether the omega2000_ks aperture nor total flux should not be used for SED fitting (see documentation).
+f_omegacam_g,uJy,Total flux density in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+ferr_omegacam_g,uJy,Uncertainty on f_omegacam_g.
+f_ap_omegacam_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+ferr_ap_omegacam_g,uJy,Uncertainty on f_ap_omegacam_g.
+m_omegacam_g,mag,Total AB magnitude in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+merr_omegacam_g,mag,Mean error on m_omegacam_g.
+m_ap_omegacam_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+merr_ap_omegacam_g,mag,Mean error on m_ap_omegacam_g
+flag_omegacam_g,mag,Flag set to true for sources for which niether the omegacam_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_omegacam_i,uJy,Total flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+ferr_omegacam_i,uJy,Uncertainty on f_omegacam_i.
+f_ap_omegacam_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+ferr_ap_omegacam_i,uJy,Uncertainty on f_ap_omegacam_i.
+m_omegacam_i,mag,Total AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+merr_omegacam_i,mag,Mean error on m_omegacam_i.
+m_ap_omegacam_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+merr_ap_omegacam_i,mag,Mean error on m_ap_omegacam_i
+flag_omegacam_i,mag,Flag set to true for sources for which niether the omegacam_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_omegacam_r,uJy,Total flux density in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+ferr_omegacam_r,uJy,Uncertainty on f_omegacam_r.
+f_ap_omegacam_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+ferr_ap_omegacam_r,uJy,Uncertainty on f_ap_omegacam_r.
+m_omegacam_r,mag,Total AB magnitude in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+merr_omegacam_r,mag,Mean error on m_omegacam_r.
+m_ap_omegacam_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+merr_ap_omegacam_r,mag,Mean error on m_ap_omegacam_r
+flag_omegacam_r,mag,Flag set to true for sources for which niether the omegacam_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_omegacam_u,uJy,Total flux density in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+ferr_omegacam_u,uJy,Uncertainty on f_omegacam_u.
+f_ap_omegacam_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+ferr_ap_omegacam_u,uJy,Uncertainty on f_ap_omegacam_u.
+m_omegacam_u,mag,Total AB magnitude in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+merr_omegacam_u,mag,Mean error on m_omegacam_u.
+m_ap_omegacam_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+merr_ap_omegacam_u,mag,Mean error on m_ap_omegacam_u
+flag_omegacam_u,mag,Flag set to true for sources for which niether the omegacam_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_omegacam_z,uJy,Total flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+ferr_omegacam_z,uJy,Uncertainty on f_omegacam_z.
+f_ap_omegacam_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+ferr_ap_omegacam_z,uJy,Uncertainty on f_ap_omegacam_z.
+m_omegacam_z,mag,Total AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal.
+merr_omegacam_z,mag,Mean error on m_omegacam_z.
+m_ap_omegacam_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey Telescope (VST) at Paranal."
+merr_ap_omegacam_z,mag,Mean error on m_ap_omegacam_z
+flag_omegacam_z,mag,Flag set to true for sources for which niether the omegacam_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_pacs_green,uJy,Total flux density in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+ferr_pacs_green,uJy,Uncertainty on f_pacs_green.
+f_ap_pacs_green,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+ferr_ap_pacs_green,uJy,Uncertainty on f_ap_pacs_green.
+m_pacs_green,mag,Total AB magnitude in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+merr_pacs_green,mag,Mean error on m_pacs_green.
+m_ap_pacs_green,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+merr_ap_pacs_green,mag,Mean error on m_ap_pacs_green
+flag_pacs_green,mag,Flag set to true for sources for which niether the pacs_green aperture nor total flux should not be used for SED fitting (see documentation).
+f_pacs_red,uJy,Total flux density in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+ferr_pacs_red,uJy,Uncertainty on f_pacs_red.
+f_ap_pacs_red,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+ferr_ap_pacs_red,uJy,Uncertainty on f_ap_pacs_red.
+m_pacs_red,mag,Total AB magnitude in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+merr_pacs_red,mag,Mean error on m_pacs_red.
+m_ap_pacs_red,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+merr_ap_pacs_red,mag,Mean error on m_ap_pacs_red
+flag_pacs_red,mag,Flag set to true for sources for which niether the pacs_red aperture nor total flux should not be used for SED fitting (see documentation).
+f_quirc_hk,uJy,Total flux density in the H band of The Quick Near-Infrared Camera on The University of Hawaii 2.2m telescope.
+ferr_quirc_hk,uJy,Uncertainty on f_quirc_hk.
+f_ap_quirc_hk,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of The Quick Near-Infrared Camera on The University of Hawaii 2.2m telescope."
+ferr_ap_quirc_hk,uJy,Uncertainty on f_ap_quirc_hk.
+m_quirc_hk,mag,Total AB magnitude in the H band of The Quick Near-Infrared Camera on The University of Hawaii 2.2m telescope.
+merr_quirc_hk,mag,Mean error on m_quirc_hk.
+m_ap_quirc_hk,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of The Quick Near-Infrared Camera on The University of Hawaii 2.2m telescope."
+merr_ap_quirc_hk,mag,Mean error on m_ap_quirc_hk
+flag_quirc_hk,mag,Flag set to true for sources for which niether the quirc_hk aperture nor total flux should not be used for SED fitting (see documentation).
+f_sdss_g,uJy,Total flux density in the B band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+ferr_sdss_g,uJy,Uncertainty on f_sdss_g.
+f_ap_sdss_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+ferr_ap_sdss_g,uJy,Uncertainty on f_ap_sdss_g.
+m_sdss_g,mag,Total AB magnitude in the B band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+merr_sdss_g,mag,Mean error on m_sdss_g.
+m_ap_sdss_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+merr_ap_sdss_g,mag,Mean error on m_ap_sdss_g
+flag_sdss_g,mag,Flag set to true for sources for which niether the sdss_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_sdss_i,uJy,Total flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+ferr_sdss_i,uJy,Uncertainty on f_sdss_i.
+f_ap_sdss_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+ferr_ap_sdss_i,uJy,Uncertainty on f_ap_sdss_i.
+m_sdss_i,mag,Total AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+merr_sdss_i,mag,Mean error on m_sdss_i.
+m_ap_sdss_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+merr_ap_sdss_i,mag,Mean error on m_ap_sdss_i
+flag_sdss_i,mag,Flag set to true for sources for which niether the sdss_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_sdss_r,uJy,Total flux density in the R band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+ferr_sdss_r,uJy,Uncertainty on f_sdss_r.
+f_ap_sdss_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+ferr_ap_sdss_r,uJy,Uncertainty on f_ap_sdss_r.
+m_sdss_r,mag,Total AB magnitude in the R band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+merr_sdss_r,mag,Mean error on m_sdss_r.
+m_ap_sdss_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+merr_ap_sdss_r,mag,Mean error on m_ap_sdss_r
+flag_sdss_r,mag,Flag set to true for sources for which niether the sdss_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_sdss_u,uJy,Total flux density in the U band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+ferr_sdss_u,uJy,Uncertainty on f_sdss_u.
+f_ap_sdss_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+ferr_ap_sdss_u,uJy,Uncertainty on f_ap_sdss_u.
+m_sdss_u,mag,Total AB magnitude in the U band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+merr_sdss_u,mag,Mean error on m_sdss_u.
+m_ap_sdss_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+merr_ap_sdss_u,mag,Mean error on m_ap_sdss_u
+flag_sdss_u,mag,Flag set to true for sources for which niether the sdss_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_sdss_z,uJy,Total flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+ferr_sdss_z,uJy,Uncertainty on f_sdss_z.
+f_ap_sdss_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+ferr_ap_sdss_z,uJy,Uncertainty on f_ap_sdss_z.
+m_sdss_z,mag,Total AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+merr_sdss_z,mag,Mean error on m_sdss_z.
+m_ap_sdss_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory."
+merr_ap_sdss_z,mag,Mean error on m_ap_sdss_z
+flag_sdss_z,mag,Flag set to true for sources for which niether the sdss_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_spire_250,uJy,Total flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+ferr_spire_250,uJy,Uncertainty on f_spire_250.
+f_ap_spire_250,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+ferr_ap_spire_250,uJy,Uncertainty on f_ap_spire_250.
+m_spire_250,mag,Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+merr_spire_250,mag,Mean error on m_spire_250.
+m_ap_spire_250,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+merr_ap_spire_250,mag,Mean error on m_ap_spire_250
+flag_spire_250,mag,Flag set to true for sources for which niether the spire_250 aperture nor total flux should not be used for SED fitting (see documentation).
+f_spire_350,uJy,Total flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+ferr_spire_350,uJy,Uncertainty on f_spire_350.
+f_ap_spire_350,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+ferr_ap_spire_350,uJy,Uncertainty on f_ap_spire_350.
+m_spire_350,mag,Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+merr_spire_350,mag,Mean error on m_spire_350.
+m_ap_spire_350,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+merr_ap_spire_350,mag,Mean error on m_ap_spire_350
+flag_spire_350,mag,Flag set to true for sources for which niether the spire_350 aperture nor total flux should not be used for SED fitting (see documentation).
+f_spire_500,uJy,Total flux density in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+ferr_spire_500,uJy,Uncertainty on f_spire_500.
+f_ap_spire_500,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+ferr_ap_spire_500,uJy,Uncertainty on f_ap_spire_500.
+m_spire_500,mag,Total AB magnitude in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+merr_spire_500,mag,Mean error on m_spire_500.
+m_ap_spire_500,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+merr_ap_spire_500,mag,Mean error on m_ap_spire_500
+flag_spire_500,mag,Flag set to true for sources for which niether the spire_500 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_b,uJy,Total flux density in the B band of SuprimeCam on The Subaru telescope.
+ferr_suprime_b,uJy,Uncertainty on f_suprime_b.
+f_ap_suprime_b,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_b,uJy,Uncertainty on f_ap_suprime_b.
+m_suprime_b,mag,Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+merr_suprime_b,mag,Mean error on m_suprime_b.
+m_ap_suprime_b,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_b,mag,Mean error on m_ap_suprime_b
+flag_suprime_b,mag,Flag set to true for sources for which niether the suprime_b aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_g,uJy,Total flux density in the B band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_g,uJy,Uncertainty on f_suprime_g.
+f_ap_suprime_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_g,uJy,Uncertainty on f_ap_suprime_g.
+m_suprime_g,mag,Total AB magnitude in the B band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_g,mag,Mean error on m_suprime_g.
+m_ap_suprime_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_g,mag,Mean error on m_ap_suprime_g
+flag_suprime_g,mag,Flag set to true for sources for which niether the suprime_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_i,uJy,Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_i,uJy,Uncertainty on f_suprime_i.
+f_ap_suprime_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_i,uJy,Uncertainty on f_ap_suprime_i.
+m_suprime_i,mag,Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_i,mag,Mean error on m_suprime_i.
+m_ap_suprime_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_i,mag,Mean error on m_ap_suprime_i
+flag_suprime_i,mag,Flag set to true for sources for which niether the suprime_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia484,uJy,Total flux density in the B band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia484,uJy,Uncertainty on f_suprime_ia484.
+f_ap_suprime_ia484,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia484,uJy,Uncertainty on f_ap_suprime_ia484.
+m_suprime_ia484,mag,Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia484,mag,Mean error on m_suprime_ia484.
+m_ap_suprime_ia484,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia484,mag,Mean error on m_ap_suprime_ia484
+flag_suprime_ia484,mag,Flag set to true for sources for which niether the suprime_ia484 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia527,uJy,Total flux density in the V band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia527,uJy,Uncertainty on f_suprime_ia527.
+f_ap_suprime_ia527,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia527,uJy,Uncertainty on f_ap_suprime_ia527.
+m_suprime_ia527,mag,Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia527,mag,Mean error on m_suprime_ia527.
+m_ap_suprime_ia527,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia527,mag,Mean error on m_ap_suprime_ia527
+flag_suprime_ia527,mag,Flag set to true for sources for which niether the suprime_ia527 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia624,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia624,uJy,Uncertainty on f_suprime_ia624.
+f_ap_suprime_ia624,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia624,uJy,Uncertainty on f_ap_suprime_ia624.
+m_suprime_ia624,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia624,mag,Mean error on m_suprime_ia624.
+m_ap_suprime_ia624,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia624,mag,Mean error on m_ap_suprime_ia624
+flag_suprime_ia624,mag,Flag set to true for sources for which niether the suprime_ia624 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia679,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia679,uJy,Uncertainty on f_suprime_ia679.
+f_ap_suprime_ia679,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia679,uJy,Uncertainty on f_ap_suprime_ia679.
+m_suprime_ia679,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia679,mag,Mean error on m_suprime_ia679.
+m_ap_suprime_ia679,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia679,mag,Mean error on m_ap_suprime_ia679
+flag_suprime_ia679,mag,Flag set to true for sources for which niether the suprime_ia679 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia738,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia738,uJy,Uncertainty on f_suprime_ia738.
+f_ap_suprime_ia738,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia738,uJy,Uncertainty on f_ap_suprime_ia738.
+m_suprime_ia738,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia738,mag,Mean error on m_suprime_ia738.
+m_ap_suprime_ia738,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia738,mag,Mean error on m_ap_suprime_ia738
+flag_suprime_ia738,mag,Flag set to true for sources for which niether the suprime_ia738 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ia767,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ia767,uJy,Uncertainty on f_suprime_ia767.
+f_ap_suprime_ia767,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ia767,uJy,Uncertainty on f_ap_suprime_ia767.
+m_suprime_ia767,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_ia767,mag,Mean error on m_suprime_ia767.
+m_ap_suprime_ia767,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ia767,mag,Mean error on m_ap_suprime_ia767
+flag_suprime_ia767,mag,Flag set to true for sources for which niether the suprime_ia767 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib427,uJy,Total flux density in the B band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib427,uJy,Uncertainty on f_suprime_ib427.
+f_ap_suprime_ib427,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib427,uJy,Uncertainty on f_ap_suprime_ib427.
+m_suprime_ib427,mag,Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib427,mag,Mean error on m_suprime_ib427.
+m_ap_suprime_ib427,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib427,mag,Mean error on m_ap_suprime_ib427
+flag_suprime_ib427,mag,Flag set to true for sources for which niether the suprime_ib427 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib464,uJy,Total flux density in the B band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib464,uJy,Uncertainty on f_suprime_ib464.
+f_ap_suprime_ib464,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib464,uJy,Uncertainty on f_ap_suprime_ib464.
+m_suprime_ib464,mag,Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib464,mag,Mean error on m_suprime_ib464.
+m_ap_suprime_ib464,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib464,mag,Mean error on m_ap_suprime_ib464
+flag_suprime_ib464,mag,Flag set to true for sources for which niether the suprime_ib464 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib505,uJy,Total flux density in the V band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib505,uJy,Uncertainty on f_suprime_ib505.
+f_ap_suprime_ib505,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib505,uJy,Uncertainty on f_ap_suprime_ib505.
+m_suprime_ib505,mag,Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib505,mag,Mean error on m_suprime_ib505.
+m_ap_suprime_ib505,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib505,mag,Mean error on m_ap_suprime_ib505
+flag_suprime_ib505,mag,Flag set to true for sources for which niether the suprime_ib505 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib574,uJy,Total flux density in the V band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib574,uJy,Uncertainty on f_suprime_ib574.
+f_ap_suprime_ib574,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib574,uJy,Uncertainty on f_ap_suprime_ib574.
+m_suprime_ib574,mag,Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib574,mag,Mean error on m_suprime_ib574.
+m_ap_suprime_ib574,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib574,mag,Mean error on m_ap_suprime_ib574
+flag_suprime_ib574,mag,Flag set to true for sources for which niether the suprime_ib574 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib709,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib709,uJy,Uncertainty on f_suprime_ib709.
+f_ap_suprime_ib709,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib709,uJy,Uncertainty on f_ap_suprime_ib709.
+m_suprime_ib709,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib709,mag,Mean error on m_suprime_ib709.
+m_ap_suprime_ib709,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib709,mag,Mean error on m_ap_suprime_ib709
+flag_suprime_ib709,mag,Flag set to true for sources for which niether the suprime_ib709 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ib827,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ib827,uJy,Uncertainty on f_suprime_ib827.
+f_ap_suprime_ib827,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ib827,uJy,Uncertainty on f_ap_suprime_ib827.
+m_suprime_ib827,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_ib827,mag,Mean error on m_suprime_ib827.
+m_ap_suprime_ib827,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ib827,mag,Mean error on m_ap_suprime_ib827
+flag_suprime_ib827,mag,Flag set to true for sources for which niether the suprime_ib827 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_ip,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_ip,uJy,Uncertainty on f_suprime_ip.
+f_ap_suprime_ip,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_ip,uJy,Uncertainty on f_ap_suprime_ip.
+m_suprime_ip,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_ip,mag,Mean error on m_suprime_ip.
+m_ap_suprime_ip,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_ip,mag,Mean error on m_ap_suprime_ip
+flag_suprime_ip,mag,Flag set to true for sources for which niether the suprime_ip aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_n816,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_n816,uJy,Uncertainty on f_suprime_n816.
+f_ap_suprime_n816,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_n816,uJy,Uncertainty on f_ap_suprime_n816.
+m_suprime_n816,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_n816,mag,Mean error on m_suprime_n816.
+m_ap_suprime_n816,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_n816,mag,Mean error on m_ap_suprime_n816
+flag_suprime_n816,mag,Flag set to true for sources for which niether the suprime_n816 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_n921,uJy,Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_n921,uJy,Uncertainty on f_suprime_n921.
+f_ap_suprime_n921,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_n921,uJy,Uncertainty on f_ap_suprime_n921.
+m_suprime_n921,mag,Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_n921,mag,Mean error on m_suprime_n921.
+m_ap_suprime_n921,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_n921,mag,Mean error on m_ap_suprime_n921
+flag_suprime_n921,mag,Flag set to true for sources for which niether the suprime_n921 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_nb711,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_nb711,uJy,Uncertainty on f_suprime_nb711.
+f_ap_suprime_nb711,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_nb711,uJy,Uncertainty on f_ap_suprime_nb711.
+m_suprime_nb711,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_nb711,mag,Mean error on m_suprime_nb711.
+m_ap_suprime_nb711,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_nb711,mag,Mean error on m_ap_suprime_nb711
+flag_suprime_nb711,mag,Flag set to true for sources for which niether the suprime_nb711 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_nb816,uJy,Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_nb816,uJy,Uncertainty on f_suprime_nb816.
+f_ap_suprime_nb816,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_nb816,uJy,Uncertainty on f_ap_suprime_nb816.
+m_suprime_nb816,mag,Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_nb816,mag,Mean error on m_suprime_nb816.
+m_ap_suprime_nb816,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_nb816,mag,Mean error on m_ap_suprime_nb816
+flag_suprime_nb816,mag,Flag set to true for sources for which niether the suprime_nb816 aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_r,uJy,Total flux density in the R band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_r,uJy,Uncertainty on f_suprime_r.
+f_ap_suprime_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_r,uJy,Uncertainty on f_ap_suprime_r.
+m_suprime_r,mag,Total AB magnitude in the R band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_r,mag,Mean error on m_suprime_r.
+m_ap_suprime_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_r,mag,Mean error on m_ap_suprime_r
+flag_suprime_r,mag,Flag set to true for sources for which niether the suprime_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_rc,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_rc,uJy,Uncertainty on f_suprime_rc.
+f_ap_suprime_rc,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_rc,uJy,Uncertainty on f_ap_suprime_rc.
+m_suprime_rc,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_rc,mag,Mean error on m_suprime_rc.
+m_ap_suprime_rc,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_rc,mag,Mean error on m_ap_suprime_rc
+flag_suprime_rc,mag,Flag set to true for sources for which niether the suprime_rc aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_rp,uJy,Total flux density in the R band of SuprimeCam on The Subaru telescope.
+ferr_suprime_rp,uJy,Uncertainty on f_suprime_rp.
+f_ap_suprime_rp,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_rp,uJy,Uncertainty on f_ap_suprime_rp.
+m_suprime_rp,mag,Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+merr_suprime_rp,mag,Mean error on m_suprime_rp.
+m_ap_suprime_rp,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_rp,mag,Mean error on m_ap_suprime_rp
+flag_suprime_rp,mag,Flag set to true for sources for which niether the suprime_rp aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_v,uJy,Total flux density in the V band of SuprimeCam on The Subaru telescope.
+ferr_suprime_v,uJy,Uncertainty on f_suprime_v.
+f_ap_suprime_v,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_v,uJy,Uncertainty on f_ap_suprime_v.
+m_suprime_v,mag,Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+merr_suprime_v,mag,Mean error on m_suprime_v.
+m_ap_suprime_v,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_v,mag,Mean error on m_ap_suprime_v
+flag_suprime_v,mag,Flag set to true for sources for which niether the suprime_v aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_y,uJy,Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_y,uJy,Uncertainty on f_suprime_y.
+f_ap_suprime_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_y,uJy,Uncertainty on f_ap_suprime_y.
+m_suprime_y,mag,Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_y,mag,Mean error on m_suprime_y.
+m_ap_suprime_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_y,mag,Mean error on m_ap_suprime_y
+flag_suprime_y,mag,Flag set to true for sources for which niether the suprime_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_z,uJy,Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+ferr_suprime_z,uJy,Uncertainty on f_suprime_z.
+f_ap_suprime_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of HyperSuprimeCam on The Subaru telescope."
+ferr_ap_suprime_z,uJy,Uncertainty on f_ap_suprime_z.
+m_suprime_z,mag,Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+merr_suprime_z,mag,Mean error on m_suprime_z.
+m_ap_suprime_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope."
+merr_ap_suprime_z,mag,Mean error on m_ap_suprime_z
+flag_suprime_z,mag,Flag set to true for sources for which niether the suprime_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_zp,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_zp,uJy,Uncertainty on f_suprime_zp.
+f_ap_suprime_zp,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_zp,uJy,Uncertainty on f_ap_suprime_zp.
+m_suprime_zp,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_zp,mag,Mean error on m_suprime_zp.
+m_ap_suprime_zp,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_zp,mag,Mean error on m_ap_suprime_zp
+flag_suprime_zp,mag,Flag set to true for sources for which niether the suprime_zp aperture nor total flux should not be used for SED fitting (see documentation).
+f_suprime_zpp,uJy,Total flux density in the I band of SuprimeCam on The Subaru telescope.
+ferr_suprime_zpp,uJy,Uncertainty on f_suprime_zpp.
+f_ap_suprime_zpp,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of SuprimeCam on The Subaru telescope."
+ferr_ap_suprime_zpp,uJy,Uncertainty on f_ap_suprime_zpp.
+m_suprime_zpp,mag,Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+merr_suprime_zpp,mag,Mean error on m_suprime_zpp.
+m_ap_suprime_zpp,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of SuprimeCam on The Subaru telescope."
+merr_ap_suprime_zpp,mag,Mean error on m_ap_suprime_zpp
+flag_suprime_zpp,mag,Flag set to true for sources for which niether the suprime_zpp aperture nor total flux should not be used for SED fitting (see documentation).
+f_tifkam_ks,uJy,Total flux density in the K band of The Instrument Formerly Known as Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory.
+ferr_tifkam_ks,uJy,Uncertainty on f_tifkam_ks.
+f_ap_tifkam_ks,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Instrument Formerly Known as Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory."
+ferr_ap_tifkam_ks,uJy,Uncertainty on f_ap_tifkam_ks.
+m_tifkam_ks,mag,Total AB magnitude in the K band of The Instrument Formerly Known as Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory.
+merr_tifkam_ks,mag,Mean error on m_tifkam_ks.
+m_ap_tifkam_ks,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Instrument Formerly Known as Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory."
+merr_ap_tifkam_ks,mag,Mean error on m_ap_tifkam_ks
+flag_tifkam_ks,mag,Flag set to true for sources for which niether the tifkam_ks aperture nor total flux should not be used for SED fitting (see documentation).
+f_ukidss_h,uJy,Total flux density in the H band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+ferr_ukidss_h,uJy,Uncertainty on f_ukidss_h.
+f_ap_ukidss_h,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+ferr_ap_ukidss_h,uJy,Uncertainty on f_ap_ukidss_h.
+m_ukidss_h,mag,Total AB magnitude in the H band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+merr_ukidss_h,mag,Mean error on m_ukidss_h.
+m_ap_ukidss_h,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+merr_ap_ukidss_h,mag,Mean error on m_ap_ukidss_h
+flag_ukidss_h,mag,Flag set to true for sources for which niether the ukidss_h aperture nor total flux should not be used for SED fitting (see documentation).
+f_ukidss_j,uJy,Total flux density in the J band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+ferr_ukidss_j,uJy,Uncertainty on f_ukidss_j.
+f_ap_ukidss_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+ferr_ap_ukidss_j,uJy,Uncertainty on f_ap_ukidss_j.
+m_ukidss_j,mag,Total AB magnitude in the J band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+merr_ukidss_j,mag,Mean error on m_ukidss_j.
+m_ap_ukidss_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+merr_ap_ukidss_j,mag,Mean error on m_ap_ukidss_j
+flag_ukidss_j,mag,Flag set to true for sources for which niether the ukidss_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_ukidss_k,uJy,Total flux density in the K band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+ferr_ukidss_k,uJy,Uncertainty on f_ukidss_k.
+f_ap_ukidss_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+ferr_ap_ukidss_k,uJy,Uncertainty on f_ap_ukidss_k.
+m_ukidss_k,mag,Total AB magnitude in the K band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+merr_ukidss_k,mag,Mean error on m_ukidss_k.
+m_ap_ukidss_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+merr_ap_ukidss_k,mag,Mean error on m_ap_ukidss_k
+flag_ukidss_k,mag,Flag set to true for sources for which niether the ukidss_k aperture nor total flux should not be used for SED fitting (see documentation).
+f_ukidss_y,uJy,Total flux density in the I band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+ferr_ukidss_y,uJy,Uncertainty on f_ukidss_y.
+f_ap_ukidss_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+ferr_ap_ukidss_y,uJy,Uncertainty on f_ap_ukidss_y.
+m_ukidss_y,mag,Total AB magnitude in the I band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT).
+merr_ukidss_y,mag,Mean error on m_ukidss_y.
+m_ap_ukidss_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Camera (WFCAM) on The United Kingdom Infrared Telescope (UKIRT)."
+merr_ap_ukidss_y,mag,Mean error on m_ap_ukidss_y
+flag_ukidss_y,mag,Flag set to true for sources for which niether the ukidss_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_vista_h,uJy,Total flux density in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+ferr_vista_h,uJy,Uncertainty on f_vista_h.
+f_ap_vista_h,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+ferr_ap_vista_h,uJy,Uncertainty on f_ap_vista_h.
+m_vista_h,mag,Total AB magnitude in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+merr_vista_h,mag,Mean error on m_vista_h.
+m_ap_vista_h,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+merr_ap_vista_h,mag,Mean error on m_ap_vista_h
+flag_vista_h,mag,Flag set to true for sources for which niether the vista_h aperture nor total flux should not be used for SED fitting (see documentation).
+f_vista_j,uJy,Total flux density in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+ferr_vista_j,uJy,Uncertainty on f_vista_j.
+f_ap_vista_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+ferr_ap_vista_j,uJy,Uncertainty on f_ap_vista_j.
+m_vista_j,mag,Total AB magnitude in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+merr_vista_j,mag,Mean error on m_vista_j.
+m_ap_vista_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+merr_ap_vista_j,mag,Mean error on m_ap_vista_j
+flag_vista_j,mag,Flag set to true for sources for which niether the vista_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_vista_ks,uJy,Total flux density in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+ferr_vista_ks,uJy,Uncertainty on f_vista_ks.
+f_ap_vista_ks,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+ferr_ap_vista_ks,uJy,Uncertainty on f_ap_vista_ks.
+m_vista_ks,mag,Total AB magnitude in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+merr_vista_ks,mag,Mean error on m_vista_ks.
+m_ap_vista_ks,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+merr_ap_vista_ks,mag,Mean error on m_ap_vista_ks
+flag_vista_ks,mag,Flag set to true for sources for which niether the vista_ks aperture nor total flux should not be used for SED fitting (see documentation).
+f_vista_y,uJy,Total flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+ferr_vista_y,uJy,Uncertainty on f_vista_y.
+f_ap_vista_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+ferr_ap_vista_y,uJy,Uncertainty on f_ap_vista_y.
+m_vista_y,mag,Total AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+merr_vista_y,mag,Mean error on m_vista_y.
+m_ap_vista_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+merr_ap_vista_y,mag,Mean error on m_ap_vista_y
+flag_vista_y,mag,Flag set to true for sources for which niether the vista_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_vista_z,uJy,Total flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+ferr_vista_z,uJy,Uncertainty on f_vista_z.
+f_ap_vista_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+ferr_ap_vista_z,uJy,Uncertainty on f_ap_vista_z.
+m_vista_z,mag,Total AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+merr_vista_z,mag,Mean error on m_vista_z.
+m_ap_vista_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA)."
+merr_ap_vista_z,mag,Mean error on m_ap_vista_z
+flag_vista_z,mag,Flag set to true for sources for which niether the vista_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc3_f098,uJy,Total flux density in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+ferr_wfc3_f098,uJy,Uncertainty on f_wfc3_f098.
+f_ap_wfc3_f098,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+ferr_ap_wfc3_f098,uJy,Uncertainty on f_ap_wfc3_f098.
+m_wfc3_f098,mag,Total AB magnitude in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+merr_wfc3_f098,mag,Mean error on m_wfc3_f098.
+m_ap_wfc3_f098,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+merr_ap_wfc3_f098,mag,Mean error on m_ap_wfc3_f098
+flag_wfc3_f098,mag,Flag set to true for sources for which niether the wfc3_f098 aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc3_f105w,uJy,Total flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+ferr_wfc3_f105w,uJy,Uncertainty on f_wfc3_f105w.
+f_ap_wfc3_f105w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+ferr_ap_wfc3_f105w,uJy,Uncertainty on f_ap_wfc3_f105w.
+m_wfc3_f105w,mag,Total AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+merr_wfc3_f105w,mag,Mean error on m_wfc3_f105w.
+m_ap_wfc3_f105w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+merr_ap_wfc3_f105w,mag,Mean error on m_ap_wfc3_f105w
+flag_wfc3_f105w,mag,Flag set to true for sources for which niether the wfc3_f105w aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc3_f125w,uJy,Total flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+ferr_wfc3_f125w,uJy,Uncertainty on f_wfc3_f125w.
+f_ap_wfc3_f125w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+ferr_ap_wfc3_f125w,uJy,Uncertainty on f_ap_wfc3_f125w.
+m_wfc3_f125w,mag,Total AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+merr_wfc3_f125w,mag,Mean error on m_wfc3_f125w.
+m_ap_wfc3_f125w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+merr_ap_wfc3_f125w,mag,Mean error on m_ap_wfc3_f125w
+flag_wfc3_f125w,mag,Flag set to true for sources for which niether the wfc3_f125w aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc3_f140w,uJy,Total flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+ferr_wfc3_f140w,uJy,Uncertainty on f_wfc3_f140w.
+f_ap_wfc3_f140w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+ferr_ap_wfc3_f140w,uJy,Uncertainty on f_ap_wfc3_f140w.
+m_wfc3_f140w,mag,Total AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+merr_wfc3_f140w,mag,Mean error on m_wfc3_f140w.
+m_ap_wfc3_f140w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+merr_ap_wfc3_f140w,mag,Mean error on m_ap_wfc3_f140w
+flag_wfc3_f140w,mag,Flag set to true for sources for which niether the wfc3_f140w aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc3_f160w,uJy,Total flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+ferr_wfc3_f160w,uJy,Uncertainty on f_wfc3_f160w.
+f_ap_wfc3_f160w,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+ferr_ap_wfc3_f160w,uJy,Uncertainty on f_ap_wfc3_f160w.
+m_wfc3_f160w,mag,Total AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST).
+merr_wfc3_f160w,mag,Mean error on m_wfc3_f160w.
+m_ap_wfc3_f160w,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST)."
+merr_ap_wfc3_f160w,mag,Mean error on m_ap_wfc3_f160w
+flag_wfc3_f160w,mag,Flag set to true for sources for which niether the wfc3_f160w aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc_g,uJy,Total flux density in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+ferr_wfc_g,uJy,Uncertainty on f_wfc_g.
+f_ap_wfc_g,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+ferr_ap_wfc_g,uJy,Uncertainty on f_ap_wfc_g.
+m_wfc_g,mag,Total AB magnitude in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+merr_wfc_g,mag,Mean error on m_wfc_g.
+m_ap_wfc_g,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+merr_ap_wfc_g,mag,Mean error on m_ap_wfc_g
+flag_wfc_g,mag,Flag set to true for sources for which niether the wfc_g aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc_i,uJy,Total flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+ferr_wfc_i,uJy,Uncertainty on f_wfc_i.
+f_ap_wfc_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+ferr_ap_wfc_i,uJy,Uncertainty on f_ap_wfc_i.
+m_wfc_i,mag,Total AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+merr_wfc_i,mag,Mean error on m_wfc_i.
+m_ap_wfc_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+merr_ap_wfc_i,mag,Mean error on m_ap_wfc_i
+flag_wfc_i,mag,Flag set to true for sources for which niether the wfc_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc_r,uJy,Total flux density in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+ferr_wfc_r,uJy,Uncertainty on f_wfc_r.
+f_ap_wfc_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+ferr_ap_wfc_r,uJy,Uncertainty on f_ap_wfc_r.
+m_wfc_r,mag,Total AB magnitude in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+merr_wfc_r,mag,Mean error on m_wfc_r.
+m_ap_wfc_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+merr_ap_wfc_r,mag,Mean error on m_ap_wfc_r
+flag_wfc_r,mag,Flag set to true for sources for which niether the wfc_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc_u,uJy,Total flux density in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+ferr_wfc_u,uJy,Uncertainty on f_wfc_u.
+f_ap_wfc_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+ferr_ap_wfc_u,uJy,Uncertainty on f_ap_wfc_u.
+m_wfc_u,mag,Total AB magnitude in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+merr_wfc_u,mag,Mean error on m_wfc_u.
+m_ap_wfc_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+merr_ap_wfc_u,mag,Mean error on m_ap_wfc_u
+flag_wfc_u,mag,Flag set to true for sources for which niether the wfc_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfc_z,uJy,Total flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+ferr_wfc_z,uJy,Uncertainty on f_wfc_z.
+f_ap_wfc_z,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+ferr_ap_wfc_z,uJy,Uncertainty on f_ap_wfc_z.
+m_wfc_z,mag,Total AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT).
+merr_wfc_z,mag,Mean error on m_wfc_z.
+m_ap_wfc_z,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope (INT)."
+merr_ap_wfc_z,mag,Mean error on m_ap_wfc_z
+flag_wfc_z,mag,Flag set to true for sources for which niether the wfc_z aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_416n,uJy,Total flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_416n,uJy,Uncertainty on f_wfi_416n.
+f_ap_wfi_416n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_416n,uJy,Uncertainty on f_ap_wfi_416n.
+m_wfi_416n,mag,Total AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_416n,mag,Mean error on m_wfi_416n.
+m_ap_wfi_416n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_416n,mag,Mean error on m_ap_wfi_416n
+flag_wfi_416n,mag,Flag set to true for sources for which niether the wfi_416n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_461n,uJy,Total flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_461n,uJy,Uncertainty on f_wfi_461n.
+f_ap_wfi_461n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_461n,uJy,Uncertainty on f_ap_wfi_461n.
+m_wfi_461n,mag,Total AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_461n,mag,Mean error on m_wfi_461n.
+m_ap_wfi_461n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_461n,mag,Mean error on m_ap_wfi_461n
+flag_wfi_461n,mag,Flag set to true for sources for which niether the wfi_461n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_485n,uJy,Total flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_485n,uJy,Uncertainty on f_wfi_485n.
+f_ap_wfi_485n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_485n,uJy,Uncertainty on f_ap_wfi_485n.
+m_wfi_485n,mag,Total AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_485n,mag,Mean error on m_wfi_485n.
+m_ap_wfi_485n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_485n,mag,Mean error on m_ap_wfi_485n
+flag_wfi_485n,mag,Flag set to true for sources for which niether the wfi_485n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_518n,uJy,Total flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_518n,uJy,Uncertainty on f_wfi_518n.
+f_ap_wfi_518n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_518n,uJy,Uncertainty on f_ap_wfi_518n.
+m_wfi_518n,mag,Total AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_518n,mag,Mean error on m_wfi_518n.
+m_ap_wfi_518n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_518n,mag,Mean error on m_ap_wfi_518n
+flag_wfi_518n,mag,Flag set to true for sources for which niether the wfi_518n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_571n,uJy,Total flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_571n,uJy,Uncertainty on f_wfi_571n.
+f_ap_wfi_571n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_571n,uJy,Uncertainty on f_ap_wfi_571n.
+m_wfi_571n,mag,Total AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_571n,mag,Mean error on m_wfi_571n.
+m_ap_wfi_571n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_571n,mag,Mean error on m_ap_wfi_571n
+flag_wfi_571n,mag,Flag set to true for sources for which niether the wfi_571n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_604n,uJy,Total flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_604n,uJy,Uncertainty on f_wfi_604n.
+f_ap_wfi_604n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_604n,uJy,Uncertainty on f_ap_wfi_604n.
+m_wfi_604n,mag,Total AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_604n,mag,Mean error on m_wfi_604n.
+m_ap_wfi_604n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_604n,mag,Mean error on m_ap_wfi_604n
+flag_wfi_604n,mag,Flag set to true for sources for which niether the wfi_604n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_646n,uJy,Total flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_646n,uJy,Uncertainty on f_wfi_646n.
+f_ap_wfi_646n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_646n,uJy,Uncertainty on f_ap_wfi_646n.
+m_wfi_646n,mag,Total AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_646n,mag,Mean error on m_wfi_646n.
+m_ap_wfi_646n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_646n,mag,Mean error on m_ap_wfi_646n
+flag_wfi_646n,mag,Flag set to true for sources for which niether the wfi_646n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_696n,uJy,Total flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_696n,uJy,Uncertainty on f_wfi_696n.
+f_ap_wfi_696n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_696n,uJy,Uncertainty on f_ap_wfi_696n.
+m_wfi_696n,mag,Total AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_696n,mag,Mean error on m_wfi_696n.
+m_ap_wfi_696n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_696n,mag,Mean error on m_ap_wfi_696n
+flag_wfi_696n,mag,Flag set to true for sources for which niether the wfi_696n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_753n,uJy,Total flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_753n,uJy,Uncertainty on f_wfi_753n.
+f_ap_wfi_753n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_753n,uJy,Uncertainty on f_ap_wfi_753n.
+m_wfi_753n,mag,Total AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_753n,mag,Mean error on m_wfi_753n.
+m_ap_wfi_753n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_753n,mag,Mean error on m_ap_wfi_753n
+flag_wfi_753n,mag,Flag set to true for sources for which niether the wfi_753n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_815n,uJy,Total flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_815n,uJy,Uncertainty on f_wfi_815n.
+f_ap_wfi_815n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_815n,uJy,Uncertainty on f_ap_wfi_815n.
+m_wfi_815n,mag,Total AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_815n,mag,Mean error on m_wfi_815n.
+m_ap_wfi_815n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_815n,mag,Mean error on m_ap_wfi_815n
+flag_wfi_815n,mag,Flag set to true for sources for which niether the wfi_815n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_856n,uJy,Total flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_856n,uJy,Uncertainty on f_wfi_856n.
+f_ap_wfi_856n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_856n,uJy,Uncertainty on f_ap_wfi_856n.
+m_wfi_856n,mag,Total AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_856n,mag,Mean error on m_wfi_856n.
+m_ap_wfi_856n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_856n,mag,Mean error on m_ap_wfi_856n
+flag_wfi_856n,mag,Flag set to true for sources for which niether the wfi_856n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_914n,uJy,Total flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_914n,uJy,Uncertainty on f_wfi_914n.
+f_ap_wfi_914n,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_914n,uJy,Uncertainty on f_ap_wfi_914n.
+m_wfi_914n,mag,Total AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_914n,mag,Mean error on m_wfi_914n.
+m_ap_wfi_914n,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_914n,mag,Mean error on m_ap_wfi_914n
+flag_wfi_914n,mag,Flag set to true for sources for which niether the wfi_914n aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_b,uJy,Total flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_b,uJy,Uncertainty on f_wfi_b.
+f_ap_wfi_b,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_b,uJy,Uncertainty on f_ap_wfi_b.
+m_wfi_b,mag,Total AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_b,mag,Mean error on m_wfi_b.
+m_ap_wfi_b,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_b,mag,Mean error on m_ap_wfi_b
+flag_wfi_b,mag,Flag set to true for sources for which niether the wfi_b aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_b123,uJy,Total flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_b123,uJy,Uncertainty on f_wfi_b123.
+f_ap_wfi_b123,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_b123,uJy,Uncertainty on f_ap_wfi_b123.
+m_wfi_b123,mag,Total AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_b123,mag,Mean error on m_wfi_b123.
+m_ap_wfi_b123,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_b123,mag,Mean error on m_ap_wfi_b123
+flag_wfi_b123,mag,Flag set to true for sources for which niether the wfi_b123 aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_i,uJy,Total flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_i,uJy,Uncertainty on f_wfi_i.
+f_ap_wfi_i,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_i,uJy,Uncertainty on f_ap_wfi_i.
+m_wfi_i,mag,Total AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_i,mag,Mean error on m_wfi_i.
+m_ap_wfi_i,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_i,mag,Mean error on m_ap_wfi_i
+flag_wfi_i,mag,Flag set to true for sources for which niether the wfi_i aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_r,uJy,Total flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_r,uJy,Uncertainty on f_wfi_r.
+f_ap_wfi_r,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_r,uJy,Uncertainty on f_ap_wfi_r.
+m_wfi_r,mag,Total AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_r,mag,Mean error on m_wfi_r.
+m_ap_wfi_r,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_r,mag,Mean error on m_ap_wfi_r
+flag_wfi_r,mag,Flag set to true for sources for which niether the wfi_r aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_u,uJy,Total flux density in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_u,uJy,Uncertainty on f_wfi_u.
+f_ap_wfi_u,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_u,uJy,Uncertainty on f_ap_wfi_u.
+m_wfi_u,mag,Total AB magnitude in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_u,mag,Mean error on m_wfi_u.
+m_ap_wfi_u,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_u,mag,Mean error on m_ap_wfi_u
+flag_wfi_u,mag,Flag set to true for sources for which niether the wfi_u aperture nor total flux should not be used for SED fitting (see documentation).
+f_wfi_v,uJy,Total flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+ferr_wfi_v,uJy,Uncertainty on f_wfi_v.
+f_ap_wfi_v,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+ferr_ap_wfi_v,uJy,Uncertainty on f_ap_wfi_v.
+m_wfi_v,mag,Total AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope.
+merr_wfi_v,mag,Mean error on m_wfi_v.
+m_ap_wfi_v,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft (MPG) telescope."
+merr_ap_wfi_v,mag,Mean error on m_ap_wfi_v
+flag_wfi_v,mag,Flag set to true for sources for which niether the wfi_v aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircam_h,uJy,Total flux density in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+ferr_wircam_h,uJy,Uncertainty on f_wircam_h.
+f_ap_wircam_h,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_wircam_h,uJy,Uncertainty on f_ap_wircam_h.
+m_wircam_h,mag,Total AB magnitude in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+merr_wircam_h,mag,Mean error on m_wircam_h.
+m_ap_wircam_h,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+merr_ap_wircam_h,mag,Mean error on m_ap_wircam_h
+flag_wircam_h,mag,Flag set to true for sources for which niether the wircam_h aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircam_j,uJy,Total flux density in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+ferr_wircam_j,uJy,Uncertainty on f_wircam_j.
+f_ap_wircam_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_wircam_j,uJy,Uncertainty on f_ap_wircam_j.
+m_wircam_j,mag,Total AB magnitude in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+merr_wircam_j,mag,Mean error on m_wircam_j.
+m_ap_wircam_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+merr_ap_wircam_j,mag,Mean error on m_ap_wircam_j
+flag_wircam_j,mag,Flag set to true for sources for which niether the wircam_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircam_ks,uJy,Total flux density in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+ferr_wircam_ks,uJy,Uncertainty on f_wircam_ks.
+f_ap_wircam_ks,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_wircam_ks,uJy,Uncertainty on f_ap_wircam_ks.
+m_wircam_ks,mag,Total AB magnitude in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+merr_wircam_ks,mag,Mean error on m_wircam_ks.
+m_ap_wircam_ks,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+merr_ap_wircam_ks,mag,Mean error on m_ap_wircam_ks
+flag_wircam_ks,mag,Flag set to true for sources for which niether the wircam_ks aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircam_y,uJy,Total flux density in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+ferr_wircam_y,uJy,Uncertainty on f_wircam_y.
+f_ap_wircam_y,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+ferr_ap_wircam_y,uJy,Uncertainty on f_ap_wircam_y.
+m_wircam_y,mag,Total AB magnitude in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT).
+merr_wircam_y,mag,Mean error on m_wircam_y.
+m_ap_wircam_y,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France Hawaii Telescope (CFHT)."
+merr_ap_wircam_y,mag,Mean error on m_ap_wircam_y
+flag_wircam_y,mag,Flag set to true for sources for which niether the wircam_y aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircs_j,uJy,Total flux density in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200).
+ferr_wircs_j,uJy,Uncertainty on f_wircs_j.
+f_ap_wircs_j,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200)."
+ferr_ap_wircs_j,uJy,Uncertainty on f_ap_wircs_j.
+m_wircs_j,mag,Total AB magnitude in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200).
+merr_wircs_j,mag,Mean error on m_wircs_j.
+m_ap_wircs_j,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200)."
+merr_ap_wircs_j,mag,Mean error on m_ap_wircs_j
+flag_wircs_j,mag,Flag set to true for sources for which niether the wircs_j aperture nor total flux should not be used for SED fitting (see documentation).
+f_wircs_k,uJy,Total flux density in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200).
+ferr_wircs_k,uJy,Uncertainty on f_wircs_k.
+f_ap_wircs_k,uJy,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) flux density in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200)."
+ferr_ap_wircs_k,uJy,Uncertainty on f_ap_wircs_k.
+m_wircs_k,mag,Total AB magnitude in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200).
+merr_wircs_k,mag,Mean error on m_wircs_k.
+m_ap_wircs_k,mag,"Aperture (nearest aperture to 2 arcsec, aperture correction applied) AB magnitude in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch Hale Telescope (P200)."
+merr_ap_wircs_k,mag,Mean error on m_ap_wircs_k
+flag_wircs_k,mag,Flag set to true for sources for which niether the wircs_k aperture nor total flux should not be used for SED fitting (see documentation).
+cigale_sfr,Msun / yr,Star Formation Rate estimated by SED fitting with CIGALE.
+cigale_sfr_err,Msun / yr,Uncertainty on CIGALE_SFR.
+cigale_mstar,Msun,Stellar Mass estimated by SED fitting with CIGALE.
+cigale_mstar_err,Msun,Uncertainty on CIGALE_Mstar
+cigale_dustlumin,W,Dust luminosity estimated by SED fitting with CIGALE using both optical and infra-red information.
+cigale_dustlumin_err,W,Uncertainty on CIGALE_DustLumin.
+cigale_dustlumin_ironly,W,Dust luminosity estimated by SED fitting with CIGALE using only the infra-red information.
+cigale_dustlumin_ironly_err,W,Uncertainty on CIGALE_DustLumin_IRonly
+flag_cigale,,"Flag qualifying the global fitting with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
+flag_cigale_opt,,"Flag qualifying the fitting of the optical part of the spectrum during the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
+flag_cigale_ir,,"Flag qualifying the fitting of the infra-red part of the spectrum during the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
+flag_cigale_ironly,,"Flag qualifying the fitting using only infra-red data with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
+flag_gaia,,Flag indicating the increasing probability of the source being a Gaia object (see note).
+flag_cleaned,,Boolean flag denoting that the source was associated to really near object that were removed during the cleaning procedure.
+flag_merged,,Boolean flag denoting a possible mis-association during the cross-matching of the various catalogues.
+flag_optnir_obs,,Flag indicating in which wavelength regimes the source was observed (see note).
+flag_optnir_det,,Flag indicating in which wavelength regimes the source was detected (see note).

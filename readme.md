@@ -21,7 +21,7 @@ The repository is organised as follow:
 DMU list
 --------
 
-Here is the list of the DMU numbers with their associated responsibility. Some of these involve ongoing work and are not currently on GitHub. dmu32 contains the main HELP data product which joins together data from dmu0 (optical surveys), dmu1 (masterlist), dmu24 (photometric redhsifts), dmu26 (XID+ fluxes), dmu28 (CIGALE SED fits).
+Here is the list of the DMU numbers with their associated responsibility. Some of these involve ongoing work and are not currently on GitHub. dmu32 contains the main HELP data product which joins together data from dmu0 (optical surveys), dmu1 (masterlist), dmu24 (photometric redshifts), dmu26 (XID+ fluxes), dmu28 (CIGALE SED fits).
 
  DMU#  |  Responsibility
 -------|------------------------------------------

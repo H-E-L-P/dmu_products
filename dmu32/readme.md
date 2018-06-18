@@ -5,6 +5,15 @@ This repository contains all the final HELP catalogues across the various fields
 
 In general the fits files stored here contain the latest and most complete data products across all of HELP. Each final catalogue contains a SUFFIX equal to the date the masterlist was produced e.g. ELAIS-N1_20171016. In general all data products are built on this masterlist which is defined in dmu1 to ensure the exact same file is used throughout. The final file may have _cigale in the name to denote it is an input for CIGALE and does not include the final CIGALE outputs.
 
+Column descriptions
+-----------------------
+A full description of the columns is given in columns.csv. It is also available from the Virtual Observatory (VO) which is often the best way to access this data since individual fits files stored here can be as large as 60Gb.
+
+[http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
+
+Meta data on each field
+-----------------------
+
 In each field folder there is a file field_meta.yml which contains details of all the tables that have gone into producing the final catalogue as well as other meta data regarding the field. Depending on the field this can include:
 
 1. field: FIELDNAME
