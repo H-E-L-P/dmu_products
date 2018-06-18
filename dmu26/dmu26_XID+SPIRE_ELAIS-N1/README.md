@@ -16,18 +16,18 @@ Description:
 
 ### Running on Apollo
 To run on Apollo, first run the notebook [XID+SPIRE_prior_SERVS.ipynb](./XID+SPIRE_prior_SERVS.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles:
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
 ```bash
 mkdir output
 mv XID_plus_hier.sh
 cd output
 module load sge
-qsub -t 1-9 -q mps.q -jc mps.short XID_plus_hier.sh
+qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
 ```
-Then fit all 234 tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
+Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
 ```bash
 cd ..
-qsub -t 1-234 -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
@@ -39,7 +39,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_spire_t
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load starlink/hikianalia-64bit
 stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_ELAIS-N1_cat.fits
 ```
@@ -64,19 +64,19 @@ pdh21       2094265   6298899.396      7065.750   6974095.545        6168479.561
 
 ### Running on Apollo
 To run on Apollo, first run the notebook [XID+SPIRE_prior_SWIRE.ipynb](./XID+SPIRE_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles:
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
  
 ```bash
 mkdir output
 mv XID_plus_hier.sh
 cd output
 module load sge
-qsub -t 1-20 -q mps.q -jc mps.short XID_plus_hier.sh
+qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
 ```
-Then fit all 614 tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
+Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
 ```bash
 cd ..
-qsub -t 1-614 -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
