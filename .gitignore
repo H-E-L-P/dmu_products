@@ -4,3 +4,4 @@ data_tmp/
 .ipynb_checkpoints
 dmu4/starmasks
 .idea
+.DS_Store
