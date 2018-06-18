@@ -3,7 +3,7 @@ HELP DMU32 final data repository
 
 This repository contains all the final HELP catalogues across the various fields. Each folder merges all the data available on each field. The notebook the_end.ipynb also generates a list of files and the code necessary to publish the final data on VO. This is built on using the definition of DR1 objects specified in dmu1.
 
-In general the fits files stored here contain the latest and most complete data products across all of HELP.
+In general the fits files stored here contain the latest and most complete data products across all of HELP. Each final catalogue contains a SUFFIX equal to the date the masterlist was produced e.g. ELAIS-N1_20171016. In general all data products are built on this masterlist which is defined in dmu1 to ensure the exact same file is used throughout. The final file may have _cigale in the name to denote it is an input for CIGALE and does not include the final CIGALE outputs.
 
 In each field folder there is a file field_meta.yml which contains details of all the tables that have gone into producing the final catalogue as well as other meta data regarding the field. Depending on the field this can include:
 
