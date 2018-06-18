@@ -1,4 +1,4 @@
-### dmu26_XID+SPIRE_Lockman-SWIRE
+### dmu26_XID+SPIRE_GAMA-12
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
