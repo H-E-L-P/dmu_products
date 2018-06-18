@@ -1,0 +1,5207 @@
+cigale_dustlumin:
+  description: Dust luminosity estimated by SED fitting with CIGALE using both optical
+    and infra-red information.
+  unit: W
+cigale_dustlumin_err:
+  description: Uncertainty on CIGALE_DustLumin.
+  unit: W
+cigale_dustlumin_ironly:
+  description: Dust luminosity estimated by SED fitting with CIGALE using only the
+    infra-red information.
+  unit: W
+cigale_dustlumin_ironly_err:
+  description: Uncertainty on CIGALE_DustLumin_IRonly
+  unit: W
+cigale_mstar:
+  description: Stellar Mass estimated by SED fitting with CIGALE.
+  unit: Msun
+cigale_mstar_err:
+  description: Uncertainty on CIGALE_Mstar
+  unit: Msun
+cigale_sfr:
+  description: Star Formation Rate estimated by SED fitting with CIGALE.
+  unit: Msun / yr
+cigale_sfr_err:
+  description: Uncertainty on CIGALE_SFR.
+  unit: Msun / yr
+dec:
+  description: Declination (J2000)
+  unit: deg
+ebv:
+  description: Galactic extinction (Schlegel et al. 1998) at the object position
+  unit: None
+f_90prime_g:
+  description: Total flux density in the B band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: uJy
+f_90prime_r:
+  description: Total flux density in the R band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: uJy
+f_90prime_z:
+  description: Total flux density in the I band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: uJy
+f_acs_f435w:
+  description: Total flux density in the B band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: uJy
+f_acs_f606w:
+  description: Total flux density in the R band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: uJy
+f_acs_f775w:
+  description: Total flux density in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: uJy
+f_acs_f814w:
+  description: Total flux density in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: uJy
+f_acs_f850lp:
+  description: Total flux density in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: uJy
+f_ap_90prime_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: uJy
+f_ap_90prime_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: uJy
+f_ap_90prime_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: uJy
+f_ap_acs_f435w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: uJy
+f_ap_acs_f606w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: uJy
+f_ap_acs_f775w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: uJy
+f_ap_acs_f814w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: uJy
+f_ap_acs_f850lp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: uJy
+f_ap_bessell_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: uJy
+f_ap_bessell_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: uJy
+f_ap_bessell_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: uJy
+f_ap_bessell_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: uJy
+f_ap_bessell_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: uJy
+f_ap_cfht12k_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_cfht12k_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_cfht12k_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_decam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Dark Energy Camera (DECam) on Blanco.
+  unit: uJy
+f_ap_decam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: uJy
+f_ap_decam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Dark Energy Camera (DECam) on Blanco.
+  unit: uJy
+f_ap_decam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: uJy
+f_ap_decam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: uJy
+f_ap_egacam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_egacam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_egacam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_egacam_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_egacam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_egacam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: uJy
+f_ap_galex_fuv:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+  unit: uJy
+f_ap_galex_nuv:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+  unit: uJy
+f_ap_gpc1_g:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ flux density in the B band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_ap_gpc1_i:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ flux density in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_ap_gpc1_r:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ flux density in the R band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_ap_gpc1_y:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ flux density in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_ap_gpc1_z:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ flux density in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_ap_hawki_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The High Acuity Wide field K-band Imager (HAWK-I)
+    on The Very Large Telescope (VLT) at Paranal.
+  unit: uJy
+f_ap_ips_24:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 15-30um band of The Multiband Imaging Photometer (MIPS) on
+    The Spitzer Space Telescope.
+  unit: uJy
+f_ap_irac_i1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: uJy
+f_ap_irac_i2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: uJy
+f_ap_irac_i3:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: uJy
+f_ap_irac_i4:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: uJy
+f_ap_isaac_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Infrared Spectrometer And Array Camera (ISAAC)
+    on The Very Large Telescope (VLT) at Paranal.
+  unit: uJy
+f_ap_newfirm_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_h1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_h2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_j1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_j2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_j3:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_newfirm_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: uJy
+f_ap_nicmos_f110w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object
+    Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: uJy
+f_ap_nicmos_f160w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Near Infrared Camera and Multi-Object
+    Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: uJy
+f_ap_oircs_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Multi Object Infrared Camera and Spectrograph
+    (MOIRCS) on The Subaru telescope.
+  unit: uJy
+f_ap_oircs_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Multi Object Infrared Camera and Spectrograph
+    (MOIRCS) on The Subaru telescope.
+  unit: uJy
+f_ap_omega2000_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of The Infrared Wide-Field Camera OMEGA2000 on The
+    3.5m telescope at Calar Alto.
+  unit: uJy
+f_ap_omega2000_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Infrared Wide-Field Camera OMEGA2000 on The
+    3.5m telescope at Calar Alto.
+  unit: uJy
+f_ap_omegacam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: uJy
+f_ap_omegacam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: uJy
+f_ap_omegacam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: uJy
+f_ap_omegacam_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: uJy
+f_ap_omegacam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: uJy
+f_ap_osaic_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: uJy
+f_ap_osaic_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: uJy
+f_ap_osaic_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: uJy
+f_ap_osaic_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: uJy
+f_ap_osaic_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: uJy
+f_ap_pacs_green:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 60-100um band of Photoconductor Array Camera and Spectrometer
+    (PACS) on The Herschel Space Telescope.
+  unit: uJy
+f_ap_pacs_red:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer
+    (PACS) on The Herschel Space Telescope.
+  unit: uJy
+f_ap_quirc_hk:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of The Quick Near-Infrared Camera on The University
+    of Hawaii 2.2m telescope.
+  unit: uJy
+f_ap_sdss_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: uJy
+f_ap_sdss_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: uJy
+f_ap_sdss_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: uJy
+f_ap_sdss_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: uJy
+f_ap_sdss_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: uJy
+f_ap_spire_250:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_ap_spire_350:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_ap_spire_500:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 400-750GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_ap_suprime_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia484:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia527:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia624:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia679:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia738:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ia767:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib427:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib464:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib505:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib574:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib709:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ib827:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_ip:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_n816:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_n921:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_nb711:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_nb816:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_rc:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_rp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_zp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_suprime_zpp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_ap_t_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: uJy
+f_ap_t_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: uJy
+f_ap_t_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: uJy
+f_ap_t_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: uJy
+f_ap_t_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: uJy
+f_ap_tifkam_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Instrument Formerly Known as Mosaic (TIFKAM)
+    on The Michigan Dartmouth MIT (MDM) Observatory.
+  unit: uJy
+f_ap_ukidss_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: uJy
+f_ap_ukidss_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: uJy
+f_ap_ukidss_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: uJy
+f_ap_ukidss_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: uJy
+f_ap_vista_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_ap_vista_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_ap_vista_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_ap_vista_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_ap_vista_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_ap_wfc3_f098:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: uJy
+f_ap_wfc3_f105w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: uJy
+f_ap_wfc3_f125w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: uJy
+f_ap_wfc3_f140w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: uJy
+f_ap_wfc3_f160w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: uJy
+f_ap_wfc_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: uJy
+f_ap_wfc_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: uJy
+f_ap_wfc_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: uJy
+f_ap_wfc_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: uJy
+f_ap_wfc_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: uJy
+f_ap_wfi_416n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_461n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_485n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_518n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_571n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_604n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_646n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_696n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_753n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_815n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_856n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_914n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_b123:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wfi_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: uJy
+f_ap_wircam_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_wircam_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_wircam_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_wircam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_ap_wircs_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch
+    Hale Telescope (P200).
+  unit: uJy
+f_ap_wircs_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    flux density in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch
+    Hale Telescope (P200).
+  unit: uJy
+f_bessell_b:
+  description: Total flux density in the B band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: uJy
+f_bessell_i:
+  description: Total flux density in the I band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: uJy
+f_bessell_r:
+  description: Total flux density in the R band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: uJy
+f_bessell_u:
+  description: Total flux density in the U band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: uJy
+f_bessell_v:
+  description: Total flux density in the V band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: uJy
+f_cfht12k_b:
+  description: Total flux density in the B band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_cfht12k_i:
+  description: Total flux density in the I band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_cfht12k_r:
+  description: Total flux density in the R band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_decam_g:
+  description: Total flux density in the B band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: uJy
+f_decam_i:
+  description: Total flux density in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: uJy
+f_decam_r:
+  description: Total flux density in the R band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: uJy
+f_decam_y:
+  description: Total flux density in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: uJy
+f_decam_z:
+  description: Total flux density in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: uJy
+f_egacam_g:
+  description: Total flux density in the B band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_egacam_i:
+  description: Total flux density in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_egacam_r:
+  description: Total flux density in the R band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_egacam_u:
+  description: Total flux density in the U band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_egacam_y:
+  description: Total flux density in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_egacam_z:
+  description: Total flux density in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: uJy
+f_galex_fuv:
+  description: Total flux density in the 100-200nm band of GALEX on The Galaxy Evolution
+    Exporer (GALEX).
+  unit: uJy
+f_galex_nuv:
+  description: Total flux density in the 200-300nm band of GALEX on The Galaxy Evolution
+    Exporer (GALEX).
+  unit: uJy
+f_gpc1_g:
+  description: "Total flux density in the B band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_gpc1_i:
+  description: "Total flux density in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_gpc1_r:
+  description: "Total flux density in the R band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_gpc1_y:
+  description: "Total flux density in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_gpc1_z:
+  description: "Total flux density in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: uJy
+f_hawki_k:
+  description: Total flux density in the K band of The High Acuity Wide field K-band
+    Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal.
+  unit: uJy
+f_ips_24:
+  description: Total flux density in the 15-30um band of The Multiband Imaging Photometer
+    (MIPS) on The Spitzer Space Telescope.
+  unit: uJy
+f_irac_i1:
+  description: Total flux density in the 3-4um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: uJy
+f_irac_i2:
+  description: Total flux density in the 4-8um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: uJy
+f_irac_i3:
+  description: Total flux density in the 4-8um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: uJy
+f_irac_i4:
+  description: Total flux density in the 8-15um band of The Infrared Array Camera
+    (IRAC) on The Spitzer Space Telescope.
+  unit: uJy
+f_isaac_k:
+  description: Total flux density in the K band of The Infrared Spectrometer And Array
+    Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal.
+  unit: uJy
+f_newfirm_h:
+  description: Total flux density in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_h1:
+  description: Total flux density in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_h2:
+  description: Total flux density in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_j:
+  description: Total flux density in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_j1:
+  description: Total flux density in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_j2:
+  description: Total flux density in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_j3:
+  description: Total flux density in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_newfirm_k:
+  description: Total flux density in the K band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: uJy
+f_nicmos_f110w:
+  description: Total flux density in the 100-200nm band of The Near Infrared Camera
+    and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: uJy
+f_nicmos_f160w:
+  description: Total flux density in the 100-200nm band of The Near Infrared Camera
+    and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: uJy
+f_oircs_k:
+  description: Total flux density in the K band of The Multi Object Infrared Camera
+    and Spectrograph (MOIRCS) on The Subaru telescope.
+  unit: uJy
+f_oircs_ks:
+  description: Total flux density in the K band of The Multi Object Infrared Camera
+    and Spectrograph (MOIRCS) on The Subaru telescope.
+  unit: uJy
+f_omega2000_j:
+  description: Total flux density in the J band of The Infrared Wide-Field Camera
+    OMEGA2000 on The 3.5m telescope at Calar Alto.
+  unit: uJy
+f_omega2000_ks:
+  description: Total flux density in the K band of The Infrared Wide-Field Camera
+    OMEGA2000 on The 3.5m telescope at Calar Alto.
+  unit: uJy
+f_omegacam_g:
+  description: Total flux density in the B band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: uJy
+f_omegacam_i:
+  description: Total flux density in the I band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: uJy
+f_omegacam_r:
+  description: Total flux density in the R band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: uJy
+f_omegacam_u:
+  description: Total flux density in the U band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: uJy
+f_omegacam_z:
+  description: Total flux density in the I band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: uJy
+f_osaic_b:
+  description: Total flux density in the B band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: uJy
+f_osaic_i:
+  description: Total flux density in the I band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: uJy
+f_osaic_r:
+  description: Total flux density in the R band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: uJy
+f_osaic_u:
+  description: Total flux density in the U band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: uJy
+f_osaic_z:
+  description: Total flux density in the I band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: uJy
+f_pacs_green:
+  description: Total flux density in the 60-100um band of Photoconductor Array Camera
+    and Spectrometer (PACS) on The Herschel Space Telescope.
+  unit: uJy
+f_pacs_red:
+  description: Total flux density in the 1500-3000GHz band of Photoconductor Array
+    Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+  unit: uJy
+f_quirc_hk:
+  description: Total flux density in the H band of The Quick Near-Infrared Camera
+    on The University of Hawaii 2.2m telescope.
+  unit: uJy
+f_sdss_g:
+  description: Total flux density in the B band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: uJy
+f_sdss_i:
+  description: Total flux density in the I band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: uJy
+f_sdss_r:
+  description: Total flux density in the R band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: uJy
+f_sdss_u:
+  description: Total flux density in the U band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: uJy
+f_sdss_z:
+  description: Total flux density in the I band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: uJy
+f_spire_250:
+  description: Total flux density in the 750-1500GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_spire_350:
+  description: Total flux density in the 750-1500GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_spire_500:
+  description: Total flux density in the 400-750GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: uJy
+f_suprime_b:
+  description: Total flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_g:
+  description: Total flux density in the B band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_i:
+  description: Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia484:
+  description: Total flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia527:
+  description: Total flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia624:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia679:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia738:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ia767:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib427:
+  description: Total flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib464:
+  description: Total flux density in the B band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib505:
+  description: Total flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib574:
+  description: Total flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib709:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ib827:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_ip:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_n816:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_n921:
+  description: Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_nb711:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_nb816:
+  description: Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_r:
+  description: Total flux density in the R band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_rc:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_rp:
+  description: Total flux density in the R band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_v:
+  description: Total flux density in the V band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_y:
+  description: Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_z:
+  description: Total flux density in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_zp:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_suprime_zpp:
+  description: Total flux density in the I band of SuprimeCam on The Subaru telescope.
+  unit: uJy
+f_t_g:
+  description: Total flux density in the B band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: uJy
+f_t_i:
+  description: Total flux density in the I band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: uJy
+f_t_r:
+  description: Total flux density in the R band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: uJy
+f_t_u:
+  description: Total flux density in the U band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: uJy
+f_t_z:
+  description: Total flux density in the I band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: uJy
+f_tifkam_ks:
+  description: Total flux density in the K band of The Instrument Formerly Known as
+    Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory.
+  unit: uJy
+f_ukidss_h:
+  description: Total flux density in the H band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: uJy
+f_ukidss_j:
+  description: Total flux density in the J band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: uJy
+f_ukidss_k:
+  description: Total flux density in the K band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: uJy
+f_ukidss_y:
+  description: Total flux density in the I band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: uJy
+f_vista_h:
+  description: Total flux density in the H band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_vista_j:
+  description: Total flux density in the J band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_vista_ks:
+  description: Total flux density in the K band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_vista_y:
+  description: Total flux density in the I band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_vista_z:
+  description: Total flux density in the I band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: uJy
+f_wfc3_f098:
+  description: Total flux density in the 50-100nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: uJy
+f_wfc3_f105w:
+  description: Total flux density in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: uJy
+f_wfc3_f125w:
+  description: Total flux density in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: uJy
+f_wfc3_f140w:
+  description: Total flux density in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: uJy
+f_wfc3_f160w:
+  description: Total flux density in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: uJy
+f_wfc_g:
+  description: Total flux density in the B band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: uJy
+f_wfc_i:
+  description: Total flux density in the I band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: uJy
+f_wfc_r:
+  description: Total flux density in the R band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: uJy
+f_wfc_u:
+  description: Total flux density in the U band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: uJy
+f_wfc_z:
+  description: Total flux density in the I band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: uJy
+f_wfi_416n:
+  description: Total flux density in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_461n:
+  description: Total flux density in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_485n:
+  description: Total flux density in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_518n:
+  description: Total flux density in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_571n:
+  description: Total flux density in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_604n:
+  description: Total flux density in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_646n:
+  description: Total flux density in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_696n:
+  description: Total flux density in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_753n:
+  description: Total flux density in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_815n:
+  description: Total flux density in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_856n:
+  description: Total flux density in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_914n:
+  description: Total flux density in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_b:
+  description: Total flux density in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_b123:
+  description: Total flux density in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_i:
+  description: Total flux density in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_r:
+  description: Total flux density in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_u:
+  description: Total flux density in the U band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wfi_v:
+  description: Total flux density in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: uJy
+f_wircam_h:
+  description: Total flux density in the H band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_wircam_j:
+  description: Total flux density in the J band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_wircam_ks:
+  description: Total flux density in the K band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_wircam_y:
+  description: Total flux density in the I band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: uJy
+f_wircs_j:
+  description: Total flux density in the J band of Wide Infrared Camera (WIRC) on
+    Palomar 200-inch Hale Telescope (P200).
+  unit: uJy
+f_wircs_k:
+  description: Total flux density in the K band of Wide Infrared Camera (WIRC) on
+    Palomar 200-inch Hale Telescope (P200).
+  unit: uJy
+ferr_90prime_g:
+  description: Uncertainty on f_90prime_g.
+  unit: uJy
+ferr_90prime_r:
+  description: Uncertainty on f_90prime_r.
+  unit: uJy
+ferr_90prime_z:
+  description: Uncertainty on f_90prime_z.
+  unit: uJy
+ferr_acs_f435w:
+  description: Uncertainty on f_acs_f435w.
+  unit: uJy
+ferr_acs_f606w:
+  description: Uncertainty on f_acs_f606w.
+  unit: uJy
+ferr_acs_f775w:
+  description: Uncertainty on f_acs_f775w.
+  unit: uJy
+ferr_acs_f814w:
+  description: Uncertainty on f_acs_f814w.
+  unit: uJy
+ferr_acs_f850lp:
+  description: Uncertainty on f_acs_f850lp.
+  unit: uJy
+ferr_ap_90prime_g:
+  description: Uncertainty on f_ap_90prime_g.
+  unit: uJy
+ferr_ap_90prime_r:
+  description: Uncertainty on f_ap_90prime_r.
+  unit: uJy
+ferr_ap_90prime_z:
+  description: Uncertainty on f_ap_90prime_z.
+  unit: uJy
+ferr_ap_acs_f435w:
+  description: Uncertainty on f_ap_acs_f435w.
+  unit: uJy
+ferr_ap_acs_f606w:
+  description: Uncertainty on f_ap_acs_f606w.
+  unit: uJy
+ferr_ap_acs_f775w:
+  description: Uncertainty on f_ap_acs_f775w.
+  unit: uJy
+ferr_ap_acs_f814w:
+  description: Uncertainty on f_ap_acs_f814w.
+  unit: uJy
+ferr_ap_acs_f850lp:
+  description: Uncertainty on f_ap_acs_f850lp.
+  unit: uJy
+ferr_ap_bessell_b:
+  description: Uncertainty on f_ap_bessell_b.
+  unit: uJy
+ferr_ap_bessell_i:
+  description: Uncertainty on f_ap_bessell_i.
+  unit: uJy
+ferr_ap_bessell_r:
+  description: Uncertainty on f_ap_bessell_r.
+  unit: uJy
+ferr_ap_bessell_u:
+  description: Uncertainty on f_ap_bessell_u.
+  unit: uJy
+ferr_ap_bessell_v:
+  description: Uncertainty on f_ap_bessell_v.
+  unit: uJy
+ferr_ap_cfht12k_b:
+  description: Uncertainty on f_ap_cfht12k_b.
+  unit: uJy
+ferr_ap_cfht12k_i:
+  description: Uncertainty on f_ap_cfht12k_i.
+  unit: uJy
+ferr_ap_cfht12k_r:
+  description: Uncertainty on f_ap_cfht12k_r.
+  unit: uJy
+ferr_ap_decam_g:
+  description: Uncertainty on f_ap_decam_g.
+  unit: uJy
+ferr_ap_decam_i:
+  description: Uncertainty on f_ap_decam_i.
+  unit: uJy
+ferr_ap_decam_r:
+  description: Uncertainty on f_ap_decam_r.
+  unit: uJy
+ferr_ap_decam_y:
+  description: Uncertainty on f_ap_decam_y.
+  unit: uJy
+ferr_ap_decam_z:
+  description: Uncertainty on f_ap_decam_z.
+  unit: uJy
+ferr_ap_egacam_g:
+  description: Uncertainty on f_ap_egacam_g.
+  unit: uJy
+ferr_ap_egacam_i:
+  description: Uncertainty on f_ap_egacam_i.
+  unit: uJy
+ferr_ap_egacam_r:
+  description: Uncertainty on f_ap_egacam_r.
+  unit: uJy
+ferr_ap_egacam_u:
+  description: Uncertainty on f_ap_egacam_u.
+  unit: uJy
+ferr_ap_egacam_y:
+  description: Uncertainty on f_ap_egacam_y.
+  unit: uJy
+ferr_ap_egacam_z:
+  description: Uncertainty on f_ap_egacam_z.
+  unit: uJy
+ferr_ap_galex_fuv:
+  description: Uncertainty on f_ap_galex_fuv.
+  unit: uJy
+ferr_ap_galex_nuv:
+  description: Uncertainty on f_ap_galex_nuv.
+  unit: uJy
+ferr_ap_gpc1_g:
+  description: Uncertainty on f_ap_gpc1_g.
+  unit: uJy
+ferr_ap_gpc1_i:
+  description: Uncertainty on f_ap_gpc1_i.
+  unit: uJy
+ferr_ap_gpc1_r:
+  description: Uncertainty on f_ap_gpc1_r.
+  unit: uJy
+ferr_ap_gpc1_y:
+  description: Uncertainty on f_ap_gpc1_y.
+  unit: uJy
+ferr_ap_gpc1_z:
+  description: Uncertainty on f_ap_gpc1_z.
+  unit: uJy
+ferr_ap_hawki_k:
+  description: Uncertainty on f_ap_hawki_k.
+  unit: uJy
+ferr_ap_ips_24:
+  description: Uncertainty on f_ap_ips_24.
+  unit: uJy
+ferr_ap_irac_i1:
+  description: Uncertainty on f_ap_irac_i1.
+  unit: uJy
+ferr_ap_irac_i2:
+  description: Uncertainty on f_ap_irac_i2.
+  unit: uJy
+ferr_ap_irac_i3:
+  description: Uncertainty on f_ap_irac_i3.
+  unit: uJy
+ferr_ap_irac_i4:
+  description: Uncertainty on f_ap_irac_i4.
+  unit: uJy
+ferr_ap_isaac_k:
+  description: Uncertainty on f_ap_isaac_k.
+  unit: uJy
+ferr_ap_newfirm_h:
+  description: Uncertainty on f_ap_newfirm_h.
+  unit: uJy
+ferr_ap_newfirm_h1:
+  description: Uncertainty on f_ap_newfirm_h1.
+  unit: uJy
+ferr_ap_newfirm_h2:
+  description: Uncertainty on f_ap_newfirm_h2.
+  unit: uJy
+ferr_ap_newfirm_j:
+  description: Uncertainty on f_ap_newfirm_j.
+  unit: uJy
+ferr_ap_newfirm_j1:
+  description: Uncertainty on f_ap_newfirm_j1.
+  unit: uJy
+ferr_ap_newfirm_j2:
+  description: Uncertainty on f_ap_newfirm_j2.
+  unit: uJy
+ferr_ap_newfirm_j3:
+  description: Uncertainty on f_ap_newfirm_j3.
+  unit: uJy
+ferr_ap_newfirm_k:
+  description: Uncertainty on f_ap_newfirm_k.
+  unit: uJy
+ferr_ap_nicmos_f110w:
+  description: Uncertainty on f_ap_nicmos_f110w.
+  unit: uJy
+ferr_ap_nicmos_f160w:
+  description: Uncertainty on f_ap_nicmos_f160w.
+  unit: uJy
+ferr_ap_oircs_k:
+  description: Uncertainty on f_ap_oircs_k.
+  unit: uJy
+ferr_ap_oircs_ks:
+  description: Uncertainty on f_ap_oircs_ks.
+  unit: uJy
+ferr_ap_omega2000_j:
+  description: Uncertainty on f_ap_omega2000_j.
+  unit: uJy
+ferr_ap_omega2000_ks:
+  description: Uncertainty on f_ap_omega2000_ks.
+  unit: uJy
+ferr_ap_omegacam_g:
+  description: Uncertainty on f_ap_omegacam_g.
+  unit: uJy
+ferr_ap_omegacam_i:
+  description: Uncertainty on f_ap_omegacam_i.
+  unit: uJy
+ferr_ap_omegacam_r:
+  description: Uncertainty on f_ap_omegacam_r.
+  unit: uJy
+ferr_ap_omegacam_u:
+  description: Uncertainty on f_ap_omegacam_u.
+  unit: uJy
+ferr_ap_omegacam_z:
+  description: Uncertainty on f_ap_omegacam_z.
+  unit: uJy
+ferr_ap_osaic_b:
+  description: Uncertainty on f_ap_osaic_b.
+  unit: uJy
+ferr_ap_osaic_i:
+  description: Uncertainty on f_ap_osaic_i.
+  unit: uJy
+ferr_ap_osaic_r:
+  description: Uncertainty on f_ap_osaic_r.
+  unit: uJy
+ferr_ap_osaic_u:
+  description: Uncertainty on f_ap_osaic_u.
+  unit: uJy
+ferr_ap_osaic_z:
+  description: Uncertainty on f_ap_osaic_z.
+  unit: uJy
+ferr_ap_pacs_green:
+  description: Uncertainty on f_ap_pacs_green.
+  unit: uJy
+ferr_ap_pacs_red:
+  description: Uncertainty on f_ap_pacs_red.
+  unit: uJy
+ferr_ap_quirc_hk:
+  description: Uncertainty on f_ap_quirc_hk.
+  unit: uJy
+ferr_ap_sdss_g:
+  description: Uncertainty on f_ap_sdss_g.
+  unit: uJy
+ferr_ap_sdss_i:
+  description: Uncertainty on f_ap_sdss_i.
+  unit: uJy
+ferr_ap_sdss_r:
+  description: Uncertainty on f_ap_sdss_r.
+  unit: uJy
+ferr_ap_sdss_u:
+  description: Uncertainty on f_ap_sdss_u.
+  unit: uJy
+ferr_ap_sdss_z:
+  description: Uncertainty on f_ap_sdss_z.
+  unit: uJy
+ferr_ap_spire_250:
+  description: Uncertainty on f_ap_spire_250.
+  unit: uJy
+ferr_ap_spire_350:
+  description: Uncertainty on f_ap_spire_350.
+  unit: uJy
+ferr_ap_spire_500:
+  description: Uncertainty on f_ap_spire_500.
+  unit: uJy
+ferr_ap_suprime_b:
+  description: Uncertainty on f_ap_suprime_b.
+  unit: uJy
+ferr_ap_suprime_g:
+  description: Uncertainty on f_ap_suprime_g.
+  unit: uJy
+ferr_ap_suprime_i:
+  description: Uncertainty on f_ap_suprime_i.
+  unit: uJy
+ferr_ap_suprime_ia484:
+  description: Uncertainty on f_ap_suprime_ia484.
+  unit: uJy
+ferr_ap_suprime_ia527:
+  description: Uncertainty on f_ap_suprime_ia527.
+  unit: uJy
+ferr_ap_suprime_ia624:
+  description: Uncertainty on f_ap_suprime_ia624.
+  unit: uJy
+ferr_ap_suprime_ia679:
+  description: Uncertainty on f_ap_suprime_ia679.
+  unit: uJy
+ferr_ap_suprime_ia738:
+  description: Uncertainty on f_ap_suprime_ia738.
+  unit: uJy
+ferr_ap_suprime_ia767:
+  description: Uncertainty on f_ap_suprime_ia767.
+  unit: uJy
+ferr_ap_suprime_ib427:
+  description: Uncertainty on f_ap_suprime_ib427.
+  unit: uJy
+ferr_ap_suprime_ib464:
+  description: Uncertainty on f_ap_suprime_ib464.
+  unit: uJy
+ferr_ap_suprime_ib505:
+  description: Uncertainty on f_ap_suprime_ib505.
+  unit: uJy
+ferr_ap_suprime_ib574:
+  description: Uncertainty on f_ap_suprime_ib574.
+  unit: uJy
+ferr_ap_suprime_ib709:
+  description: Uncertainty on f_ap_suprime_ib709.
+  unit: uJy
+ferr_ap_suprime_ib827:
+  description: Uncertainty on f_ap_suprime_ib827.
+  unit: uJy
+ferr_ap_suprime_ip:
+  description: Uncertainty on f_ap_suprime_ip.
+  unit: uJy
+ferr_ap_suprime_n816:
+  description: Uncertainty on f_ap_suprime_n816.
+  unit: uJy
+ferr_ap_suprime_n921:
+  description: Uncertainty on f_ap_suprime_n921.
+  unit: uJy
+ferr_ap_suprime_nb711:
+  description: Uncertainty on f_ap_suprime_nb711.
+  unit: uJy
+ferr_ap_suprime_nb816:
+  description: Uncertainty on f_ap_suprime_nb816.
+  unit: uJy
+ferr_ap_suprime_r:
+  description: Uncertainty on f_ap_suprime_r.
+  unit: uJy
+ferr_ap_suprime_rc:
+  description: Uncertainty on f_ap_suprime_rc.
+  unit: uJy
+ferr_ap_suprime_rp:
+  description: Uncertainty on f_ap_suprime_rp.
+  unit: uJy
+ferr_ap_suprime_v:
+  description: Uncertainty on f_ap_suprime_v.
+  unit: uJy
+ferr_ap_suprime_y:
+  description: Uncertainty on f_ap_suprime_y.
+  unit: uJy
+ferr_ap_suprime_z:
+  description: Uncertainty on f_ap_suprime_z.
+  unit: uJy
+ferr_ap_suprime_zp:
+  description: Uncertainty on f_ap_suprime_zp.
+  unit: uJy
+ferr_ap_suprime_zpp:
+  description: Uncertainty on f_ap_suprime_zpp.
+  unit: uJy
+ferr_ap_t_g:
+  description: Uncertainty on f_ap_t_g.
+  unit: uJy
+ferr_ap_t_i:
+  description: Uncertainty on f_ap_t_i.
+  unit: uJy
+ferr_ap_t_r:
+  description: Uncertainty on f_ap_t_r.
+  unit: uJy
+ferr_ap_t_u:
+  description: Uncertainty on f_ap_t_u.
+  unit: uJy
+ferr_ap_t_z:
+  description: Uncertainty on f_ap_t_z.
+  unit: uJy
+ferr_ap_tifkam_ks:
+  description: Uncertainty on f_ap_tifkam_ks.
+  unit: uJy
+ferr_ap_ukidss_h:
+  description: Uncertainty on f_ap_ukidss_h.
+  unit: uJy
+ferr_ap_ukidss_j:
+  description: Uncertainty on f_ap_ukidss_j.
+  unit: uJy
+ferr_ap_ukidss_k:
+  description: Uncertainty on f_ap_ukidss_k.
+  unit: uJy
+ferr_ap_ukidss_y:
+  description: Uncertainty on f_ap_ukidss_y.
+  unit: uJy
+ferr_ap_vista_h:
+  description: Uncertainty on f_ap_vista_h.
+  unit: uJy
+ferr_ap_vista_j:
+  description: Uncertainty on f_ap_vista_j.
+  unit: uJy
+ferr_ap_vista_ks:
+  description: Uncertainty on f_ap_vista_ks.
+  unit: uJy
+ferr_ap_vista_y:
+  description: Uncertainty on f_ap_vista_y.
+  unit: uJy
+ferr_ap_vista_z:
+  description: Uncertainty on f_ap_vista_z.
+  unit: uJy
+ferr_ap_wfc3_f098:
+  description: Uncertainty on f_ap_wfc3_f098.
+  unit: uJy
+ferr_ap_wfc3_f105w:
+  description: Uncertainty on f_ap_wfc3_f105w.
+  unit: uJy
+ferr_ap_wfc3_f125w:
+  description: Uncertainty on f_ap_wfc3_f125w.
+  unit: uJy
+ferr_ap_wfc3_f140w:
+  description: Uncertainty on f_ap_wfc3_f140w.
+  unit: uJy
+ferr_ap_wfc3_f160w:
+  description: Uncertainty on f_ap_wfc3_f160w.
+  unit: uJy
+ferr_ap_wfc_g:
+  description: Uncertainty on f_ap_wfc_g.
+  unit: uJy
+ferr_ap_wfc_i:
+  description: Uncertainty on f_ap_wfc_i.
+  unit: uJy
+ferr_ap_wfc_r:
+  description: Uncertainty on f_ap_wfc_r.
+  unit: uJy
+ferr_ap_wfc_u:
+  description: Uncertainty on f_ap_wfc_u.
+  unit: uJy
+ferr_ap_wfc_z:
+  description: Uncertainty on f_ap_wfc_z.
+  unit: uJy
+ferr_ap_wfi_416n:
+  description: Uncertainty on f_ap_wfi_416n.
+  unit: uJy
+ferr_ap_wfi_461n:
+  description: Uncertainty on f_ap_wfi_461n.
+  unit: uJy
+ferr_ap_wfi_485n:
+  description: Uncertainty on f_ap_wfi_485n.
+  unit: uJy
+ferr_ap_wfi_518n:
+  description: Uncertainty on f_ap_wfi_518n.
+  unit: uJy
+ferr_ap_wfi_571n:
+  description: Uncertainty on f_ap_wfi_571n.
+  unit: uJy
+ferr_ap_wfi_604n:
+  description: Uncertainty on f_ap_wfi_604n.
+  unit: uJy
+ferr_ap_wfi_646n:
+  description: Uncertainty on f_ap_wfi_646n.
+  unit: uJy
+ferr_ap_wfi_696n:
+  description: Uncertainty on f_ap_wfi_696n.
+  unit: uJy
+ferr_ap_wfi_753n:
+  description: Uncertainty on f_ap_wfi_753n.
+  unit: uJy
+ferr_ap_wfi_815n:
+  description: Uncertainty on f_ap_wfi_815n.
+  unit: uJy
+ferr_ap_wfi_856n:
+  description: Uncertainty on f_ap_wfi_856n.
+  unit: uJy
+ferr_ap_wfi_914n:
+  description: Uncertainty on f_ap_wfi_914n.
+  unit: uJy
+ferr_ap_wfi_b:
+  description: Uncertainty on f_ap_wfi_b.
+  unit: uJy
+ferr_ap_wfi_b123:
+  description: Uncertainty on f_ap_wfi_b123.
+  unit: uJy
+ferr_ap_wfi_i:
+  description: Uncertainty on f_ap_wfi_i.
+  unit: uJy
+ferr_ap_wfi_r:
+  description: Uncertainty on f_ap_wfi_r.
+  unit: uJy
+ferr_ap_wfi_u:
+  description: Uncertainty on f_ap_wfi_u.
+  unit: uJy
+ferr_ap_wfi_v:
+  description: Uncertainty on f_ap_wfi_v.
+  unit: uJy
+ferr_ap_wircam_h:
+  description: Uncertainty on f_ap_wircam_h.
+  unit: uJy
+ferr_ap_wircam_j:
+  description: Uncertainty on f_ap_wircam_j.
+  unit: uJy
+ferr_ap_wircam_ks:
+  description: Uncertainty on f_ap_wircam_ks.
+  unit: uJy
+ferr_ap_wircam_y:
+  description: Uncertainty on f_ap_wircam_y.
+  unit: uJy
+ferr_ap_wircs_j:
+  description: Uncertainty on f_ap_wircs_j.
+  unit: uJy
+ferr_ap_wircs_k:
+  description: Uncertainty on f_ap_wircs_k.
+  unit: uJy
+ferr_bessell_b:
+  description: Uncertainty on f_bessell_b.
+  unit: uJy
+ferr_bessell_i:
+  description: Uncertainty on f_bessell_i.
+  unit: uJy
+ferr_bessell_r:
+  description: Uncertainty on f_bessell_r.
+  unit: uJy
+ferr_bessell_u:
+  description: Uncertainty on f_bessell_u.
+  unit: uJy
+ferr_bessell_v:
+  description: Uncertainty on f_bessell_v.
+  unit: uJy
+ferr_cfht12k_b:
+  description: Uncertainty on f_cfht12k_b.
+  unit: uJy
+ferr_cfht12k_i:
+  description: Uncertainty on f_cfht12k_i.
+  unit: uJy
+ferr_cfht12k_r:
+  description: Uncertainty on f_cfht12k_r.
+  unit: uJy
+ferr_decam_g:
+  description: Uncertainty on f_decam_g.
+  unit: uJy
+ferr_decam_i:
+  description: Uncertainty on f_decam_i.
+  unit: uJy
+ferr_decam_r:
+  description: Uncertainty on f_decam_r.
+  unit: uJy
+ferr_decam_y:
+  description: Uncertainty on f_decam_y.
+  unit: uJy
+ferr_decam_z:
+  description: Uncertainty on f_decam_z.
+  unit: uJy
+ferr_egacam_g:
+  description: Uncertainty on f_egacam_g.
+  unit: uJy
+ferr_egacam_i:
+  description: Uncertainty on f_egacam_i.
+  unit: uJy
+ferr_egacam_r:
+  description: Uncertainty on f_egacam_r.
+  unit: uJy
+ferr_egacam_u:
+  description: Uncertainty on f_egacam_u.
+  unit: uJy
+ferr_egacam_y:
+  description: Uncertainty on f_egacam_y.
+  unit: uJy
+ferr_egacam_z:
+  description: Uncertainty on f_egacam_z.
+  unit: uJy
+ferr_galex_fuv:
+  description: Uncertainty on f_galex_fuv.
+  unit: uJy
+ferr_galex_nuv:
+  description: Uncertainty on f_galex_nuv.
+  unit: uJy
+ferr_gpc1_g:
+  description: Uncertainty on f_gpc1_g.
+  unit: uJy
+ferr_gpc1_i:
+  description: Uncertainty on f_gpc1_i.
+  unit: uJy
+ferr_gpc1_r:
+  description: Uncertainty on f_gpc1_r.
+  unit: uJy
+ferr_gpc1_y:
+  description: Uncertainty on f_gpc1_y.
+  unit: uJy
+ferr_gpc1_z:
+  description: Uncertainty on f_gpc1_z.
+  unit: uJy
+ferr_hawki_k:
+  description: Uncertainty on f_hawki_k.
+  unit: uJy
+ferr_ips_24:
+  description: Uncertainty on f_ips_24.
+  unit: uJy
+ferr_irac_i1:
+  description: Uncertainty on f_irac_i1.
+  unit: uJy
+ferr_irac_i2:
+  description: Uncertainty on f_irac_i2.
+  unit: uJy
+ferr_irac_i3:
+  description: Uncertainty on f_irac_i3.
+  unit: uJy
+ferr_irac_i4:
+  description: Uncertainty on f_irac_i4.
+  unit: uJy
+ferr_isaac_k:
+  description: Uncertainty on f_isaac_k.
+  unit: uJy
+ferr_newfirm_h:
+  description: Uncertainty on f_newfirm_h.
+  unit: uJy
+ferr_newfirm_h1:
+  description: Uncertainty on f_newfirm_h1.
+  unit: uJy
+ferr_newfirm_h2:
+  description: Uncertainty on f_newfirm_h2.
+  unit: uJy
+ferr_newfirm_j:
+  description: Uncertainty on f_newfirm_j.
+  unit: uJy
+ferr_newfirm_j1:
+  description: Uncertainty on f_newfirm_j1.
+  unit: uJy
+ferr_newfirm_j2:
+  description: Uncertainty on f_newfirm_j2.
+  unit: uJy
+ferr_newfirm_j3:
+  description: Uncertainty on f_newfirm_j3.
+  unit: uJy
+ferr_newfirm_k:
+  description: Uncertainty on f_newfirm_k.
+  unit: uJy
+ferr_nicmos_f110w:
+  description: Uncertainty on f_nicmos_f110w.
+  unit: uJy
+ferr_nicmos_f160w:
+  description: Uncertainty on f_nicmos_f160w.
+  unit: uJy
+ferr_oircs_k:
+  description: Uncertainty on f_oircs_k.
+  unit: uJy
+ferr_oircs_ks:
+  description: Uncertainty on f_oircs_ks.
+  unit: uJy
+ferr_omega2000_j:
+  description: Uncertainty on f_omega2000_j.
+  unit: uJy
+ferr_omega2000_ks:
+  description: Uncertainty on f_omega2000_ks.
+  unit: uJy
+ferr_omegacam_g:
+  description: Uncertainty on f_omegacam_g.
+  unit: uJy
+ferr_omegacam_i:
+  description: Uncertainty on f_omegacam_i.
+  unit: uJy
+ferr_omegacam_r:
+  description: Uncertainty on f_omegacam_r.
+  unit: uJy
+ferr_omegacam_u:
+  description: Uncertainty on f_omegacam_u.
+  unit: uJy
+ferr_omegacam_z:
+  description: Uncertainty on f_omegacam_z.
+  unit: uJy
+ferr_osaic_b:
+  description: Uncertainty on f_osaic_b.
+  unit: uJy
+ferr_osaic_i:
+  description: Uncertainty on f_osaic_i.
+  unit: uJy
+ferr_osaic_r:
+  description: Uncertainty on f_osaic_r.
+  unit: uJy
+ferr_osaic_u:
+  description: Uncertainty on f_osaic_u.
+  unit: uJy
+ferr_osaic_z:
+  description: Uncertainty on f_osaic_z.
+  unit: uJy
+ferr_pacs_green:
+  description: Uncertainty on f_pacs_green.
+  unit: uJy
+ferr_pacs_red:
+  description: Uncertainty on f_pacs_red.
+  unit: uJy
+ferr_quirc_hk:
+  description: Uncertainty on f_quirc_hk.
+  unit: uJy
+ferr_sdss_g:
+  description: Uncertainty on f_sdss_g.
+  unit: uJy
+ferr_sdss_i:
+  description: Uncertainty on f_sdss_i.
+  unit: uJy
+ferr_sdss_r:
+  description: Uncertainty on f_sdss_r.
+  unit: uJy
+ferr_sdss_u:
+  description: Uncertainty on f_sdss_u.
+  unit: uJy
+ferr_sdss_z:
+  description: Uncertainty on f_sdss_z.
+  unit: uJy
+ferr_spire_250:
+  description: Uncertainty on f_spire_250.
+  unit: uJy
+ferr_spire_350:
+  description: Uncertainty on f_spire_350.
+  unit: uJy
+ferr_spire_500:
+  description: Uncertainty on f_spire_500.
+  unit: uJy
+ferr_suprime_b:
+  description: Uncertainty on f_suprime_b.
+  unit: uJy
+ferr_suprime_g:
+  description: Uncertainty on f_suprime_g.
+  unit: uJy
+ferr_suprime_i:
+  description: Uncertainty on f_suprime_i.
+  unit: uJy
+ferr_suprime_ia484:
+  description: Uncertainty on f_suprime_ia484.
+  unit: uJy
+ferr_suprime_ia527:
+  description: Uncertainty on f_suprime_ia527.
+  unit: uJy
+ferr_suprime_ia624:
+  description: Uncertainty on f_suprime_ia624.
+  unit: uJy
+ferr_suprime_ia679:
+  description: Uncertainty on f_suprime_ia679.
+  unit: uJy
+ferr_suprime_ia738:
+  description: Uncertainty on f_suprime_ia738.
+  unit: uJy
+ferr_suprime_ia767:
+  description: Uncertainty on f_suprime_ia767.
+  unit: uJy
+ferr_suprime_ib427:
+  description: Uncertainty on f_suprime_ib427.
+  unit: uJy
+ferr_suprime_ib464:
+  description: Uncertainty on f_suprime_ib464.
+  unit: uJy
+ferr_suprime_ib505:
+  description: Uncertainty on f_suprime_ib505.
+  unit: uJy
+ferr_suprime_ib574:
+  description: Uncertainty on f_suprime_ib574.
+  unit: uJy
+ferr_suprime_ib709:
+  description: Uncertainty on f_suprime_ib709.
+  unit: uJy
+ferr_suprime_ib827:
+  description: Uncertainty on f_suprime_ib827.
+  unit: uJy
+ferr_suprime_ip:
+  description: Uncertainty on f_suprime_ip.
+  unit: uJy
+ferr_suprime_n816:
+  description: Uncertainty on f_suprime_n816.
+  unit: uJy
+ferr_suprime_n921:
+  description: Uncertainty on f_suprime_n921.
+  unit: uJy
+ferr_suprime_nb711:
+  description: Uncertainty on f_suprime_nb711.
+  unit: uJy
+ferr_suprime_nb816:
+  description: Uncertainty on f_suprime_nb816.
+  unit: uJy
+ferr_suprime_r:
+  description: Uncertainty on f_suprime_r.
+  unit: uJy
+ferr_suprime_rc:
+  description: Uncertainty on f_suprime_rc.
+  unit: uJy
+ferr_suprime_rp:
+  description: Uncertainty on f_suprime_rp.
+  unit: uJy
+ferr_suprime_v:
+  description: Uncertainty on f_suprime_v.
+  unit: uJy
+ferr_suprime_y:
+  description: Uncertainty on f_suprime_y.
+  unit: uJy
+ferr_suprime_z:
+  description: Uncertainty on f_suprime_z.
+  unit: uJy
+ferr_suprime_zp:
+  description: Uncertainty on f_suprime_zp.
+  unit: uJy
+ferr_suprime_zpp:
+  description: Uncertainty on f_suprime_zpp.
+  unit: uJy
+ferr_t_g:
+  description: Uncertainty on f_t_g.
+  unit: uJy
+ferr_t_i:
+  description: Uncertainty on f_t_i.
+  unit: uJy
+ferr_t_r:
+  description: Uncertainty on f_t_r.
+  unit: uJy
+ferr_t_u:
+  description: Uncertainty on f_t_u.
+  unit: uJy
+ferr_t_z:
+  description: Uncertainty on f_t_z.
+  unit: uJy
+ferr_tifkam_ks:
+  description: Uncertainty on f_tifkam_ks.
+  unit: uJy
+ferr_ukidss_h:
+  description: Uncertainty on f_ukidss_h.
+  unit: uJy
+ferr_ukidss_j:
+  description: Uncertainty on f_ukidss_j.
+  unit: uJy
+ferr_ukidss_k:
+  description: Uncertainty on f_ukidss_k.
+  unit: uJy
+ferr_ukidss_y:
+  description: Uncertainty on f_ukidss_y.
+  unit: uJy
+ferr_vista_h:
+  description: Uncertainty on f_vista_h.
+  unit: uJy
+ferr_vista_j:
+  description: Uncertainty on f_vista_j.
+  unit: uJy
+ferr_vista_ks:
+  description: Uncertainty on f_vista_ks.
+  unit: uJy
+ferr_vista_y:
+  description: Uncertainty on f_vista_y.
+  unit: uJy
+ferr_vista_z:
+  description: Uncertainty on f_vista_z.
+  unit: uJy
+ferr_wfc3_f098:
+  description: Uncertainty on f_wfc3_f098.
+  unit: uJy
+ferr_wfc3_f105w:
+  description: Uncertainty on f_wfc3_f105w.
+  unit: uJy
+ferr_wfc3_f125w:
+  description: Uncertainty on f_wfc3_f125w.
+  unit: uJy
+ferr_wfc3_f140w:
+  description: Uncertainty on f_wfc3_f140w.
+  unit: uJy
+ferr_wfc3_f160w:
+  description: Uncertainty on f_wfc3_f160w.
+  unit: uJy
+ferr_wfc_g:
+  description: Uncertainty on f_wfc_g.
+  unit: uJy
+ferr_wfc_i:
+  description: Uncertainty on f_wfc_i.
+  unit: uJy
+ferr_wfc_r:
+  description: Uncertainty on f_wfc_r.
+  unit: uJy
+ferr_wfc_u:
+  description: Uncertainty on f_wfc_u.
+  unit: uJy
+ferr_wfc_z:
+  description: Uncertainty on f_wfc_z.
+  unit: uJy
+ferr_wfi_416n:
+  description: Uncertainty on f_wfi_416n.
+  unit: uJy
+ferr_wfi_461n:
+  description: Uncertainty on f_wfi_461n.
+  unit: uJy
+ferr_wfi_485n:
+  description: Uncertainty on f_wfi_485n.
+  unit: uJy
+ferr_wfi_518n:
+  description: Uncertainty on f_wfi_518n.
+  unit: uJy
+ferr_wfi_571n:
+  description: Uncertainty on f_wfi_571n.
+  unit: uJy
+ferr_wfi_604n:
+  description: Uncertainty on f_wfi_604n.
+  unit: uJy
+ferr_wfi_646n:
+  description: Uncertainty on f_wfi_646n.
+  unit: uJy
+ferr_wfi_696n:
+  description: Uncertainty on f_wfi_696n.
+  unit: uJy
+ferr_wfi_753n:
+  description: Uncertainty on f_wfi_753n.
+  unit: uJy
+ferr_wfi_815n:
+  description: Uncertainty on f_wfi_815n.
+  unit: uJy
+ferr_wfi_856n:
+  description: Uncertainty on f_wfi_856n.
+  unit: uJy
+ferr_wfi_914n:
+  description: Uncertainty on f_wfi_914n.
+  unit: uJy
+ferr_wfi_b:
+  description: Uncertainty on f_wfi_b.
+  unit: uJy
+ferr_wfi_b123:
+  description: Uncertainty on f_wfi_b123.
+  unit: uJy
+ferr_wfi_i:
+  description: Uncertainty on f_wfi_i.
+  unit: uJy
+ferr_wfi_r:
+  description: Uncertainty on f_wfi_r.
+  unit: uJy
+ferr_wfi_u:
+  description: Uncertainty on f_wfi_u.
+  unit: uJy
+ferr_wfi_v:
+  description: Uncertainty on f_wfi_v.
+  unit: uJy
+ferr_wircam_h:
+  description: Uncertainty on f_wircam_h.
+  unit: uJy
+ferr_wircam_j:
+  description: Uncertainty on f_wircam_j.
+  unit: uJy
+ferr_wircam_ks:
+  description: Uncertainty on f_wircam_ks.
+  unit: uJy
+ferr_wircam_y:
+  description: Uncertainty on f_wircam_y.
+  unit: uJy
+ferr_wircs_j:
+  description: Uncertainty on f_wircs_j.
+  unit: uJy
+ferr_wircs_k:
+  description: Uncertainty on f_wircs_k.
+  unit: uJy
+field:
+  description: Name of the field in HELP survey
+  unit: None
+flag_90prime_g:
+  description: Flag set to true for sources for which niether the 90prime_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_90prime_r:
+  description: Flag set to true for sources for which niether the 90prime_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_90prime_z:
+  description: Flag set to true for sources for which niether the 90prime_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_acs_f435w:
+  description: Flag set to true for sources for which niether the acs_f435w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_acs_f606w:
+  description: Flag set to true for sources for which niether the acs_f606w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_acs_f775w:
+  description: Flag set to true for sources for which niether the acs_f775w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_acs_f814w:
+  description: Flag set to true for sources for which niether the acs_f814w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_acs_f850lp:
+  description: Flag set to true for sources for which niether the acs_f850lp aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_bessell_b:
+  description: Flag set to true for sources for which niether the bessell_b aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_bessell_i:
+  description: Flag set to true for sources for which niether the bessell_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_bessell_r:
+  description: Flag set to true for sources for which niether the bessell_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_bessell_u:
+  description: Flag set to true for sources for which niether the bessell_u aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_bessell_v:
+  description: Flag set to true for sources for which niether the bessell_v aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_cfht12k_b:
+  description: Flag set to true for sources for which niether the cfht12k_b aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_cfht12k_i:
+  description: Flag set to true for sources for which niether the cfht12k_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_cfht12k_r:
+  description: Flag set to true for sources for which niether the cfht12k_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_cigale:
+  description: 'Flag qualifying the global fitting with CIGALE: 1 for a good fit,
+    0 for a bad fit, -1 if the source was not fitted.'
+  unit: None
+flag_cigale_ir:
+  description: 'Flag qualifying the fitting of the infra-red part of the spectrum
+    during the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the
+    source was not fitted.'
+  unit: None
+flag_cigale_ironly:
+  description: 'Flag qualifying the fitting using only infra-red data with CIGALE:
+    1 for a good fit, 0 for a bad fit, -1 if the source was not fitted.'
+  unit: None
+flag_cigale_opt:
+  description: 'Flag qualifying the fitting of the optical part of the spectrum during
+    the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source
+    was not fitted.'
+  unit: None
+flag_cleaned:
+  description: Boolean flag denoting that the source was associated to really near
+    object that were removed during the cleaning procedure.
+  unit: None
+flag_decam_g:
+  description: Flag set to true for sources for which niether the decam_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_decam_i:
+  description: Flag set to true for sources for which niether the decam_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_decam_r:
+  description: Flag set to true for sources for which niether the decam_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_decam_y:
+  description: Flag set to true for sources for which niether the decam_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_decam_z:
+  description: Flag set to true for sources for which niether the decam_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_g:
+  description: Flag set to true for sources for which niether the egacam_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_i:
+  description: Flag set to true for sources for which niether the egacam_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_r:
+  description: Flag set to true for sources for which niether the egacam_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_u:
+  description: Flag set to true for sources for which niether the egacam_u aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_y:
+  description: Flag set to true for sources for which niether the egacam_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_egacam_z:
+  description: Flag set to true for sources for which niether the egacam_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gaia:
+  description: Flag indicating the increasing probability of the source being a Gaia
+    object (see note).
+  unit: None
+flag_galex_fuv:
+  description: Flag set to true for sources for which niether the galex_fuv aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_galex_nuv:
+  description: Flag set to true for sources for which niether the galex_nuv aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gpc1_g:
+  description: Flag set to true for sources for which niether the gpc1_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gpc1_i:
+  description: Flag set to true for sources for which niether the gpc1_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gpc1_r:
+  description: Flag set to true for sources for which niether the gpc1_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gpc1_y:
+  description: Flag set to true for sources for which niether the gpc1_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_gpc1_z:
+  description: Flag set to true for sources for which niether the gpc1_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_hawki_k:
+  description: Flag set to true for sources for which niether the hawki_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_ips_24:
+  description: Flag set to true for sources for which niether the ips_24 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_irac_i1:
+  description: Flag set to true for sources for which niether the irac_i1 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_irac_i2:
+  description: Flag set to true for sources for which niether the irac_i2 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_irac_i3:
+  description: Flag set to true for sources for which niether the irac_i3 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_irac_i4:
+  description: Flag set to true for sources for which niether the irac_i4 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_isaac_k:
+  description: Flag set to true for sources for which niether the isaac_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_merged:
+  description: Boolean flag denoting a possible mis-association during the cross-matching
+    of the various catalogues.
+  unit: None
+flag_newfirm_h:
+  description: Flag set to true for sources for which niether the newfirm_h aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_h1:
+  description: Flag set to true for sources for which niether the newfirm_h1 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_h2:
+  description: Flag set to true for sources for which niether the newfirm_h2 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_j:
+  description: Flag set to true for sources for which niether the newfirm_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_j1:
+  description: Flag set to true for sources for which niether the newfirm_j1 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_j2:
+  description: Flag set to true for sources for which niether the newfirm_j2 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_j3:
+  description: Flag set to true for sources for which niether the newfirm_j3 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_newfirm_k:
+  description: Flag set to true for sources for which niether the newfirm_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_nicmos_f110w:
+  description: Flag set to true for sources for which niether the nicmos_f110w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_nicmos_f160w:
+  description: Flag set to true for sources for which niether the nicmos_f160w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_oircs_k:
+  description: Flag set to true for sources for which niether the oircs_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_oircs_ks:
+  description: Flag set to true for sources for which niether the oircs_ks aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omega2000_j:
+  description: Flag set to true for sources for which niether the omega2000_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omega2000_ks:
+  description: Flag set to true for sources for which niether the omega2000_ks aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omegacam_g:
+  description: Flag set to true for sources for which niether the omegacam_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omegacam_i:
+  description: Flag set to true for sources for which niether the omegacam_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omegacam_r:
+  description: Flag set to true for sources for which niether the omegacam_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omegacam_u:
+  description: Flag set to true for sources for which niether the omegacam_u aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_omegacam_z:
+  description: Flag set to true for sources for which niether the omegacam_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_optnir_det:
+  description: Flag indicating in which wavelength regimes the source was detected
+    (see note).
+  unit: None
+flag_optnir_obs:
+  description: Flag indicating in which wavelength regimes the source was observed
+    (see note).
+  unit: None
+flag_osaic_b:
+  description: Flag set to true for sources for which niether the osaic_b aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_osaic_i:
+  description: Flag set to true for sources for which niether the osaic_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_osaic_r:
+  description: Flag set to true for sources for which niether the osaic_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_osaic_u:
+  description: Flag set to true for sources for which niether the osaic_u aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_osaic_z:
+  description: Flag set to true for sources for which niether the osaic_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_pacs_green:
+  description: Flag set to true for sources for which niether the pacs_green aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_pacs_red:
+  description: Flag set to true for sources for which niether the pacs_red aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_quirc_hk:
+  description: Flag set to true for sources for which niether the quirc_hk aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_sdss_g:
+  description: Flag set to true for sources for which niether the sdss_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_sdss_i:
+  description: Flag set to true for sources for which niether the sdss_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_sdss_r:
+  description: Flag set to true for sources for which niether the sdss_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_sdss_u:
+  description: Flag set to true for sources for which niether the sdss_u aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_sdss_z:
+  description: Flag set to true for sources for which niether the sdss_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_spire_250:
+  description: Flag set to true for sources for which niether the spire_250 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_spire_350:
+  description: Flag set to true for sources for which niether the spire_350 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_spire_500:
+  description: Flag set to true for sources for which niether the spire_500 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_b:
+  description: Flag set to true for sources for which niether the suprime_b aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_g:
+  description: Flag set to true for sources for which niether the suprime_g aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_i:
+  description: Flag set to true for sources for which niether the suprime_i aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia484:
+  description: Flag set to true for sources for which niether the suprime_ia484 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia527:
+  description: Flag set to true for sources for which niether the suprime_ia527 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia624:
+  description: Flag set to true for sources for which niether the suprime_ia624 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia679:
+  description: Flag set to true for sources for which niether the suprime_ia679 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia738:
+  description: Flag set to true for sources for which niether the suprime_ia738 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ia767:
+  description: Flag set to true for sources for which niether the suprime_ia767 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib427:
+  description: Flag set to true for sources for which niether the suprime_ib427 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib464:
+  description: Flag set to true for sources for which niether the suprime_ib464 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib505:
+  description: Flag set to true for sources for which niether the suprime_ib505 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib574:
+  description: Flag set to true for sources for which niether the suprime_ib574 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib709:
+  description: Flag set to true for sources for which niether the suprime_ib709 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ib827:
+  description: Flag set to true for sources for which niether the suprime_ib827 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_ip:
+  description: Flag set to true for sources for which niether the suprime_ip aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_n816:
+  description: Flag set to true for sources for which niether the suprime_n816 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_n921:
+  description: Flag set to true for sources for which niether the suprime_n921 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_nb711:
+  description: Flag set to true for sources for which niether the suprime_nb711 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_nb816:
+  description: Flag set to true for sources for which niether the suprime_nb816 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_r:
+  description: Flag set to true for sources for which niether the suprime_r aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_rc:
+  description: Flag set to true for sources for which niether the suprime_rc aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_rp:
+  description: Flag set to true for sources for which niether the suprime_rp aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_v:
+  description: Flag set to true for sources for which niether the suprime_v aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_y:
+  description: Flag set to true for sources for which niether the suprime_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_z:
+  description: Flag set to true for sources for which niether the suprime_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_zp:
+  description: Flag set to true for sources for which niether the suprime_zp aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_suprime_zpp:
+  description: Flag set to true for sources for which niether the suprime_zpp aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_t_g:
+  description: Flag set to true for sources for which niether the t_g aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_t_i:
+  description: Flag set to true for sources for which niether the t_i aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_t_r:
+  description: Flag set to true for sources for which niether the t_r aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_t_u:
+  description: Flag set to true for sources for which niether the t_u aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_t_z:
+  description: Flag set to true for sources for which niether the t_z aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_tifkam_ks:
+  description: Flag set to true for sources for which niether the tifkam_ks aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_ukidss_h:
+  description: Flag set to true for sources for which niether the ukidss_h aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_ukidss_j:
+  description: Flag set to true for sources for which niether the ukidss_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_ukidss_k:
+  description: Flag set to true for sources for which niether the ukidss_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_ukidss_y:
+  description: Flag set to true for sources for which niether the ukidss_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_vista_h:
+  description: Flag set to true for sources for which niether the vista_h aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_vista_j:
+  description: Flag set to true for sources for which niether the vista_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_vista_ks:
+  description: Flag set to true for sources for which niether the vista_ks aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_vista_y:
+  description: Flag set to true for sources for which niether the vista_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_vista_z:
+  description: Flag set to true for sources for which niether the vista_z aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc3_f098:
+  description: Flag set to true for sources for which niether the wfc3_f098 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc3_f105w:
+  description: Flag set to true for sources for which niether the wfc3_f105w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc3_f125w:
+  description: Flag set to true for sources for which niether the wfc3_f125w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc3_f140w:
+  description: Flag set to true for sources for which niether the wfc3_f140w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc3_f160w:
+  description: Flag set to true for sources for which niether the wfc3_f160w aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc_g:
+  description: Flag set to true for sources for which niether the wfc_g aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc_i:
+  description: Flag set to true for sources for which niether the wfc_i aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc_r:
+  description: Flag set to true for sources for which niether the wfc_r aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc_u:
+  description: Flag set to true for sources for which niether the wfc_u aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfc_z:
+  description: Flag set to true for sources for which niether the wfc_z aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_416n:
+  description: Flag set to true for sources for which niether the wfi_416n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_461n:
+  description: Flag set to true for sources for which niether the wfi_461n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_485n:
+  description: Flag set to true for sources for which niether the wfi_485n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_518n:
+  description: Flag set to true for sources for which niether the wfi_518n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_571n:
+  description: Flag set to true for sources for which niether the wfi_571n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_604n:
+  description: Flag set to true for sources for which niether the wfi_604n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_646n:
+  description: Flag set to true for sources for which niether the wfi_646n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_696n:
+  description: Flag set to true for sources for which niether the wfi_696n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_753n:
+  description: Flag set to true for sources for which niether the wfi_753n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_815n:
+  description: Flag set to true for sources for which niether the wfi_815n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_856n:
+  description: Flag set to true for sources for which niether the wfi_856n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_914n:
+  description: Flag set to true for sources for which niether the wfi_914n aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_b:
+  description: Flag set to true for sources for which niether the wfi_b aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_b123:
+  description: Flag set to true for sources for which niether the wfi_b123 aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_i:
+  description: Flag set to true for sources for which niether the wfi_i aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_r:
+  description: Flag set to true for sources for which niether the wfi_r aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_u:
+  description: Flag set to true for sources for which niether the wfi_u aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wfi_v:
+  description: Flag set to true for sources for which niether the wfi_v aperture nor
+    total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircam_h:
+  description: Flag set to true for sources for which niether the wircam_h aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircam_j:
+  description: Flag set to true for sources for which niether the wircam_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircam_ks:
+  description: Flag set to true for sources for which niether the wircam_ks aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircam_y:
+  description: Flag set to true for sources for which niether the wircam_y aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircs_j:
+  description: Flag set to true for sources for which niether the wircs_j aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+flag_wircs_k:
+  description: Flag set to true for sources for which niether the wircs_k aperture
+    nor total flux should not be used for SED fitting (see documentation).
+  unit: mag
+help_id:
+  description: HELP identifier, based on J2000 position
+  unit: None
+hp_idx:
+  description: HEALPix index of the source position at order 13 using the nested scheme.
+  unit: None
+m_90prime_g:
+  description: Total AB magnitude in the B band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: mag
+m_90prime_r:
+  description: Total AB magnitude in the R band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: mag
+m_90prime_z:
+  description: Total AB magnitude in the I band of The 90-inch prime focus camera
+    (90prime) on The Bok Telescope.
+  unit: mag
+m_acs_f435w:
+  description: Total AB magnitude in the B band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: mag
+m_acs_f606w:
+  description: Total AB magnitude in the R band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: mag
+m_acs_f775w:
+  description: Total AB magnitude in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: mag
+m_acs_f814w:
+  description: Total AB magnitude in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: mag
+m_acs_f850lp:
+  description: Total AB magnitude in the I band of Advanced Camera for Surveys (ACS)
+    on Hubble Space Telescope (HST).
+  unit: mag
+m_ap_90prime_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: mag
+m_ap_90prime_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: mag
+m_ap_90prime_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The 90-inch prime focus camera (90prime) on The
+    Bok Telescope.
+  unit: mag
+m_ap_acs_f435w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: mag
+m_ap_acs_f606w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: mag
+m_ap_acs_f775w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: mag
+m_ap_acs_f814w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: mag
+m_ap_acs_f850lp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Advanced Camera for Surveys (ACS) on Hubble Space
+    Telescope (HST).
+  unit: mag
+m_ap_bessell_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: mag
+m_ap_bessell_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: mag
+m_ap_bessell_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: mag
+m_ap_bessell_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: mag
+m_ap_bessell_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of Standard camera response (camera unknown) on Standardised
+    telescope response (telescope uknown).
+  unit: mag
+m_ap_cfht12k_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_cfht12k_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_cfht12k_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The CFH12K prime focus 12K camera on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_decam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Dark Energy Camera (DECam) on Blanco.
+  unit: mag
+m_ap_decam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: mag
+m_ap_decam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Dark Energy Camera (DECam) on Blanco.
+  unit: mag
+m_ap_decam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: mag
+m_ap_decam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Dark Energy Camera (DECam) on Blanco.
+  unit: mag
+m_ap_egacam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_egacam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_egacam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_egacam_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_egacam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_egacam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of MegaPrime/MegaCam on Canada France Hawaii Telescope
+    (CFHT).
+  unit: mag
+m_ap_galex_fuv:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+  unit: mag
+m_ap_galex_nuv:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 200-300nm band of GALEX on The Galaxy Evolution Exporer (GALEX).
+  unit: mag
+m_ap_gpc1_g:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ AB magnitude in the B band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_ap_gpc1_i:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_ap_gpc1_r:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ AB magnitude in the R band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_ap_gpc1_y:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_ap_gpc1_z:
+  description: "Aperture (nearest aperture to 2 arcsec, aperture correction applied)\
+    \ AB magnitude in the I band of The Pan-STARRS Gigapixel Camera on The\_Panoramic\
+    \ Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_ap_hawki_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The High Acuity Wide field K-band Imager (HAWK-I)
+    on The Very Large Telescope (VLT) at Paranal.
+  unit: mag
+m_ap_ips_24:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 15-30um band of The Multiband Imaging Photometer (MIPS) on
+    The Spitzer Space Telescope.
+  unit: mag
+m_ap_irac_i1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: mag
+m_ap_irac_i2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: mag
+m_ap_irac_i3:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: mag
+m_ap_irac_i4:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer
+    Space Telescope.
+  unit: mag
+m_ap_isaac_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Infrared Spectrometer And Array Camera (ISAAC)
+    on The Very Large Telescope (VLT) at Paranal.
+  unit: mag
+m_ap_newfirm_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_h1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_h2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_j1:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_j2:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_j3:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_newfirm_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of National Optical Astronomy Observatory (NOAO) Extremely
+    Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory (NOAO) Gemini
+    Observatory.
+  unit: mag
+m_ap_nicmos_f110w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object
+    Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: mag
+m_ap_nicmos_f160w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Near Infrared Camera and Multi-Object
+    Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: mag
+m_ap_oircs_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph
+    (MOIRCS) on The Subaru telescope.
+  unit: mag
+m_ap_oircs_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Multi Object Infrared Camera and Spectrograph
+    (MOIRCS) on The Subaru telescope.
+  unit: mag
+m_ap_omega2000_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of The Infrared Wide-Field Camera OMEGA2000 on The
+    3.5m telescope at Calar Alto.
+  unit: mag
+m_ap_omega2000_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Infrared Wide-Field Camera OMEGA2000 on The
+    3.5m telescope at Calar Alto.
+  unit: mag
+m_ap_omegacam_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: mag
+m_ap_omegacam_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: mag
+m_ap_omegacam_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: mag
+m_ap_omegacam_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: mag
+m_ap_omegacam_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of OmegaCAM on The Very Large Telescope (VLT) Survey
+    Telescope (VST) at Paranal.
+  unit: mag
+m_ap_osaic_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: mag
+m_ap_osaic_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: mag
+m_ap_osaic_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: mag
+m_ap_osaic_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: mag
+m_ap_osaic_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Mosaic-3 Wide Field Imager on The Kitt Peak National
+    Observatory.
+  unit: mag
+m_ap_pacs_green:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 60-100um band of Photoconductor Array Camera and Spectrometer
+    (PACS) on The Herschel Space Telescope.
+  unit: mag
+m_ap_pacs_red:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer
+    (PACS) on The Herschel Space Telescope.
+  unit: mag
+m_ap_quirc_hk:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of The Quick Near-Infrared Camera on The University
+    of Hawaii 2.2m telescope.
+  unit: mag
+m_ap_sdss_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: mag
+m_ap_sdss_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: mag
+m_ap_sdss_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: mag
+m_ap_sdss_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: mag
+m_ap_sdss_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS) standard camera
+    on The Sloan Digital Sky Survey (SDSS) dedicated telescope at Apache Point Observatory.
+  unit: mag
+m_ap_spire_250:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_ap_spire_350:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_ap_spire_500:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 400-750GHz band of The Spectral and Photometric Imaging Reciever
+    (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_ap_suprime_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia484:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia527:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia624:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia679:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia738:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ia767:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib427:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib464:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib505:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib574:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib709:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ib827:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_ip:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_n816:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_n921:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_nb711:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_nb816:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_rc:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_rp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_zp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_suprime_zpp:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_ap_t_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: mag
+m_ap_t_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: mag
+m_ap_t_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: mag
+m_ap_t_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: mag
+m_ap_t_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of MegaCam on The Multiple Mirror Telescope (MMT) Observatory.
+  unit: mag
+m_ap_tifkam_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Instrument Formerly Known as Mosaic (TIFKAM)
+    on The Michigan Dartmouth MIT (MDM) Observatory.
+  unit: mag
+m_ap_ukidss_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: mag
+m_ap_ukidss_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: mag
+m_ap_ukidss_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: mag
+m_ap_ukidss_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Camera (WFCAM) on The United Kingdom
+    Infrared Telescope (UKIRT).
+  unit: mag
+m_ap_vista_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_ap_vista_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_ap_vista_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_ap_vista_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_ap_vista_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM) on The 4.1m Visible
+    and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_ap_wfc3_f098:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 50-100nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: mag
+m_ap_wfc3_f105w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: mag
+m_ap_wfc3_f125w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: mag
+m_ap_wfc3_f140w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: mag
+m_ap_wfc3_f160w:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the 100-200nm band of The Wide Field Camera 3 (WFC3) on Hubble
+    Space Telescope (HST).
+  unit: mag
+m_ap_wfc_g:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: mag
+m_ap_wfc_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: mag
+m_ap_wfc_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: mag
+m_ap_wfc_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: mag
+m_ap_wfc_z:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Camera (WFC) on Isaac Newton Telescope
+    (INT).
+  unit: mag
+m_ap_wfi_416n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_461n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_485n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_518n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_571n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_604n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_646n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_696n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_753n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_815n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_856n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_914n:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_b:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_b123:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the B band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_i:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_r:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the R band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_u:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the U band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wfi_v:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the V band of The Wide Field Imager (WFI) on The Max Planck Gesellschaft
+    (MPG) telescope.
+  unit: mag
+m_ap_wircam_h:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the H band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_wircam_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_wircam_ks:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_wircam_y:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the I band of Wide-field InfraRed Camera (WIRCam) on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_ap_wircs_j:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the J band of Wide Infrared Camera (WIRC) on Palomar 200-inch
+    Hale Telescope (P200).
+  unit: mag
+m_ap_wircs_k:
+  description: Aperture (nearest aperture to 2 arcsec, aperture correction applied)
+    AB magnitude in the K band of Wide Infrared Camera (WIRC) on Palomar 200-inch
+    Hale Telescope (P200).
+  unit: mag
+m_bessell_b:
+  description: Total AB magnitude in the B band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: mag
+m_bessell_i:
+  description: Total AB magnitude in the I band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: mag
+m_bessell_r:
+  description: Total AB magnitude in the R band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: mag
+m_bessell_u:
+  description: Total AB magnitude in the U band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: mag
+m_bessell_v:
+  description: Total AB magnitude in the V band of Standard camera response (camera
+    unknown) on Standardised telescope response (telescope uknown).
+  unit: mag
+m_cfht12k_b:
+  description: Total AB magnitude in the B band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_cfht12k_i:
+  description: Total AB magnitude in the I band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_cfht12k_r:
+  description: Total AB magnitude in the R band of The CFH12K prime focus 12K camera
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_decam_g:
+  description: Total AB magnitude in the B band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: mag
+m_decam_i:
+  description: Total AB magnitude in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: mag
+m_decam_r:
+  description: Total AB magnitude in the R band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: mag
+m_decam_y:
+  description: Total AB magnitude in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: mag
+m_decam_z:
+  description: Total AB magnitude in the I band of The Dark Energy Camera (DECam)
+    on Blanco.
+  unit: mag
+m_egacam_g:
+  description: Total AB magnitude in the B band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_egacam_i:
+  description: Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_egacam_r:
+  description: Total AB magnitude in the R band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_egacam_u:
+  description: Total AB magnitude in the U band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_egacam_y:
+  description: Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_egacam_z:
+  description: Total AB magnitude in the I band of MegaPrime/MegaCam on Canada France
+    Hawaii Telescope (CFHT).
+  unit: mag
+m_galex_fuv:
+  description: Total AB magnitude in the 100-200nm band of GALEX on The Galaxy Evolution
+    Exporer (GALEX).
+  unit: mag
+m_galex_nuv:
+  description: Total AB magnitude in the 200-300nm band of GALEX on The Galaxy Evolution
+    Exporer (GALEX).
+  unit: mag
+m_gpc1_g:
+  description: "Total AB magnitude in the B band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_gpc1_i:
+  description: "Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_gpc1_r:
+  description: "Total AB magnitude in the R band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_gpc1_y:
+  description: "Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_gpc1_z:
+  description: "Total AB magnitude in the I band of The Pan-STARRS Gigapixel Camera\
+    \ on The\_Panoramic Survey Telescope and Rapid Response System\_(Pan-STARRS)."
+  unit: mag
+m_hawki_k:
+  description: Total AB magnitude in the K band of The High Acuity Wide field K-band
+    Imager (HAWK-I) on The Very Large Telescope (VLT) at Paranal.
+  unit: mag
+m_ips_24:
+  description: Total AB magnitude in the 15-30um band of The Multiband Imaging Photometer
+    (MIPS) on The Spitzer Space Telescope.
+  unit: mag
+m_irac_i1:
+  description: Total AB magnitude in the 3-4um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: mag
+m_irac_i2:
+  description: Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: mag
+m_irac_i3:
+  description: Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC)
+    on The Spitzer Space Telescope.
+  unit: mag
+m_irac_i4:
+  description: Total AB magnitude in the 8-15um band of The Infrared Array Camera
+    (IRAC) on The Spitzer Space Telescope.
+  unit: mag
+m_isaac_k:
+  description: Total AB magnitude in the K band of The Infrared Spectrometer And Array
+    Camera (ISAAC) on The Very Large Telescope (VLT) at Paranal.
+  unit: mag
+m_newfirm_h:
+  description: Total AB magnitude in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_h1:
+  description: Total AB magnitude in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_h2:
+  description: Total AB magnitude in the H band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_j:
+  description: Total AB magnitude in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_j1:
+  description: Total AB magnitude in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_j2:
+  description: Total AB magnitude in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_j3:
+  description: Total AB magnitude in the J band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_newfirm_k:
+  description: Total AB magnitude in the K band of National Optical Astronomy Observatory
+    (NOAO) Extremely Wide-Field Imager (NEWFIRM) on National Optical Astronomy Observatory
+    (NOAO) Gemini Observatory.
+  unit: mag
+m_nicmos_f110w:
+  description: Total AB magnitude in the 100-200nm band of The Near Infrared Camera
+    and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: mag
+m_nicmos_f160w:
+  description: Total AB magnitude in the 100-200nm band of The Near Infrared Camera
+    and Multi-Object Spectrometer (NICMOS) on Hubble Space Telescope (HST).
+  unit: mag
+m_oircs_k:
+  description: Total AB magnitude in the K band of The Multi Object Infrared Camera
+    and Spectrograph (MOIRCS) on The Subaru telescope.
+  unit: mag
+m_oircs_ks:
+  description: Total AB magnitude in the K band of The Multi Object Infrared Camera
+    and Spectrograph (MOIRCS) on The Subaru telescope.
+  unit: mag
+m_omega2000_j:
+  description: Total AB magnitude in the J band of The Infrared Wide-Field Camera
+    OMEGA2000 on The 3.5m telescope at Calar Alto.
+  unit: mag
+m_omega2000_ks:
+  description: Total AB magnitude in the K band of The Infrared Wide-Field Camera
+    OMEGA2000 on The 3.5m telescope at Calar Alto.
+  unit: mag
+m_omegacam_g:
+  description: Total AB magnitude in the B band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: mag
+m_omegacam_i:
+  description: Total AB magnitude in the I band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: mag
+m_omegacam_r:
+  description: Total AB magnitude in the R band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: mag
+m_omegacam_u:
+  description: Total AB magnitude in the U band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: mag
+m_omegacam_z:
+  description: Total AB magnitude in the I band of OmegaCAM on The Very Large Telescope
+    (VLT) Survey Telescope (VST) at Paranal.
+  unit: mag
+m_osaic_b:
+  description: Total AB magnitude in the B band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: mag
+m_osaic_i:
+  description: Total AB magnitude in the I band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: mag
+m_osaic_r:
+  description: Total AB magnitude in the R band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: mag
+m_osaic_u:
+  description: Total AB magnitude in the U band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: mag
+m_osaic_z:
+  description: Total AB magnitude in the I band of Mosaic-3 Wide Field Imager on The
+    Kitt Peak National Observatory.
+  unit: mag
+m_pacs_green:
+  description: Total AB magnitude in the 60-100um band of Photoconductor Array Camera
+    and Spectrometer (PACS) on The Herschel Space Telescope.
+  unit: mag
+m_pacs_red:
+  description: Total AB magnitude in the 1500-3000GHz band of Photoconductor Array
+    Camera and Spectrometer (PACS) on The Herschel Space Telescope.
+  unit: mag
+m_quirc_hk:
+  description: Total AB magnitude in the H band of The Quick Near-Infrared Camera
+    on The University of Hawaii 2.2m telescope.
+  unit: mag
+m_sdss_g:
+  description: Total AB magnitude in the B band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: mag
+m_sdss_i:
+  description: Total AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: mag
+m_sdss_r:
+  description: Total AB magnitude in the R band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: mag
+m_sdss_u:
+  description: Total AB magnitude in the U band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: mag
+m_sdss_z:
+  description: Total AB magnitude in the I band of The Sloan Digital Sky Survey (SDSS)
+    standard camera on The Sloan Digital Sky Survey (SDSS) dedicated telescope at
+    Apache Point Observatory.
+  unit: mag
+m_spire_250:
+  description: Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_spire_350:
+  description: Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_spire_500:
+  description: Total AB magnitude in the 400-750GHz band of The Spectral and Photometric
+    Imaging Reciever (SPIRE) on The Herschel Space Telescope.
+  unit: mag
+m_suprime_b:
+  description: Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_g:
+  description: Total AB magnitude in the B band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_i:
+  description: Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia484:
+  description: Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia527:
+  description: Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia624:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia679:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia738:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ia767:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib427:
+  description: Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib464:
+  description: Total AB magnitude in the B band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib505:
+  description: Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib574:
+  description: Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib709:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ib827:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_ip:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_n816:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_n921:
+  description: Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_nb711:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_nb816:
+  description: Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_r:
+  description: Total AB magnitude in the R band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_rc:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_rp:
+  description: Total AB magnitude in the R band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_v:
+  description: Total AB magnitude in the V band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_y:
+  description: Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_z:
+  description: Total AB magnitude in the I band of HyperSuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_zp:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_suprime_zpp:
+  description: Total AB magnitude in the I band of SuprimeCam on The Subaru telescope.
+  unit: mag
+m_t_g:
+  description: Total AB magnitude in the B band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: mag
+m_t_i:
+  description: Total AB magnitude in the I band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: mag
+m_t_r:
+  description: Total AB magnitude in the R band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: mag
+m_t_u:
+  description: Total AB magnitude in the U band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: mag
+m_t_z:
+  description: Total AB magnitude in the I band of MegaCam on The Multiple Mirror
+    Telescope (MMT) Observatory.
+  unit: mag
+m_tifkam_ks:
+  description: Total AB magnitude in the K band of The Instrument Formerly Known as
+    Mosaic (TIFKAM) on The Michigan Dartmouth MIT (MDM) Observatory.
+  unit: mag
+m_ukidss_h:
+  description: Total AB magnitude in the H band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: mag
+m_ukidss_j:
+  description: Total AB magnitude in the J band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: mag
+m_ukidss_k:
+  description: Total AB magnitude in the K band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: mag
+m_ukidss_y:
+  description: Total AB magnitude in the I band of The Wide Field Camera (WFCAM) on
+    The United Kingdom Infrared Telescope (UKIRT).
+  unit: mag
+m_vista_h:
+  description: Total AB magnitude in the H band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_vista_j:
+  description: Total AB magnitude in the J band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_vista_ks:
+  description: Total AB magnitude in the K band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_vista_y:
+  description: Total AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_vista_z:
+  description: Total AB magnitude in the I band of The VISTA InfraRed CAMera (VIRCAM)
+    on The 4.1m Visible and Infrared Survey Telescope for Astronomy (VISTA).
+  unit: mag
+m_wfc3_f098:
+  description: Total AB magnitude in the 50-100nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: mag
+m_wfc3_f105w:
+  description: Total AB magnitude in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: mag
+m_wfc3_f125w:
+  description: Total AB magnitude in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: mag
+m_wfc3_f140w:
+  description: Total AB magnitude in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: mag
+m_wfc3_f160w:
+  description: Total AB magnitude in the 100-200nm band of The Wide Field Camera 3
+    (WFC3) on Hubble Space Telescope (HST).
+  unit: mag
+m_wfc_g:
+  description: Total AB magnitude in the B band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: mag
+m_wfc_i:
+  description: Total AB magnitude in the I band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: mag
+m_wfc_r:
+  description: Total AB magnitude in the R band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: mag
+m_wfc_u:
+  description: Total AB magnitude in the U band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: mag
+m_wfc_z:
+  description: Total AB magnitude in the I band of The Wide Field Camera (WFC) on
+    Isaac Newton Telescope (INT).
+  unit: mag
+m_wfi_416n:
+  description: Total AB magnitude in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_461n:
+  description: Total AB magnitude in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_485n:
+  description: Total AB magnitude in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_518n:
+  description: Total AB magnitude in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_571n:
+  description: Total AB magnitude in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_604n:
+  description: Total AB magnitude in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_646n:
+  description: Total AB magnitude in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_696n:
+  description: Total AB magnitude in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_753n:
+  description: Total AB magnitude in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_815n:
+  description: Total AB magnitude in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_856n:
+  description: Total AB magnitude in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_914n:
+  description: Total AB magnitude in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_b:
+  description: Total AB magnitude in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_b123:
+  description: Total AB magnitude in the B band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_i:
+  description: Total AB magnitude in the I band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_r:
+  description: Total AB magnitude in the R band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_u:
+  description: Total AB magnitude in the U band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wfi_v:
+  description: Total AB magnitude in the V band of The Wide Field Imager (WFI) on
+    The Max Planck Gesellschaft (MPG) telescope.
+  unit: mag
+m_wircam_h:
+  description: Total AB magnitude in the H band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_wircam_j:
+  description: Total AB magnitude in the J band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_wircam_ks:
+  description: Total AB magnitude in the K band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_wircam_y:
+  description: Total AB magnitude in the I band of Wide-field InfraRed Camera (WIRCam)
+    on Canada France Hawaii Telescope (CFHT).
+  unit: mag
+m_wircs_j:
+  description: Total AB magnitude in the J band of Wide Infrared Camera (WIRC) on
+    Palomar 200-inch Hale Telescope (P200).
+  unit: mag
+m_wircs_k:
+  description: Total AB magnitude in the K band of Wide Infrared Camera (WIRC) on
+    Palomar 200-inch Hale Telescope (P200).
+  unit: mag
+merr_90prime_g:
+  description: Mean error on m_90prime_g.
+  unit: mag
+merr_90prime_r:
+  description: Mean error on m_90prime_r.
+  unit: mag
+merr_90prime_z:
+  description: Mean error on m_90prime_z.
+  unit: mag
+merr_acs_f435w:
+  description: Mean error on m_acs_f435w.
+  unit: mag
+merr_acs_f606w:
+  description: Mean error on m_acs_f606w.
+  unit: mag
+merr_acs_f775w:
+  description: Mean error on m_acs_f775w.
+  unit: mag
+merr_acs_f814w:
+  description: Mean error on m_acs_f814w.
+  unit: mag
+merr_acs_f850lp:
+  description: Mean error on m_acs_f850lp.
+  unit: mag
+merr_ap_90prime_g:
+  description: Mean error on m_ap_90prime_g
+  unit: mag
+merr_ap_90prime_r:
+  description: Mean error on m_ap_90prime_r
+  unit: mag
+merr_ap_90prime_z:
+  description: Mean error on m_ap_90prime_z
+  unit: mag
+merr_ap_acs_f435w:
+  description: Mean error on m_ap_acs_f435w
+  unit: mag
+merr_ap_acs_f606w:
+  description: Mean error on m_ap_acs_f606w
+  unit: mag
+merr_ap_acs_f775w:
+  description: Mean error on m_ap_acs_f775w
+  unit: mag
+merr_ap_acs_f814w:
+  description: Mean error on m_ap_acs_f814w
+  unit: mag
+merr_ap_acs_f850lp:
+  description: Mean error on m_ap_acs_f850lp
+  unit: mag
+merr_ap_bessell_b:
+  description: Mean error on m_ap_bessell_b
+  unit: mag
+merr_ap_bessell_i:
+  description: Mean error on m_ap_bessell_i
+  unit: mag
+merr_ap_bessell_r:
+  description: Mean error on m_ap_bessell_r
+  unit: mag
+merr_ap_bessell_u:
+  description: Mean error on m_ap_bessell_u
+  unit: mag
+merr_ap_bessell_v:
+  description: Mean error on m_ap_bessell_v
+  unit: mag
+merr_ap_cfht12k_b:
+  description: Mean error on m_ap_cfht12k_b
+  unit: mag
+merr_ap_cfht12k_i:
+  description: Mean error on m_ap_cfht12k_i
+  unit: mag
+merr_ap_cfht12k_r:
+  description: Mean error on m_ap_cfht12k_r
+  unit: mag
+merr_ap_decam_g:
+  description: Mean error on m_ap_decam_g
+  unit: mag
+merr_ap_decam_i:
+  description: Mean error on m_ap_decam_i
+  unit: mag
+merr_ap_decam_r:
+  description: Mean error on m_ap_decam_r
+  unit: mag
+merr_ap_decam_y:
+  description: Mean error on m_ap_decam_y
+  unit: mag
+merr_ap_decam_z:
+  description: Mean error on m_ap_decam_z
+  unit: mag
+merr_ap_egacam_g:
+  description: Mean error on m_ap_egacam_g
+  unit: mag
+merr_ap_egacam_i:
+  description: Mean error on m_ap_egacam_i
+  unit: mag
+merr_ap_egacam_r:
+  description: Mean error on m_ap_egacam_r
+  unit: mag
+merr_ap_egacam_u:
+  description: Mean error on m_ap_egacam_u
+  unit: mag
+merr_ap_egacam_y:
+  description: Mean error on m_ap_egacam_y
+  unit: mag
+merr_ap_egacam_z:
+  description: Mean error on m_ap_egacam_z
+  unit: mag
+merr_ap_galex_fuv:
+  description: Mean error on m_ap_galex_fuv
+  unit: mag
+merr_ap_galex_nuv:
+  description: Mean error on m_ap_galex_nuv
+  unit: mag
+merr_ap_gpc1_g:
+  description: Mean error on m_ap_gpc1_g
+  unit: mag
+merr_ap_gpc1_i:
+  description: Mean error on m_ap_gpc1_i
+  unit: mag
+merr_ap_gpc1_r:
+  description: Mean error on m_ap_gpc1_r
+  unit: mag
+merr_ap_gpc1_y:
+  description: Mean error on m_ap_gpc1_y
+  unit: mag
+merr_ap_gpc1_z:
+  description: Mean error on m_ap_gpc1_z
+  unit: mag
+merr_ap_hawki_k:
+  description: Mean error on m_ap_hawki_k
+  unit: mag
+merr_ap_ips_24:
+  description: Mean error on m_ap_ips_24
+  unit: mag
+merr_ap_irac_i1:
+  description: Mean error on m_ap_irac_i1
+  unit: mag
+merr_ap_irac_i2:
+  description: Mean error on m_ap_irac_i2
+  unit: mag
+merr_ap_irac_i3:
+  description: Mean error on m_ap_irac_i3
+  unit: mag
+merr_ap_irac_i4:
+  description: Mean error on m_ap_irac_i4
+  unit: mag
+merr_ap_isaac_k:
+  description: Mean error on m_ap_isaac_k
+  unit: mag
+merr_ap_newfirm_h:
+  description: Mean error on m_ap_newfirm_h
+  unit: mag
+merr_ap_newfirm_h1:
+  description: Mean error on m_ap_newfirm_h1
+  unit: mag
+merr_ap_newfirm_h2:
+  description: Mean error on m_ap_newfirm_h2
+  unit: mag
+merr_ap_newfirm_j:
+  description: Mean error on m_ap_newfirm_j
+  unit: mag
+merr_ap_newfirm_j1:
+  description: Mean error on m_ap_newfirm_j1
+  unit: mag
+merr_ap_newfirm_j2:
+  description: Mean error on m_ap_newfirm_j2
+  unit: mag
+merr_ap_newfirm_j3:
+  description: Mean error on m_ap_newfirm_j3
+  unit: mag
+merr_ap_newfirm_k:
+  description: Mean error on m_ap_newfirm_k
+  unit: mag
+merr_ap_nicmos_f110w:
+  description: Mean error on m_ap_nicmos_f110w
+  unit: mag
+merr_ap_nicmos_f160w:
+  description: Mean error on m_ap_nicmos_f160w
+  unit: mag
+merr_ap_oircs_k:
+  description: Mean error on m_ap_oircs_k
+  unit: mag
+merr_ap_oircs_ks:
+  description: Mean error on m_ap_oircs_ks
+  unit: mag
+merr_ap_omega2000_j:
+  description: Mean error on m_ap_omega2000_j
+  unit: mag
+merr_ap_omega2000_ks:
+  description: Mean error on m_ap_omega2000_ks
+  unit: mag
+merr_ap_omegacam_g:
+  description: Mean error on m_ap_omegacam_g
+  unit: mag
+merr_ap_omegacam_i:
+  description: Mean error on m_ap_omegacam_i
+  unit: mag
+merr_ap_omegacam_r:
+  description: Mean error on m_ap_omegacam_r
+  unit: mag
+merr_ap_omegacam_u:
+  description: Mean error on m_ap_omegacam_u
+  unit: mag
+merr_ap_omegacam_z:
+  description: Mean error on m_ap_omegacam_z
+  unit: mag
+merr_ap_osaic_b:
+  description: Mean error on m_ap_osaic_b
+  unit: mag
+merr_ap_osaic_i:
+  description: Mean error on m_ap_osaic_i
+  unit: mag
+merr_ap_osaic_r:
+  description: Mean error on m_ap_osaic_r
+  unit: mag
+merr_ap_osaic_u:
+  description: Mean error on m_ap_osaic_u
+  unit: mag
+merr_ap_osaic_z:
+  description: Mean error on m_ap_osaic_z
+  unit: mag
+merr_ap_pacs_green:
+  description: Mean error on m_ap_pacs_green
+  unit: mag
+merr_ap_pacs_red:
+  description: Mean error on m_ap_pacs_red
+  unit: mag
+merr_ap_quirc_hk:
+  description: Mean error on m_ap_quirc_hk
+  unit: mag
+merr_ap_sdss_g:
+  description: Mean error on m_ap_sdss_g
+  unit: mag
+merr_ap_sdss_i:
+  description: Mean error on m_ap_sdss_i
+  unit: mag
+merr_ap_sdss_r:
+  description: Mean error on m_ap_sdss_r
+  unit: mag
+merr_ap_sdss_u:
+  description: Mean error on m_ap_sdss_u
+  unit: mag
+merr_ap_sdss_z:
+  description: Mean error on m_ap_sdss_z
+  unit: mag
+merr_ap_spire_250:
+  description: Mean error on m_ap_spire_250
+  unit: mag
+merr_ap_spire_350:
+  description: Mean error on m_ap_spire_350
+  unit: mag
+merr_ap_spire_500:
+  description: Mean error on m_ap_spire_500
+  unit: mag
+merr_ap_suprime_b:
+  description: Mean error on m_ap_suprime_b
+  unit: mag
+merr_ap_suprime_g:
+  description: Mean error on m_ap_suprime_g
+  unit: mag
+merr_ap_suprime_i:
+  description: Mean error on m_ap_suprime_i
+  unit: mag
+merr_ap_suprime_ia484:
+  description: Mean error on m_ap_suprime_ia484
+  unit: mag
+merr_ap_suprime_ia527:
+  description: Mean error on m_ap_suprime_ia527
+  unit: mag
+merr_ap_suprime_ia624:
+  description: Mean error on m_ap_suprime_ia624
+  unit: mag
+merr_ap_suprime_ia679:
+  description: Mean error on m_ap_suprime_ia679
+  unit: mag
+merr_ap_suprime_ia738:
+  description: Mean error on m_ap_suprime_ia738
+  unit: mag
+merr_ap_suprime_ia767:
+  description: Mean error on m_ap_suprime_ia767
+  unit: mag
+merr_ap_suprime_ib427:
+  description: Mean error on m_ap_suprime_ib427
+  unit: mag
+merr_ap_suprime_ib464:
+  description: Mean error on m_ap_suprime_ib464
+  unit: mag
+merr_ap_suprime_ib505:
+  description: Mean error on m_ap_suprime_ib505
+  unit: mag
+merr_ap_suprime_ib574:
+  description: Mean error on m_ap_suprime_ib574
+  unit: mag
+merr_ap_suprime_ib709:
+  description: Mean error on m_ap_suprime_ib709
+  unit: mag
+merr_ap_suprime_ib827:
+  description: Mean error on m_ap_suprime_ib827
+  unit: mag
+merr_ap_suprime_ip:
+  description: Mean error on m_ap_suprime_ip
+  unit: mag
+merr_ap_suprime_n816:
+  description: Mean error on m_ap_suprime_n816
+  unit: mag
+merr_ap_suprime_n921:
+  description: Mean error on m_ap_suprime_n921
+  unit: mag
+merr_ap_suprime_nb711:
+  description: Mean error on m_ap_suprime_nb711
+  unit: mag
+merr_ap_suprime_nb816:
+  description: Mean error on m_ap_suprime_nb816
+  unit: mag
+merr_ap_suprime_r:
+  description: Mean error on m_ap_suprime_r
+  unit: mag
+merr_ap_suprime_rc:
+  description: Mean error on m_ap_suprime_rc
+  unit: mag
+merr_ap_suprime_rp:
+  description: Mean error on m_ap_suprime_rp
+  unit: mag
+merr_ap_suprime_v:
+  description: Mean error on m_ap_suprime_v
+  unit: mag
+merr_ap_suprime_y:
+  description: Mean error on m_ap_suprime_y
+  unit: mag
+merr_ap_suprime_z:
+  description: Mean error on m_ap_suprime_z
+  unit: mag
+merr_ap_suprime_zp:
+  description: Mean error on m_ap_suprime_zp
+  unit: mag
+merr_ap_suprime_zpp:
+  description: Mean error on m_ap_suprime_zpp
+  unit: mag
+merr_ap_t_g:
+  description: Mean error on m_ap_t_g
+  unit: mag
+merr_ap_t_i:
+  description: Mean error on m_ap_t_i
+  unit: mag
+merr_ap_t_r:
+  description: Mean error on m_ap_t_r
+  unit: mag
+merr_ap_t_u:
+  description: Mean error on m_ap_t_u
+  unit: mag
+merr_ap_t_z:
+  description: Mean error on m_ap_t_z
+  unit: mag
+merr_ap_tifkam_ks:
+  description: Mean error on m_ap_tifkam_ks
+  unit: mag
+merr_ap_ukidss_h:
+  description: Mean error on m_ap_ukidss_h
+  unit: mag
+merr_ap_ukidss_j:
+  description: Mean error on m_ap_ukidss_j
+  unit: mag
+merr_ap_ukidss_k:
+  description: Mean error on m_ap_ukidss_k
+  unit: mag
+merr_ap_ukidss_y:
+  description: Mean error on m_ap_ukidss_y
+  unit: mag
+merr_ap_vista_h:
+  description: Mean error on m_ap_vista_h
+  unit: mag
+merr_ap_vista_j:
+  description: Mean error on m_ap_vista_j
+  unit: mag
+merr_ap_vista_ks:
+  description: Mean error on m_ap_vista_ks
+  unit: mag
+merr_ap_vista_y:
+  description: Mean error on m_ap_vista_y
+  unit: mag
+merr_ap_vista_z:
+  description: Mean error on m_ap_vista_z
+  unit: mag
+merr_ap_wfc3_f098:
+  description: Mean error on m_ap_wfc3_f098
+  unit: mag
+merr_ap_wfc3_f105w:
+  description: Mean error on m_ap_wfc3_f105w
+  unit: mag
+merr_ap_wfc3_f125w:
+  description: Mean error on m_ap_wfc3_f125w
+  unit: mag
+merr_ap_wfc3_f140w:
+  description: Mean error on m_ap_wfc3_f140w
+  unit: mag
+merr_ap_wfc3_f160w:
+  description: Mean error on m_ap_wfc3_f160w
+  unit: mag
+merr_ap_wfc_g:
+  description: Mean error on m_ap_wfc_g
+  unit: mag
+merr_ap_wfc_i:
+  description: Mean error on m_ap_wfc_i
+  unit: mag
+merr_ap_wfc_r:
+  description: Mean error on m_ap_wfc_r
+  unit: mag
+merr_ap_wfc_u:
+  description: Mean error on m_ap_wfc_u
+  unit: mag
+merr_ap_wfc_z:
+  description: Mean error on m_ap_wfc_z
+  unit: mag
+merr_ap_wfi_416n:
+  description: Mean error on m_ap_wfi_416n
+  unit: mag
+merr_ap_wfi_461n:
+  description: Mean error on m_ap_wfi_461n
+  unit: mag
+merr_ap_wfi_485n:
+  description: Mean error on m_ap_wfi_485n
+  unit: mag
+merr_ap_wfi_518n:
+  description: Mean error on m_ap_wfi_518n
+  unit: mag
+merr_ap_wfi_571n:
+  description: Mean error on m_ap_wfi_571n
+  unit: mag
+merr_ap_wfi_604n:
+  description: Mean error on m_ap_wfi_604n
+  unit: mag
+merr_ap_wfi_646n:
+  description: Mean error on m_ap_wfi_646n
+  unit: mag
+merr_ap_wfi_696n:
+  description: Mean error on m_ap_wfi_696n
+  unit: mag
+merr_ap_wfi_753n:
+  description: Mean error on m_ap_wfi_753n
+  unit: mag
+merr_ap_wfi_815n:
+  description: Mean error on m_ap_wfi_815n
+  unit: mag
+merr_ap_wfi_856n:
+  description: Mean error on m_ap_wfi_856n
+  unit: mag
+merr_ap_wfi_914n:
+  description: Mean error on m_ap_wfi_914n
+  unit: mag
+merr_ap_wfi_b:
+  description: Mean error on m_ap_wfi_b
+  unit: mag
+merr_ap_wfi_b123:
+  description: Mean error on m_ap_wfi_b123
+  unit: mag
+merr_ap_wfi_i:
+  description: Mean error on m_ap_wfi_i
+  unit: mag
+merr_ap_wfi_r:
+  description: Mean error on m_ap_wfi_r
+  unit: mag
+merr_ap_wfi_u:
+  description: Mean error on m_ap_wfi_u
+  unit: mag
+merr_ap_wfi_v:
+  description: Mean error on m_ap_wfi_v
+  unit: mag
+merr_ap_wircam_h:
+  description: Mean error on m_ap_wircam_h
+  unit: mag
+merr_ap_wircam_j:
+  description: Mean error on m_ap_wircam_j
+  unit: mag
+merr_ap_wircam_ks:
+  description: Mean error on m_ap_wircam_ks
+  unit: mag
+merr_ap_wircam_y:
+  description: Mean error on m_ap_wircam_y
+  unit: mag
+merr_ap_wircs_j:
+  description: Mean error on m_ap_wircs_j
+  unit: mag
+merr_ap_wircs_k:
+  description: Mean error on m_ap_wircs_k
+  unit: mag
+merr_bessell_b:
+  description: Mean error on m_bessell_b.
+  unit: mag
+merr_bessell_i:
+  description: Mean error on m_bessell_i.
+  unit: mag
+merr_bessell_r:
+  description: Mean error on m_bessell_r.
+  unit: mag
+merr_bessell_u:
+  description: Mean error on m_bessell_u.
+  unit: mag
+merr_bessell_v:
+  description: Mean error on m_bessell_v.
+  unit: mag
+merr_cfht12k_b:
+  description: Mean error on m_cfht12k_b.
+  unit: mag
+merr_cfht12k_i:
+  description: Mean error on m_cfht12k_i.
+  unit: mag
+merr_cfht12k_r:
+  description: Mean error on m_cfht12k_r.
+  unit: mag
+merr_decam_g:
+  description: Mean error on m_decam_g.
+  unit: mag
+merr_decam_i:
+  description: Mean error on m_decam_i.
+  unit: mag
+merr_decam_r:
+  description: Mean error on m_decam_r.
+  unit: mag
+merr_decam_y:
+  description: Mean error on m_decam_y.
+  unit: mag
+merr_decam_z:
+  description: Mean error on m_decam_z.
+  unit: mag
+merr_egacam_g:
+  description: Mean error on m_egacam_g.
+  unit: mag
+merr_egacam_i:
+  description: Mean error on m_egacam_i.
+  unit: mag
+merr_egacam_r:
+  description: Mean error on m_egacam_r.
+  unit: mag
+merr_egacam_u:
+  description: Mean error on m_egacam_u.
+  unit: mag
+merr_egacam_y:
+  description: Mean error on m_egacam_y.
+  unit: mag
+merr_egacam_z:
+  description: Mean error on m_egacam_z.
+  unit: mag
+merr_galex_fuv:
+  description: Mean error on m_galex_fuv.
+  unit: mag
+merr_galex_nuv:
+  description: Mean error on m_galex_nuv.
+  unit: mag
+merr_gpc1_g:
+  description: Mean error on m_gpc1_g.
+  unit: mag
+merr_gpc1_i:
+  description: Mean error on m_gpc1_i.
+  unit: mag
+merr_gpc1_r:
+  description: Mean error on m_gpc1_r.
+  unit: mag
+merr_gpc1_y:
+  description: Mean error on m_gpc1_y.
+  unit: mag
+merr_gpc1_z:
+  description: Mean error on m_gpc1_z.
+  unit: mag
+merr_hawki_k:
+  description: Mean error on m_hawki_k.
+  unit: mag
+merr_ips_24:
+  description: Mean error on m_ips_24.
+  unit: mag
+merr_irac_i1:
+  description: Mean error on m_irac_i1.
+  unit: mag
+merr_irac_i2:
+  description: Mean error on m_irac_i2.
+  unit: mag
+merr_irac_i3:
+  description: Mean error on m_irac_i3.
+  unit: mag
+merr_irac_i4:
+  description: Mean error on m_irac_i4.
+  unit: mag
+merr_isaac_k:
+  description: Mean error on m_isaac_k.
+  unit: mag
+merr_newfirm_h:
+  description: Mean error on m_newfirm_h.
+  unit: mag
+merr_newfirm_h1:
+  description: Mean error on m_newfirm_h1.
+  unit: mag
+merr_newfirm_h2:
+  description: Mean error on m_newfirm_h2.
+  unit: mag
+merr_newfirm_j:
+  description: Mean error on m_newfirm_j.
+  unit: mag
+merr_newfirm_j1:
+  description: Mean error on m_newfirm_j1.
+  unit: mag
+merr_newfirm_j2:
+  description: Mean error on m_newfirm_j2.
+  unit: mag
+merr_newfirm_j3:
+  description: Mean error on m_newfirm_j3.
+  unit: mag
+merr_newfirm_k:
+  description: Mean error on m_newfirm_k.
+  unit: mag
+merr_nicmos_f110w:
+  description: Mean error on m_nicmos_f110w.
+  unit: mag
+merr_nicmos_f160w:
+  description: Mean error on m_nicmos_f160w.
+  unit: mag
+merr_oircs_k:
+  description: Mean error on m_oircs_k.
+  unit: mag
+merr_oircs_ks:
+  description: Mean error on m_oircs_ks.
+  unit: mag
+merr_omega2000_j:
+  description: Mean error on m_omega2000_j.
+  unit: mag
+merr_omega2000_ks:
+  description: Mean error on m_omega2000_ks.
+  unit: mag
+merr_omegacam_g:
+  description: Mean error on m_omegacam_g.
+  unit: mag
+merr_omegacam_i:
+  description: Mean error on m_omegacam_i.
+  unit: mag
+merr_omegacam_r:
+  description: Mean error on m_omegacam_r.
+  unit: mag
+merr_omegacam_u:
+  description: Mean error on m_omegacam_u.
+  unit: mag
+merr_omegacam_z:
+  description: Mean error on m_omegacam_z.
+  unit: mag
+merr_osaic_b:
+  description: Mean error on m_osaic_b.
+  unit: mag
+merr_osaic_i:
+  description: Mean error on m_osaic_i.
+  unit: mag
+merr_osaic_r:
+  description: Mean error on m_osaic_r.
+  unit: mag
+merr_osaic_u:
+  description: Mean error on m_osaic_u.
+  unit: mag
+merr_osaic_z:
+  description: Mean error on m_osaic_z.
+  unit: mag
+merr_pacs_green:
+  description: Mean error on m_pacs_green.
+  unit: mag
+merr_pacs_red:
+  description: Mean error on m_pacs_red.
+  unit: mag
+merr_quirc_hk:
+  description: Mean error on m_quirc_hk.
+  unit: mag
+merr_sdss_g:
+  description: Mean error on m_sdss_g.
+  unit: mag
+merr_sdss_i:
+  description: Mean error on m_sdss_i.
+  unit: mag
+merr_sdss_r:
+  description: Mean error on m_sdss_r.
+  unit: mag
+merr_sdss_u:
+  description: Mean error on m_sdss_u.
+  unit: mag
+merr_sdss_z:
+  description: Mean error on m_sdss_z.
+  unit: mag
+merr_spire_250:
+  description: Mean error on m_spire_250.
+  unit: mag
+merr_spire_350:
+  description: Mean error on m_spire_350.
+  unit: mag
+merr_spire_500:
+  description: Mean error on m_spire_500.
+  unit: mag
+merr_suprime_b:
+  description: Mean error on m_suprime_b.
+  unit: mag
+merr_suprime_g:
+  description: Mean error on m_suprime_g.
+  unit: mag
+merr_suprime_i:
+  description: Mean error on m_suprime_i.
+  unit: mag
+merr_suprime_ia484:
+  description: Mean error on m_suprime_ia484.
+  unit: mag
+merr_suprime_ia527:
+  description: Mean error on m_suprime_ia527.
+  unit: mag
+merr_suprime_ia624:
+  description: Mean error on m_suprime_ia624.
+  unit: mag
+merr_suprime_ia679:
+  description: Mean error on m_suprime_ia679.
+  unit: mag
+merr_suprime_ia738:
+  description: Mean error on m_suprime_ia738.
+  unit: mag
+merr_suprime_ia767:
+  description: Mean error on m_suprime_ia767.
+  unit: mag
+merr_suprime_ib427:
+  description: Mean error on m_suprime_ib427.
+  unit: mag
+merr_suprime_ib464:
+  description: Mean error on m_suprime_ib464.
+  unit: mag
+merr_suprime_ib505:
+  description: Mean error on m_suprime_ib505.
+  unit: mag
+merr_suprime_ib574:
+  description: Mean error on m_suprime_ib574.
+  unit: mag
+merr_suprime_ib709:
+  description: Mean error on m_suprime_ib709.
+  unit: mag
+merr_suprime_ib827:
+  description: Mean error on m_suprime_ib827.
+  unit: mag
+merr_suprime_ip:
+  description: Mean error on m_suprime_ip.
+  unit: mag
+merr_suprime_n816:
+  description: Mean error on m_suprime_n816.
+  unit: mag
+merr_suprime_n921:
+  description: Mean error on m_suprime_n921.
+  unit: mag
+merr_suprime_nb711:
+  description: Mean error on m_suprime_nb711.
+  unit: mag
+merr_suprime_nb816:
+  description: Mean error on m_suprime_nb816.
+  unit: mag
+merr_suprime_r:
+  description: Mean error on m_suprime_r.
+  unit: mag
+merr_suprime_rc:
+  description: Mean error on m_suprime_rc.
+  unit: mag
+merr_suprime_rp:
+  description: Mean error on m_suprime_rp.
+  unit: mag
+merr_suprime_v:
+  description: Mean error on m_suprime_v.
+  unit: mag
+merr_suprime_y:
+  description: Mean error on m_suprime_y.
+  unit: mag
+merr_suprime_z:
+  description: Mean error on m_suprime_z.
+  unit: mag
+merr_suprime_zp:
+  description: Mean error on m_suprime_zp.
+  unit: mag
+merr_suprime_zpp:
+  description: Mean error on m_suprime_zpp.
+  unit: mag
+merr_t_g:
+  description: Mean error on m_t_g.
+  unit: mag
+merr_t_i:
+  description: Mean error on m_t_i.
+  unit: mag
+merr_t_r:
+  description: Mean error on m_t_r.
+  unit: mag
+merr_t_u:
+  description: Mean error on m_t_u.
+  unit: mag
+merr_t_z:
+  description: Mean error on m_t_z.
+  unit: mag
+merr_tifkam_ks:
+  description: Mean error on m_tifkam_ks.
+  unit: mag
+merr_ukidss_h:
+  description: Mean error on m_ukidss_h.
+  unit: mag
+merr_ukidss_j:
+  description: Mean error on m_ukidss_j.
+  unit: mag
+merr_ukidss_k:
+  description: Mean error on m_ukidss_k.
+  unit: mag
+merr_ukidss_y:
+  description: Mean error on m_ukidss_y.
+  unit: mag
+merr_vista_h:
+  description: Mean error on m_vista_h.
+  unit: mag
+merr_vista_j:
+  description: Mean error on m_vista_j.
+  unit: mag
+merr_vista_ks:
+  description: Mean error on m_vista_ks.
+  unit: mag
+merr_vista_y:
+  description: Mean error on m_vista_y.
+  unit: mag
+merr_vista_z:
+  description: Mean error on m_vista_z.
+  unit: mag
+merr_wfc3_f098:
+  description: Mean error on m_wfc3_f098.
+  unit: mag
+merr_wfc3_f105w:
+  description: Mean error on m_wfc3_f105w.
+  unit: mag
+merr_wfc3_f125w:
+  description: Mean error on m_wfc3_f125w.
+  unit: mag
+merr_wfc3_f140w:
+  description: Mean error on m_wfc3_f140w.
+  unit: mag
+merr_wfc3_f160w:
+  description: Mean error on m_wfc3_f160w.
+  unit: mag
+merr_wfc_g:
+  description: Mean error on m_wfc_g.
+  unit: mag
+merr_wfc_i:
+  description: Mean error on m_wfc_i.
+  unit: mag
+merr_wfc_r:
+  description: Mean error on m_wfc_r.
+  unit: mag
+merr_wfc_u:
+  description: Mean error on m_wfc_u.
+  unit: mag
+merr_wfc_z:
+  description: Mean error on m_wfc_z.
+  unit: mag
+merr_wfi_416n:
+  description: Mean error on m_wfi_416n.
+  unit: mag
+merr_wfi_461n:
+  description: Mean error on m_wfi_461n.
+  unit: mag
+merr_wfi_485n:
+  description: Mean error on m_wfi_485n.
+  unit: mag
+merr_wfi_518n:
+  description: Mean error on m_wfi_518n.
+  unit: mag
+merr_wfi_571n:
+  description: Mean error on m_wfi_571n.
+  unit: mag
+merr_wfi_604n:
+  description: Mean error on m_wfi_604n.
+  unit: mag
+merr_wfi_646n:
+  description: Mean error on m_wfi_646n.
+  unit: mag
+merr_wfi_696n:
+  description: Mean error on m_wfi_696n.
+  unit: mag
+merr_wfi_753n:
+  description: Mean error on m_wfi_753n.
+  unit: mag
+merr_wfi_815n:
+  description: Mean error on m_wfi_815n.
+  unit: mag
+merr_wfi_856n:
+  description: Mean error on m_wfi_856n.
+  unit: mag
+merr_wfi_914n:
+  description: Mean error on m_wfi_914n.
+  unit: mag
+merr_wfi_b:
+  description: Mean error on m_wfi_b.
+  unit: mag
+merr_wfi_b123:
+  description: Mean error on m_wfi_b123.
+  unit: mag
+merr_wfi_i:
+  description: Mean error on m_wfi_i.
+  unit: mag
+merr_wfi_r:
+  description: Mean error on m_wfi_r.
+  unit: mag
+merr_wfi_u:
+  description: Mean error on m_wfi_u.
+  unit: mag
+merr_wfi_v:
+  description: Mean error on m_wfi_v.
+  unit: mag
+merr_wircam_h:
+  description: Mean error on m_wircam_h.
+  unit: mag
+merr_wircam_j:
+  description: Mean error on m_wircam_j.
+  unit: mag
+merr_wircam_ks:
+  description: Mean error on m_wircam_ks.
+  unit: mag
+merr_wircam_y:
+  description: Mean error on m_wircam_y.
+  unit: mag
+merr_wircs_j:
+  description: Mean error on m_wircs_j.
+  unit: mag
+merr_wircs_k:
+  description: Mean error on m_wircs_k.
+  unit: mag
+pointsourceness:
+  description: 'Index evaluation is the source is point-source: for 0 (not point source)
+    to 1 (point source). Generally name stellarity index.'
+  unit: None
+ra:
+  description: Right Ascension (J2000)
+  unit: deg
+redshift:
+  description: Photometric redshift obtained with EAZY.
+  unit: None
+zspec:
+  description: Spectroscopic redshift collated from the literature.
+  unit: None
+zspec_association_flag:
+  description: Boolean flag set to true when the association of a source to it's redshift
+    may be problematic (possible mis-cross-association).
+  unit: None
+zspec_qual:
+  description: Spectroscopic redshift quality flag. FIXME code meaning.
+  unit: None
