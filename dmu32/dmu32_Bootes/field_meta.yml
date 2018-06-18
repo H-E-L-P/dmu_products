@@ -1,14 +1,14 @@
 field: Bootes
 
-region: dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits
+region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits
 
 surveys: [ DECaLS, DataFusion-Spitzer, IBIS, LegacySurvey, NDWFS, PanSTARRS-3SS, SDWFS, UHS, zBootes, BootesBrown ]
 
-masterlist: dmu_products/dmu1/dmu1_ml_Bootes/data/master_catalogue_bootes_20180520.fits
+masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_Bootes/data/master_catalogue_bootes_20180520.fits
 
-depths: dmu_products/dmu1/dmu1_ml_Bootes/data/depths_bootes_20180520.fits
+depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_Bootes/data/depths_bootes_20180520.fits
 
-flags: dmu_products/dmu6/dmu6_v_Bootes/data/bootes_20180520_flags.fits
+flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_Bootes/data/bootes_20180520_flags.fits
 
 xid: None
 
@@ -16,4 +16,4 @@ photoz: None
 
 cigale: None
 
-final: dmu_products/dmu32/dmu32_Bootes/data/Bootes_20180520_cigale.fits
+final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_Bootes/data/Bootes_20180520_cigale.fits

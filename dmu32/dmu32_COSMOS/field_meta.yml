@@ -1,19 +1,19 @@
 field: COSMOS
 
-region: dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.fits
+region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.fits
 
 surveys: [ CANDELS-3D-HST, CFHTLS, DECaLS, HSC-DEEP, HSC-UDEEP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, CFHT-WIRDS, COSMOS2015 ]
 
-masterlist: dmu_products/dmu1/dmu1_ml_COSMOS/data/master_catalogue_cosmos_20180516.fits
+masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_COSMOS/data/master_catalogue_cosmos_20180516.fits
 
-depths: dmu_products/dmu1/dmu1_ml_COSMOS/data/depths_cosmos_20180516.fits
+depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_COSMOS/data/depths_cosmos_20180516.fits
 
-flags: dmu_products/dmu6/dmu6_v_COSMOS/data/cosmos_20180516_flags.fits
+flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_COSMOS/data/cosmos_20180516_flags.fits
 
-xid: dmu_products/dmu26/dmu26_XID+MIPS_COSMOS/data/dmu26_XID+MIPS_COSMOS_20170213.fits, dmu_products/dmu26/dmu26_XID+PACS_COSMOS/data/dmu26_XID+PACS_COSMOS_20170303.fits, dmu_products/dmu26/dmu26_XID+SPIRE_COSMOS/data/dmu26_XID+SPIRE_COSMOS_20161129.fits
+xid: [ http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+MIPS_COSMOS/data/dmu26_XID+MIPS_COSMOS_20170213.fits, http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+PACS_COSMOS/data/dmu26_XID+PACS_COSMOS_20170303.fits, http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+SPIRE_COSMOS/data/dmu26_XID+SPIRE_COSMOS_20161129.fits ]
 
-photoz: dmu_products/dmu24/dmu24_COSMOS/data/COSMOS2015-HELP_selected_20160613_photoz_v1.0.fits
+photoz: http://hedam.lam.fr/HELP/data/dmu_products/dmu24/dmu24_COSMOS/data/COSMOS2015-HELP_selected_20160613_photoz_v1.0.fits
 
-cigale: dmu_products/dmu28/dmu28_COSMOS/data/zphot/final_results.fits
+cigale: http://hedam.lam.fr/HELP/data/dmu_products/dmu28/dmu28_COSMOS/data/zphot/final_results.fits
 
-final: dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20180516_cigale.fits
+final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20180516_cigale.fits

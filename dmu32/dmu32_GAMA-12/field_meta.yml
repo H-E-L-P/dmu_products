@@ -1,19 +1,19 @@
 field: GAMA-12
 
-region: dmu_products/dmu2/dmu2_field_coverages/GAMA-12_MOC.fits
+region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/GAMA-12_MOC.fits
 
 surveys: [ DECaLS, HSC-SSP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, VISTA-VIKING ]
 
-masterlist: dmu_products/dmu1/dmu1_ml_GAMA-12/data/master_catalogue_gama-12_20180218.fits
+masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_GAMA-12/data/master_catalogue_gama-12_20180218.fits
 
-depths: dmu_products/dmu1/dmu1_ml_GAMA-12/data/depths_gama-12_20180218.fits
+depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_GAMA-12/data/depths_gama-12_20180218.fits
 
-flags: dmu_products/dmu6/dmu6_v_GAMA-12/data/gama-12_20180218_flags.fits
+flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_GAMA-12/data/gama-12_20180218_flags.fits
 
-xid: dmu_products/dmu26/dmu26_XID+SPIRE_GAMA-12/data/dmu26_XID+SPIRE_GAMA_12_20180508.fits
+xid: http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+SPIRE_GAMA-12/data/dmu26_XID+SPIRE_GAMA_12_20180508.fits
 
-photoz: dmu_products/dmu24/dmu24_GAMA-12/data/master_catalogue_gama-12_20171210_photoz_20180410_r_optimised.fits
+photoz: http://hedam.lam.fr/HELP/data/dmu_products/dmu24/dmu24_GAMA-12/data/master_catalogue_gama-12_20171210_photoz_20180410_r_optimised.fits
 
-cigale: dmu_products/dmu28/dmu28_GAMA-12/data/zphot/HELP_final_results.fits
+cigale: http://hedam.lam.fr/HELP/data/dmu_products/dmu28/dmu28_GAMA-12/data/zphot/HELP_final_results.fits
 
-final: dmu_products/dmu32/dmu32_GAMA-12/data/GAMA-12_20180218.fits
+final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_GAMA-12/data/GAMA-12_20180218.fits
