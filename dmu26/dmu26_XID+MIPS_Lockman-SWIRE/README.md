@@ -14,19 +14,19 @@ Description:
 ### Running on Apollo
 
 To run on Apollo, first run the notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles:
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
  
 ```bash
 mkdir output
 mv XID_plus_hier.sh
 cd output
 module load sge
-qsub -t 1-73 -q mps.q -jc mps.short XID_plus_hier.sh
+qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
 ```
-Then fit all 14127 tiles. Each tile requires 4 cores, 10GB memory and estimated to run for 4 hours:
+Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 10GB memory and estimated to run for 4 hours:
 ```bash
 cd ..
-qsub -t 1-9899 -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
  ```bash
@@ -38,7 +38,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load starlink/hikianalia-64bit
 stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS.fits
 ```
@@ -54,6 +54,9 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS.fits
 
  
 ### Final data products
+  Final stage requires examination and validation of catalogues using [XID+MIPS_Lockman-SWIRE_final_processing.ipynb](XID+MIPS_Lockman-SWIRE_final_processing.ipynb).
+  This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
+  We also add notebooks based on this flux level and the `Pval_res statistic`.
 
   The resulting marginalised flux probability distributions for each source, are
   described by the 50th, 84th and 16th percentiles. For those wanting to assume
