@@ -42,7 +42,6 @@ Here is the list of the DMU numbers with their associated responsibility. Some o
  14    |  GALEX data
  15    |  X-Ray data
  16    |  WISE Photometry
- 16a   |  WISE (allwise)
  17    |  MIPS Maps
  18    |  PACS maps
  19    |  SPIRE maps
