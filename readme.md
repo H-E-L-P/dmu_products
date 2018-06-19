@@ -5,7 +5,13 @@ This repository contains the products of the various HELP *Data Management
 Units* (DMU). The Github repository contains everything except the actual data,
 while [it's mirror on HeDaM](http://hedam.lam.fr/HELP/data/dmu_products/)
 contains everything. The reason not to store the data files in Github is that we
-have huge files and git is not meant to manipulate such large files. The structure on HeDaM is identical to the GitHub code. If you plan to use HELP data extensively, we recommend cloning the GitHub repository and downloading data to the corresponding data folders on your computer so that relative links continue to work properly.
+have huge files and git is not meant to manipulate such large files. The structure on HeDaM is identical to the GitHub code. If you plan to use HELP data extensively, we recommend cloning the GitHub repository and downloading data to the corresponding data folders on your computer so that relative links continue to work properly. As well as accessing the binary data files on HeDaM:
+
+- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+
+it is also possible to query the data from the Virtual Observatory database:
+
+- [http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
 
 The repository is organised as follow:
 
@@ -65,11 +71,11 @@ Running the code
 
 Most of the code used to generate and manipulate data here is run through Jupyter notebooks and makes extensive use of the Python package `herschelhelp_internal` written for the purpose. Installation instructions are available on the GitHub download page:
 
-- [https://github.com/H-E-L-P/herschelhelp_internal/](https://github.com/H-E-L-P/herschelhelp_internal/)
+- [https://github.com/H-E-L-P/herschelhelp_internal](https://github.com/H-E-L-P/herschelhelp_internal)
 
 If you don't wish to rerun or adapt the code here but just to use the data, you may be interested in the Python package `herschelhelp_python`. We anticipate most users of HELP data using this package.
 
-- [https://github.com/H-E-L-P/herschelhelp_internal/](https://github.com/H-E-L-P/herschelhelp_internal/)
+- [https://github.com/H-E-L-P/herschelhelp_python](https://github.com/H-E-L-P/herschelhelp_python)
 
 Procedure to add a new DMU data product
 ---------------------------------------
