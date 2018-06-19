@@ -38,19 +38,19 @@ for j in range(np.size(all_names)):
 	            fc.corr_psf_max_MF(hdulist1,hdulist2,hdulist3,ra1, dec1)
 	hdu = fits.BinTableHDU.from_columns(\
 	     [fits.Column(name='RA', array=ra_1, format ='F'),
-	     fits.Column(name='DEC', array=dec_1, format='F'),
-	     fits.Column(name='S250', array=S250_1, format ='F'),
-	     fits.Column(name='E250', array=E250_1, format ='F'),
-	     fits.Column(name='S350', array=S350_1, format ='F'),
-	     fits.Column(name='E350', array=E350_1, format ='F'),
-	     fits.Column(name='S500', array=S500_1, format ='F'),
-	     fits.Column(name='E500', array=E500_1, format ='F'),
+	     fits.Column(name='Dec', array=dec_1, format='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_250', array=S250_1, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_250', array=E250_1, format ='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_350', array=S350_1, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_350', array=E350_1, format ='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_500', array=S500_1, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_500', array=E500_1, format ='F'),
 	     fits.Column(name='r', array=r_1, format ='F'),
 	     fits.Column(name='P', array=(ff[1].data)['P'], format ='F'),
-	     fits.Column(name='RA_old', array=(ff[1].data)['RA'], format ='F'), 
-	     fits.Column(name='DEC_old', array=(ff[1].data)['DEC'], format ='F'), 
-	     fits.Column(name='S250_old', array=(ff[1].data)['S250'], format ='F'), 
-	     fits.Column(name='E250_old', array=(ff[1].data)['E250'], format ='F') 
+	     fits.Column(name='RA_pix', array=(ff[1].data)['RA'], format ='F'), 
+	     fits.Column(name='Dec_pix', array=(ff[1].data)['Dec'], format ='F'), 
+	     fits.Column(name='F_BLIND_pix_SPIRE_250', array=(ff[1].data)['F_BLIND_pix_SPIRE_250'], format ='F'), 
+	     fits.Column(name='FErr_BLIND_pix_SPIRE_250', array=(ff[1].data)['FErr_BLIND_pix_SPIRE_250'], format ='F') 
 	     ])
 	hdu.writeto(loc+all_names[j]+'250_cat_MF.fits') 
 
@@ -61,19 +61,19 @@ for j in range(np.size(all_names)):
 
 	hdu = fits.BinTableHDU.from_columns(\
 	     [fits.Column(name='RA', array=ra_2, format ='F'),
-	     fits.Column(name='DEC', array=dec_2, format='F'),
-	     fits.Column(name='S250', array=S250_2, format ='F'),
-	     fits.Column(name='E250', array=E250_2, format ='F'),
-	     fits.Column(name='S350', array=S350_2, format ='F'),
-	     fits.Column(name='E350', array=E350_2, format ='F'),
-	     fits.Column(name='S500', array=S500_2, format ='F'),
-	     fits.Column(name='E500', array=E500_2, format ='F'),
+	     fits.Column(name='Dec', array=dec_2, format='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_250', array=S250_2, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_250', array=E250_2, format ='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_350', array=S350_2, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_350', array=E350_2, format ='F'),
+	     fits.Column(name='F_BLIND_MF_SPIRE_500', array=S500_2, format ='F'),
+	     fits.Column(name='FErr_BLIND_MF_SPIRE_500', array=E500_2, format ='F'),
 	     fits.Column(name='r', array=r_2, format ='F'),
 	     fits.Column(name='P', array=(ff[1].data)['P'], format ='F'),
-	     fits.Column(name='RA_old', array=(ff[1].data)['RA'], format ='F'), 
-	     fits.Column(name='DEC_old', array=(ff[1].data)['DEC'], format ='F'), 
-	     fits.Column(name='S350_old', array=(ff[1].data)['S350'], format ='F'), 
-	     fits.Column(name='E350_old', array=(ff[1].data)['E350'], format ='F') 
+	     fits.Column(name='RA_pix', array=(ff[1].data)['RA'], format ='F'), 
+	     fits.Column(name='Dec_pix', array=(ff[1].data)['Dec'], format ='F'), 
+	     fits.Column(name='F_BLIND_pix_SPIRE_350', array=(ff[1].data)['F_BLIND_pix_SPIRE_350'], format ='F'), 
+	     fits.Column(name='FErr_BLIND_pix_SPIRE_350', array=(ff[1].data)['FErr_BLIND_pix_SPIRE_350'], format ='F') 
 	     ])
 	hdu.writeto(loc+all_names[j]+'350_cat_MF.fits') 
 
