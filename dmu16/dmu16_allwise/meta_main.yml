@@ -1,0 +1,18 @@
+Product: AllWISE catalogue
+
+Version: 1.0
+
+Author: Hervé Aussel
+
+Fields: AKARI-NEP, AKARI-SEP, Bootes, CDFS-SWIRE, COSMOS, EGS, ELAIS-N1,
+  ELAIS-N2, ELAIS-S1, GAMA-09, GAMA-12, GAMA-15, HDF-N, Herschel-Stripe-82,
+  Lockman-SWIRE, HATLAS-NGP, SA13, HATLAS-SGP, SPIRE-NEP, SSDF, xFLS, XMM-13hr,
+  XMM-LSS
+
+Selection filter: WISE1 or WISE2 or WISE3 or WISE4
+
+Rights: Data rights specific to the HELP work package
+
+Acknowledgements: Acknowledgement text associated with the HELP data product
+
+Related products: List of related HELP data products
