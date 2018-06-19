@@ -13,3 +13,7 @@ This repository contains all the CIGALE input and output files. The input files,
 
 The outputs, stored in 'dmu28_FIELDNAME/data/' have a folder for each type according to which input file was used. These files should follow the naming convention above and will include fits files containingg the best fit SED of each object in the observing frame.
 
+We use a dedicated version of CIGALE called cigalon (https://gitlab.lam.fr/cigale/cigale.git) which contains only modules we use to fit HELP's galaxies. This version has already implemented all parameters which are used to estimate the physical properties of galaxies. 
+
+
+
