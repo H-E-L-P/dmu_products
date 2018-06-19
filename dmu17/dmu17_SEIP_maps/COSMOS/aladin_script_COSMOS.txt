@@ -1,0 +1,37 @@
+# This script can be loaded into Aladin using the Tools>Script Console (F5)
+# you will need to alter the file paths to be correct relative to your Aladin installation
+load ../../dmu2/dmu2_field_coverages/COSMOS_MOC.fits 
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-16.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-32.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-9.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-19.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-24.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-23.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-1.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-11.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-22.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-34.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-10.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-17.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-33.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-7.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-8.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/40030690.40030690-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-18.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-25.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-20.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-12.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-2.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60087050.60087050-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-31.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-15.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-28.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-27.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/40030190.40030190-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-14.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-26.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/40025170.40025170-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-21.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-13.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//COSMOS/data/60095931.60095931-3.MIPS.1.moc.fits
+save ../../dmu17/dmu17_SEIP_maps//COSMOS/COSMOS_moc_plots.eps

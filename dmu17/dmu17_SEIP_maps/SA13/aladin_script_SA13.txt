@@ -1,0 +1,8 @@
+# This script can be loaded into Aladin using the Tools>Script Console (F5)
+# you will need to alter the file paths to be correct relative to your Aladin installation
+load ../../dmu2/dmu2_field_coverages/SA13_MOC.fits 
+load ../../dmu17/dmu17_SEIP_maps//SA13/data/60095650.60095650-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SA13/data/50070360.50070360-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SA13/data/60095710.60095710-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SA13/data/50071740.50071740-0.MIPS.1.moc.fits
+save ../../dmu17/dmu17_SEIP_maps//SA13/SA13_moc_plots.eps

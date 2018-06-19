@@ -1,0 +1,9 @@
+# This script can be loaded into Aladin using the Tools>Script Console (F5)
+# you will need to alter the file paths to be correct relative to your Aladin installation
+load ../../dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.fits 
+load ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/data/50071920.50071920-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/data/60085400.60085400-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/data/40007720.40007720-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/data/40027680.40027680-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/data/60080420.60080420-0.MIPS.1.moc.fits
+save ../../dmu17/dmu17_SEIP_maps//SPIRE-NEP/SPIRE-NEP_moc_plots.eps

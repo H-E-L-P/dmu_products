@@ -1,0 +1,17 @@
+# This script can be loaded into Aladin using the Tools>Script Console (F5)
+# you will need to alter the file paths to be correct relative to your Aladin installation
+load ../../dmu2/dmu2_field_coverages/XMM-13hr_MOC.fits 
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/50063440.50063440-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-4.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-3.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/40008040.40008040-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-2.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-5.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-10.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/40039960.40039960-0.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-8.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-12.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-6.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-9.MIPS.1.moc.fits
+load ../../dmu17/dmu17_SEIP_maps//XMM-13hr/data/60077621.60077621-1.MIPS.1.moc.fits
+save ../../dmu17/dmu17_SEIP_maps//XMM-13hr/XMM-13hr_moc_plots.eps
