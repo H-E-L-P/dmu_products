@@ -65,11 +65,11 @@ Running the code
 
 Most of the code used to generate and manipulate data here is run through Jupyter notebooks and makes extensive use of the Python package `herschelhelp_internal` written for the purpose. Installation instructions are available on the GitHub download page:
 
-- [https://github.com/H-E-L-P/herschelhelp_internal/](https://github.com/H-E-L-P/herschelhelp_internal/)
+- [https://github.com/H-E-L-P/herschelhelp_internal](https://github.com/H-E-L-P/herschelhelp_internal)
 
 If you don't wish to rerun or adapt the code here but just to use the data, you may be interested in the Python package `herschelhelp_python`. We anticipate most users of HELP data using this package.
 
-- [https://github.com/H-E-L-P/herschelhelp_internal/](https://github.com/H-E-L-P/herschelhelp_internal/)
+- [https://github.com/H-E-L-P/herschelhelp_python](https://github.com/H-E-L-P/herschelhelp_python)
 
 Procedure to add a new DMU data product
 ---------------------------------------
