@@ -1,7 +1,6 @@
-![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4)
 
 
-# Template Files [title meaningful to general astronomer information]
+#   ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4) Template Files [title meaningful to general astronomer information]
 
 The files in this folder provide templates for development of HELP
 documentation, acknowledgements and navigation.
@@ -29,11 +28,14 @@ information after the `:` preserving one blank line between items.
 
 *This is a default HELP markdown footer*
 
-###Authors
+##Authors
 Yannick Rohelly, Seb Oliver 
 
-The Herschel Extragalactic Legacy Project, (HELP](http://herschel.sussex.ac.uk/), is a European
+The Herschel Extragalactic Legacy Project, [(HELP](http://herschel.sussex.ac.uk/), is a European
 Commission Research Executive Agency funded project under the
 SP1-Cooperation, Collaborative project, Small or medium-scale focused
 research project, FP7-SPACE-2013-1 scheme, Grant Agreement
 Number 607254.
+
+[Acknowledgements] (http://herschel.sussex.ac.uk/acknowledgements)
+
