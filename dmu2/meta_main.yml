@@ -1,0 +1,42 @@
+Product: dmu2
+
+description: ./readme.md
+
+Author: Raphael Shirley
+
+fields: 
+    - name: AKARI-NEP
+      description: The Infrared Astronomical Satellite AKARIon the North Ecliptic Pole (AKARI-NEP)
+      region: 
+
+    - name: AKARI-SEP              
+    - name: Bootes                 
+    - name: CDFS-SWIRE             
+    - name: COSMOS                 
+    - name: EGS                     
+    - name: ELAIS-N1                
+    - name: ELAIS-N2                
+    - name: ELAIS-S1                
+    - name: GAMA-09                 
+    - name: GAMA-12                 
+    - name: GAMA-15                 
+    - name: HDF-N                   
+    - name: Herschel-Stripe-82      
+    - name: Lockman-SWIRE           
+    - name: NGP                     
+    - name: SA13                    
+    - name: SGP                     
+    - name: SPIRE-NEP               
+    - name: SSDF                    
+    - name: xFLS                    
+    - name: XMM-13hr                
+    - name: XMM-LSS                
+      
+
+
+
+
+
+
+  
+
