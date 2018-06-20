@@ -26,16 +26,19 @@ information after the `:` preserving one blank line between items.
 
 -------------------------------------------------------------------------------
 
-*This is a default HELP markdown footer*
+*This is a default HELP Readme markdown footer*
 
 ## Authors
-Yannick Rohelly, Seb Oliver 
+*insert your name(s) here e.g. * Yannick Rohelly, Seb Oliver 
 
-The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a European
-Commission Research Executive Agency funded project under the
+The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
+Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project
+under the
 SP1-Cooperation, Collaborative project, Small or medium-scale focused
 research project, FP7-SPACE-2013-1 scheme, Grant Agreement
 Number 607254.
 
 [Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
 
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4)
