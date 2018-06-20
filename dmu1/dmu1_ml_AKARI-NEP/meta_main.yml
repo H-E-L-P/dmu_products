@@ -2,7 +2,7 @@ Product: master_catalogue_AKARI-NEP
 
 description: The masterlist file built on a positional cross match of the input surveys.
 
-file: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
+file: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
 
 Version: DR1
 
@@ -16,15 +16,20 @@ Acknowledgements: Shirley et al (in prep)
 
 Related products: dmu0, dmu24, dmu26, dmu32
 
+servers:
+    - name: HeDaM
+      url: "http://hedam.lam.fr/HELP/data/"
+      description: The Herschel Database at Marseille (HeDaM). This is the primary server holding all the large data files in HELP.
+
 surveys:
     - name: AKARI-NEP-OptNIR
-      file: http://hedam.lam.fr/HELP/data/dmu_products/dmu0/dmu0_AKARI-NEP-OptNIR/data/AKARI-NEP_OptNIR.fits
-      yml: ../../dmu0/dmu0_AKARI-NEP-OptNIR/meta_survey.yml
+      file: dmu_products/dmu0/dmu0_AKARI-NEP-OptNIR/data/AKARI-NEP_OptNIR.fits
+      yml: dmu_products/dmu0/dmu0_AKARI-NEP-OptNIR/meta_survey.yml
     - name: PanSTARRS1-3S
-      file: http://hedam.lam.fr/HELP/data/dmu_products/dmu0/dmu0_PanSTARRS1-3SS/data/PanSTARRS1-3SS_AKARI-NEP_v2.fits
-      yml: ../../dmu0/dmu0_PanSTARRS1-3SS/meta_survey.yml
+      file: dmu_products/dmu0/dmu0_PanSTARRS1-3SS/data/PanSTARRS1-3SS_AKARI-NEP_v2.fits
+      yml: dmu_products/dmu0/dmu0_PanSTARRS1-3SS/meta_survey.yml
     - name: NEP-Spitzer
-      file: http://hedam.lam.fr/HELP/data/dmu_products/dmu0/dmu0_NEP-Spitzer/data/NEP-Spitzer-APJ.fits
-      yml: ../../dmu0/dmu0_NEP-Spitzer/meta_survey.yml
+      file: dmu_products/dmu0/dmu0_NEP-Spitzer/data/NEP-Spitzer-APJ.fits
+      yml: dmu_products/dmu0/dmu0_NEP-Spitzer/meta_survey.yml
   
 
