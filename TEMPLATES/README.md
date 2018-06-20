@@ -1,9 +1,17 @@
 
 
-#   ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4) Template Files [title meaningful to general astronomer information]
+#![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4) Template Files
 
+*The title above should be meaninful for astronomers*
 The files in this folder provide templates for development of HELP
 documentation, acknowledgements and navigation.
+
+## Templates for Readme.md
+
+[This file itself](https://github.com/H-E-L-P/dmu_products/tree/master/TEMPLATES/Readme.md)
+is a template for our Readme.md files.
+
+*comments in italics give guidance on what to put in template*
 
 
 ## Templates for meta-data files
@@ -28,8 +36,7 @@ information after the `:` preserving one blank line between items.
 
 *This is a default HELP Readme markdown footer*
 
-## Authors
-*insert your name(s) here e.g. * Yannick Rohelly, Seb Oliver 
+**Authors**: *insert your name(s) here e.g.*  Yannick Rohelly, Seb Oliver 
 
 The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
 Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
