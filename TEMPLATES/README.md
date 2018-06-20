@@ -1,6 +1,6 @@
 
 
-#![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4) Template Files
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) Template Files
 
 *The title above should be meaninful for astronomers*
 The files in this folder provide templates for development of HELP
@@ -8,7 +8,7 @@ documentation, acknowledgements and navigation.
 
 ## Templates for Readme.md
 
-[This file itself](https://github.com/H-E-L-P/dmu_products/tree/master/TEMPLATES/Readme.md)
+[This file itself](https://github.com/H-E-L-P/dmu_products/tree/master/TEMPLATES/README.md)
 is a template for our Readme.md files.
 
 *comments in italics give guidance on what to put in template*
@@ -48,4 +48,4 @@ Number 607254.
 
 [Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
 
- ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=100&v=4)
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
