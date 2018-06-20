@@ -58,5 +58,5 @@ The final merged catalogues that we recommend for usage is: dmu22_"name field"/d
 * Dec_pix 						degrees  Declination (J2000) of original detection pixel
 * F_BLIND_pix_SPIRE 			mJy  Flux density of original detection pixel (see flag)
 * FErr_BLIND_pix_SPIRE 			mJy  Flux Error of original detection pixel (see flag)
-* flag 							- 0=F_BLIND_pix_SPIRE is at 250um, 1=at 350um, 2 at 500um
+* flag 							- 0=F_BLIND_pix_SPIRE is at 250um, 1=at 350um, 2= at 500um
 * field 						- Name of the HELP-field
