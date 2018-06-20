@@ -22,20 +22,21 @@ dmin = 1e-3 # 1 mJy
 reload(fc)
 band = ['250','350','500']
 
-for j in range(np.size(all_names)):
-    name = all_names[j]+band[0]+'_v1.0.fits'
+for j in range(np.size(all_names)): # loops over all fields and runs the peak finder
+    name = all_names[j]+band[0]+'_v1.0.fits' # 250um
     hdulist = fits.open(loc+name)
-    dp_250, ep_250, rap_250, decp_250, xp_250, yp_250 = np.array(fc.find_peak(hdulist, dmin))
+    dp_250, ep_250, rap_250, decp_250, xp_250, yp_250 = np.array(fc.find_peak(hdulist, dmin)) # run on normal map
     hdulist = fits.open(loc+name)
+    # run on inverse map
     dp_n_250, ep_n_250, rap_n_250, decp_n_250, xp_n_250, yp_n_250 = np.array(fc.find_peak(hdulist, dmin, negmap = 'TRUE'))
 
-    name = all_names[j]+band[1]+'_v1.0.fits'
+    name = all_names[j]+band[1]+'_v1.0.fits' # 350um
     hdulist = fits.open(loc+name)
     dp_350, ep_350, rap_350, decp_350, xp_350, yp_350 = np.array(fc.find_peak(hdulist, dmin))
     hdulist = fits.open(loc+name)
     dp_n_350, ep_n_350, rap_n_350, decp_n_350, xp_n_350, yp_n_350 = np.array(fc.find_peak(hdulist, dmin, negmap = 'TRUE'))
 
-    name = all_names[j]+band[2]+'_v1.0.fits'
+    name = all_names[j]+band[2]+'_v1.0.fits' # 500um
     hdulist = fits.open(loc+name)
     dp_500, ep_500, rap_500, decp_500, xp_500, yp_500 = np.array(fc.find_peak(hdulist, dmin))
     hdulist = fits.open(loc+name)
@@ -120,27 +121,27 @@ for j in range(np.size(all_names)):
 
     hdu = fits.BinTableHDU.from_columns(\
          [fits.Column(name='RA', array=rap_250[P_250 >= 0.85], format ='F'),
-         fits.Column(name='DEC', array=decp_250[P_250 >= 0.85], format='F'),
-         fits.Column(name='S250', array=dp_250[P_250 >= 0.85], format ='F'),
-         fits.Column(name='E250', array=ep_250[P_250 >= 0.85], format ='F'),
+         fits.Column(name='Dec', array=decp_250[P_250 >= 0.85], format='F'),
+         fits.Column(name='F_BLIND_pix_SPIRE_250', array=dp_250[P_250 >= 0.85], format ='F'),
+         fits.Column(name='FErr_BLIND_pix_SPIRE_250', array=ep_250[P_250 >= 0.85], format ='F'),
          fits.Column(name='P', array=P_250[P_250 >= 0.85], format ='F') 
          ])
     hdu.writeto(write_loc+all_names[j]+'250_cat.fits')
     
     hdu = fits.BinTableHDU.from_columns(\
          [fits.Column(name='RA', array=rap_350[P_350 >= 0.85], format ='F'),
-         fits.Column(name='DEC', array=decp_350[P_350 >= 0.85], format='F'),
-         fits.Column(name='S350', array=dp_350[P_350 >= 0.85], format ='F'),
-         fits.Column(name='E350', array=ep_350[P_350 >= 0.85], format ='F'),
+         fits.Column(name='Dec', array=decp_350[P_350 >= 0.85], format='F'),
+         fits.Column(name='F_BLIND_pix_SPIRE_350', array=dp_350[P_350 >= 0.85], format ='F'),
+         fits.Column(name='FErr_BLIND_pix_SPIRE_350', array=ep_350[P_350 >= 0.85], format ='F'),
          fits.Column(name='P', array=P_350[P_350 >= 0.85], format ='F') 
          ])
     hdu.writeto(write_loc+all_names[j]+'350_cat.fits')
     
     hdu = fits.BinTableHDU.from_columns(\
          [fits.Column(name='RA', array=rap_500[P_500 >= 0.85], format ='F'),
-         fits.Column(name='DEC', array=decp_500[P_500 >= 0.85], format='F'),
-         fits.Column(name='S500', array=dp_500[P_500 >= 0.85], format ='F'),
-         fits.Column(name='E500', array=ep_500[P_500 >= 0.85], format ='F'),
+         fits.Column(name='Dec', array=decp_500[P_500 >= 0.85], format='F'),
+         fits.Column(name='F_BLIND_pix_SPIRE_500', array=dp_500[P_500 >= 0.85], format ='F'),
+         fits.Column(name='FErr_BLIND_pix_SPIRE_500', array=ep_500[P_500 >= 0.85], format ='F'),
          fits.Column(name='P', array=P_500[P_500 >= 0.85], format ='F') 
          ])
     hdu.writeto(write_loc+all_names[j]+'500_cat.fits')

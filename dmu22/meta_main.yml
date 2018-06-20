@@ -1,0 +1,15 @@
+Product: dmu22_XID+SPIRE_"name field"_BLIND_Matched_MF.fits
+
+Version: 1.0
+
+Author: Steven Duivenvoorden
+
+Fields: All HELP fields
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products:dmu22_XID+SPIRE_"name field"-BLIND.fits, "name field"_SPIRE_all.fits

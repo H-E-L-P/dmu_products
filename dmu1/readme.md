@@ -1,9 +1,11 @@
 HELP DMU1 masterlist repository
 ===========================
 
+The `masterlist` or `master catalogue` is the list of objects which define the HELP objects. It is built from a positional cross match of the multiwavelength catalogues in dmu0.
+
 This repository contains all the HELP masterlists across the various fields. These catalogues are cross matched photometry catalogues constructed from the pristine catalogues contained in dmu0.
 
-The final masterlists wcan be found on HeDaM:
+The final masterlists can be found on HeDaM:
 
 - http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_FIELDNAME/data/master_catalogue_fieldname_SUFFIX.fits
 
