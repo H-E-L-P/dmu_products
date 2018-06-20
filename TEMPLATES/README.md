@@ -24,11 +24,14 @@ Those files are `YAML` containing several items (like FITS keywords) that can
 easily be read by a computer programme. You should not worry and only fill the
 information after the `:` preserving one blank line between items.
 
-## Footer
 
 -------------------------------------------------------------------------------
 
 *This is a default HELP markdown footer*
+
+###Authors
+Yannick Rohelly, Seb Oliver 
+
 The Herschel Extragalactic Legacy Project, (HELP](http://herschel.sussex.ac.uk/), is a European
 Commission Research Executive Agency funded project under the
 SP1-Cooperation, Collaborative project, Small or medium-scale focused
