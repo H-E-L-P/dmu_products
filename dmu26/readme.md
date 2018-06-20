@@ -34,3 +34,9 @@ Each XID+ folder contains:
 * a `'make_combined_map.py` python file used to combine all the Bayesian P value maps and check for any failed tiles
 * a `final_processing` notebook to read in output catalogue, validate, assign level of detection and add flags to catalogue
 * `*.yml` files, documenting the input files used to produce the data products.
+
+Data Products
+-------------
+For each field and band, XID+ produces:
+* a catalogue, containing fluxes and other useful measures
+* a Bayesian P value map, which is a visualisation of a posterior predictive check. These can be thought of as more robust version of the standard residual maps. 
