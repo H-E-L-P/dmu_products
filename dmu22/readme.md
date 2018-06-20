@@ -1,4 +1,11 @@
-# DMU22 SPIRE blind catalogue, start location: http://hedam.lam.fr/HELP/data/dmu_products/dmu22/
+HELP DMU22 SPIRE blind catalogues
+
+The `blind catalogues` contain all the SPIRE sources which are directly detected in the three SPIRE maps.
+
+The final catalogues can be found on HeDaM:
+
+- http://hedam.lam.fr/HELP/data/dmu_products/dmu22/
+- dmu22_"name field"/data/dmu22_XID+SPIRE_"name field"_BLIND_Matched_MF.fits
 
 This dmu contains all the SPIRE blind photometry. It contains a folder for each field for which we have blind photometry.
 The blind sources are selected my finding peaks in the Matched Filtered (MF) maps (Chapin et al 2011, dmu19). We only save peaks above the 85 per cent completness level at every SPIRE wavelength indiuavidualy. This level for every field can be found in dmu22_"name field"/"name field"_SPIRE_lim.pdf. And the central pixel flux density, ra and dec of those peaks can be found in: dmu22_"name field"/data/"name field"_SPIRE"XXX"_cat.fits, with XXX 250, 350 or 500 for the three SPIRE bands.  The script to create these first step catalogues is: make_first_cat.py
