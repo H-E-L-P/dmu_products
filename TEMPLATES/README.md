@@ -1,9 +1,15 @@
-# Templates for meta-data files
+# Template Files [title meaningful to general astronomer information]
 
-In the standards we defined some time ago, we insisted on the meta-data that
-must be associated to each product. We decided to add them in special Header
-Data Units (HDU). Doing this may not be convenient, especially when a product if
-produced elsewhere.
+The files in this folder provide templates for development of HELP
+documentation, acknowledgements and navigation.
+
+<img src=https://avatars1.githubusercontent.com/u/7880370?s=200&v=4>
+
+
+## Templates for meta-data files
+
+The HELP standard for documentation of the provenance of data sets is
+through the provision of ``YAML" meta files.  These meta files 
 
 This directory contains template files to give the same information in text
 files:
@@ -15,5 +21,8 @@ files:
 
 Those files are `YAML` containing several items (like FITS keywords) that can
 easily be read by a computer programme. You should not worry and only fill the
-information after the `:` preserving one blank line between items. I will
-reformat them if needed.
+information after the `:` preserving one blank line between items.
+
+<hr>
+## Footer
+This footer area 
