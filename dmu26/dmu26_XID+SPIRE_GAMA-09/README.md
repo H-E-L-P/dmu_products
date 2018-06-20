@@ -17,6 +17,7 @@ Description:
 ### Running on Apollo
 To run on Apollo, first run the notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
  hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
+
 ```bash
 mkdir output
 mv XID_plus_hier.sh
