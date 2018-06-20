@@ -36,9 +36,10 @@ information after the `:` preserving one blank line between items.
 
 *This is a default HELP Readme markdown footer*
 
-**Authors**: *insert your name(s) here e.g.*  Yannick Rohelly, Seb Oliver 
+**Authors**: *insert your name(s) here e.g.*  Yannick Rohelly, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
-The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
+ The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
 Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
 funded project
 under the
@@ -48,4 +49,3 @@ Number 607254.
 
 [Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
 
- ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
