@@ -8,6 +8,10 @@ This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http
 
 The files in this folder provide templates for development of HELP documentation, acknowledgements and navigation. This second top level paragraph can give a bit more detail about what is stored here. Do you want any links to code used? Perhaps you should specify git versions or give a brief overview of what the code does.
 
+The full files which are not stored in the Git repository can be downloaded from HeDaM:
+
+- [http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/](http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/)
+
 ## Folder structure
 This section describes how this folder is organised. Is it organised by field or by some other criteria such as survey. Perhaps there should be a table here describing all the folders that are present? Perhaps there should be an overview of the format of the data files. Are they tables? Where is the description of the column headings in yml format? Where can the data be downloaded from? Do you have links to HeDaM files? Do you have example queries for getting info from a VO database? Do you need describe where inputs come from other parts of dmu_products. 
 
@@ -44,12 +48,11 @@ information after the `:` preserving one blank line between items.
 **Authors**: *insert your name(s) here e.g.*  Yannick Rohelly, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
- The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
-Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
-funded project
-under the
-SP1-Cooperation, Collaborative project, Small or medium-scale focused
-research project, FP7-SPACE-2013-1 scheme, Grant Agreement
+ 
+For a full description of the database and how it is organised in to `dmu_products` please the top level [readme](../readme.md).
+ 
+The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement
 Number 607254.
 
 [Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)

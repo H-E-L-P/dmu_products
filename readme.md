@@ -33,7 +33,7 @@ Here is the list of the DMU numbers with their associated responsibility. Some o
 -------|------------------------------------------
  0     |  Pristine catalogues
  1     |  Masterlist data
- 2     |  HeDaM
+ 2     |  Field definitions
  3     |  Morphologies (Shapes & Sizes) of Objects
  4     |  Bright Star Mask
  5     |  Known Star Flag

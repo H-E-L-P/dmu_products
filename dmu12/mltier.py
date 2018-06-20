@@ -101,15 +101,15 @@ class Field(object):
         self.dec_up = dec_up
         self.moc = moc
         if self.moc == None:
-            print('field is not using MOC')
+            print('field area is defined by a rectangular box')
         else:
-            print('field is using a MOC')
+            print('field area is defined by a MOC')
         if self.moc == None:
             self.area = area_ra_dec(self.ra_down, self.ra_up, 
                                     self.dec_down, self.dec_up)
         else:
             self.area = self.moc.area * (180/np.pi)**2 * (3600**2)
-        print (self.area)
+        
     def filter_catalogue(self, catalogue, colnames=("ra", "dec")):
         """
         Filter a catalogue to the 
@@ -125,7 +125,6 @@ class Field(object):
                  (catalogue[colnames[1]] <= self.dec_up))]
         else:
             print('filtering in a MOC')
-            print( sum( inMoc(catalogue[colnames[0]],catalogue[colnames[1]],self.moc) ) )
             return catalogue[ ( inMoc(catalogue[colnames[0]],catalogue[colnames[1]],self.moc) ) ]
     
     def random_catalogue(self, n):
@@ -163,12 +162,12 @@ class Q_0(object):
             random_small, self.coords_big, radius*u.arcsec)
         
         nomatch_random = self.n_small - len(np.unique(idx_random_small))
-#        print('number of random sources with no matches: {:4d}'.format(nomatch_random))
+        #print('number of random sources with no matches: {:4d}'.format(nomatch_random))
         # Compute match in radius
         idx_small, idx_big, d2d, d3d = search_around_sky(
             self.coords_small, self.coords_big, radius*u.arcsec)
         nomatch_small = self.n_small - len(np.unique(idx_small))
-#        print('number of real sources with no matches: {:4d}'.format(nomatch_small)) 
+        #print('number of real sources with no matches: {:4d}'.format(nomatch_small)) 
 
         return (1. - float(nomatch_small)/float(nomatch_random))
     

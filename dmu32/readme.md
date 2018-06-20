@@ -1,5 +1,7 @@
-HELP DMU32 final data repository
+HELP final data repository (DMU32)
 ===========================
+
+This is a Herschel Extragalactic Legacy Project ([HELP](http://herschel.sussex.ac.uk)) data product. Specifically it contains the final merged data product of all HELP objects.
 
 This repository contains all the final HELP catalogues across the various fields. Each folder merges all the data available on each field. The notebook the_end.ipynb also generates a list of files and the code necessary to publish the final data on VO. This is built on using the definition of DR1 objects specified in dmu1.
 
