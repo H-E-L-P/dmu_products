@@ -3,8 +3,8 @@
 The files in this folder provide templates for development of HELP
 documentation, acknowledgements and navigation.
 
-![https://avatars1.githubusercontent.com/u/7880370?s=200&v=4 ]()
 
+![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=200&v=4)
 ## Templates for meta-data files
 
 The HELP standard for documentation of the provenance of data sets is
