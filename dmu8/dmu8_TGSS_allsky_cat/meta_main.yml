@@ -1,0 +1,13 @@
+Product: TGSS ADR1 all-sky catalogue
+
+Version: 2017
+
+Author: Aayush Saxena
+
+Fields: Entire sky north of -53 DEC
+
+Selection filter: 150 MHz (GMRT)
+
+Rights: WP2
+
+Acknowledgements: Intema et al. 2017

@@ -3,9 +3,9 @@
 
 This repository contains the products of the various HELP *Data Management
 Units* (DMU). The Github repository contains everything except the actual data,
-while [it's mirror on HeDaM](http://hedam.lam.fr/HELP/data/dmu_products/)
+while [its mirror on HeDaM](http://hedam.lam.fr/HELP/data/dmu_products/)
 contains everything. The reason not to store the data files in Github is that we
-have huge files and git is not meant to manipulate such large files. The structure on HeDaM is identical to the GitHub code. If you plan to use HELP data extensively, we recommend cloning the GitHub repository and downloading data to the corresponding data folders on your computer so that relative links continue to work properly. As well as accessing the binary data files on HeDaM:
+have such huge files, that git is not designed for working with them. The directory structures on HeDaM and GitHub are  identical. If you plan to use HELP data extensively, we recommend cloning the GitHub repository and downloading data to the corresponding data folders on your computer so that relative links continue to work properly. As well as accessing the binary data files on HeDaM:
 
 - [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
 
@@ -13,14 +13,14 @@ it is also possible to query the data from the Virtual Observatory database:
 
 - [http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
 
-The repository is organised as follow:
+The repository is organised as follows:
 
-- Each DMU (see [list below](#dmu-list)) has its own directory. 
-- Each DMU product lives in a separate directory. These contain
-  a `readme.md` file that describes the data product.  If you want to keep your
+- Each DMU (see [list below](#dmu-list)) has its own directory (e.g. DMU24/ contains photometric redshifts). 
+- Each DMU product (e.g. photometric redshifts in the XMM-LSS field) lives in a separate sub-directory. These contain
+  a `readme.md` file describing the data product.  If you want to keep your
   data in the clone of this repository on your computer, you can put it in
   a `data/` folder inside the DMU product directory.  These folders are
-  automatically ignore by git.
+  automatically ignored by git.
 
 
 
@@ -84,15 +84,15 @@ Here is the procedure to add a new DMU data product:
 
 - Create a `dmu<nn>/dmu<nn>_<product_name>` directory.
 - Create a `readme.md` file describing the product.  Indicate what pristine data
-  was used and all the process that was applied to it.
+  was used and all the processes that were applied to it.
 - You may add some scripts in the folder or create another DMU product
   containing the programme that you are using in various products.
 - Add a `meta_main.yml` and one or more `meta_survey.yml` (if there are several,
-  name them `meta_survey_1.yml` and so on) taken form the `TEMPLATES` directory.
+  name them `meta_survey_1.yml` and so on) taken from the `TEMPLATES` directory.
   These files are important as they allow us to trace and acknowledge the data
   we use.
 - Don't put the actual data on Github, instead explain how to get it in
-  a `get_data.md` file or contact Yannick.
+  a `get_data.md` file, or contact Yannick.
 
 When this is done, Yannick will:
 
