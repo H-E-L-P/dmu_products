@@ -9,9 +9,9 @@ This repository contains all the HELP masterlists across the various fields. The
 
 The final masterlists can be found on HeDaM:
 
-- http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_FIELDNAME/data/master_catalogue_fieldname_SUFFIX.fits
+- http://hedam.lam.fr/HELP/data/dmu_products/dmu1/
 
-The SUFFIX dates are described below. The column names are the same as in the final dmu32 catalogue and are described here:
+The column names in the master_catalogue tables are the same as in the final dmu32 catalogue and are described here:
 
 - [../dmu32/columns.yml](../dmu32/columns.yml)
 

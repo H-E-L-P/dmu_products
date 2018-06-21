@@ -7,7 +7,7 @@ Vital to subsequent stages of the HELP pipeline and using the data products for 
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/](http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/)
+- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
 
 
 Folder structure

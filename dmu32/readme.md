@@ -9,7 +9,7 @@ In general the fits files stored here contain the latest and most complete data 
 
 Column descriptions
 -----------------------
-A full description of the columns is given in columns.csv. It is also available from the Virtual Observatory (VO) which is often the best way to access this data since individual fits files stored here can be as large as 60Gb.
+A full description of the columns is given in [columns.csv](columns.csv). It is also available from the Virtual Observatory (VO) which is often the best way to access this data since individual fits files stored here can be as large as 60Gb.
 
 [http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
 
