@@ -1,14 +1,18 @@
-HELP official SPIRE maps
-========================
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP official SPIRE maps (dmu19)
+
+This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk))
 
 This product contains the homogenised SPIRE maps of the Herschel Extragalactic
 Legacy Project.
 
+The full files which are not stored in the Git repository can be downloaded from HeDaM:
+
+- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+
 ## File structure
 
 The FITS files have all the same structure with the Header Data Units (HDU)
-listed below. If a kind of data is not available on a field, the corresponding
-HDU is empty.
+listed below. 
 
 1. Primary HDU.
 2. **IMAGE**: The signal map in *Jy/beam*.
@@ -19,6 +23,11 @@ HDU is empty.
 6. **MASK**: The mask map with the following values:
     - 0: no mask (*i.e.* good data);
     - 1: regions with low depth relative to the rest of the map.
+7. **MFILT** Matched Filtered map *Jy/beam* (Chapin et al. 2011)
+8. **MFILT_ERROR** The error map for the Matched Filtered map *Jy/beam*
+9. **Matchedfilter** The Matched Filter used for the filtering
+
+The maps were put in this structure using gen_maps_SD.py
 
 ### Fixme
 
@@ -33,10 +42,9 @@ the Herschel-Stripe-82 ObsIDs (i.e. without XMM-LSS, to get smaller files).
   expressed in number of hits.  These coverage maps where converted to exposure
   multiplying the hit value by 1/10 s for parallel mode and 1/18.6 s for
   standard observations.
-- We may want to add point filtered maps.
-- The different ways of computing error between projects should be described.
 - The mask definition is not exactly the same between surveys. For H-ATLAS, it
   only which pixels were observed or not. AKARI-NEP does not provide masks.
+  For fields without a mask we create a mask, using EXPOSURE = 0 -> MASK = 1 
 
 ## Lists of Herschel Observation identifiers (ObsIDs)
 
@@ -65,4 +73,18 @@ SPIRE-NEP given by Chris.
 
 This is the list of all the SPIRE ObsIDs queried from the Herschel Science
 Archive (at the begining of October 2017) and limited to HELP coverage.
+
+-------------------------------------------------------------------------------
+
+**Authors**: Steven Duivenvoorden, Yannick Rohelly
+
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
+ 
+For a full description of the database and how it is organised in to `dmu_products` please see the top level [readme](../readme.md).
+ 
+The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement
+Number 607254.
+
+[Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
 
