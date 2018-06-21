@@ -7,29 +7,37 @@ This folder is the top level folder for the Spitzer MIPS 24 micron
 maps collected, homogenised and with value-added by the Herschel
 Extragalactic Legacy Project (HELP). 
 
-These files are located within or near to the HELP boundaries. Maps
-include 
-
-## Folders contained within
-
-* Maps from SWIRE survey team
-  * dmu17_ELAIS-N1:
-  * dmu17_Lockman-SWIRE
-  * dmu17_ELAIS-S1
-  * dmu17_CDFS-SWIRE
-
-* Maps from other Spitzer survey teams
-  * dmu17_Bootes
-  * dmu17_xFLS
-
-* Maps from more than one Spitzer survey team
-  * dmu17_XMM-LSS
-
-  * dmu17_HELP-MIPS-maps
+These files are located within or near to the HELP boundaries. Where
+map data was provided as separate FITS files (e.g. image, error,
+coverage) these have been merged into multi-extension FITS
+files. Point Spread Functions have been estimated for each image by
+stacking on objects in the AllWISE catalogues.
 
 
-* dmu17_SEIP_maps
+* Maps from Spitzer Legacy survey teas
+  * dmu17_Legacy_maps
 
+* HELP homogenised versions of  the Spitzer Legacy survey team maps
+  * dmu17_HELP_Legacy_maps
+
+* Selection of Spitzer Enhanced Imaging Products (SEIP) Super Mosaics:
+  * dmu17_SEIP_maps
+
+
+* HELP homogenised versions of  Spitzer Enhanced Imaging Products (SEIP) Super Mosaics:
+  * dmu17_HELP_SEIP_maps
+
+## Caveat
+
+These files were previously arranged in different folder structure,
+with the original files and the HELP versions of the files in the same
+folders. The code to generate the HELP versions and the PSFs were run
+with those old folder structures and so will not work with the current folders.
+
+## T.B.D.
+* Some of the legacy survey team maps need to be collated and
+homogenised.
+* repair code to work with new folder structure
 
 ## Future work
 This work can be extended to add Spitzer-MIPS 70 and Spitzer-MIPS 160 micron data.
