@@ -3,7 +3,7 @@ from astropy.table import Table
 from astropy import units as u
 from astropy.coordinates import SkyCoord, search_around_sky
 from pymoc import MOC
-from utils import inMoc
+from herschelhelp_internal.utils import inMoc
 #from tqdm import tqdm, tnrange, tqdm_notebook
 from concurrent.futures import ProcessPoolExecutor, as_completed
 #from test import gen_rand_cat_inMOC
