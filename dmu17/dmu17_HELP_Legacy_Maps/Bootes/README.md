@@ -14,4 +14,4 @@ PSF normalisation for Bootes MIPS map was carried out using Herve Aussel's Jupyt
 [normalize_MIPS_psf.ipynb](./normalize_MIPS_psf.ipynb).
  
 The final normalised PSF is:
-`dmu17_MIPS_Bootes_20180129.fits`
+`dmu17_MIPS_PSF_Bootes_20180129.fits`

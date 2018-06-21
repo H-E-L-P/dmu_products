@@ -1,8 +1,11 @@
 ### dmu17_ELAIS-S1
 
 ### PSF stacking
-Stacking was carried out using Seb Oliver's IDL PSF stacking code, using the script [dmu17_ELAIS-S1/mips_psf_elais-s1.csh](./dmu17_ELAIS-S1/mips_psf_elais-s1.csh)
+Stacking was carried out using Seb Oliver's IDL PSF stacking code.
 
 ### PSF normalisation
-PSF normalisation for ELAIS-N1 MIPS map was carried out using the Jupyter notebook 
+PSF normalisation for ELAIS-S1 MIPS map was carried out using Herve Aussel's Jupyter notebook 
 [normalize_MIPS_psf.ipynb](./normalize_MIPS_psf.ipynb).
+
+The final normalised PSF is:
+`dmu17_MIPS_PSF_ELAIS-S1_20180116.fits`
