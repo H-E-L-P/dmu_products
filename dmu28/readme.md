@@ -15,5 +15,9 @@ The outputs, stored in 'dmu28_FIELDNAME/data/' have a folder for each type accor
 
 We use a dedicated version of CIGALE called cigalon (https://gitlab.lam.fr/cigale/cigale.git) which contains only modules we use to fit HELP's galaxies. This version has already implemented all parameters which are used to estimate the physical properties of galaxies. 
 
+'HELP_final_results.fits'
+'pcigale.ini' -	a	configuration	file for cigale
+ 'SEDs' -folder which contains all best models for given catalogue
+
 
 
