@@ -1,5 +1,5 @@
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP masterlist repository (DMU1)
-===========================
+
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk)). 
 

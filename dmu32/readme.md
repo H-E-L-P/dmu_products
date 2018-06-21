@@ -1,5 +1,5 @@
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP final data repository (DMU32)
-===========================
+
 
 This is a Herschel Extragalactic Legacy Project ([HELP](http://herschel.sussex.ac.uk)) data product. Specifically it contains the final merged data product of all HELP objects.
 

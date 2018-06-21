@@ -1,5 +1,5 @@
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP DMU product repository
-===========================
+
 
 This repository contains the products of the various HELP *Data Management
 Units* (DMU). The Github repository contains everything except the actual data,

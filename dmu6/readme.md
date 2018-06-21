@@ -1,5 +1,5 @@
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Optical and NIR/MIR photometry validation (DMU6)
-===========================
+
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk)). This repository contains documents that describe and quantify the quality of the masterlist data in dmu1. It contains a simplified description of steps taken to homogenise and reformat data in dmu1 and quick checks performed there. It also contains work done to highlight specific problems with the input data that could not be corrected.
 
