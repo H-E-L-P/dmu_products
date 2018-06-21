@@ -1,5 +1,7 @@
-HELP DMU1 masterlist repository
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP masterlist repository (DMU1)
 ===========================
+
+This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk)). 
 
 The `masterlist` or `master catalogue` is the list of objects which define the HELP objects. It is built from a positional cross match of the multiwavelength catalogues in dmu0.
 
@@ -64,5 +66,19 @@ XMM-13hr               | 20180501
 XMM-LSS                | 20180504
  
  These are the catalogues on which checks and diagnostics have been run, validations performed, xid+ fir fluxes calculated, photometric redshifts calculated, and CIGALE parameters fitted.
+ 
+ -------------------------------------------------------------------------------
+
+**Authors**: Raphael Shirley, Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
+ 
+For a full description of the database and how it is organised in to `dmu_products` please see the top level [readme](../readme.md).
+ 
+The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement
+Number 607254.
+
+[Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
 
 

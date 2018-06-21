@@ -1,4 +1,4 @@
-HELP final data repository (DMU32)
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP final data repository (DMU32)
 ===========================
 
 This is a Herschel Extragalactic Legacy Project ([HELP](http://herschel.sussex.ac.uk)) data product. Specifically it contains the final merged data product of all HELP objects.
@@ -47,3 +47,17 @@ In each field folder there is a file field_meta.yml which contains details of al
 
 10. final: dmu_products/dmu32/dmu32_FIELDNAME/data/FIELDNAME_SUFFIX_cigale.fits
     * This is the final catalogue found in this folder (dmu32 - Merged catalogue). It is produced based on joining the earlier catalogues based on the HELP_id which is used to identify objects across all the HELP data products. If this field has all the data products (xid+ fluxes, photo-z and CIGALE fits) this file will be called FIELDNAME_SUFFIX.fits. If not all data products are present then only the FIELDNAME_SUFFIX_cigale.fits file will be present which is built as an input for CIGALE.
+    
+-------------------------------------------------------------------------------
+
+**Authors**: Raphael Shirley, Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
+ 
+For a full description of the database and how it is organised in to `dmu_products` please see the top level [readme](../readme.md).
+ 
+The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement
+Number 607254.
+
+[Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)
