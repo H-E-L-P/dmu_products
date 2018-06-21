@@ -1,4 +1,4 @@
-Survey: HerMES, H-ATLAS
+Survey: HerMES, H-ATLAS, AKARI-NEP, SPIRE-NEP (Calibration)
 
 Telescope: Herschel
 
@@ -6,15 +6,15 @@ Instrument: SPIRE
 
 Filters: 250um, 350um and 500um
 
-P.I.: Name of the principal investigator
+P.I.: S. Oliver (HerMES), S. Eales (H-ATLAS), S. Serjeant (AKARI-NEP), Calibration
 
-Reference: Oliver et al 2012, Eales et al. 2011
+Reference: Oliver et al 2012 (HerMES), Eales et al. 2010 (H-ATLAS), Pearson et al. 2017 (AKARI-NEP)
 
-Proposal ID: N/A
+Proposal ID: KPGT_soliver_1,  KPOT_seales01_2, OT1_sserje01_1, Calibration_rpspire_124
 
 Observation dates: 2009 - 2013
 
-Publication date: Date of publication of the data
+Publication date: 3/4/2012, 2016, 2017
 
 URL: hedam.lam.fr/HerMES/, h-atlas.org
 
