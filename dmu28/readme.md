@@ -31,9 +31,11 @@ We use a dedicated version of CIGALE called cigalon which contains only modules 
 
 The files in data are:
 
-- 'HELP_final_results.fits'
 - 'pcigale.ini' a configuration file for cigale
-- 'SEDs' folder which contains all best models for given catalogue
+ 
+- 'HELP_final_results.fits'- file with the main physcial parameters estimated based on SEDfitting
+
+- 'SEDs' - folder which contains all best models for given catalogue
 
 -------------------------------------------------------------------------------
 
