@@ -1,5 +1,0 @@
-include=aor.conf
-aor_pixsize=4.5
-dataname=HerS
-shortname=hers
-include=hers.badscan

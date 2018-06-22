@@ -1,9 +1,0 @@
-include=general.conf
-dataname=VVDS
-shortname=vvds
-badscan=PMW 1342201438 a1030005
-badscan=P?W 1342201441 a1030018
-jackknife=half1 0 91
-jackknife=half2 91 91
-jackknife=ang1 0 91 26 13
-jackknife=ang2 13 91 26 13

@@ -1,9 +1,0 @@
-include=redmap.conf
-dataname=ELAIS-N2-SWIRE
-dataname=ELAIS-N2-SWIRE2
-shortname=elais-n2-redmap
-include=elais-n2.badscan
-include=elais-n2-swire2.badscan
-fixeddir=/data/spire/maps/elais-n2/20111129
-fixedname=elais-n2
-fixeddate=20111129

@@ -1,5 +1,0 @@
-include=general.conf
-dataname=BooSp
-shortname=bootes-shallow
-include=bootes.badscan
-allowedobsids=1342188650,1342188651,1342188681,1342188682

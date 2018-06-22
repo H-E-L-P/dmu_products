@@ -1,5 +1,0 @@
-include=general.conf
-dataname=ELAIS-N2-SWIRE
-shortname=elais-n2
-include=elais-n2.badscan
-# only half repeat for now--no jks

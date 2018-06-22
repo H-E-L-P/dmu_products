@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=ECDFS
-shortname=ecdfs
-include=ecdfs.badscan

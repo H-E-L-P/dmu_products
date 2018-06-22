@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=EGS-SCUBA
-shortname=egs-scuba
-include=egs-scuba.badscan

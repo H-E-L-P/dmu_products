@@ -1,8 +1,0 @@
-include=general.conf
-dataname=COSMOS
-shortname=cosmos
-include=cosmos.badscan
-jackknife=half1 0 128
-jackknife=half2 128 128
-jackknife=ang1 0 128 32 16
-jackknife=ang2 16 128 32 16

@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=COSMOS
-shortname=cosmos
-include=cosmos.badscan

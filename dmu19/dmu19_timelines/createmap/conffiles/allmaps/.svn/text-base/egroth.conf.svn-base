@@ -1,7 +1,0 @@
-include=general.conf
-dataname=EGroth
-shortname=egroth
-jackknife=half1 0 57
-jackknife=half2 57 48
-jackknife=ang1 0 84 15 12
-jackknife=ang2 12 21 15 3

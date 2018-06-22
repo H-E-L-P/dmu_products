@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=XMM-LSS
-shortname=xmm-lss
-include=xmm-lss.badscan

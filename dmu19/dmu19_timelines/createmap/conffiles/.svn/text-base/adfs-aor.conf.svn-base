@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=ADFS
-shortname=adfs
-include=adfs.badscan

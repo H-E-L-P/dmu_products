@@ -1,4 +1,0 @@
-include=general.conf
-dataname=FLS
-shortname=fls-shallow
-include=fls.badscan

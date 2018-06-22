@@ -1,6 +1,0 @@
-include=general.conf
-dataname=FLS
-shortname=fls
-include=fls.badscan
-jackknife=ang1 0 54
-jackknife=ang2 54 63

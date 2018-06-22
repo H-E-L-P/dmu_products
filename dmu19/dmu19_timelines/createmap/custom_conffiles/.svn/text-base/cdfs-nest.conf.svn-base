@@ -1,8 +1,0 @@
-include=nest.conf
-dataname=CDFS-SWIRE
-dataname=ECDFS
-dataname=GOODS-S
-shortname=cdfs-nest
-include=cdfs-swire.badscan
-include=ecdfs.badscan
-include=goodss.badscan

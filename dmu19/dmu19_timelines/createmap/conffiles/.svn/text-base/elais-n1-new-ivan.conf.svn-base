@@ -1,6 +1,0 @@
-include=general.conf
-dataname=en1_new_ivan
-shortname=elais-n1-new-ivan
-include=elais-n1-new-ivan.badscan
-jackknife=ang1 0 77
-jackknife=ang2 77 76

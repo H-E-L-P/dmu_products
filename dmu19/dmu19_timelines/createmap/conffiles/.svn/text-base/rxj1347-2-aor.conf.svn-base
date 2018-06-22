@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=RXJ1347_5-1145
-shortname=rxj1347-2
-include=rxj1347-2.badscan

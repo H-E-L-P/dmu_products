@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=BooSp
-shortname=bootes
-include=bootes.badscan

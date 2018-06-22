@@ -1,5 +1,0 @@
-datadirbase=/data/spiredaq/reprocessed
-dataversion=ntL1g
-do_tdc
-dataname=Neptune
-shortname=neptune

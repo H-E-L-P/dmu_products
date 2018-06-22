@@ -1,8 +1,0 @@
-datadirbase=/data/spiredaq/reprocessed
-dataversion=ntL1i
-do_tdc
-todmean=1
-do_jkbolo
-first_clip=5
-grow_clip=5
-clipsigma=10.0

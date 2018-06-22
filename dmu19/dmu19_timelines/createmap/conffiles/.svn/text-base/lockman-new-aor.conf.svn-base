@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=Lockman
-shortname=lockman-new
-include=lockman-new.badscan

@@ -1,5 +1,0 @@
-include=general.conf
-pixsize=3 4.1666666667 6
-do_matched
-do_jkbolo=0
-do_fixeddeglitch=1

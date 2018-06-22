@@ -1,6 +1,0 @@
-include=general.conf
-dataname=XMM-LSS
-shortname=xmm-lss
-include=xmm-lss.badscan
-jackknife=ang1 0 111
-jackknife=ang2 111 111
