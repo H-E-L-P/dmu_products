@@ -6,7 +6,7 @@
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk)). This folder contains the Multi Order Coverage maps (MOCs), which define the regions on the sky for a given field.
 
-HELP data covers 1270 square degrees of extragalactic sky divided into 23 disting fields. This dmu contains the definitions of each field. The file meta_main.yml
+HELP data covers 1270 square degrees of extragalactic sky divided into 23 distinct fields. This DMU contains the definitions of each field. 
 
 All the data is stored in the Git repository so you do not need to go to one of our external servers to download files.
 
@@ -39,7 +39,7 @@ XMM-LSS                |
 ## Folder structure
 dmu2_field_coverages contains an individual file for each field. The top level file combines these into a combined map which defines HELP coverage.
 
-File meta_main.yml can be used to loop over files for certain computational tasks.
+The file meta_main.yml can be used to loop over files for certain computational tasks.
 
 
 
