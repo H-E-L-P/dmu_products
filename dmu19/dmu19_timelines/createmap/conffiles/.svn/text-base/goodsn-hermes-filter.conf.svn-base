@@ -1,9 +1,0 @@
-#goodsn-filter, but without the goods-herschel data
-include=filter.conf
-dataname=GOODS-N
-shortname=goodsn-hermes-filter
-fixeddir=/data/spire/maps/goodsn/20120411
-fixedname=goodsn
-fixeddate=20120411
-include=goodsn.badscan
-nolatlon=1

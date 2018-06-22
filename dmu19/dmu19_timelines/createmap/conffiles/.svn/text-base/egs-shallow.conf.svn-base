@@ -1,6 +1,0 @@
-include=nest.conf
-dataname=EGS-SCUBA
-dataname=EGS_MayNov
-shortname=egs-shallow
-include=egs-scuba.badscan
-include=egs-maynov.badscan

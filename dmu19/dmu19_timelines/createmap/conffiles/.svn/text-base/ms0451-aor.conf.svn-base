@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=MS0451_6-0305
-shortname=ms0451
-include=ms0451.badscan

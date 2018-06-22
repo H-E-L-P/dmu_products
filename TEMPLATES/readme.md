@@ -10,7 +10,7 @@ The files in this folder provide templates for development of HELP documentation
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/](http://hedam.lam.fr/HELP/data/dmu_products/dmuXX/)
+- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
 
 ## Folder structure
 This section describes how this folder is organised. Is it organised by field or by some other criteria such as survey. Perhaps there should be a table here describing all the folders that are present? Perhaps there should be an overview of the format of the data files. Are they tables? Where is the description of the column headings in yml format? Where can the data be downloaded from? Do you have links to HeDaM files? Do you have example queries for getting info from a VO database? Do you need describe where inputs come from other parts of dmu_products. 
@@ -49,7 +49,7 @@ information after the `:` preserving one blank line between items.
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  
-For a full description of the database and how it is organised in to `dmu_products` please the top level [readme](../readme.md).
+For a full description of the database and how it is organised in to `dmu_products` please see the top level [readme](../readme.md).
  
 The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
 funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement

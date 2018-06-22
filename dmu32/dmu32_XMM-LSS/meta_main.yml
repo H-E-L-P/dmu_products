@@ -1,19 +1,19 @@
 field: XMM-LSS
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/XMM-LSS_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/XMM-LSS_MOC.fits
 
 surveys: [ CANDELS-3D-HST, CANDELS-UDS, CFHT-WIRDS, CFHTLS-WIDE, CFHTLS-DEEP, CFHTLenS, DECaLS, DES, SWIRE, SERVS, HSC-WIDE, HSC-DEEP, HSC-UDEEP, PanSTARRS-3SS, SXDS, SpARCS, UKIDSS-DXS, UKIDSS-UDS, VIPERS, VISTA-VHS, VISTA-VIDEO, VISTA-VIKING ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_XMM-LSS/data/master_catalogue_xmm-lss_20180504.fits
+masterlist: dmu_products/dmu1/dmu1_ml_XMM-LSS/data/master_catalogue_xmm-lss_20180504.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_XMM-LSS/data/depths_xmm-lss_20180504.fits
+depths: dmu_products/dmu1/dmu1_ml_XMM-LSS/data/depths_xmm-lss_20180504.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_XMM-LSS/data/tiles/xmm-lss_20180504_FILENUM_flags.fits
+flags: dmu_products/dmu6/dmu6_v_XMM-LSS/data/tiles/xmm-lss_20180504_FILENUM_flags.fits
 
 xid: None
 
-photoz: http://hedam.lam.fr/HELP/data/dmu_products/dmu24/dmu24_XMM-LSS/data/master_catalogue_xmm-lss_20180221_photoz_20180518_r_optimised.fits
+photoz: dmu_products/dmu24/dmu24_XMM-LSS/data/master_catalogue_xmm-lss_20180221_photoz_20180518_r_optimised.fits
 
 cigale: None
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_XMM-LSS/data/XMM-LSS_20180504_cigale.fits
+final: dmu_products/dmu32/dmu32_XMM-LSS/data/XMM-LSS_20180504_cigale.fits

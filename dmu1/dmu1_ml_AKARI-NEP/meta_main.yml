@@ -1,35 +1,28 @@
-Product: master_catalogue_AKARI-NEP
-
-description: The masterlist file built on a positional cross match of the input surveys.
-
-file: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
-
-Version: DR1
-
-Author: Raphael Shirley and Yannick Roehhly
-
-Field: AKARI-NEP
-
-Selection filter: None
-
 Acknowledgements: Shirley et al (in prep)
-
-Related products: dmu0, dmu24, dmu26, dmu32
-
+Author: Raphael Shirley and Yannick Roehhly
+Field: AKARI-NEP
+Related products:
+- dmu0
+- dmu24
+- dmu26
+- dmu32
+Selection filter: null
+Version: DR1
+description: The masterlist file built on a positional cross match of the input surveys.
+files:
+- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_akari-nep_20180215.fits
+  name: masterlist
+- file: dmu1/dmu1_ml_AKARI-NEP/depths_akari-nep_20180215.fits
+  name: depths
+- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_cross_id_akari-nep_20180215.fits
+  name: cross ids
+product: Master catalogue (DMU1)
 servers:
-    - name: HeDaM
-      url: "http://hedam.lam.fr/HELP/data/"
-      description: The Herschel Database at Marseille (HeDaM). This is the primary server holding all the large data files in HELP.
-
+- description: The Herschel Database at Marseille (HeDaM). This is the primary server
+    holding all the large data files in HELP.
+  name: HeDaM
+  url: hedam.lam.fr/HELP/data
 surveys:
-    - name: AKARI-NEP-OptNIR
-      file: dmu_products/dmu0/dmu0_AKARI-NEP-OptNIR/data/AKARI-NEP_OptNIR.fits
-      yml: dmu_products/dmu0/dmu0_AKARI-NEP-OptNIR/meta_survey.yml
-    - name: PanSTARRS1-3S
-      file: dmu_products/dmu0/dmu0_PanSTARRS1-3SS/data/PanSTARRS1-3SS_AKARI-NEP_v2.fits
-      yml: dmu_products/dmu0/dmu0_PanSTARRS1-3SS/meta_survey.yml
-    - name: NEP-Spitzer
-      file: dmu_products/dmu0/dmu0_NEP-Spitzer/data/NEP-Spitzer-APJ.fits
-      yml: dmu_products/dmu0/dmu0_NEP-Spitzer/meta_survey.yml
-  
-
+- AKARI-NEP-OptNIR
+- PanSTARRS-3SS
+- NEP-Spitzer

@@ -1,7 +1,0 @@
-include=general.conf
-dataname=CDFS-SWIRE
-shortname=cdfs-swire
-include=cdfs-swire.badscan
-jackknife=part1 0 378
-jackknife=part2 378 252
-jackknife=part3 630 288

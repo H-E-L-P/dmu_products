@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=CDFS-SWIRE
-shortname=cdfs-swire
-include=cdfs-swire.badscan

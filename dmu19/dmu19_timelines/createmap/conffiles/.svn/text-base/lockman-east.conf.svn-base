@@ -1,8 +1,0 @@
-include=general.conf
-dataname=Lockman-East
-shortname=lockman-east
-include=lockman-east.badscan
-jackknife=half1 0 36
-jackknife=half2 36 36
-jackknife=ang1 0 36 12 6
-jackknife=ang2 6 36 12 6

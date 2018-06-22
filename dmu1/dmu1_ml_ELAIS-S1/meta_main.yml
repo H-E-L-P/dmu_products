@@ -1,0 +1,31 @@
+Acknowledgements: Shirley et al (in prep)
+Author: Raphael Shirley and Yannick Roehhly
+Field: ELAIS-S1
+Related products:
+- dmu0
+- dmu24
+- dmu26
+- dmu32
+Selection filter: null
+Version: DR1
+description: The masterlist file built on a positional cross match of the input surveys.
+files:
+- file: dmu1/dmu1_ml_ELAIS-S1/master_catalogue_elais-s1_20180416.fits
+  name: masterlist
+- file: dmu1/dmu1_ml_ELAIS-S1/depths_elais-s1_20180416.fits
+  name: depths
+- file: dmu1/dmu1_ml_ELAIS-S1/master_catalogue_cross_id_elais-s1_20180416.fits
+  name: cross ids
+product: Master catalogue (DMU1)
+servers:
+- description: The Herschel Database at Marseille (HeDaM). This is the primary server
+    holding all the large data files in HELP.
+  name: HeDaM
+  url: hedam.lam.fr/HELP/data
+surveys:
+- VISTA-VIDEO
+- VISTA-VHS
+- ESIS-VOICE
+- SWIRE
+- SERVS
+- DES

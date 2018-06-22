@@ -1,9 +1,0 @@
-include=general.conf
-dataname=GOODS-N
-shortname=goodsn
-include=goodsn.badscan
-nolatlon=1
-jackknife=half1 0 180
-jackknife=half2 180 180
-jackknife=ang1 0 180 12 6
-jackknife=ang2 6 180 12 6

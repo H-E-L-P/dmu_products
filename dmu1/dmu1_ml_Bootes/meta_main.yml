@@ -1,0 +1,35 @@
+Acknowledgements: Shirley et al (in prep)
+Author: Raphael Shirley and Yannick Roehhly
+Field: Bootes
+Related products:
+- dmu0
+- dmu24
+- dmu26
+- dmu32
+Selection filter: null
+Version: DR1
+description: The masterlist file built on a positional cross match of the input surveys.
+files:
+- file: dmu1/dmu1_ml_Bootes/master_catalogue_bootes_20180520.fits
+  name: masterlist
+- file: dmu1/dmu1_ml_Bootes/depths_bootes_20180520.fits
+  name: depths
+- file: dmu1/dmu1_ml_Bootes/master_catalogue_cross_id_bootes_20180520.fits
+  name: cross ids
+product: Master catalogue (DMU1)
+servers:
+- description: The Herschel Database at Marseille (HeDaM). This is the primary server
+    holding all the large data files in HELP.
+  name: HeDaM
+  url: hedam.lam.fr/HELP/data
+surveys:
+- DECaLS
+- DataFusion-Spitzer
+- IBIS
+- LegacySurvey
+- NDWFS
+- PanSTARRS-3SS
+- SDWFS
+- UHS
+- zBootes
+- BootesBrown

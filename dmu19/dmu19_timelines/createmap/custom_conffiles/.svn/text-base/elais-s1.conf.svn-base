@@ -1,6 +1,0 @@
-include=general.conf
-dataname=ELAIS-S1-NewSWIRE
-shortname=elais-s1
-include=elais-s1.badscan
-jackknife=ang1 0 50
-jackknife=ang2 50 72

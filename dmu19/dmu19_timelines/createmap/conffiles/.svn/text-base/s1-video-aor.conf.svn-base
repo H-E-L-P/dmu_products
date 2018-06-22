@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=S1_video-1
-shortname=s1-video
-include=s1-video.badscan

@@ -1,8 +1,0 @@
-include=general.conf
-dataname=ECDFS
-shortname=ecdfs
-include=ecdfs.badscan
-jackknife=half1 0 114
-jackknife=half2 114 114
-jackknife=ang1 0 114 12 6
-jackknife=ang2 6 114 12 6

@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=video-xmm2
-shortname=video-xmm2
-include=video-xmm2.badscan

@@ -1,8 +1,0 @@
-include=redmap.conf
-dataname=BooSp
-shortname=bootes-redmap
-include=bootes.badscan
-fixeddir=/data/spire/maps/bootes/20111129
-fixedname=bootes
-fixeddate=20111129
-

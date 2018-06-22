@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=EGroth
-shortname=egroth
-include=egroth.badscan

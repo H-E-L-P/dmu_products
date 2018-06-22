@@ -1,6 +1,0 @@
-include=general.conf
-dataname=video-xmm1
-shortname=video-xmm1
-include=video-xmm1.badscan
-jackknife=ang1 0 62
-jackknife=ang2 62 80

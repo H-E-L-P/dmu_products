@@ -1,7 +1,0 @@
-include=general.conf
-dataname=CDFS-SWIRE
-shortname=cdfs-swire
-jackknife=half1 0 315
-jackknife=half2 315 315
-jackknife=ang1 0 340 63 34
-jackknife=ang2 34 290 63 29

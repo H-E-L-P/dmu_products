@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=Global_Epicentre-1
-shortname=global-epicentre1
-include=global-epicentre1.badscan

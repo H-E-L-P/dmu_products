@@ -1,14 +1,14 @@
 field: SPIRE-NEP
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.fits
 
 surveys: [ PanSTARRS-3SS ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_SPIRE-NEP/data/master_catalogue_spire-nep_20180220.fits
+masterlist: dmu_products/dmu1/dmu1_ml_SPIRE-NEP/data/master_catalogue_spire-nep_20180220.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_SPIRE-NEP/data/depths_spire-nep_20180220.fits
+depths: dmu_products/dmu1/dmu1_ml_SPIRE-NEP/data/depths_spire-nep_20180220.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_SPIRE-NEP/data/spire-nep_20180220_flags.fits
+flags: dmu_products/dmu6/dmu6_v_SPIRE-NEP/data/spire-nep_20180220_flags.fits
 
 xid: None
 
@@ -16,4 +16,4 @@ photoz: None
 
 cigale: None
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP_20180220_cigale.fits
+final: dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP_20180220_cigale.fits

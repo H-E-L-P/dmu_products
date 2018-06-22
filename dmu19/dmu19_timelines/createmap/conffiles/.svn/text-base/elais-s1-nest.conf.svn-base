@@ -1,8 +1,0 @@
-include=nest.conf
-dataname=ELAIS-S1-NewSWIRE
-dataname=S1_video-1
-shortname=elais-s1-nest
-include=elais-s1.badscan
-include=s1-video.badscan
-jackknife=elais-s1 0 122
-jackknife=s1-video 122 168

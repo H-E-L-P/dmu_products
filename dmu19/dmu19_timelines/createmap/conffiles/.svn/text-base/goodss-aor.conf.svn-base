@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=GOODS-S
-shortname=goodss
-include=goodss.badscan

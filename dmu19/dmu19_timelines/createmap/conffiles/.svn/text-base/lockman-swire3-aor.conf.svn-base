@@ -1,4 +1,0 @@
-include=aor.conf
-dataname=Lockman-SWIRE3
-shortname=lockman-swire3
-include=lockman-swire3.badscan

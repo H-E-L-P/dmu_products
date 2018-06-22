@@ -1,0 +1,110 @@
+Product: HELP 
+
+Description: This is the Herschel Extragalactic Legacy Project (HELP) database.
+
+Version: DR1
+
+Author: Oliver et al.
+    
+dmu_products:
+    - name: dmu0
+      description: Pristine catalogues
+      yml: dmu_products/dmu0/meta_main.yml
+    - name: dmu1	
+      description: Masterlist data
+      yml: dmu_products/dmu1/meta_main.yml
+    - name: dmu2	
+      description: Field definitions
+      yml: dmu_products/dmu2/meta_main.yml
+    - name: dmu3	
+      description: Morphologies (Shapes & Sizes) of Objects
+      yml: None
+    - name: dmu4	
+      description: Bright Star Mask
+      yml: dmu_products/dmu4/meta_main.yml
+    - name: dmu5	
+      description: Known Star Flag
+      yml: dmu_products/dmu5/meta_main.yml
+    - name: dmu6	
+      description: Optical photometry validation
+      yml: dmu_products/dmu6/meta_main.yml
+    - name: dmu7	
+      description: Optical photometry
+      yml: None
+    - name: dmu8	
+      description: Radio data - LOFAR & FIRST/NVSS/TGSS
+      yml: None
+    - name: dmu9	
+      description: Radio data - JVLA-DEEP & GMRT-DEEP
+      yml: None
+    - name: dmu10	
+      description: Data Fusion
+      yml: None
+    - name: dmu11	
+      description: Cross matching MIPS/PACS/SPIRE
+      yml: None
+    - name: dmu12	
+      description: Cross Matching LOFAR & FIRST/NVSS/TGSS
+      yml: None
+    - name: dmu13	
+      description: Cross Matching JVLA-DEEP & GMRT-DEEP
+      yml: None
+    - name: dmu14	
+      description: GALEX data
+      yml: None
+    - name: dmu15	
+      description: X-Ray data
+      yml: None
+    - name: dmu16	
+      description: WISE Photometry
+      yml: dmu_products/dmu16/meta_main.yml
+    - name: dmu17	
+      description: MIPS Maps
+      yml: dmu_products/dmu17/meta_main.yml
+    - name: dmu18	
+      description: PACS maps
+      yml: dmu_products/dmu18/meta_main.yml
+    - name: dmu19	
+      description: SPIRE maps
+      yml: dmu_products/dmu19/meta_main.yml
+    - name: dmu20	
+      description: MIPS blind photometry
+      yml: dmu_products/dmu20/meta_main.yml
+    - name: dmu21	
+      description: PACS blind photometry
+      yml: dmu_products/dmu21/meta_main.yml
+    - name: dmu22	
+      description: SPIRE blind photometry
+      yml: dmu_products/dmu22/meta_main.yml
+    - name: dmu23	
+      description: Spec-z data
+      yml: dmu_products/dmu23/meta_main.yml
+    - name: dmu24	
+      description: Photo-z
+      yml: dmu_products/dmu24/meta_main.yml
+    - name: dmu25	
+      description: Prior model
+      yml: dmu_products/dmu25/meta_main.yml
+    - name: dmu26	
+      description: XID+
+      yml: dmu_products/dmu26/meta_main.yml
+    - name: dmu27	
+      description: Empirical models / templates
+      yml: None
+    - name: dmu28	
+      description: SED fitting / CIGALE
+      yml: dmu_products/dmu28/meta_main.yml
+    - name: dmu29	
+      description: Radiative transfer models
+      yml: dmu_products/dmu29/meta_main.yml
+    - name: dmu30	
+      description: Missing (supplementary) Sources
+      yml: dmu_products/dmu30/meta_main.yml
+    - name: dmu31	
+      description: Tools
+      yml: dmu_products/dmu31/meta_main.yml
+    - name: dmu32	
+      description: Merged catalogue
+      yml: dmu_products/dmu32/meta_main.yml
+
+

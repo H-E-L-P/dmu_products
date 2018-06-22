@@ -1,14 +1,14 @@
 field: AKARI-NEP
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
 
 surveys: [ AKARI-NEP-OptNIR, PanSTARRS-3SS, NEP-Spitzer ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
+masterlist: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180215.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/depths_akari-nep_20180215.fits
+depths: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/depths_akari-nep_20180215.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_AKARI-NEP/data/akari-nep_20180215_flags.fits
+flags: dmu_products/dmu6/dmu6_v_AKARI-NEP/data/akari-nep_20180215_flags.fits
 
 
 xid: None
@@ -17,4 +17,4 @@ photoz: None
 
 cigale: None
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits
+final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits

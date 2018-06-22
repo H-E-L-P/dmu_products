@@ -1,19 +1,19 @@
 field: NGP
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.fits
 
 surveys: [ DECaLS, PanSTARRS-3SS, UKIDSS-LAS, LegacySurvey ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_NGP/data/master_catalogue_ngp_20180219.fits
+masterlist: dmu_products/dmu1/dmu1_ml_NGP/data/master_catalogue_ngp_20180219.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_NGP/data/depths_ngp_20180219.fits
+depths: dmu_products/dmu1/dmu1_ml_NGP/data/depths_ngp_20180219.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_NGP/data/ngp_20180219_flags.fits
+flags: dmu_products/dmu6/dmu6_v_NGP/data/ngp_20180219_flags.fits
 
 xid: None
 
-photoz: http://hedam.lam.fr/HELP/data/dmu_products/dmu24/dmu24_NGP/data/master_catalogue_ngp_20180501_photoz_20180601_r_optimised.fits
+photoz: dmu_products/dmu24/dmu24_NGP/data/master_catalogue_ngp_20180501_photoz_20180601_r_optimised.fits
 
 cigale: None
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_NGP/data/NGP_20180219_cigale.fits
+final: dmu_products/dmu32/dmu32_NGP/data/NGP_20180219_cigale.fits

@@ -1,9 +1,0 @@
-include=redmap.conf
-dataname=ELAIS-N1-SCUBA
-dataname=en1_new_ivan
-shortname=elais-n1-redmap
-include=elais-n1.badscan
-include=elais-n1-new-ivan.badscan
-fixeddir=/data/spire/maps/elais-n1-nest/20111201
-fixedname=elais-n1-nest
-fixeddate=20111201
