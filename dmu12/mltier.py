@@ -175,7 +175,7 @@ class Q_0(object):
 def get_sigma(maj_error, min_error, pos_angle, 
               radio_ra, radio_dec, 
               opt_ra, opt_dec, opt_ra_err, opt_dec_err, 
-              additonal_error=0.6):
+              additional_error=0.6/3600):
     """
     Get the combined error between an elongated radio source and an 
     optical source.
@@ -197,15 +197,18 @@ def get_sigma(maj_error, min_error, pos_angle,
     * sigma: Combined error
     """
     factor = 0.60056120439322491 # sqrt(2.0) / sqrt(8.0 * log(2)); see Condon(1997) for derivation of adjustment factor
-    majerr = factor * maj_error
-    minerr = factor * min_error
+    majerr = factor * maj_error*3600
+    minerr = factor * min_error*3600
     cosadj = np.cos(np.deg2rad(0.5*(radio_dec + opt_dec)))
     phi = np.arctan2((opt_dec - radio_dec), ((opt_ra - radio_ra)*cosadj))
     # angle from direction of major axis to vector joining LOFAR source and optical source
     sigma = np.pi/2.0 - phi - np.deg2rad(pos_angle) 
     loferrsquared  = (majerr * np.cos(sigma))**2 + (minerr * np.sin(sigma))**2
     opterrsquared  = (opt_ra_err * np.cos(phi))**2 + (opt_dec_err * np.sin(phi))**2
-    return np.sqrt(loferrsquared + opterrsquared + additonal_error**2)
+    #print(loferrsquared)
+    #print(opterrsquared)
+    #print(additional_error**2)
+    return np.sqrt(loferrsquared + opterrsquared + additional_error**2)
 
 
 
@@ -255,9 +258,14 @@ def estimate_q_m(magnitude, bin_list, n_m, coords_small, coords_big, radius=5):
     idx = np.unique(idx_big)
     # Get the distribution of matched sources
     n_hist_total, _ = np.histogram(magnitude[idx], bin_list)
+    n_hist_total = n_hist_total.astype('float')
     # Correct probability if there are no sources
     if len(magnitude[idx]) == 0:
         n_hist_total = np.ones_like(n_hist_total)*0.5
+    for n in range(len(n_hist_total)):
+        test = n_hist_total[n]
+        if (test == 0):
+            n_hist_total[n] = 0.5
     # Estimate real(m)
     real_m = n_hist_total - n_xm_small*n_m*np.pi*(radius/3600.)**2
     # Remove small negative numbers
@@ -291,6 +299,10 @@ class SingleMLEstimator(object):
     
     def __call__(self, m, r, sigma):
         """Get the likelihood ratio"""
+        #print('f(r) = {}'.format(fr(r,sigma)))
+        #print('q(m) = {}'.format(self.get_qm(m)))
+        #print('n(m) = {}'.format(self.get_nm(m)))
+        #print('\n')
         return fr(r, sigma) * self.get_qm(m) / self.get_nm(m)
 
 class MultiMLEstimator(object):
