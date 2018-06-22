@@ -1,19 +1,19 @@
 field: Lockman-SWIRE
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
 
 surveys: [ INT-WFC, RCSLenS, PanSTARRS-3SS, SpARCS, UKIDSS-DXS, SWIRE, SERVS, UHS ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_Lockman-SWIRE/data/master_catalogue_lockman-swire_20180219.fits
+masterlist: dmu_products/dmu1/dmu1_ml_Lockman-SWIRE/data/master_catalogue_lockman-swire_20180219.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_Lockman-SWIRE/data/depths_lockman-swire_20180219.fits
+depths: dmu_products/dmu1/dmu1_ml_Lockman-SWIRE/data/depths_lockman-swire_20180219.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_Lockman-SWIRE/data/lockman-swire_20180219_flags.fits
+flags: dmu_products/dmu6/dmu6_v_Lockman-SWIRE/data/lockman-swire_20180219_flags.fits
 
-xid: [ http://hedam.lam.fr/HELP/data/dmu_producst/dmu26/dmu26_XID+MIPS_Lockman-SWIRE/data/dmu26_XID+MIPS_Lockman-SWIRE_cat_20171214.fits, http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+PACS_Lockman-SWIRE/data/dmu26_XID+PACS_Lockman-SWIRE_cat_20180220.fits, http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+SPIRE_Lockman-SWIRE/data/dmu26_XID+SPIRE_Lockman-SWIRE_20180220.fits ]
+xid: [ dmu_producst/dmu26/dmu26_XID+MIPS_Lockman-SWIRE/data/dmu26_XID+MIPS_Lockman-SWIRE_cat_20171214.fits, dmu_products/dmu26/dmu26_XID+PACS_Lockman-SWIRE/data/dmu26_XID+PACS_Lockman-SWIRE_cat_20180220.fits, dmu_products/dmu26/dmu26_XID+SPIRE_Lockman-SWIRE/data/dmu26_XID+SPIRE_Lockman-SWIRE_20180220.fits ]
 
-photoz: http://hedam.lam.fr/HELP/data/dmu_products/dmu24/dmu24_Lockman-SWIRE/data/master_catalogue_Lockman-SWIRE_20170710_photoz_20170802_r_and_irac1_optimised_UPDATED_IDs_20180219.fits
+photoz: dmu_products/dmu24/dmu24_Lockman-SWIRE/data/master_catalogue_Lockman-SWIRE_20170710_photoz_20170802_r_and_irac1_optimised_UPDATED_IDs_20180219.fits
 
-cigale: http://hedam.lam.fr/HELP/data/dmu_products/dmu28/dmu28_Lockman-SWIRE/data/best_extcor/HELP_final_results.fits
+cigale: dmu_products/dmu28/dmu28_Lockman-SWIRE/data/best_extcor/HELP_final_results.fits
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits
+final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits

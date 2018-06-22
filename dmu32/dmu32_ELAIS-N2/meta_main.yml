@@ -1,14 +1,14 @@
 field: ELAIS-N2
 
-region: http://hedam.lam.fr/HELP/data/dmu_products/dmu2/dmu2_field_coverages/ELAIS-N2_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N2_MOC.fits
 
 surveys: [ INT-WFC, RCSLenS, PanSTARRS-3SS, SpARCS, SWIRE ]
 
-masterlist: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/master_catalogue_elais-n2_20180218.fits
+masterlist: dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/master_catalogue_elais-n2_20180218.fits
 
-depths: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/depths_elais-n2_20180218.fits
+depths: dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/depths_elais-n2_20180218.fits
 
-flags: http://hedam.lam.fr/HELP/data/dmu_products/dmu6/dmu6_v_ELAIS-N2/data/elais-n2_20180218_flags.fits
+flags: dmu_products/dmu6/dmu6_v_ELAIS-N2/data/elais-n2_20180218_flags.fits
 
 xid: None
 
@@ -16,4 +16,4 @@ photoz: None
 
 cigale: None
 
-final: http://hedam.lam.fr/HELP/data/dmu_products/dmu32/dmu32_ELAIS-N2/data/ELAIS-N2_20180218_cigale.fits
+final: dmu_products/dmu32/dmu32_ELAIS-N2/data/ELAIS-N2_20180218_cigale.fits

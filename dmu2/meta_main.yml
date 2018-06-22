@@ -1,36 +1,81 @@
-Product: dmu2
+Product: Field definitions (dmu2)
 
-description: ./readme.md
+description: The MOC files which define the HELP fields
+
+readme: dmu_products/dmu2/readme.md
 
 Author: Raphael Shirley
 
 fields: 
     - name: AKARI-NEP
       description: The Infrared Astronomical Satellite AKARIon the North Ecliptic Pole (AKARI-NEP)
-      region: 
+      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.yml
 
-    - name: AKARI-SEP              
-    - name: Bootes                 
-    - name: CDFS-SWIRE             
-    - name: COSMOS                 
-    - name: EGS                     
-    - name: ELAIS-N1                
-    - name: ELAIS-N2                
-    - name: ELAIS-S1                
-    - name: GAMA-09                 
-    - name: GAMA-12                 
-    - name: GAMA-15                 
-    - name: HDF-N                   
-    - name: Herschel-Stripe-82      
+    - name: AKARI-SEP     
+      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-SEP_MOC.yml 
+              
+    - name: Bootes         
+      region: dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.yml   
+           
+    - name: CDFS-SWIRE            
+      region: dmu_products/dmu2/dmu2_field_coverages/CDFS-SWIRE_MOC.yml
+           
+    - name: COSMOS   
+      region: dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.yml
+                    
+    - name: EGS 
+      region: dmu_products/dmu2/dmu2_field_coverages/EGS_MOC.yml
+                          
+    - name: ELAIS-N1  
+      region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N1_MOC.yml
+                    
+    - name: ELAIS-N2    
+      region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N2_MOC.yml
+                  
+    - name: ELAIS-S1         
+      region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-S1_MOC.yml
+             
+    - name: GAMA-09     
+      region: dmu_products/dmu2/dmu2_field_coverages/GAMA-09_MOC.yml
+                  
+    - name: GAMA-12       
+      region: dmu_products/dmu2/dmu2_field_coverages/GAMA-12_MOC.yml
+                
+    - name: GAMA-15  
+      region: dmu_products/dmu2/dmu2_field_coverages/GAMA-15_MOC.yml
+                     
+    - name: HDF-N  
+      region: dmu_products/dmu2/dmu2_field_coverages/HDF-N_MOC.yml
+                       
+    - name: Herschel-Stripe-82   
+      region: dmu_products/dmu2/dmu2_field_coverages/Herschel-Stripe-82_MOC.yml
+         
     - name: Lockman-SWIRE           
-    - name: NGP                     
-    - name: SA13                    
-    - name: SGP                     
-    - name: SPIRE-NEP               
-    - name: SSDF                    
-    - name: xFLS                    
-    - name: XMM-13hr                
-    - name: XMM-LSS                
+      region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.yml
+      
+    - name: NGP                   
+      region: dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.yml
+        
+    - name: SA13     
+      region: dmu_products/dmu2/dmu2_field_coverages/SA13_MOC.yml
+                     
+    - name: SGP        
+      region: dmu_products/dmu2/dmu2_field_coverages/SGP_MOC.yml
+                   
+    - name: SPIRE-NEP   
+      region: dmu_products/dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.yml
+                  
+    - name: SSDF        
+      region: dmu_products/dmu2/dmu2_field_coverages/SSDF_MOC.yml
+                  
+    - name: xFLS         
+      region: dmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.yml
+                 
+    - name: XMM-13hr           
+      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.yml
+           
+    - name: XMM-LSS          
+      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.yml      
       
 
 

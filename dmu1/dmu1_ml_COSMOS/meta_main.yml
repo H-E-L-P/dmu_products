@@ -1,6 +1,6 @@
 Acknowledgements: Shirley et al (in prep)
 Author: Raphael Shirley and Yannick Roehhly
-Field: AKARI-NEP
+Field: COSMOS
 Related products:
 - dmu0
 - dmu24
@@ -10,11 +10,11 @@ Selection filter: null
 Version: DR1
 description: The masterlist file built on a positional cross match of the input surveys.
 files:
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_COSMOS/master_catalogue_cosmos_20180516.fits
   name: masterlist
-- file: dmu1/dmu1_ml_AKARI-NEP/depths_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_COSMOS/depths_cosmos_20180516.fits
   name: depths
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_cross_id_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_COSMOS/master_catalogue_cross_id_cosmos_20180516.fits
   name: cross ids
 product: Master catalogue (DMU1)
 servers:
@@ -23,6 +23,13 @@ servers:
   name: HeDaM
   url: hedam.lam.fr/HELP/data
 surveys:
-- AKARI-NEP-OptNIR
+- CANDELS-3D-HST
+- CFHTLS
+- DECaLS
+- HSC-DEEP
+- HSC-UDEEP
+- KIDS
 - PanSTARRS-3SS
-- NEP-Spitzer
+- UKIDSS-LAS
+- CFHT-WIRDS
+- COSMOS2015

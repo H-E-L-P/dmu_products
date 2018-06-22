@@ -1,6 +1,6 @@
 Acknowledgements: Shirley et al (in prep)
 Author: Raphael Shirley and Yannick Roehhly
-Field: AKARI-NEP
+Field: CDFS-SWIRE
 Related products:
 - dmu0
 - dmu24
@@ -10,11 +10,11 @@ Selection filter: null
 Version: DR1
 description: The masterlist file built on a positional cross match of the input surveys.
 files:
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_CDFS-SWIRE/master_catalogue_cdfs-swire_20180613.fits
   name: masterlist
-- file: dmu1/dmu1_ml_AKARI-NEP/depths_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_CDFS-SWIRE/depths_cdfs-swire_20180613.fits
   name: depths
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_cross_id_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_CDFS-SWIRE/master_catalogue_cross_id_cdfs-swire_20180613.fits
   name: cross ids
 product: Master catalogue (DMU1)
 servers:
@@ -23,6 +23,13 @@ servers:
   name: HeDaM
   url: hedam.lam.fr/HELP/data
 surveys:
-- AKARI-NEP-OptNIR
+- CANDELS-GOODS-S
+- VISTA-VIDEO
+- SERVS
+- SWIRE
 - PanSTARRS-3SS
-- NEP-Spitzer
+- COMBO
+- Fireworks
+- ATLAS
+- VISTA-VHS
+- DES

@@ -1,6 +1,6 @@
 Acknowledgements: Shirley et al (in prep)
 Author: Raphael Shirley and Yannick Roehhly
-Field: AKARI-NEP
+Field: XMM-LSS
 Related products:
 - dmu0
 - dmu24
@@ -10,11 +10,11 @@ Selection filter: null
 Version: DR1
 description: The masterlist file built on a positional cross match of the input surveys.
 files:
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_XMM-LSS/master_catalogue_xmm-lss_20180504.fits
   name: masterlist
-- file: dmu1/dmu1_ml_AKARI-NEP/depths_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_XMM-LSS/depths_xmm-lss_20180504.fits
   name: depths
-- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_cross_id_akari-nep_20180215.fits
+- file: dmu1/dmu1_ml_XMM-LSS/master_catalogue_cross_id_xmm-lss_20180504.fits
   name: cross ids
 product: Master catalogue (DMU1)
 servers:
@@ -23,6 +23,25 @@ servers:
   name: HeDaM
   url: hedam.lam.fr/HELP/data
 surveys:
-- AKARI-NEP-OptNIR
+- CANDELS-3D-HST
+- CANDELS-UDS
+- CFHT-WIRDS
+- CFHTLS-WIDE
+- CFHTLS-DEEP
+- CFHTLenS
+- DECaLS
+- DES
+- SWIRE
+- SERVS
+- HSC-WIDE
+- HSC-DEEP
+- HSC-UDEEP
 - PanSTARRS-3SS
-- NEP-Spitzer
+- SXDS
+- SpARCS
+- UKIDSS-DXS
+- UKIDSS-UDS
+- VIPERS
+- VISTA-VHS
+- VISTA-VIDEO
+- VISTA-VIKING
