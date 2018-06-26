@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_SGP
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: SGP
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: HATLAS-SGP_SPIRE250_v0.9.fits, HATLAS-SGP_SPIRE350_v0.9.fits, HATLAS-SGP_SPIRE500_v0.9.fits, hatlas_sgp_Ldust_prediction_results.fits, master_catalogue_sgp_20180221_photoz_20180502_r_optimised.fits
