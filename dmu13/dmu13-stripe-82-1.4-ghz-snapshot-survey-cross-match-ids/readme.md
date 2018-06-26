@@ -25,7 +25,7 @@ The 32 columns in this catalogue are as follows:
 10. `N_COMP` -  Number of components that make up the radio source
 11. `SDSS_OBJID` -  SDSS OBJID of optical counterpart 
 12. `RA` - SDSS Right Ascention of optical counterpart (J2000)
-13.`DEC`  -  SDSS Declination of optical counterpart (J2000)
+13. `DEC` - SDSS Declination of optical counterpart (J2000)
 14. `dered_u` - SDSS dereddened u-band magnitude (mags)
 15. `dered_g` - SDSS dereddened g-band magnitude (mags)
 16. `dered_r ` - SDSS dereddened r-band magnitude (mags)
