@@ -1,4 +1,4 @@
-#Stripe 82 1.4 GHz VLA Snapshot Survey Cross Matches.
+# Stripe 82 1.4 GHz VLA Snapshot Survey Cross Matches.
 
 This product contains the cross-matched sample of radio/optical counterparts of Prescott et al. 2018 (Submitted to MNRAS) which will appear on astro-ph soon. 
 
@@ -9,7 +9,7 @@ The photometric redshifts are taken from Reis et al. 2012. The catalogue contain
 
 The catalogue will be available on dropbox. 
 
-##Catalogue columns. 
+## Catalogue columns. 
 
 The 32 columns in this catalogue are as follows: 
 
