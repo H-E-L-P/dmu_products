@@ -12,8 +12,8 @@ flags: dmu_products/dmu6/dmu6_v_ELAIS-S1/data/elais-s1_20180416_flags.fits
 
 xid: [ dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits, dmu_products/dmu26/dmu26_XID+PACS_ELAIS-S1/data/dmu26_XID+PACS_ELAIS-S1_cat_20180416.fits, dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-S1/data/dmu26_XID+SPIRE_ELAIS-S1_20180327.fits ]
 
-photoz: dmu_producst/dmu24/dmu24_ELAIS-S1/data/master_catalogue_elais-s1_20180221_photoz_20180412.fits
+photoz: dmu_products/dmu24/dmu24_ELAIS-S1/data/master_catalogue_elais-s1_20180221_photoz_20180412.fits
 
-cigale: dmu_products/dmu28/dmu28_ELAIS-S1/data/best/HELP_final_results.fits
+cigale: dmu_products/dmu28/dmu28_ELAIS-S1/data/zphot/HELP_final_results.fits
 
 final: dmu_products/dmu32/dmu32_ELAIS-S1/data/ELAIS-S1_20180416_cigale.fits
