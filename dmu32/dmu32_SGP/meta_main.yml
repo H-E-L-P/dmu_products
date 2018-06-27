@@ -10,7 +10,7 @@ depths: dmu_products/dmu1/dmu1_ml_SGP/data/depths_sgp_20180221.fits
 
 flags: dmu_products/dmu6/dmu6_v_SGP/data/tiles/sgp_20180221_FILENUM_flags.fits.fits
 
-xid: dmu_products/dmu26/dmu26_XID+SPIRE_SGP/data/dmu26_XID+SPIRE_SGP_20180625.fits
+xid: [ dmu_products/dmu26/dmu26_XID+SPIRE_SGP/data/dmu26_XID+SPIRE_SGP_20180625.fits ]
 
 photoz: dmu_products/dmu24/dmu24_SGP/data/master_catalogue_sgp_20180221_photoz_20180502_r_optimised.fits
 
