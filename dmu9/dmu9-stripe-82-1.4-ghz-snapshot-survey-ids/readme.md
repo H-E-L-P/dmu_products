@@ -6,7 +6,7 @@ The Very Large Array has been used to image ~100 deg2 of SDSS Stripe 82 at 1-2 G
 of 2.5 min duration, using the hybrid CnB configuration. The catalogue
 produced using PyBDSF for this survey contains 11 782 point and Gaussian components.
 
-The catalogue of optical counterparts of this survey can be found in dmu13 and described in Prescott et al. 2018.
+The catalogue of optical counterparts of this survey can be found in dmu13 and described in Prescott et al. 2018. (https://arxiv.org/abs/1806.10140)
 
 The catalogue will be available on dropbox. 
 
