@@ -1,6 +1,6 @@
 # Stripe 82 1.4 GHz VLA Snapshot Survey Cross Matches.
 
-This product contains the cross-matched sample of radio/optical counterparts of Prescott et al. 2018 (Submitted to MNRAS) which will appear on astro-ph soon. 
+This product contains the cross-matched sample of radio/optical counterparts of Prescott et al. 2018 (Resubmitted to MNRAS) which can be found on astroph here: http://adsabs.harvard.edu/abs/2018arXiv180610140P 
 
 Here we have combined spectrosopic and photometric data from the Sloan Digital Sky Survey (SDSS) with 1.4 GHz radio observations, conducted
 as part of the Stripe 82 1-2 GHz Snapshot Survey using the Karl G. Jansky Very Large Array (VLA), which covers ~100 sq degrees, to a flux limit of 88 microJy rms. Cross-matching the 11768 radio source components with optical data via visual inspection results in a final sample of 4795 cross-matched
