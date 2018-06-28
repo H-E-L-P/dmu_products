@@ -45,6 +45,8 @@ the Herschel-Stripe-82 ObsIDs (i.e. without XMM-LSS, to get smaller files).
 - The mask definition is not exactly the same between surveys. For H-ATLAS, it
   only which pixels were observed or not. AKARI-NEP does not provide masks.
   For fields without a mask we create a mask, using EXPOSURE = 0 -> MASK = 1 
+- The Matchedfilter header contains the information about the confusion noise,
+  instumental noise and pixel size in arcsec used for the filter.    
 
 ## Lists of Herschel Observation identifiers (ObsIDs)
 
