@@ -19,9 +19,9 @@ The 32 columns in this catalogue are as follows:
 4. `RADIODEC`  -   Declination of the radio Source (J2000)
 5. `INT_FLUX`  -  Integrated flux of radio source (mJy)
 6. `INT_FLUXERR` - Error on the integrated flux (mJy)
-7. `PEAK_FLUX` -   Peak Flux of radio source (mJy)
-8. `PEAK_FLUXERR` -  Error on the peak flux (mJy) 
-9. `RMS` -  local noise value (mJy)
+7. `PEAK_FLUX` -   Peak Flux of radio source (mJy per beam)
+8. `PEAK_FLUXERR` -  Error on the peak flux (mJy per beam) 
+9. `RMS` -  local noise value (microJy)
 10. `N_COMP` -  Number of components that make up the radio source
 11. `SDSS_OBJID` -  SDSS OBJID of optical counterpart 
 12. `RA` - SDSS Right Ascention of optical counterpart (J2000)
