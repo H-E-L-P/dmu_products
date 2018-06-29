@@ -1,0 +1,17 @@
+Products: multi-extension fits files - registered to the GAIA reference frame, MOCS and PSF stacks
+
+Filenames: *MIPS.1.help.fits, *.MIPS.1.moc.fits, *.psf.fits
+
+Version: 1.0
+
+Author: Seb Oliver
+
+Fields: AKARI-NEP, AKARI-SEP, Bootes, CDFS-SWIRE, COSMOS, EGS, ELAIS-N1, ELAIS-N2, ELAIS-S1, GAMA-09, GAMA-12, GAMA-15, HDF-N, Herschel-Stripe-82, Lockman-SWIRE, NGP, SA13, SGP, SPIRE-NEP, SSDF, XMM-13hr, XMM-LSS, xFLS
+
+Selection filter: N/A
+
+Rights: public
+
+Acknowledgements: The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en) funded project under the SP1-Cooperation, Collaborative project, Small or medium-scale focused research project, FP7-SPACE-2013-1 scheme, Grant Agreement Number 607254.,    Oliver et al. 2018 in prep.
+
+Related products: (dmu17_SEIP_maps, dmu16_allwise)
