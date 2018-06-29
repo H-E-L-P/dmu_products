@@ -1,11 +1,11 @@
-Product: dmu22_XID+SPIRE_"name field"_BLIND_Matched_MF.fits
+Product: dmue22 (SPIRE blind photometry) [dmu22_XID+SPIRE_"name field"_BLIND_Matched_MF.fits]
 
-Version: 1.0
+Version: DR1
 
 Author: Steven Duivenvoorden
 
 Fields: GAMA-09 ,GAMA-12 ,GAMA-15 ,HATLAS-NGP, HATLAS-SGP, SSDF ,AKARI-SEP , Bootes , CDFS-SWIRE, COSMOS, EGS, ELAIS-N1, ELAIS-N2, ELAIS-S1, HDF-N, Lockman-SWIRE, SA13,
-        SPIRE-NEP, xFLS, XMM-13hr, XMM-LSS 
+        SPIRE-NEP, xFLS, XMM-13hr, XMM-LSS, AKARI-NEP 
 
 Selection filter: SPIRE 250um, 350um and 500um
 
