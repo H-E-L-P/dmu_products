@@ -10,21 +10,25 @@ from matplotlib.patches import Ellipse
 from astropy.coordinates import SkyCoord
 from astropy import units as u
 
+
+
 loc = "dmu_products/dmu19/dmu19_HELP-SPIRE-maps/data/"
+loc = 'data_HELP_v1.0/'
 write_loc = 'data_HELP_v1.0_cat/'
 
 all_names =  ['GAMA-09_SPIRE','GAMA-12_SPIRE','GAMA-15_SPIRE','HATLAS-NGP_SPIRE','HATLAS-SGP_SPIRE','SSDF_SPIRE','AKARI-SEP_SPIRE','Bootes_SPIRE','CDFS-SWIRE_SPIRE','COSMOS_SPIRE','EGS_SPIRE',\
               'ELAIS-N1_SPIRE','ELAIS-N2_SPIRE','ELAIS-S1_SPIRE','HDF-N_SPIRE','Lockman-SWIRE_SPIRE','SA13_SPIRE',\
-              'SPIRE-NEP_SPIRE','xFLS_SPIRE','XMM-13hr_SPIRE','XMM-LSS_SPIRE']
-
+              'SPIRE-NEP_SPIRE','xFLS_SPIRE','XMM-13hr_SPIRE','XMM-LSS_SPIRE','AKARI-NEP_SPIRE']
 
 dmin = 1e-3 # 1 mJy
 reload(fc)
 band = ['250','350','500']
 
+
 for j in range(np.size(all_names)): # loops over all fields and runs the peak finder
     name = all_names[j]+band[0]+'_v1.0.fits' # 250um
     hdulist = fits.open(loc+name)
+
     dp_250, ep_250, rap_250, decp_250, xp_250, yp_250 = np.array(fc.find_peak(hdulist, dmin)) # run on normal map
     hdulist = fits.open(loc+name)
     # run on inverse map
@@ -41,6 +45,38 @@ for j in range(np.size(all_names)): # loops over all fields and runs the peak fi
     dp_500, ep_500, rap_500, decp_500, xp_500, yp_500 = np.array(fc.find_peak(hdulist, dmin))
     hdulist = fits.open(loc+name)
     dp_n_500, ep_n_500, rap_n_500, decp_n_500, xp_n_500, yp_n_500 = np.array(fc.find_peak(hdulist, dmin, negmap = 'TRUE'))
+
+    if all_names[j] == 'AKARI-NEP_SPIRE':
+      import pyregion
+      region_name = "AKARI-NEP.reg"
+      r = pyregion.open(region_name)
+
+      name = all_names[j]+band[0]+'_v1.0.fits' # 250um
+      hdulist = fits.open(loc+name)
+      r250 = r.get_filter(hdulist[1].header)
+      mask = r250.inside(xp_250,yp_250)
+      dp_250, ep_250, rap_250, decp_250 = dp_250[mask], ep_250[mask], rap_250[mask], decp_250[mask]
+      mask = r250.inside(xp_n_250,yp_n_250)
+      dp_n_250, ep_n_250, rap_n_250, decp_n_250 = dp_n_250[mask], ep_n_250[mask], rap_n_250[mask], decp_n_250[mask]
+
+      name = all_names[j]+band[1]+'_v1.0.fits' # 350um
+      hdulist = fits.open(loc+name)
+      r350 = r.get_filter(hdulist[1].header)
+      mask = r350.inside(xp_350,yp_350)
+      dp_350, ep_350, rap_350, decp_350 = dp_350[mask], ep_350[mask], rap_350[mask], decp_350[mask]
+      mask = r350.inside(xp_n_350,yp_n_350)
+      dp_n_350, ep_n_350, rap_n_350, decp_n_350 = dp_n_350[mask], ep_n_350[mask], rap_n_350[mask], decp_n_350[mask]
+
+      name = all_names[j]+band[2]+'_v1.0.fits' # 500um
+      hdulist = fits.open(loc+name)
+      r500 = r.get_filter(hdulist[1].header)
+      mask = r500.inside(xp_500,yp_500)
+      dp_500, ep_500, rap_500, decp_500 = dp_500[mask], ep_500[mask], rap_500[mask], decp_500[mask]
+      mask = r500.inside(xp_n_500,yp_n_500)
+      dp_n_500, ep_n_500, rap_n_500, decp_n_500 = dp_n_500[mask], ep_n_500[mask], rap_n_500[mask], decp_n_500[mask]
+
+
+
 
     sbin = np.linspace(0.06,0.001,591)
 
