@@ -2,6 +2,11 @@ MIT License
 
 Copyright (c) 2017 Herschel Extragalactic Legacy Project
 
+This license applies to software only and not to data. Data, which may be 
+stored along side the code on some databases is subject to its own use 
+restrictions depending on its source. Information concerning the legal use 
+of associated data is provided where possible. 
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
