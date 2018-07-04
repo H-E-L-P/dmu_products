@@ -2,8 +2,9 @@ Reprocessed ESO-Spitzer Imaging extragalactic Survey (ESIS) catalogue
 =====================================================================
 
 This product contains the ESO-Spitzer Imaging extragalactic Survey (ESIS) BVR
-catalogue reprocessed by the VST Optical Imaging of the CDFS and ES1 (VOICE)
-project.  The catalogue was provided by Mattia and limited to HELP coverage.
+catalogue reprocessed by the VST Optical Imaging of the CDFS and ES1 (VOICE) team.
+
+Vaccari et al. 2016 - http://adsabs.harvard.edu/abs/2016heas.confE..26V
 
 There is a short readme associated to the catalogue, in particular:
 
