@@ -3,11 +3,9 @@ UKIRT Hemisphere Survey
 
 The UHS survey is a J band only survey covering a large fraction of the northern sky.
 
-The survey is described here:
+The survey is described here: http://wsa.roe.ac.uk/uhsDR1.html
 
-http://wsa.roe.ac.uk/uhsDR1.html
-
-The paper is here: https://arxiv.org/abs/1707.09975
+The survey paper is here: http://adsabs.harvard.edu/abs/2018MNRAS.473.5113D
 
 The catalogues were downloaded with the following SQL:
 
