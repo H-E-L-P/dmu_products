@@ -3,7 +3,7 @@
 
 The catalogue has been created by picking out the best optical matches to LOFAR sources in the Bootes field. Only sources with a very high likelihood have been included in this catalogue.
 
-The data can be found HEDAM at the following url http://hedam.lam.fr/HELP/data/dmu_products/dmu12/dmu12-lofar-bootes-150-mhz-cat-ids-2017/
+The data can be found HEDAM at the following url http://hedam.lam.fr/HELP/dataproducts/dmu12/dmu12-lofar-bootes-150-mhz-cat-ids-2017/
 
 The following text describes the various columns in the catalogue:
 

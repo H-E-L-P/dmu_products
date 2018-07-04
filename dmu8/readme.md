@@ -5,7 +5,7 @@ Contains Radio data from LOFAR with the fields covered named in the folders
 ## Folder structure
 Each folder conatins a YML file describing the data, survey and references. The columns decsription are in the readme in each folder and the data can be found at 
 
-http://hedam.lam.fr/HELP/data/dmu_products/dmu8/
+http://hedam.lam.fr/HELP/dataproducts/dmu8/
 
 
 

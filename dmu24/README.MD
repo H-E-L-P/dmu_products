@@ -8,7 +8,7 @@ Each field will contain:
 
 - Notebook 2_Photo-z_Selection_Function.ipynb : which describes the creation of selection function maps to describe the likelihood of a source having a photo-z in a given HEALpix cell as a function of a specified magnitude.
 
-All of the DMU 24 Data can be found on [HeDAM](http://hedam.lam.fr/HELP/data/dmu_products/dmu24/) following the folder structure outlined in this repository. In [Column Descriptions](https://github.com/H-E-L-P/dmu_products/tree/master/dmu24/dmu24_columns.csv) we list the name, description and Universal Content Descriptor (UCD) for all columns in the DMU 24 Photo-z catalogs.
+All of the DMU 24 Data can be found on [HeDAM](http://hedam.lam.fr/HELP/dataproducts/dmu24/) following the folder structure outlined in this repository. In [Column Descriptions](https://github.com/H-E-L-P/dmu_products/tree/master/dmu24/dmu24_columns.csv) we list the name, description and Universal Content Descriptor (UCD) for all columns in the DMU 24 Photo-z catalogs.
 
 ## HELP Photometric Redshift Methodology
 

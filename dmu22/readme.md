@@ -2,20 +2,20 @@ HELP DMU22 SPIRE blind catalogues
 
 The `blind catalogues`, containing all the SPIRE sources which are directly detected in the three SPIRE maps can be found on HeDaM:
 
-- http://hedam.lam.fr/HELP/data/dmu_products/dmu22/
+- http://hedam.lam.fr/HELP/dataproducts/dmu22/
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Blind catalogues (dmu19)
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk))
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 This DMU contains all the blind SPIRE photometry. The directory above contains folders for each field for which we have blind photometry. The blind catalogue for each field is located at places like:
 
 - dmu22_"name field"/data/`dmu22_XID+SPIRE_"name field"_BLIND_Matched_MF.fits`
 
-Where "name field" can be e.g. "ELAIS-N1". The blind sources are selected my finding peaks in the Matched Filtered (MF) maps (Chapin et al 2011, dmu19). We only save peaks with flux density above the 85 per cent completeness level at every SPIRE wavelength individually. The 85% completeness level in each field can be found in dmu22_"name field"/`"name field"_SPIRE_lim.pdf`. The central pixel flux density, RA and Dec for each peak can be found in: dmu22_"name field"/data/`"name field"_SPIRE"XXX"_cat.fits`, with XXX 250, 350 or 500 for the three SPIRE bands. The script used to create these first step catalogues is: `make_first_cat.py` (which can be found at http://hedam.lam.fr/HELP/data/dmu_products/dmu22/)
+Where "name field" can be e.g. "ELAIS-N1". The blind sources are selected my finding peaks in the Matched Filtered (MF) maps (Chapin et al 2011, dmu19). We only save peaks with flux density above the 85 per cent completeness level at every SPIRE wavelength individually. The 85% completeness level in each field can be found in dmu22_"name field"/`"name field"_SPIRE_lim.pdf`. The central pixel flux density, RA and Dec for each peak can be found in: dmu22_"name field"/data/`"name field"_SPIRE"XXX"_cat.fits`, with XXX 250, 350 or 500 for the three SPIRE bands. The script used to create these first step catalogues is: `make_first_cat.py` (which can be found at http://hedam.lam.fr/HELP/dataproducts/dmu22/)
 
 The second step is to determine accurate centres for each source in the blind catalogue. To do this, we calculate the Pearson correlation coefficient on sub-pixel positions around the original detection. We calculate the correlation coefficient using all three SPIRE bands, and determine the best-fit flux density for that source at the updated position using inverse variance weighting. The resulting catalogues for each SPIRE band can be found at: dmu22_"name field"/`"name field"_SPIRE"XXX"_MF_cat.fits`, and we combine the three SPIRE catalogues by removing duplicates at 350um and 500um using a nearest neighbour matching algorithm with 12 arcsec and 18 arcsec radius, respectively, adopting the position in the shortest wavelength available for each merged source (`rn_merge.ipynb`). The resulting merged MF catalogues are located at: dmu22_"name field"/data/`"name field"_SPIRE_all.fits`. The script to create these catalogues is: `make_second_cat.py` (found at the same location as above).
 
@@ -70,7 +70,7 @@ The final merged catalogues that we recommend for usage are those named: dmu22_"
 
 -------------------------------------------------------------------------------
 
-In addition to the standard blind catalogues we produced red catalogues based on the method described in Asboth et al. 2016. The red sourcefiles and notebooks can be found in: [http://hedam.lam.fr/HELP/data/dmu_products/dmu22/dmu22_red_source/](http://hedam.lam.fr/HELP/data/dmu_products/)
+In addition to the standard blind catalogues we produced red catalogues based on the method described in Asboth et al. 2016. The red sourcefiles and notebooks can be found in: [http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_red_source/](http://hedam.lam.fr/HELP/dataproducts/)
 -------------------------------------------------------------------------------
 
 

@@ -4,8 +4,8 @@
 I used a catalog created by Yannick. To create COSMOS catalog one need to download four catalogs:
 1. http://vohedamtest.lam.fr/cosmos2015/q/cone/static/COSMOS2015-HELP_selected_20160613.fits.gz 
 2. ftp://ftp.strw.leidenuniv.nl/pub/duncan/HELP/COSMOS/COSMOS2015-HELP_selected_20160613_photoz_v1.0.fits
-3. http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+MIPS_COSMOS/data/dmu26_XID+MIPS_COSMOS_20170213_idshrunken.fits
-4. http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+SPIRE_COSMOS/data/dmu26_XID+SPIRE_COSMOS_20161129_idshrunken.fits
+3. http://hedam.lam.fr/HELP/dataproducts/dmu26/dmu26_XID+MIPS_COSMOS/data/dmu26_XID+MIPS_COSMOS_20170213_idshrunken.fits
+4. http://hedam.lam.fr/HELP/dataproducts/dmu26/dmu26_XID+SPIRE_COSMOS/data/dmu26_XID+SPIRE_COSMOS_20161129_idshrunken.fits
 
 and two scripts: 
 1. https://rea-help.slack.com/files/yannick/F4DBCCCAC/merge_catalogues_v6.py - to merge catalogs

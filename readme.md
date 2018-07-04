@@ -3,11 +3,11 @@
 
 This repository contains the products of the various HELP *Data Management
 Units* (DMU). The Github repository contains everything except the actual data,
-while [its mirror on HeDaM](http://hedam.lam.fr/HELP/data/dmu_products/)
+while [its mirror on HeDaM](http://hedam.lam.fr/HELP/dataproducts/)
 contains everything. The reason not to store the data files in Github is that we
 have such huge files, that git is not designed for working with them. The directory structures on HeDaM and GitHub are  identical. If you plan to use HELP data extensively, we recommend cloning the GitHub repository and downloading data to the corresponding data folders on your computer so that relative links continue to work properly. As well as accessing the binary data files on HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 it is also possible to query the data from the Virtual Observatory database:
 
@@ -105,7 +105,7 @@ Procedure for validators
 ------------------------
 
 When you have to validate a product, you can download it [from
-HeDaM](http://hedam.lam.fr/HELP/data/dmu_products/).  Then you need to add
+HeDaM](http://hedam.lam.fr/HELP/dataproducts/).  Then you need to add
 a `validation_report.md` file inside the product folder and sync it back to
 Github.  You can also update the `changelog.md` file.
 

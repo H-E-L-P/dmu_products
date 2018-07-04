@@ -50,7 +50,7 @@ set master=../../../dmu1/dmu1_ml_AKARI-NEP/data/master_catalogue_akari-nep_20180
 # i.e. while debugging.
 
 
-# curl -u help:hedam http://hedam.lam.fr/HELP/data/dmu_products/dmu1/dmu1_ml_ELAIS-S1/data/master_catalogue_elais-s1_20171207.fits -o master_catalogue_elais-s1_20171207.fits
+# curl -u help:hedam http://hedam.lam.fr/HELP/dataproducts/dmu1/dmu1_ml_ELAIS-S1/data/master_catalogue_elais-s1_20171207.fits -o master_catalogue_elais-s1_20171207.fits
 
 
 # this is the gaia catalogue retrieved from HeDAM when script run and thus name is arbitrary or

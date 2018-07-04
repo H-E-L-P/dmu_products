@@ -7,7 +7,7 @@ In order to run CIGALE we use the merged catalogues found in dmu32. For fully pr
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/dmu28/](http://hedam.lam.fr/HELP/data/dmu_products/dmu28/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu28/](http://hedam.lam.fr/HELP/dataproducts/dmu28/)
 
 Folder structure
 ----------------

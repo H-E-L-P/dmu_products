@@ -2,14 +2,14 @@ HELP DMU22 SPIRE blind catalogues, Red source catalgoues
 
 The `Red catalogues`, containing all the Red SPIRE sources found using a similar method as described in Asboth et al. 2016.
 
-- http://hedam.lam.fr/HELP/data/dmu_products/dmu22/dmu22_red_source
+- http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_red_source
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Blind catalogues (dmu19)
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk))
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 - dmu22_red_source/data/`"name field"_SPIRE_map_6ac.fits` is the fits file for the 500um map with 6 arcsec pixels
 - dmu22_red_source/data/`"name field"_SPIRE_D_map.fits` is the D-map

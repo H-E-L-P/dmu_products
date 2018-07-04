@@ -9,7 +9,7 @@ The maps that are located here have been homogenised so that individual files fo
 
 The original files from which these are dreived (as retrieved from ipac) are located below another folder ../dmu17_SEIP_maps
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 ## Code and files located in this folder
 

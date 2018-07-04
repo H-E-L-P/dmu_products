@@ -10,7 +10,7 @@ The maps that are located within or near to the HELP field have been identified 
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 ## Code and files located in this folder
 

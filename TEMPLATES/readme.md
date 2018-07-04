@@ -10,7 +10,7 @@ The files in this folder provide templates for development of HELP documentation
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 ## Folder structure
 This section describes how this folder is organised. Is it organised by field or by some other criteria such as survey. Perhaps there should be a table here describing all the folders that are present? Perhaps there should be an overview of the format of the data files. Are they tables? Where is the description of the column headings in yml format? Where can the data be downloaded from? Do you have links to HeDaM files? Do you have example queries for getting info from a VO database? Do you need describe where inputs come from other parts of dmu_products. 

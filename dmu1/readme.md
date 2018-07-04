@@ -9,7 +9,7 @@ This repository contains all the HELP masterlists across the various fields. The
 
 The final masterlists can be found on HeDaM:
 
-- http://hedam.lam.fr/HELP/data/dmu_products/dmu1/
+- http://hedam.lam.fr/HELP/dataproducts/dmu1/
 
 The column names in the master_catalogue tables are the same as in the final dmu32 catalogue and are described here:
 
@@ -34,7 +34,7 @@ The following table defines the DR1 masterlist in terms of the dated file that w
 
 The file dr1_overview.fits gives an overview of the current DR1 definition. When a field has been run through to the final stage through all parts of help we will add the final used masterlist below. Occasionally, different partts fo the pipeline may have been conducted with a different masterlist file. In those case care was taken to ensure HELP ids do not change. It is however possible that new sources or photometry may have been added and that selection functions might be altered. In those cases one should take care to note which masterlist was used at any given stage.
 
-Fits files can be found here: http://hedam.lam.fr/HELP/data/dmu_products/dmu1/
+Fits files can be found here: http://hedam.lam.fr/HELP/dataproducts/dmu1/
 
 20180618 DR1 definition:
 

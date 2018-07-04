@@ -23,7 +23,7 @@ The repository is organised such that there is a folder per field and band.
 
 The final XID+ data products can be found on HeDaM at:
 
-- http://hedam.lam.fr/HELP/data/dmu_products/dmu26/dmu26_XID+{BAND}_{FIELD}/data/
+- http://hedam.lam.fr/HELP/dataproducts/dmu26/dmu26_XID+{BAND}_{FIELD}/data/
 
 Each XID+ folder contains:
 * a readme.md describing the commands used to run the field

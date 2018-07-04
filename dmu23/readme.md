@@ -27,7 +27,7 @@ Therefore, to identify any individual spec-z in the main spec-z table (specz.mai
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/data/dmu_products/](http://hedam.lam.fr/HELP/data/dmu_products/)
+- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
 or an easier way is to use the HELP VO server:
 
