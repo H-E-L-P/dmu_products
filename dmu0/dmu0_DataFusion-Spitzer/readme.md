@@ -1,4 +1,4 @@
-DataFusion-Spitzer catalogues
+DataFusion-Spitzer Catalogues
 =============================
 
 This product contains Spitzer catalogues originating from Vaccari *et al.* “Data
@@ -7,12 +7,10 @@ Fusion” work and described in:
 Vaccari et al. 2010, A&A, 518, L20 and Vaccari 2015, PoS, 267, 27
 (http://www.mattiavaccari.net/df)
 
-# SERVS Band-Merged Catalogue
+# SERVS Band-Merged Catalogues
 
 SERVS-IRAC12 "Bandmerge" - Mattia Vaccari (UWC) & Lucia Marchetti (OU)
 & Eduardo Gonzalez-Solares (IoA)
-
-http://www.mattiavaccari.net/df/ - Vaccari+ (in prep)
 
 We produced single-band IRAC1 and IRAC2 catalogs, measured aperture and
 integrated fluxes/magnitudes and corrected aperture fluxes/magnitudes
@@ -30,16 +28,14 @@ We did add three columns at the beginning of the catalog
 - RA_12 and DEC_12 which are average values for sources detected in both
   IRAC1 and IRAC2
 
-# Spitzer-SWIRE Catalogue
+# Spitzer-SWIRE Catalogues
 
-The table contains aperture corrected fluxes from the SWIRE Data release
-documented in Surace+ (2005) and Surace+ (in prep) with no cut applied.
+In SWIRE fields, IRAC and MIPS source extraction was carried out using the
+techniques developed by Surace+ (2005), Shupe+ (2008) and Frayer+ (2006).
+The catalogue reports all 'IRAC 3.6 micron or IRAC 4.5 micron' detections,
+and aperture fluxes are aperture corrected.
 
-# Boötes and xFLS catalogues
+# Spitzer Boötes and xFLS Catalogues
 
-On Boötes and xFLS there are catalogues extracted by the Data Fusion team and
-described as:
-
-    Bootes-xFLS Spitzer Imaging: IRAC-1234 - Vaccari/Marchetti/Gonzalez-Solares
-    (priv comm) MIPS-24 - Shupe/Vaccari (priv comm) MIPS-Ge - Seymour/Tugwell
-    (priv comm)
+In Boötes and xFLS, RAC and MIPS catalogues were extracted by the Data Fusion team
+following the best practices developed and used for the Spitzer-SWIRE catalogues.
