@@ -19,8 +19,3 @@ The magnitudes are “*Vega like*”.  The AB offsets are given by Hewett *et al
 | J    | 0.938     |
 | H    | 1.379     |
 | K    | 1.900     |
-
-# Privacy concerns
-
-Eduardo's script is querying the `lasSource` table in the `UKIDSSDR10PLUS`
-database. Is this data public?
