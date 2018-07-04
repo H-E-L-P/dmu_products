@@ -1,4 +1,4 @@
-UKIRT Infrared Deep Sky Survey / Ultra-Deep Surveu (UKIDSS/UDS)
+UKIRT Infrared Deep Sky Survey / Ultra-Deep Survey (UKIDSS/UDS)
 ===============================================================
 
 This product contains the catalogue from the UKIDSS Ultra-Deep Survey extracted
