@@ -1,14 +1,14 @@
 Survey: NOAO Deep Wide-Field Survey (NDWFS)
 
-Telescope: National Optical Astronomy Observatory (NOAO)
+Telescope: Kitt Peak National Observatory (KPNO) 4 m (BwRI) and 2.1 m (K) Telescopes
 
-Instrument:
+Instrument: MOSAIC1 (BwRI) and ONIS (K) Cameras - Jannuzi+ 2004
 
 Filters: R, I, Bw, Ks
 
 Fields: Bootes
 
-Reference: 1999AAS...195.1207J
+Reference: 1999AAS...195.1207J , 2004AAS...205.8106J
 
 URL: http://r2.sdm.noao.edu/ndwfs/
 
