@@ -14,6 +14,6 @@ xid: [ dmu_products/dmu26/dmu26_XID+SPIRE_GAMA-15/data/dmu26_XID+SPIRE_GAMA-15_c
 
 photoz: dmu_products/dmu24/dmu24_GAMA-15/data/master_catalogue_gama-15_20180119_photoz_20180210_r_optimised.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_GAMA-15/data/zphot/HELP_final_results.fits
 
 final: dmu_products/dmu32/dmu32_GAMA-15/data/GAMA-15_20180213.fits
