@@ -12,7 +12,7 @@ flags: dmu6/dmu6_v_Herschel-Stripe-82/data/tiles/herschel-stripe-82_20180307_FIL
 
 xid: None
 
-photoz: dmu_producs/dmu24/dmu24_Herschel-Stripe-82/data/master_catalogue_herschel-stripe-82_20180307_photoz_20180509.fits
+photoz: dmu_products/dmu24/dmu24_Herschel-Stripe-82/data/master_catalogue_herschel-stripe-82_20180307_photoz_20180509.fits
 
 cigale: None
 
