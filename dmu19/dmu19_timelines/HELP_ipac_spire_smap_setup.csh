@@ -20,11 +20,13 @@ export IDL_STARTUP=$GITHUB_DIR/dmu_products/dmu19/dmu19_timelines/smap_apollo_id
 
 
 export DATA_DIR=$GITHUB_DIR/dmu_products/dmu19/dmu19_timelines/data
+export SMAP_DIR=$GITHUB_DIR/dmu_products/dmu19/dmu19_timelines/
 
 printenv IDL_PATH
 printenv IDL_STARTUP
 printenv DATA_DIR
 printenv GITHUB_DIR
+
 
 #mkdir $DATA_DIR
 
