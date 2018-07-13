@@ -1,0 +1,3 @@
+Unable to access idl. You will have to
+define the IDL_DIR environment variable to point at the main
+IDL directory before it will work.

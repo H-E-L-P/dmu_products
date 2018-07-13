@@ -1,0 +1,11 @@
+------------------------
+Begining script
+------------------------
+setting up the environment for running SMAP code (on Sussex apollo machine)
++/research/astrodata2/fir/HELP/smaproot/smap_pipeline/:<IDL_DEFAULT>
+/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_timelines/smap_apollo_idl_startup.pro
+/research/astrodata2/fir/HELP/dmu_products/dmu19/dmu19_timelines/data
+/research/astrodata2/fir/HELP
+------------------------
+Ending script
+------------------------
