@@ -19,7 +19,7 @@ The full files which are not stored in the Git repository can be downloaded from
 Where "name field" can be e.g. "ELAIS-N1". 
 -------------------------------------------------------------------------------
 
-The red sources are selected by finding peaks in a difference map (D) between the 500um and 250um map.
+The red sources are selected by finding peaks in a difference map (D) between the 500um and 250um map. The method is described step by step in /dmu22/dmu22_red_source/make_red.ipynb and is bases on Asboth et al. 2016. 
 
 
 **Authors**: Steven Duivenvoorden
