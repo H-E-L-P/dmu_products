@@ -9,12 +9,13 @@ This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http
 
 The full files which are not stored in the Git repository can be downloaded from HeDaM:
 
-- [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu22](http://hedam.lam.fr/HELP/dataproducts/dmu22)
 
 - dmu22_red_source/data/`"name field"_SPIRE_map_6ac.fits` is the fits file for the 500um map with 6 arcsec pixels
 - dmu22_red_source/data/`"name field"_SPIRE_D_map.fits` is the D-map
-- dmu22_red_source/data/`"name field"_SPIRE_D_cat.fits` The location of the 3 sigma peaks in the Dmap
-- dmu22_red_source/data/`"name field"_SPIRE_D_MF_cat.fits` The flux desnsity of all the sources detecte (3 sigma) in the D-map
+- dmu22_red_source/data/`"name field"_SPIRE_D_cat.fits` The location of the 3 sigma peaks in the D-map
+- dmu22_red_source/data/`"name field"_SPIRE_D_MF_cat.fits` The flux desnsity of all the sources detected (3 sigma) in the D-map
+- dmu22_red_source/`red_validation.ipynb` Selects all 500um red sources with 3 sigma detection and S500 > 52mJy, using three different methodes. This notebook should be used (and potentially adjusted)to select a reliable sample of red sources. 
 
 Where "name field" can be e.g. "ELAIS-N1". 
 -------------------------------------------------------------------------------
