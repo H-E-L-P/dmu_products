@@ -11,7 +11,7 @@ have such huge files, that git is not designed for working with them. The direct
 
 it is also possible to query the data from the Virtual Observatory database:
 
-- [http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
+- [https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
 
 The repository is organised as follows:
 

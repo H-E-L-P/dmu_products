@@ -31,7 +31,7 @@ The full files which are not stored in the Git repository can be downloaded from
 
 or an easier way is to use the HELP VO server:
 
-- [http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
+- [https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
 
 ## HELP Spectroscopic Redshift Methodology
 

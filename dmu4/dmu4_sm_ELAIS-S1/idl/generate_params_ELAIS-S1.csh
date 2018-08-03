@@ -63,7 +63,7 @@ set master_star=master_gaia.fits
 
 ######################################################################
 # extracting gaia catalogue from this field (field "hardwired")
-stilts tapquery tapurl='http://vohedamtest.lam.fr/__system__/tap/run/tap' adql="SELECT * FROM gaia.main WHERE field='ELAIS-S1'" maxrec=9999999 out=$star
+stilts tapquery tapurl='https://herschel-vos.phys.sussex.ac.uk/__system__/tap/run/tap' adql="SELECT * FROM gaia.main WHERE field='ELAIS-S1'" maxrec=9999999 out=$star
 
 
 ######################################################################

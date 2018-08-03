@@ -11,7 +11,7 @@ Column descriptions
 -----------------------
 A full description of the columns is given in [columns.csv](columns.csv). It is also available from the Virtual Observatory (VO) which is often the best way to access this data since individual fits files stored here can be as large as 60Gb.
 
-[http://vohedamtest.lam.fr/](http://vohedamtest.lam.fr/)
+[https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
 
 Meta data on each field
 -----------------------
