@@ -1,9 +1,10 @@
 HELP DMU31 Density maps
 
-- http://hedam.lam.fr/HELP/dataproducts/dmu31/
+- http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_Density_Maps
 
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Density maps (dmu31)
 
+The folder contains two example notebooks, to create density maps (`make_dens_map.ipynb`), and to assign the local density to the galaxies (`plot_dens.ipynb`). The methods for the density maps is based on Duivenvoorden et al. 2016 and Darvish et al. 2015.  
 
 **Authors**: Steven Duivenvoorden
 
