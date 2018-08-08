@@ -2,10 +2,10 @@ HELP DMU31 Density maps
 
 - http://hedam.lam.fr/HELP/dataproducts/dmu31/
 
-# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP DMU product repository
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Density maps (dmu31)
 
 
-T**Authors**: Steven Duivenvoorden
+**Authors**: Steven Duivenvoorden
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  
