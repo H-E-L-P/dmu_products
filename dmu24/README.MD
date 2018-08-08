@@ -54,7 +54,7 @@ XMM-LSS               | Yes | 20180221 | 20180518
 -------------------------------------------------------------------------------
 
 
-**Authors**: [Ken Duncan](http://www.sussex.ac.uk/profiles/91548)
+**Authors**: [Ken Duncan](http://dunkenj.github.io/)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
