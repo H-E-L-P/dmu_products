@@ -1,0 +1,119 @@
+J/MNRAS/382/389    The IAC Stripe 82 Legacy Project: a wide-area survey for faint surface brightness astronomy    (Fliri+, 2016)
+================================================================================
+The IAC Stripe 82 Legacy Project: a wide-area survey for faint surface brightness astronomy
+       Jurgen Fliri, Ignacio Trujillo
+      <MNRAS Vol 456, Issue 2, 21 February 2016, Pages 1359–1373>
+      =2016MNRAS456...1359..1373
+================================================================================
+ADC_Keywords: SDSS; Galaxies, photometry 
+Keywords:  galaxies: fundamental parameters - galaxies: photometry -
+
+
+Abstract:
+    We present new deep co-adds of data taken within Stripe 82 of the Sloan Digital Sky Survey (SDSS), especially stacked to reach the faintest surface brightness limits of this data set. Stripe 82 covers 275 square degrees within −50 deg ≤ RA ≤ +60 and −1$ $_{.}^{\circ}$$25 ≤ Dec. ≤ +1$ $_{.}^{\circ}$$25. We discuss the steps of our reduction which puts special emphasis on preserving the characteristics of the background (sky + diffuse light) in the input images using a non-aggressive sky subtraction strategy. Our reduction reaches a limit of ∼28.5 mag arcsec−2 (3σ, 10 × 10 arcsec2) in the r band. The effective surface brightness limit (50 per cent completeness for exponential light distribution) lies at 〈μe(r)〉 ∼ 25.5 mag arcsec−2. For point sources, we reach 50 per cent completeness limits (3σ level) of (24.2, 25.2, 24.7, 24.3, 23.0) mag in (u, g, r, i, z). This is between 1.7 and 2.0 mag deeper than the single-epoch SDSS releases. The co-adds show point spread functions (PSFs) with median full width at half-maximum values ranging from 1 arcsec in i and z to 1.3 arcsec in the u band. The imaging data are made publicly available at http://www.iac.es/proyecto/stripe82. The release includes deep co-adds and representations of the PSF for each field. Additionally, we provide object catalogues with stars and galaxies confidently separated until g ∼ 23 mag. The IAC Stripe 82 co-adds offer a rather unique possibility to study the low surface brightness Universe, exemplified by the discovery of stellar streams around NGC 0426 and NGC 0936. We also discuss further science cases like stellar haloes and disc truncations, low surface brightness galaxies, the intracluster light in galaxy clusters and the diffuse emission of Galactic dust known as Galactic Cirrus.
+
+Description:
+    A new coadd image using SDSS data on Stripe 82. Photometric parameters for a large fraction of the SDSS Stripe 82 deep coadd.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName           Lrecl    Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe                                  This file
+iac_stripe82.fits                       Photometric parameters for SDSS Stripe 82
+--------------------------------------------------------------------------------
+
+Description of file: iac_stripe82_concat.fits.gz
+Column headings:
+--------------------------------------------------------------------------------
+ 'ALPHA_J2000',
+ 'DELTA_J2000',
+ 'u_MAG_AUTO',
+ 'u_MAG_PETRO',
+ 'u_MAG_APER_1',
+ 'u_MAG_APER_2',
+ 'u_MAG_APER_3',
+ 'u_MAG_APER_4',
+ 'u_MAGERR_AUTO',
+ 'u_MAGERR_PETRO',
+ 'u_MAGERR_APER_1',
+ 'u_MAGERR_APER_2',
+ 'u_MAGERR_APER_3',
+ 'u_MAGERR_APER_4',
+ 'u_FLUX_RADIUS',
+ 'g_MAG_AUTO',
+ 'g_MAG_PETRO',
+ 'g_MAG_APER_1',
+ 'g_MAG_APER_2',
+ 'g_MAG_APER_3',
+ 'g_MAG_APER_4',
+ 'g_MAGERR_AUTO',
+ 'g_MAGERR_PETRO',
+ 'g_MAGERR_APER_1',
+ 'g_MAGERR_APER_2',
+ 'g_MAGERR_APER_3',
+ 'g_MAGERR_APER_4',
+ 'g_FLUX_RADIUS',
+ 'r_MAG_AUTO',
+ 'r_MAG_PETRO',
+ 'r_MAG_APER_1',
+ 'r_MAG_APER_2',
+ 'r_MAG_APER_3',
+ 'r_MAG_APER_4',
+ 'r_MAGERR_AUTO',
+ 'r_MAGERR_PETRO',
+ 'r_MAGERR_APER_1',
+ 'r_MAGERR_APER_2',
+ 'r_MAGERR_APER_3',
+ 'r_MAGERR_APER_4',
+ 'r_FLUX_RADIUS',
+ 'i_MAG_AUTO',
+ 'i_MAG_PETRO',
+ 'i_MAG_APER_1',
+ 'i_MAG_APER_2',
+ 'i_MAG_APER_3',
+ 'i_MAG_APER_4',
+ 'i_MAGERR_AUTO',
+ 'i_MAGERR_PETRO',
+ 'i_MAGERR_APER_1',
+ 'i_MAGERR_APER_2',
+ 'i_MAGERR_APER_3',
+ 'i_MAGERR_APER_4',
+ 'i_FLUX_RADIUS',
+ 'z_MAG_AUTO',
+ 'z_MAG_PETRO',
+ 'z_MAG_APER_1',
+ 'z_MAG_APER_2',
+ 'z_MAG_APER_3',
+ 'z_MAG_APER_4',
+ 'z_MAGERR_AUTO',
+ 'z_MAGERR_PETRO',
+ 'z_MAGERR_APER_1',
+ 'z_MAGERR_APER_2',
+ 'z_MAGERR_APER_3',
+ 'z_MAGERR_APER_4',
+ 'z_FLUX_RADIUS',
+ 'KRON_RADIUS',
+ 'PETRO_RADIUS',
+ 'A_IMAGE',
+ 'B_IMAGE',
+ 'THETA_IMAGE',
+ 'ELONGATION',
+ 'ELLIPTICITY',
+ 'FLAGS',
+ 'tile',
+ 'stellarity'
+--------------------------------------------------------------------------------
+Note (1): This file was created by combining a catalogue of stars with a catalogue of galaxies.
+--------------------------------------------------------------------------------
+
+
+
+Acknowledgements: Alexander Kopylov <akop@sao.ru>
+
+References:
+  Jurgen Fliri, Ignacio Trujillo
+      <MNRAS Vol 456, Issue 2, 21 February 2016, Pages 1359–1373>
+      =2016MNRAS456...1359..1373
+================================================================================
+(End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002
