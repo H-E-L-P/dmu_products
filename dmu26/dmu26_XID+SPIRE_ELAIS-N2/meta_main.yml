@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_ELAIS-N1
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: ELAIS-N1
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: ELAIS-N1-NEST_image_250_SMAP_v6.0.fits, ELAIS-N1-NEST_image_350_SMAP_v6.0.fits, ELAIS-N1-NEST_image_500_SMAP_v6.0.fits, dmu26_XID+MIPS_ELAIS-N1_SERVS_cat_20170710.fits, dmu26_XID+MIPS_ELAIS-N1_SWIRE_cat_20170725.fits
