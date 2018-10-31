@@ -2,7 +2,7 @@
 #$ -S /bin/bash
 #$ -o /lustre/scratch/astro/pdh21/log/out
 #$ -e /lustre/scratch/astro/pdh21/log/err
-cd /lustre/scratch/astro/pdh21/ELAIS_N1/SPIRE/
+cd /its/home/mc741/git_hib/dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2
 echo "this is from the run script"
 
 module load use.own
