@@ -1,4 +1,4 @@
-### dmu26_XID+SPIER_ELAIS-N1
+### dmu26_XID+SPIRE_ELAIS-N1
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
