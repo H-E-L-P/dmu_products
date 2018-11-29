@@ -9,7 +9,6 @@ mips_psf_cdfs_swire.csh : main shell script that does everything
 make_psf.pro is an IDL script that actually runs the staking 
 
 code: folder containing all the IDL subroutines
-** The code wasn't reading inside the folder, so I just copied all the IDL subroutines in the main folder: MIPS_PSF_STACK **
 input_data: folder containing the input data (downloaded in main script)
 output_data: folder containing the output data (genereated by the IDL code)
 
@@ -19,7 +18,7 @@ Originally written in June 2017
 
 README first written 18th July 2017
 README substantially updated 19th August 2017
-Seb Oliver
 
-README last updated 30th October 2018
+
+Seb Oliver
 

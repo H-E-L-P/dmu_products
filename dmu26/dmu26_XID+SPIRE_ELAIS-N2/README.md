@@ -6,6 +6,7 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
+
  ## SWIRE
 
 ### Prior
@@ -25,7 +26,6 @@ qsub -t 1-$n_hier_tiles -q seb_node.q -jc seb_node.short XID_plus_hier.sh
 ```
 Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
 ```bash
-cd ..
 qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q seb_node.q XID_plus_tile.sh
 ```
 Then combine the Bayesian maps into one:
@@ -38,7 +38,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_spire_t
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load stilts
 stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_ELAIS-N2_cat.fits
 ```
@@ -109,4 +109,5 @@ Programme (Space) of the European Union’s Seventh Framework Programme
 FP7/2007-2013/ under REA grant agreement n° 607254
 
 ================================================================================
+
 Herschel Extragalactic Legacy Programme

@@ -19,8 +19,8 @@ with open(output_folder+'Tiles.pkl',"rb") as f:
 tiles=Master['tiles']
 order=Master['order']
 
-
 outfile=output_folder+'Master_prior.pkl'
+
 with open(outfile, 'rb') as f:
     obj=pickle.load(f)
 priors=obj['priors']
@@ -28,7 +28,6 @@ priors=obj['priors']
 bands=['psw','pmw','plw']
 
 hdulists=list(map(lambda prior: postmaps.make_fits_image(prior,np.full_like(prior.sim,np.nan)),priors))
-
 
 failed_tiles=[]
 for i in range(0,len(tiles)):

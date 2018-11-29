@@ -35,11 +35,9 @@ outfile=output_folder+'Tiles.pkl'
 with open(outfile, 'rb') as f:
    obj=pickle.load(f)
 
-
 tiles=obj['tiles']
 order=obj['order']
 order_large=6#obj['order_large']
-
 
 tile_large=moc_routines.tile_in_tile(order,tiles[taskid-1],order_large)
 outfile=output_folder+'Tile_'+str(tile_large)+'_'+str(order_large)+'.pkl'
