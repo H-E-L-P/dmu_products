@@ -45,7 +45,7 @@ In each field folder there is a file field_meta.yml which contains details of al
 9. cigale: dmu_products/dmu28/dmu28_FIELDNAME/data/best/filename.fits
     * These are the CIGALE physical parameters. They are not present on all fields. dmu28 contains other information such as the full best fit SEDs and possibly alternative CIGALE runs on for instance a spectroscopic redshift sample.
 
-10. final: dmu_products/dmu32/dmu32_FIELDNAME/data/FIELDNAME_SUFFIX_cigale.fits
+10. final: dmu_products/dmu32/dmu32_FIELDNAME/data/FIELDNAME_SUFFIX_cigale.fits (CIGALE input) and dmu_products/dmu32/dmu32_FIELDNAME/data/FIELDNAME_SUFFIX.fits (Final catalogue)
     * This is the final catalogue found in this folder (dmu32 - Merged catalogue). It is produced based on joining the earlier catalogues based on the HELP_id which is used to identify objects across all the HELP data products. If this field has all the data products (xid+ fluxes, photo-z and CIGALE fits) this file will be called FIELDNAME_SUFFIX.fits. If not all data products are present then only the FIELDNAME_SUFFIX_cigale.fits file will be present which is built as an input for CIGALE.
     
 -------------------------------------------------------------------------------
