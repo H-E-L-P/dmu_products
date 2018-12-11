@@ -1,0 +1,15 @@
+Product: dmu26_XID+PACS_ELAIS-N1
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: ELAIS-N1
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: ELAIS-N1-100um-img_wgls.fits, ELAIS-N1-100um-img_noise.fits, ELAIS-N1-160um-img_wgls.fits, ELAIS-N1-160um-img_noise.fits, dmu18_PACS_100_PSF_ELAIS-N1_20170720.fits,  dmu18_PACS_160_PSF_ELAIS-N1_20170720.fits
