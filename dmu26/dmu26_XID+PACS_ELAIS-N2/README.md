@@ -1,4 +1,4 @@
-### dmu26_XID+PACS_ELAIS-N1
+### dmu26_XID+PACS_ELAIS-N2
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -6,55 +6,9 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
-ELAIS-N1 was split into two regions, defined by the IRAC coverage. The deep region is defined by the SERVS survey,
- the shallow region by the remaining SWIRE region.
- 
-## SERVS
-
-### Prior
-  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
-   MIPS 24 $\mathrm{\mu m}$ flux >= 20 $\mathrm{\mu Jy}$. For the full processing of the
-   prior object list see the Jupyter notebook [XID+PACS_prior_SERVS.ipynb](./XID+PACS_prior_SERVS.ipynb) and 
-   
-
-### Running on Apollo
-To run on Apollo, first run the notebook [XID+PACS_prior_SERVS.ipynb](./XID+PACS_prior_SERVS.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
-```bash
-mkdir output
-mv XID_plus_hier.sh
-cd output
-module load sge
-qsub -t 1-$n_hier_tiles -q mps.q -jc mps.short XID_plus_hier.sh
-```
-Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13G memory and estimated to run for 4 hours:
-```bash
-cd ..
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=13G -q mps.q XID_plus_tile.sh
-```
-Then combine the Bayesian maps into one:
- ```bash
- python make_combined_map.py
- ```
- This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
-file, which you can then go back and fit by editing the `XIDp_run_script_pacs_tile.py` file so it reads in
- `failed_tiles.pkl` rather than `Tiles.pkl`.
-  
- To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
- ```bash
- ls *cat.fits | cat_files
-module load starlink/hikianalia-64bit
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
-```
- 
-#### Computation 
- Details on computational cost of fitting ELAIS-N1:
- 
- SERVS:
-```qacct failed on apollo: cannot report statistics```
  
  
-## SWIRE (-SERVS)
+## SWIRE
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
@@ -103,7 +57,7 @@ pdh21      17055281  59784320.915     69961.341  59854282.790       37406648.330
 
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+PACS_ELAIS-N1_final_processing.ipynb](XID+PACS_ELAIS-N1_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+PACS_ELAIS-N2_final_processing.ipynb](XID+PACS_ELAIS-N1_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
