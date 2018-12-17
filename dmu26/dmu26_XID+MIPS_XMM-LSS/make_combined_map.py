@@ -11,16 +11,16 @@ from astropy import wcs
 import os
 output_folder='./data/'
 
-with open(output_folder+'Tiles_SPUDS.pkl', "rb") as f:
+with open(output_folder+'Tiles_SWIREnSPUDS.pkl', "rb") as f:
         Master = pickle.load(f)
 tiles=Master['tiles']
 order=Master['order']
 
-outfile=output_folder+'Master_prior_SPUDS.pkl'
+outfile=output_folder+'Master_prior_SWIREnSPUDS.pkl'
 obj=xidplus.io.pickle_load(outfile)
 priors = obj['priors']
 
-
+exit()
 #hdulist24=fits.open(output_folder+'dmu26_XID+MIPS_Lockman-SWIRE_Bayes_Pval.fits')
 hdulist24=postmaps.make_fits_image(priors[0],np.full_like(priors[0].sim,np.nan))
 
