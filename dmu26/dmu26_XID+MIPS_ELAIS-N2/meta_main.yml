@@ -1,0 +1,15 @@
+Product: dmu26_XID+MIPS_ELAIS-N2
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: ELAIS-N2
+
+Selection filter: F_MIPS_24
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: swire_EN2_M1_v4_help.fits, dmu17_MIPS_ELAIS-N2_20181029.fits, master_catalogue_elais-n2_20180218.fits 

@@ -98,7 +98,7 @@ def command(catalogue, gaia_cat_or_field):
     except FileNotFoundError:
         # Get the Gaia catalogue from HELP VO server
         gaia_cat = vo.tablesearch(
-            "http://vohedamtest.lam.fr/__system__/tap/run/tap",
+            "https://herschel-vos.phys.sussex.ac.uk/__system__/tap/run/tap",
             "select top 100000000 ra,pmra,dec,pmdec from gaia.main where " \
             "field = '{}'".format(gaia_cat_or_field)
         ).table

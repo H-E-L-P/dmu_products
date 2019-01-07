@@ -1,4 +1,4 @@
-# DMU 24 Photometric Redshift Repository
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)  Photometric Redshift Repository (DMU 24)
 
 This repository contains all the HELP photometric redshifts (photo-zs) across the various HELP fields. These catalogues include photo-z estimates for subsets of the corresponding field masterlists (DMU1).
 
@@ -49,3 +49,20 @@ SSDF                  | Yes | 20180221 | 20180612
 xFLS                  | No | |
 XMM-13hr              | No | |
 XMM-LSS               | Yes | 20180221 | 20180518
+
+
+-------------------------------------------------------------------------------
+
+
+**Authors**: [Ken Duncan](http://dunkenj.github.io/)
+
+ ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
+ The Herschel Extragalactic Legacy Project, ([HELP](http://herschel.sussex.ac.uk/)), is a [European
+Commission Research Executive Agency](https://ec.europa.eu/info/departments/research-executive-agency_en)
+funded project
+under the
+SP1-Cooperation, Collaborative project, Small or medium-scale focused
+research project, FP7-SPACE-2013-1 scheme, Grant Agreement
+Number 607254.
+
+[Acknowledgements](http://herschel.sussex.ac.uk/acknowledgements)

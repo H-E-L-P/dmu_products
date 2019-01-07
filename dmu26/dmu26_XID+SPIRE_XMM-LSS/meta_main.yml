@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_XMM-LSS
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: XMM-LSS
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: XMM-LSS_SPIRE250_v1.0.fits,XMM-LSS_SPIRE350_v1.0.fits,XMM-LSS_SPIRE500_v1.0.fits, dmu26_XID+MIPS_XMM-LSS_SPUDS_cat_20181210.fits, dmu26_XID+MIPS_XMM-LSS_SWIRE_cat_20181210.fits

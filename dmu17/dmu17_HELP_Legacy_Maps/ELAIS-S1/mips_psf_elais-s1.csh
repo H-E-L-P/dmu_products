@@ -12,7 +12,7 @@ export IDL_PATH=$IDL_PATH:+'./code/'
 
 # getting the WISE reference catalogue from HEDAM
 #module load stilts/3.1
-#stilts tapquery tapurl='http://vohedamtest.lam.fr/__system__/tap/run/tap' adql="SELECT * FROM allwise.main WHERE field='ELAIS-S1'" maxrec=9999999 out=allwise_ELAIS-S1.fits
+#stilts tapquery tapurl='https://herschel-vos.phys.sussex.ac.uk/__system__/tap/run/tap' adql="SELECT * FROM allwise.main WHERE field='ELAIS-S1'" maxrec=9999999 out=allwise_ELAIS-S1.fits
 
 # filtering the WISE catalogue
 

@@ -12,7 +12,7 @@ curl --user help\:hedam\#\$  "http://hedam.lam.fr/HELP/data/P1/WP4/XMM-LSS/wp4_x
 
 # getting the WISE reference catalogue from HEDAM
 module load stilts/3.1
-stilts tapquery tapurl='http://vohedamtest.lam.fr/__system__/tap/run/tap' adql="SELECT * FROM allwise.main WHERE field='XMM-LSS'" maxrec=9999999 out=allwise_XMM-LSS.fits
+stilts tapquery tapurl='https://herschel-vos.phys.sussex.ac.uk/__system__/tap/run/tap' adql="SELECT * FROM allwise.main WHERE field='XMM-LSS'" maxrec=9999999 out=allwise_XMM-LSS.fits
 
 # filtering the WISE catalogue
 
