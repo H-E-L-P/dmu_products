@@ -1,2 +1,2 @@
-create_itermap_from_conf, "conffiles/helms-hers.conf"
+create_itermap_from_conf, "conffiles/xmm13hr.conf"
 exit
