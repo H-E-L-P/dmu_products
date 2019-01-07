@@ -14,7 +14,8 @@ pwd
 cd createmap
 pwd
 echo creating idl script
-echo 'create_itermap_from_conf, "conffiles/helms-hers.conf"' > tmp_idl.pro
+#echo 'create_itermap_from_conf, "conffiles/helms-hers.conf"' > tmp_idl.pro
+echo 'create_itermap_from_conf, "conffiles/helms-jan2019.conf"' > tmp_idl.pro
 
 echo 'exit' >> tmp_idl.pro
 echo which idl?
