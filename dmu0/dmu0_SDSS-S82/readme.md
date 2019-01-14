@@ -6,6 +6,14 @@ SDSS Stripe-82 (DR7)
 Mattia did a new extraction from the SDSS database (not with the SQL queries
 below) trying to solve the problem of duplicated sources.
 
+These catalogues have been uploaded to CDS and are available here:
+
+ftp://cdsarc.u-strasbg.fr/pub/cats/J/ApJ/794/120  
+
+or
+
+http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=J/ApJ/794/120  
+
 # Old version
 
 **This is the description of the first extraction from the SDSS data which had
