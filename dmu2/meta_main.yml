@@ -84,10 +84,10 @@ fields:
       region: dmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits
                  
     - name: XMM-13hr           
-      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
+      region: dmu_products/dmu2/dmu2_field_coverages/XMM-13hr_MOC.fits
            
     - name: XMM-LSS          
-      region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits      
+      region: dmu_products/dmu2/dmu2_field_coverages/XMM-LSS_MOC.fits      
       
 
 
