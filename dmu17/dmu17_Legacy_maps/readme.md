@@ -1,7 +1,5 @@
-
-
 # MIPS_Legacy_maps
-	 
+ 
 
 This folder contains:
 
