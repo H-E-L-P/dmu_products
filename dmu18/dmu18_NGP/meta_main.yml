@@ -1,0 +1,15 @@
+Product: dmu18_NGP
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: NGP
+
+Selection filter:
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: NGP_PACS100_v0.9.fits,  NGP_PACS160_v0.9.fits, NGP-100um-psffromstack.fits, NGP-160um-psffromstack.fits, EEF_grn_20.txt, EEF_red_20.txt 

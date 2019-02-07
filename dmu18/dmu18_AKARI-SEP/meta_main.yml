@@ -1,0 +1,15 @@
+Product: dmu18_AKARI-SEP
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: AKARI-SEP
+
+Selection filter:
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: AKARI-SEP_PACS100_v0.9.fits,  AKARI-SEP_PACS160_v0.9.fits, Akari-SEP-100um-psffromstack.fits, Akari-SEP-160um-psffromstack.fits, EEF_grn_20.txt, EEF_red_20.txt 
