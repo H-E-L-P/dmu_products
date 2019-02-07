@@ -1,0 +1,15 @@
+Product: dmu26_XID+MIPS_EGS
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: EGS
+
+Selection filter: F_MIPS_24
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: , dmu17_MIPS_EGS_.fits, master_catalogue_egs_.fits 

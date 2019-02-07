@@ -1,0 +1,15 @@
+Product: dmu26_XID+MIPS_AKARI-NEP
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: AKARI-NEP
+
+Selection filter: F_MIPS_24
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products:  *-0.MIPS.help.fits, dmu17_MIPS_PSF_AKARI-NEP_20190204.fits, master_catalogue_akari-nep_20180215.fits 
