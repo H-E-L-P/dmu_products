@@ -11,13 +11,16 @@ fields:
       description: The Infrared Astronomical Satellite AKARI on the North Ecliptic Pole (AKARI-NEP)
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
 
-    - name: AKARI-SEP     
+    - name: AKARI-SEP   
+    description: The Infrared Astronomical Satellite AKARI on the South Ecliptic Pole (AKARI-SEP)  
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-SEP_MOC.fits 
               
-    - name: Bootes         
+    - name: Bootes    
+      description: The Bootes field     
       region: dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits   
            
-    - name: CDFS-SWIRE            
+    - name: CDFS-SWIRE   
+      description: The Chandra Deep Field South (CDFS) Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.         
       region: dmu_products/dmu2/dmu2_field_coverages/CDFS-SWIRE_MOC.fits
            
     - name: COSMOS   
@@ -60,21 +63,23 @@ fields:
       description: The Herschel coverage of the Sload Digital Sky Survey (SDSS) Stripe 82 field. 
       region: dmu_products/dmu2/dmu2_field_coverages/Herschel-Stripe-82_MOC.fits
          
-    - name: Lockman-SWIRE           
+    - name: Lockman-SWIRE     
+    description: The Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
       region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
       
     - name: NGP   
-      description: The Herschel HATLAS program coverage of the North Galactic Pole (NGP) field.                
+      description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the North Galactic Pole (NGP) field.                
       region: dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.fits
         
     - name: SA13     
       region: dmu_products/dmu2/dmu2_field_coverages/SA13_MOC.fits
                      
     - name: SGP       
-      description: The Herschel HATLAS program coverage of the South Galactic Pole (SGP) field.  
+      description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the South Galactic Pole (SGP) field.  
       region: dmu_products/dmu2/dmu2_field_coverages/SGP_MOC.fits
                    
     - name: SPIRE-NEP   
+      description: The Spitzer Wide InfraRed Extragalactic (SWIRE) survey coverage of the North Ecliptic Pole (NEP) field.
       region: dmu_products/dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.fits
                   
     - name: SSDF        
