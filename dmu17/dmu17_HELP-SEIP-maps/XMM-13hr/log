@@ -4528,3 +4528,2626 @@ Saving to: ‘data/60077621.60077621-12.MIPS.1.extmask.fits’
 
 2018-06-13 21:16:30 (56.0 KB/s) - ‘data/60077621.60077621-12.MIPS.1.extmask.fits’ saved [227520/227520]
 
+--2019-02-01 15:58:32--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/
+Resolving hedam.lam.fr (hedam.lam.fr)... 195.221.212.141
+Connecting to hedam.lam.fr (hedam.lam.fr)|195.221.212.141|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html.tmp’
+
+     0K .......... .......... ......                            911K=0.03s
+
+2019-02-01 15:58:43 (911 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html.tmp’ saved [27176]
+
+Loading robots.txt; please ignore errors.
+--2019-02-01 15:58:43--  http://hedam.lam.fr/robots.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 84 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/robots.txt’
+
+     0K                                                       100% 6.46M=0s
+
+2019-02-01 15:58:43 (6.46 MB/s) - ‘data/hedam.lam.fr/robots.txt’ saved [84/84]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html.tmp since it should be rejected.
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=N;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=D.tmp’
+
+     0K .......... .......... ......                           12.5M=0.002s
+
+2019-02-01 15:58:43 (12.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=D.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=D.tmp since it should be rejected.
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=M;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=A.tmp’
+
+     0K .......... .......... ......                           12.8M=0.002s
+
+2019-02-01 15:58:43 (12.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=A.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=S;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=A.tmp’
+
+     0K .......... .......... ......                           8.25M=0.003s
+
+2019-02-01 15:58:43 (8.25 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=A.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html.tmp’
+
+     0K .                                                     100% 76.7M=0s
+
+2019-02-01 15:58:43 (76.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html.tmp since it should be rejected.
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1336320 (1.3M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  3% 10.6M 0s
+    50K .......... .......... .......... .......... ..........  7% 1.79M 0s
+   100K .......... .......... .......... .......... .......... 11% 1.79M 0s
+   150K .......... .......... .......... .......... .......... 15% 7.57M 0s
+   200K .......... .......... .......... .......... .......... 19% 1.85M 0s
+   250K .......... .......... .......... .......... .......... 22% 1.93M 0s
+   300K .......... .......... .......... .......... .......... 26% 8.59M 0s
+   350K .......... .......... .......... .......... .......... 30% 1.99M 0s
+   400K .......... .......... .......... .......... .......... 34% 5.28M 0s
+   450K .......... .......... .......... .......... .......... 38% 2.12M 0s
+   500K .......... .......... .......... .......... .......... 42% 2.70M 0s
+   550K .......... .......... .......... .......... .......... 45% 4.11M 0s
+   600K .......... .......... .......... .......... .......... 49% 2.40M 0s
+   650K .......... .......... .......... .......... .......... 53% 4.59M 0s
+   700K .......... .......... .......... .......... .......... 57% 2.68M 0s
+   750K .......... .......... .......... .......... .......... 61% 4.47M 0s
+   800K .......... .......... .......... .......... .......... 65% 2.68M 0s
+   850K .......... .......... .......... .......... .......... 68% 3.71M 0s
+   900K .......... .......... .......... .......... .......... 72% 2.30M 0s
+   950K .......... .......... .......... .......... .......... 76% 7.00M 0s
+  1000K .......... .......... .......... .......... .......... 80% 1.69M 0s
+  1050K .......... .......... .......... .......... .......... 84% 8.84M 0s
+  1100K .......... .......... .......... .......... .......... 88% 1.84M 0s
+  1150K .......... .......... .......... .......... .......... 91% 2.98M 0s
+  1200K .......... .......... .......... .......... .......... 95% 6.17M 0s
+  1250K .......... .......... .......... .......... .......... 99% 2.85M 0s
+  1300K .....                                                 100% 8.36M=0.4s
+
+2019-02-01 15:58:43 (2.95 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.fits’ saved [1336320/1336320]
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 12.9M=0s
+
+2019-02-01 15:58:43 (12.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 98.3M=0s
+
+2019-02-01 15:58:43 (98.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:43 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8640 (8.4K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.moc.fits’
+
+     0K ........                                              100% 23.8M=0s
+
+2019-02-01 15:58:43 (23.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40008040.40008040-0.MIPS.1.moc.fits’ saved [8640/8640]
+
+--2019-02-01 15:58:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1094400 (1.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 10.2M 0s
+    50K .......... .......... .......... .......... ..........  9%  955K 1s
+   100K .......... .......... .......... .......... .......... 14%  128M 0s
+   150K .......... .......... .......... .......... .......... 18%  184M 0s
+   200K .......... .......... .......... .......... .......... 23% 34.0M 0s
+   250K .......... .......... .......... .......... .......... 28% 2.12M 0s
+   300K .......... .......... .......... .......... .......... 32% 9.26M 0s
+   350K .......... .......... .......... .......... .......... 37% 2.11M 0s
+   400K .......... .......... .......... .......... .......... 42% 11.0M 0s
+   450K .......... .......... .......... .......... .......... 46% 2.14M 0s
+   500K .......... .......... .......... .......... .......... 51% 10.5M 0s
+   550K .......... .......... .......... .......... .......... 56% 2.16M 0s
+   600K .......... .......... .......... .......... .......... 60% 10.5M 0s
+   650K .......... .......... .......... .......... .......... 65% 2.14M 0s
+   700K .......... .......... .......... .......... .......... 70% 11.3M 0s
+   750K .......... .......... .......... .......... .......... 74% 2.16M 0s
+   800K .......... .......... .......... .......... .......... 79% 9.85M 0s
+   850K .......... .......... .......... .......... .......... 84% 2.18M 0s
+   900K .......... .......... .......... .......... .......... 88% 10.1M 0s
+   950K .......... .......... .......... .......... .......... 93% 2.18M 0s
+  1000K .......... .......... .......... .......... .......... 98% 9.52M 0s
+  1050K .......... ........                                   100% 13.1M=0.3s
+
+2019-02-01 15:58:44 (3.72 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.fits’ saved [1094400/1094400]
+
+--2019-02-01 15:58:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.99M=0s
+
+2019-02-01 15:58:44 (6.99 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 33.0M=0s
+
+2019-02-01 15:58:44 (33.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:58:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:44 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8640 (8.4K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.moc.fits’
+
+     0K ........                                              100% 39.0M=0s
+
+2019-02-01 15:58:44 (39.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/40039960.40039960-0.MIPS.1.moc.fits’ saved [8640/8640]
+
+--2019-02-01 15:58:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4939200 (4.7M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 11.6M 0s
+    50K .......... .......... .......... .......... ..........  2% 2.14M 1s
+   100K .......... .......... .......... .......... ..........  3% 10.2M 1s
+   150K .......... .......... .......... .......... ..........  4% 2.25M 1s
+   200K .......... .......... .......... .......... ..........  5% 7.82M 1s
+   250K .......... .......... .......... .......... ..........  6% 2.24M 1s
+   300K .......... .......... .......... .......... ..........  7% 8.58M 1s
+   350K .......... .......... .......... .......... ..........  8% 2.96M 1s
+   400K .......... .......... .......... .......... ..........  9% 4.33M 1s
+   450K .......... .......... .......... .......... .......... 10% 3.15M 1s
+   500K .......... .......... .......... .......... .......... 11% 4.32M 1s
+   550K .......... .......... .......... .......... .......... 12% 3.04M 1s
+   600K .......... .......... .......... .......... .......... 13% 4.80M 1s
+   650K .......... .......... .......... .......... .......... 14% 2.75M 1s
+   700K .......... .......... .......... .......... .......... 15% 4.87M 1s
+   750K .......... .......... .......... .......... .......... 16% 2.85M 1s
+   800K .......... .......... .......... .......... .......... 17% 5.15M 1s
+   850K .......... .......... .......... .......... .......... 18% 3.06M 1s
+   900K .......... .......... .......... .......... .......... 19% 4.20M 1s
+   950K .......... .......... .......... .......... .......... 20% 14.3M 1s
+  1000K .......... .......... .......... .......... .......... 21% 2.13M 1s
+  1050K .......... .......... .......... .......... .......... 22% 9.84M 1s
+  1100K .......... .......... .......... .......... .......... 23% 2.21M 1s
+  1150K .......... .......... .......... .......... .......... 24% 9.99M 1s
+  1200K .......... .......... .......... .......... .......... 25% 2.46M 1s
+  1250K .......... .......... .......... .......... .......... 26% 6.34M 1s
+  1300K .......... .......... .......... .......... .......... 27% 2.90M 1s
+  1350K .......... .......... .......... .......... .......... 29% 5.69M 1s
+  1400K .......... .......... .......... .......... .......... 30% 2.60M 1s
+  1450K .......... .......... .......... .......... .......... 31% 5.94M 1s
+  1500K .......... .......... .......... .......... .......... 32% 2.95M 1s
+  1550K .......... .......... .......... .......... .......... 33% 5.25M 1s
+  1600K .......... .......... .......... .......... .......... 34% 8.31M 1s
+  1650K .......... .......... .......... .......... .......... 35% 2.23M 1s
+  1700K .......... .......... .......... .......... .......... 36% 8.47M 1s
+  1750K .......... .......... .......... .......... .......... 37% 2.81M 1s
+  1800K .......... .......... .......... .......... .......... 38% 6.00M 1s
+  1850K .......... .......... .......... .......... .......... 39% 2.89M 1s
+  1900K .......... .......... .......... .......... .......... 40% 4.97M 1s
+  1950K .......... .......... .......... .......... .......... 41% 3.07M 1s
+  2000K .......... .......... .......... .......... .......... 42% 5.05M 1s
+  2050K .......... .......... .......... .......... .......... 43% 8.41M 1s
+  2100K .......... .......... .......... .......... .......... 44% 2.50M 1s
+  2150K .......... .......... .......... .......... .......... 45% 7.66M 1s
+  2200K .......... .......... .......... .......... .......... 46% 2.54M 1s
+  2250K .......... .......... .......... .......... .......... 47% 6.23M 1s
+  2300K .......... .......... .......... .......... .......... 48% 3.12M 1s
+  2350K .......... .......... .......... .......... .......... 49% 5.10M 1s
+  2400K .......... .......... .......... .......... .......... 50% 8.42M 1s
+  2450K .......... .......... .......... .......... .......... 51% 2.64M 1s
+  2500K .......... .......... .......... .......... .......... 52% 6.02M 1s
+  2550K .......... .......... .......... .......... .......... 53% 2.91M 1s
+  2600K .......... .......... .......... .......... .......... 54% 5.52M 1s
+  2650K .......... .......... .......... .......... .......... 55% 3.35M 1s
+  2700K .......... .......... .......... .......... .......... 57% 4.56M 1s
+  2750K .......... .......... .......... .......... .......... 58% 3.96M 1s
+  2800K .......... .......... .......... .......... .......... 59% 4.73M 0s
+  2850K .......... .......... .......... .......... .......... 60% 5.64M 0s
+  2900K .......... .......... .......... .......... .......... 61% 2.75M 0s
+  2950K .......... .......... .......... .......... .......... 62% 6.13M 0s
+  3000K .......... .......... .......... .......... .......... 63% 3.31M 0s
+  3050K .......... .......... .......... .......... .......... 64% 6.23M 0s
+  3100K .......... .......... .......... .......... .......... 65% 6.41M 0s
+  3150K .......... .......... .......... .......... .......... 66% 2.56M 0s
+  3200K .......... .......... .......... .......... .......... 67% 7.46M 0s
+  3250K .......... .......... .......... .......... .......... 68% 2.68M 0s
+  3300K .......... .......... .......... .......... .......... 69% 8.10M 0s
+  3350K .......... .......... .......... .......... .......... 70% 3.48M 0s
+  3400K .......... .......... .......... .......... .......... 71% 4.95M 0s
+  3450K .......... .......... .......... .......... .......... 72% 5.67M 0s
+  3500K .......... .......... .......... .......... .......... 73% 2.90M 0s
+  3550K .......... .......... .......... .......... .......... 74% 6.75M 0s
+  3600K .......... .......... .......... .......... .......... 75% 3.95M 0s
+  3650K .......... .......... .......... .......... .......... 76% 4.16M 0s
+  3700K .......... .......... .......... .......... .......... 77% 5.83M 0s
+  3750K .......... .......... .......... .......... .......... 78% 3.14M 0s
+  3800K .......... .......... .......... .......... .......... 79% 6.34M 0s
+  3850K .......... .......... .......... .......... .......... 80% 3.02M 0s
+  3900K .......... .......... .......... .......... .......... 81% 6.57M 0s
+  3950K .......... .......... .......... .......... .......... 82% 6.29M 0s
+  4000K .......... .......... .......... .......... .......... 83% 2.99M 0s
+  4050K .......... .......... .......... .......... .......... 85% 5.65M 0s
+  4100K .......... .......... .......... .......... .......... 86% 3.49M 0s
+  4150K .......... .......... .......... .......... .......... 87% 5.25M 0s
+  4200K .......... .......... .......... .......... .......... 88% 7.70M 0s
+  4250K .......... .......... .......... .......... .......... 89% 2.98M 0s
+  4300K .......... .......... .......... .......... .......... 90% 6.00M 0s
+  4350K .......... .......... .......... .......... .......... 91% 3.54M 0s
+  4400K .......... .......... .......... .......... .......... 92% 5.41M 0s
+  4450K .......... .......... .......... .......... .......... 93% 7.49M 0s
+  4500K .......... .......... .......... .......... .......... 94% 2.91M 0s
+  4550K .......... .......... .......... .......... .......... 95% 6.30M 0s
+  4600K .......... .......... .......... .......... .......... 96% 5.31M 0s
+  4650K .......... .......... .......... .......... .......... 97% 3.48M 0s
+  4700K .......... .......... .......... .......... .......... 98% 7.56M 0s
+  4750K .......... .......... .......... .......... .......... 99% 2.82M 0s
+  4800K .......... .......... ...                             100% 11.3M=1.2s
+
+2019-02-01 15:58:45 (4.08 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.fits’ saved [4939200/4939200]
+
+--2019-02-01 15:58:45--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.62M=0s
+
+2019-02-01 15:58:45 (6.62 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:45--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 26.2M=0s
+
+2019-02-01 15:58:45 (26.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:58:45--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:45 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:45--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 63.5M=0s
+
+2019-02-01 15:58:45 (63.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/50063440.50063440-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-02-01 15:58:45--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4204800 (4.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 12.2M 0s
+    50K .......... .......... .......... .......... ..........  2% 9.69M 0s
+   100K .......... .......... .......... .......... ..........  3% 2.42M 1s
+   150K .......... .......... .......... .......... ..........  4% 10.5M 1s
+   200K .......... .......... .......... .......... ..........  6% 3.65M 1s
+   250K .......... .......... .......... .......... ..........  7% 4.48M 1s
+   300K .......... .......... .......... .......... ..........  8% 10.6M 1s
+   350K .......... .......... .......... .......... ..........  9% 2.47M 1s
+   400K .......... .......... .......... .......... .......... 10% 9.02M 1s
+   450K .......... .......... .......... .......... .......... 12% 4.22M 1s
+   500K .......... .......... .......... .......... .......... 13% 3.59M 1s
+   550K .......... .......... .......... .......... .......... 14% 10.3M 1s
+   600K .......... .......... .......... .......... .......... 15% 3.77M 1s
+   650K .......... .......... .......... .......... .......... 17% 4.44M 1s
+   700K .......... .......... .......... .......... .......... 18% 9.47M 1s
+   750K .......... .......... .......... .......... .......... 19% 2.59M 1s
+   800K .......... .......... .......... .......... .......... 20% 10.2M 1s
+   850K .......... .......... .......... .......... .......... 21% 4.37M 1s
+   900K .......... .......... .......... .......... .......... 23% 3.63M 1s
+   950K .......... .......... .......... .......... .......... 24% 10.7M 1s
+  1000K .......... .......... .......... .......... .......... 25% 3.39M 1s
+  1050K .......... .......... .......... .......... .......... 26% 4.75M 1s
+  1100K .......... .......... .......... .......... .......... 28% 7.87M 1s
+  1150K .......... .......... .......... .......... .......... 29% 2.87M 1s
+  1200K .......... .......... .......... .......... .......... 30% 7.11M 1s
+  1250K .......... .......... .......... .......... .......... 31% 9.99M 1s
+  1300K .......... .......... .......... .......... .......... 32% 2.61M 1s
+  1350K .......... .......... .......... .......... .......... 34% 9.33M 1s
+  1400K .......... .......... .......... .......... .......... 35% 4.40M 1s
+  1450K .......... .......... .......... .......... .......... 36% 3.92M 1s
+  1500K .......... .......... .......... .......... .......... 37% 8.23M 1s
+  1550K .......... .......... .......... .......... .......... 38% 4.67M 1s
+  1600K .......... .......... .......... .......... .......... 40% 4.02M 0s
+  1650K .......... .......... .......... .......... .......... 41% 8.23M 0s
+  1700K .......... .......... .......... .......... .......... 42% 3.19M 0s
+  1750K .......... .......... .......... .......... .......... 43% 6.93M 0s
+  1800K .......... .......... .......... .......... .......... 45% 8.44M 0s
+  1850K .......... .......... .......... .......... .......... 46% 2.77M 0s
+  1900K .......... .......... .......... .......... .......... 47% 10.4M 0s
+  1950K .......... .......... .......... .......... .......... 48% 5.54M 0s
+  2000K .......... .......... .......... .......... .......... 49% 3.04M 0s
+  2050K .......... .......... .......... .......... .......... 51% 10.2M 0s
+  2100K .......... .......... .......... .......... .......... 52% 4.47M 0s
+  2150K .......... .......... .......... .......... .......... 53% 3.97M 0s
+  2200K .......... .......... .......... .......... .......... 54% 9.97M 0s
+  2250K .......... .......... .......... .......... .......... 56% 3.21M 0s
+  2300K .......... .......... .......... .......... .......... 57% 5.89M 0s
+  2350K .......... .......... .......... .......... .......... 58% 8.13M 0s
+  2400K .......... .......... .......... .......... .......... 59% 3.07M 0s
+  2450K .......... .......... .......... .......... .......... 60% 7.08M 0s
+  2500K .......... .......... .......... .......... .......... 62% 8.40M 0s
+  2550K .......... .......... .......... .......... .......... 63% 2.87M 0s
+  2600K .......... .......... .......... .......... .......... 64% 7.91M 0s
+  2650K .......... .......... .......... .......... .......... 65% 11.0M 0s
+  2700K .......... .......... .......... .......... .......... 66% 2.84M 0s
+  2750K .......... .......... .......... .......... .......... 68% 7.09M 0s
+  2800K .......... .......... .......... .......... .......... 69% 9.03M 0s
+  2850K .......... .......... .......... .......... .......... 70% 3.07M 0s
+  2900K .......... .......... .......... .......... .......... 71% 7.26M 0s
+  2950K .......... .......... .......... .......... .......... 73% 6.00M 0s
+  3000K .......... .......... .......... .......... .......... 74% 3.21M 0s
+  3050K .......... .......... .......... .......... .......... 75% 9.50M 0s
+  3100K .......... .......... .......... .......... .......... 76% 6.58M 0s
+  3150K .......... .......... .......... .......... .......... 77% 3.31M 0s
+  3200K .......... .......... .......... .......... .......... 79% 9.17M 0s
+  3250K .......... .......... .......... .......... .......... 80% 3.79M 0s
+  3300K .......... .......... .......... .......... .......... 81% 5.26M 0s
+  3350K .......... .......... .......... .......... .......... 82% 9.04M 0s
+  3400K .......... .......... .......... .......... .......... 84% 3.85M 0s
+  3450K .......... .......... .......... .......... .......... 85% 5.23M 0s
+  3500K .......... .......... .......... .......... .......... 86% 9.05M 0s
+  3550K .......... .......... .......... .......... .......... 87% 3.81M 0s
+  3600K .......... .......... .......... .......... .......... 88% 5.26M 0s
+  3650K .......... .......... .......... .......... .......... 90% 8.55M 0s
+  3700K .......... .......... .......... .......... .......... 91% 3.58M 0s
+  3750K .......... .......... .......... .......... .......... 92% 5.59M 0s
+  3800K .......... .......... .......... .......... .......... 93% 8.44M 0s
+  3850K .......... .......... .......... .......... .......... 94% 4.11M 0s
+  3900K .......... .......... .......... .......... .......... 96% 5.07M 0s
+  3950K .......... .......... .......... .......... .......... 97% 7.72M 0s
+  4000K .......... .......... .......... .......... .......... 98% 4.01M 0s
+  4050K .......... .......... .......... .......... .......... 99% 5.44M 0s
+  4100K ......                                                100% 40.8M=0.8s
+
+2019-02-01 15:58:46 (4.99 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.fits’ saved [4204800/4204800]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.75M=0s
+
+2019-02-01 15:58:46 (6.75 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 16.5M 0s
+    50K .......... .......... .....                           100% 11.3M=0.005s
+
+2019-02-01 15:58:46 (14.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75390 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 14.4M 0s
+    50K .......... .......... ...                             100% 7.58M=0.006s
+
+2019-02-01 15:58:46 (11.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.ps’ saved [75390/75390]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 35.1M=0s
+
+2019-02-01 15:58:46 (35.1 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:46 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 14400 (14K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.moc.fits’
+
+     0K .......... ....                                       100% 15.4M=0.001s
+
+2019-02-01 15:58:46 (15.4 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-1.MIPS.1.moc.fits’ saved [14400/14400]
+
+--2019-02-01 15:58:46--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 12110400 (12M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 17.1M 1s
+    50K .......... .......... .......... .......... ..........  0% 5.05M 1s
+   100K .......... .......... .......... .......... ..........  1% 3.27M 2s
+   150K .......... .......... .......... .......... ..........  1% 13.8M 2s
+   200K .......... .......... .......... .......... ..........  2% 5.58M 2s
+   250K .......... .......... .......... .......... ..........  2% 3.34M 2s
+   300K .......... .......... .......... .......... ..........  2% 9.17M 2s
+   350K .......... .......... .......... .......... ..........  3% 6.83M 2s
+   400K .......... .......... .......... .......... ..........  3% 9.84M 2s
+   450K .......... .......... .......... .......... ..........  4% 3.34M 2s
+   500K .......... .......... .......... .......... ..........  4% 10.3M 2s
+   550K .......... .......... .......... .......... ..........  5% 6.43M 2s
+   600K .......... .......... .......... .......... ..........  5% 3.62M 2s
+   650K .......... .......... .......... .......... ..........  5% 7.35M 2s
+   700K .......... .......... .......... .......... ..........  6% 7.59M 2s
+   750K .......... .......... .......... .......... ..........  6% 3.36M 2s
+   800K .......... .......... .......... .......... ..........  7% 8.85M 2s
+   850K .......... .......... .......... .......... ..........  7% 7.02M 2s
+   900K .......... .......... .......... .......... ..........  8% 3.19M 2s
+   950K .......... .......... .......... .......... ..........  8% 10.9M 2s
+  1000K .......... .......... .......... .......... ..........  8% 6.28M 2s
+  1050K .......... .......... .......... .......... ..........  9% 3.46M 2s
+  1100K .......... .......... .......... .......... ..........  9% 10.9M 2s
+  1150K .......... .......... .......... .......... .......... 10% 6.03M 2s
+  1200K .......... .......... .......... .......... .......... 10% 3.54M 2s
+  1250K .......... .......... .......... .......... .......... 10% 10.3M 2s
+  1300K .......... .......... .......... .......... .......... 11% 7.69M 2s
+  1350K .......... .......... .......... .......... .......... 11% 3.27M 2s
+  1400K .......... .......... .......... .......... .......... 12% 9.70M 2s
+  1450K .......... .......... .......... .......... .......... 12% 7.65M 2s
+  1500K .......... .......... .......... .......... .......... 13% 3.43M 2s
+  1550K .......... .......... .......... .......... .......... 13% 8.64M 2s
+  1600K .......... .......... .......... .......... .......... 13% 7.81M 2s
+  1650K .......... .......... .......... .......... .......... 14% 6.47M 2s
+  1700K .......... .......... .......... .......... .......... 14% 3.64M 2s
+  1750K .......... .......... .......... .......... .......... 15% 10.1M 2s
+  1800K .......... .......... .......... .......... .......... 15% 5.67M 2s
+  1850K .......... .......... .......... .......... .......... 16% 3.80M 2s
+  1900K .......... .......... .......... .......... .......... 16% 10.7M 2s
+  1950K .......... .......... .......... .......... .......... 16% 4.30M 2s
+  2000K .......... .......... .......... .......... .......... 17% 4.47M 2s
+  2050K .......... .......... .......... .......... .......... 17% 11.0M 2s
+  2100K .......... .......... .......... .......... .......... 18% 3.89M 2s
+  2150K .......... .......... .......... .......... .......... 18% 5.19M 2s
+  2200K .......... .......... .......... .......... .......... 19% 11.5M 2s
+  2250K .......... .......... .......... .......... .......... 19% 4.07M 2s
+  2300K .......... .......... .......... .......... .......... 19% 5.24M 2s
+  2350K .......... .......... .......... .......... .......... 20% 9.64M 2s
+  2400K .......... .......... .......... .......... .......... 20% 11.9M 2s
+  2450K .......... .......... .......... .......... .......... 21% 4.00M 2s
+  2500K .......... .......... .......... .......... .......... 21% 5.03M 2s
+  2550K .......... .......... .......... .......... .......... 21% 10.9M 2s
+  2600K .......... .......... .......... .......... .......... 22% 3.86M 2s
+  2650K .......... .......... .......... .......... .......... 22% 5.04M 2s
+  2700K .......... .......... .......... .......... .......... 23% 9.09M 2s
+  2750K .......... .......... .......... .......... .......... 23% 3.89M 2s
+  2800K .......... .......... .......... .......... .......... 24% 5.92M 2s
+  2850K .......... .......... .......... .......... .......... 24% 10.0M 2s
+  2900K .......... .......... .......... .......... .......... 24% 3.76M 2s
+  2950K .......... .......... .......... .......... .......... 25% 9.30M 2s
+  3000K .......... .......... .......... .......... .......... 25% 5.13M 2s
+  3050K .......... .......... .......... .......... .......... 26% 13.8M 1s
+  3100K .......... .......... .......... .......... .......... 26% 3.91M 1s
+  3150K .......... .......... .......... .......... .......... 27% 5.12M 1s
+  3200K .......... .......... .......... .......... .......... 27% 11.5M 1s
+  3250K .......... .......... .......... .......... .......... 27% 4.00M 1s
+  3300K .......... .......... .......... .......... .......... 28% 6.09M 1s
+  3350K .......... .......... .......... .......... .......... 28% 7.43M 1s
+  3400K .......... .......... .......... .......... .......... 29% 4.33M 1s
+  3450K .......... .......... .......... .......... .......... 29% 6.23M 1s
+  3500K .......... .......... .......... .......... .......... 30% 7.85M 1s
+  3550K .......... .......... .......... .......... .......... 30% 9.76M 1s
+  3600K .......... .......... .......... .......... .......... 30% 4.12M 1s
+  3650K .......... .......... .......... .......... .......... 31% 5.40M 1s
+  3700K .......... .......... .......... .......... .......... 31% 7.75M 1s
+  3750K .......... .......... .......... .......... .......... 32% 3.96M 1s
+  3800K .......... .......... .......... .......... .......... 32% 8.52M 1s
+  3850K .......... .......... .......... .......... .......... 32% 6.98M 1s
+  3900K .......... .......... .......... .......... .......... 33% 9.47M 1s
+  3950K .......... .......... .......... .......... .......... 33% 3.72M 1s
+  4000K .......... .......... .......... .......... .......... 34% 7.19M 1s
+  4050K .......... .......... .......... .......... .......... 34% 7.75M 1s
+  4100K .......... .......... .......... .......... .......... 35% 4.43M 1s
+  4150K .......... .......... .......... .......... .......... 35% 6.10M 1s
+  4200K .......... .......... .......... .......... .......... 35% 8.26M 1s
+  4250K .......... .......... .......... .......... .......... 36% 5.16M 1s
+  4300K .......... .......... .......... .......... .......... 36% 6.02M 1s
+  4350K .......... .......... .......... .......... .......... 37% 6.57M 1s
+  4400K .......... .......... .......... .......... .......... 37% 7.62M 1s
+  4450K .......... .......... .......... .......... .......... 38% 4.49M 1s
+  4500K .......... .......... .......... .......... .......... 38% 6.07M 1s
+  4550K .......... .......... .......... .......... .......... 38% 9.14M 1s
+  4600K .......... .......... .......... .......... .......... 39% 4.36M 1s
+  4650K .......... .......... .......... .......... .......... 39% 6.34M 1s
+  4700K .......... .......... .......... .......... .......... 40% 7.33M 1s
+  4750K .......... .......... .......... .......... .......... 40% 9.54M 1s
+  4800K .......... .......... .......... .......... .......... 41% 4.02M 1s
+  4850K .......... .......... .......... .......... .......... 41% 6.97M 1s
+  4900K .......... .......... .......... .......... .......... 41% 6.99M 1s
+  4950K .......... .......... .......... .......... .......... 42% 4.54M 1s
+  5000K .......... .......... .......... .......... .......... 42% 6.03M 1s
+  5050K .......... .......... .......... .......... .......... 43% 6.92M 1s
+  5100K .......... .......... .......... .......... .......... 43% 8.56M 1s
+  5150K .......... .......... .......... .......... .......... 43% 4.27M 1s
+  5200K .......... .......... .......... .......... .......... 44% 8.04M 1s
+  5250K .......... .......... .......... .......... .......... 44% 6.74M 1s
+  5300K .......... .......... .......... .......... .......... 45% 5.41M 1s
+  5350K .......... .......... .......... .......... .......... 45% 5.38M 1s
+  5400K .......... .......... .......... .......... .......... 46% 7.42M 1s
+  5450K .......... .......... .......... .......... .......... 46% 9.39M 1s
+  5500K .......... .......... .......... .......... .......... 46% 4.35M 1s
+  5550K .......... .......... .......... .......... .......... 47% 6.75M 1s
+  5600K .......... .......... .......... .......... .......... 47% 6.54M 1s
+  5650K .......... .......... .......... .......... .......... 48% 6.04M 1s
+  5700K .......... .......... .......... .......... .......... 48% 5.31M 1s
+  5750K .......... .......... .......... .......... .......... 49% 7.49M 1s
+  5800K .......... .......... .......... .......... .......... 49% 8.36M 1s
+  5850K .......... .......... .......... .......... .......... 49% 5.10M 1s
+  5900K .......... .......... .......... .......... .......... 50% 5.70M 1s
+  5950K .......... .......... .......... .......... .......... 50% 7.34M 1s
+  6000K .......... .......... .......... .......... .......... 51% 8.16M 1s
+  6050K .......... .......... .......... .......... .......... 51% 4.89M 1s
+  6100K .......... .......... .......... .......... .......... 52% 6.68M 1s
+  6150K .......... .......... .......... .......... .......... 52% 6.50M 1s
+  6200K .......... .......... .......... .......... .......... 52% 6.06M 1s
+  6250K .......... .......... .......... .......... .......... 53% 5.19M 1s
+  6300K .......... .......... .......... .......... .......... 53% 7.01M 1s
+  6350K .......... .......... .......... .......... .......... 54% 10.2M 1s
+  6400K .......... .......... .......... .......... .......... 54% 4.57M 1s
+  6450K .......... .......... .......... .......... .......... 54% 5.95M 1s
+  6500K .......... .......... .......... .......... .......... 55% 7.52M 1s
+  6550K .......... .......... .......... .......... .......... 55% 6.06M 1s
+  6600K .......... .......... .......... .......... .......... 56% 4.89M 1s
+  6650K .......... .......... .......... .......... .......... 56% 9.85M 1s
+  6700K .......... .......... .......... .......... .......... 57% 6.57M 1s
+  6750K .......... .......... .......... .......... .......... 57% 5.47M 1s
+  6800K .......... .......... .......... .......... .......... 57% 6.35M 1s
+  6850K .......... .......... .......... .......... .......... 58% 7.05M 1s
+  6900K .......... .......... .......... .......... .......... 58% 7.73M 1s
+  6950K .......... .......... .......... .......... .......... 59% 4.46M 1s
+  7000K .......... .......... .......... .......... .......... 59% 7.02M 1s
+  7050K .......... .......... .......... .......... .......... 60% 6.92M 1s
+  7100K .......... .......... .......... .......... .......... 60% 8.30M 1s
+  7150K .......... .......... .......... .......... .......... 60% 5.20M 1s
+  7200K .......... .......... .......... .......... .......... 61% 7.61M 1s
+  7250K .......... .......... .......... .......... .......... 61% 7.56M 1s
+  7300K .......... .......... .......... .......... .......... 62% 5.18M 1s
+  7350K .......... .......... .......... .......... .......... 62% 8.02M 1s
+  7400K .......... .......... .......... .......... .......... 62% 5.55M 1s
+  7450K .......... .......... .......... .......... .......... 63% 10.9M 1s
+  7500K .......... .......... .......... .......... .......... 63% 4.82M 1s
+  7550K .......... .......... .......... .......... .......... 64% 7.25M 1s
+  7600K .......... .......... .......... .......... .......... 64% 6.97M 1s
+  7650K .......... .......... .......... .......... .......... 65% 7.72M 1s
+  7700K .......... .......... .......... .......... .......... 65% 5.36M 1s
+  7750K .......... .......... .......... .......... .......... 65% 7.56M 1s
+  7800K .......... .......... .......... .......... .......... 66% 7.32M 1s
+  7850K .......... .......... .......... .......... .......... 66% 5.60M 1s
+  7900K .......... .......... .......... .......... .......... 67% 7.41M 1s
+  7950K .......... .......... .......... .......... .......... 67% 5.92M 1s
+  8000K .......... .......... .......... .......... .......... 68% 9.48M 1s
+  8050K .......... .......... .......... .......... .......... 68% 5.12M 1s
+  8100K .......... .......... .......... .......... .......... 68% 7.20M 1s
+  8150K .......... .......... .......... .......... .......... 69% 6.82M 1s
+  8200K .......... .......... .......... .......... .......... 69% 8.34M 1s
+  8250K .......... .......... .......... .......... .......... 70% 5.28M 1s
+  8300K .......... .......... .......... .......... .......... 70% 6.19M 1s
+  8350K .......... .......... .......... .......... .......... 71% 8.94M 1s
+  8400K .......... .......... .......... .......... .......... 71% 8.03M 1s
+  8450K .......... .......... .......... .......... .......... 71% 5.46M 1s
+  8500K .......... .......... .......... .......... .......... 72% 6.16M 1s
+  8550K .......... .......... .......... .......... .......... 72% 9.42M 1s
+  8600K .......... .......... .......... .......... .......... 73% 5.14M 1s
+  8650K .......... .......... .......... .......... .......... 73% 6.83M 1s
+  8700K .......... .......... .......... .......... .......... 73% 7.17M 0s
+  8750K .......... .......... .......... .......... .......... 74% 9.38M 0s
+  8800K .......... .......... .......... .......... .......... 74% 4.99M 0s
+  8850K .......... .......... .......... .......... .......... 75% 5.91M 0s
+  8900K .......... .......... .......... .......... .......... 75% 8.78M 0s
+  8950K .......... .......... .......... .......... .......... 76% 8.45M 0s
+  9000K .......... .......... .......... .......... .......... 76% 5.06M 0s
+  9050K .......... .......... .......... .......... .......... 76% 5.83M 0s
+  9100K .......... .......... .......... .......... .......... 77% 9.28M 0s
+  9150K .......... .......... .......... .......... .......... 77% 9.53M 0s
+  9200K .......... .......... .......... .......... .......... 78% 5.13M 0s
+  9250K .......... .......... .......... .......... .......... 78% 5.41M 0s
+  9300K .......... .......... .......... .......... .......... 79% 9.77M 0s
+  9350K .......... .......... .......... .......... .......... 79% 9.19M 0s
+  9400K .......... .......... .......... .......... .......... 79% 5.06M 0s
+  9450K .......... .......... .......... .......... .......... 80% 5.79M 0s
+  9500K .......... .......... .......... .......... .......... 80% 9.26M 0s
+  9550K .......... .......... .......... .......... .......... 81% 7.64M 0s
+  9600K .......... .......... .......... .......... .......... 81% 5.41M 0s
+  9650K .......... .......... .......... .......... .......... 82% 6.33M 0s
+  9700K .......... .......... .......... .......... .......... 82% 9.92M 0s
+  9750K .......... .......... .......... .......... .......... 82% 6.97M 0s
+  9800K .......... .......... .......... .......... .......... 83% 4.48M 0s
+  9850K .......... .......... .......... .......... .......... 83% 10.0M 0s
+  9900K .......... .......... .......... .......... .......... 84% 9.02M 0s
+  9950K .......... .......... .......... .......... .......... 84% 5.94M 0s
+ 10000K .......... .......... .......... .......... .......... 84% 5.21M 0s
+ 10050K .......... .......... .......... .......... .......... 85% 10.4M 0s
+ 10100K .......... .......... .......... .......... .......... 85% 7.86M 0s
+ 10150K .......... .......... .......... .......... .......... 86% 6.52M 0s
+ 10200K .......... .......... .......... .......... .......... 86% 4.89M 0s
+ 10250K .......... .......... .......... .......... .......... 87% 8.83M 0s
+ 10300K .......... .......... .......... .......... .......... 87% 10.5M 0s
+ 10350K .......... .......... .......... .......... .......... 87% 5.38M 0s
+ 10400K .......... .......... .......... .......... .......... 88% 4.84M 0s
+ 10450K .......... .......... .......... .......... .......... 88% 8.54M 0s
+ 10500K .......... .......... .......... .......... .......... 89% 14.4M 0s
+ 10550K .......... .......... .......... .......... .......... 89% 6.02M 0s
+ 10600K .......... .......... .......... .......... .......... 90% 4.64M 0s
+ 10650K .......... .......... .......... .......... .......... 90% 9.81M 0s
+ 10700K .......... .......... .......... .......... .......... 90% 8.36M 0s
+ 10750K .......... .......... .......... .......... .......... 91% 6.20M 0s
+ 10800K .......... .......... .......... .......... .......... 91% 4.54M 0s
+ 10850K .......... .......... .......... .......... .......... 92% 13.7M 0s
+ 10900K .......... .......... .......... .......... .......... 92% 8.90M 0s
+ 10950K .......... .......... .......... .......... .......... 93% 5.96M 0s
+ 11000K .......... .......... .......... .......... .......... 93% 4.75M 0s
+ 11050K .......... .......... .......... .......... .......... 93% 10.3M 0s
+ 11100K .......... .......... .......... .......... .......... 94% 9.22M 0s
+ 11150K .......... .......... .......... .......... .......... 94% 5.98M 0s
+ 11200K .......... .......... .......... .......... .......... 95% 5.03M 0s
+ 11250K .......... .......... .......... .......... .......... 95% 8.97M 0s
+ 11300K .......... .......... .......... .......... .......... 95% 9.89M 0s
+ 11350K .......... .......... .......... .......... .......... 96% 6.49M 0s
+ 11400K .......... .......... .......... .......... .......... 96% 5.02M 0s
+ 11450K .......... .......... .......... .......... .......... 97% 8.87M 0s
+ 11500K .......... .......... .......... .......... .......... 97% 9.06M 0s
+ 11550K .......... .......... .......... .......... .......... 98% 7.43M 0s
+ 11600K .......... .......... .......... .......... .......... 98% 4.76M 0s
+ 11650K .......... .......... .......... .......... .......... 98% 7.93M 0s
+ 11700K .......... .......... .......... .......... .......... 99% 12.2M 0s
+ 11750K .......... .......... .......... .......... .......... 99% 5.64M 0s
+ 11800K .......... .......... ......                          100% 3.68M=1.9s
+
+2019-02-01 15:58:48 (6.23 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.fits’ saved [12110400/12110400]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.40M=0s
+
+2019-02-01 15:58:48 (6.40 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 16.5M 0s
+    50K .......... .......... .....                           100% 9.22M=0.006s
+
+2019-02-01 15:58:48 (13.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 73102 (71K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 70% 11.4M 0s
+    50K .......... .......... .                               100% 18.6M=0.005s
+
+2019-02-01 15:58:48 (12.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.ps’ saved [73102/73102]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  129M=0s
+
+2019-02-01 15:58:48 (129 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:48 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:48--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 17280 (17K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.moc.fits’
+
+     0K .......... ......                                     100% 94.9M=0s
+
+2019-02-01 15:58:49 (94.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-2.MIPS.1.moc.fits’ saved [17280/17280]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2113920 (2.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  2% 11.6M 0s
+    50K .......... .......... .......... .......... ..........  4% 11.0M 0s
+   100K .......... .......... .......... .......... ..........  7% 1.00M 1s
+   150K .......... .......... .......... .......... ..........  9% 10.8M 1s
+   200K .......... .......... .......... .......... .......... 12%  182M 0s
+   250K .......... .......... .......... .......... .......... 14%  163M 0s
+   300K .......... .......... .......... .......... .......... 16% 15.5M 0s
+   350K .......... .......... .......... .......... .......... 19% 2.40M 0s
+   400K .......... .......... .......... .......... .......... 21% 13.9M 0s
+   450K .......... .......... .......... .......... .......... 24% 2.45M 0s
+   500K .......... .......... .......... .......... .......... 26% 9.45M 0s
+   550K .......... .......... .......... .......... .......... 29% 13.8M 0s
+   600K .......... .......... .......... .......... .......... 31% 2.54M 0s
+   650K .......... .......... .......... .......... .......... 33% 7.13M 0s
+   700K .......... .......... .......... .......... .......... 36% 12.6M 0s
+   750K .......... .......... .......... .......... .......... 38% 2.71M 0s
+   800K .......... .......... .......... .......... .......... 41% 8.88M 0s
+   850K .......... .......... .......... .......... .......... 43% 8.87M 0s
+   900K .......... .......... .......... .......... .......... 46% 2.61M 0s
+   950K .......... .......... .......... .......... .......... 48% 11.0M 0s
+  1000K .......... .......... .......... .......... .......... 50% 9.49M 0s
+  1050K .......... .......... .......... .......... .......... 53% 2.68M 0s
+  1100K .......... .......... .......... .......... .......... 55% 10.1M 0s
+  1150K .......... .......... .......... .......... .......... 58% 10.0M 0s
+  1200K .......... .......... .......... .......... .......... 60% 2.71M 0s
+  1250K .......... .......... .......... .......... .......... 62% 7.64M 0s
+  1300K .......... .......... .......... .......... .......... 65% 13.2M 0s
+  1350K .......... .......... .......... .......... .......... 67% 2.61M 0s
+  1400K .......... .......... .......... .......... .......... 70% 8.27M 0s
+  1450K .......... .......... .......... .......... .......... 72% 14.7M 0s
+  1500K .......... .......... .......... .......... .......... 75% 2.72M 0s
+  1550K .......... .......... .......... .......... .......... 77% 7.42M 0s
+  1600K .......... .......... .......... .......... .......... 79% 10.8M 0s
+  1650K .......... .......... .......... .......... .......... 82% 2.97M 0s
+  1700K .......... .......... .......... .......... .......... 84% 7.04M 0s
+  1750K .......... .......... .......... .......... .......... 87% 13.8M 0s
+  1800K .......... .......... .......... .......... .......... 89% 2.92M 0s
+  1850K .......... .......... .......... .......... .......... 92% 7.14M 0s
+  1900K .......... .......... .......... .......... .......... 94% 8.95M 0s
+  1950K .......... .......... .......... .......... .......... 96% 3.22M 0s
+  2000K .......... .......... .......... .......... .......... 99% 8.42M 0s
+  2050K .......... ....                                       100% 4.33M=0.4s
+
+2019-02-01 15:58:49 (5.06 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.fits’ saved [2113920/2113920]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.07M=0s
+
+2019-02-01 15:58:49 (6.07 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 12.4M 0s
+    50K .......... .......... .....                           100% 11.0M=0.006s
+
+2019-02-01 15:58:49 (11.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75938 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 9.42M 0s
+    50K .......... .......... ....                            100% 13.8M=0.007s
+
+2019-02-01 15:58:49 (10.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.ps’ saved [75938/75938]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 31.8M=0s
+
+2019-02-01 15:58:49 (31.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:49 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 15.3M=0.001s
+
+2019-02-01 15:58:49 (15.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-3.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-02-01 15:58:49--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3116160 (3.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 16.5M 0s
+    50K .......... .......... .......... .......... ..........  3% 8.73M 0s
+   100K .......... .......... .......... .......... ..........  4%  983K 1s
+   150K .......... .......... .......... .......... ..........  6%  144M 1s
+   200K .......... .......... .......... .......... ..........  8%  187M 1s
+   250K .......... .......... .......... .......... ..........  9% 31.0M 1s
+   300K .......... .......... .......... .......... .......... 11% 2.12M 1s
+   350K .......... .......... .......... .......... .......... 13% 10.9M 1s
+   400K .......... .......... .......... .......... .......... 14% 2.43M 1s
+   450K .......... .......... .......... .......... .......... 16% 7.29M 1s
+   500K .......... .......... .......... .......... .......... 18% 9.75M 1s
+   550K .......... .......... .......... .......... .......... 19% 2.22M 1s
+   600K .......... .......... .......... .......... .......... 21% 9.44M 1s
+   650K .......... .......... .......... .......... .......... 23% 2.15M 1s
+   700K .......... .......... .......... .......... .......... 24% 9.49M 1s
+   750K .......... .......... .......... .......... .......... 26% 2.39M 1s
+   800K .......... .......... .......... .......... .......... 27% 9.58M 1s
+   850K .......... .......... .......... .......... .......... 29% 2.38M 1s
+   900K .......... .......... .......... .......... .......... 31% 6.67M 1s
+   950K .......... .......... .......... .......... .......... 32% 2.80M 1s
+  1000K .......... .......... .......... .......... .......... 34% 5.74M 0s
+  1050K .......... .......... .......... .......... .......... 36% 10.4M 0s
+  1100K .......... .......... .......... .......... .......... 37% 2.33M 0s
+  1150K .......... .......... .......... .......... .......... 39% 7.46M 0s
+  1200K .......... .......... .......... .......... .......... 41% 2.26M 0s
+  1250K .......... .......... .......... .......... .......... 42% 11.5M 0s
+  1300K .......... .......... .......... .......... .......... 44% 2.42M 0s
+  1350K .......... .......... .......... .......... .......... 46% 7.61M 0s
+  1400K .......... .......... .......... .......... .......... 47% 2.82M 0s
+  1450K .......... .......... .......... .......... .......... 49% 5.43M 0s
+  1500K .......... .......... .......... .......... .......... 50% 9.57M 0s
+  1550K .......... .......... .......... .......... .......... 52% 2.39M 0s
+  1600K .......... .......... .......... .......... .......... 54% 8.03M 0s
+  1650K .......... .......... .......... .......... .......... 55% 2.56M 0s
+  1700K .......... .......... .......... .......... .......... 57% 6.83M 0s
+  1750K .......... .......... .......... .......... .......... 59% 3.08M 0s
+  1800K .......... .......... .......... .......... .......... 60% 4.96M 0s
+  1850K .......... .......... .......... .......... .......... 62% 8.74M 0s
+  1900K .......... .......... .......... .......... .......... 64% 2.50M 0s
+  1950K .......... .......... .......... .......... .......... 65% 7.51M 0s
+  2000K .......... .......... .......... .......... .......... 67% 2.58M 0s
+  2050K .......... .......... .......... .......... .......... 69% 6.44M 0s
+  2100K .......... .......... .......... .......... .......... 70% 3.26M 0s
+  2150K .......... .......... .......... .......... .......... 72% 5.91M 0s
+  2200K .......... .......... .......... .......... .......... 73% 6.53M 0s
+  2250K .......... .......... .......... .......... .......... 75% 2.75M 0s
+  2300K .......... .......... .......... .......... .......... 77% 6.43M 0s
+  2350K .......... .......... .......... .......... .......... 78% 3.17M 0s
+  2400K .......... .......... .......... .......... .......... 80% 4.58M 0s
+  2450K .......... .......... .......... .......... .......... 82% 8.61M 0s
+  2500K .......... .......... .......... .......... .......... 83% 2.59M 0s
+  2550K .......... .......... .......... .......... .......... 85% 7.68M 0s
+  2600K .......... .......... .......... .......... .......... 87% 2.69M 0s
+  2650K .......... .......... .......... .......... .......... 88% 6.87M 0s
+  2700K .......... .......... .......... .......... .......... 90% 3.96M 0s
+  2750K .......... .......... .......... .......... .......... 92% 3.59M 0s
+  2800K .......... .......... .......... .......... .......... 93% 7.61M 0s
+  2850K .......... .......... .......... .......... .......... 95% 3.28M 0s
+  2900K .......... .......... .......... .......... .......... 96% 5.30M 0s
+  2950K .......... .......... .......... .......... .......... 98% 3.73M 0s
+  3000K .......... .......... .......... .......... ...       100% 3.98M=0.7s
+
+2019-02-01 15:58:50 (4.09 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.fits’ saved [3116160/3116160]
+
+--2019-02-01 15:58:50--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 10.3M=0s
+
+2019-02-01 15:58:50 (10.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:50--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 31.3M=0s
+
+2019-02-01 15:58:50 (31.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:58:50--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:50 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:50--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 14.7M=0.001s
+
+2019-02-01 15:58:50 (14.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-4.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-02-01 15:58:50--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 15402240 (15M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 12.1M 1s
+    50K .......... .......... .......... .......... ..........  0% 11.2M 1s
+   100K .......... .......... .......... .......... ..........  0% 1.02M 6s
+   150K .......... .......... .......... .......... ..........  1%  191M 4s
+   200K .......... .......... .......... .......... ..........  1% 16.5M 4s
+   250K .......... .......... .......... .......... ..........  1% 10.0M 3s
+   300K .......... .......... .......... .......... ..........  2% 2.01M 4s
+   350K .......... .......... .......... .......... ..........  2% 2.17M 4s
+   400K .......... .......... .......... .......... ..........  2% 6.86M 4s
+   450K .......... .......... .......... .......... ..........  3% 2.14M 4s
+   500K .......... .......... .......... .......... ..........  3% 8.83M 4s
+   550K .......... .......... .......... .......... ..........  3% 2.16M 4s
+   600K .......... .......... .......... .......... ..........  4% 7.99M 4s
+   650K .......... .......... .......... .......... ..........  4% 2.04M 4s
+   700K .......... .......... .......... .......... ..........  4% 10.6M 4s
+   750K .......... .......... .......... .......... ..........  5% 2.11M 4s
+   800K .......... .......... .......... .......... ..........  5% 2.28M 4s
+   850K .......... .......... .......... .......... ..........  5% 6.85M 4s
+   900K .......... .......... .......... .......... ..........  6% 2.20M 4s
+   950K .......... .......... .......... .......... ..........  6% 6.69M 4s
+  1000K .......... .......... .......... .......... ..........  6% 2.39M 4s
+  1050K .......... .......... .......... .......... ..........  7% 6.63M 4s
+  1100K .......... .......... .......... .......... ..........  7% 2.23M 4s
+  1150K .......... .......... .......... .......... ..........  7% 7.38M 4s
+  1200K .......... .......... .......... .......... ..........  8% 2.26M 4s
+  1250K .......... .......... .......... .......... ..........  8% 2.17M 4s
+  1300K .......... .......... .......... .......... ..........  8% 7.73M 4s
+  1350K .......... .......... .......... .......... ..........  9% 2.26M 4s
+  1400K .......... .......... .......... .......... ..........  9% 7.85M 4s
+  1450K .......... .......... .......... .......... ..........  9% 2.23M 4s
+  1500K .......... .......... .......... .......... .......... 10% 8.41M 4s
+  1550K .......... .......... .......... .......... .......... 10% 2.27M 4s
+  1600K .......... .......... .......... .......... .......... 10% 7.44M 4s
+  1650K .......... .......... .......... .......... .......... 11% 2.37M 4s
+  1700K .......... .......... .......... .......... .......... 11% 7.37M 4s
+  1750K .......... .......... .......... .......... .......... 11% 2.30M 4s
+  1800K .......... .......... .......... .......... .......... 12% 7.61M 4s
+  1850K .......... .......... .......... .......... .......... 12% 2.24M 4s
+  1900K .......... .......... .......... .......... .......... 12% 6.37M 4s
+  1950K .......... .......... .......... .......... .......... 13% 2.45M 4s
+  2000K .......... .......... .......... .......... .......... 13% 6.97M 4s
+  2050K .......... .......... .......... .......... .......... 13% 2.44M 4s
+  2100K .......... .......... .......... .......... .......... 14% 6.90M 4s
+  2150K .......... .......... .......... .......... .......... 14% 2.42M 4s
+  2200K .......... .......... .......... .......... .......... 14% 6.86M 4s
+  2250K .......... .......... .......... .......... .......... 15% 2.51M 4s
+  2300K .......... .......... .......... .......... .......... 15% 6.71M 4s
+  2350K .......... .......... .......... .......... .......... 15% 2.45M 4s
+  2400K .......... .......... .......... .......... .......... 16% 7.09M 4s
+  2450K .......... .......... .......... .......... .......... 16% 2.46M 4s
+  2500K .......... .......... .......... .......... .......... 16% 7.68M 4s
+  2550K .......... .......... .......... .......... .......... 17% 2.44M 4s
+  2600K .......... .......... .......... .......... .......... 17% 7.00M 3s
+  2650K .......... .......... .......... .......... .......... 17% 2.43M 4s
+  2700K .......... .......... .......... .......... .......... 18% 7.05M 3s
+  2750K .......... .......... .......... .......... .......... 18% 2.36M 3s
+  2800K .......... .......... .......... .......... .......... 18% 6.66M 3s
+  2850K .......... .......... .......... .......... .......... 19% 2.65M 3s
+  2900K .......... .......... .......... .......... .......... 19% 6.17M 3s
+  2950K .......... .......... .......... .......... .......... 19% 2.56M 3s
+  3000K .......... .......... .......... .......... .......... 20% 6.71M 3s
+  3050K .......... .......... .......... .......... .......... 20% 7.37M 3s
+  3100K .......... .......... .......... .......... .......... 20% 2.32M 3s
+  3150K .......... .......... .......... .......... .......... 21% 9.60M 3s
+  3200K .......... .......... .......... .......... .......... 21% 2.14M 3s
+  3250K .......... .......... .......... .......... .......... 21% 11.0M 3s
+  3300K .......... .......... .......... .......... .......... 22% 2.33M 3s
+  3350K .......... .......... .......... .......... .......... 22% 8.47M 3s
+  3400K .......... .......... .......... .......... .......... 22% 2.66M 3s
+  3450K .......... .......... .......... .......... .......... 23% 5.75M 3s
+  3500K .......... .......... .......... .......... .......... 23% 2.78M 3s
+  3550K .......... .......... .......... .......... .......... 23% 5.94M 3s
+  3600K .......... .......... .......... .......... .......... 24% 2.57M 3s
+  3650K .......... .......... .......... .......... .......... 24% 6.82M 3s
+  3700K .......... .......... .......... .......... .......... 24% 9.21M 3s
+  3750K .......... .......... .......... .......... .......... 25% 2.30M 3s
+  3800K .......... .......... .......... .......... .......... 25% 7.83M 3s
+  3850K .......... .......... .......... .......... .......... 25% 2.39M 3s
+  3900K .......... .......... .......... .......... .......... 26% 6.69M 3s
+  3950K .......... .......... .......... .......... .......... 26% 2.95M 3s
+  4000K .......... .......... .......... .......... .......... 26% 5.06M 3s
+  4050K .......... .......... .......... .......... .......... 27% 2.97M 3s
+  4100K .......... .......... .......... .......... .......... 27% 6.52M 3s
+  4150K .......... .......... .......... .......... .......... 27% 6.99M 3s
+  4200K .......... .......... .......... .......... .......... 28% 2.53M 3s
+  4250K .......... .......... .......... .......... .......... 28% 6.82M 3s
+  4300K .......... .......... .......... .......... .......... 28% 2.39M 3s
+  4350K .......... .......... .......... .......... .......... 29% 8.65M 3s
+  4400K .......... .......... .......... .......... .......... 29% 2.90M 3s
+  4450K .......... .......... .......... .......... .......... 29% 5.59M 3s
+  4500K .......... .......... .......... .......... .......... 30% 3.17M 3s
+  4550K .......... .......... .......... .......... .......... 30% 4.93M 3s
+  4600K .......... .......... .......... .......... .......... 30% 7.00M 3s
+  4650K .......... .......... .......... .......... .......... 31% 2.54M 3s
+  4700K .......... .......... .......... .......... .......... 31% 8.82M 3s
+  4750K .......... .......... .......... .......... .......... 31% 2.76M 3s
+  4800K .......... .......... .......... .......... .......... 32% 4.91M 3s
+  4850K .......... .......... .......... .......... .......... 32% 12.0M 3s
+  4900K .......... .......... .......... .......... .......... 32% 2.49M 3s
+  4950K .......... .......... .......... .......... .......... 33% 7.93M 3s
+  5000K .......... .......... .......... .......... .......... 33% 2.69M 3s
+  5050K .......... .......... .......... .......... .......... 33% 5.73M 3s
+  5100K .......... .......... .......... .......... .......... 34% 3.10M 3s
+  5150K .......... .......... .......... .......... .......... 34% 6.41M 3s
+  5200K .......... .......... .......... .......... .......... 34% 6.99M 3s
+  5250K .......... .......... .......... .......... .......... 35% 2.77M 3s
+  5300K .......... .......... .......... .......... .......... 35% 6.75M 3s
+  5350K .......... .......... .......... .......... .......... 35% 3.14M 3s
+  5400K .......... .......... .......... .......... .......... 36% 6.51M 3s
+  5450K .......... .......... .......... .......... .......... 36% 7.29M 3s
+  5500K .......... .......... .......... .......... .......... 36% 2.81M 2s
+  5550K .......... .......... .......... .......... .......... 37% 6.80M 2s
+  5600K .......... .......... .......... .......... .......... 37% 3.12M 2s
+  5650K .......... .......... .......... .......... .......... 37% 5.78M 2s
+  5700K .......... .......... .......... .......... .......... 38% 4.47M 2s
+  5750K .......... .......... .......... .......... .......... 38% 3.96M 2s
+  5800K .......... .......... .......... .......... .......... 38% 6.47M 2s
+  5850K .......... .......... .......... .......... .......... 39% 3.04M 2s
+  5900K .......... .......... .......... .......... .......... 39% 5.49M 2s
+  5950K .......... .......... .......... .......... .......... 39% 5.31M 2s
+  6000K .......... .......... .......... .......... .......... 40% 3.63M 2s
+  6050K .......... .......... .......... .......... .......... 40% 5.98M 2s
+  6100K .......... .......... .......... .......... .......... 40% 3.05M 2s
+  6150K .......... .......... .......... .......... .......... 41% 6.00M 2s
+  6200K .......... .......... .......... .......... .......... 41% 5.30M 2s
+  6250K .......... .......... .......... .......... .......... 41% 3.94M 2s
+  6300K .......... .......... .......... .......... .......... 42% 6.17M 2s
+  6350K .......... .......... .......... .......... .......... 42% 3.46M 2s
+  6400K .......... .......... .......... .......... .......... 42% 4.50M 2s
+  6450K .......... .......... .......... .......... .......... 43% 5.15M 2s
+  6500K .......... .......... .......... .......... .......... 43% 4.20M 2s
+  6550K .......... .......... .......... .......... .......... 43% 5.62M 2s
+  6600K .......... .......... .......... .......... .......... 44% 3.41M 2s
+  6650K .......... .......... .......... .......... .......... 44% 5.78M 2s
+  6700K .......... .......... .......... .......... .......... 44% 5.38M 2s
+  6750K .......... .......... .......... .......... .......... 45% 3.35M 2s
+  6800K .......... .......... .......... .......... .......... 45% 6.13M 2s
+  6850K .......... .......... .......... .......... .......... 45% 4.27M 2s
+  6900K .......... .......... .......... .......... .......... 46% 4.63M 2s
+  6950K .......... .......... .......... .......... .......... 46% 5.98M 2s
+  7000K .......... .......... .......... .......... .......... 46% 3.64M 2s
+  7050K .......... .......... .......... .......... .......... 47% 5.17M 2s
+  7100K .......... .......... .......... .......... .......... 47% 4.83M 2s
+  7150K .......... .......... .......... .......... .......... 47% 3.88M 2s
+  7200K .......... .......... .......... .......... .......... 48% 5.80M 2s
+  7250K .......... .......... .......... .......... .......... 48% 4.90M 2s
+  7300K .......... .......... .......... .......... .......... 48% 4.21M 2s
+  7350K .......... .......... .......... .......... .......... 49% 5.68M 2s
+  7400K .......... .......... .......... .......... .......... 49% 3.10M 2s
+  7450K .......... .......... .......... .......... .......... 49% 7.88M 2s
+  7500K .......... .......... .......... .......... .......... 50% 4.67M 2s
+  7550K .......... .......... .......... .......... .......... 50% 4.18M 2s
+  7600K .......... .......... .......... .......... .......... 50% 5.29M 2s
+  7650K .......... .......... .......... .......... .......... 51% 5.64M 2s
+  7700K .......... .......... .......... .......... .......... 51% 4.17M 2s
+  7750K .......... .......... .......... .......... .......... 51% 5.13M 2s
+  7800K .......... .......... .......... .......... .......... 52% 3.21M 2s
+  7850K .......... .......... .......... .......... .......... 52% 7.78M 2s
+  7900K .......... .......... .......... .......... .......... 52% 4.44M 2s
+  7950K .......... .......... .......... .......... .......... 53% 4.27M 2s
+  8000K .......... .......... .......... .......... .......... 53% 6.40M 2s
+  8050K .......... .......... .......... .......... .......... 53% 4.86M 2s
+  8100K .......... .......... .......... .......... .......... 54% 3.86M 2s
+  8150K .......... .......... .......... .......... .......... 54% 7.36M 2s
+  8200K .......... .......... .......... .......... .......... 54% 4.94M 2s
+  8250K .......... .......... .......... .......... .......... 55% 3.92M 2s
+  8300K .......... .......... .......... .......... .......... 55% 4.05M 2s
+  8350K .......... .......... .......... .......... .......... 55% 4.28M 2s
+  8400K .......... .......... .......... .......... .......... 56% 7.77M 2s
+  8450K .......... .......... .......... .......... .......... 56% 4.06M 2s
+  8500K .......... .......... .......... .......... .......... 56% 5.01M 2s
+  8550K .......... .......... .......... .......... .......... 57% 6.39M 2s
+  8600K .......... .......... .......... .......... .......... 57% 4.59M 2s
+  8650K .......... .......... .......... .......... .......... 57% 4.03M 2s
+  8700K .......... .......... .......... .......... .......... 58% 9.26M 2s
+  8750K .......... .......... .......... .......... .......... 58% 4.35M 2s
+  8800K .......... .......... .......... .......... .......... 58% 3.89M 2s
+  8850K .......... .......... .......... .......... .......... 59% 7.77M 1s
+  8900K .......... .......... .......... .......... .......... 59% 5.40M 1s
+  8950K .......... .......... .......... .......... .......... 59% 3.36M 1s
+  9000K .......... .......... .......... .......... .......... 60% 5.72M 1s
+  9050K .......... .......... .......... .......... .......... 60% 3.57M 1s
+  9100K .......... .......... .......... .......... .......... 60% 8.64M 1s
+  9150K .......... .......... .......... .......... .......... 61% 5.30M 1s
+  9200K .......... .......... .......... .......... .......... 61% 3.65M 1s
+  9250K .......... .......... .......... .......... .......... 61% 8.66M 1s
+  9300K .......... .......... .......... .......... .......... 62% 5.56M 1s
+  9350K .......... .......... .......... .......... .......... 62% 3.46M 1s
+  9400K .......... .......... .......... .......... .......... 62% 8.30M 1s
+  9450K .......... .......... .......... .......... .......... 63% 4.83M 1s
+  9500K .......... .......... .......... .......... .......... 63% 3.79M 1s
+  9550K .......... .......... .......... .......... .......... 63% 9.41M 1s
+  9600K .......... .......... .......... .......... .......... 64% 4.35M 1s
+  9650K .......... .......... .......... .......... .......... 64% 4.34M 1s
+  9700K .......... .......... .......... .......... .......... 64% 7.51M 1s
+  9750K .......... .......... .......... .......... .......... 65% 4.83M 1s
+  9800K .......... .......... .......... .......... .......... 65% 4.43M 1s
+  9850K .......... .......... .......... .......... .......... 65% 7.02M 1s
+  9900K .......... .......... .......... .......... .......... 66% 4.35M 1s
+  9950K .......... .......... .......... .......... .......... 66% 4.22M 1s
+ 10000K .......... .......... .......... .......... .......... 66% 10.5M 1s
+ 10050K .......... .......... .......... .......... .......... 67% 4.08M 1s
+ 10100K .......... .......... .......... .......... .......... 67% 4.34M 1s
+ 10150K .......... .......... .......... .......... .......... 67% 9.42M 1s
+ 10200K .......... .......... .......... .......... .......... 68% 4.28M 1s
+ 10250K .......... .......... .......... .......... .......... 68% 4.36M 1s
+ 10300K .......... .......... .......... .......... .......... 68% 8.99M 1s
+ 10350K .......... .......... .......... .......... .......... 69% 4.28M 1s
+ 10400K .......... .......... .......... .......... .......... 69% 4.19M 1s
+ 10450K .......... .......... .......... .......... .......... 69% 9.93M 1s
+ 10500K .......... .......... .......... .......... .......... 70% 4.56M 1s
+ 10550K .......... .......... .......... .......... .......... 70% 4.40M 1s
+ 10600K .......... .......... .......... .......... .......... 70% 7.55M 1s
+ 10650K .......... .......... .......... .......... .......... 71% 5.14M 1s
+ 10700K .......... .......... .......... .......... .......... 71% 4.66M 1s
+ 10750K .......... .......... .......... .......... .......... 71% 6.97M 1s
+ 10800K .......... .......... .......... .......... .......... 72% 5.11M 1s
+ 10850K .......... .......... .......... .......... .......... 72% 4.70M 1s
+ 10900K .......... .......... .......... .......... .......... 72% 6.96M 1s
+ 10950K .......... .......... .......... .......... .......... 73% 3.69M 1s
+ 11000K .......... .......... .......... .......... .......... 73% 7.20M 1s
+ 11050K .......... .......... .......... .......... .......... 73% 7.01M 1s
+ 11100K .......... .......... .......... .......... .......... 74% 3.88M 1s
+ 11150K .......... .......... .......... .......... .......... 74% 6.82M 1s
+ 11200K .......... .......... .......... .......... .......... 74% 7.05M 1s
+ 11250K .......... .......... .......... .......... .......... 75% 4.74M 1s
+ 11300K .......... .......... .......... .......... .......... 75% 4.73M 1s
+ 11350K .......... .......... .......... .......... .......... 75% 7.90M 1s
+ 11400K .......... .......... .......... .......... .......... 76% 4.89M 1s
+ 11450K .......... .......... .......... .......... .......... 76% 4.41M 1s
+ 11500K .......... .......... .......... .......... .......... 76% 7.04M 1s
+ 11550K .......... .......... .......... .......... .......... 77% 4.66M 1s
+ 11600K .......... .......... .......... .......... .......... 77% 4.98M 1s
+ 11650K .......... .......... .......... .......... .......... 77% 7.45M 1s
+ 11700K .......... .......... .......... .......... .......... 78% 4.24M 1s
+ 11750K .......... .......... .......... .......... .......... 78% 5.57M 1s
+ 11800K .......... .......... .......... .......... .......... 78% 7.94M 1s
+ 11850K .......... .......... .......... .......... .......... 79% 6.34M 1s
+ 11900K .......... .......... .......... .......... .......... 79% 4.15M 1s
+ 11950K .......... .......... .......... .......... .......... 79% 7.50M 1s
+ 12000K .......... .......... .......... .......... .......... 80% 4.83M 1s
+ 12050K .......... .......... .......... .......... .......... 80% 4.65M 1s
+ 12100K .......... .......... .......... .......... .......... 80% 7.59M 1s
+ 12150K .......... .......... .......... .......... .......... 81% 5.29M 1s
+ 12200K .......... .......... .......... .......... .......... 81% 4.42M 1s
+ 12250K .......... .......... .......... .......... .......... 81% 7.23M 1s
+ 12300K .......... .......... .......... .......... .......... 82% 4.89M 1s
+ 12350K .......... .......... .......... .......... .......... 82% 4.39M 1s
+ 12400K .......... .......... .......... .......... .......... 82% 8.81M 1s
+ 12450K .......... .......... .......... .......... .......... 83% 5.75M 1s
+ 12500K .......... .......... .......... .......... .......... 83% 4.10M 1s
+ 12550K .......... .......... .......... .......... .......... 83% 8.24M 1s
+ 12600K .......... .......... .......... .......... .......... 84% 7.52M 1s
+ 12650K .......... .......... .......... .......... .......... 84% 4.60M 1s
+ 12700K .......... .......... .......... .......... .......... 84% 5.49M 1s
+ 12750K .......... .......... .......... .......... .......... 85% 7.72M 1s
+ 12800K .......... .......... .......... .......... .......... 85% 3.84M 0s
+ 12850K .......... .......... .......... .......... .......... 85% 6.51M 0s
+ 12900K .......... .......... .......... .......... .......... 86% 8.43M 0s
+ 12950K .......... .......... .......... .......... .......... 86% 4.49M 0s
+ 13000K .......... .......... .......... .......... .......... 86% 4.69M 0s
+ 13050K .......... .......... .......... .......... .......... 87% 8.45M 0s
+ 13100K .......... .......... .......... .......... .......... 87% 4.90M 0s
+ 13150K .......... .......... .......... .......... .......... 87% 4.69M 0s
+ 13200K .......... .......... .......... .......... .......... 88% 7.98M 0s
+ 13250K .......... .......... .......... .......... .......... 88% 9.14M 0s
+ 13300K .......... .......... .......... .......... .......... 88% 3.77M 0s
+ 13350K .......... .......... .......... .......... .......... 89% 5.22M 0s
+ 13400K .......... .......... .......... .......... .......... 89% 10.4M 0s
+ 13450K .......... .......... .......... .......... .......... 89% 4.20M 0s
+ 13500K .......... .......... .......... .......... .......... 90% 6.65M 0s
+ 13550K .......... .......... .......... .......... .......... 90% 7.04M 0s
+ 13600K .......... .......... .......... .......... .......... 90% 4.80M 0s
+ 13650K .......... .......... .......... .......... .......... 91% 5.39M 0s
+ 13700K .......... .......... .......... .......... .......... 91% 6.64M 0s
+ 13750K .......... .......... .......... .......... .......... 91% 5.96M 0s
+ 13800K .......... .......... .......... .......... .......... 92% 5.67M 0s
+ 13850K .......... .......... .......... .......... .......... 92% 5.26M 0s
+ 13900K .......... .......... .......... .......... .......... 92% 9.73M 0s
+ 13950K .......... .......... .......... .......... .......... 93% 4.08M 0s
+ 14000K .......... .......... .......... .......... .......... 93% 5.50M 0s
+ 14050K .......... .......... .......... .......... .......... 93% 9.46M 0s
+ 14100K .......... .......... .......... .......... .......... 94% 5.07M 0s
+ 14150K .......... .......... .......... .......... .......... 94% 4.40M 0s
+ 14200K .......... .......... .......... .......... .......... 94% 8.64M 0s
+ 14250K .......... .......... .......... .......... .......... 95% 5.12M 0s
+ 14300K .......... .......... .......... .......... .......... 95% 4.50M 0s
+ 14350K .......... .......... .......... .......... .......... 95% 8.67M 0s
+ 14400K .......... .......... .......... .......... .......... 96% 9.51M 0s
+ 14450K .......... .......... .......... .......... .......... 96% 3.62M 0s
+ 14500K .......... .......... .......... .......... .......... 96% 6.37M 0s
+ 14550K .......... .......... .......... .......... .......... 97% 9.19M 0s
+ 14600K .......... .......... .......... .......... .......... 97% 5.44M 0s
+ 14650K .......... .......... .......... .......... .......... 97% 4.72M 0s
+ 14700K .......... .......... .......... .......... .......... 98% 7.60M 0s
+ 14750K .......... .......... .......... .......... .......... 98% 7.59M 0s
+ 14800K .......... .......... .......... .......... .......... 98% 4.57M 0s
+ 14850K .......... .......... .......... .......... .......... 99% 5.95M 0s
+ 14900K .......... .......... .......... .......... .......... 99% 8.48M 0s
+ 14950K .......... .......... .......... .......... .......... 99% 5.09M 0s
+ 15000K .......... .......... .......... .......... .         100% 4.39M=3.3s
+
+2019-02-01 15:58:53 (4.51 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.fits’ saved [15402240/15402240]
+
+--2019-02-01 15:58:53--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.85M=0s
+
+2019-02-01 15:58:53 (6.85 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:53--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 14.9M 0s
+    50K .......... .......... .....                           100% 7.58M=0.007s
+
+2019-02-01 15:58:53 (11.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:58:53--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 73932 (72K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 69% 13.5M 0s
+    50K .......... .......... ..                              100% 12.1M=0.005s
+
+2019-02-01 15:58:54 (13.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.ps’ saved [73932/73932]
+
+--2019-02-01 15:58:54--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 34.8M=0s
+
+2019-02-01 15:58:54 (34.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:58:54--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:54 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:54--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 20160 (20K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.moc.fits’
+
+     0K .......... .........                                  100% 11.6M=0.002s
+
+2019-02-01 15:58:54 (11.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-5.MIPS.1.moc.fits’ saved [20160/20160]
+
+--2019-02-01 15:58:54--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 12775680 (12M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 11.4M 1s
+    50K .......... .......... .......... .......... ..........  0% 11.9M 1s
+   100K .......... .......... .......... .......... ..........  1%  494K 9s
+   150K .......... .......... .......... .......... ..........  1%  132M 7s
+   200K .......... .......... .......... .......... ..........  2% 2.35M 6s
+   250K .......... .......... .......... .......... ..........  2% 25.1M 5s
+   300K .......... .......... .......... .......... ..........  2% 22.8M 5s
+   350K .......... .......... .......... .......... ..........  3% 9.27M 4s
+   400K .......... .......... .......... .......... ..........  3% 2.65M 4s
+   450K .......... .......... .......... .......... ..........  4% 6.57M 4s
+   500K .......... .......... .......... .......... ..........  4% 8.00M 4s
+   550K .......... .......... .......... .......... ..........  4% 2.46M 4s
+   600K .......... .......... .......... .......... ..........  5% 8.76M 4s
+   650K .......... .......... .......... .......... ..........  5% 2.36M 4s
+   700K .......... .......... .......... .......... ..........  6% 11.7M 3s
+   750K .......... .......... .......... .......... ..........  6% 2.73M 4s
+   800K .......... .......... .......... .......... ..........  6% 6.16M 3s
+   850K .......... .......... .......... .......... ..........  7% 7.70M 3s
+   900K .......... .......... .......... .......... ..........  7% 2.53M 3s
+   950K .......... .......... .......... .......... ..........  8% 10.9M 3s
+  1000K .......... .......... .......... .......... ..........  8% 2.77M 3s
+  1050K .......... .......... .......... .......... ..........  8% 6.40M 3s
+  1100K .......... .......... .......... .......... ..........  9% 8.88M 3s
+  1150K .......... .......... .......... .......... ..........  9% 2.50M 3s
+  1200K .......... .......... .......... .......... .......... 10% 9.96M 3s
+  1250K .......... .......... .......... .......... .......... 10% 2.68M 3s
+  1300K .......... .......... .......... .......... .......... 10% 7.44M 3s
+  1350K .......... .......... .......... .......... .......... 11% 8.21M 3s
+  1400K .......... .......... .......... .......... .......... 11% 2.42M 3s
+  1450K .......... .......... .......... .......... .......... 12% 9.31M 3s
+  1500K .......... .......... .......... .......... .......... 12% 8.06M 3s
+  1550K .......... .......... .......... .......... .......... 12% 2.60M 3s
+  1600K .......... .......... .......... .......... .......... 13% 8.81M 3s
+  1650K .......... .......... .......... .......... .......... 13% 2.85M 3s
+  1700K .......... .......... .......... .......... .......... 14% 6.92M 3s
+  1750K .......... .......... .......... .......... .......... 14% 11.6M 3s
+  1800K .......... .......... .......... .......... .......... 14% 2.21M 3s
+  1850K .......... .......... .......... .......... .......... 15% 10.8M 3s
+  1900K .......... .......... .......... .......... .......... 15% 3.17M 3s
+  1950K .......... .......... .......... .......... .......... 16% 5.49M 3s
+  2000K .......... .......... .......... .......... .......... 16% 10.7M 3s
+  2050K .......... .......... .......... .......... .......... 16% 2.71M 3s
+  2100K .......... .......... .......... .......... .......... 17% 8.17M 3s
+  2150K .......... .......... .......... .......... .......... 17% 8.45M 2s
+  2200K .......... .......... .......... .......... .......... 18% 2.62M 3s
+  2250K .......... .......... .......... .......... .......... 18% 10.4M 2s
+  2300K .......... .......... .......... .......... .......... 18% 3.24M 2s
+  2350K .......... .......... .......... .......... .......... 19% 5.22M 2s
+  2400K .......... .......... .......... .......... .......... 19% 10.9M 2s
+  2450K .......... .......... .......... .......... .......... 20% 2.86M 2s
+  2500K .......... .......... .......... .......... .......... 20% 6.99M 2s
+  2550K .......... .......... .......... .......... .......... 20% 7.26M 2s
+  2600K .......... .......... .......... .......... .......... 21% 2.78M 2s
+  2650K .......... .......... .......... .......... .......... 21% 8.78M 2s
+  2700K .......... .......... .......... .......... .......... 22% 3.27M 2s
+  2750K .......... .......... .......... .......... .......... 22% 5.23M 2s
+  2800K .......... .......... .......... .......... .......... 22% 10.4M 2s
+  2850K .......... .......... .......... .......... .......... 23% 2.81M 2s
+  2900K .......... .......... .......... .......... .......... 23% 7.29M 2s
+  2950K .......... .......... .......... .......... .......... 24% 10.2M 2s
+  3000K .......... .......... .......... .......... .......... 24% 2.63M 2s
+  3050K .......... .......... .......... .......... .......... 24% 7.65M 2s
+  3100K .......... .......... .......... .......... .......... 25% 3.40M 2s
+  3150K .......... .......... .......... .......... .......... 25% 5.01M 2s
+  3200K .......... .......... .......... .......... .......... 26% 10.1M 2s
+  3250K .......... .......... .......... .......... .......... 26% 3.62M 2s
+  3300K .......... .......... .......... .......... .......... 26% 4.32M 2s
+  3350K .......... .......... .......... .......... .......... 27% 9.61M 2s
+  3400K .......... .......... .......... .......... .......... 27% 3.14M 2s
+  3450K .......... .......... .......... .......... .......... 28% 6.61M 2s
+  3500K .......... .......... .......... .......... .......... 28% 10.3M 2s
+  3550K .......... .......... .......... .......... .......... 28% 2.84M 2s
+  3600K .......... .......... .......... .......... .......... 29% 7.99M 2s
+  3650K .......... .......... .......... .......... .......... 29% 3.49M 2s
+  3700K .......... .......... .......... .......... .......... 30% 4.45M 2s
+  3750K .......... .......... .......... .......... .......... 30% 11.7M 2s
+  3800K .......... .......... .......... .......... .......... 30% 3.84M 2s
+  3850K .......... .......... .......... .......... .......... 31% 3.85M 2s
+  3900K .......... .......... .......... .......... .......... 31% 13.4M 2s
+  3950K .......... .......... .......... .......... .......... 32% 2.76M 2s
+  4000K .......... .......... .......... .......... .......... 32% 7.78M 2s
+  4050K .......... .......... .......... .......... .......... 32% 10.0M 2s
+  4100K .......... .......... .......... .......... .......... 33% 2.89M 2s
+  4150K .......... .......... .......... .......... .......... 33% 7.26M 2s
+  4200K .......... .......... .......... .......... .......... 34% 9.29M 2s
+  4250K .......... .......... .......... .......... .......... 34% 2.86M 2s
+  4300K .......... .......... .......... .......... .......... 34% 7.49M 2s
+  4350K .......... .......... .......... .......... .......... 35% 9.40M 2s
+  4400K .......... .......... .......... .......... .......... 35% 2.91M 2s
+  4450K .......... .......... .......... .......... .......... 36% 7.73M 2s
+  4500K .......... .......... .......... .......... .......... 36% 4.57M 2s
+  4550K .......... .......... .......... .......... .......... 36% 4.62M 2s
+  4600K .......... .......... .......... .......... .......... 37% 7.80M 2s
+  4650K .......... .......... .......... .......... .......... 37% 4.28M 2s
+  4700K .......... .......... .......... .......... .......... 38% 4.48M 2s
+  4750K .......... .......... .......... .......... .......... 38% 9.04M 2s
+  4800K .......... .......... .......... .......... .......... 38% 4.52M 2s
+  4850K .......... .......... .......... .......... .......... 39% 4.20M 2s
+  4900K .......... .......... .......... .......... .......... 39% 9.12M 2s
+  4950K .......... .......... .......... .......... .......... 40% 4.18M 2s
+  5000K .......... .......... .......... .......... .......... 40% 4.45M 2s
+  5050K .......... .......... .......... .......... .......... 40% 9.33M 2s
+  5100K .......... .......... .......... .......... .......... 41% 3.23M 2s
+  5150K .......... .......... .......... .......... .......... 41% 6.18M 2s
+  5200K .......... .......... .......... .......... .......... 42% 9.03M 2s
+  5250K .......... .......... .......... .......... .......... 42% 3.42M 2s
+  5300K .......... .......... .......... .......... .......... 42% 5.96M 2s
+  5350K .......... .......... .......... .......... .......... 43% 9.09M 2s
+  5400K .......... .......... .......... .......... .......... 43% 3.39M 2s
+  5450K .......... .......... .......... .......... .......... 44% 5.96M 2s
+  5500K .......... .......... .......... .......... .......... 44% 9.51M 1s
+  5550K .......... .......... .......... .......... .......... 44% 2.85M 1s
+  5600K .......... .......... .......... .......... .......... 45% 8.58M 1s
+  5650K .......... .......... .......... .......... .......... 45% 9.53M 1s
+  5700K .......... .......... .......... .......... .......... 46% 2.85M 1s
+  5750K .......... .......... .......... .......... .......... 46% 7.83M 1s
+  5800K .......... .......... .......... .......... .......... 46% 10.4M 1s
+  5850K .......... .......... .......... .......... .......... 47% 2.86M 1s
+  5900K .......... .......... .......... .......... .......... 47% 7.24M 1s
+  5950K .......... .......... .......... .......... .......... 48% 9.99M 1s
+  6000K .......... .......... .......... .......... .......... 48% 2.99M 1s
+  6050K .......... .......... .......... .......... .......... 48% 8.89M 1s
+  6100K .......... .......... .......... .......... .......... 49% 8.74M 1s
+  6150K .......... .......... .......... .......... .......... 49% 2.92M 1s
+  6200K .......... .......... .......... .......... .......... 50% 8.93M 1s
+  6250K .......... .......... .......... .......... .......... 50% 9.96M 1s
+  6300K .......... .......... .......... .......... .......... 50% 2.77M 1s
+  6350K .......... .......... .......... .......... .......... 51% 10.4M 1s
+  6400K .......... .......... .......... .......... .......... 51% 9.45M 1s
+  6450K .......... .......... .......... .......... .......... 52% 2.69M 1s
+  6500K .......... .......... .......... .......... .......... 52% 8.81M 1s
+  6550K .......... .......... .......... .......... .......... 52% 13.7M 1s
+  6600K .......... .......... .......... .......... .......... 53% 2.59M 1s
+  6650K .......... .......... .......... .......... .......... 53% 12.1M 1s
+  6700K .......... .......... .......... .......... .......... 54% 9.80M 1s
+  6750K .......... .......... .......... .......... .......... 54% 2.58M 1s
+  6800K .......... .......... .......... .......... .......... 54% 10.9M 1s
+  6850K .......... .......... .......... .......... .......... 55% 10.9M 1s
+  6900K .......... .......... .......... .......... .......... 55% 2.57M 1s
+  6950K .......... .......... .......... .......... .......... 56% 10.9M 1s
+  7000K .......... .......... .......... .......... .......... 56% 9.44M 1s
+  7050K .......... .......... .......... .......... .......... 56% 2.69M 1s
+  7100K .......... .......... .......... .......... .......... 57% 9.93M 1s
+  7150K .......... .......... .......... .......... .......... 57% 13.2M 1s
+  7200K .......... .......... .......... .......... .......... 58% 3.30M 1s
+  7250K .......... .......... .......... .......... .......... 58% 5.07M 1s
+  7300K .......... .......... .......... .......... .......... 58% 14.3M 1s
+  7350K .......... .......... .......... .......... .......... 59% 4.77M 1s
+  7400K .......... .......... .......... .......... .......... 59% 3.56M 1s
+  7450K .......... .......... .......... .......... .......... 60% 13.4M 1s
+  7500K .......... .......... .......... .......... .......... 60% 5.47M 1s
+  7550K .......... .......... .......... .......... .......... 60% 3.57M 1s
+  7600K .......... .......... .......... .......... .......... 61% 9.83M 1s
+  7650K .......... .......... .......... .......... .......... 61% 5.56M 1s
+  7700K .......... .......... .......... .......... .......... 62% 3.45M 1s
+  7750K .......... .......... .......... .......... .......... 62% 9.72M 1s
+  7800K .......... .......... .......... .......... .......... 62% 5.77M 1s
+  7850K .......... .......... .......... .......... .......... 63% 3.41M 1s
+  7900K .......... .......... .......... .......... .......... 63% 12.3M 1s
+  7950K .......... .......... .......... .......... .......... 64% 5.17M 1s
+  8000K .......... .......... .......... .......... .......... 64% 3.52M 1s
+  8050K .......... .......... .......... .......... .......... 64% 12.1M 1s
+  8100K .......... .......... .......... .......... .......... 65% 10.6M 1s
+  8150K .......... .......... .......... .......... .......... 65% 2.80M 1s
+  8200K .......... .......... .......... .......... .......... 66% 9.34M 1s
+  8250K .......... .......... .......... .......... .......... 66% 11.4M 1s
+  8300K .......... .......... .......... .......... .......... 66% 2.66M 1s
+  8350K .......... .......... .......... .......... .......... 67% 10.4M 1s
+  8400K .......... .......... .......... .......... .......... 67% 8.89M 1s
+  8450K .......... .......... .......... .......... .......... 68% 4.08M 1s
+  8500K .......... .......... .......... .......... .......... 68% 4.61M 1s
+  8550K .......... .......... .......... .......... .......... 68% 14.8M 1s
+  8600K .......... .......... .......... .......... .......... 69% 5.89M 1s
+  8650K .......... .......... .......... .......... .......... 69% 3.28M 1s
+  8700K .......... .......... .......... .......... .......... 70% 10.4M 1s
+  8750K .......... .......... .......... .......... .......... 70% 7.74M 1s
+  8800K .......... .......... .......... .......... .......... 70% 3.18M 1s
+  8850K .......... .......... .......... .......... .......... 71% 10.8M 1s
+  8900K .......... .......... .......... .......... .......... 71% 6.22M 1s
+  8950K .......... .......... .......... .......... .......... 72% 3.26M 1s
+  9000K .......... .......... .......... .......... .......... 72% 11.8M 1s
+  9050K .......... .......... .......... .......... .......... 72% 9.15M 1s
+  9100K .......... .......... .......... .......... .......... 73% 2.96M 1s
+  9150K .......... .......... .......... .......... .......... 73% 8.89M 1s
+  9200K .......... .......... .......... .......... .......... 74% 13.2M 1s
+  9250K .......... .......... .......... .......... .......... 74% 6.30M 1s
+  9300K .......... .......... .......... .......... .......... 74% 1.08M 1s
+  9350K .......... .......... .......... .......... .......... 75%  166M 1s
+  9400K .......... .......... .......... .......... .......... 75%  171M 1s
+  9450K .......... .......... .......... .......... .......... 76%  140M 1s
+  9500K .......... .......... .......... .......... .......... 76% 67.1M 1s
+  9550K .......... .......... .......... .......... .......... 76% 2.50M 1s
+  9600K .......... .......... .......... .......... .......... 77% 7.08M 1s
+  9650K .......... .......... .......... .......... .......... 77% 4.93M 1s
+  9700K .......... .......... .......... .......... .......... 78% 3.04M 1s
+  9750K .......... .......... .......... .......... .......... 78% 9.75M 1s
+  9800K .......... .......... .......... .......... .......... 78% 2.50M 1s
+  9850K .......... .......... .......... .......... .......... 79% 8.11M 1s
+  9900K .......... .......... .......... .......... .......... 79% 2.46M 1s
+  9950K .......... .......... .......... .......... .......... 80% 8.76M 1s
+ 10000K .......... .......... .......... .......... .......... 80% 4.83M 0s
+ 10050K .......... .......... .......... .......... .......... 80% 3.11M 0s
+ 10100K .......... .......... .......... .......... .......... 81% 4.95M 0s
+ 10150K .......... .......... .......... .......... .......... 81% 3.07M 0s
+ 10200K .......... .......... .......... .......... .......... 82% 9.53M 0s
+ 10250K .......... .......... .......... .......... .......... 82% 2.67M 0s
+ 10300K .......... .......... .......... .......... .......... 82% 6.15M 0s
+ 10350K .......... .......... .......... .......... .......... 83% 4.79M 0s
+ 10400K .......... .......... .......... .......... .......... 83% 3.05M 0s
+ 10450K .......... .......... .......... .......... .......... 84% 9.47M 0s
+ 10500K .......... .......... .......... .......... .......... 84% 2.56M 0s
+ 10550K .......... .......... .......... .......... .......... 84% 6.79M 0s
+ 10600K .......... .......... .......... .......... .......... 85% 2.83M 0s
+ 10650K .......... .......... .......... .......... .......... 85% 6.58M 0s
+ 10700K .......... .......... .......... .......... .......... 86% 5.00M 0s
+ 10750K .......... .......... .......... .......... .......... 86% 3.27M 0s
+ 10800K .......... .......... .......... .......... .......... 86% 8.02M 0s
+ 10850K .......... .......... .......... .......... .......... 87% 2.47M 0s
+ 10900K .......... .......... .......... .......... .......... 87% 7.82M 0s
+ 10950K .......... .......... .......... .......... .......... 88% 4.71M 0s
+ 11000K .......... .......... .......... .......... .......... 88% 3.20M 0s
+ 11050K .......... .......... .......... .......... .......... 88% 8.98M 0s
+ 11100K .......... .......... .......... .......... .......... 89% 2.62M 0s
+ 11150K .......... .......... .......... .......... .......... 89% 7.43M 0s
+ 11200K .......... .......... .......... .......... .......... 90% 2.71M 0s
+ 11250K .......... .......... .......... .......... .......... 90% 6.94M 0s
+ 11300K .......... .......... .......... .......... .......... 90% 5.37M 0s
+ 11350K .......... .......... .......... .......... .......... 91% 3.17M 0s
+ 11400K .......... .......... .......... .......... .......... 91% 7.38M 0s
+ 11450K .......... .......... .......... .......... .......... 92% 2.76M 0s
+ 11500K .......... .......... .......... .......... .......... 92% 6.82M 0s
+ 11550K .......... .......... .......... .......... .......... 92% 5.46M 0s
+ 11600K .......... .......... .......... .......... .......... 93% 3.18M 0s
+ 11650K .......... .......... .......... .......... .......... 93% 6.24M 0s
+ 11700K .......... .......... .......... .......... .......... 94% 2.95M 0s
+ 11750K .......... .......... .......... .......... .......... 94% 6.18M 0s
+ 11800K .......... .......... .......... .......... .......... 94% 7.04M 0s
+ 11850K .......... .......... .......... .......... .......... 95% 3.14M 0s
+ 11900K .......... .......... .......... .......... .......... 95% 6.52M 0s
+ 11950K .......... .......... .......... .......... .......... 96% 2.76M 0s
+ 12000K .......... .......... .......... .......... .......... 96% 6.12M 0s
+ 12050K .......... .......... .......... .......... .......... 96% 9.18M 0s
+ 12100K .......... .......... .......... .......... .......... 97% 3.07M 0s
+ 12150K .......... .......... .......... .......... .......... 97% 5.68M 0s
+ 12200K .......... .......... .......... .......... .......... 98% 2.85M 0s
+ 12250K .......... .......... .......... .......... .......... 98% 6.00M 0s
+ 12300K .......... .......... .......... .......... .......... 98% 10.8M 0s
+ 12350K .......... .......... .......... .......... .......... 99% 2.97M 0s
+ 12400K .......... .......... .......... .......... .......... 99% 5.75M 0s
+ 12450K .......... .......... ......                          100% 10.7M=2.6s
+
+2019-02-01 15:58:56 (4.71 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.fits’ saved [12775680/12775680]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.19M=0s
+
+2019-02-01 15:58:56 (6.19 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 16.5M 0s
+    50K .......... .......... .....                           100% 8.46M=0.006s
+
+2019-02-01 15:58:56 (12.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 73059 (71K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 70% 12.1M 0s
+    50K .......... .......... .                               100% 11.1M=0.006s
+
+2019-02-01 15:58:56 (11.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.ps’ saved [73059/73059]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 31.9M=0s
+
+2019-02-01 15:58:56 (31.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:56 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 20160 (20K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.moc.fits’
+
+     0K .......... .........                                  100% 10.9M=0.002s
+
+2019-02-01 15:58:56 (10.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-6.MIPS.1.moc.fits’ saved [20160/20160]
+
+--2019-02-01 15:58:56--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 10442880 (10.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 11.6M 1s
+    50K .......... .......... .......... .......... ..........  0% 4.97M 1s
+   100K .......... .......... .......... .......... ..........  1% 1.16M 4s
+   150K .......... .......... .......... .......... ..........  1%  149M 3s
+   200K .......... .......... .......... .......... ..........  2% 50.0M 2s
+   250K .......... .......... .......... .......... ..........  2% 4.30M 2s
+   300K .......... .......... .......... .......... ..........  3% 2.94M 2s
+   350K .......... .......... .......... .......... ..........  3% 2.23M 3s
+   400K .......... .......... .......... .......... ..........  4% 7.85M 2s
+   450K .......... .......... .......... .......... ..........  4% 2.24M 3s
+   500K .......... .......... .......... .......... ..........  5% 8.66M 2s
+   550K .......... .......... .......... .......... ..........  5% 2.24M 3s
+   600K .......... .......... .......... .......... ..........  6% 8.56M 2s
+   650K .......... .......... .......... .......... ..........  6% 2.23M 3s
+   700K .......... .......... .......... .......... ..........  7% 8.50M 2s
+   750K .......... .......... .......... .......... ..........  7% 2.24M 3s
+   800K .......... .......... .......... .......... ..........  8% 4.20M 3s
+   850K .......... .......... .......... .......... ..........  8% 3.05M 3s
+   900K .......... .......... .......... .......... ..........  9% 4.36M 2s
+   950K .......... .......... .......... .......... ..........  9% 3.04M 3s
+  1000K .......... .......... .......... .......... .......... 10% 4.25M 2s
+  1050K .......... .......... .......... .......... .......... 10% 2.98M 2s
+  1100K .......... .......... .......... .......... .......... 11% 3.97M 2s
+  1150K .......... .......... .......... .......... .......... 11% 3.10M 2s
+  1200K .......... .......... .......... .......... .......... 12% 2.10M 3s
+  1250K .......... .......... .......... .......... .......... 12% 7.09M 2s
+  1300K .......... .......... .......... .......... .......... 13% 2.40M 2s
+  1350K .......... .......... .......... .......... .......... 13% 7.17M 2s
+  1400K .......... .......... .......... .......... .......... 14% 2.34M 2s
+  1450K .......... .......... .......... .......... .......... 14% 7.41M 2s
+  1500K .......... .......... .......... .......... .......... 15% 2.30M 2s
+  1550K .......... .......... .......... .......... .......... 15% 8.22M 2s
+  1600K .......... .......... .......... .......... .......... 16% 2.23M 2s
+  1650K .......... .......... .......... .......... .......... 16% 9.42M 2s
+  1700K .......... .......... .......... .......... .......... 17% 2.15M 2s
+  1750K .......... .......... .......... .......... .......... 17% 9.26M 2s
+  1800K .......... .......... .......... .......... .......... 18% 2.16M 2s
+  1850K .......... .......... .......... .......... .......... 18% 9.13M 2s
+  1900K .......... .......... .......... .......... .......... 19% 2.19M 2s
+  1950K .......... .......... .......... .......... .......... 19% 8.75M 2s
+  2000K .......... .......... .......... .......... .......... 20% 2.29M 2s
+  2050K .......... .......... .......... .......... .......... 20% 7.61M 2s
+  2100K .......... .......... .......... .......... .......... 21% 4.24M 2s
+  2150K .......... .......... .......... .......... .......... 21% 2.98M 2s
+  2200K .......... .......... .......... .......... .......... 22% 4.22M 2s
+  2250K .......... .......... .......... .......... .......... 22% 3.15M 2s
+  2300K .......... .......... .......... .......... .......... 23% 4.13M 2s
+  2350K .......... .......... .......... .......... .......... 23% 3.33M 2s
+  2400K .......... .......... .......... .......... .......... 24% 4.70M 2s
+  2450K .......... .......... .......... .......... .......... 24% 2.91M 2s
+  2500K .......... .......... .......... .......... .......... 25% 4.64M 2s
+  2550K .......... .......... .......... .......... .......... 25% 2.92M 2s
+  2600K .......... .......... .......... .......... .......... 25% 4.39M 2s
+  2650K .......... .......... .......... .......... .......... 26% 2.91M 2s
+  2700K .......... .......... .......... .......... .......... 26% 10.6M 2s
+  2750K .......... .......... .......... .......... .......... 27% 2.37M 2s
+  2800K .......... .......... .......... .......... .......... 27% 6.75M 2s
+  2850K .......... .......... .......... .......... .......... 28% 2.39M 2s
+  2900K .......... .......... .......... .......... .......... 28% 9.64M 2s
+  2950K .......... .......... .......... .......... .......... 29% 4.43M 2s
+  3000K .......... .......... .......... .......... .......... 29% 3.12M 2s
+  3050K .......... .......... .......... .......... .......... 30% 4.76M 2s
+  3100K .......... .......... .......... .......... .......... 30% 3.11M 2s
+  3150K .......... .......... .......... .......... .......... 31% 5.71M 2s
+  3200K .......... .......... .......... .......... .......... 31% 2.77M 2s
+  3250K .......... .......... .......... .......... .......... 32% 9.85M 2s
+  3300K .......... .......... .......... .......... .......... 32% 2.24M 2s
+  3350K .......... .......... .......... .......... .......... 33% 8.48M 2s
+  3400K .......... .......... .......... .......... .......... 33% 2.39M 2s
+  3450K .......... .......... .......... .......... .......... 34% 9.39M 2s
+  3500K .......... .......... .......... .......... .......... 34% 4.78M 2s
+  3550K .......... .......... .......... .......... .......... 35% 2.82M 2s
+  3600K .......... .......... .......... .......... .......... 35% 8.21M 2s
+  3650K .......... .......... .......... .......... .......... 36% 2.61M 2s
+  3700K .......... .......... .......... .......... .......... 36% 8.88M 2s
+  3750K .......... .......... .......... .......... .......... 37% 2.32M 2s
+  3800K .......... .......... .......... .......... .......... 37% 7.15M 2s
+  3850K .......... .......... .......... .......... .......... 38% 6.03M 2s
+  3900K .......... .......... .......... .......... .......... 38% 2.77M 2s
+  3950K .......... .......... .......... .......... .......... 39% 9.61M 2s
+  4000K .......... .......... .......... .......... .......... 39% 2.29M 2s
+  4050K .......... .......... .......... .......... .......... 40% 11.5M 2s
+  4100K .......... .......... .......... .......... .......... 40% 2.42M 2s
+  4150K .......... .......... .......... .......... .......... 41% 7.56M 2s
+  4200K .......... .......... .......... .......... .......... 41% 6.04M 2s
+  4250K .......... .......... .......... .......... .......... 42% 2.90M 2s
+  4300K .......... .......... .......... .......... .......... 42% 7.89M 2s
+  4350K .......... .......... .......... .......... .......... 43% 2.62M 2s
+  4400K .......... .......... .......... .......... .......... 43% 8.68M 2s
+  4450K .......... .......... .......... .......... .......... 44% 2.59M 1s
+  4500K .......... .......... .......... .......... .......... 44% 8.16M 1s
+  4550K .......... .......... .......... .......... .......... 45% 6.47M 1s
+  4600K .......... .......... .......... .......... .......... 45% 2.75M 1s
+  4650K .......... .......... .......... .......... .......... 46% 10.1M 1s
+  4700K .......... .......... .......... .......... .......... 46% 2.57M 1s
+  4750K .......... .......... .......... .......... .......... 47% 8.14M 1s
+  4800K .......... .......... .......... .......... .......... 47% 2.46M 1s
+  4850K .......... .......... .......... .......... .......... 48% 8.01M 1s
+  4900K .......... .......... .......... .......... .......... 48% 9.41M 1s
+  4950K .......... .......... .......... .......... .......... 49% 2.37M 1s
+  5000K .......... .......... .......... .......... .......... 49% 9.59M 1s
+  5050K .......... .......... .......... .......... .......... 50% 2.62M 1s
+  5100K .......... .......... .......... .......... .......... 50% 6.52M 1s
+  5150K .......... .......... .......... .......... .......... 50% 11.3M 1s
+  5200K .......... .......... .......... .......... .......... 51% 2.49M 1s
+  5250K .......... .......... .......... .......... .......... 51% 8.13M 1s
+  5300K .......... .......... .......... .......... .......... 52% 2.88M 1s
+  5350K .......... .......... .......... .......... .......... 52% 6.88M 1s
+  5400K .......... .......... .......... .......... .......... 53% 6.02M 1s
+  5450K .......... .......... .......... .......... .......... 53% 3.09M 1s
+  5500K .......... .......... .......... .......... .......... 54% 6.01M 1s
+  5550K .......... .......... .......... .......... .......... 54% 3.04M 1s
+  5600K .......... .......... .......... .......... .......... 55% 6.21M 1s
+  5650K .......... .......... .......... .......... .......... 55% 9.73M 1s
+  5700K .......... .......... .......... .......... .......... 56% 2.67M 1s
+  5750K .......... .......... .......... .......... .......... 56% 5.95M 1s
+  5800K .......... .......... .......... .......... .......... 57% 2.97M 1s
+  5850K .......... .......... .......... .......... .......... 57% 6.78M 1s
+  5900K .......... .......... .......... .......... .......... 58% 9.00M 1s
+  5950K .......... .......... .......... .......... .......... 58% 2.83M 1s
+  6000K .......... .......... .......... .......... .......... 59% 6.05M 1s
+  6050K .......... .......... .......... .......... .......... 59% 10.7M 1s
+  6100K .......... .......... .......... .......... .......... 60% 2.53M 1s
+  6150K .......... .......... .......... .......... .......... 60% 9.20M 1s
+  6200K .......... .......... .......... .......... .......... 61% 2.80M 1s
+  6250K .......... .......... .......... .......... .......... 61% 6.08M 1s
+  6300K .......... .......... .......... .......... .......... 62% 9.24M 1s
+  6350K .......... .......... .......... .......... .......... 62% 2.61M 1s
+  6400K .......... .......... .......... .......... .......... 63% 8.55M 1s
+  6450K .......... .......... .......... .......... .......... 63% 3.07M 1s
+  6500K .......... .......... .......... .......... .......... 64% 5.93M 1s
+  6550K .......... .......... .......... .......... .......... 64% 8.81M 1s
+  6600K .......... .......... .......... .......... .......... 65% 3.05M 1s
+  6650K .......... .......... .......... .......... .......... 65% 4.79M 1s
+  6700K .......... .......... .......... .......... .......... 66% 13.3M 1s
+  6750K .......... .......... .......... .......... .......... 66% 2.74M 1s
+  6800K .......... .......... .......... .......... .......... 67% 6.00M 1s
+  6850K .......... .......... .......... .......... .......... 67% 3.46M 1s
+  6900K .......... .......... .......... .......... .......... 68% 5.71M 1s
+  6950K .......... .......... .......... .......... .......... 68% 7.80M 1s
+  7000K .......... .......... .......... .......... .......... 69% 3.31M 1s
+  7050K .......... .......... .......... .......... .......... 69% 5.15M 1s
+  7100K .......... .......... .......... .......... .......... 70% 8.49M 1s
+  7150K .......... .......... .......... .......... .......... 70% 2.86M 1s
+  7200K .......... .......... .......... .......... .......... 71% 7.52M 1s
+  7250K .......... .......... .......... .......... .......... 71% 3.04M 1s
+  7300K .......... .......... .......... .......... .......... 72% 7.84M 1s
+  7350K .......... .......... .......... .......... .......... 72% 6.48M 1s
+  7400K .......... .......... .......... .......... .......... 73% 3.41M 1s
+  7450K .......... .......... .......... .......... .......... 73% 6.45M 1s
+  7500K .......... .......... .......... .......... .......... 74% 6.01M 1s
+  7550K .......... .......... .......... .......... .......... 74% 3.07M 1s
+  7600K .......... .......... .......... .......... .......... 75% 8.06M 1s
+  7650K .......... .......... .......... .......... .......... 75% 3.39M 1s
+  7700K .......... .......... .......... .......... .......... 75% 5.53M 1s
+  7750K .......... .......... .......... .......... .......... 76% 8.68M 1s
+  7800K .......... .......... .......... .......... .......... 76% 3.21M 1s
+  7850K .......... .......... .......... .......... .......... 77% 6.69M 1s
+  7900K .......... .......... .......... .......... .......... 77% 7.55M 1s
+  7950K .......... .......... .......... .......... .......... 78% 2.93M 1s
+  8000K .......... .......... .......... .......... .......... 78% 6.35M 1s
+  8050K .......... .......... .......... .......... .......... 79% 11.7M 1s
+  8100K .......... .......... .......... .......... .......... 79% 2.71M 0s
+  8150K .......... .......... .......... .......... .......... 80% 7.67M 0s
+  8200K .......... .......... .......... .......... .......... 80% 3.55M 0s
+  8250K .......... .......... .......... .......... .......... 81% 6.11M 0s
+  8300K .......... .......... .......... .......... .......... 81% 7.40M 0s
+  8350K .......... .......... .......... .......... .......... 82% 3.59M 0s
+  8400K .......... .......... .......... .......... .......... 82% 5.39M 0s
+  8450K .......... .......... .......... .......... .......... 83% 7.08M 0s
+  8500K .......... .......... .......... .......... .......... 83% 3.83M 0s
+  8550K .......... .......... .......... .......... .......... 84% 5.84M 0s
+  8600K .......... .......... .......... .......... .......... 84% 7.38M 0s
+  8650K .......... .......... .......... .......... .......... 85% 3.20M 0s
+  8700K .......... .......... .......... .......... .......... 85% 5.74M 0s
+  8750K .......... .......... .......... .......... .......... 86% 11.5M 0s
+  8800K .......... .......... .......... .......... .......... 86% 3.19M 0s
+  8850K .......... .......... .......... .......... .......... 87% 6.08M 0s
+  8900K .......... .......... .......... .......... .......... 87% 8.83M 0s
+  8950K .......... .......... .......... .......... .......... 88% 3.30M 0s
+  9000K .......... .......... .......... .......... .......... 88% 5.91M 0s
+  9050K .......... .......... .......... .......... .......... 89% 10.7M 0s
+  9100K .......... .......... .......... .......... .......... 89% 3.22M 0s
+  9150K .......... .......... .......... .......... .......... 90% 5.99M 0s
+  9200K .......... .......... .......... .......... .......... 90% 3.46M 0s
+  9250K .......... .......... .......... .......... .......... 91% 7.93M 0s
+  9300K .......... .......... .......... .......... .......... 91% 6.49M 0s
+  9350K .......... .......... .......... .......... .......... 92% 3.46M 0s
+  9400K .......... .......... .......... .......... .......... 92% 7.38M 0s
+  9450K .......... .......... .......... .......... .......... 93% 5.38M 0s
+  9500K .......... .......... .......... .......... .......... 93% 4.10M 0s
+  9550K .......... .......... .......... .......... .......... 94% 5.89M 0s
+  9600K .......... .......... .......... .......... .......... 94% 6.44M 0s
+  9650K .......... .......... .......... .......... .......... 95% 3.94M 0s
+  9700K .......... .......... .......... .......... .......... 95% 6.26M 0s
+  9750K .......... .......... .......... .......... .......... 96% 6.73M 0s
+  9800K .......... .......... .......... .......... .......... 96% 3.30M 0s
+  9850K .......... .......... .......... .......... .......... 97% 10.4M 0s
+  9900K .......... .......... .......... .......... .......... 97% 5.43M 0s
+  9950K .......... .......... .......... .......... .......... 98% 3.39M 0s
+ 10000K .......... .......... .......... .......... .......... 98% 11.8M 0s
+ 10050K .......... .......... .......... .......... .......... 99% 5.02M 0s
+ 10100K .......... .......... .......... .......... .......... 99% 3.56M 0s
+ 10150K .......... .......... .......... .......... ........  100% 11.4M=2.3s
+
+2019-02-01 15:58:59 (4.24 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.fits’ saved [10442880/10442880]
+
+--2019-02-01 15:58:59--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 7.18M=0s
+
+2019-02-01 15:58:59 (7.18 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:58:59--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 29.4M=0s
+
+2019-02-01 15:58:59 (29.4 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:58:59--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:58:59 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:58:59--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 20160 (20K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.moc.fits’
+
+     0K .......... .........                                  100% 77.2M=0s
+
+2019-02-01 15:58:59 (77.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-8.MIPS.1.moc.fits’ saved [20160/20160]
+
+--2019-02-01 15:58:59--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 12438720 (12M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 14.2M 1s
+    50K .......... .......... .......... .......... ..........  0% 9.38M 1s
+   100K .......... .......... .......... .......... ..........  1%  998K 5s
+   150K .......... .......... .......... .......... ..........  1%  148M 4s
+   200K .......... .......... .......... .......... ..........  2%  176M 3s
+   250K .......... .......... .......... .......... ..........  2% 14.5M 2s
+   300K .......... .......... .......... .......... ..........  2% 2.30M 3s
+   350K .......... .......... .......... .......... ..........  3% 7.78M 3s
+   400K .......... .......... .......... .......... ..........  3% 2.29M 3s
+   450K .......... .......... .......... .......... ..........  4% 7.42M 3s
+   500K .......... .......... .......... .......... ..........  4% 2.29M 3s
+   550K .......... .......... .......... .......... ..........  4% 7.73M 3s
+   600K .......... .......... .......... .......... ..........  5% 2.50M 3s
+   650K .......... .......... .......... .......... ..........  5% 8.24M 3s
+   700K .......... .......... .......... .......... ..........  6% 8.14M 3s
+   750K .......... .......... .......... .......... ..........  6% 2.36M 3s
+   800K .......... .......... .......... .......... ..........  6% 7.76M 3s
+   850K .......... .......... .......... .......... ..........  7% 2.26M 3s
+   900K .......... .......... .......... .......... ..........  7% 9.87M 3s
+   950K .......... .......... .......... .......... ..........  8% 2.55M 3s
+  1000K .......... .......... .......... .......... ..........  8% 6.19M 3s
+  1050K .......... .......... .......... .......... ..........  9% 2.55M 3s
+  1100K .......... .......... .......... .......... ..........  9% 6.70M 3s
+  1150K .......... .......... .......... .......... ..........  9% 9.10M 3s
+  1200K .......... .......... .......... .......... .......... 10% 2.46M 3s
+  1250K .......... .......... .......... .......... .......... 10% 8.04M 3s
+  1300K .......... .......... .......... .......... .......... 11% 2.52M 3s
+  1350K .......... .......... .......... .......... .......... 11% 7.61M 3s
+  1400K .......... .......... .......... .......... .......... 11% 2.55M 3s
+  1450K .......... .......... .......... .......... .......... 12% 7.12M 3s
+  1500K .......... .......... .......... .......... .......... 12% 2.44M 3s
+  1550K .......... .......... .......... .......... .......... 13% 11.3M 3s
+  1600K .......... .......... .......... .......... .......... 13% 7.33M 3s
+  1650K .......... .......... .......... .......... .......... 13% 2.38M 3s
+  1700K .......... .......... .......... .......... .......... 14% 10.5M 3s
+  1750K .......... .......... .......... .......... .......... 14% 2.28M 3s
+  1800K .......... .......... .......... .......... .......... 15% 8.93M 3s
+  1850K .......... .......... .......... .......... .......... 15% 2.72M 3s
+  1900K .......... .......... .......... .......... .......... 16% 6.35M 2s
+  1950K .......... .......... .......... .......... .......... 16% 8.93M 2s
+  2000K .......... .......... .......... .......... .......... 16% 2.46M 2s
+  2050K .......... .......... .......... .......... .......... 17% 10.9M 2s
+  2100K .......... .......... .......... .......... .......... 17% 2.37M 2s
+  2150K .......... .......... .......... .......... .......... 18% 9.79M 2s
+  2200K .......... .......... .......... .......... .......... 18% 2.63M 2s
+  2250K .......... .......... .......... .......... .......... 18% 5.74M 2s
+  2300K .......... .......... .......... .......... .......... 19% 12.4M 2s
+  2350K .......... .......... .......... .......... .......... 19% 2.45M 2s
+  2400K .......... .......... .......... .......... .......... 20% 8.50M 2s
+  2450K .......... .......... .......... .......... .......... 20% 2.73M 2s
+  2500K .......... .......... .......... .......... .......... 20% 6.61M 2s
+  2550K .......... .......... .......... .......... .......... 21% 11.1M 2s
+  2600K .......... .......... .......... .......... .......... 21% 2.52M 2s
+  2650K .......... .......... .......... .......... .......... 22% 8.94M 2s
+  2700K .......... .......... .......... .......... .......... 22% 2.53M 2s
+  2750K .......... .......... .......... .......... .......... 23% 7.61M 2s
+  2800K .......... .......... .......... .......... .......... 23% 2.83M 2s
+  2850K .......... .......... .......... .......... .......... 23% 7.75M 2s
+  2900K .......... .......... .......... .......... .......... 24% 8.43M 2s
+  2950K .......... .......... .......... .......... .......... 24% 2.64M 2s
+  3000K .......... .......... .......... .......... .......... 25% 7.51M 2s
+  3050K .......... .......... .......... .......... .......... 25% 2.84M 2s
+  3100K .......... .......... .......... .......... .......... 25% 7.73M 2s
+  3150K .......... .......... .......... .......... .......... 26% 8.43M 2s
+  3200K .......... .......... .......... .......... .......... 26% 2.64M 2s
+  3250K .......... .......... .......... .......... .......... 27% 7.48M 2s
+  3300K .......... .......... .......... .......... .......... 27% 2.80M 2s
+  3350K .......... .......... .......... .......... .......... 27% 6.86M 2s
+  3400K .......... .......... .......... .......... .......... 28% 10.6M 2s
+  3450K .......... .......... .......... .......... .......... 28% 2.66M 2s
+  3500K .......... .......... .......... .......... .......... 29% 6.99M 2s
+  3550K .......... .......... .......... .......... .......... 29% 3.02M 2s
+  3600K .......... .......... .......... .......... .......... 30% 6.65M 2s
+  3650K .......... .......... .......... .......... .......... 30% 7.08M 2s
+  3700K .......... .......... .......... .......... .......... 30% 2.80M 2s
+  3750K .......... .......... .......... .......... .......... 31% 7.56M 2s
+  3800K .......... .......... .......... .......... .......... 31% 2.79M 2s
+  3850K .......... .......... .......... .......... .......... 32% 7.79M 2s
+  3900K .......... .......... .......... .......... .......... 32% 6.74M 2s
+  3950K .......... .......... .......... .......... .......... 32% 2.81M 2s
+  4000K .......... .......... .......... .......... .......... 33% 8.60M 2s
+  4050K .......... .......... .......... .......... .......... 33% 2.87M 2s
+  4100K .......... .......... .......... .......... .......... 34% 6.94M 2s
+  4150K .......... .......... .......... .......... .......... 34% 7.16M 2s
+  4200K .......... .......... .......... .......... .......... 34% 2.77M 2s
+  4250K .......... .......... .......... .......... .......... 35% 6.58M 2s
+  4300K .......... .......... .......... .......... .......... 35% 8.12M 2s
+  4350K .......... .......... .......... .......... .......... 36% 2.99M 2s
+  4400K .......... .......... .......... .......... .......... 36% 6.57M 2s
+  4450K .......... .......... .......... .......... .......... 37% 3.28M 2s
+  4500K .......... .......... .......... .......... .......... 37% 6.81M 2s
+  4550K .......... .......... .......... .......... .......... 37% 6.17M 2s
+  4600K .......... .......... .......... .......... .......... 38% 2.80M 2s
+  4650K .......... .......... .......... .......... .......... 38% 7.98M 2s
+  4700K .......... .......... .......... .......... .......... 39% 3.05M 2s
+  4750K .......... .......... .......... .......... .......... 39% 7.16M 2s
+  4800K .......... .......... .......... .......... .......... 39% 6.35M 2s
+  4850K .......... .......... .......... .......... .......... 40% 2.75M 2s
+  4900K .......... .......... .......... .......... .......... 40% 10.5M 2s
+  4950K .......... .......... .......... .......... .......... 41% 7.50M 2s
+  5000K .......... .......... .......... .......... .......... 41% 2.66M 2s
+  5050K .......... .......... .......... .......... .......... 41% 8.42M 2s
+  5100K .......... .......... .......... .......... .......... 42% 2.98M 2s
+  5150K .......... .......... .......... .......... .......... 42% 7.56M 2s
+  5200K .......... .......... .......... .......... .......... 43% 6.93M 2s
+  5250K .......... .......... .......... .......... .......... 43% 2.81M 2s
+  5300K .......... .......... .......... .......... .......... 44% 8.23M 2s
+  5350K .......... .......... .......... .......... .......... 44% 8.15M 2s
+  5400K .......... .......... .......... .......... .......... 44% 2.92M 2s
+  5450K .......... .......... .......... .......... .......... 45% 6.63M 2s
+  5500K .......... .......... .......... .......... .......... 45% 3.22M 1s
+  5550K .......... .......... .......... .......... .......... 46% 6.96M 1s
+  5600K .......... .......... .......... .......... .......... 46% 7.61M 1s
+  5650K .......... .......... .......... .......... .......... 46% 3.27M 1s
+  5700K .......... .......... .......... .......... .......... 47% 6.19M 1s
+  5750K .......... .......... .......... .......... .......... 47% 8.82M 1s
+  5800K .......... .......... .......... .......... .......... 48% 2.86M 1s
+  5850K .......... .......... .......... .......... .......... 48% 7.03M 1s
+  5900K .......... .......... .......... .......... .......... 48% 3.26M 1s
+  5950K .......... .......... .......... .......... .......... 49% 6.80M 1s
+  6000K .......... .......... .......... .......... .......... 49% 6.99M 1s
+  6050K .......... .......... .......... .......... .......... 50% 3.52M 1s
+  6100K .......... .......... .......... .......... .......... 50% 6.15M 1s
+  6150K .......... .......... .......... .......... .......... 51% 8.12M 1s
+  6200K .......... .......... .......... .......... .......... 51% 3.27M 1s
+  6250K .......... .......... .......... .......... .......... 51% 6.60M 1s
+  6300K .......... .......... .......... .......... .......... 52% 8.68M 1s
+  6350K .......... .......... .......... .......... .......... 52% 3.00M 1s
+  6400K .......... .......... .......... .......... .......... 53% 7.02M 1s
+  6450K .......... .......... .......... .......... .......... 53% 9.41M 1s
+  6500K .......... .......... .......... .......... .......... 53% 2.91M 1s
+  6550K .......... .......... .......... .......... .......... 54% 7.82M 1s
+  6600K .......... .......... .......... .......... .......... 54% 3.34M 1s
+  6650K .......... .......... .......... .......... .......... 55% 6.59M 1s
+  6700K .......... .......... .......... .......... .......... 55% 8.36M 1s
+  6750K .......... .......... .......... .......... .......... 55% 3.37M 1s
+  6800K .......... .......... .......... .......... .......... 56% 6.48M 1s
+  6850K .......... .......... .......... .......... .......... 56% 8.04M 1s
+  6900K .......... .......... .......... .......... .......... 57% 3.38M 1s
+  6950K .......... .......... .......... .......... .......... 57% 6.91M 1s
+  7000K .......... .......... .......... .......... .......... 58% 7.61M 1s
+  7050K .......... .......... .......... .......... .......... 58% 3.35M 1s
+  7100K .......... .......... .......... .......... .......... 58% 6.93M 1s
+  7150K .......... .......... .......... .......... .......... 59% 8.04M 1s
+  7200K .......... .......... .......... .......... .......... 59% 3.01M 1s
+  7250K .......... .......... .......... .......... .......... 60% 8.65M 1s
+  7300K .......... .......... .......... .......... .......... 60% 7.51M 1s
+  7350K .......... .......... .......... .......... .......... 60% 3.19M 1s
+  7400K .......... .......... .......... .......... .......... 61% 8.19M 1s
+  7450K .......... .......... .......... .......... .......... 61% 3.45M 1s
+  7500K .......... .......... .......... .......... .......... 62% 6.23M 1s
+  7550K .......... .......... .......... .......... .......... 62% 8.50M 1s
+  7600K .......... .......... .......... .......... .......... 62% 3.37M 1s
+  7650K .......... .......... .......... .......... .......... 63% 6.70M 1s
+  7700K .......... .......... .......... .......... .......... 63% 8.64M 1s
+  7750K .......... .......... .......... .......... .......... 64% 3.38M 1s
+  7800K .......... .......... .......... .......... .......... 64% 6.64M 1s
+  7850K .......... .......... .......... .......... .......... 65% 8.44M 1s
+  7900K .......... .......... .......... .......... .......... 65% 3.36M 1s
+  7950K .......... .......... .......... .......... .......... 65% 6.62M 1s
+  8000K .......... .......... .......... .......... .......... 66% 9.07M 1s
+  8050K .......... .......... .......... .......... .......... 66% 3.33M 1s
+  8100K .......... .......... .......... .......... .......... 67% 6.92M 1s
+  8150K .......... .......... .......... .......... .......... 67% 9.03M 1s
+  8200K .......... .......... .......... .......... .......... 67% 3.22M 1s
+  8250K .......... .......... .......... .......... .......... 68% 7.54M 1s
+  8300K .......... .......... .......... .......... .......... 68% 8.27M 1s
+  8350K .......... .......... .......... .......... .......... 69% 3.37M 1s
+  8400K .......... .......... .......... .......... .......... 69% 7.13M 1s
+  8450K .......... .......... .......... .......... .......... 69% 8.38M 1s
+  8500K .......... .......... .......... .......... .......... 70% 3.46M 1s
+  8550K .......... .......... .......... .......... .......... 70% 6.40M 1s
+  8600K .......... .......... .......... .......... .......... 71% 9.03M 1s
+  8650K .......... .......... .......... .......... .......... 71% 3.38M 1s
+  8700K .......... .......... .......... .......... .......... 72% 6.75M 1s
+  8750K .......... .......... .......... .......... .......... 72% 8.09M 1s
+  8800K .......... .......... .......... .......... .......... 72% 3.48M 1s
+  8850K .......... .......... .......... .......... .......... 73% 6.38M 1s
+  8900K .......... .......... .......... .......... .......... 73% 7.92M 1s
+  8950K .......... .......... .......... .......... .......... 74% 3.64M 1s
+  9000K .......... .......... .......... .......... .......... 74% 6.45M 1s
+  9050K .......... .......... .......... .......... .......... 74% 7.55M 1s
+  9100K .......... .......... .......... .......... .......... 75% 3.75M 1s
+  9150K .......... .......... .......... .......... .......... 75% 6.57M 1s
+  9200K .......... .......... .......... .......... .......... 76% 7.52M 1s
+  9250K .......... .......... .......... .......... .......... 76% 3.51M 1s
+  9300K .......... .......... .......... .......... .......... 76% 7.21M 1s
+  9350K .......... .......... .......... .......... .......... 77% 6.87M 1s
+  9400K .......... .......... .......... .......... .......... 77% 4.76M 1s
+  9450K .......... .......... .......... .......... .......... 78% 5.16M 1s
+  9500K .......... .......... .......... .......... .......... 78% 6.11M 1s
+  9550K .......... .......... .......... .......... .......... 79% 4.72M 1s
+  9600K .......... .......... .......... .......... .......... 79% 5.21M 1s
+  9650K .......... .......... .......... .......... .......... 79% 6.07M 1s
+  9700K .......... .......... .......... .......... .......... 80% 10.0M 1s
+  9750K .......... .......... .......... .......... .......... 80% 3.77M 0s
+  9800K .......... .......... .......... .......... .......... 81% 6.75M 0s
+  9850K .......... .......... .......... .......... .......... 81% 8.47M 0s
+  9900K .......... .......... .......... .......... .......... 81% 3.45M 0s
+  9950K .......... .......... .......... .......... .......... 82% 6.84M 0s
+ 10000K .......... .......... .......... .......... .......... 82% 7.26M 0s
+ 10050K .......... .......... .......... .......... .......... 83% 3.97M 0s
+ 10100K .......... .......... .......... .......... .......... 83% 7.50M 0s
+ 10150K .......... .......... .......... .......... .......... 83% 6.01M 0s
+ 10200K .......... .......... .......... .......... .......... 84% 3.59M 0s
+ 10250K .......... .......... .......... .......... .......... 84% 7.91M 0s
+ 10300K .......... .......... .......... .......... .......... 85% 6.53M 0s
+ 10350K .......... .......... .......... .......... .......... 85% 3.89M 0s
+ 10400K .......... .......... .......... .......... .......... 86% 8.08M 0s
+ 10450K .......... .......... .......... .......... .......... 86% 5.71M 0s
+ 10500K .......... .......... .......... .......... .......... 86% 3.99M 0s
+ 10550K .......... .......... .......... .......... .......... 87% 7.60M 0s
+ 10600K .......... .......... .......... .......... .......... 87% 6.49M 0s
+ 10650K .......... .......... .......... .......... .......... 88% 8.94M 0s
+ 10700K .......... .......... .......... .......... .......... 88% 3.63M 0s
+ 10750K .......... .......... .......... .......... .......... 88% 7.07M 0s
+ 10800K .......... .......... .......... .......... .......... 89% 8.31M 0s
+ 10850K .......... .......... .......... .......... .......... 89% 3.70M 0s
+ 10900K .......... .......... .......... .......... .......... 90% 6.84M 0s
+ 10950K .......... .......... .......... .......... .......... 90% 7.11M 0s
+ 11000K .......... .......... .......... .......... .......... 90% 4.44M 0s
+ 11050K .......... .......... .......... .......... .......... 91% 6.21M 0s
+ 11100K .......... .......... .......... .......... .......... 91% 6.63M 0s
+ 11150K .......... .......... .......... .......... .......... 92% 4.12M 0s
+ 11200K .......... .......... .......... .......... .......... 92% 6.69M 0s
+ 11250K .......... .......... .......... .......... .......... 93% 7.99M 0s
+ 11300K .......... .......... .......... .......... .......... 93% 8.34M 0s
+ 11350K .......... .......... .......... .......... .......... 93% 3.52M 0s
+ 11400K .......... .......... .......... .......... .......... 94% 8.14M 0s
+ 11450K .......... .......... .......... .......... .......... 94% 8.48M 0s
+ 11500K .......... .......... .......... .......... .......... 95% 3.92M 0s
+ 11550K .......... .......... .......... .......... .......... 95% 6.85M 0s
+ 11600K .......... .......... .......... .......... .......... 95% 6.98M 0s
+ 11650K .......... .......... .......... .......... .......... 96% 3.97M 0s
+ 11700K .......... .......... .......... .......... .......... 96% 8.24M 0s
+ 11750K .......... .......... .......... .......... .......... 97% 5.65M 0s
+ 11800K .......... .......... .......... .......... .......... 97% 6.31M 0s
+ 11850K .......... .......... .......... .......... .......... 97% 4.75M 0s
+ 11900K .......... .......... .......... .......... .......... 98% 8.24M 0s
+ 11950K .......... .......... .......... .......... .......... 98% 7.78M 0s
+ 12000K .......... .......... .......... .......... .......... 99% 4.23M 0s
+ 12050K .......... .......... .......... .......... .......... 99% 5.43M 0s
+ 12100K .......... .......... .......... .......... .......   100% 8.13M=2.5s
+
+2019-02-01 15:59:01 (4.83 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.fits’ saved [12438720/12438720]
+
+--2019-02-01 15:59:01--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.44M=0s
+
+2019-02-01 15:59:02 (6.44 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 12.4M 0s
+    50K .......... .......... .....                           100% 11.8M=0.006s
+
+2019-02-01 15:59:02 (12.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 74873 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 11.6M 0s
+    50K .......... .......... ...                             100% 11.4M=0.006s
+
+2019-02-01 15:59:02 (11.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.ps’ saved [74873/74873]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 39.8M=0s
+
+2019-02-01 15:59:02 (39.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:59:02 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 20160 (20K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.moc.fits’
+
+     0K .......... .........                                  100% 11.5M=0.002s
+
+2019-02-01 15:59:02 (11.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-9.MIPS.1.moc.fits’ saved [20160/20160]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1491840 (1.4M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  3% 11.4M 0s
+    50K .......... .......... .......... .......... ..........  6% 8.98M 0s
+   100K .......... .......... .......... .......... .......... 10% 11.0M 0s
+   150K .......... .......... .......... .......... .......... 13% 3.04M 0s
+   200K .......... .......... .......... .......... .......... 17% 9.32M 0s
+   250K .......... .......... .......... .......... .......... 20% 11.4M 0s
+   300K .......... .......... .......... .......... .......... 24% 2.89M 0s
+   350K .......... .......... .......... .......... .......... 27% 11.6M 0s
+   400K .......... .......... .......... .......... .......... 30% 10.9M 0s
+   450K .......... .......... .......... .......... .......... 34% 11.4M 0s
+   500K .......... .......... .......... .......... .......... 37% 2.79M 0s
+   550K .......... .......... .......... .......... .......... 41% 12.2M 0s
+   600K .......... .......... .......... .......... .......... 44% 10.6M 0s
+   650K .......... .......... .......... .......... .......... 48% 2.99M 0s
+   700K .......... .......... .......... .......... .......... 51% 10.6M 0s
+   750K .......... .......... .......... .......... .......... 54% 10.6M 0s
+   800K .......... .......... .......... .......... .......... 58% 3.03M 0s
+   850K .......... .......... .......... .......... .......... 61% 10.9M 0s
+   900K .......... .......... .......... .......... .......... 65% 10.9M 0s
+   950K .......... .......... .......... .......... .......... 68% 10.9M 0s
+  1000K .......... .......... .......... .......... .......... 72% 3.01M 0s
+  1050K .......... .......... .......... .......... .......... 75% 10.0M 0s
+  1100K .......... .......... .......... .......... .......... 78% 11.3M 0s
+  1150K .......... .......... .......... .......... .......... 82% 3.01M 0s
+  1200K .......... .......... .......... .......... .......... 85% 10.6M 0s
+  1250K .......... .......... .......... .......... .......... 89% 10.9M 0s
+  1300K .......... .......... .......... .......... .......... 92% 9.84M 0s
+  1350K .......... .......... .......... .......... .......... 96% 2.86M 0s
+  1400K .......... .......... .......... .......... .......... 99% 9.91M 0s
+  1450K ......                                                100% 62.9M=0.2s
+
+2019-02-01 15:59:02 (6.23 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.fits’ saved [1491840/1491840]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.73M=0s
+
+2019-02-01 15:59:02 (6.73 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 16.2M 0s
+    50K .......... .......... .....                           100% 11.6M=0.005s
+
+2019-02-01 15:59:02 (14.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 73927 (72K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 69% 16.6M 0s
+    50K .......... .......... ..                              100% 10.8M=0.005s
+
+2019-02-01 15:59:02 (14.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.ps’ saved [73927/73927]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 33.8M=0s
+
+2019-02-01 15:59:02 (33.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:59:02 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.moc.fits’
+
+     0K .......... .                                          100%  112M=0s
+
+2019-02-01 15:59:02 (112 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-10.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-02-01 15:59:02--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2649600 (2.5M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 16.9M 0s
+    50K .......... .......... .......... .......... ..........  3% 10.8M 0s
+   100K .......... .......... .......... .......... ..........  5%  919K 1s
+   150K .......... .......... .......... .......... ..........  7%  157M 1s
+   200K .......... .......... .......... .......... ..........  9% 1.70M 1s
+   250K .......... .......... .......... .......... .......... 11% 32.1M 1s
+   300K .......... .......... .......... .......... .......... 13%  183M 1s
+   350K .......... .......... .......... .......... .......... 15% 13.4M 1s
+   400K .......... .......... .......... .......... .......... 17% 2.37M 1s
+   450K .......... .......... .......... .......... .......... 19% 9.22M 1s
+   500K .......... .......... .......... .......... .......... 21% 9.65M 0s
+   550K .......... .......... .......... .......... .......... 23% 2.30M 0s
+   600K .......... .......... .......... .......... .......... 25% 11.2M 0s
+   650K .......... .......... .......... .......... .......... 27% 2.55M 0s
+   700K .......... .......... .......... .......... .......... 28% 8.68M 0s
+   750K .......... .......... .......... .......... .......... 30% 2.58M 0s
+   800K .......... .......... .......... .......... .......... 32% 8.35M 0s
+   850K .......... .......... .......... .......... .......... 34% 11.2M 0s
+   900K .......... .......... .......... .......... .......... 36% 2.56M 0s
+   950K .......... .......... .......... .......... .......... 38% 8.68M 0s
+  1000K .......... .......... .......... .......... .......... 40% 8.83M 0s
+  1050K .......... .......... .......... .......... .......... 42% 2.47M 0s
+  1100K .......... .......... .......... .......... .......... 44% 8.98M 0s
+  1150K .......... .......... .......... .......... .......... 46% 2.67M 0s
+  1200K .......... .......... .......... .......... .......... 48% 8.11M 0s
+  1250K .......... .......... .......... .......... .......... 50% 8.89M 0s
+  1300K .......... .......... .......... .......... .......... 52% 2.60M 0s
+  1350K .......... .......... .......... .......... .......... 54% 7.69M 0s
+  1400K .......... .......... .......... .......... .......... 56% 2.72M 0s
+  1450K .......... .......... .......... .......... .......... 57% 9.81M 0s
+  1500K .......... .......... .......... .......... .......... 59% 7.70M 0s
+  1550K .......... .......... .......... .......... .......... 61% 2.80M 0s
+  1600K .......... .......... .......... .......... .......... 63% 7.89M 0s
+  1650K .......... .......... .......... .......... .......... 65% 3.00M 0s
+  1700K .......... .......... .......... .......... .......... 67% 7.28M 0s
+  1750K .......... .......... .......... .......... .......... 69% 7.96M 0s
+  1800K .......... .......... .......... .......... .......... 71% 2.74M 0s
+  1850K .......... .......... .......... .......... .......... 73% 8.28M 0s
+  1900K .......... .......... .......... .......... .......... 75% 9.63M 0s
+  1950K .......... .......... .......... .......... .......... 77% 2.80M 0s
+  2000K .......... .......... .......... .......... .......... 79% 7.58M 0s
+  2050K .......... .......... .......... .......... .......... 81% 3.10M 0s
+  2100K .......... .......... .......... .......... .......... 83% 6.38M 0s
+  2150K .......... .......... .......... .......... .......... 85% 9.71M 0s
+  2200K .......... .......... .......... .......... .......... 86% 2.76M 0s
+  2250K .......... .......... .......... .......... .......... 88% 8.46M 0s
+  2300K .......... .......... .......... .......... .......... 90% 8.00M 0s
+  2350K .......... .......... .......... .......... .......... 92% 2.87M 0s
+  2400K .......... .......... .......... .......... .......... 94% 8.70M 0s
+  2450K .......... .......... .......... .......... .......... 96% 2.91M 0s
+  2500K .......... .......... .......... .......... .......... 98% 6.68M 0s
+  2550K .......... .......... .......... .......              100% 7.38M=0.6s
+
+2019-02-01 15:59:03 (4.50 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.fits’ saved [2649600/2649600]
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.93M=0s
+
+2019-02-01 15:59:03 (6.93 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 28.2M=0s
+
+2019-02-01 15:59:03 (28.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-02-01 15:59:03 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 16.9M=0.001s
+
+2019-02-01 15:59:03 (16.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/60077621.60077621-12.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=N;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=A.tmp’
+
+     0K .......... .......... ......                           20.5M=0.001s
+
+2019-02-01 15:59:03 (20.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=A.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=N;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=M;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=D.tmp’
+
+     0K .......... .......... ......                           13.3M=0.002s
+
+2019-02-01 15:59:03 (13.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=D.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=M;O=D.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/?C=S;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=D.tmp’
+
+     0K .......... .......... ......                           12.8M=0.002s
+
+2019-02-01 15:59:03 (12.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=D.tmp’ saved [27176]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/index.html?C=S;O=D.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=N;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=D.tmp’
+
+     0K .                                                     100% 72.7M=0s
+
+2019-02-01 15:59:03 (72.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=D.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=D.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=M;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=A.tmp’
+
+     0K .                                                     100% 68.4M=0s
+
+2019-02-01 15:59:03 (68.4 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=A.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=S;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=A.tmp’
+
+     0K .                                                     100% 71.1M=0s
+
+2019-02-01 15:59:03 (71.1 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=A.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=N;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=A.tmp’
+
+     0K .                                                     100% 59.7M=0s
+
+2019-02-01 15:59:03 (59.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=A.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=N;O=A.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=M;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=D.tmp’
+
+     0K .                                                     100% 66.5M=0s
+
+2019-02-01 15:59:03 (66.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=D.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=M;O=D.tmp since it should be rejected.
+
+--2019-02-01 15:59:03--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/?C=S;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1029 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=D.tmp’
+
+     0K .                                                     100% 65.6M=0s
+
+2019-02-01 15:59:03 (65.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=D.tmp’ saved [1029/1029]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/XMM-13hr/data/output_data/index.html?C=S;O=D.tmp since it should be rejected.
+
+FINISHED --2019-02-01 15:59:03--
+Total wall clock time: 31s
+Downloaded: 94 files, 82M in 17s (4.74 MB/s)
