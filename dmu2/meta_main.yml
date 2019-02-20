@@ -12,7 +12,7 @@ fields:
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
 
     - name: AKARI-SEP   
-    description: The Infrared Astronomical Satellite AKARI on the South Ecliptic Pole (AKARI-SEP)  
+      description: The Infrared Astronomical Satellite AKARI on the South Ecliptic Pole (AKARI-SEP)  
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-SEP_MOC.fits 
               
     - name: Bootes    
@@ -44,15 +44,15 @@ fields:
       region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-S1_MOC.fits
              
     - name: GAMA-09    
-      descrition: The GAlaxy and Mass Assembly 9hr field (GAMA-09)
+      description: The GAlaxy and Mass Assembly 9hr field (GAMA-09)
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-09_MOC.fits
                   
     - name: GAMA-12    
-      descrition: The GAlaxy and Mass Assembly 12hr field (GAMA-12)   
+      description: The GAlaxy and Mass Assembly 12hr field (GAMA-12)   
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-12_MOC.fits
                 
     - name: GAMA-15  
-      descrition: The GAlaxy and Mass Assembly 15hr field (GAMA-15) 
+      description: The GAlaxy and Mass Assembly 15hr field (GAMA-15) 
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-15_MOC.fits
                      
     - name: HDF-N  
@@ -64,7 +64,7 @@ fields:
       region: dmu_products/dmu2/dmu2_field_coverages/Herschel-Stripe-82_MOC.fits
          
     - name: Lockman-SWIRE     
-    description: The Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
+      description: The Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
       region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
       
     - name: NGP   
