@@ -1,0 +1,15 @@
+Product: dmu26_XID+PACS_EGS
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: EGS
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: EGS_PACS100_v0.9.fits, EGS_PACS100_v0.9.fits, dmu18_PACS_100_PSF_EGS_20190125.fits, dmu18_PACS_160_PSF_EGS_20190125.fits
