@@ -10,7 +10,6 @@ import copy
 from xidplus import moc_routines, catalogue
 from xidplus import posterior_maps as postmaps
 from builtins import input
-import sys
 
 sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
 sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")

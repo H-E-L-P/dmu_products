@@ -1,21 +1,18 @@
-Survey: SWIRE
+Survey: UV-to-FIR Analysis of Spitzer/IRAC Sources in the Extended Groth Strip
 
-Telescope: Spitzer
+Telescope: Multiple
 
-Instrument: IRAC
+Instrument: Multiple
 
-Filters: f_irac1, f_irac2, f_irac3, f_irac4
+Filters: Multiple
 
-P.I.: Carol Lonsdale,
+Fields: EGS
 
-Reference: The Publications of the Astronomical Society of the Pacific, Volume 115, Issue 810, pp. 897-927
+P.I.: Barro
 
-Proposal ID: N/A
+Reference: 2011ApJS..193...13B
 
-Observation dates:
-
-Publication date: 2003
-
-URL: http://irsa.ipac.caltech.edu/data/SPITZER/SWIRE/
-
-Acknowledgement:
+Acknowledgement: This work has made use of the Rainbow Cosmological Surveys
+  Database, which is operated by the Universidad Complutense de Madrid (UCM),
+  partnered with the University of California Observatories at Santa Cruz
+  (UCO/Lick,UCSC)."

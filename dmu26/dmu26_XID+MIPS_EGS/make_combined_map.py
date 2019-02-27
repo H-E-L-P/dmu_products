@@ -9,6 +9,11 @@ from xidplus import posterior_maps as postmaps
 from astropy import wcs
 
 import os
+import sys
+
+sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
+sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
+
 output_folder='./data/'
 
 
