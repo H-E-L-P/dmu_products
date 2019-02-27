@@ -1,21 +1,24 @@
-Surveys: DataFusion-Spitzer
+Acknowledgements: Shirley et al (in prep)
+Author: Raphael Shirley and Yannick Roehhly
+Field: AKARI-NEP
+Version: DR1
+description: The masterlist file built on a positional cross match of the input surveys.
+files:
+- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_akari-nep_20180215.fits
+  name: masterlist
+- file: dmu1/dmu1_ml_AKARI-NEP/depths_akari-nep_20180215.fits
+  name: depths
+- file: dmu1/dmu1_ml_AKARI-NEP/master_catalogue_cross_id_akari-nep_20180215.fits
+  name: cross ids
+product: Master catalogue (DMU1)
+servers:
+- description: The Herschel Database at Marseille (HeDaM). This is the primary server
+    holding all the large data files in HELP.
+  name: HeDaM
+  url: hedam.lam.fr/HELP/data
+surveys:
+- AKARI-NEP-OptNIR
+- PanSTARRS-3SS
+- NEP-Spitzer
 
-Telescope: Spitzer
 
-Instrument: IRAC
-
-Filters: f_irac1, f_irac2, f_irac3, f_irac4
-
-P.I.: Carol Lonsdale,
-
-Reference: The Publications of the Astronomical Society of the Pacific, Volume 115, Issue 810, pp. 897-927
-
-Proposal ID: N/A
-
-Observation dates:
-
-Publication date: 2003
-
-URL: http://irsa.ipac.caltech.edu/data/SPITZER/SWIRE/
-
-Acknowledgement:
