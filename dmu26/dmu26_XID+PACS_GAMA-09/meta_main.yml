@@ -1,0 +1,15 @@
+Product: dmu26_XID+PACS_GAMA-09
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: GAMA-09
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: GAMA-09_PACS100_v0.9.fits, GAMA-09_PACS160_v0.9.fits,dmu18_PACS_100_PSF_GAMA-09_20190131.fits, dmu18_PACS_160_PSF_GAMA-09_20190131.fits, dmu26_XID+MIPS_ELAIS-S1_20180215.fits, GAMA9_Ldust_prediction_results.fits, master_catalogue_gama-09_20171206_photoz_20180213_r_optimised.fits
