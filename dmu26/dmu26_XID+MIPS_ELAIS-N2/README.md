@@ -5,14 +5,13 @@ Description:
   a natural framework in which to include prior information, and uses the
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
-y the remaining SWIRE region.
- 
+
 
 ## SWIRE
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
-   prior object list see the Jupyter notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
+   prior object list see the Jupyter notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SWIRE.ipynb) 
    
 
 ### Running on Apollo
