@@ -1,0 +1,15 @@
+Product: dmu18_AKARI-NEP
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: AKARI-NEP
+
+Selection filter:
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: AKARI-NEP_PACS100_v0.9.fits,  AKARI-NEP_PACS160_v0.9.fits, Akari-NEP-100um-psffromstack.fits, Akari-NEP-160um-psffromstack.fits, EEF_grn_20.txt, EEF_red_20.txt 

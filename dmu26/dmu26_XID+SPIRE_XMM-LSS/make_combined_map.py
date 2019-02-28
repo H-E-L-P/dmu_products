@@ -9,25 +9,25 @@ from xidplus import posterior_maps as postmaps
 from astropy import wcs
 
 import os
-output_folder='./output/'
+output_folder='./data/SPUDS/'
 
-with open(output_folder+'failed_tiles.pkl', "rb") as f:
+with open(output_folder+'Tiles_SPUDS.pkl', "rb") as f:
         Master = pickle.load(f)
 tiles=Master['tiles']
 order=Master['order']
 
-outfile=output_folder+'Master_prior.pkl'
+outfile=output_folder+'Master_prior_SPUDS.pkl'
 with open(outfile, 'rb') as f:
     obj=pickle.load(f)
 priors=obj['priors']
 
 bands=['psw','pmw','plw']
 
-hdulists=[]
-for b in bands:
-	hdulists.append(fits.open(output_folder+'dmu26_XID+SPIRE_'+b+'_CDFS-SWIRE_Bayes_Pval_20170919.fits'))
+#hdulists=[]
+#for b in bands:
+#	hdulists.append(fits.open(output_folder+'dmu26_XID+SPIRE_'+b+'_XMM-LSS-SPUDS_Bayes_Pval_20181229.fits'))
 
-#hdulists=list(map(lambda prior: postmaps.make_fits_image(prior,np.full_like(prior.sim,np.nan)),priors))
+hdulists=list(map(lambda prior: postmaps.make_fits_image(prior,np.full_like(prior.sim,np.nan)),priors))
 
 failed_tiles=[]
 for i in range(0,len(tiles)):
@@ -50,8 +50,8 @@ for i in range(0,len(tiles)):
 		failed_tiles.append(tiles[i])
 	
 for i in range(0,len(priors)):
-	hdulists[i].writeto(output_folder+'dmu26_XID+SPIRE_'+bands[i]+'_CDFS-SWIRE_Bayes_Pval_20170919.fits',clobber=True)
+	hdulists[i].writeto(output_folder+'dmu26_XID+SPIRE_'+bands[i]+'_XMM-LSS-SPUDS_Bayes_Pval.fits',clobber=True)
 
-outfile=output_folder+'failed_tiles.pkl'
+outfile=output_folder+'failed_tiles_SPUDS.pkl'
 with open(outfile, 'wb') as f:
    pickle.dump({'tiles':failed_tiles,'order':order},f)

@@ -31,8 +31,8 @@ module load stilts
 
 
 
-source ~/.login
-source ~/.cshrc
+#source ~/.login
+#source ~/.cshrc
 which idl
 stilts -version
 
@@ -44,7 +44,7 @@ stilts -version
 
 set field=egs
 
-set master=../../../dmu1/dmu1_ml_EGS/data/master_catalogue_egs_20180406.fits
+set master=../../../dmu1/dmu1_ml_EGS/data/master_catalogue_egs_20180501.fits
 
 # this bit is slow and requires internt connectivity so don't run if you've already generated the file
 # i.e. while debugging.
@@ -74,7 +74,7 @@ stilts tcat in=$master omode=meta > ! meta.txt
 grep m_ap meta.txt >! meta_ap.txt
 
 # from examining this file we can decide what are the relevant columns
-set columns="suprime_g gpc1_g megacam_g"
+set columns="irac_i1"
 
 
 ######################################################################
@@ -134,8 +134,8 @@ stilts -Xmx2048M -disk tmatch2 in1=$star in2=$master_star \
 
 foreach code ($columns)
 
-echo select \"\!NULL_m_ap_$code\" >! select.cmd
-echo keepcols \"RA DEC m_ap_$code\" >! keepcols.cmd
+echo select \"\!NULL_m_$code\" >! select.cmd
+echo keepcols \"RA DEC m_$code\" >! keepcols.cmd
 
 stilts tcat in=$master  \
  out=$code.fits \

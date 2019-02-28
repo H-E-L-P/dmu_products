@@ -1,0 +1,15 @@
+Product: dmu18_XMM-LSS
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: XMM-LSS
+
+Selection filter:
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: XMM-LSS_PACS100_v0.9.fits,  XMM-LSS_PACS160_v0.9.fits, allwise_XMM-LSS.fits, EEF_grn_20.txt, EEF_red_20.txt 

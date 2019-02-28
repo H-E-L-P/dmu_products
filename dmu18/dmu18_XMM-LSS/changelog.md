@@ -1,3 +1,3 @@
-## 2016-07-28: Initial data
+## 2019-01-16 Initial data
 
-PACS maps on XMM-LSS processed by Kyle.
+HELP PACS product on dmu18_HELP-PACS-maps

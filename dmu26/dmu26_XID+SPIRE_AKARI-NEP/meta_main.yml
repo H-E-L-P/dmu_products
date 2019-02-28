@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_AKARI-NEP
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: AKARI-NEP
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products:AKARI-NEP_SPIRE250_v1.0.fits,AKARI-NEP_SPIRE350_v1.0.fits,AKARI-NEP_SPIRE500_v1.0.fits, dmu26_XID+MIPS_AKARI-NEP_cat_20190227.fits

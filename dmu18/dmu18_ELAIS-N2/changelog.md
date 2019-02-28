@@ -1,3 +1,4 @@
-## 2017-10-24 Initial data
+## 2019-01-15 Initial data
 
-Data retrieved from Matt's web page.
+HELP PACS product on dmu18_HELP-PACS-maps
+

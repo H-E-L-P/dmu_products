@@ -4198,3 +4198,2811 @@ Saving to: ‘data/60093310.60093310-0.MIPS.1.extmask.fits’
 
 2018-06-13 21:16:41 (197 KB/s) - ‘data/60093310.60093310-0.MIPS.1.extmask.fits’ saved [106560/106560]
 
+--2019-01-31 16:14:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/
+Resolving hedam.lam.fr (hedam.lam.fr)... 195.221.212.141
+Connecting to hedam.lam.fr (hedam.lam.fr)|195.221.212.141|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/index.html’
+
+     0K .......... .......... .......... .......... ......      720K=0.06s
+
+2019-01-31 16:14:38 (720 KB/s) - ‘data/index.html’ saved [47728]
+
+--2019-01-31 16:15:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/
+Resolving hedam.lam.fr (hedam.lam.fr)... 195.221.212.141
+Connecting to hedam.lam.fr (hedam.lam.fr)|195.221.212.141|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/index.html.tmp’
+
+     0K .......... .......... .......... .......... ......      724K=0.06s
+
+2019-01-31 16:15:34 (724 KB/s) - ‘data/index.html.tmp’ saved [47728]
+
+--2019-01-31 16:16:17--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/
+Resolving hedam.lam.fr (hedam.lam.fr)... 195.221.212.141
+Connecting to hedam.lam.fr (hedam.lam.fr)|195.221.212.141|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html.tmp’
+
+     0K .......... .......... .......... .......... ......      711K=0.07s
+
+2019-01-31 16:16:17 (711 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html.tmp’ saved [47728]
+
+Loading robots.txt; please ignore errors.
+--2019-01-31 16:16:17--  http://hedam.lam.fr/robots.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 84 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/robots.txt’
+
+     0K                                                       100% 23.2M=0s
+
+2019-01-31 16:16:17 (23.2 MB/s) - ‘data/hedam.lam.fr/robots.txt’ saved [84/84]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html.tmp since it should be rejected.
+
+--2019-01-31 16:16:17--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=N;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=D.tmp’
+
+     0K .......... .......... .......... .......... ......     7.19M=0.006s
+
+2019-01-31 16:16:17 (7.19 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=D.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=D.tmp since it should be rejected.
+
+--2019-01-31 16:16:17--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=M;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=A.tmp’
+
+     0K .......... .......... .......... .......... ......     8.03M=0.006s
+
+2019-01-31 16:16:17 (8.03 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=A.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:17--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=S;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=A.tmp’
+
+     0K .......... .......... .......... .......... ......     11.2M=0.004s
+
+2019-01-31 16:16:18 (11.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=A.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html.tmp’
+
+     0K .                                                     100% 64.2M=0s
+
+2019-01-31 16:16:18 (64.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html.tmp since it should be rejected.
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2321280 (2.2M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  2% 9.61M 0s
+    50K .......... .......... .......... .......... ..........  4% 1.75M 1s
+   100K .......... .......... .......... .......... ..........  6% 7.36M 1s
+   150K .......... .......... .......... .......... ..........  8% 1.56M 1s
+   200K .......... .......... .......... .......... .......... 11% 1.80M 1s
+   250K .......... .......... .......... .......... .......... 13% 6.61M 1s
+   300K .......... .......... .......... .......... .......... 15% 1.92M 1s
+   350K .......... .......... .......... .......... .......... 17% 6.27M 1s
+   400K .......... .......... .......... .......... .......... 19% 1.96M 1s
+   450K .......... .......... .......... .......... .......... 22% 6.46M 1s
+   500K .......... .......... .......... .......... .......... 24% 1.95M 1s
+   550K .......... .......... .......... .......... .......... 26% 6.83M 1s
+   600K .......... .......... .......... .......... .......... 28% 8.14M 1s
+   650K .......... .......... .......... .......... .......... 30% 1.66M 1s
+   700K .......... .......... .......... .......... .......... 33% 13.9M 0s
+   750K .......... .......... .......... .......... .......... 35% 2.44M 0s
+   800K .......... .......... .......... .......... .......... 37% 4.13M 0s
+   850K .......... .......... .......... .......... .......... 39% 2.44M 0s
+   900K .......... .......... .......... .......... .......... 41% 16.4M 0s
+   950K .......... .......... .......... .......... .......... 44% 3.90M 0s
+  1000K .......... .......... .......... .......... .......... 46% 2.56M 0s
+  1050K .......... .......... .......... .......... .......... 48% 5.24M 0s
+  1100K .......... .......... .......... .......... .......... 50% 3.18M 0s
+  1150K .......... .......... .......... .......... .......... 52% 4.92M 0s
+  1200K .......... .......... .......... .......... .......... 55% 6.16M 0s
+  1250K .......... .......... .......... .......... .......... 57% 3.25M 0s
+  1300K .......... .......... .......... .......... .......... 59% 4.19M 0s
+  1350K .......... .......... .......... .......... .......... 61% 5.64M 0s
+  1400K .......... .......... .......... .......... .......... 63% 5.87M 0s
+  1450K .......... .......... .......... .......... .......... 66% 2.82M 0s
+  1500K .......... .......... .......... .......... .......... 68% 5.52M 0s
+  1550K .......... .......... .......... .......... .......... 70% 5.41M 0s
+  1600K .......... .......... .......... .......... .......... 72% 4.48M 0s
+  1650K .......... .......... .......... .......... .......... 74% 3.32M 0s
+  1700K .......... .......... .......... .......... .......... 77% 17.7M 0s
+  1750K .......... .......... .......... .......... .......... 79% 2.73M 0s
+  1800K .......... .......... .......... .......... .......... 81% 3.60M 0s
+  1850K .......... .......... .......... .......... .......... 83% 5.60M 0s
+  1900K .......... .......... .......... .......... .......... 86% 16.8M 0s
+  1950K .......... .......... .......... .......... .......... 88% 5.56M 0s
+  2000K .......... .......... .......... .......... .......... 90% 3.99M 0s
+  2050K .......... .......... .......... .......... .......... 92% 2.53M 0s
+  2100K .......... .......... .......... .......... .......... 94% 14.8M 0s
+  2150K .......... .......... .......... .......... .......... 97% 16.1M 0s
+  2200K .......... .......... .......... .......... .......... 99% 2.28M 0s
+  2250K .......... ......                                     100% 3.52M=0.6s
+
+2019-01-31 16:16:18 (3.73 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.fits’ saved [2321280/2321280]
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 20.7M=0s
+
+2019-01-31 16:16:18 (20.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  105M=0s
+
+2019-01-31 16:16:18 (105 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:18 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 16.9M=0.001s
+
+2019-01-31 16:16:18 (16.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40005380.40005380-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:18--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1120320 (1.1M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 19.8M 0s
+    50K .......... .......... .......... .......... ..........  9% 9.42M 0s
+   100K .......... .......... .......... .......... .......... 13% 1006K 0s
+   150K .......... .......... .......... .......... .......... 18%  627M 0s
+   200K .......... .......... .......... .......... .......... 22%  801M 0s
+   250K .......... .......... .......... .......... .......... 27%  755M 0s
+   300K .......... .......... .......... .......... .......... 31% 4.21M 0s
+   350K .......... .......... .......... .......... .......... 36% 4.02M 0s
+   400K .......... .......... .......... .......... .......... 41% 4.02M 0s
+   450K .......... .......... .......... .......... .......... 45% 6.39M 0s
+   500K .......... .......... .......... .......... .......... 50% 2.40M 0s
+   550K .......... .......... .......... .......... .......... 54% 5.83M 0s
+   600K .......... .......... .......... .......... .......... 59% 3.90M 0s
+   650K .......... .......... .......... .......... .......... 63% 3.65M 0s
+   700K .......... .......... .......... .......... .......... 68% 5.20M 0s
+   750K .......... .......... .......... .......... .......... 73% 8.31M 0s
+   800K .......... .......... .......... .......... .......... 77% 2.64M 0s
+   850K .......... .......... .......... .......... .......... 82% 6.82M 0s
+   900K .......... .......... .......... .......... .......... 86% 9.99M 0s
+   950K .......... .......... .......... .......... .......... 91% 2.41M 0s
+  1000K .......... .......... .......... .......... .......... 95% 7.85M 0s
+  1050K .......... .......... .......... .......... ....      100% 6.90M=0.2s
+
+2019-01-31 16:16:19 (4.56 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.fits’ saved [1120320/1120320]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.14M=0s
+
+2019-01-31 16:16:19 (6.14 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 6.95M 0s
+    50K .......... .......... .....                           100%  539K=0.06s
+
+2019-01-31 16:16:19 (1.34 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 74981 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 4.76M 0s
+    50K .......... .......... ...                             100% 32.5M=0.01s
+
+2019-01-31 16:16:19 (6.52 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.ps’ saved [74981/74981]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  131M=0s
+
+2019-01-31 16:16:19 (131 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:19 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 12.6M=0.001s
+
+2019-01-31 16:16:19 (12.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40008990.40008990-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:19--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2036160 (1.9M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  2% 8.01M 0s
+    50K .......... .......... .......... .......... ..........  5%  982K 1s
+   100K .......... .......... .......... .......... ..........  7%  606M 1s
+   150K .......... .......... .......... .......... .......... 10%  824M 1s
+   200K .......... .......... .......... .......... .......... 12% 2.42M 1s
+   250K .......... .......... .......... .......... .......... 15% 1.93M 1s
+   300K .......... .......... .......... .......... .......... 17% 2.05M 1s
+   350K .......... .......... .......... .......... .......... 20% 3.76M 1s
+   400K .......... .......... .......... .......... .......... 22% 1.95M 1s
+   450K .......... .......... .......... .......... .......... 25% 2.53M 1s
+   500K .......... .......... .......... .......... .......... 27% 3.01M 1s
+   550K .......... .......... .......... .......... .......... 30% 2.01M 1s
+   600K .......... .......... .......... .......... .......... 32% 1.93M 1s
+   650K .......... .......... .......... .......... .......... 35% 3.73M 0s
+   700K .......... .......... .......... .......... .......... 37% 1.84M 0s
+   750K .......... .......... .......... .......... .......... 40% 2.95M 0s
+   800K .......... .......... .......... .......... .......... 42% 2.24M 0s
+   850K .......... .......... .......... .......... .......... 45% 3.26M 0s
+   900K .......... .......... .......... .......... .......... 47% 2.12M 0s
+   950K .......... .......... .......... .......... .......... 50% 1.62M 0s
+  1000K .......... .......... .......... .......... .......... 52% 5.48M 0s
+  1050K .......... .......... .......... .......... .......... 55% 1.87M 0s
+  1100K .......... .......... .......... .......... .......... 57% 2.15M 0s
+  1150K .......... .......... .......... .......... .......... 60% 3.87M 0s
+  1200K .......... .......... .......... .......... .......... 62% 1.65M 0s
+  1250K .......... .......... .......... .......... .......... 65% 3.31M 0s
+  1300K .......... .......... .......... .......... .......... 67% 2.69M 0s
+  1350K .......... .......... .......... .......... .......... 70% 1.51M 0s
+  1400K .......... .......... .......... .......... .......... 72% 9.09M 0s
+  1450K .......... .......... .......... .......... .......... 75% 1.79M 0s
+  1500K .......... .......... .......... .......... .......... 77% 4.74M 0s
+  1550K .......... .......... .......... .......... .......... 80% 1.64M 0s
+  1600K .......... .......... .......... .......... .......... 82% 1.95M 0s
+  1650K .......... .......... .......... .......... .......... 85% 5.87M 0s
+  1700K .......... .......... .......... .......... .......... 88% 1.89M 0s
+  1750K .......... .......... .......... .......... .......... 90% 6.88M 0s
+  1800K .......... .......... .......... .......... .......... 93% 1.51M 0s
+  1850K .......... .......... .......... .......... .......... 95% 1.83M 0s
+  1900K .......... .......... .......... .......... .......... 98% 3.75M 0s
+  1950K .......... .......... .......... ........             100% 1.60M=0.8s
+
+2019-01-31 16:16:20 (2.44 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.fits’ saved [2036160/2036160]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.80M=0s
+
+2019-01-31 16:16:20 (5.80 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 5.74M 0s
+    50K .......... .......... .....                           100% 16.8M=0.01s
+
+2019-01-31 16:16:20 (7.41 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 74961 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 17.5M 0s
+    50K .......... .......... ...                             100%  172M=0.003s
+
+2019-01-31 16:16:20 (24.4 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.ps’ saved [74961/74961]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  146M=0s
+
+2019-01-31 16:16:20 (146 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:20 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 2.73M=0.004s
+
+2019-01-31 16:16:20 (2.73 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40010370.40010370-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:20--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2571840 (2.5M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 9.32M 0s
+    50K .......... .......... .......... .......... ..........  3% 1.56M 1s
+   100K .......... .......... .......... .......... ..........  5% 16.2M 1s
+   150K .......... .......... .......... .......... ..........  7% 1.63M 1s
+   200K .......... .......... .......... .......... ..........  9% 10.3M 1s
+   250K .......... .......... .......... .......... .......... 11% 1.36M 1s
+   300K .......... .......... .......... .......... .......... 13%  615M 1s
+   350K .......... .......... .......... .......... .......... 15% 1.84M 1s
+   400K .......... .......... .......... .......... .......... 17% 2.61M 1s
+   450K .......... .......... .......... .......... .......... 19% 3.59M 1s
+   500K .......... .......... .......... .......... .......... 21% 2.55M 1s
+   550K .......... .......... .......... .......... .......... 23% 2.05M 1s
+   600K .......... .......... .......... .......... .......... 25% 10.2M 1s
+   650K .......... .......... .......... .......... .......... 27% 1.92M 1s
+   700K .......... .......... .......... .......... .......... 29% 6.56M 1s
+   750K .......... .......... .......... .......... .......... 31% 1.97M 1s
+   800K .......... .......... .......... .......... .......... 33% 6.41M 1s
+   850K .......... .......... .......... .......... .......... 35% 1.71M 1s
+   900K .......... .......... .......... .......... .......... 37% 7.89M 1s
+   950K .......... .......... .......... .......... .......... 39% 1.58M 1s
+  1000K .......... .......... .......... .......... .......... 41% 13.6M 0s
+  1050K .......... .......... .......... .......... .......... 43% 1.94M 0s
+  1100K .......... .......... .......... .......... .......... 45% 5.43M 0s
+  1150K .......... .......... .......... .......... .......... 47% 1.54M 0s
+  1200K .......... .......... .......... .......... .......... 49% 14.4M 0s
+  1250K .......... .......... .......... .......... .......... 51% 1.30M 0s
+  1300K .......... .......... .......... .......... .......... 53% 12.5M 0s
+  1350K .......... .......... .......... .......... .......... 55% 2.05M 0s
+  1400K .......... .......... .......... .......... .......... 57% 4.18M 0s
+  1450K .......... .......... .......... .......... .......... 59% 2.87M 0s
+  1500K .......... .......... .......... .......... .......... 61% 2.90M 0s
+  1550K .......... .......... .......... .......... .......... 63% 3.94M 0s
+  1600K .......... .......... .......... .......... .......... 65% 2.59M 0s
+  1650K .......... .......... .......... .......... .......... 67% 5.01M 0s
+  1700K .......... .......... .......... .......... .......... 69% 1.68M 0s
+  1750K .......... .......... .......... .......... .......... 71% 12.4M 0s
+  1800K .......... .......... .......... .......... .......... 73% 1.69M 0s
+  1850K .......... .......... .......... .......... .......... 75% 11.4M 0s
+  1900K .......... .......... .......... .......... .......... 77% 1.77M 0s
+  1950K .......... .......... .......... .......... .......... 79% 6.21M 0s
+  2000K .......... .......... .......... .......... .......... 81% 1.74M 0s
+  2050K .......... .......... .......... .......... .......... 83% 17.1M 0s
+  2100K .......... .......... .......... .......... .......... 85% 1.86M 0s
+  2150K .......... .......... .......... .......... .......... 87% 8.32M 0s
+  2200K .......... .......... .......... .......... .......... 89% 2.30M 0s
+  2250K .......... .......... .......... .......... .......... 91% 2.55M 0s
+  2300K .......... .......... .......... .......... .......... 93% 3.90M 0s
+  2350K .......... .......... .......... .......... .......... 95% 2.17M 0s
+  2400K .......... .......... .......... .......... .......... 97% 4.39M 0s
+  2450K .......... .......... .......... .......... .......... 99% 2.64M 0s
+  2500K .......... .                                          100% 43.3M=0.8s
+
+2019-01-31 16:16:21 (2.91 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.fits’ saved [2571840/2571840]
+
+--2019-01-31 16:16:21--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 23.6M=0s
+
+2019-01-31 16:16:21 (23.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:21--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  105M=0s
+
+2019-01-31 16:16:21 (105 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:21--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:21 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:21--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 14.7M=0.001s
+
+2019-01-31 16:16:21 (14.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40014490.40014490-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:21--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1249920 (1.2M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 6.06M 0s
+    50K .......... .......... .......... .......... ..........  8% 1.86M 0s
+   100K .......... .......... .......... .......... .......... 12% 7.20M 0s
+   150K .......... .......... .......... .......... .......... 16% 2.40M 0s
+   200K .......... .......... .......... .......... .......... 20% 5.31M 0s
+   250K .......... .......... .......... .......... .......... 24% 4.67M 0s
+   300K .......... .......... .......... .......... .......... 28% 2.41M 0s
+   350K .......... .......... .......... .......... .......... 32% 4.16M 0s
+   400K .......... .......... .......... .......... .......... 36% 2.46M 0s
+   450K .......... .......... .......... .......... .......... 40% 3.33M 0s
+   500K .......... .......... .......... .......... .......... 45% 2.63M 0s
+   550K .......... .......... .......... .......... .......... 49% 4.82M 0s
+   600K .......... .......... .......... .......... .......... 53% 2.14M 0s
+   650K .......... .......... .......... .......... .......... 57% 6.92M 0s
+   700K .......... .......... .......... .......... .......... 61% 5.90M 0s
+   750K .......... .......... .......... .......... .......... 65% 2.10M 0s
+   800K .......... .......... .......... .......... .......... 69% 3.57M 0s
+   850K .......... .......... .......... .......... .......... 73% 3.64M 0s
+   900K .......... .......... .......... .......... .......... 77% 2.88M 0s
+   950K .......... .......... .......... .......... .......... 81% 3.32M 0s
+  1000K .......... .......... .......... .......... .......... 86% 2.61M 0s
+  1050K .......... .......... .......... .......... .......... 90% 3.75M 0s
+  1100K .......... .......... .......... .......... .......... 94% 3.13M 0s
+  1150K .......... .......... .......... .......... .......... 98% 6.13M 0s
+  1200K .......... ..........                                 100% 2.45M=0.4s
+
+2019-01-31 16:16:22 (3.31 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.fits’ saved [1249920/1249920]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 18.6M=0s
+
+2019-01-31 16:16:22 (18.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 7.48M 0s
+    50K .......... .......... .....                           100%  164M=0.007s
+
+2019-01-31 16:16:22 (11.1 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75569 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 12.0M 0s
+    50K .......... .......... ...                             100% 17.4M=0.005s
+
+2019-01-31 16:16:22 (13.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.ps’ saved [75569/75569]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  117M=0s
+
+2019-01-31 16:16:22 (117 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:22 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 2.38M=0.005s
+
+2019-01-31 16:16:22 (2.38 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021140.40021140-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025280 (1001K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 7.63M 0s
+    50K .......... .......... .......... .......... ..........  9% 1.79M 0s
+   100K .......... .......... .......... .......... .......... 14% 6.48M 0s
+   150K .......... .......... .......... .......... .......... 19% 8.26M 0s
+   200K .......... .......... .......... .......... .......... 24% 1.96M 0s
+   250K .......... .......... .......... .......... .......... 29% 4.55M 0s
+   300K .......... .......... .......... .......... .......... 34% 2.33M 0s
+   350K .......... .......... .......... .......... .......... 39% 6.15M 0s
+   400K .......... .......... .......... .......... .......... 44% 3.51M 0s
+   450K .......... .......... .......... .......... .......... 49% 2.79M 0s
+   500K .......... .......... .......... .......... .......... 54% 5.67M 0s
+   550K .......... .......... .......... .......... .......... 59% 2.76M 0s
+   600K .......... .......... .......... .......... .......... 64% 5.14M 0s
+   650K .......... .......... .......... .......... .......... 69% 2.28M 0s
+   700K .......... .......... .......... .......... .......... 74% 5.42M 0s
+   750K .......... .......... .......... .......... .......... 79% 9.43M 0s
+   800K .......... .......... .......... .......... .......... 84% 2.19M 0s
+   850K .......... .......... .......... .......... .......... 89% 4.99M 0s
+   900K .......... .......... .......... .......... .......... 94% 2.36M 0s
+   950K .......... .......... .......... .......... .......... 99% 4.76M 0s
+  1000K .                                                     100% 2384G=0.3s
+
+2019-01-31 16:16:22 (3.52 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.fits’ saved [1025280/1025280]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 14.9M=0s
+
+2019-01-31 16:16:22 (14.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 7.15M 0s
+    50K .......... .......... .....                           100%  241K=0.1s
+
+2019-01-31 16:16:22 (663 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75869 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 7.38M 0s
+    50K .......... .......... ....                            100%  764M=0.007s
+
+2019-01-31 16:16:22 (10.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.ps’ saved [75869/75869]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  138M=0s
+
+2019-01-31 16:16:22 (138 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:22--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:23 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:23--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8640 (8.4K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.moc.fits’
+
+     0K ........                                              100% 17.8M=0s
+
+2019-01-31 16:16:23 (17.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40021320.40021320-0.MIPS.1.moc.fits’ saved [8640/8640]
+
+--2019-01-31 16:16:23--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2822400 (2.7M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 8.41M 0s
+    50K .......... .......... .......... .......... ..........  3% 1.61M 1s
+   100K .......... .......... .......... .......... ..........  5% 13.6M 1s
+   150K .......... .......... .......... .......... ..........  7% 1.38M 1s
+   200K .......... .......... .......... .......... ..........  9% 2.43M 1s
+   250K .......... .......... .......... .......... .......... 10% 3.76M 1s
+   300K .......... .......... .......... .......... .......... 12% 2.02M 1s
+   350K .......... .......... .......... .......... .......... 14% 3.92M 1s
+   400K .......... .......... .......... .......... .......... 16% 2.48M 1s
+   450K .......... .......... .......... .......... .......... 18% 3.43M 1s
+   500K .......... .......... .......... .......... .......... 19% 1.76M 1s
+   550K .......... .......... .......... .......... .......... 21% 13.5M 1s
+   600K .......... .......... .......... .......... .......... 23% 1.65M 1s
+   650K .......... .......... .......... .......... .......... 25% 7.21M 1s
+   700K .......... .......... .......... .......... .......... 27% 1.66M 1s
+   750K .......... .......... .......... .......... .......... 29% 7.23M 1s
+   800K .......... .......... .......... .......... .......... 30% 1.75M 1s
+   850K .......... .......... .......... .......... .......... 32% 5.45M 1s
+   900K .......... .......... .......... .......... .......... 34% 1.41M 1s
+   950K .......... .......... .......... .......... .......... 36% 51.5M 1s
+  1000K .......... .......... .......... .......... .......... 38% 1.61M 1s
+  1050K .......... .......... .......... .......... .......... 39% 7.23M 1s
+  1100K .......... .......... .......... .......... .......... 41% 1.95M 1s
+  1150K .......... .......... .......... .......... .......... 43% 7.56M 1s
+  1200K .......... .......... .......... .......... .......... 45% 1.93M 1s
+  1250K .......... .......... .......... .......... .......... 47% 3.74M 1s
+  1300K .......... .......... .......... .......... .......... 48% 2.05M 1s
+  1350K .......... .......... .......... .......... .......... 50% 3.56M 0s
+  1400K .......... .......... .......... .......... .......... 52% 2.54M 0s
+  1450K .......... .......... .......... .......... .......... 54% 3.36M 0s
+  1500K .......... .......... .......... .......... .......... 56% 3.48M 0s
+  1550K .......... .......... .......... .......... .......... 58% 2.75M 0s
+  1600K .......... .......... .......... .......... .......... 59% 3.73M 0s
+  1650K .......... .......... .......... .......... .......... 61% 2.53M 0s
+  1700K .......... .......... .......... .......... .......... 63% 3.96M 0s
+  1750K .......... .......... .......... .......... .......... 65% 2.41M 0s
+  1800K .......... .......... .......... .......... .......... 67% 3.92M 0s
+  1850K .......... .......... .......... .......... .......... 68% 2.46M 0s
+  1900K .......... .......... .......... .......... .......... 70% 3.84M 0s
+  1950K .......... .......... .......... .......... .......... 72% 2.57M 0s
+  2000K .......... .......... .......... .......... .......... 74% 3.21M 0s
+  2050K .......... .......... .......... .......... .......... 76% 2.80M 0s
+  2100K .......... .......... .......... .......... .......... 78% 3.49M 0s
+  2150K .......... .......... .......... .......... .......... 79% 3.37M 0s
+  2200K .......... .......... .......... .......... .......... 81% 2.68M 0s
+  2250K .......... .......... .......... .......... .......... 83% 3.98M 0s
+  2300K .......... .......... .......... .......... .......... 85% 2.49M 0s
+  2350K .......... .......... .......... .......... .......... 87% 3.90M 0s
+  2400K .......... .......... .......... .......... .......... 88% 2.42M 0s
+  2450K .......... .......... .......... .......... .......... 90% 4.34M 0s
+  2500K .......... .......... .......... .......... .......... 92% 2.93M 0s
+  2550K .......... .......... .......... .......... .......... 94% 4.16M 0s
+  2600K .......... .......... .......... .......... .......... 96% 3.91M 0s
+  2650K .......... .......... .......... .......... .......... 97% 3.79M 0s
+  2700K .......... .......... .......... .......... .......... 99% 3.14M 0s
+  2750K ......                                                100% 1.59M=0.9s
+
+2019-01-31 16:16:24 (2.92 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.fits’ saved [2822400/2822400]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 15.8M=0s
+
+2019-01-31 16:16:24 (15.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.28M 0s
+    50K .......... .......... .....                           100% 8.72M=0.009s
+
+2019-01-31 16:16:24 (8.43 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75865 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 8.41M 0s
+    50K .......... .......... ....                            100% 7.86M=0.009s
+
+2019-01-31 16:16:24 (8.22 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.ps’ saved [75865/75865]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 88.5M=0s
+
+2019-01-31 16:16:24 (88.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:24 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 53.7M=0s
+
+2019-01-31 16:16:24 (53.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40023210.40023210-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:24--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2761920 (2.6M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 8.95M 0s
+    50K .......... .......... .......... .......... ..........  3% 1.37M 1s
+   100K .......... .......... .......... .......... ..........  5%  194M 1s
+   150K .......... .......... .......... .......... ..........  7% 1.11M 1s
+   200K .......... .......... .......... .......... ..........  9% 9.52M 1s
+   250K .......... .......... .......... .......... .......... 11% 1.66M 1s
+   300K .......... .......... .......... .......... .......... 12% 1.83M 1s
+   350K .......... .......... .......... .......... .......... 14% 5.36M 1s
+   400K .......... .......... .......... .......... .......... 16% 1.69M 1s
+   450K .......... .......... .......... .......... .......... 18% 2.54M 1s
+   500K .......... .......... .......... .......... .......... 20% 3.06M 1s
+   550K .......... .......... .......... .......... .......... 22% 1.65M 1s
+   600K .......... .......... .......... .......... .......... 24% 1.77M 1s
+   650K .......... .......... .......... .......... .......... 25% 7.93M 1s
+   700K .......... .......... .......... .......... .......... 27% 1.54M 1s
+   750K .......... .......... .......... .......... .......... 29% 11.8M 1s
+   800K .......... .......... .......... .......... .......... 31% 1.69M 1s
+   850K .......... .......... .......... .......... .......... 33% 2.08M 1s
+   900K .......... .......... .......... .......... .......... 35% 3.95M 1s
+   950K .......... .......... .......... .......... .......... 37% 1.63M 1s
+  1000K .......... .......... .......... .......... .......... 38% 3.34M 1s
+  1050K .......... .......... .......... .......... .......... 40% 2.67M 1s
+  1100K .......... .......... .......... .......... .......... 42% 1.57M 1s
+  1150K .......... .......... .......... .......... .......... 44% 10.3M 1s
+  1200K .......... .......... .......... .......... .......... 46% 1.66M 1s
+  1250K .......... .......... .......... .......... .......... 48% 3.15M 1s
+  1300K .......... .......... .......... .......... .......... 50% 2.60M 1s
+  1350K .......... .......... .......... .......... .......... 51% 1.92M 1s
+  1400K .......... .......... .......... .......... .......... 53% 7.05M 0s
+  1450K .......... .......... .......... .......... .......... 55% 1.58M 0s
+  1500K .......... .......... .......... .......... .......... 57% 6.27M 0s
+  1550K .......... .......... .......... .......... .......... 59% 1.94M 0s
+  1600K .......... .......... .......... .......... .......... 61% 3.06M 0s
+  1650K .......... .......... .......... .......... .......... 63% 2.85M 0s
+  1700K .......... .......... .......... .......... .......... 64% 2.12M 0s
+  1750K .......... .......... .......... .......... .......... 66% 4.97M 0s
+  1800K .......... .......... .......... .......... .......... 68% 1.53M 0s
+  1850K .......... .......... .......... .......... .......... 70% 5.52M 0s
+  1900K .......... .......... .......... .......... .......... 72% 2.01M 0s
+  1950K .......... .......... .......... .......... .......... 74% 4.44M 0s
+  2000K .......... .......... .......... .......... .......... 76% 2.28M 0s
+  2050K .......... .......... .......... .......... .......... 77% 2.11M 0s
+  2100K .......... .......... .......... .......... .......... 79% 4.78M 0s
+  2150K .......... .......... .......... .......... .......... 81% 1.85M 0s
+  2200K .......... .......... .......... .......... .......... 83% 3.91M 0s
+  2250K .......... .......... .......... .......... .......... 85% 1.96M 0s
+  2300K .......... .......... .......... .......... .......... 87% 5.38M 0s
+  2350K .......... .......... .......... .......... .......... 88% 2.09M 0s
+  2400K .......... .......... .......... .......... .......... 90% 5.38M 0s
+  2450K .......... .......... .......... .......... .......... 92% 1.98M 0s
+  2500K .......... .......... .......... .......... .......... 94% 5.61M 0s
+  2550K .......... .......... .......... .......... .......... 96% 2.09M 0s
+  2600K .......... .......... .......... .......... .......... 98% 6.30M 0s
+  2650K .......... .......... .......... .......... .......   100% 2.25M=1.0s
+
+2019-01-31 16:16:25 (2.56 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.fits’ saved [2761920/2761920]
+
+--2019-01-31 16:16:25--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 22.5M=0s
+
+2019-01-31 16:16:25 (22.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:25--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 89.8M=0s
+
+2019-01-31 16:16:25 (89.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:25--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:25 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:25--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100%  395M=0s
+
+2019-01-31 16:16:25 (395 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40025400.40025400-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:25--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2684160 (2.6M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 8.46M 0s
+    50K .......... .......... .......... .......... ..........  3% 1.79M 1s
+   100K .......... .......... .......... .......... ..........  5% 4.78M 1s
+   150K .......... .......... .......... .......... ..........  7% 1.53M 1s
+   200K .......... .......... .......... .......... ..........  9% 15.0M 1s
+   250K .......... .......... .......... .......... .......... 11% 1.70M 1s
+   300K .......... .......... .......... .......... .......... 13% 11.9M 1s
+   350K .......... .......... .......... .......... .......... 15% 1.69M 1s
+   400K .......... .......... .......... .......... .......... 17% 12.7M 1s
+   450K .......... .......... .......... .......... .......... 19% 1.71M 1s
+   500K .......... .......... .......... .......... .......... 20% 11.8M 1s
+   550K .......... .......... .......... .......... .......... 22% 1.71M 1s
+   600K .......... .......... .......... .......... .......... 24% 10.3M 1s
+   650K .......... .......... .......... .......... .......... 26% 1.72M 1s
+   700K .......... .......... .......... .......... .......... 28% 11.6M 1s
+   750K .......... .......... .......... .......... .......... 30% 1.69M 1s
+   800K .......... .......... .......... .......... .......... 32% 12.9M 1s
+   850K .......... .......... .......... .......... .......... 34% 1.74M 1s
+   900K .......... .......... .......... .......... .......... 36% 13.0M 1s
+   950K .......... .......... .......... .......... .......... 38% 1.67M 1s
+  1000K .......... .......... .......... .......... .......... 40% 5.86M 1s
+  1050K .......... .......... .......... .......... .......... 41% 2.06M 1s
+  1100K .......... .......... .......... .......... .......... 43% 5.69M 0s
+  1150K .......... .......... .......... .......... .......... 45% 2.54M 0s
+  1200K .......... .......... .......... .......... .......... 47% 3.68M 0s
+  1250K .......... .......... .......... .......... .......... 49% 3.00M 0s
+  1300K .......... .......... .......... .......... .......... 51% 4.49M 0s
+  1350K .......... .......... .......... .......... .......... 53% 2.56M 0s
+  1400K .......... .......... .......... .......... .......... 55% 4.44M 0s
+  1450K .......... .......... .......... .......... .......... 57% 5.83M 0s
+  1500K .......... .......... .......... .......... .......... 59% 2.01M 0s
+  1550K .......... .......... .......... .......... .......... 61% 5.97M 0s
+  1600K .......... .......... .......... .......... .......... 62% 2.01M 0s
+  1650K .......... .......... .......... .......... .......... 64% 5.83M 0s
+  1700K .......... .......... .......... .......... .......... 66% 2.06M 0s
+  1750K .......... .......... .......... .......... .......... 68% 5.37M 0s
+  1800K .......... .......... .......... .......... .......... 70% 2.62M 0s
+  1850K .......... .......... .......... .......... .......... 72% 3.63M 0s
+  1900K .......... .......... .......... .......... .......... 74% 4.27M 0s
+  1950K .......... .......... .......... .......... .......... 76% 2.24M 0s
+  2000K .......... .......... .......... .......... .......... 78% 7.58M 0s
+  2050K .......... .......... .......... .......... .......... 80% 2.02M 0s
+  2100K .......... .......... .......... .......... .......... 82% 9.24M 0s
+  2150K .......... .......... .......... .......... .......... 83% 2.87M 0s
+  2200K .......... .......... .......... .......... .......... 85% 4.00M 0s
+  2250K .......... .......... .......... .......... .......... 87% 6.47M 0s
+  2300K .......... .......... .......... .......... .......... 89% 1.95M 0s
+  2350K .......... .......... .......... .......... .......... 91% 6.70M 0s
+  2400K .......... .......... .......... .......... .......... 93% 1.93M 0s
+  2450K .......... .......... .......... .......... .......... 95% 12.4M 0s
+  2500K .......... .......... .......... .......... .......... 97% 2.12M 0s
+  2550K .......... .......... .......... .......... .......... 99% 1.68M 0s
+  2600K .......... .......... .                               100%  412M=0.8s
+
+2019-01-31 16:16:26 (3.10 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.fits’ saved [2684160/2684160]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 24.6M=0s
+
+2019-01-31 16:16:26 (24.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.29M 0s
+    50K .......... .......... .....                           100% 8.24M=0.009s
+
+2019-01-31 16:16:26 (8.27 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75129 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 7.99M 0s
+    50K .......... .......... ...                             100% 1.02M=0.03s
+
+2019-01-31 16:16:26 (2.51 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.ps’ saved [75129/75129]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 85.4M=0s
+
+2019-01-31 16:16:26 (85.4 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:26 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 17.9M=0.001s
+
+2019-01-31 16:16:26 (17.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40030810.40030810-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 990720 (968K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  5% 3.65M 0s
+    50K .......... .......... .......... .......... .......... 10% 33.2M 0s
+   100K .......... .......... .......... .......... .......... 15% 1.35M 0s
+   150K .......... .......... .......... .......... .......... 20% 27.6M 0s
+   200K .......... .......... .......... .......... .......... 25% 1.66M 0s
+   250K .......... .......... .......... .......... .......... 31% 10.8M 0s
+   300K .......... .......... .......... .......... .......... 36% 12.5M 0s
+   350K .......... .......... .......... .......... .......... 41% 1.69M 0s
+   400K .......... .......... .......... .......... .......... 46% 10.1M 0s
+   450K .......... .......... .......... .......... .......... 51% 2.15M 0s
+   500K .......... .......... .......... .......... .......... 56% 10.0M 0s
+   550K .......... .......... .......... .......... .......... 62% 2.54M 0s
+   600K .......... .......... .......... .......... .......... 67% 3.61M 0s
+   650K .......... .......... .......... .......... .......... 72% 14.3M 0s
+   700K .......... .......... .......... .......... .......... 77% 2.06M 0s
+   750K .......... .......... .......... .......... .......... 82% 8.27M 0s
+   800K .......... .......... .......... .......... .......... 87% 3.22M 0s
+   850K .......... .......... .......... .......... .......... 93% 2.82M 0s
+   900K .......... .......... .......... .......... .......... 98% 7.33M 0s
+   950K .......... .......                                    100% 3.85M=0.3s
+
+2019-01-31 16:16:26 (3.62 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.fits’ saved [990720/990720]
+
+--2019-01-31 16:16:26--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 20.7M=0s
+
+2019-01-31 16:16:27 (20.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.25M 0s
+    50K .......... .......... .....                           100% 7.73M=0.009s
+
+2019-01-31 16:16:27 (8.07 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 76341 (75K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 5.98M 0s
+    50K .......... .......... ....                            100% 17.0M=0.01s
+
+2019-01-31 16:16:27 (7.60 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.ps’ saved [76341/76341]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 30.5M=0s
+
+2019-01-31 16:16:27 (30.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:27 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8640 (8.4K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.moc.fits’
+
+     0K ........                                              100% 18.1M=0s
+
+2019-01-31 16:16:27 (18.1 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40035320.40035320-0.MIPS.1.moc.fits’ saved [8640/8640]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1120320 (1.1M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 8.70M 0s
+    50K .......... .......... .......... .......... ..........  9% 2.95M 0s
+   100K .......... .......... .......... .......... .......... 13% 3.03M 0s
+   150K .......... .......... .......... .......... .......... 18% 1.52M 0s
+   200K .......... .......... .......... .......... .......... 22% 25.4M 0s
+   250K .......... .......... .......... .......... .......... 27% 1.61M 0s
+   300K .......... .......... .......... .......... .......... 31% 8.47M 0s
+   350K .......... .......... .......... .......... .......... 36% 14.4M 0s
+   400K .......... .......... .......... .......... .......... 41% 1.61M 0s
+   450K .......... .......... .......... .......... .......... 45% 7.62M 0s
+   500K .......... .......... .......... .......... .......... 50% 1.42M 0s
+   550K .......... .......... .......... .......... .......... 54% 25.7M 0s
+   600K .......... .......... .......... .......... .......... 59% 20.3M 0s
+   650K .......... .......... .......... .......... .......... 63% 1.59M 0s
+   700K .......... .......... .......... .......... .......... 68% 10.4M 0s
+   750K .......... .......... .......... .......... .......... 73% 1.76M 0s
+   800K .......... .......... .......... .......... .......... 77% 13.8M 0s
+   850K .......... .......... .......... .......... .......... 82% 12.5M 0s
+   900K .......... .......... .......... .......... .......... 86% 1.92M 0s
+   950K .......... .......... .......... .......... .......... 91% 12.3M 0s
+  1000K .......... .......... .......... .......... .......... 95% 2.13M 0s
+  1050K .......... .......... .......... .......... ....      100% 6.10M=0.3s
+
+2019-01-31 16:16:27 (3.37 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.fits’ saved [1120320/1120320]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.14M=0s
+
+2019-01-31 16:16:27 (5.14 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100%  105M=0s
+
+2019-01-31 16:16:27 (105 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:27 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100%  358M=0s
+
+2019-01-31 16:16:27 (358 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40041100.40041100-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:27--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1180800 (1.1M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 8.45M 0s
+    50K .......... .......... .......... .......... ..........  8% 2.15M 0s
+   100K .......... .......... .......... .......... .......... 13% 3.55M 0s
+   150K .......... .......... .......... .......... .......... 17% 18.8M 0s
+   200K .......... .......... .......... .......... .......... 21% 2.50M 0s
+   250K .......... .......... .......... .......... .......... 26% 5.12M 0s
+   300K .......... .......... .......... .......... .......... 30% 12.0M 0s
+   350K .......... .......... .......... .......... .......... 34% 2.09M 0s
+   400K .......... .......... .......... .......... .......... 39% 6.17M 0s
+   450K .......... .......... .......... .......... .......... 43% 2.24M 0s
+   500K .......... .......... .......... .......... .......... 47% 4.91M 0s
+   550K .......... .......... .......... .......... .......... 52% 21.8M 0s
+   600K .......... .......... .......... .......... .......... 56% 2.41M 0s
+   650K .......... .......... .......... .......... .......... 60% 2.64M 0s
+   700K .......... .......... .......... .......... .......... 65% 29.2M 0s
+   750K .......... .......... .......... .......... .......... 69% 1.76M 0s
+   800K .......... .......... .......... .......... .......... 73% 3.69M 0s
+   850K .......... .......... .......... .......... .......... 78% 2.60M 0s
+   900K .......... .......... .......... .......... .......... 82% 5.48M 0s
+   950K .......... .......... .......... .......... .......... 86% 4.10M 0s
+  1000K .......... .......... .......... .......... .......... 91% 2.42M 0s
+  1050K .......... .......... .......... .......... .......... 95% 2.42M 0s
+  1100K .......... .......... .......... .......... .......... 99% 5.35M 0s
+  1150K ...                                                   100% 5960G=0.3s
+
+2019-01-31 16:16:28 (3.59 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.fits’ saved [1180800/1180800]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.57M=0s
+
+2019-01-31 16:16:28 (5.57 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.12M 0s
+    50K .......... .......... .....                           100%  133M=0.006s
+
+2019-01-31 16:16:28 (12.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75689 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 8.08M 0s
+    50K .......... .......... ...                             100%  103M=0.006s
+
+2019-01-31 16:16:28 (11.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.ps’ saved [75689/75689]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 30.8M=0s
+
+2019-01-31 16:16:28 (30.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:28 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 64.2M=0s
+
+2019-01-31 16:16:28 (64.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40042380.40042380-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:28--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2338560 (2.2M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  2% 5.84M 0s
+    50K .......... .......... .......... .......... ..........  4% 10.5M 0s
+   100K .......... .......... .......... .......... ..........  6% 1.79M 1s
+   150K .......... .......... .......... .......... ..........  8% 4.84M 1s
+   200K .......... .......... .......... .......... .......... 10% 5.46M 0s
+   250K .......... .......... .......... .......... .......... 13% 2.29M 1s
+   300K .......... .......... .......... .......... .......... 15% 7.81M 0s
+   350K .......... .......... .......... .......... .......... 17% 5.01M 0s
+   400K .......... .......... .......... .......... .......... 19% 2.43M 0s
+   450K .......... .......... .......... .......... .......... 21% 9.25M 0s
+   500K .......... .......... .......... .......... .......... 24% 2.38M 0s
+   550K .......... .......... .......... .......... .......... 26% 6.14M 0s
+   600K .......... .......... .......... .......... .......... 28% 11.0M 0s
+   650K .......... .......... .......... .......... .......... 30% 2.11M 0s
+   700K .......... .......... .......... .......... .......... 32% 3.03M 0s
+   750K .......... .......... .......... .......... .......... 35% 5.36M 0s
+   800K .......... .......... .......... .......... .......... 37% 6.93M 0s
+   850K .......... .......... .......... .......... .......... 39% 2.71M 0s
+   900K .......... .......... .......... .......... .......... 41% 2.78M 0s
+   950K .......... .......... .......... .......... .......... 43% 5.42M 0s
+  1000K .......... .......... .......... .......... .......... 45% 1.62M 0s
+  1050K .......... .......... .......... .......... .......... 48% 19.3M 0s
+  1100K .......... .......... .......... .......... .......... 50% 17.0M 0s
+  1150K .......... .......... .......... .......... .......... 52% 1.36M 0s
+  1200K .......... .......... .......... .......... .......... 54% 25.3M 0s
+  1250K .......... .......... .......... .......... .......... 56% 22.5M 0s
+  1300K .......... .......... .......... .......... .......... 59% 1.77M 0s
+  1350K .......... .......... .......... .......... .......... 61% 5.30M 0s
+  1400K .......... .......... .......... .......... .......... 63% 28.9M 0s
+  1450K .......... .......... .......... .......... .......... 65% 2.32M 0s
+  1500K .......... .......... .......... .......... .......... 67% 3.77M 0s
+  1550K .......... .......... .......... .......... .......... 70% 11.3M 0s
+  1600K .......... .......... .......... .......... .......... 72% 2.00M 0s
+  1650K .......... .......... .......... .......... .......... 74% 11.0M 0s
+  1700K .......... .......... .......... .......... .......... 76% 13.4M 0s
+  1750K .......... .......... .......... .......... .......... 78% 2.07M 0s
+  1800K .......... .......... .......... .......... .......... 81% 10.1M 0s
+  1850K .......... .......... .......... .......... .......... 83% 10.7M 0s
+  1900K .......... .......... .......... .......... .......... 85% 2.55M 0s
+  1950K .......... .......... .......... .......... .......... 87% 4.96M 0s
+  2000K .......... .......... .......... .......... .......... 89% 5.51M 0s
+  2050K .......... .......... .......... .......... .......... 91% 3.46M 0s
+  2100K .......... .......... .......... .......... .......... 94% 5.19M 0s
+  2150K .......... .......... .......... .......... .......... 96% 4.23M 0s
+  2200K .......... .......... .......... .......... .......... 98% 2.53M 0s
+  2250K .......... .......... .......... ...                  100% 20.9M=0.6s
+
+2019-01-31 16:16:29 (3.94 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.fits’ saved [2338560/2338560]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 21.9M=0s
+
+2019-01-31 16:16:29 (21.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.75M 0s
+    50K .......... .......... .....                           100% 3.93M=0.01s
+
+2019-01-31 16:16:29 (6.16 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 74905 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 9.38M 0s
+    50K .......... .......... ...                             100%  111M=0.005s
+
+2019-01-31 16:16:29 (13.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.ps’ saved [74905/74905]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 98.9M=0s
+
+2019-01-31 16:16:29 (98.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:29 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 18.9M=0.001s
+
+2019-01-31 16:16:29 (18.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/40043770.40043770-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:29--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4567680 (4.4M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 8.80M 0s
+    50K .......... .......... .......... .......... ..........  2% 10.3M 0s
+   100K .......... .......... .......... .......... ..........  3% 2.09M 1s
+   150K .......... .......... .......... .......... ..........  4% 6.47M 1s
+   200K .......... .......... .......... .......... ..........  5% 25.3M 1s
+   250K .......... .......... .......... .......... ..........  6% 2.15M 1s
+   300K .......... .......... .......... .......... ..........  7% 5.08M 1s
+   350K .......... .......... .......... .......... ..........  8% 7.88M 1s
+   400K .......... .......... .......... .......... .......... 10% 3.80M 1s
+   450K .......... .......... .......... .......... .......... 11% 3.74M 1s
+   500K .......... .......... .......... .......... .......... 12% 7.45M 1s
+   550K .......... .......... .......... .......... .......... 13% 2.94M 1s
+   600K .......... .......... .......... .......... .......... 14% 4.03M 1s
+   650K .......... .......... .......... .......... .......... 15% 8.27M 1s
+   700K .......... .......... .......... .......... .......... 16% 4.53M 1s
+   750K .......... .......... .......... .......... .......... 17% 1.97M 1s
+   800K .......... .......... .......... .......... .......... 19% 41.1M 1s
+   850K .......... .......... .......... .......... .......... 20% 13.5M 1s
+   900K .......... .......... .......... .......... .......... 21% 1.75M 1s
+   950K .......... .......... .......... .......... .......... 22% 7.90M 1s
+  1000K .......... .......... .......... .......... .......... 23% 3.96M 1s
+  1050K .......... .......... .......... .......... .......... 24% 3.57M 1s
+  1100K .......... .......... .......... .......... .......... 25% 5.01M 1s
+  1150K .......... .......... .......... .......... .......... 26% 2.81M 1s
+  1200K .......... .......... .......... .......... .......... 28% 12.2M 1s
+  1250K .......... .......... .......... .......... .......... 29% 4.40M 1s
+  1300K .......... .......... .......... .......... .......... 30% 2.36M 1s
+  1350K .......... .......... .......... .......... .......... 31% 9.15M 1s
+  1400K .......... .......... .......... .......... .......... 32% 6.67M 1s
+  1450K .......... .......... .......... .......... .......... 33% 2.38M 1s
+  1500K .......... .......... .......... .......... .......... 34% 16.9M 1s
+  1550K .......... .......... .......... .......... .......... 35% 7.09M 1s
+  1600K .......... .......... .......... .......... .......... 36% 2.24M 1s
+  1650K .......... .......... .......... .......... .......... 38% 10.4M 1s
+  1700K .......... .......... .......... .......... .......... 39% 9.49M 1s
+  1750K .......... .......... .......... .......... .......... 40% 1.99M 1s
+  1800K .......... .......... .......... .......... .......... 41% 13.8M 1s
+  1850K .......... .......... .......... .......... .......... 42% 8.41M 1s
+  1900K .......... .......... .......... .......... .......... 43% 2.33M 1s
+  1950K .......... .......... .......... .......... .......... 44% 9.42M 1s
+  2000K .......... .......... .......... .......... .......... 45% 5.11M 1s
+  2050K .......... .......... .......... .......... .......... 47% 3.76M 1s
+  2100K .......... .......... .......... .......... .......... 48% 5.10M 1s
+  2150K .......... .......... .......... .......... .......... 49% 2.70M 1s
+  2200K .......... .......... .......... .......... .......... 50%  122M 0s
+  2250K .......... .......... .......... .......... .......... 51% 3.83M 0s
+  2300K .......... .......... .......... .......... .......... 52% 5.26M 0s
+  2350K .......... .......... .......... .......... .......... 53% 3.60M 0s
+  2400K .......... .......... .......... .......... .......... 54% 17.7M 0s
+  2450K .......... .......... .......... .......... .......... 56% 2.95M 0s
+  2500K .......... .......... .......... .......... .......... 57% 4.12M 0s
+  2550K .......... .......... .......... .......... .......... 58% 5.71M 0s
+  2600K .......... .......... .......... .......... .......... 59% 3.97M 0s
+  2650K .......... .......... .......... .......... .......... 60% 6.46M 0s
+  2700K .......... .......... .......... .......... .......... 61% 5.14M 0s
+  2750K .......... .......... .......... .......... .......... 62% 3.13M 0s
+  2800K .......... .......... .......... .......... .......... 63% 16.0M 0s
+  2850K .......... .......... .......... .......... .......... 65% 2.80M 0s
+  2900K .......... .......... .......... .......... .......... 66% 16.6M 0s
+  2950K .......... .......... .......... .......... .......... 67% 4.75M 0s
+  3000K .......... .......... .......... .......... .......... 68% 3.13M 0s
+  3050K .......... .......... .......... .......... .......... 69% 6.02M 0s
+  3100K .......... .......... .......... .......... .......... 70% 4.31M 0s
+  3150K .......... .......... .......... .......... .......... 71% 3.65M 0s
+  3200K .......... .......... .......... .......... .......... 72% 3.18M 0s
+  3250K .......... .......... .......... .......... .......... 73% 9.65M 0s
+  3300K .......... .......... .......... .......... .......... 75% 3.97M 0s
+  3350K .......... .......... .......... .......... .......... 76% 2.82M 0s
+  3400K .......... .......... .......... .......... .......... 77% 16.2M 0s
+  3450K .......... .......... .......... .......... .......... 78% 7.23M 0s
+  3500K .......... .......... .......... .......... .......... 79% 2.78M 0s
+  3550K .......... .......... .......... .......... .......... 80% 6.59M 0s
+  3600K .......... .......... .......... .......... .......... 81% 11.6M 0s
+  3650K .......... .......... .......... .......... .......... 82% 2.53M 0s
+  3700K .......... .......... .......... .......... .......... 84% 8.83M 0s
+  3750K .......... .......... .......... .......... .......... 85% 6.24M 0s
+  3800K .......... .......... .......... .......... .......... 86% 5.88M 0s
+  3850K .......... .......... .......... .......... .......... 87% 3.87M 0s
+  3900K .......... .......... .......... .......... .......... 88% 5.79M 0s
+  3950K .......... .......... .......... .......... .......... 89% 7.57M 0s
+  4000K .......... .......... .......... .......... .......... 90% 2.73M 0s
+  4050K .......... .......... .......... .......... .......... 91% 6.13M 0s
+  4100K .......... .......... .......... .......... .......... 93% 10.0M 0s
+  4150K .......... .......... .......... .......... .......... 94% 4.58M 0s
+  4200K .......... .......... .......... .......... .......... 95% 4.25M 0s
+  4250K .......... .......... .......... .......... .......... 96% 5.17M 0s
+  4300K .......... .......... .......... .......... .......... 97% 11.1M 0s
+  4350K .......... .......... .......... .......... .......... 98% 2.90M 0s
+  4400K .......... .......... .......... .......... .......... 99% 6.63M 0s
+  4450K ..........                                            100% 2.59M=1.0s
+
+2019-01-31 16:16:30 (4.58 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.fits’ saved [4567680/4567680]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.80M=0s
+
+2019-01-31 16:16:30 (5.80 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 12.7M 0s
+    50K .......... .......... .....                           100% 11.4M=0.006s
+
+2019-01-31 16:16:30 (12.2 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75449 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 8.41M 0s
+    50K .......... .......... ...                             100% 4.72M=0.01s
+
+2019-01-31 16:16:30 (6.72 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.ps’ saved [75449/75449]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 31.6M=0s
+
+2019-01-31 16:16:30 (31.6 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:30 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 14400 (14K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.moc.fits’
+
+     0K .......... ....                                       100% 68.0M=0s
+
+2019-01-31 16:16:30 (68.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066370.50066370-0.MIPS.1.moc.fits’ saved [14400/14400]
+
+--2019-01-31 16:16:30--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4576320 (4.4M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 7.89M 1s
+    50K .......... .......... .......... .......... ..........  2% 6.41M 1s
+   100K .......... .......... .......... .......... ..........  3% 2.58M 1s
+   150K .......... .......... .......... .......... ..........  4% 2.01M 1s
+   200K .......... .......... .......... .......... ..........  5% 12.1M 1s
+   250K .......... .......... .......... .......... ..........  6% 9.64M 1s
+   300K .......... .......... .......... .......... ..........  7% 12.0M 1s
+   350K .......... .......... .......... .......... ..........  8% 2.35M 1s
+   400K .......... .......... .......... .......... .......... 10% 10.1M 1s
+   450K .......... .......... .......... .......... .......... 11% 7.31M 1s
+   500K .......... .......... .......... .......... .......... 12% 2.36M 1s
+   550K .......... .......... .......... .......... .......... 13% 9.74M 1s
+   600K .......... .......... .......... .......... .......... 14% 13.2M 1s
+   650K .......... .......... .......... .......... .......... 15% 4.60M 1s
+   700K .......... .......... .......... .......... .......... 16% 2.99M 1s
+   750K .......... .......... .......... .......... .......... 17% 5.63M 1s
+   800K .......... .......... .......... .......... .......... 19% 43.0M 1s
+   850K .......... .......... .......... .......... .......... 20% 2.27M 1s
+   900K .......... .......... .......... .......... .......... 21% 12.0M 1s
+   950K .......... .......... .......... .......... .......... 22% 6.83M 1s
+  1000K .......... .......... .......... .......... .......... 23% 2.41M 1s
+  1050K .......... .......... .......... .......... .......... 24% 6.30M 1s
+  1100K .......... .......... .......... .......... .......... 25% 10.4M 1s
+  1150K .......... .......... .......... .......... .......... 26% 7.93M 1s
+  1200K .......... .......... .......... .......... .......... 27% 1.76M 1s
+  1250K .......... .......... .......... .......... .......... 29%  124M 1s
+  1300K .......... .......... .......... .......... .......... 30% 12.3M 1s
+  1350K .......... .......... .......... .......... .......... 31% 3.28M 1s
+  1400K .......... .......... .......... .......... .......... 32% 3.22M 1s
+  1450K .......... .......... .......... .......... .......... 33% 5.62M 1s
+  1500K .......... .......... .......... .......... .......... 34% 20.7M 1s
+  1550K .......... .......... .......... .......... .......... 35% 3.73M 1s
+  1600K .......... .......... .......... .......... .......... 36% 4.10M 1s
+  1650K .......... .......... .......... .......... .......... 38% 5.12M 1s
+  1700K .......... .......... .......... .......... .......... 39% 12.2M 1s
+  1750K .......... .......... .......... .......... .......... 40% 3.01M 1s
+  1800K .......... .......... .......... .......... .......... 41% 4.10M 1s
+  1850K .......... .......... .......... .......... .......... 42% 3.91M 1s
+  1900K .......... .......... .......... .......... .......... 43% 16.2M 1s
+  1950K .......... .......... .......... .......... .......... 44% 4.00M 1s
+  2000K .......... .......... .......... .......... .......... 45% 1.90M 1s
+  2050K .......... .......... .......... .......... .......... 46% 12.0M 0s
+  2100K .......... .......... .......... .......... .......... 48% 20.6M 0s
+  2150K .......... .......... .......... .......... .......... 49% 1.90M 0s
+  2200K .......... .......... .......... .......... .......... 50% 9.30M 0s
+  2250K .......... .......... .......... .......... .......... 51% 10.9M 0s
+  2300K .......... .......... .......... .......... .......... 52% 1.03M 0s
+  2350K .......... .......... .......... .......... .......... 53% 14.5M 0s
+  2400K .......... .......... .......... .......... .......... 54%  336M 0s
+  2450K .......... .......... .......... .......... .......... 55%  339M 0s
+  2500K .......... .......... .......... .......... .......... 57% 3.86M 0s
+  2550K .......... .......... .......... .......... .......... 58% 7.21M 0s
+  2600K .......... .......... .......... .......... .......... 59% 2.91M 0s
+  2650K .......... .......... .......... .......... .......... 60% 3.35M 0s
+  2700K .......... .......... .......... .......... .......... 61% 5.46M 0s
+  2750K .......... .......... .......... .......... .......... 62% 2.23M 0s
+  2800K .......... .......... .......... .......... .......... 63% 4.83M 0s
+  2850K .......... .......... .......... .......... .......... 64% 2.40M 0s
+  2900K .......... .......... .......... .......... .......... 66% 5.14M 0s
+  2950K .......... .......... .......... .......... .......... 67% 21.5M 0s
+  3000K .......... .......... .......... .......... .......... 68% 2.42M 0s
+  3050K .......... .......... .......... .......... .......... 69% 2.58M 0s
+  3100K .......... .......... .......... .......... .......... 70% 5.35M 0s
+  3150K .......... .......... .......... .......... .......... 71% 4.09M 0s
+  3200K .......... .......... .......... .......... .......... 72% 3.76M 0s
+  3250K .......... .......... .......... .......... .......... 73% 2.82M 0s
+  3300K .......... .......... .......... .......... .......... 74% 5.17M 0s
+  3350K .......... .......... .......... .......... .......... 76% 2.25M 0s
+  3400K .......... .......... .......... .......... .......... 77% 11.9M 0s
+  3450K .......... .......... .......... .......... .......... 78% 3.83M 0s
+  3500K .......... .......... .......... .......... .......... 79% 2.06M 0s
+  3550K .......... .......... .......... .......... .......... 80% 33.0M 0s
+  3600K .......... .......... .......... .......... .......... 81% 6.58M 0s
+  3650K .......... .......... .......... .......... .......... 82% 1.99M 0s
+  3700K .......... .......... .......... .......... .......... 83% 10.1M 0s
+  3750K .......... .......... .......... .......... .......... 85% 6.52M 0s
+  3800K .......... .......... .......... .......... .......... 86% 2.07M 0s
+  3850K .......... .......... .......... .......... .......... 87% 5.08M 0s
+  3900K .......... .......... .......... .......... .......... 88% 2.73M 0s
+  3950K .......... .......... .......... .......... .......... 89% 9.29M 0s
+  4000K .......... .......... .......... .......... .......... 90% 4.83M 0s
+  4050K .......... .......... .......... .......... .......... 91% 2.61M 0s
+  4100K .......... .......... .......... .......... .......... 92% 11.5M 0s
+  4150K .......... .......... .......... .......... .......... 93% 5.86M 0s
+  4200K .......... .......... .......... .......... .......... 95% 2.41M 0s
+  4250K .......... .......... .......... .......... .......... 96% 9.23M 0s
+  4300K .......... .......... .......... .......... .......... 97% 4.85M 0s
+  4350K .......... .......... .......... .......... .......... 98% 2.79M 0s
+  4400K .......... .......... .......... .......... .......... 99% 3.98M 0s
+  4450K .......... .........                                  100% 92.3M=1.0s
+
+2019-01-31 16:16:31 (4.27 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.fits’ saved [4576320/4576320]
+
+--2019-01-31 16:16:31--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.77M=0s
+
+2019-01-31 16:16:31 (5.77 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:31--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 7.80M 0s
+    50K .......... .......... .....                           100% 5.96M=0.01s
+
+2019-01-31 16:16:31 (7.05 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:31--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 76153 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 5.29M 0s
+    50K .......... .......... ....                            100%  105M=0.009s
+
+2019-01-31 16:16:31 (7.68 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.ps’ saved [76153/76153]
+
+--2019-01-31 16:16:31--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 28.7M=0s
+
+2019-01-31 16:16:31 (28.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:31--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Connecting to hedam.lam.fr (hedam.lam.fr)|195.221.212.141|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:32 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:32--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 14400 (14K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.moc.fits’
+
+     0K .......... ....                                       100%  498K=0.03s
+
+2019-01-31 16:16:32 (498 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50066600.50066600-0.MIPS.1.moc.fits’ saved [14400/14400]
+
+--2019-01-31 16:16:32--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4541760 (4.3M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 1.45M 3s
+    50K .......... .......... .......... .......... ..........  2% 1.54M 3s
+   100K .......... .......... .......... .......... ..........  3% 5.58M 2s
+   150K .......... .......... .......... .......... ..........  4% 3.06M 2s
+   200K .......... .......... .......... .......... ..........  5% 2.54M 2s
+   250K .......... .......... .......... .......... ..........  6% 21.4M 2s
+   300K .......... .......... .......... .......... ..........  7% 4.23M 1s
+   350K .......... .......... .......... .......... ..........  9% 2.36M 1s
+   400K .......... .......... .......... .......... .......... 10% 11.0M 1s
+   450K .......... .......... .......... .......... .......... 11% 3.32M 1s
+   500K .......... .......... .......... .......... .......... 12% 2.24M 1s
+   550K .......... .......... .......... .......... .......... 13% 35.7M 1s
+   600K .......... .......... .......... .......... .......... 14% 3.40M 1s
+   650K .......... .......... .......... .......... .......... 15% 2.36M 1s
+   700K .......... .......... .......... .......... .......... 16% 6.32M 1s
+   750K .......... .......... .......... .......... .......... 18% 12.5M 1s
+   800K .......... .......... .......... .......... .......... 19% 2.30M 1s
+   850K .......... .......... .......... .......... .......... 20% 3.89M 1s
+   900K .......... .......... .......... .......... .......... 21% 11.4M 1s
+   950K .......... .......... .......... .......... .......... 22% 3.11M 1s
+  1000K .......... .......... .......... .......... .......... 23% 3.12M 1s
+  1050K .......... .......... .......... .......... .......... 24% 9.34M 1s
+  1100K .......... .......... .......... .......... .......... 25% 3.91M 1s
+  1150K .......... .......... .......... .......... .......... 27% 4.22M 1s
+  1200K .......... .......... .......... .......... .......... 28% 5.30M 1s
+  1250K .......... .......... .......... .......... .......... 29% 19.1M 1s
+  1300K .......... .......... .......... .......... .......... 30% 3.68M 1s
+  1350K .......... .......... .......... .......... .......... 31% 4.32M 1s
+  1400K .......... .......... .......... .......... .......... 32% 6.49M 1s
+  1450K .......... .......... .......... .......... .......... 33% 11.5M 1s
+  1500K .......... .......... .......... .......... .......... 34% 3.72M 1s
+  1550K .......... .......... .......... .......... .......... 36% 5.05M 1s
+  1600K .......... .......... .......... .......... .......... 37% 7.95M 1s
+  1650K .......... .......... .......... .......... .......... 38% 3.19M 1s
+  1700K .......... .......... .......... .......... .......... 39% 19.3M 1s
+  1750K .......... .......... .......... .......... .......... 40% 4.18M 1s
+  1800K .......... .......... .......... .......... .......... 41% 14.4M 1s
+  1850K .......... .......... .......... .......... .......... 42% 2.20M 1s
+  1900K .......... .......... .......... .......... .......... 43% 20.5M 1s
+  1950K .......... .......... .......... .......... .......... 45% 6.37M 1s
+  2000K .......... .......... .......... .......... .......... 46% 20.6M 1s
+  2050K .......... .......... .......... .......... .......... 47% 2.68M 1s
+  2100K .......... .......... .......... .......... .......... 48% 10.0M 1s
+  2150K .......... .......... .......... .......... .......... 49% 4.59M 1s
+  2200K .......... .......... .......... .......... .......... 50% 16.4M 0s
+  2250K .......... .......... .......... .......... .......... 51% 4.06M 0s
+  2300K .......... .......... .......... .......... .......... 52% 7.54M 0s
+  2350K .......... .......... .......... .......... .......... 54% 8.14M 0s
+  2400K .......... .......... .......... .......... .......... 55% 2.40M 0s
+  2450K .......... .......... .......... .......... .......... 56% 20.3M 0s
+  2500K .......... .......... .......... .......... .......... 57% 19.9M 0s
+  2550K .......... .......... .......... .......... .......... 58% 21.6M 0s
+  2600K .......... .......... .......... .......... .......... 59% 5.78M 0s
+  2650K .......... .......... .......... .......... .......... 60% 2.01M 0s
+  2700K .......... .......... .......... .......... .......... 62% 10.8M 0s
+  2750K .......... .......... .......... .......... .......... 63% 9.12M 0s
+  2800K .......... .......... .......... .......... .......... 64% 20.1M 0s
+  2850K .......... .......... .......... .......... .......... 65%  901K 0s
+  2900K .......... .......... .......... .......... .......... 66%  186M 0s
+  2950K .......... .......... .......... .......... .......... 67%  194M 0s
+  3000K .......... .......... .......... .......... .......... 68%  210M 0s
+  3050K .......... .......... .......... .......... .......... 69%  176M 0s
+  3100K .......... .......... .......... .......... .......... 71% 1.16M 0s
+  3150K .......... .......... .......... .......... .......... 72%  157M 0s
+  3200K .......... .......... .......... .......... .......... 73%  156M 0s
+  3250K .......... .......... .......... .......... .......... 74%  149M 0s
+  3300K .......... .......... .......... .......... .......... 75% 1.05M 0s
+  3350K .......... .......... .......... .......... .......... 76%  573M 0s
+  3400K .......... .......... .......... .......... .......... 77%  517M 0s
+  3450K .......... .......... .......... .......... .......... 78%  619M 0s
+  3500K .......... .......... .......... .......... .......... 80% 1.38M 0s
+  3550K .......... .......... .......... .......... .......... 81%  182M 0s
+  3600K .......... .......... .......... .......... .......... 82% 10.8M 0s
+  3650K .......... .......... .......... .......... .......... 83% 2.75M 0s
+  3700K .......... .......... .......... .......... .......... 84% 3.94M 0s
+  3750K .......... .......... .......... .......... .......... 85% 4.57M 0s
+  3800K .......... .......... .......... .......... .......... 86% 1.86M 0s
+  3850K .......... .......... .......... .......... .......... 87% 28.1M 0s
+  3900K .......... .......... .......... .......... .......... 89% 5.08M 0s
+  3950K .......... .......... .......... .......... .......... 90% 2.37M 0s
+  4000K .......... .......... .......... .......... .......... 91% 11.2M 0s
+  4050K .......... .......... .......... .......... .......... 92% 7.00M 0s
+  4100K .......... .......... .......... .......... .......... 93% 2.02M 0s
+  4150K .......... .......... .......... .......... .......... 94% 8.54M 0s
+  4200K .......... .......... .......... .......... .......... 95% 2.45M 0s
+  4250K .......... .......... .......... .......... .......... 96% 5.55M 0s
+  4300K .......... .......... .......... .......... .......... 98% 12.7M 0s
+  4350K .......... .......... .......... .......... .......... 99% 2.47M 0s
+  4400K .......... .......... .......... .....                100% 4.69M=1.0s
+
+2019-01-31 16:16:33 (4.35 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.fits’ saved [4541760/4541760]
+
+--2019-01-31 16:16:33--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.24M=0s
+
+2019-01-31 16:16:33 (6.24 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:33--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 27.7M=0s
+
+2019-01-31 16:16:33 (27.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:33--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:33 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:33--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 14400 (14K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.moc.fits’
+
+     0K .......... ....                                       100% 3.64M=0.004s
+
+2019-01-31 16:16:33 (3.64 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/50067260.50067260-0.MIPS.1.moc.fits’ saved [14400/14400]
+
+--2019-01-31 16:16:33--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2122560 (2.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  2% 2.82M 1s
+    50K .......... .......... .......... .......... ..........  4% 1.31M 1s
+   100K .......... .......... .......... .......... ..........  7%  655M 1s
+   150K .......... .......... .......... .......... ..........  9%  852M 1s
+   200K .......... .......... .......... .......... .......... 12% 1.78M 1s
+   250K .......... .......... .......... .......... .......... 14% 10.1M 1s
+   300K .......... .......... .......... .......... .......... 16% 2.06M 1s
+   350K .......... .......... .......... .......... .......... 19% 4.79M 1s
+   400K .......... .......... .......... .......... .......... 21% 2.20M 1s
+   450K .......... .......... .......... .......... .......... 24% 5.29M 0s
+   500K .......... .......... .......... .......... .......... 26% 2.08M 0s
+   550K .......... .......... .......... .......... .......... 28% 5.11M 0s
+   600K .......... .......... .......... .......... .......... 31% 2.14M 0s
+   650K .......... .......... .......... .......... .......... 33% 3.90M 0s
+   700K .......... .......... .......... .......... .......... 36% 3.06M 0s
+   750K .......... .......... .......... .......... .......... 38% 2.84M 0s
+   800K .......... .......... .......... .......... .......... 41% 2.04M 0s
+   850K .......... .......... .......... .......... .......... 43% 5.94M 0s
+   900K .......... .......... .......... .......... .......... 45% 1.98M 0s
+   950K .......... .......... .......... .......... .......... 48% 9.28M 0s
+  1000K .......... .......... .......... .......... .......... 50% 2.11M 0s
+  1050K .......... .......... .......... .......... .......... 53% 5.03M 0s
+  1100K .......... .......... .......... .......... .......... 55% 2.15M 0s
+  1150K .......... .......... .......... .......... .......... 57% 4.81M 0s
+  1200K .......... .......... .......... .......... .......... 60% 2.18M 0s
+  1250K .......... .......... .......... .......... .......... 62% 4.72M 0s
+  1300K .......... .......... .......... .......... .......... 65% 2.61M 0s
+  1350K .......... .......... .......... .......... .......... 67% 3.50M 0s
+  1400K .......... .......... .......... .......... .......... 69% 3.33M 0s
+  1450K .......... .......... .......... .......... .......... 72% 2.73M 0s
+  1500K .......... .......... .......... .......... .......... 74% 4.72M 0s
+  1550K .......... .......... .......... .......... .......... 77% 1.80M 0s
+  1600K .......... .......... .......... .......... .......... 79% 30.3M 0s
+  1650K .......... .......... .......... .......... .......... 82% 1.65M 0s
+  1700K .......... .......... .......... .......... .......... 84% 6.55M 0s
+  1750K .......... .......... .......... .......... .......... 86% 1.82M 0s
+  1800K .......... .......... .......... .......... .......... 89% 6.47M 0s
+  1850K .......... .......... .......... .......... .......... 91% 2.00M 0s
+  1900K .......... .......... .......... .......... .......... 94% 3.96M 0s
+  1950K .......... .......... .......... .......... .......... 96% 2.39M 0s
+  2000K .......... .......... .......... .......... .......... 98% 3.15M 0s
+  2050K .......... .......... ..                              100% 13.4M=0.7s
+
+2019-01-31 16:16:34 (3.05 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.fits’ saved [2122560/2122560]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 8.88M=0s
+
+2019-01-31 16:16:34 (8.88 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 8.26M 0s
+    50K .......... .......... .....                           100%  249K=0.1s
+
+2019-01-31 16:16:34 (689 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 76641 (75K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 66% 5.94M 0s
+    50K .......... .......... ....                            100%  512K=0.06s
+
+2019-01-31 16:16:34 (1.29 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.ps’ saved [76641/76641]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 30.3M=0s
+
+2019-01-31 16:16:34 (30.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:34 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 2.53M=0.004s
+
+2019-01-31 16:16:34 (2.53 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60079160.60079160-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:34--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4230720 (4.0M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  1% 1.71M 2s
+    50K .......... .......... .......... .......... ..........  2% 1.69M 2s
+   100K .......... .......... .......... .......... ..........  3% 1.70M 2s
+   150K .......... .......... .......... .......... ..........  4% 1.68M 2s
+   200K .......... .......... .......... .......... ..........  6% 4.37M 2s
+   250K .......... .......... .......... .......... ..........  7% 1.71M 2s
+   300K .......... .......... .......... .......... ..........  8% 1.73M 2s
+   350K .......... .......... .......... .......... ..........  9% 1.65M 2s
+   400K .......... .......... .......... .......... .......... 10% 1.72M 2s
+   450K .......... .......... .......... .......... .......... 12% 1.75M 2s
+   500K .......... .......... .......... .......... .......... 13% 1.61M 2s
+   550K .......... .......... .......... .......... .......... 14% 1.50M 2s
+   600K .......... .......... .......... .......... .......... 15% 1.83M 2s
+   650K .......... .......... .......... .......... .......... 16% 1.96M 2s
+   700K .......... .......... .......... .......... .......... 18% 3.51M 2s
+   750K .......... .......... .......... .......... .......... 19% 1.50M 2s
+   800K .......... .......... .......... .......... .......... 20% 1.51M 2s
+   850K .......... .......... .......... .......... .......... 21% 2.11M 2s
+   900K .......... .......... .......... .......... .......... 22% 1.95M 2s
+   950K .......... .......... .......... .......... .......... 24% 2.87M 2s
+  1000K .......... .......... .......... .......... .......... 25% 1.50M 2s
+  1050K .......... .......... .......... .......... .......... 26% 1.77M 2s
+  1100K .......... .......... .......... .......... .......... 27% 2.38M 2s
+  1150K .......... .......... .......... .......... .......... 29% 2.88M 2s
+  1200K .......... .......... .......... .......... .......... 30% 1.64M 2s
+  1250K .......... .......... .......... .......... .......... 31% 1.55M 1s
+  1300K .......... .......... .......... .......... .......... 32% 3.10M 1s
+  1350K .......... .......... .......... .......... .......... 33% 2.80M 1s
+  1400K .......... .......... .......... .......... .......... 35% 1.49M 1s
+  1450K .......... .......... .......... .......... .......... 36% 2.14M 1s
+  1500K .......... .......... .......... .......... .......... 37% 3.67M 1s
+  1550K .......... .......... .......... .......... .......... 38% 1.68M 1s
+  1600K .......... .......... .......... .......... .......... 39% 2.07M 1s
+  1650K .......... .......... .......... .......... .......... 41% 3.04M 1s
+  1700K .......... .......... .......... .......... .......... 42% 1.95M 1s
+  1750K .......... .......... .......... .......... .......... 43% 2.38M 1s
+  1800K .......... .......... .......... .......... .......... 44% 1.76M 1s
+  1850K .......... .......... .......... .......... .......... 45% 4.00M 1s
+  1900K .......... .......... .......... .......... .......... 47% 2.26M 1s
+  1950K .......... .......... .......... .......... .......... 48% 2.03M 1s
+  2000K .......... .......... .......... .......... .......... 49% 4.18M 1s
+  2050K .......... .......... .......... .......... .......... 50% 1.97M 1s
+  2100K .......... .......... .......... .......... .......... 52% 1.65M 1s
+  2150K .......... .......... .......... .......... .......... 53% 6.71M 1s
+  2200K .......... .......... .......... .......... .......... 54% 1.90M 1s
+  2250K .......... .......... .......... .......... .......... 55% 2.13M 1s
+  2300K .......... .......... .......... .......... .......... 56% 4.70M 1s
+  2350K .......... .......... .......... .......... .......... 58% 1.53M 1s
+  2400K .......... .......... .......... .......... .......... 59% 3.18M 1s
+  2450K .......... .......... .......... .......... .......... 60% 2.62M 1s
+  2500K .......... .......... .......... .......... .......... 61% 1.55M 1s
+  2550K .......... .......... .......... .......... .......... 62% 6.51M 1s
+  2600K .......... .......... .......... .......... .......... 64% 1.86M 1s
+  2650K .......... .......... .......... .......... .......... 65% 5.14M 1s
+  2700K .......... .......... .......... .......... .......... 66% 2.23M 1s
+  2750K .......... .......... .......... .......... .......... 67% 1.42M 1s
+  2800K .......... .......... .......... .......... .......... 68% 29.8M 1s
+  2850K .......... .......... .......... .......... .......... 70% 1.49M 1s
+  2900K .......... .......... .......... .......... .......... 71% 1.41M 1s
+  2950K .......... .......... .......... .......... .......... 72% 23.1M 1s
+  3000K .......... .......... .......... .......... .......... 73% 1.29M 1s
+  3050K .......... .......... .......... .......... .......... 75%  192M 0s
+  3100K .......... .......... .......... .......... .......... 76% 1.50M 0s
+  3150K .......... .......... .......... .......... .......... 77% 1.34M 0s
+  3200K .......... .......... .......... .......... .......... 78% 44.3M 0s
+  3250K .......... .......... .......... .......... .......... 79% 1.57M 0s
+  3300K .......... .......... .......... .......... .......... 81% 9.68M 0s
+  3350K .......... .......... .......... .......... .......... 82% 1.75M 0s
+  3400K .......... .......... .......... .......... .......... 83% 7.41M 0s
+  3450K .......... .......... .......... .......... .......... 84% 1.71M 0s
+  3500K .......... .......... .......... .......... .......... 85% 2.90M 0s
+  3550K .......... .......... .......... .......... .......... 87% 2.87M 0s
+  3600K .......... .......... .......... .......... .......... 88% 3.09M 0s
+  3650K .......... .......... .......... .......... .......... 89% 2.89M 0s
+  3700K .......... .......... .......... .......... .......... 90% 3.06M 0s
+  3750K .......... .......... .......... .......... .......... 91% 3.05M 0s
+  3800K .......... .......... .......... .......... .......... 93% 3.01M 0s
+  3850K .......... .......... .......... .......... .......... 94% 2.95M 0s
+  3900K .......... .......... .......... .......... .......... 95% 3.11M 0s
+  3950K .......... .......... .......... .......... .......... 96% 2.88M 0s
+  4000K .......... .......... .......... .......... .......... 98% 2.89M 0s
+  4050K .......... .......... .......... .......... .......... 99% 2.55M 0s
+  4100K .......... .......... .......... .                    100% 3.62M=1.8s
+
+2019-01-31 16:16:36 (2.24 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.fits’ saved [4230720/4230720]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.23M=0s
+
+2019-01-31 16:16:36 (5.23 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 6.13M 0s
+    50K .......... .......... .....                           100%  193K=0.1s
+
+2019-01-31 16:16:36 (534 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75813 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 1.70M 0s
+    50K .......... .......... ....                            100% 4.31M=0.03s
+
+2019-01-31 16:16:36 (2.12 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.ps’ saved [75813/75813]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 31.9M=0s
+
+2019-01-31 16:16:36 (31.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:36 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 14400 (14K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.moc.fits’
+
+     0K .......... ....                                       100% 3.55M=0.004s
+
+2019-01-31 16:16:36 (3.55 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60083170.60083170-0.MIPS.1.moc.fits’ saved [14400/14400]
+
+--2019-01-31 16:16:36--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1275840 (1.2M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 9.72M 0s
+    50K .......... .......... .......... .......... ..........  8% 1.70M 0s
+   100K .......... .......... .......... .......... .......... 12% 1.56M 0s
+   150K .......... .......... .......... .......... .......... 16% 2.38M 0s
+   200K .......... .......... .......... .......... .......... 20% 3.72M 0s
+   250K .......... .......... .......... .......... .......... 24% 1.74M 0s
+   300K .......... .......... .......... .......... .......... 28% 2.04M 0s
+   350K .......... .......... .......... .......... .......... 32% 1.99M 0s
+   400K .......... .......... .......... .......... .......... 36% 4.03M 0s
+   450K .......... .......... .......... .......... .......... 40% 1.99M 0s
+   500K .......... .......... .......... .......... .......... 44% 1.96M 0s
+   550K .......... .......... .......... .......... .......... 48% 2.05M 0s
+   600K .......... .......... .......... .......... .......... 52% 1.30M 0s
+   650K .......... .......... .......... .......... .......... 56% 30.5M 0s
+   700K .......... .......... .......... .......... .......... 60% 1.53M 0s
+   750K .......... .......... .......... .......... .......... 64% 1.78M 0s
+   800K .......... .......... .......... .......... .......... 68% 6.33M 0s
+   850K .......... .......... .......... .......... .......... 72% 1.61M 0s
+   900K .......... .......... .......... .......... .......... 76% 1.81M 0s
+   950K .......... .......... .......... .......... .......... 80% 2.33M 0s
+  1000K .......... .......... .......... .......... .......... 84% 2.78M 0s
+  1050K .......... .......... .......... .......... .......... 88% 2.15M 0s
+  1100K .......... .......... .......... .......... .......... 92% 2.41M 0s
+  1150K .......... .......... .......... .......... .......... 96% 2.25M 0s
+  1200K .......... .......... .......... .......... .....     100% 2.88M=0.5s
+
+2019-01-31 16:16:37 (2.24 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.fits’ saved [1275840/1275840]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.31M=0s
+
+2019-01-31 16:16:37 (6.31 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 5.33M 0s
+    50K .......... .......... .....                           100%  501K=0.06s
+
+2019-01-31 16:16:37 (1.22 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 76205 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 1.73M 0s
+    50K .......... .......... ....                            100% 2.36M=0.04s
+
+2019-01-31 16:16:37 (1.89 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.ps’ saved [76205/76205]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 37.0M=0s
+
+2019-01-31 16:16:37 (37.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:37 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 25.0M=0s
+
+2019-01-31 16:16:37 (25.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60085840.60085840-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:37--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1275840 (1.2M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 1.65M 1s
+    50K .......... .......... .......... .......... ..........  8% 1.75M 1s
+   100K .......... .......... .......... .......... .......... 12% 5.57M 0s
+   150K .......... .......... .......... .......... .......... 16% 1.72M 0s
+   200K .......... .......... .......... .......... .......... 20% 1.64M 0s
+   250K .......... .......... .......... .......... .......... 24% 1.19M 1s
+   300K .......... .......... .......... .......... .......... 28% 1.55M 1s
+   350K .......... .......... .......... .......... .......... 32% 1.51M 0s
+   400K .......... .......... .......... .......... .......... 36% 2.05M 0s
+   450K .......... .......... .......... .......... .......... 40% 1.52M 0s
+   500K .......... .......... .......... .......... .......... 44% 4.71M 0s
+   550K .......... .......... .......... .......... .......... 48% 1.56M 0s
+   600K .......... .......... .......... .......... .......... 52% 1.18M 0s
+   650K .......... .......... .......... .......... .......... 56% 1.73M 0s
+   700K .......... .......... .......... .......... .......... 60% 4.06M 0s
+   750K .......... .......... .......... .......... .......... 64% 1.54M 0s
+   800K .......... .......... .......... .......... .......... 68% 1.21M 0s
+   850K .......... .......... .......... .......... .......... 72% 20.0M 0s
+   900K .......... .......... .......... .......... .......... 76% 1.26M 0s
+   950K .......... .......... .......... .......... .......... 80%  954K 0s
+  1000K .......... .......... .......... .......... .......... 84% 41.1M 0s
+  1050K .......... .......... .......... .......... .......... 88% 1.26M 0s
+  1100K .......... .......... .......... .......... .......... 92% 1.64M 0s
+  1150K .......... .......... .......... .......... .......... 96% 19.8M 0s
+  1200K .......... .......... .......... .......... .....     100% 1.51M=0.7s
+
+2019-01-31 16:16:38 (1.80 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.fits’ saved [1275840/1275840]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.24M=0s
+
+2019-01-31 16:16:38 (6.24 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 9.79M 0s
+    50K .......... .......... .....                           100%  944K=0.03s
+
+2019-01-31 16:16:38 (2.28 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75217 (73K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 68% 98.4M 0s
+    50K .......... .......... ...                             100%  781K=0.03s
+
+2019-01-31 16:16:38 (2.35 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.ps’ saved [75217/75217]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 34.8M=0s
+
+2019-01-31 16:16:38 (34.8 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:38 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 72.9M=0s
+
+2019-01-31 16:16:38 (72.9 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60086830.60086830-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:38--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11505600 (11M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  0% 19.8M 1s
+    50K .......... .......... .......... .......... ..........  0%  839K 7s
+   100K .......... .......... .......... .......... ..........  1% 5.09M 5s
+   150K .......... .......... .......... .......... ..........  1% 1.56M 6s
+   200K .......... .......... .......... .......... ..........  2% 1.72M 6s
+   250K .......... .......... .......... .......... ..........  2% 1.71M 6s
+   300K .......... .......... .......... .......... ..........  3% 1.69M 6s
+   350K .......... .......... .......... .......... ..........  3% 1.30M 6s
+   400K .......... .......... .......... .......... ..........  4% 1.46M 6s
+   450K .......... .......... .......... .......... ..........  4% 1.57M 6s
+   500K .......... .......... .......... .......... ..........  4% 1.55M 6s
+   550K .......... .......... .......... .......... ..........  5% 1.23M 6s
+   600K .......... .......... .......... .......... ..........  5% 1.28M 7s
+   650K .......... .......... .......... .......... ..........  6% 1.47M 7s
+   700K .......... .......... .......... .......... ..........  6% 1.49M 7s
+   750K .......... .......... .......... .......... ..........  7% 1.78M 6s
+   800K .......... .......... .......... .......... ..........  7% 1.66M 6s
+   850K .......... .......... .......... .......... ..........  8% 1.75M 6s
+   900K .......... .......... .......... .......... ..........  8% 2.25M 6s
+   950K .......... .......... .......... .......... ..........  8% 2.27M 6s
+  1000K .......... .......... .......... .......... ..........  9% 1.53M 6s
+  1050K .......... .......... .......... .......... ..........  9% 1.81M 6s
+  1100K .......... .......... .......... .......... .......... 10% 3.03M 6s
+  1150K .......... .......... .......... .......... .......... 10% 1.92M 6s
+  1200K .......... .......... .......... .......... .......... 11% 1.71M 6s
+  1250K .......... .......... .......... .......... .......... 11% 2.00M 6s
+  1300K .......... .......... .......... .......... .......... 12% 1.74M 6s
+  1350K .......... .......... .......... .......... .......... 12% 1.47M 6s
+  1400K .......... .......... .......... .......... .......... 12% 2.45M 6s
+  1450K .......... .......... .......... .......... .......... 13% 2.03M 6s
+  1500K .......... .......... .......... .......... .......... 13% 2.39M 5s
+  1550K .......... .......... .......... .......... .......... 14% 1.55M 5s
+  1600K .......... .......... .......... .......... .......... 14% 1.60M 5s
+  1650K .......... .......... .......... .......... .......... 15% 1.28M 5s
+  1700K .......... .......... .......... .......... .......... 15% 5.41M 5s
+  1750K .......... .......... .......... .......... .......... 16% 2.14M 5s
+  1800K .......... .......... .......... .......... .......... 16% 1.22M 5s
+  1850K .......... .......... .......... .......... .......... 16% 1.64M 5s
+  1900K .......... .......... .......... .......... .......... 17% 12.3M 5s
+  1950K .......... .......... .......... .......... .......... 17% 1.29M 5s
+  2000K .......... .......... .......... .......... .......... 18% 2.50M 5s
+  2050K .......... .......... .......... .......... .......... 18% 2.47M 5s
+  2100K .......... .......... .......... .......... .......... 19% 2.04M 5s
+  2150K .......... .......... .......... .......... .......... 19% 2.08M 5s
+  2200K .......... .......... .......... .......... .......... 20% 1.95M 5s
+  2250K .......... .......... .......... .......... .......... 20% 3.88M 5s
+  2300K .......... .......... .......... .......... .......... 20% 1.23M 5s
+  2350K .......... .......... .......... .......... .......... 21% 5.29M 5s
+  2400K .......... .......... .......... .......... .......... 21% 1.56M 5s
+  2450K .......... .......... .......... .......... .......... 22% 2.50M 5s
+  2500K .......... .......... .......... .......... .......... 22% 2.36M 5s
+  2550K .......... .......... .......... .......... .......... 23% 2.46M 5s
+  2600K .......... .......... .......... .......... .......... 23% 2.36M 5s
+  2650K .......... .......... .......... .......... .......... 24% 2.14M 5s
+  2700K .......... .......... .......... .......... .......... 24% 2.79M 4s
+  2750K .......... .......... .......... .......... .......... 24% 2.17M 4s
+  2800K .......... .......... .......... .......... .......... 25% 2.44M 4s
+  2850K .......... .......... .......... .......... .......... 25% 3.71M 4s
+  2900K .......... .......... .......... .......... .......... 26% 1.73M 4s
+  2950K .......... .......... .......... .......... .......... 26% 2.44M 4s
+  3000K .......... .......... .......... .......... .......... 27% 3.63M 4s
+  3050K .......... .......... .......... .......... .......... 27% 1.67M 4s
+  3100K .......... .......... .......... .......... .......... 28% 1.79M 4s
+  3150K .......... .......... .......... .......... .......... 28% 4.53M 4s
+  3200K .......... .......... .......... .......... .......... 28% 1.84M 4s
+  3250K .......... .......... .......... .......... .......... 29% 1.32M 4s
+  3300K .......... .......... .......... .......... .......... 29% 50.2M 4s
+  3350K .......... .......... .......... .......... .......... 30% 1.54M 4s
+  3400K .......... .......... .......... .......... .......... 30% 6.35M 4s
+  3450K .......... .......... .......... .......... .......... 31% 1.94M 4s
+  3500K .......... .......... .......... .......... .......... 31% 1.34M 4s
+  3550K .......... .......... .......... .......... .......... 32% 21.7M 4s
+  3600K .......... .......... .......... .......... .......... 32% 1.61M 4s
+  3650K .......... .......... .......... .......... .......... 32% 6.09M 4s
+  3700K .......... .......... .......... .......... .......... 33% 1.95M 4s
+  3750K .......... .......... .......... .......... .......... 33% 2.09M 4s
+  3800K .......... .......... .......... .......... .......... 34% 2.11M 4s
+  3850K .......... .......... .......... .......... .......... 34% 4.70M 4s
+  3900K .......... .......... .......... .......... .......... 35% 2.41M 4s
+  3950K .......... .......... .......... .......... .......... 35% 4.19M 4s
+  4000K .......... .......... .......... .......... .......... 36% 2.37M 3s
+  4050K .......... .......... .......... .......... .......... 36% 3.05M 3s
+  4100K .......... .......... .......... .......... .......... 36% 2.02M 3s
+  4150K .......... .......... .......... .......... .......... 37% 2.98M 3s
+  4200K .......... .......... .......... .......... .......... 37% 3.40M 3s
+  4250K .......... .......... .......... .......... .......... 38% 1.20M 3s
+  4300K .......... .......... .......... .......... .......... 38% 48.9M 3s
+  4350K .......... .......... .......... .......... .......... 39% 1.54M 3s
+  4400K .......... .......... .......... .......... .......... 39% 5.66M 3s
+  4450K .......... .......... .......... .......... .......... 40% 2.07M 3s
+  4500K .......... .......... .......... .......... .......... 40% 2.86M 3s
+  4550K .......... .......... .......... .......... .......... 40% 2.63M 3s
+  4600K .......... .......... .......... .......... .......... 41% 2.01M 3s
+  4650K .......... .......... .......... .......... .......... 41% 6.30M 3s
+  4700K .......... .......... .......... .......... .......... 42% 1.54M 3s
+  4750K .......... .......... .......... .......... .......... 42% 25.5M 3s
+  4800K .......... .......... .......... .......... .......... 43% 1.26M 3s
+  4850K .......... .......... .......... .......... .......... 43% 2.54M 3s
+  4900K .......... .......... .......... .......... .......... 44% 3.94M 3s
+  4950K .......... .......... .......... .......... .......... 44% 2.44M 3s
+  5000K .......... .......... .......... .......... .......... 44% 2.44M 3s
+  5050K .......... .......... .......... .......... .......... 45% 3.22M 3s
+  5100K .......... .......... .......... .......... .......... 45% 2.65M 3s
+  5150K .......... .......... .......... .......... .......... 46% 2.80M 3s
+  5200K .......... .......... .......... .......... .......... 46% 3.28M 3s
+  5250K .......... .......... .......... .......... .......... 47% 1.86M 3s
+  5300K .......... .......... .......... .......... .......... 47% 8.03M 3s
+  5350K .......... .......... .......... .......... .......... 48% 1.68M 3s
+  5400K .......... .......... .......... .......... .......... 48% 10.5M 3s
+  5450K .......... .......... .......... .......... .......... 48% 1.42M 3s
+  5500K .......... .......... .......... .......... .......... 49% 31.6M 3s
+  5550K .......... .......... .......... .......... .......... 49% 1.24M 3s
+  5600K .......... .......... .......... .......... .......... 50% 33.6M 3s
+  5650K .......... .......... .......... .......... .......... 50% 1.04M 3s
+  5700K .......... .......... .......... .......... .......... 51% 28.8M 2s
+  5750K .......... .......... .......... .......... .......... 51% 1.75M 2s
+  5800K .......... .......... .......... .......... .......... 52% 8.93M 2s
+  5850K .......... .......... .......... .......... .......... 52% 1.95M 2s
+  5900K .......... .......... .......... .......... .......... 52% 6.49M 2s
+  5950K .......... .......... .......... .......... .......... 53% 1.41M 2s
+  6000K .......... .......... .......... .......... .......... 53% 53.4M 2s
+  6050K .......... .......... .......... .......... .......... 54% 1.68M 2s
+  6100K .......... .......... .......... .......... .......... 54% 9.85M 2s
+  6150K .......... .......... .......... .......... .......... 55% 8.02M 2s
+  6200K .......... .......... .......... .......... .......... 55% 1.79M 2s
+  6250K .......... .......... .......... .......... .......... 56% 3.92M 2s
+  6300K .......... .......... .......... .......... .......... 56% 2.51M 2s
+  6350K .......... .......... .......... .......... .......... 56% 3.92M 2s
+  6400K .......... .......... .......... .......... .......... 57% 2.43M 2s
+  6450K .......... .......... .......... .......... .......... 57% 4.11M 2s
+  6500K .......... .......... .......... .......... .......... 58% 1.66M 2s
+  6550K .......... .......... .......... .......... .......... 58% 15.6M 2s
+  6600K .......... .......... .......... .......... .......... 59% 6.64M 2s
+  6650K .......... .......... .......... .......... .......... 59% 1.52M 2s
+  6700K .......... .......... .......... .......... .......... 60% 33.7M 2s
+  6750K .......... .......... .......... .......... .......... 60% 1.20M 2s
+  6800K .......... .......... .......... .......... .......... 60% 24.8M 2s
+  6850K .......... .......... .......... .......... .......... 61% 1.04M 2s
+  6900K .......... .......... .......... .......... .......... 61% 27.7M 2s
+  6950K .......... .......... .......... .......... .......... 62% 1.16M 2s
+  7000K .......... .......... .......... .......... .......... 62% 79.8M 2s
+  7050K .......... .......... .......... .......... .......... 63% 1.23M 2s
+  7100K .......... .......... .......... .......... .......... 63%  163M 2s
+  7150K .......... .......... .......... .......... .......... 64% 1.72M 2s
+  7200K .......... .......... .......... .......... .......... 64% 7.03M 2s
+  7250K .......... .......... .......... .......... .......... 64% 3.78M 2s
+  7300K .......... .......... .......... .......... .......... 65% 2.37M 2s
+  7350K .......... .......... .......... .......... .......... 65% 4.77M 2s
+  7400K .......... .......... .......... .......... .......... 66% 3.14M 2s
+  7450K .......... .......... .......... .......... .......... 66% 1.91M 2s
+  7500K .......... .......... .......... .......... .......... 67% 4.42M 2s
+  7550K .......... .......... .......... .......... .......... 67% 2.47M 2s
+  7600K .......... .......... .......... .......... .......... 68% 5.12M 2s
+  7650K .......... .......... .......... .......... .......... 68% 4.49M 2s
+  7700K .......... .......... .......... .......... .......... 68% 3.43M 1s
+  7750K .......... .......... .......... .......... .......... 69% 3.14M 1s
+  7800K .......... .......... .......... .......... .......... 69% 2.24M 1s
+  7850K .......... .......... .......... .......... .......... 70% 5.50M 1s
+  7900K .......... .......... .......... .......... .......... 70% 2.13M 1s
+  7950K .......... .......... .......... .......... .......... 71% 5.43M 1s
+  8000K .......... .......... .......... .......... .......... 71% 17.2M 1s
+  8050K .......... .......... .......... .......... .......... 72% 1.28M 1s
+  8100K .......... .......... .......... .......... .......... 72% 23.2M 1s
+  8150K .......... .......... .......... .......... .......... 72% 2.67M 1s
+  8200K .......... .......... .......... .......... .......... 73% 2.17M 1s
+  8250K .......... .......... .......... .......... .......... 73% 2.70M 1s
+  8300K .......... .......... .......... .......... .......... 74% 2.35M 1s
+  8350K .......... .......... .......... .......... .......... 74% 49.7M 1s
+  8400K .......... .......... .......... .......... .......... 75% 2.47M 1s
+  8450K .......... .......... .......... .......... .......... 75% 2.47M 1s
+  8500K .......... .......... .......... .......... .......... 76% 4.15M 1s
+  8550K .......... .......... .......... .......... .......... 76% 4.61M 1s
+  8600K .......... .......... .......... .......... .......... 76% 2.99M 1s
+  8650K .......... .......... .......... .......... .......... 77% 2.11M 1s
+  8700K .......... .......... .......... .......... .......... 77% 23.6M 1s
+  8750K .......... .......... .......... .......... .......... 78% 1.46M 1s
+  8800K .......... .......... .......... .......... .......... 78% 8.92M 1s
+  8850K .......... .......... .......... .......... .......... 79% 19.8M 1s
+  8900K .......... .......... .......... .......... .......... 79% 1.73M 1s
+  8950K .......... .......... .......... .......... .......... 80% 9.89M 1s
+  9000K .......... .......... .......... .......... .......... 80% 1.35M 1s
+  9050K .......... .......... .......... .......... .......... 80% 23.6M 1s
+  9100K .......... .......... .......... .......... .......... 81% 21.6M 1s
+  9150K .......... .......... .......... .......... .......... 81% 1.70M 1s
+  9200K .......... .......... .......... .......... .......... 82% 4.87M 1s
+  9250K .......... .......... .......... .......... .......... 82% 2.85M 1s
+  9300K .......... .......... .......... .......... .......... 83% 3.64M 1s
+  9350K .......... .......... .......... .......... .......... 83% 5.77M 1s
+  9400K .......... .......... .......... .......... .......... 84% 2.46M 1s
+  9450K .......... .......... .......... .......... .......... 84% 1.55M 1s
+  9500K .......... .......... .......... .......... .......... 84% 25.0M 1s
+  9550K .......... .......... .......... .......... .......... 85% 15.8M 1s
+  9600K .......... .......... .......... .......... .......... 85% 1.36M 1s
+  9650K .......... .......... .......... .......... .......... 86% 21.2M 1s
+  9700K .......... .......... .......... .......... .......... 86% 1.62M 1s
+  9750K .......... .......... .......... .......... .......... 87% 5.94M 1s
+  9800K .......... .......... .......... .......... .......... 87% 23.9M 1s
+  9850K .......... .......... .......... .......... .......... 88% 1.96M 1s
+  9900K .......... .......... .......... .......... .......... 88% 6.37M 1s
+  9950K .......... .......... .......... .......... .......... 89% 3.23M 0s
+ 10000K .......... .......... .......... .......... .......... 89% 3.73M 0s
+ 10050K .......... .......... .......... .......... .......... 89% 9.73M 0s
+ 10100K .......... .......... .......... .......... .......... 90% 1.41M 0s
+ 10150K .......... .......... .......... .......... .......... 90% 23.7M 0s
+ 10200K .......... .......... .......... .......... .......... 91% 23.0M 0s
+ 10250K .......... .......... .......... .......... .......... 91% 1.59M 0s
+ 10300K .......... .......... .......... .......... .......... 92% 7.58M 0s
+ 10350K .......... .......... .......... .......... .......... 92% 2.09M 0s
+ 10400K .......... .......... .......... .......... .......... 93% 8.21M 0s
+ 10450K .......... .......... .......... .......... .......... 93% 10.6M 0s
+ 10500K .......... .......... .......... .......... .......... 93% 1.79M 0s
+ 10550K .......... .......... .......... .......... .......... 94% 10.3M 0s
+ 10600K .......... .......... .......... .......... .......... 94% 4.07M 0s
+ 10650K .......... .......... .......... .......... .......... 95% 2.89M 0s
+ 10700K .......... .......... .......... .......... .......... 95% 6.53M 0s
+ 10750K .......... .......... .......... .......... .......... 96% 2.33M 0s
+ 10800K .......... .......... .......... .......... .......... 96% 5.16M 0s
+ 10850K .......... .......... .......... .......... .......... 97% 2.26M 0s
+ 10900K .......... .......... .......... .......... .......... 97% 1.65M 0s
+ 10950K .......... .......... .......... .......... .......... 97% 23.1M 0s
+ 11000K .......... .......... .......... .......... .......... 98% 7.75M 0s
+ 11050K .......... .......... .......... .......... .......... 98% 1.50M 0s
+ 11100K .......... .......... .......... .......... .......... 99% 26.6M 0s
+ 11150K .......... .......... .......... .......... .......... 99% 18.4M 0s
+ 11200K .......... .......... .......... .....                100% 1.27M=4.3s
+
+2019-01-31 16:16:43 (2.54 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.fits’ saved [11505600/11505600]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 6.75M=0s
+
+2019-01-31 16:16:43 (6.75 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.fits’
+
+     0K .......... .......... .......... .......... .......... 65% 3.91M 0s
+    50K .......... .......... .....                           100% 68.0K=0.4s
+
+2019-01-31 16:16:43 (193 KB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.fits’ saved [77760/77760]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.ps
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 75409 (74K) [application/postscript]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.ps’
+
+     0K .......... .......... .......... .......... .......... 67% 6.16M 0s
+    50K .......... .......... ...                             100% 13.9M=0.01s
+
+2019-01-31 16:16:43 (7.50 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.ps’ saved [75409/75409]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 482 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 38.0M=0s
+
+2019-01-31 16:16:43 (38.0 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psf.txt’ saved [482/482]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:43 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 20160 (20K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.moc.fits’
+
+     0K .......... .........                                  100% 3.80M=0.005s
+
+2019-01-31 16:16:43 (3.80 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60090940.60090940-0.MIPS.1.moc.fits’ saved [20160/20160]
+
+--2019-01-31 16:16:43--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1180800 (1.1M) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.fits’
+
+     0K .......... .......... .......... .......... ..........  4% 15.7M 0s
+    50K .......... .......... .......... .......... ..........  8% 1.28M 0s
+   100K .......... .......... .......... .......... .......... 13% 26.9M 0s
+   150K .......... .......... .......... .......... .......... 17% 1.65M 0s
+   200K .......... .......... .......... .......... .......... 21% 5.17M 0s
+   250K .......... .......... .......... .......... .......... 26% 1.68M 0s
+   300K .......... .......... .......... .......... .......... 30% 6.11M 0s
+   350K .......... .......... .......... .......... .......... 34% 2.07M 0s
+   400K .......... .......... .......... .......... .......... 39% 4.65M 0s
+   450K .......... .......... .......... .......... .......... 43% 1.56M 0s
+   500K .......... .......... .......... .......... .......... 47% 20.6M 0s
+   550K .......... .......... .......... .......... .......... 52% 1.75M 0s
+   600K .......... .......... .......... .......... .......... 56% 8.50M 0s
+   650K .......... .......... .......... .......... .......... 60% 2.02M 0s
+   700K .......... .......... .......... .......... .......... 65% 5.40M 0s
+   750K .......... .......... .......... .......... .......... 69% 2.12M 0s
+   800K .......... .......... .......... .......... .......... 73% 5.22M 0s
+   850K .......... .......... .......... .......... .......... 78% 2.05M 0s
+   900K .......... .......... .......... .......... .......... 82% 1.81M 0s
+   950K .......... .......... .......... .......... .......... 86% 9.54M 0s
+  1000K .......... .......... .......... .......... .......... 91% 1.85M 0s
+  1050K .......... .......... .......... .......... .......... 95% 4.94M 0s
+  1100K .......... .......... .......... .......... .......... 99% 1.63M 0s
+  1150K ...                                                   100% 43.6M=0.4s
+
+2019-01-31 16:16:44 (2.76 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.fits’ saved [1180800/1180800]
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.astrom
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 89 [application/x-troff-man]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.astrom’
+
+     0K                                                       100% 5.90M=0s
+
+2019-01-31 16:16:44 (5.90 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.astrom’ saved [89/89]
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 396 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.txt’
+
+     0K                                                       100% 25.5M=0s
+
+2019-01-31 16:16:44 (25.5 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psf.txt’ saved [396/396]
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psfsnr_vs_prior_flux.txt
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’
+
+     0K                                                        0.00 =0s
+
+2019-01-31 16:16:44 (0.00 B/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.help.psfsnr_vs_prior_flux.txt’ saved [0/0]
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.moc.fits
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11520 (11K) [application/octet-stream]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.moc.fits’
+
+     0K .......... .                                          100% 54.3M=0s
+
+2019-01-31 16:16:44 (54.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/60093310.60093310-0.MIPS.1.moc.fits’ saved [11520/11520]
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=N;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=A.tmp’
+
+     0K .......... .......... .......... .......... ......     2.71M=0.02s
+
+2019-01-31 16:16:44 (2.71 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=A.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=N;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=M;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=D.tmp’
+
+     0K .......... .......... .......... .......... ......     7.06M=0.006s
+
+2019-01-31 16:16:44 (7.06 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=D.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=M;O=D.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/?C=S;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=D.tmp’
+
+     0K .......... .......... .......... .......... ......     9.55M=0.005s
+
+2019-01-31 16:16:44 (9.55 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=D.tmp’ saved [47728]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/index.html?C=S;O=D.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=N;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=D.tmp’
+
+     0K .                                                     100% 68.7M=0s
+
+2019-01-31 16:16:44 (68.7 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=D.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=D.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=M;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=A.tmp’
+
+     0K .                                                     100% 64.3M=0s
+
+2019-01-31 16:16:44 (64.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=A.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=S;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=A.tmp’
+
+     0K .                                                     100% 61.3M=0s
+
+2019-01-31 16:16:44 (61.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=A.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=N;O=A
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=A.tmp’
+
+     0K .                                                     100% 65.3M=0s
+
+2019-01-31 16:16:44 (65.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=A.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=N;O=A.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=M;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=D.tmp’
+
+     0K .                                                     100% 65.3M=0s
+
+2019-01-31 16:16:44 (65.3 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=D.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=M;O=D.tmp since it should be rejected.
+
+--2019-01-31 16:16:44--  http://hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/?C=S;O=D
+Reusing existing connection to hedam.lam.fr:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=D.tmp’
+
+     0K .                                                     100% 66.1M=0s
+
+2019-01-31 16:16:44 (66.1 MB/s) - ‘data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=D.tmp’ saved [1025/1025]
+
+Removing data/hedam.lam.fr/HELP/dataproducts/dmu17/dmu17_HELP-SEIP-maps/GAMA-09/data/output_data/index.html?C=S;O=D.tmp since it should be rejected.
+
+FINISHED --2019-01-31 16:16:44--
+Total wall clock time: 27s
+Downloaded: 157 files, 60M in 20s (2.96 MB/s)

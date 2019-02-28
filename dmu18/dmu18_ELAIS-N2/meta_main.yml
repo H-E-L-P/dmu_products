@@ -1,0 +1,15 @@
+Product: dmu18_ELAIS-N2
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: ELAIS-N2
+
+Selection filter:
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: ELAIS-N2_PACS100_v0.9.fits, ELAIS-N2_PACS160_v0.9.fits, AllWISE_20160512_ELAIS-N2.fits, ELAIS-N2-100um-psffromstack.fits, psf_native.fits, EEF_grn_20.txt, EEF_red_20.txt 
