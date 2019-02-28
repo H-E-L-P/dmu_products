@@ -3,10 +3,12 @@
 echo ------------------------
 echo Begining script
 echo ------------------------
-cd $SMAP_DIR
+
+export HOME=/data/scat/
+cd .
 
 echo about to launch startup script
-source $SMAP_DIR/HELP_ipac_spire_smap_setup.csh
+source ./HELP_ipac_spire_smap_setup.csh
 echo did it work?
 pwd
 cd createmap

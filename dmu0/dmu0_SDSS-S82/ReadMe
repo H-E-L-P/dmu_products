@@ -1,0 +1,95 @@
+J/ApJ/794/120    THE SLOAN DIGITAL SKY SURVEY COADD: 275 deg2 OF DEEP SLOAN DIGITAL
+SKY SURVEY IMAGING ON STRIPE 82    (Annis+, 2014)
+================================================================================
+THE SLOAN DIGITAL SKY SURVEY COADD: 275 deg2 OF DEEP SLOAN DIGITAL
+SKY SURVEY IMAGING ON STRIPE 82
+       James Annis, Marcelle Soares-Santos, Michael A. Strauss, Andrew C. Becker, Scott Dodelson, Xiaohui Fan, James E. Gunn, Jiangang Hao, Zeljko Ivezic´, Sebastian Jester, Linhua Jiang, David E. Johnston, Jeffrey M. Kubo, Hubert Lampeitl, Huan Lin, Robert H. Lupton, Gajus Miknaitis, Hee-Jong Seo, Melanie Simet, and Brian Yanny
+      <ApJ Vol 794, Number 2, 20 October 2014, Page 120>
+      =2016MNRAS456...1359..1373
+================================================================================
+ADC_Keywords: SDSS; Galaxies, photometry 
+Keywords:  galaxies: fundamental parameters - galaxies: photometry -
+
+
+Abstract:
+    We present details of the construction and characterization of the coaddition of the Sloan Digital Sky Survey (SDSS) Stripe 82 ugriz imaging data. This survey consists of 275 deg 2 of repeated scanning by the SDSS camera over –50° ≤ α ≤ 60° and –1.°25 ≤ δ ≤ +1.°25 centered on the Celestial Equator. Each piece of sky has ~20 runs contributing and thus reaches ~2 mag fainter than the SDSS single pass data, i.e., to r ~ 23.5 for galaxies. We discuss the image processing of the coaddition, the modeling of the point-spread function (PSF), the calibration, and the production of standard SDSS catalogs. The data have an r -band median seeing of 1.''1 and are calibrated to ≤1%. Star color-color, number counts, and PSF size versus modeled size plots show that the modeling of the PSF is good enough for precision five-band photometry. Structure in the PSF model versus magnitude plot indicates minor PSF modeling errors, leading to misclassification of stars as galaxies, as verified using VVDS spectroscopy. There are a variety of uses for this wide-angle deep imaging data, including galactic structure, photometric redshift computation, cluster finding and cross wavelength measurements, weak lensing cluster mass calibrations, and cosmic shear measurements..
+
+Description:
+    A coadd reuction of SDSS data on Stripe 82. Photometric parameters for a large fraction of the SDSS Stripe 82 deep coadd.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName           Lrecl    Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe                                  This file
+SDSS-S82_November2017.fits                 Photometric parameters for SDSS Stripe 82
+--------------------------------------------------------------------------------
+
+Description of file: SDSS-S82_November2017.fits
+Column headings:
+--------------------------------------------------------------------------------
+'objID'
+'ra'
+'dec'
+'skyVersion'
+'run'
+'rerun'
+'camcol'
+'field'
+'obj'
+'mode'
+'nChild'
+'type'
+'probPSF'
+'insideMask'
+'flags'
+'flags_u'
+'flags_g'
+'flags_r'
+'flags_i'
+'flags_z'
+'psfMag_u'
+'psfMag_g'
+'psfMag_r'
+'psfMag_i'
+'psfMag_z'
+'psfMagErr_u'
+'psfMagErr_g'
+'psfMagErr_r'
+'psfMagErr_i'
+'psfMagErr_z'
+'fiberMag_u'
+'fiberMag_g'
+'fiberMag_r'
+'fiberMag_i'
+'fiberMag_z'
+'fiberMagErr_u'
+'fiberMagErr_g'
+'fiberMagErr_r'
+'fiberMagErr_i'
+'fiberMagErr_z'
+'petroMag_u'
+'petroMag_g'
+'petroMag_r'
+'petroMag_i'
+'petroMag_z'
+'petroMagErr_u'
+'petroMagErr_g'
+'petroMagErr_r'
+'petroMagErr_i'
+'petroMagErr_z'
+'modelMag_u'
+'modelMag_g'
+'modelMag_r'
+'modelMag_i'
+'modelMag_z'
+'modelMagErr_u'
+'modelMagErr_g'
+'modelMagErr_r'
+'modelMagErr_i'
+'modelMagErr_z'
+'help_field'
+
+
+================================================================================
+(End)                                Raphael Shirley [Sussex, UK]    10-Jan-2019
