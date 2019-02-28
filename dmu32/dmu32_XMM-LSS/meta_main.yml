@@ -10,10 +10,10 @@ depths: dmu_products/dmu1/dmu1_ml_XMM-LSS/data/depths_xmm-lss_20180504.fits
 
 flags: dmu_products/dmu6/dmu6_v_XMM-LSS/data/tiles/xmm-lss_20180504_FILENUM_flags.fits
 
-xid: None
+xid: [dmu_products/dmu26/dmu26_XID+MIPS_XMM-LSS/data/dmu26_XID+MIPS_XMM-LSS_SPUDS_cat_20181210.fits, dmu_products/dmu26/dmu26_XID+MIPS_XMM-LSS/data/dmu26_XID+MIPS_XMM-LSS_SWIREnSPUDS_cat_20190106.fits, dmu_products/dmu26/dmu26_XID+PACS_XMM-LSS/data/dmu26_XID+PACS_XMM-LSS_SPUDS_cat20190215.fits, dmu_products/dmu26/dmu26_XID+PACS_XMM-LSS/data/dmu26_XID+PACS_XMM-LSS_SWIREnSPUDS_cat20190215.fits, dmu_products/dmu26/dmu26_XID+SPIRE_XMM-LSS/data/dmu26_XID+SPIRE_XMM-LSS_SPUDS_cat_20190107.fits, dmu_products/dmu26/dmu26_XID+SPIRE_XMM-LSS/data/dmu26_XID+SPIRE_XMM-LSS_SWIREnSPUDS_cat_20190107.fits]
 
 photoz: dmu_products/dmu24/dmu24_XMM-LSS/data/master_catalogue_xmm-lss_20180221_photoz_20180518_r_optimised.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_XMM-LSS/data/zphot/HELP_final_results.fits
 
 final: dmu_products/dmu32/dmu32_XMM-LSS/data/XMM-LSS_20180504_cigale.fits
