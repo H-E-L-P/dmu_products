@@ -1,0 +1,15 @@
+Product: dmu26_XID+MIPS_HDF-N
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: HDF-N
+
+Selection filter: F_MIPS_24
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products:  70101860.70101860-0.MIPS.help.fits, dmu17_MIPS_PSF_HDF-N_20190308sr.fits, master_catalogue_hdf-n_20180427.fits
