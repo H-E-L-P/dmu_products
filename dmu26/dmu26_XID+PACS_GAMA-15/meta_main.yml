@@ -1,0 +1,15 @@
+Product: dmu26_XID+PACS_GAMA-15
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: GAMA-15
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: GAMA-15_PACS100_v0.9.fits, GAMA-15_PACS160_v0.9.fits,dmu18_PACS_100_PSF_GAMA-15_20190131.fits, dmu18_PACS_160_PSF_GAMA-15_20190131.fits, GAMA15_Ldust_prediction_results.fits, master_catalogue_gama-15_20180119_photoz_20180210_r_optimised.fits
