@@ -56,7 +56,7 @@ for i in range(0,len(tiles)):
 		failed_tiles.append(tiles[i])
 	
 for i in range(0,len(priors)):
-	hdulists[i].writeto(output_folder+'dmu26_XID+PACS_'+bands[i]+'_ELAIS-S1_20180313.fits',clobber=True)
+	hdulists[i].writeto(output_folder+'dmu26_XID+PACS_'+bands[i]+'_GAMA09.fits',clobber=True)
 
 outfile=output_folder+'failed_tiles.pkl'
 with open(outfile, 'wb') as f:
