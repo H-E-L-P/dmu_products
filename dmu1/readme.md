@@ -63,7 +63,7 @@ SPIRE-NEP              | 20180220
 SSDF                   | 20180221
 xFLS                   | 20180501
 XMM-13hr               | 20180501
-XMM-LSS                | 20180504
+XMM-LSS                | 20190328
  
  These are the catalogues on which checks and diagnostics have been run, validations performed, xid+ fir fluxes calculated, photometric redshifts calculated, and CIGALE parameters fitted.
  
