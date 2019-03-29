@@ -10,7 +10,9 @@ depths: dmu_products/dmu1/dmu1_ml_ELAIS-N2/data/depths_elais-n2_20180218.fits
 
 flags: dmu_products/dmu6/dmu6_v_ELAIS-N2/data/elais-n2_20180218_flags.fits
 
-xid: None
+xid: [ dmu_products/products/dmu26/dmu26_XID+MIPS_ELAIS-N2/data/dmu26_XID+MIPS_ELAIS-N2_SWIRE_cat_20181108.fits,
+       dmu_products/dmu26/dmu26_XID+PACS_ELAIS-N2/data/dmu26_XID+PACS_ELAIS-N2_cat_20190206.fits,
+       dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits ]
 
 photoz: None
 
