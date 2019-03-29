@@ -11,7 +11,7 @@
 #$ -m eas
 #$ -M raphael.shirley@sussex.ac.uk
 
-ls ./data/tiles/sub_catalogue_xmm-lss_20190207*.fits > ./data/tiles/fits_list_20190207.lis
+ls ./data/tiles/sub_catalogue_xmm-lss_20190328*.fits > ./data/tiles/fits_list_20190328.lis
 
-stilts tcat in=@./data/tiles/fits_list_20190207.lis out=./data/master_catalogue_xmm-lss_20190207.fits
+stilts tcat in=@./data/tiles/fits_list_20190328.lis out=./data/master_catalogue_xmm-lss_20190328.fits
 
