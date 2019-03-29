@@ -9,7 +9,14 @@ Extragalactic Legacy Project (HELP).
 
 ## Folder structure
 
-The folders are organised by field.
+The folders are organised by field. Each field folder contains the code required to make the point spread function based on stacking allwise positions.
+
+There are also folders containing the HATLAS maps and the homegenised HELP PACS maps in [./dmu18/dmu18_HELP-PACS-maps/]{./dmu18/dmu18_HELP-PACS-maps/}
+
+
+
+
+
 -------------------------------------------------------------------------------
 
 
