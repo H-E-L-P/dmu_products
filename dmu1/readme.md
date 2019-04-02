@@ -45,7 +45,7 @@ AKARI-NEP              | 20180215
 AKARI-SEP              | 20180221
 Bootes                 | 20180520 
 CDFS-SWIRE             | 20180613
-COSMOS                 | 20180516
+COSMOS                 | 20190402
 EGS                    | 20180501
 ELAIS-N1               | 20171016
 ELAIS-N2               | 20180218
