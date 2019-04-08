@@ -1,6 +1,8 @@
 Kilo-Degree Survey (KiDS) catalogue
 ===================================
 
+## DR3
+
 This product contains the catalogue of the DR3 release of the Kilo Degree Survey
 (KIDS).  We downloaded all the catalogue files of the DR3 using the [list of
 links](http://kids.strw.leidenuniv.nl/DR3/kids_dr3.0_cat_wget.txt) provided in
