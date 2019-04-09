@@ -1,9 +1,10 @@
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Blind catalogues (dmu19)
+
 HELP DMU22 SPIRE blind catalogues
 
 The `blind catalogues`, containing all the SPIRE sources which are directly detected in the three SPIRE maps can be found on HeDaM:
 
 - http://hedam.lam.fr/HELP/dataproducts/dmu22/
-# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Blind catalogues (dmu19)
 
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk))
 
