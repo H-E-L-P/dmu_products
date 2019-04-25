@@ -43,7 +43,7 @@ Fits files can be found here: http://hedam.lam.fr/HELP/dataproducts/dmu1/
 -----------------------|------------------------------------------
 AKARI-NEP              | 20180215
 AKARI-SEP              | 20180221
-Bootes                 | 20180520 
+Bootes                 | 20190201 
 CDFS-SWIRE             | 20180613
 COSMOS                 | 20190402
 EGS                    | 20180501
