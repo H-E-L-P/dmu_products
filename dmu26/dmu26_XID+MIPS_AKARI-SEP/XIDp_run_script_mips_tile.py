@@ -26,7 +26,7 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./data/'
+output_folder='./'
 
 
 #First run: Tiles.pkl

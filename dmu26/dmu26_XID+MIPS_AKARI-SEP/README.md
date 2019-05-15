@@ -1,4 +1,4 @@
-# dmu26_XID+MIPS_AKARI-NEP
+# dmu26_XID+MIPS_AKARI-SEP
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -7,28 +7,47 @@ Description:
   distribution on flux estimates (see Hurley et al. 2017 for more details).
  
 
-## AKARI-NEP
+## AKARI-SEP
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
    prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
    
 
+#### SEIP-Maps
+In the case of the mosaic maps see [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)
+
+
 ### Running on Apollo
 
-To run on Apollo, first run the notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
- 
+#### SEIP-Maps
+   
+To run on Apollo, first run the script [XID_plus_priors.sh](./XID_plus_priors.sh). This will create the `Master_prior.pkl` and `Tiles.pkl` file for every SEIP-Map, in separate folders (check [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)).
+
+We will also obtained two files with the number of hierarchical tiles and main tiles for each case:
+[large_tiles.csv](./data/large_tiles.csv) 
+[tiles.csv](./data/tiles.csv) 
+
+Then generate the hierarchical tiles:
+
 ```bash
-mkdir data
 module load sge
+python XID_plus_hier.py 
+```
+This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-```
-Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours:
+where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
+
+Then fit all tiles, where $n_tiles is the number of main tiles. 
 ```bash
-cd ..
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
+python XID_plus_tile.py
 ```
+
+This python script will iterate over every folder and submit the job:
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
+where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
+
+
 Then combine the Bayesian maps into one:
  ```bash
  python make_combined_map.py
@@ -39,23 +58,18 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_AKARI-SEP_cat.fits
 ```
 #### Computation 
-# Details on computational cost of fitting AKARI-NEP:
+# Details on computational cost of fitting AKARI-SEP:
  
- ```bash 
-#OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
-#======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
-```
  
  
 ### Final data products
 
-  Final stage requires examination and validation of catalogues using [XID+MIPS_AKARI-NEP_final_processing.ipynb](XID+MIPS_AKARI-NEP_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+MIPS_AKARI-SEP_final_processing.ipynb](XID+MIPS_AKARI-SEP_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
