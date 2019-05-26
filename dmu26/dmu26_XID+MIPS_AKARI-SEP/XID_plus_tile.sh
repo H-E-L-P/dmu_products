@@ -13,4 +13,4 @@ echo $(pwd)
 path_here
 echo $(pwd)
 
-python ../../../XIDp_run_script_mips_tile.py 
+python ../../XIDp_run_script_mips_tile.py 
