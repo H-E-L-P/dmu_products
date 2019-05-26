@@ -33,6 +33,4 @@ for index, name in enumerate(folders):
         f.write(s)
         f.close()
         print('qsub -t 1-%s -q seb_node.q XID_plus_hier.sh' % task[0][index])
-        file_ = open("ouput.txt", "w")
-        subprocess.Popen('qsub -t 1-%s -q seb_node.q XID_plus_hier.sh' % task[0][index], stdout=file_)
-        #os.system('qsub -t 1-%s -q seb_node.q XID_plus_hier.sh' % task[0][index])
+        os.system('qsub -t 1-%s -q seb_node.q XID_plus_hier.sh' % task[0][index])
