@@ -83,20 +83,22 @@
 //aladin.setImageSurvey('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_250/');
 aladin.setImageSurvey('help_spire_rgb');
                               
-        var moc = A.MOCFromURL(
-                      'http://hedam.lam.fr/HELP/dataproducts/dmu2/help_coverage_MOC.fits', 
-                      {color: '#84f', lineWidth: 1}
-                              );
+        //var moc = A.MOCFromURL(
+        //              'http://hedam.lam.fr/HELP/dataproducts/dmu2/help_coverage_MOC.fits', 
+        //              {color: '#84f', lineWidth: 1}
+         //                     );
         //aladin.includeMOC(moc);
+        //moc.hide();
         //aladin.gotoRaDec(15, 0);
         var hips = A.catalogHiPS(
                   'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/', 
                                  {onClick: 'showTable', name: 'help_dr1'}
                                  );
         aladin.addCatalog(hips);
-        //var simbad = A.catalogHiPS('https://axel.u-strasbg.fr/HiPSCatService/Simbad',     
-        //{onClick: 'showTable', name: 'Simbad'});
-        //aladin.addCatalog(simbad);
+        var simbad = A.catalogHiPS('https://axel.u-strasbg.fr/HiPSCatService/Simbad',     
+        {onClick: 'showTable', name: 'Simbad'});
+        simbad.hide();
+        aladin.addCatalog(simbad);
 
 
         //aladin.setOverlayImageLayer(
