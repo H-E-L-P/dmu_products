@@ -8,14 +8,17 @@ This repository contains the HiPS files for the SPIRE and PACS imaging and the H
  
 Each single band map is is in a separate folder including a false colour map made from the SPIRE bands
 
-- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/)
-- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/)
-- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/)
-- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_green/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_green/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_red/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_red/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_250/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_250/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_300/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_300/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_300/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_300/)
 - [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/)
 
+We also provide HiPS for the full HELP DR1 catalogue. At this stage the 'score' is a random number. 
+This does notcurrently render very well. We are working on fixing this.
 
-
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/)
 
 
 
