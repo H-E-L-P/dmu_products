@@ -11,6 +11,7 @@ Structure
 		
 1. [dmu31_Density_Maps](dmu31_Density_Maps), Making density maps from the HELP blind catalogues.
 2. [dmu31_Examples](dmu31_Examples), a number of example notebooks for basic use of HELP data.
+3. [dmu31_HiPS](dmu31_HiPS), HiPS files permitting all sky viewing through Aladin Lite.
 3. [dmu31_ULIRGS](dmu31_ULIRGS), work on extreme star forming galaxies in HELP.
 4. [dmu31_XIDplus](dmu31_XIDplus), information on running HELP on Oracle cloud computers.	
 5. [dmu31_herschelhelp_internal_python](dmu31_herschelhelp_internal_python), information on our internal Python code.	
@@ -21,7 +22,7 @@ Structure
     
 -------------------------------------------------------------------------------
 
-**Authors**: [Raphael Shirley](http://raphaelshirley.co.uk/), Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+**Authors**: [Raphael Shirley](http://raphaelshirley.co.uk/), Yannick Roehlly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  
