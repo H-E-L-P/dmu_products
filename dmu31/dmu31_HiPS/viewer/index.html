@@ -90,15 +90,28 @@ aladin.setImageSurvey('help_spire_rgb');
         //aladin.includeMOC(moc);
         //moc.hide();
         //aladin.gotoRaDec(15, 0);
-        var hips = A.catalogHiPS(
+        var help = A.catalogHiPS(
                   'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/', 
                                  {onClick: 'showTable', name: 'help_dr1'}
                                  );
-        aladin.addCatalog(hips);
-        var simbad = A.catalogHiPS('https://axel.u-strasbg.fr/HiPSCatService/Simbad',     
-        {onClick: 'showTable', name: 'Simbad'});
-        simbad.hide();
-        aladin.addCatalog(simbad);
+        
+    var hipsCats = {
+        'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
+                               {name: 'help_dr1', 
+                               shape: 'circle', sourceSize: 8, color: '#d66bae'}),
+        'gdr2': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/I/345/gaia2',    
+                               {name: 'Gaia DR2 sources'}),
+        'simbad': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/Simbad', 
+                                {name: 'Simbad', color: '#6dbdce'})
+                   };
+
+    //hipsCats['help'].hide();
+    hipsCats['gdr2'].hide();
+    hipsCats['simbad'].hide();
+
+    aladin.addCatalog(hipsCats['help']);
+    aladin.addCatalog(hipsCats['gdr2']);
+    aladin.addCatalog(hipsCats['simbad']);
 
 
         //aladin.setOverlayImageLayer(
