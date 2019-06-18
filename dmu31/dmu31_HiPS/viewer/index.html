@@ -10,8 +10,8 @@
     <!-- Aladin Lite has a dependency on the jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 
-    <!-- Aladin Lite container at requested dimensions -->
-    <div id="aladin-lite-div" style="width:100%;height:90%;">
+    <!-- Aladin Lite container at requested dimensions 100%;height:90%;" width:800px;height:400px;> -->
+    <div id="aladin-lite-div" style="100%;height:90%">
     <div class="aladin-zoomControl"><a href="#" class="zoomPlus" title="Zoom in">+</a><a href="#" class="zoomMinus" title="Zoom out">–</a></div>
     
     
@@ -39,42 +39,42 @@
         
         aladin.createImageSurvey('help_pacs_green', 
                                  'help_pacs_green', 
-                'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_green/', 
+                'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_green', 
                                  'equatorial', 
                                  7, 
                                  {imgFormat: 'png'}
                                  );
         aladin.createImageSurvey('help_pacs_red', 
                                  'help_pacs_red', 
-                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_red/', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/pacs_red', 
                                  'equatorial', 
                                  7, 
                                  {imgFormat: 'png'}
                                  );
         aladin.createImageSurvey('help_spire_250', 
                                  'help_spire_250', 
-                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_250/', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_250', 
                                  'equatorial', 
                                  7, 
                                  {imgFormat: 'png'}
                                  );
         aladin.createImageSurvey('help_spire_350', 
                                  'help_spire_350', 
-                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_350/', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_350', 
                                  'equatorial', 
                                  6, 
                                  {imgFormat: 'png'}
                                  );
         aladin.createImageSurvey('help_spire_500', 
                                  'help_spire_500', 
-                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_500/', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_500', 
                                  'equatorial', 
                                  6, 
                                  {imgFormat: 'png'}
                                  );
         aladin.createImageSurvey('help_spire_rgb', 
                                  'help_spire_rgb', 
-                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb', 
                                  'equatorial', 
                                  7, 
                                  {imgFormat: 'png'}
@@ -90,29 +90,29 @@ aladin.setImageSurvey('help_spire_rgb');
         //aladin.includeMOC(moc);
         //moc.hide();
         //aladin.gotoRaDec(15, 0);
-        var help = A.catalogHiPS(
-                  'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/', 
-                                 {onClick: 'showTable', name: 'help_dr1'}
-                                 );
-        http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/
-    var hipsCats = {
-        'help_alist': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/',    
-                               {name: 'help_dr1_alist'}),
-        'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
-                               {name: 'help_dr1', 
-                               shape: 'circle', sourceSize: 8, color: '#d66bae'}),
-        'gdr2': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/I/345/gaia2',    
-                               {name: 'Gaia DR2 sources'}),
-        'simbad': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/Simbad', 
-                                {name: 'Simbad', color: '#6dbdce'})
-                   };
 
-    hipsCats['help'].hide();
+        //http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/
+    var hipsCats = {
+        'help_alist': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist',    
+                               {onClick: 'showPopup', name: 'HELP DR1 A list'}),
+        //'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
+        //                       {onClick: 'showTable', name: 'help_dr1', 
+        //                       shape: 'circle', sourceSize: 8, color: '#d66bae'}),
+        'gdr2': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/I/345/gaia2',    
+                               {onClick: 'showTable', name: 'Gaia DR2 sources'}),
+        'simbad': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/Simbad', 
+                                {onClick: 'showTable', name: 'Simbad'})
+                   };
+    //table:
+    //https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=HELP_J161214.420%2B555305.791&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go
+    //sed:
+    //https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/~%3Fbestseds/data/ELAIS-S1/HELP_J003755.955-434638.518_best_model.fits
+    //hipsCats['help'].hide();
     hipsCats['gdr2'].hide();
     hipsCats['simbad'].hide();
 
     aladin.addCatalog(hipsCats['help_alist']);
-    aladin.addCatalog(hipsCats['help']);
+    //aladin.addCatalog(hipsCats['help']);
     aladin.addCatalog(hipsCats['gdr2']);
     aladin.addCatalog(hipsCats['simbad']);
 
