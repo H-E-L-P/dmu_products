@@ -32,38 +32,38 @@ Here is the list of the DMU numbers with their associated responsibility. Some o
  DMU              |  Responsibility
 ------------------|------------------------------------------
  [DMU0](dmu0)     |  Pristine catalogues
- [DMU0](dmu0)     |  Masterlist data
- [DMU0](dmu0)     |  Field definitions
- [DMU0](dmu0)     |  Morphologies (Shapes & Sizes) of Objects
- [DMU0](dmu0)     |  Bright Star Mask
- [DMU0](dmu0)     |  Known Star Flag
- [DMU0](dmu0)     |  Optical photometry validation
- [DMU0](dmu0)     |  Optical photometry
- [DMU0](dmu0)     |  Radio data - LOFAR & FIRST/NVSS/TGSS
- [DMU0](dmu0)     |  Radio data - JVLA-DEEP & GMRT-DEEP
- [DMU0](dmu10)    |  Data Fusion
- [DMU0](dmu11)    |  Cross matching MIPS/PACS/SPIRE
- [DMU0](dmu12)    |  Cross Matching LOFAR & FIRST/NVSS/TGSS
- [DMU0](dmu13)    |  Cross Matching JVLA-DEEP & GMRT-DEEP
- [DMU0](dmu14)    |  GALEX data
- [DMU0](dmu15)    |  X-Ray data
- [DMU0](dmu16)    |  WISE Photometry
- [DMU0](dmu17)    |  MIPS Maps
- [DMU0](dmu18)    |  PACS maps
- [DMU0](dmu19)    |  SPIRE maps
- [DMU0](dmu20)    |  MIPS blind photometry
- [DMU0](dmu21)    |  PACS blind photometry
- [DMU0](dmu22)    |  SPIRE blind photometry
- [DMU0](dmu23)    |  Spec-z data
- [DMU0](dmu24)    |  Photo-z
- [DMU0](dmu25)    |  Prior model
- [DMU0](dmu26)    |  XID+
- [DMU0](dmu27)    |  Empirical models / templates
- [DMU0](dmu28)    |  SED fitting / CIGALE
- [DMU0](dmu29)    |  Radiative transfer models
- [DMU0](dmu30)    |  Missing (supplementary) Sources
- [DMU0](dmu31)    |  Tools
- [DMU0](dmu31)    |  Merged catalogue
+ [DMU1](dmu0)     |  Masterlist data
+ [DMU2](dmu0)     |  Field definitions
+ [DMU3](dmu0)     |  Morphologies (Shapes & Sizes) of Objects
+ [DMU4](dmu0)     |  Bright Star Mask
+ [DMU5](dmu0)     |  Known Star Flag
+ [DMU6](dmu0)     |  Optical photometry validation
+ [DMU7](dmu0)     |  Optical photometry
+ [DMU8](dmu0)     |  Radio data - LOFAR & FIRST/NVSS/TGSS
+ [DMU9](dmu0)     |  Radio data - JVLA-DEEP & GMRT-DEEP
+ [DMU10](dmu10)    |  Data Fusion
+ [DMU11](dmu11)    |  Cross matching MIPS/PACS/SPIRE
+ [DMU12](dmu12)    |  Cross Matching LOFAR & FIRST/NVSS/TGSS
+ [DMU13](dmu13)    |  Cross Matching JVLA-DEEP & GMRT-DEEP
+ [DMU14](dmu14)    |  GALEX data
+ [DMU15](dmu15)    |  X-Ray data
+ [DMU16](dmu16)    |  WISE Photometry
+ [DMU17](dmu17)    |  MIPS Maps
+ [DMU18](dmu18)    |  PACS maps
+ [DMU19](dmu19)    |  SPIRE maps
+ [DMU20](dmu20)    |  MIPS blind photometry
+ [DMU21](dmu21)    |  PACS blind photometry
+ [DMU22](dmu22)    |  SPIRE blind photometry
+ [DMU23](dmu23)    |  Spec-z data
+ [DMU24](dmu24)    |  Photo-z
+ [DMU25](dmu25)    |  Prior model
+ [DMU266](dmu26)    |  XID+
+ [DMU27](dmu27)    |  Empirical models / templates
+ [DMU28](dmu28)    |  SED fitting / CIGALE
+ [DMU29](dmu29)    |  Radiative transfer models
+ [DMU30](dmu30)    |  Missing (supplementary) Sources
+ [DMU31](dmu31)    |  Tools
+ [DMU32](dmu31)    |  Merged catalogue
 
 
 Running the code
