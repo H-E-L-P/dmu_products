@@ -114,7 +114,7 @@ aladin.on('objectClicked', function(object) {
         objClicked = object;
       object.select(); 
       img = '';
-        if (String(object.data.help_id).startsWith('HELP')){
+        if (String(object.data.help_id).startsWith('HELP') && !isNaN(object.data.redshift)){
         img = '<div style = "background-color:white; "><img style="max-width:100%; max-height:90%" src="https://herschel-vos.phys.sussex.ac.uk/getproduct/bestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits?preview=True&width=null" alt="CIGALE SED">' + '<a href="https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=' + object.data.help_id.replace('+', '%2B') +'&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go"> Full table.</a>' + '<a href="https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits"> Full CIGALE data.</a></div>';
         }
     }
