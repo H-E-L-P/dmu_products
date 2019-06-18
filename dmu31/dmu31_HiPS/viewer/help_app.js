@@ -1,4 +1,4 @@
-var aladin = A.aladin('#aladin-lite-div', {cooFrame: 'equatorial', target: '00 45 00 +00 00 00', fov: 60, });
+var aladin = A.aladin('#aladin-lite-div', {cooFrame: 'equatorial', target: '00 45 00 +00 00 00', fov: 60, realFullscreen: true});
         
 aladin.createImageSurvey('help_pacs_green', 
                                  'help_pacs_green', 
@@ -71,7 +71,7 @@ var hipsCats = {
 //table:
 //https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=HELP_J161214.420%2B555305.791&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go
 //sed:
-//https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/~%3Fbestseds/data/ELAIS-S1/HELP_J003755.955-434638.518_best_model.fits
+//https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/GAMA-09/HELP_J084426.228p012824.790_best_model.fits
 
 //hipsCats['help'].hide();
 hipsCats['gdr2'].hide();
@@ -96,3 +96,30 @@ aladin.addCatalog(hipsCats['help_alist']);
 $('input[name=survey]').change(function() {
     aladin.setImageSurvey($(this).val());
 });
+
+
+// define function triggered when an object is clicked
+var objClicked;
+aladin.on('objectClicked', function(object) {
+    var msg;
+    if (object) {
+        objClicked = object;
+      object.select();
+        msg = 'You clicked object ' + object.data.help_id + ' located at ' + object.ra + ', ' + object.dec;
+    }
+
+    var img;
+   //helpid field help id
+    if (object) {
+        objClicked = object;
+      object.select(); 
+      img = '';
+        if (object.data.main_id.startsWith('HELP')){
+        img = '<div style = "background-color:white; "><img style="max-width:100%; max-height:90%" src="https://herschel-vos.phys.sussex.ac.uk/getproduct/bestseds/data/ELAIS-S1/HELP_J003809.787-443309.697_best_model.fits?preview=True&width=null" alt="CIGALE SED">' + '<a href="https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=' + object.data.help_id.replace('+', '%2B') +'&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go"> Full table.</a>' + '<a href="https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/' + object.data.field + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits">Full CIGALE data.</a></div>';
+        }
+    }
+    
+    
+    $('#cigale-div').html(img);
+});
+
