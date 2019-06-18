@@ -29,41 +29,41 @@ DMU list
 
 Here is the list of the DMU numbers with their associated responsibility. Some of these involve ongoing work and are not currently on GitHub. dmu32 contains the main HELP data product which joins together data from dmu0 (optical surveys), dmu1 (masterlist), dmu24 (photometric redshifts), dmu26 (XID+ fluxes), dmu28 (CIGALE SED fits).
 
- DMU#  |  Responsibility
--------|------------------------------------------
- 0     |  Pristine catalogues
- 1     |  Masterlist data
- 2     |  Field definitions
- 3     |  Morphologies (Shapes & Sizes) of Objects
- 4     |  Bright Star Mask
- 5     |  Known Star Flag
- 6     |  Optical photometry validation
- 7     |  Optical photometry
- 8     |  Radio data - LOFAR & FIRST/NVSS/TGSS
- 9     |  Radio data - JVLA-DEEP & GMRT-DEEP
- 10    |  Data Fusion
- 11    |  Cross matching MIPS/PACS/SPIRE
- 12    |  Cross Matching LOFAR & FIRST/NVSS/TGSS
- 13    |  Cross Matching JVLA-DEEP & GMRT-DEEP
- 14    |  GALEX data
- 15    |  X-Ray data
- 16    |  WISE Photometry
- 17    |  MIPS Maps
- 18    |  PACS maps
- 19    |  SPIRE maps
- 20    |  MIPS blind photometry
- 21    |  PACS blind photometry
- 22    |  SPIRE blind photometry
- 23    |  Spec-z data
- 24    |  Photo-z
- 25    |  Prior model
- 26    |  XID+
- 27    |  Empirical models / templates
- 28    |  SED fitting / CIGALE
- 29    |  Radiative transfer models
- 30    |  Missing (supplementary) Sources
- 31    |  Tools
- 32    |  Merged catalogue
+ DMU              |  Responsibility
+------------------|------------------------------------------
+ [DMU0](dmu0)     |  Pristine catalogues
+ [DMU0](dmu0)     |  Masterlist data
+ [DMU0](dmu0)     |  Field definitions
+ [DMU0](dmu0)     |  Morphologies (Shapes & Sizes) of Objects
+ [DMU0](dmu0)     |  Bright Star Mask
+ [DMU0](dmu0)     |  Known Star Flag
+ [DMU0](dmu0)     |  Optical photometry validation
+ [DMU0](dmu0)     |  Optical photometry
+ [DMU0](dmu0)     |  Radio data - LOFAR & FIRST/NVSS/TGSS
+ [DMU0](dmu0)     |  Radio data - JVLA-DEEP & GMRT-DEEP
+ [DMU0](dmu10)    |  Data Fusion
+ [DMU0](dmu11)    |  Cross matching MIPS/PACS/SPIRE
+ [DMU0](dmu12)    |  Cross Matching LOFAR & FIRST/NVSS/TGSS
+ [DMU0](dmu13)    |  Cross Matching JVLA-DEEP & GMRT-DEEP
+ [DMU0](dmu14)    |  GALEX data
+ [DMU0](dmu15)    |  X-Ray data
+ [DMU0](dmu16)    |  WISE Photometry
+ [DMU0](dmu17)    |  MIPS Maps
+ [DMU0](dmu18)    |  PACS maps
+ [DMU0](dmu19)    |  SPIRE maps
+ [DMU0](dmu20)    |  MIPS blind photometry
+ [DMU0](dmu21)    |  PACS blind photometry
+ [DMU0](dmu22)    |  SPIRE blind photometry
+ [DMU0](dmu23)    |  Spec-z data
+ [DMU0](dmu24)    |  Photo-z
+ [DMU0](dmu25)    |  Prior model
+ [DMU0](dmu26)    |  XID+
+ [DMU0](dmu27)    |  Empirical models / templates
+ [DMU0](dmu28)    |  SED fitting / CIGALE
+ [DMU0](dmu29)    |  Radiative transfer models
+ [DMU0](dmu30)    |  Missing (supplementary) Sources
+ [DMU0](dmu31)    |  Tools
+ [DMU0](dmu31)    |  Merged catalogue
 
 
 Running the code
@@ -77,37 +77,7 @@ If you don't wish to rerun or adapt the code here but just to use the data, you 
 
 - [https://github.com/H-E-L-P/herschelhelp_python](https://github.com/H-E-L-P/herschelhelp_python)
 
-Procedure to add a new DMU data product
----------------------------------------
 
-Here is the procedure to add a new DMU data product:
-
-- Create a `dmu<nn>/dmu<nn>_<product_name>` directory.
-- Create a `readme.md` file describing the product.  Indicate what pristine data
-  was used and all the processes that were applied to it.
-- You may add some scripts in the folder or create another DMU product
-  containing the programme that you are using in various products.
-- Add a `meta_main.yml` and one or more `meta_survey.yml` (if there are several,
-  name them `meta_survey_1.yml` and so on) taken from the `TEMPLATES` directory.
-  These files are important as they allow us to trace and acknowledge the data
-  we use.
-- Don't put the actual data on Github, instead explain how to get it in
-  a `get_data.md` file, or contact Yannick.
-
-When this is done, Yannick will:
-
-- Synchronise the DMU product repository on HeDaM and add the actual data in the
-  `data/` folder.
-- Add a `changelog.md` file describing the history of the data product.
-- Add a `dmu2_validation` report with technical checks to the data.
-
-Procedure for validators
-------------------------
-
-When you have to validate a product, you can download it [from
-HeDaM](http://hedam.lam.fr/HELP/dataproducts/).  Then you need to add
-a `validation_report.md` file inside the product folder and sync it back to
-Github.  You can also update the `changelog.md` file.
 
 -------------------------------------------------------------------------------
 
