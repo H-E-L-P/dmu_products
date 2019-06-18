@@ -40,6 +40,38 @@ Those files are `YAML` containing several items (like FITS keywords) that can
 easily be read by a computer programme. You should not worry and only fill the
 information after the `:` preserving one blank line between items.
 
+Procedure to add a new DMU data product
+---------------------------------------
+
+Here is the procedure to add a new DMU data product:
+
+- Create a `dmu<nn>/dmu<nn>_<product_name>` directory.
+- Create a `readme.md` file describing the product.  Indicate what pristine data
+  was used and all the processes that were applied to it.
+- You may add some scripts in the folder or create another DMU product
+  containing the programme that you are using in various products.
+- Add a `meta_main.yml` and one or more `meta_survey.yml` (if there are several,
+  name them `meta_survey_1.yml` and so on) taken from the `TEMPLATES` directory.
+  These files are important as they allow us to trace and acknowledge the data
+  we use.
+- Don't put the actual data on Github, instead explain how to get it in
+  a `get_data.md` file, or contact Yannick.
+
+When this is done, Yannick will:
+
+- Synchronise the DMU product repository on HeDaM and add the actual data in the
+  `data/` folder.
+- Add a `changelog.md` file describing the history of the data product.
+- Add a `dmu2_validation` report with technical checks to the data.
+
+Procedure for validators
+------------------------
+
+When you have to validate a product, you can download it [from
+HeDaM](http://hedam.lam.fr/HELP/dataproducts/).  Then you need to add
+a `validation_report.md` file inside the product folder and sync it back to
+Github.  You can also update the `changelog.md` file.
+
 
 -------------------------------------------------------------------------------
 
