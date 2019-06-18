@@ -57,7 +57,7 @@ Here is the list of the DMU numbers with their associated responsibility. Some o
  [DMU23](dmu23)    |  Spec-z data
  [DMU24](dmu24)    |  Photo-z
  [DMU25](dmu25)    |  Prior model
- [DMU266](dmu26)    |  XID+
+ [DMU26](dmu26)    |  XID+
  [DMU27](dmu27)    |  Empirical models / templates
  [DMU28](dmu28)    |  SED fitting / CIGALE
  [DMU29](dmu29)    |  Radiative transfer models
