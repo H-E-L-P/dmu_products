@@ -1,3 +1,5 @@
+//$('#layersControl').show();
+
 var aladin = A.aladin('#aladin-lite-div', {cooFrame: 'equatorial', target: '00 45 00 +00 00 00', fov: 60, realFullscreen: true});
         
 aladin.createImageSurvey('help_pacs_green', 
@@ -96,6 +98,8 @@ aladin.addCatalog(hipsCats['help_alist']);
 $('input[name=survey]').change(function() {
     aladin.setImageSurvey($(this).val());
 });
+
+
 
 
 // define function triggered when an object is clicked
