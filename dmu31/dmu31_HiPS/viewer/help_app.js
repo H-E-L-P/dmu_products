@@ -1,6 +1,6 @@
 //$('#layersControl').show();
 
-var aladin = A.aladin('#aladin-lite-div', {cooFrame: 'equatorial', target: '00 45 00 +00 00 00', fov: 60, realFullscreen: true});
+var aladin = A.aladin('#aladin-lite-div', {cooFrame: 'equatorial', target: '10 00 20 +02 13 00', fov: 7, realFullscreen: true});
         
 aladin.createImageSurvey('help_pacs_green', 
                                  'help_pacs_green', 
@@ -62,9 +62,9 @@ aladin.setImageSurvey('help_spire_rgb');
 var hipsCats = {
     'help_alist': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist',    
                                {onClick: 'showTable', name: 'HELP DR1 A list'}),
-        //'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
-        //                       {onClick: 'showTable', name: 'help_dr1', 
-        //                       shape: 'circle', sourceSize: 8, color: '#d66bae'}),
+                               
+        'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
+                               {name: 'HELP DR1 Masterlist'),
     'gdr2': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/I/345/gaia2',    
                                {onClick: 'showTable', name: 'Gaia DR2 sources'}),
     'simbad': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/Simbad', 
@@ -75,14 +75,15 @@ var hipsCats = {
 //sed:
 //https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/GAMA-09/HELP_J084426.228p012824.790_best_model.fits
 
-//hipsCats['help'].hide();
+hipsCats['help'].hide();
 hipsCats['gdr2'].hide();
 hipsCats['simbad'].hide();
 
     
-//aladin.addCatalog(hipsCats['help']);
+
 aladin.addCatalog(hipsCats['gdr2']);
 aladin.addCatalog(hipsCats['simbad']);
+aladin.addCatalog(hipsCats['help']);
 aladin.addCatalog(hipsCats['help_alist']);
 
 //aladin.setOverlayImageLayer(
@@ -119,7 +120,7 @@ aladin.on('objectClicked', function(object) {
       object.select(); 
       img = '';
         if (String(object.data.help_id).startsWith('HELP') && !isNaN(object.data.redshift)){
-        img = '<div style = "background-color:white; "><img style="max-width:100%; max-height:90%" src="https://herschel-vos.phys.sussex.ac.uk/getproduct/bestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits?preview=True&width=null" alt="CIGALE SED">' + '<a href="https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=' + object.data.help_id.replace('+', '%2B') +'&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go"> Full table.</a>' + '<a href="https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits"> Full CIGALE data.</a></div>';
+        img = '<div style = "background-color:white; "><img style="max-width:100%; max-height:90%" src="https://herschel-vos.phys.sussex.ac.uk/getproduct/bestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits?preview=True&width=null" alt="CIGALE SED">' + '<a href="https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=' + object.data.help_id.replace('+', '%2B') +'&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go"> Full table</a>.' + '<a href="https://herschel-vos.phys.sussex.ac.uk/bestseds/q/sdl/dlmeta?ID=ivo%3A//x-unregistred/%7E%3Fbestseds/data/' + object.data.field.replace('HATLAS-', '') + '/' + object.data.help_id.replace('+', 'p') + '_best_model.fits"> Full CIGALE data</a>.</div>';
         }
     }
     
