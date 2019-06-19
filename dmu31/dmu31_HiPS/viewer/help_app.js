@@ -64,7 +64,7 @@ var hipsCats = {
                                {onClick: 'showTable', name: 'HELP DR1 A list'}),
                                
         'help': A.catalogHiPS('http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1',    
-                               {name: 'HELP DR1 Masterlist'),
+                               {name: 'HELP DR1 Masterlist'}),
     'gdr2': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/I/345/gaia2',    
                                {onClick: 'showTable', name: 'Gaia DR2 sources'}),
     'simbad': A.catalogHiPS('http://axel.u-strasbg.fr/HiPSCatService/Simbad', 
