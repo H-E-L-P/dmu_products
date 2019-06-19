@@ -16,4 +16,6 @@ photoz: None
 
 cigale: None
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_xFLS/data/xFLS_20180501_cigale.fits

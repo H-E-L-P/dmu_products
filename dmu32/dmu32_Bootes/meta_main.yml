@@ -18,4 +18,6 @@ photoz: None
 
 cigale: None
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_Bootes/data/Bootes_20190201_cigale.fits

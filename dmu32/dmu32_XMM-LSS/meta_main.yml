@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_XMM-LSS/data/master_catalogue_xmm-lss_20180221_
 
 cigale: dmu_products/dmu28/dmu28_XMM-LSS/data/zphot/HELP_final_results.fits
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_XMM-LSS/data/XMM-LSS_20180504_cigale.fits

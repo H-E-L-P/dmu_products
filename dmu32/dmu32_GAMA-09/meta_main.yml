@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_GAMA-09/data/master_catalogue_gama-09_20171206_
 
 cigale: dmu_products/dmu28/dmu28_GAMA-09/data/zphot/HELP_final_results.fits
 
+cigale_ldust_prediction: dmu_products/dmu28/dmu28_GAMA-09/data/GAMA9_Ldust_prediction_results.fits
+
 final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits

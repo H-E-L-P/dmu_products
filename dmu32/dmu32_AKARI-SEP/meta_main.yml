@@ -16,4 +16,6 @@ photoz: None
 
 cigale: None
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_AKARI-SEP/data/AKARI-SEP_20180221_cigale.fits

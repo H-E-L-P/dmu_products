@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_NGP/data/master_catalogue_ngp_20180501_photoz_2
 
 cigale: None
 
+cigale_ldust_prediction: dmu_products/dmu28/dmu28_NGP/data/NGP_results_Ldust_prediction.fits
+
 final: dmu_products/dmu32/dmu32_NGP/data/NGP_20180219_cigale.fits
