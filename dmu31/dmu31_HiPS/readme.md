@@ -18,7 +18,8 @@ Use these links to add the layers in Aladin Desktop or to embed your own Aladin 
 
 We also provide HiPS for the full HELP DR1 A list catalogue. The A list is contains the 
 objects with optical and near infrared detections, photometric redshifts, XID+ 
-farinfrared fluxes, and CIGALE spectral energy distibution fits. 
+farinfrared fluxes, and CIGALE spectral energy distibution fits. We also provide the full 
+HELP DR1 masterlist which contains all objects in HELP.
 
 - [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/)
 
