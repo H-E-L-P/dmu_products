@@ -22,6 +22,7 @@ farinfrared fluxes, and CIGALE spectral energy distibution fits. We also provide
 HELP DR1 masterlist which contains all objects in HELP.
 
 - [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1_alist/)
+- [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/help_dr1/)
 
 
 
