@@ -46,7 +46,7 @@ The file meta_main.yml can be used to loop over files for certain computational 
 
 -------------------------------------------------------------------------------
 
-**Authors**: [Raphael Shirley](http://www.raphaelshirley.co.uk/), Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+**Authors**: [Raphael Shirley](http://www.raphaelshirley.co.uk/), Yannick Roehlly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  
