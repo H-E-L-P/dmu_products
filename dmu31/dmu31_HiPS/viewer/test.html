@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <script>
+    //http://time.jsontest.com
+    //gavo.json
+    //https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20*%20FROM%20herschelhelp.main%20WHERE%20herschelhelp.main.help_id%3D%27HELP_J161214.420%2B555305.791%27&_TIMEOUT=5&_FORMAT=JSON&_VERB=H&submit=Go
+    //http://dc.zah.uni-heidelberg.de/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%201%20*%20FROM%20ivoa.obscore&_TIMEOUT=5&MAXREC=100&_FORMAT=JSON&_VERB=H&submit=Go
+    
+//http://vohedamtest.lam.fr/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20*%20FROM%20herschelhelp.main%20WHERE%20herschelhelp.main.help_id%3D%27HELP_J161214.420%2B555305.791%27&_TIMEOUT=5&MAXREC=100&_FORMAT=JSON&_VERB=H&submit=Go
+    
+
+    
+    
+    $.getJSON('http://vohedamtest.lam.fr/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20*%20FROM%20herschelhelp.main%20WHERE%20herschelhelp.main.help_id%3D%27HELP_J161214.420%2B555305.791%27&_TIMEOUT=5&MAXREC=100&_FORMAT=JSON&_VERB=H&submit=Go', function(data) {
+        
+        var text = `Date: ${data.data}`
+                    
+        
+        $(".mypanel").html(text);
+    });
+    
+    
+
+
+    
+    
+    </script>
+    
+</body>
+</html>
