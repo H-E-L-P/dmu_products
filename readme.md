@@ -12,7 +12,7 @@ it is also possible to query the data from the Virtual Observatory database:
 
 - [https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
 
-The data can be browsed online us the HELP image and catalogue viewer:
+The data can be browsed online using the HELP image and catalogue viewer:
 
 - [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/viewer/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/viewer/)
 
