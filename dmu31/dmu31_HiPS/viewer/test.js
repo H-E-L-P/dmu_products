@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>JavaScript - read JSON from URL</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
-
-<body>
-   
-      <div id="sed_div" style="position:absolute; 
-             height:240px;
-             width:320px;
-             right:40px; 
-             bottom:100px; 
-             z-index: 10;"><!-- Plotly chart will be drawn inside this DIV --></div>
-
-    <script>
     //http://time.jsontest.com
     //gavo.json
     //https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20*%20FROM%20herschelhelp.main%20WHERE%20herschelhelp.main.help_id%3D%27HELP_J161214.420%2B555305.791%27&_TIMEOUT=5&_FORMAT=JSON&_VERB=H&submit=Go
@@ -87,31 +69,3 @@ Plotly.newPlot('sed_div', traces, layout, {showSendToCloud: true});
         
         
     });
-    
-//Graph = document.getElementById('graph');
-//	Plotly.plot( Graph, [{
-//	x: [482.71217397181, 641.37280834062, 782.16316055119, 922.65261456512, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 984.1970727457499, 355.9666829009, 473.33790398152996, 630.24252361175, 761.49088628139, 884.61150857536, 884.61150857536, 884.61150857536, 884.61150857536, 884.61150857536, 884.61150857536, 1030.38945975, 1030.38945975, 1638.0523148099999, 1638.0523148099999, 878.0296597665799, 1020.2454054773, 1252.3903361602001, 1645.1873341695002, 2146.7610291507, 1025.3505635400002, 1254.0539652100001, 1630.84244171, 2150.03675632, 1632.570419245, 1249.333030303, 2145.2807104737, 2144.0350461999997, 2162.16767154, 2162.16767154, 2162.16767154, 2162.16767154, 2162.16767154, 23471.506075228, 102338.21435593, 166069.81872365, 250762.14661902998, 349922.96233458, 510623.10042116],
-//	y: fluxes }], {
-//	margin: { t: 0 } } );
-
-
-    
-    
-
-
-  </script>
-</body> 
-    
-    
-    
-
-
-
-
-    
-    
-    
-    
-    
-
-</html>
