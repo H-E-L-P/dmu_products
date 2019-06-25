@@ -176,7 +176,7 @@ var layout = {
     title: '<a href="https://herschel-vos.phys.sussex.ac.uk/herschelhelp/q/cone/form?__nevow_form__=genForm&help_id=' + object.data.help_id.replace('+', '%2B') +'&_DBOPTIONS_ORDER=&_DBOPTIONS_DIR=ASC&MAXREC=100&_FORMAT=HTML&submit=Go">' + object.data.help_id + '</a>'
 };
 
-Plotly.newPlot('cigale_div', traces, layout, {showSendToCloud: true});
+Plotly.newPlot('cigale-div', traces, layout, {showSendToCloud: true});
         
         
         
