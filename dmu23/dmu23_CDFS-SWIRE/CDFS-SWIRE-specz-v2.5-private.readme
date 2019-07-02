@@ -1,0 +1,27 @@
+2df 							- 1
+6df 							- 2
+VVDS							- 4
+VLT-FORS2 						- 8
+GOODS/VIMOS DR 2.0.1  					- 16
+IMAGES							- 32
+GMASS 							- 64
+MUSYC catalgoue, source Szokoly et al. (2004)		- 128
+MUSYC catalgoue, source Croom et al. (2001)		- 256
+MUSYC catalgoue, source Van der Wel et al. (2004)	- 512
+MUSYC catalgoue, source Cristiani et al. (2000)		- 1024
+MUSYC catalgoue, source Strogler et al. (2004)		- 2048
+MUSYC catalgoue, source Lira et al., in prep		- 4096
+MUSYC catalgoue, source Treister et al. (2009)		- 8192
+MUSYC catalgoue - Kriek et al. (2008)			- 16384
+K20 catalogue, Mignoli et al. (2005)          		- 32768
+Silverman et al. (2010)					- 65536
+Dickinson et al. (2004)                                 - 131072
+PRIMUS 							- 262144
+2MRS							- 524288
+IRASpsz							- 1048576
+ACES (Cooper et al. 2012)				- 2097152
+Lacy et al. (2013)                                      - 4194304
+OzDES DR1 (Childress et al. 2017)                       - 8388608
+MUSE-wide (Herenz et al. 2017)                          - 16777216
+VANDELS DR2 (McLure et al. 2018)			- 33554432
+LADUMA AAOmega (Wu et al. in prep - PRIVATE CATALOGUE)	- 67108864
