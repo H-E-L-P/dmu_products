@@ -14,40 +14,21 @@ Description:
    prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
    
 
-#### SEIP-Maps
-In the case of the mosaic maps see [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)
-
-
 ### Running on Apollo
 
-#### SEIP-Maps
-   
-To run on Apollo, first run the script [XID_plus_priors.sh](./XID_plus_priors.sh). This will create the `Master_prior.pkl` and `Tiles.pkl` file for every SEIP-Map, in separate folders (check [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)).
-
-We will also obtained two files with the number of hierarchical tiles and main tiles for each case:
-[large_tiles.csv](./data/large_tiles.csv) 
-[tiles.csv](./data/tiles.csv) 
-
-Then generate the hierarchical tiles:
-
+To run on Apollo, first run the notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
+ 
 ```bash
+mkdir data
 module load sge
-python XID_plus_hier.py 
-```
-This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
-
-Then fit all tiles, where $n_tiles is the number of main tiles. 
-```bash
-python XID_plus_tile.py
 ```
-
-This python script will iterate over every folder and submit the job:
+Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours:
+```bash
+cd ..
 qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
-where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
-
-
+```
 Then combine the Bayesian maps into one:
  ```bash
  python make_combined_map.py

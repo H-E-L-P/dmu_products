@@ -10,7 +10,7 @@ import string
 
 
 # read in csv file to check how many files there are
-path='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_SSDF/data/'
+path='/users/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_SSDF/data/'
 os.chdir(path)
 
 data = pd.read_csv('large_tiles.csv', header=None)
@@ -21,7 +21,7 @@ task.append([f[0] for f in data.values[1:]])
 folders = [f for f in glob.glob('**/', recursive=False)]
 
 
-src='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_SSDF/XID_plus_hier.sh'
+src='/users/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_SSDF/XID_plus_hier.sh'
 for index, name in enumerate(folders):
         os.chdir(path+name)
         shutil.copy(src, './')

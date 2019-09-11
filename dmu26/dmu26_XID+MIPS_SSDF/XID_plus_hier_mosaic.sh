@@ -2,7 +2,7 @@
 #$ -S /bin/bash
 #$ -o /its/home/mc741/git_hub/dmu_products/log/out
 #$ -e /its/home/mc741/git_hub/dmu_products/log/err
-cd /its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_AKARI-SEP/data/
+cd /its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_SSDF/data/
 echo "this is from the run script"
 
 export PATH="/research/astro/fir/HELP/help_python/miniconda3/bin/":$PATH
@@ -10,12 +10,11 @@ export PATH="/research/astro/fir/HELP/help_python/miniconda3/bin/":$PATH
 module load use.own
 module load fir/software
 
+
 # Check folders 
 
 ls -d */ > folders_file.dat
 folder_list=$(sort -n folders_file.dat)
-#delete=(output/)
-#folder_list=( "${folder_list[@]/$delete}" )
 
 echo ${folders}
 
