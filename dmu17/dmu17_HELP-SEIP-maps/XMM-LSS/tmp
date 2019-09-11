@@ -1,8 +1,0 @@
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.mosaic.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.unc.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.cov.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.std.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.median_mosaic.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.median_mosaic_unc.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.brightmask.fits
-wget -a log -nc -P data https://irsa.ipac.caltech.edu/data/SPITZER/Enhanced/SEIP/images/6/0095/60095871/6/60095871-46/60095871.60095871-46.MIPS.1.extmask.fits
