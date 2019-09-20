@@ -1,0 +1,82 @@
+dr6_photoz_csp_totcat.fits: total photo-z and stellar mass catalog for DR6 including BASS+MzLS surveys
+dr7_photoz_csp_totcat.fits: total photo-z and stellar mass catalog for DR7 including DECaLS survey
+dr6dr7_photoz_totcat.fits: total photo-z and stellar mass catalog for dr6+dr7 after removing duplicate objects in DR6
+
+NOTES
+(a) There are magnitude offsets between DR6 and DR7. We apply magnitude corrections to DR6 photometry:  -0.0096, -0.0042, 0.051, -0.0099, and -0.0031 for g, r, z, W1, and W2.
+(b) the catalogs only include galaxies classified by Tractor TYPE with r<23 and having colors within the color constraints as listed below. These color cuts indicate the applicative scope of our spectroscopic training data.
+   * 0.09 < (g-r) < 2.20
+   * 0.02 < (r-z) < 1.96
+   * -1.16 < (r-W1) < 3.52 
+   * -1.94 < (r-W2) < 3.16
+
+Catalog column description:
+ ID          Unique object ID
+ RA          RA (J2000) in deg
+ DEC         DEC (J2000) in deg
+ MAG_G       g-band magnitude 
+ MAG_R       r-band magnitude
+ MAG_Z       z-band mangitude
+ MAG_W1      w1-band magnitdue
+ MAG_W2      w2-band magnitude
+ MAGERR_G    g-band magnitude error
+ MAGERR_R    r-band magnitude error
+ MAGERR_Z    z-band magnitude error
+ MAGERR_W1   w1-band magnitude error
+ MAGERR_W2   w2-band magnitude error
+ GALDEPTH_G  galaxy depth in g band
+ GALDEPTH_R  galaxy depth in r band
+ GALDEPTH_Z  galaxy depth in z band
+ TYPE        Tractor Type 
+ FRACFLUX_G  Profile-weighted fraction of the flux from other sources in g (typically [0, 1])
+ FRACFLUX_R  Profile-weighted fraction of the flux from other sources in r (typically [0, 1]) 
+ FRACFLUX_Z  Profile-weighted fraction of the flux from other sources in z (typically [0, 1]) 
+ FRACFLUX_W1 Profile-weighted fraction of the flux from other sources in W1 (typically [0, 1])
+ FRACFLUX_W2 Profile-weighted fraction of the flux from other sources in W2 (typically [0, 1])
+ FRACMASKED_G Profile-weighted fraction of pixels masked in g, strictly between [0,1]
+ FRACMASKED_R Profile-weighted fraction of pixels masked in r, strictly between [0,1]
+ FRACMASKED_Z Profile-weighted fraction of pixels masked in z, strictly between [0,1]
+ FRACIN_G    Fraction of a source's flux within the blob in g, near unity for real sources
+ FRACIN_R    Fraction of a source's flux within the blob in r, near unity for real sources
+ FRACIN_Z    Fraction of a source's flux within the blob in z, near unity for real sources
+ ANYMASK_G   Bitwise mask set if the central pixel from any image satisfies each condition in g
+ ANYMASK_R   Bitwise mask set if the central pixel from any image satisfies each condition in r
+ ANYMASK_Z   Bitwise mask set if the central pixel from any image satisfies each condition in z
+# photo-z output 
+ n_neighbour number of neighbours
+ n_filter    number of filters having colors in color cuts
+ photo_z     estimated photo-z value
+ photo_zerr  estimated photo-z error
+ spec_z      sepctroscopic redshift if available 
+ mean_z      mean redshift of neigbours
+ nearest_z   nearest redshift of neighbours
+ mean_dis    mean Ecludean distance in the color space of neighbours
+# LEPHARE CSP fitting outputs
+ CHI_BEST    Chi2 of the best fitting 
+ MOD_BEST    ID of BC03 model spectra
+ EBV_BEST    Best fitted intrinsic extinction in E(B-V), three values: 0, 0.5, 1.0
+ SCALE_BEST  Scale factor between observed SED and model SED
+ MAG_ABS_G   Absolute magnitude in g band
+ MAG_ABS_R   Absolute magnitude in r band
+ MAG_ABS_Z   Absolute magnitude in z band
+ MAG_ABS_W1  Absolute magnitude in w1 band
+ MAG_ABS_W2  Absolute magnitude in w2 band
+ AGE_BEST    Best fitted age in yr
+ AGE_INF     Lower 68% age uncertainty 
+ AGE_MED     Median age 
+ AGE_SUP     Upper 68% age uncertainty
+ MASS_BEST   Best estimated stellar mass in log(M_sun)
+ MASS_INF    Lower 68% mass uncertainty 
+ MASS_MED    Median mass 
+ MASS_SUP    Upper 68% mass uncertainty
+ SFR_BEST    Best estimated SFR in M_sun/yr
+ SFR_INF     Lower 68% SFR uncertainty 
+ SFR_MED     Median SFR 
+ SFR_SUP     Upper 68% SFR uncertainty
+ SSFR_BEST   Best estimated SSFR, in yr^-1
+ SSFR_INF    Lower 68% SSFR uncertainty 
+ SSFR_MED    Median SSFR 
+ SSFR_SUP    Upper 68% SSFR uncertainty
+ LUM_NUV_BEST Best fitting NUV luminosity in log(L_sun)
+ LUM_R_BEST  Best fitting R-band luminosity 
+ LUM_K_BEST  Best fitting K-band luminosity 

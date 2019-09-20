@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+<!-- Aladin Lite CSS style file -->
+<link rel="stylesheet" href="http://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+<style>
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+
+</style>
+</head>
+  <body>
+
+  <h1>HELP image and catalogue viewer</h1> 
+   <div class="topright"><i>Click an object to see its SED and links to more information.</i><img src="http://hedam.lam.fr/HELP/dataproducts/TEMPLATES/help_logo_web.png" alt="HELP" width="50" height="50"></div>
+   <!-- <div style="positions:absolute; 
+    height:20px; 
+    width:400px; 
+    right:0; 
+    top:0;
+    padding:0;
+    margin:0;"> <i>Click on an object to show its SED and links to the full data.</i></div>-->
+
+
+    <!-- Use Jquery and plotly - where should these go - async? -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Aladin Lite container at requested dimensions 100%;height:90%;" width:800px;height:400px;> -->
+
+
+    
+    <div id="aladin-lite-div" style="100%;height:calc(100% - 90px)">
+    <div id='cigale-div' 
+    style = "position:absolute; 
+             height:240px;
+             width:320px;
+             right:40px; 
+             bottom:100px; 
+             z-index: 10;">&nbsp; </div>
+    <div class="aladin-zoomControl"><a href="#" class="zoomPlus" title="Zoom in">+</a><a href="#" class="zoomMinus" title="Zoom out">–</a></div>
+    
+    
+    </div>
+
+    <input id="help_pacs_green" type="radio" name="survey" value="help_pacs_green"><label for="help_pacs_green">help_pacs_green<label>
+    <input id="help_pacs_red" type="radio" name="survey" value="help_pacs_red"><label for="help_pacs_red">help_pacs_red<label>
+    <input id="help_spire_250" type="radio" name="survey" value="help_spire_250"><label for="help_spire_250">help_spire_250<label>
+    <input id="help_spire_350" type="radio" name="survey" value="help_spire_350"><label for="help_spire_350">help_spire_350<label>
+    <input id="help_spire_500" type="radio" name="survey" value="help_spire_500"><label for="help_spire_500">help_spire_500<label>
+    <input id="help_spire_rgb" type="radio" name="survey" value="help_spire_rgb"><label for="help_spire_250">help_spire_rgb<label>
+
+
+
+
+    <!-- Aladin Lite JS code -->
+    <script type="text/javascript" 
+            src="http://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" 
+            charset="utf-8">
+    </script>
+
+    <!-- HELP specific js -->
+    <script src="test.js"></script>
+  
+
+  </body>
+</html>

@@ -14,18 +14,18 @@ The full files which are not stored in the Git repository can be downloaded from
 The FITS files have all the same structure with the Header Data Units (HDU)
 listed below. 
 
-1. Primary HDU.
-2. **IMAGE**: The signal map in *Jy/beam*.
-3. **NEBFILT**: The signal map filtered for nebular emission by the *nebular*
+0. Primary HDU.
+1. **IMAGE**: The signal map in *Jy/beam*.
+2. **NEBFILT**: The signal map filtered for nebular emission by the *nebular*
     software from Casutools (see *dmu19_nebular_filtered_maps*).
-4. **ERROR**: The error map in *Jy/beam*.
-5. **EXPOSURE**: The exposure map in *seconds*.
-6. **MASK**: The mask map with the following values:
+3. **ERROR**: The error map in *Jy/beam*.
+4. **EXPOSURE**: The exposure map in *seconds*.
+5. **MASK**: The mask map with the following values:
     - 0: no mask (*i.e.* good data);
     - 1: regions with low depth relative to the rest of the map.
-7. **MFILT** Matched Filtered map *Jy/beam* (Chapin et al. 2011)
-8. **MFILT_ERROR** The error map for the Matched Filtered map *Jy/beam*
-9. **Matchedfilter** The Matched Filter used for the filtering
+6. **MFILT** Matched Filtered map *Jy/beam* (Chapin et al. 2011)
+7. **MFILT_ERROR** The error map for the Matched Filtered map *Jy/beam*
+8. **Matchedfilter** The Matched Filter used for the filtering
 
 The maps were put in this structure using gen_maps_SD.py
 

@@ -67,16 +67,18 @@ fields:
       description: The Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
       region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
       
-    - name: NGP   
+    - name: HATLAS-NGP   
+      other_names: NGP
       description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the North Galactic Pole (NGP) field.                
-      region: dmu_products/dmu2/dmu2_field_coverages/NGP_MOC.fits
+      region: dmu_products/dmu2/dmu2_field_coverages/HATLAS-NGP_MOC.fits
         
     - name: SA13     
       region: dmu_products/dmu2/dmu2_field_coverages/SA13_MOC.fits
                      
-    - name: SGP       
+    - name: HATLAS-SGP   
+      other_names: SGP    
       description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the South Galactic Pole (SGP) field.  
-      region: dmu_products/dmu2/dmu2_field_coverages/SGP_MOC.fits
+      region: dmu_products/dmu2/dmu2_field_coverages/HATLAS-NGP_MOC.fits
                    
     - name: SPIRE-NEP   
       description: The Spitzer Wide InfraRed Extragalactic (SWIRE) survey coverage of the North Ecliptic Pole (NEP) field.

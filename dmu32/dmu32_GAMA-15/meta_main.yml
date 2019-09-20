@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_GAMA-15/data/master_catalogue_gama-15_20180119_
 
 cigale: dmu_products/dmu28/dmu28_GAMA-15/data/zphot/HELP_final_results.fits
 
+cigale_ldust_prediction: dmu_products/dmu28/dmu28_GAMA-15/data/GAMA15_Ldust_prediction_results.fits
+
 final: dmu_products/dmu32/dmu32_GAMA-15/data/GAMA-15_20180213.fits

@@ -145,6 +145,7 @@ ad2xy,ra,dec,ast,x,y
 bad = where(x LE size/2. OR x GE naxis1-(size/2.) OR y LE size/2. OR y GE naxis2-(size/2.), nbad, comp=good_src, ncomp=ngood_src)
 
 
+
 IF nbad GT 0 THEN BEGIN
  x[bad] = -size/2
  y[bad] = -size/2

@@ -1,0 +1,109 @@
+COSMOS Spectroscopic Merged Catalogue README - version 2.8
+
+Description of columns:
+
+Column 1, "RA":
+The RA coordinates of the object targeted in degrees.
+
+Column 2, "DEC":
+The DEC coordinates of the object targeted in degrees.
+
+Column 3, "Z_SPEC":
+The spectroscopic redshift.
+
+Column 4, "Z_SOURCE":
+The source of the spectroscopic redshift, as the source of the redshift can be multiple surveys the source number can be a combination of the following values:
+
+; SDSS - DR15				- 1
+; 2MRS					- 2
+; PRIMUS				- 4
+; 3DHST* 				- 8
+; MOIRCS* (M. Onodera)			- 16
+; FAST*					- 32
+; AzTEC* (M Yun)			- 64
+; FMOS* (Roseboom et al. 2012)		- 128
+; FORS2* (Comparat et al. 2015)		- 256
+; 2MASS*				- 512
+; Gemini-S* (M. Balogh)			- 1024
+; HST_GRISM* (Schawinski/Brusa)		- 2048
+; MOSFIRE* (A. Shapley)			- 4096
+; WFC3_grism* (Schawinksi/Brusa)	- 8192
+; zBRIGHT*				- 16384
+; GAMA v05 (Davies et al 2015) 		- 32768
+; Magellan IMACS (Trump et al. 2009)	- 65536
+; Magellan IMACS (Weiner/Cooper)	- 131072
+; DEIMOS-10k (Hasinger et al. 2018)	- 262144
+; FMOS AGN (Schulze et al. 2018)	- 524288
+; LEGAC DR2 (Straatman et al. 2018)	- 1048576
+; VUDS DR1 (Tasca et al. 2016)		- 2097152
+; C3R2 DR1+DR2 (Masters et al. 2019)    - 4194304
+; LRIS/DEIMOS (Casey et al. 2012a)	- 8388608
+; LRIS/DEIMOS (Casey et al. 2012b)	- 16777216
+
+private numbers:
+; DEIMOS*				- 33554432
+; FMOS*					- 67108864
+; FOCAS*				- 134217728
+; FORS1*				- 268435456
+; FORS2*				- 536870912
+; IMACS*				- 1073741824
+; LRIS*					- 2147483648
+; MOIRCS*				- 4294967296
+; MOSFIRE*				- 8589934592
+; SINFONI*				- 17179869184
+; zCOSMOS-Deep* (Lilly et al. 2007)	- 34359738368
+
+
+All the sources marked with '*' are redshifts taken from the COSMOS spectroscopic catalogue collated by Mara Salvato (mara@mpe.mpg.de), version from April 2015. This provides the majority of redshifts in our sample. The private redshift codes are from sources only available internally to the HELP team.
+
+We also merge the COSMOS catalogue with the GAMA independent analysis mostly based on raw data from zBRIGHT, PRIMUS and AzTEC(sources 16384, 512, 64), plus a few extra VVDS sources (Davies et al. 2015) and Magellan Spectra of X-ray sources (Salvato et al. 2009). To make this the redshifts have been prioritised in order of quality flags and the highest priority redshift is used. Matches between different redshift surveys in the COSMOS catalogue were made within 0.5" and we use their pairings for our catalogue. For matching between other catalogues we look at values up to 1", and check any discrepant galaxies with offsets between 0.5 and 1.0".
+
+
+Column 5, "Z_QUAL":
+
+The quality flag (Q) is designated using the method from Colless et al. (2001) method (as the GAMA database uses these values). The quality flag (Q), is ranked on a five-point scale, with the interpretation: Q = 1 means no redshift could be estimated; Q = 2 means a possible, but doubtful, redshift estimate; Q = 3 means a probable redshift (notionally 90 per cent confidence); Q = 4 means a reliable redshift (notionally 99 per cent confidence); Q = 5 means a reliable redshift and a high-quality spectrum. Note that this quality parameter is determined entirely by the subjective judgement of the user.
+
+
+Column 6, "Reliability":
+
+The expected reliability of the redshift, provided where the information is provided by the source catalogue. The value is given as a probability between 0 and 1 (i.e., 60% reliability would be 0.6).
+
+
+Column 7, "OBJID"
+
+Object ID where the name depends on the source of the spectroscopic measurement. 
+
+
+Column 8, "QSO/AGN Flag"
+
+If the source of the data provides information on AGN based on the spectroscopic data, or the survey is dedicated to targeting QSO/AGNs this flag is set to 1. Note if a source provides information based on photometry we do not include this as will be repeated by HELP's own photometry measurements. This should not be treated as an accurate AGN/QSO determination.
+
+
+Column 9, "NOTES"
+
+The COSMOS catalogue provides some extra information for several of its surveys, to conserve this information we have added this column with the following key:
+
+1 - One line wither Halpha or [OII] 3727 best guess (with AGN maybe another line)
+2 - One line wither Halpha or [OII] 3727 best guess, only consistent with COSMOS photo-z after redshift switched to alternate (with AGN maybe another line)
+4 - COSMOS and GAMA redshift have clashed, GAMA value given.
+
+Notes 1 and 2 only apply to zCOSMOS.
+
+
+Other info:
+
+An additional study with Spitzer IRS spectra was found (Fu et al. 2010) but this was found to potentially only add up to three redshifts.
+
+For where PRIMUS and zBRIGHT disagree we do the following:
+
+1) Compare all the conflicts with Davies GAMA catalogue
+2) For galaxies the Davies classify as reliable and agree to 0.05 with zBRIGHT use zBRIGHT
+3)for zUse = 1 in GAMA catalogue
+  3.1) if zGen = 1 or 4 or 5 then manual check required
+  3.2) for zUse = 1 then if zGen = 2 (auto-z of COSMOS and PRIMUS agree) or 3 (PRIMUS and zCOS agree - but found cases here that don't) or 6 use GAMA value and add zCOSMOS or PRIMUS id if agree to within 10% and <0.1. Same for zGen=7 as GAMA have eyeballed to explain differences
+  3.3) zGen = 9, GAMA did not have secure zBright redshift so assume that is correct
+4) for zUse = 2, all zGen = 6 will use GAMA value
+5) for zUse = 3, GAMA have marked unreliable redshift, will downgrade all
+
+As PRIMUS is comparatively low-resolution and had a large number of disagreements with other redshifts, we went through and merged the redshifts if they agree to within 0.2 (using the value from the higher resolution spectrum). There were also too many conflicts (although still a very small fraction) between GAMA and COSMOS to manually investigate. We have therefore assumed the GAMA redshift is correct when zBRIGHT and/or PRIMUS conflict and no other data is available. We went with GAMA as at the time of writing it is a published catalogue using multiple sources and many spectra have been eye-balled.
+

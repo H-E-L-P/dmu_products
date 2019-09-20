@@ -37,5 +37,5 @@ and aperture fluxes are aperture corrected.
 
 # Spitzer Boötes and xFLS Catalogues
 
-In Boötes and xFLS, RAC and MIPS catalogues were extracted by the Data Fusion team
+In Boötes and xFLS, IRAC and MIPS catalogues were extracted by the Data Fusion team
 following the best practices developed and used for the Spitzer-SWIRE catalogues.

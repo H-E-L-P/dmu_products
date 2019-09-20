@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_CDFS-SWIRE/data/master_catalogue_cdfs-swire_201
 
 cigale: dmu_products/dmu28/dmu28_CDFS-SWIRE/data/zphot/HELP_final_results.fits
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_CDFS-SWIRE/data/CDFS-SWIRE_20180221.fits

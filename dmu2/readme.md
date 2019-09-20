@@ -2,11 +2,11 @@
 
 # ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP Field definitions (dmu2)
 
-
-
 This is a data product of the Herschel Extragalactic Legacy Project ([HELP](http://www.herschel.sussex.ac.uk)). This folder contains the Multi Order Coverage maps (MOCs), which define the regions on the sky for a given field.
 
 HELP data covers 1270 square degrees of extragalactic sky divided into 23 distinct fields. This DMU contains the definitions of each field. 
+
+![Sky coverage](sky_plus_help.jpg)
 
 All the data is stored in the Git repository so you do not need to go to one of our external servers to download files.
 
@@ -37,6 +37,7 @@ XMM-13hr               |
 XMM-LSS                | 
 
 ## Folder structure
+
 dmu2_field_coverages contains an individual file for each field. The top level file combines these into a combined map which defines HELP coverage.
 
 The file meta_main.yml can be used to loop over files for certain computational tasks.
@@ -45,7 +46,7 @@ The file meta_main.yml can be used to loop over files for certain computational 
 
 -------------------------------------------------------------------------------
 
-**Authors**: Raphael Shirley, Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+**Authors**: [Raphael Shirley](http://www.raphaelshirley.co.uk/), Yannick Roehlly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  

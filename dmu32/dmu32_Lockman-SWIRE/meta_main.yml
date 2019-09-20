@@ -16,4 +16,6 @@ photoz: dmu_products/dmu24/dmu24_Lockman-SWIRE/data/master_catalogue_Lockman-SWI
 
 cigale: dmu_products/dmu28/dmu28_Lockman-SWIRE/data/zphot/best_extcor/HELP_final_results.fits
 
+cigale_ldust_prediction: None
+
 final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits

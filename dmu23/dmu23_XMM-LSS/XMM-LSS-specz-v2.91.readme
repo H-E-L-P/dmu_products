@@ -1,0 +1,78 @@
+XMM-LSS Spectroscopic Merged Catalogue README - version 2.91
+
+Description of columns:
+
+Column 0, "RA":
+The RA coordinates of the object targeted in degrees.
+
+Column 1, "DEC":
+The DEC coordinates of the object targeted in degrees.
+
+Column 2, "Z_SPEC":
+The spectroscopic redshift.
+
+Column 3, "Z_SOURCE":
+The source of the spectroscopic redshift, as the source of the redshift can be multiple surveys the source number can be a combination of the following values:
+; VVDS - Le Fevre et al. (2013)		 		- 1
+; XMM-AGN follow-up (Garcet et al. 2007) 		- 2
+; Mid-IR Selected Quasars/AGNs (Lacy et al. 2007)	- 4
+; X-ray Sources (Stalin et al. 2010) 			- 8
+; Supernova Host Sources (Lidman et al. 2012)  		- 16
+; Old Passive Galaxies (Yamada et al. 2005) 		- 32
+; Lyman-alpha Emitters (Ouchi et al. 2008)		- 64
+; Lyman-alpha Emitters (Ono et al. 2010)		- 128
+; SFRs of Starburst Galaxies (Sargsyan & Weedman, 2009)	- 256
+; UDSz Survey* 						- 512
+; UDS catalogue*, CJS-VIMOS 				- 1024
+; UDS catalogue*, CJS-ISIS 				- 2048
+; UDS catalogue*, CVB-DEIMOS				- 4096
+; UDS catalogue*, JEG-LDSS2 				- 8192
+; UDS catalogue*, Doi-FOCAS 				- 16384
+; UDS catalogue*, SJC-AAOmega 				- 32768
+; UDS catalogue*, IRS-AAOmega 				- 65536
+; UDS catalogue*, Aki-FOCAS 				- 131072
+; UDS catalogue*, Aki-2df 				- 262144
+; SDSS DR15 						- 524288
+; 6dF Galaxy Survey 					- 1048576 
+; VIPERS PDR2						- 2097152
+; PRIMUS						- 4194304
+; IMACS (Weiner/Cooper)					- 8388608
+; Lacy et al. (2013)                                    - 16777216
+; OzDES DR1 (Childress et al. 2017)                     - 33554432
+; C3R2 DR1+DR2 (Masters et al. 2019)    		- 67108864
+; VANDELS DR2 (McLure et al. 2018)			- 134217728
+
+See below for more information on the different sources and any overlap. (* see info about these catalogues in other info)
+
+Column 4, "Z_QUAL":
+
+The quality flag (Q) is designated using the method from Colless et al. (2001) method (same as for the GAMA database which covers many Help fields). The quality flag (Q), is ranked on a five-point scale, with the interpretation: Q = 1 means no redshift could be estimated; Q = 2 means a possible, but doubtful, redshift estimate; Q = 3 means a probable redshift (notionally 90 per cent confidence), Q = 4 means a reliable redshift (notionally 99 per cent confidence); Q = 5 means a reliable redshift and a high-quality spectrum. Note that this quality parameter is determined entirely by the subjective judgement of the user. Please see next column for more reliability info. 
+
+Note that in reality collecting spectra from all these sources it is often difficult to choose whether Q should be 3, 4 or 5. We have tried to be conservative where possible, but often we also have a lack of information.
+
+Column 5, "Reliability":
+
+The expected reliability of the redshift, provided where the information is available. The value is given as a probability between 0 and 1 (i.e., 60% reliability would be 0.6). This column is of particular use for VVDS which has a flag corresponding to 75-85% reliability (and so is put as Q=2 or Lidman et al. (2012) redshifts which also placed in Q=2 with a 79% reliability. 
+
+Column 6, "OBJID"
+
+Object ID where the name depends on the source of the spectroscopic measurement. 
+
+Column 7, "QSO/AGN Flag"
+
+If the source of the data provides information on AGN based on the spectroscopic data, or the survey is dedicated to targeting QSO/AGNs this flag is set to 1. Note if a source provides information based on photometry we do not include this as will be repeated by HELP's own photometry measurements. This should not be treated as an accurate AGN/QSO determination.
+
+Information on selection functions/completeness can be found in the separate pdf document.
+
+
+Other info:
+
+To make this the redshifts have been prioritised in order of quality flags and the highest priority redshift is used. For catalogues which included redshifts for stars have been removed. Catalogues are typically matched given a 2" positional accuracy, however we check all matches up to 5" and assess which are real associations. Given the large number of redshifts we have very few conflicts, any conflicts where it was not obvious what was causing the problem are listed below and the choice made. During the making of this catalogue it was found that the same object could have more than one DR1, an arbitrary choice of which ID to go with was made.
+
+Both the UDSz (Source 512) and the UDS catalogue (Sources 1024-524288) are not published catalogues but are publicly available on UKIDSS UDS website (www.nottingham.ac.uk/astronomy/UDS/). The UDSz program is an ESO large program (180.A-0776) and a data release paper is in prep (Alamanti et al. in prep), but for now it is recommended to reference Bradshaw et al. (2013) and McLure et al. (2013). There is also a compilation of redshifts from various sources on the UDS website which we have named the UDS catalogue (Sources 1024-262144). Some of the data we can associate to papers and get some information on selection and criteria (which is why we split the data into the different surveys). However, many of the sources are unpublished and we have very little information about them. Please note the catalogue itself does state the quality flags on the catalogue are not guaranteed so users may wish to bear this in mind. A couple of other bits of info:
+
+SJC-AAOmega - two were listed of quality of Z (quality flag unavailable), as the rest from this survey were quality A (multiple-features) we have put them as Q = 2.
+IRS-AAOmega - many of the sources were written as quality D (very dubious) and the rest from this survey were A (multiple-features) we have put them as Q = 2.
+Aki-2df - All spectra listed with quality Z (Not provided). We have assumed all redshifts are reliable (Q = 3), but this maybe wrong. You may wish to treat galaxies with only Source 262144 with caution. 
+UDSz includes 7 objects with an UDS ID = 0 as they are serendipitous targets, we have included them in the catalogue.
+
