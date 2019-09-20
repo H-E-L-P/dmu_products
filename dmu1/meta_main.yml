@@ -7,9 +7,9 @@ Author: Raphael Shirley and Yannick Roehhly
 fields:
     AKARI-NEP: 20180215
     AKARI-SEP: 20180221
-    Bootes: 20180520 
+    Bootes: 20190201 
     CDFS-SWIRE: 20180613
-    COSMOS: 20180516
+    COSMOS: 20190402
     EGS: 20180501
     ELAIS-N1: 20171016
     ELAIS-N2: 20180218
@@ -27,7 +27,7 @@ fields:
     SSDF: 20180221
     xFLS: 20180501
     XMM-13hr: 20180501
-    XMM-LSS: 20180504
+    XMM-LSS: 20190328
 
 Related products:
 - dmu0

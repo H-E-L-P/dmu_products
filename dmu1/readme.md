@@ -43,9 +43,9 @@ Fits files can be found here: http://hedam.lam.fr/HELP/dataproducts/dmu1/
 -----------------------|------------------------------------------
 AKARI-NEP              | 20180215
 AKARI-SEP              | 20180221
-Bootes                 | 20180520 
+Bootes                 | 20190201 
 CDFS-SWIRE             | 20180613
-COSMOS                 | 20180516
+COSMOS                 | 20190402
 EGS                    | 20180501
 ELAIS-N1               | 20171016
 ELAIS-N2               | 20180218
@@ -63,13 +63,13 @@ SPIRE-NEP              | 20180220
 SSDF                   | 20180221
 xFLS                   | 20180501
 XMM-13hr               | 20180501
-XMM-LSS                | 20180504
+XMM-LSS                | 20190328
  
  These are the catalogues on which checks and diagnostics have been run, validations performed, xid+ fir fluxes calculated, photometric redshifts calculated, and CIGALE parameters fitted.
  
  -------------------------------------------------------------------------------
 
-**Authors**: Raphael Shirley, Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
+**Authors**: [Raphael Shirley](http://www.raphaelshirley.co.uk/), Yannick Rohelly, Peter Hurley, Ken Duncan, Kasia Malek, Estelle Pons, [Seb Oliver](http://www.sussex.ac.uk/profiles/91548)
 
  ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4)
  
