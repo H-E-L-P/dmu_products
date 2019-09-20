@@ -43,7 +43,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  ```bash
  ls *cat.fits > cat_files
 module load starlink/hikianalia-64bit
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
+stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_GAMA-09_cat.fits
 ```
  
 #### Computation 

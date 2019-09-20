@@ -1,4 +1,4 @@
-### dmu26_XID+PACS_GAMA-12
+### dmu26_XID+PACS_AKARI-SEP
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -8,8 +8,6 @@ Description:
 
  
  
-## GAMA-12
-
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
    MIPS 24 $\mathrm{\mu m}$ flux >= 20 $\mathrm{\mu Jy}$. For the full processing of the
@@ -43,16 +41,17 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  ```bash
  ls *cat.fits > cat_files
 module load stilts
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_GAMA-12_cat.fits
+stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_AKARI-SEP_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting GAMA-12:
+ Details on computational cost of fittingAKARI-SEP:
+
 
 
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+PACS_GAMA-09_final_processing.ipynb](XID+PACS_GAMA-12_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+PACS_AKARI-SEP_final_processing.ipynb](XID+PACS_AKARI-SEP_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
