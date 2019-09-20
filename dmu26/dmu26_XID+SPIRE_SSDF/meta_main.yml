@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_SSDF
+
+Version: 1.0
+
+Author: Peter Hurley
+
+Fields: SGP
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: SSDF_SPIRE250_v1.0.fits, SSDF_SPIRE350_v1.0.fits, SSDF_SPIRE500_v1.0.fits, ssdf_Ldust_prediction_results.fits, master_catalogue_ssdf_20180221_photoz_20180612_r_optimised.fits

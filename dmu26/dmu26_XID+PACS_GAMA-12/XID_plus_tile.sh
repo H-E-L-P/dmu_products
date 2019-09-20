@@ -2,7 +2,7 @@
 #$ -S /bin/bash
 #$ -o /its/home/mc741/git_hub/dmu_products/log/out
 #$ -e /its/home/mc741/git_hub/dmu_products/log/err
-cd /its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+PACS_GAMA-09/
+cd /its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+PACS_GAMA-12/
 echo "this is from the run script"
 
 module load use.own

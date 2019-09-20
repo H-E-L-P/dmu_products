@@ -139,7 +139,13 @@ ad2xy,ra,dec,ast,x,y
 ; bad = where(x LE -1 OR x GE naxis1 OR y LE -1 OR y GE naxis2, nbad, comp=good, ncomp=ngood)
 ; to this
 ; updated on 30th March 2015 to set 2 to a real number rather than an integer to trap a source right at the limit
-bad = where(x LE size/2. OR x GE naxis1-(size/2.) OR y LE size/2. OR y GE naxis2-(naxis2/2.), nbad, comp=good_src, ncomp=ngood_src)
+;bad = where(x LE size/2. OR x GE naxis1-(size/2.) OR y LE size/2. OR y GE naxis2-(naxis2/2.), nbad, comp=good_src, ncomp=ngood_src)
+
+; updated previous line; it was just taking half the image
+bad = where(x LE size/2. OR x GE naxis1-(size/2.) OR y LE size/2. OR y GE naxis2-(size/2.), nbad, comp=good_src, ncomp=ngood_src)
+
+
+
 IF nbad GT 0 THEN BEGIN
  x[bad] = -size/2
  y[bad] = -size/2

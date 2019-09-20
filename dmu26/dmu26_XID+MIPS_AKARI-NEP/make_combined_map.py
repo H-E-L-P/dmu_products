@@ -9,7 +9,7 @@ from xidplus import posterior_maps as postmaps
 from astropy import wcs
 
 import os
-output_folder='./data/'
+output_folder= './'
 
 
 
@@ -20,6 +20,15 @@ with open(output_folder+'Tiles.pkl',"rb") as f:
 tiles=Master['tiles']
 order=Master['order']
 
+#Second run: failed_tiles.pkl
+#############################
+#with open(output_folder+'failed_tiles.pkl', "rb") as f:
+#        Master = pickle.load(f)
+#tiles=Master['tiles']
+#order=Master['order']
+
+
+
 outfile=output_folder+'Master_prior.pkl'
 with open(outfile, 'rb') as f:
     obj=pickle.load(f)
@@ -27,7 +36,9 @@ priors=obj['priors']
 
 
 
+#hdulist24=fits.open(output_folder+'dmu26_XID+MIPS_ELAIS-N2_Bayes_Pval.fits')
 hdulist24=postmaps.make_fits_image(priors[0],np.full_like(priors[0].sim,np.nan))
+
 
 
 failed_tiles=[]
@@ -50,8 +61,9 @@ for i in range(0,len(tiles)):
 		failed_tiles.append(tiles[i])
 	
 
-hdulist24.writeto(output_folder+'dmu26_XID+MIPS_AKARI-NEP_Bayes_Pval.fits',clobber=True)
+hdulist24.writeto(output_folder+'dmu26_XID+MIPS_AKARI-NEP_Bayes_Pval'+otput_folder[-2:-1]+'.fits',clobber=True)
 
 outfile=output_folder+'failed_tiles.pkl'
 with open(outfile, 'wb') as f:
-   pickle.dump({'tiles':failed_tiles,'order':order},f)
+    pickle.dump({'tiles':failed_tiles,'order':order},f)
+

@@ -12,8 +12,6 @@ from xidplus import posterior_maps as postmaps
 from builtins import input
 
 
-sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
-sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
 
 try:
     taskid = np.int(os.environ['SGE_TASK_ID'])
@@ -26,7 +24,7 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./data/'
+output_folder='./'
 
 
 #First run: Tiles.pkl
@@ -62,9 +60,6 @@ print('fitting tile:'+str(tiles[taskid-1])+' order: '+str(order)+' of '+str(len(
 from xidplus.stan_fit import MIPS
 priors[0].prior_bkg(0.0,1)
 priors[0].get_pointing_matrix()
-#priors[0].upper_lim_map()
-
-#priors[0].prior_flux_upper=(priors[0].prior_flux_upper-10.0+0.02)/np.max(priors[0].prf)
 
 fit=MIPS.MIPS_24(priors[0],iter=1000)
 
@@ -72,7 +67,6 @@ posterior=xidplus.posterior_stan(fit,priors)
 
 outfile=output_folder+'Tile_'+str(tiles[taskid-1])+'_'+str(order)
 
-posterior=xidplus.posterior_stan(fit,priors)
 xidplus.save(priors,posterior,outfile)
       
 post_rep_map=postmaps.replicated_maps(priors,posterior,nrep=2000)

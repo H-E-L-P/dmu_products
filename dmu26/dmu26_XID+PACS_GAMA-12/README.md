@@ -1,4 +1,4 @@
-### dmu26_XID+PACS_GAMA-09
+### dmu26_XID+PACS_GAMA-12
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -8,7 +8,7 @@ Description:
 
  
  
-## GAMA-09
+## GAMA-12
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
@@ -42,17 +42,17 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
  ls *cat.fits > cat_files
-module load starlink/hikianalia-64bit
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
+module load stilts
+stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_GAMA-12_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting GAMA-09:
+ Details on computational cost of fitting GAMA-12:
 
 
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+PACS_GAMA-09_final_processing.ipynb](XID+PACS_GAMA-09_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+PACS_GAMA-12_final_processing.ipynb](XID+PACS_GAMA-12_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

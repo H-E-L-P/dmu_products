@@ -1,0 +1,15 @@
+Product: dmu26_XID+PACS_AKARI-NEP
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: AKARI-NEP
+
+Selection filter: F_PACS_100, F_PACS_160
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: AKARI-NEP_PACS100_v0.9.fits, AKARI-NEP_PACS160_v0.9.fits, dmu18_PACS_100_PSF_AKARI-NEP_20190125.fits, dmu18_PACS_160_PSF_AKARI-NEP_20190125.fits
