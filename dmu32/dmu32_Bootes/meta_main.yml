@@ -14,9 +14,9 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_Bootes/data/dmu26_XID+MIPS_Bootes_cat_2
        dmu_products/dmu26/dmu26_XID+PACS_Bootes/data/dmu26_XID+PACS_Bootes_cat_20190425.fits,
        dmu_products/dmu26/dmu26_XID+SPIRE_Bootes/data/dmu26_XID+SPIRE_Bootes_cat_20190325.fits ]
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_Bootes/data/Bootes_opt_spitzer_merged_vac_opt3as_irac4as_all_public_with_help_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_Bootes/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
