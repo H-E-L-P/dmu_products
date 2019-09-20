@@ -42,7 +42,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
  ls *cat.fits > cat_files
-module load starlink/hikianalia-64bit
+module load stilts
 stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_GAMA-09_cat.fits
 ```
  

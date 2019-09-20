@@ -45,12 +45,12 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_AKARI-SEP_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting AKARI-NEP:
+ Details on computational cost of fitting AKARI-SEP:
  
  
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+SPIRE_AKARI-NEP_final_processing.ipynb](XID+SPIRE_AKARI-NEP_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_AKARI-NEP_final_processing.ipynb](XID+SPIRE_AKARI-SEP_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

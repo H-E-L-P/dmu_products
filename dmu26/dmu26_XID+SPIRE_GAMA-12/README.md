@@ -6,7 +6,6 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
-## SWIRE
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
@@ -40,7 +39,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_spire_t
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
  ls *cat.fits > cat_files
-module load starlink/hikianalia-64bit
+module load stilts
 stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_GAMA-12_cat.fits
 ```
  

@@ -52,7 +52,7 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_GAMA-12_cat.fits
 
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+PACS_GAMA-09_final_processing.ipynb](XID+PACS_GAMA-12_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+PACS_GAMA-12_final_processing.ipynb](XID+PACS_GAMA-12_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

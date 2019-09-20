@@ -6,16 +6,15 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
-## SPUDS
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 ???????? (Should check XID+MIPS_prior notebook!!!!!) and have a
    MIPS 24 $\mathrm{\mu m}$ flux >= 10 $\mathrm{\mu Jy}$. For the full processing of the
-   prior object list see the Jupyter notebook [XID+SPIRE_prior_SPUDS.ipynb](./XID+SPIRE_prior_SPUDS.ipynb) 
+   prior object list see the Jupyter notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) 
    
 
 ### Running on Apollo
-To run on Apollo, first run the notebook [XID+SPIRE_prior_SPUDS.ipynb](./XID+SPIRE_prior_SPUDS.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+To run on Apollo, first run the notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
  hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
 ```bash
 mkdir output
@@ -39,68 +38,15 @@ file, which you can then go back and fit by editing the `XIDp_run_script_spire_t
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits > cat_files_SPUDS
+ ls *cat.fits > cat_files
 module load stilts
-stilts ifmt=fits in=@cat_files_SPUDS out=dmu26_XID+SPIRE_XMM-LSS_SPUDS_cat.fits
+stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_xFLS_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting XMM-LSS:
- 
- SPUDS:
- ```bash
-OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
-======================================================================================================================
-pdh21       2094265   6298899.396      7065.750   6974095.545        6168479.561            106.038              0.000
-``` 
- 
- ## SWIRE
+ Details on computational cost of fitting xFLS
 
-### Prior
-  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 ???????? (Should check XID+MIPS_prior notebook!!!!!)  and have a
-   MIPS 24 $\mathrm{\mu m}$ flux >= 20 $\mathrm{\mu Jy}$. For the full processing of the
-   prior object list see the Jupyter notebook [XID+SPIRE_prior_SWIRE.ipynb](./XID+SPIRE_prior_SWIRE.ipynb) 
-   
-
-### Running on Apollo
-To run on Apollo, first run the notebook [XID+SPIRE_prior_SWIRE.ipynb](./XID+SPIRE_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
- 
-```bash
-mkdir output
-mv XID_plus_hier.sh
-cd output
-module load sge
-qsub -t 1-$n_hier_tiles -q seb_node.q -jc seb_node.short XID_plus_hier.sh
-```
-Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
-```bash
-cd ..
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q seb_node.q XID_plus_tile.sh
-```
-Then combine the Bayesian maps into one:
- ```bash
- python make_combined_map.py
- ```
- This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
-file, which you can then go back and fit by editing the `XIDp_run_script_spire_tile.py` file so it reads in
- `failed_tiles.pkl` rather than `Tiles.pkl`.
   
- To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
- ```bash
- ls *cat.fits > cat_files_SWIRE
-module load stilts
-stilts ifmt=fits in=@cat_files_SWIRE out=dmu26_XID+SPIRE_XMM-LSS_SWIRE_cat.fits
-```
- 
-#### Computation 
- Details on computational cost of fitting XMM-LSS:
- 
- ```bash
- OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
-======================================================================================================================
-pdh21       1728249   5508697.155      9271.880   5517969.040        2589627.605            166.893              0.000
-``` 
 
 ### Final data products
   Final stage requires examination and validation of catalogues using [XID+SPIRE_XMM-LSS_final_processing.ipynb](XID+SPIRE_XMM-LSS_final_processing.ipynb).
