@@ -10,7 +10,7 @@ depths: dmu_products/dmu1/dmu1_ml_Herschel-Stripe-82/data/depths_herschel-stripe
 
 flags: dmu6/dmu6_v_Herschel-Stripe-82/data/tiles/herschel-stripe-82_20180307_FILENUM_flags.fits
 
-xid: None
+xid: [ dmu_products/dmu26/dmu26_XID+MIPS_Herschel-Stripe-82/data/dmu26_XID+MIPS_Herschel-Stripe-82_cat_20190917.fits ]
 
 photoz: dmu_products/dmu24/dmu24_Herschel-Stripe-82/data/master_catalogue_herschel-stripe-82_20180307_photoz_20180509.fits
 
