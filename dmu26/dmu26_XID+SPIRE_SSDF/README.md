@@ -1,4 +1,4 @@
-### dmu26_XID+SPIRE_SGP
+### dmu26_XID+SPIRE_SSSDF
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -6,7 +6,6 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
-## SWIRE
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5, have a $L_dust$ prediction 
