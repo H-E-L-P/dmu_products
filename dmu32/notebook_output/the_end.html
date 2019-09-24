@@ -13155,7 +13155,7 @@ div#notebook {
 <pre>This notebook was run with herschelhelp_internal version: 
 017bb1e (Mon Jun 18 14:58:59 2018 +0100)
 This notebook was executed on: 
-2019-09-20 15:52:23.371318
+2019-09-24 19:58:28.513629
 </pre>
 </div>
 </div>
@@ -13273,7 +13273,7 @@ The text.latex.unicode rcparam was deprecated in Matplotlib 2.2 and will be remo
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table length=23</i>
-<table id="table140608249064136-195252" class="table-striped table-bordered table-condensed">
+<table id="table140622550763840-542127" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>field</th><th>dr1_suffix</th><th>last_suffix</th><th>objects</th><th>area_sq_degrees</th><th>file_size_bytes</th><th>file_size_readable</th></tr></thead>
 <tr><td>0</td><td>AKARI-NEP</td><td>20180215</td><td>20180215</td><td>531746</td><td>9.194732358779467</td><td>348848640</td><td>348.85 MB</td></tr>
 <tr><td>1</td><td>AKARI-SEP</td><td>20180221</td><td>20180221</td><td>844172</td><td>8.713306475131118</td><td>538606080</td><td>538.61 MB</td></tr>
@@ -13321,14 +13321,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140608249064136-195252').dataTable()");
+    console.log("$('#table140622550763840-542127').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140608249064136-195252').dataTable({
+    $('#table140622550763840-542127').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -13659,8 +13659,8 @@ ELAIS-N2:
   - xid: dmu_products/dmu26/dmu26_XID+PACS_ELAIS-N2/data/dmu26_XID+PACS_ELAIS-N2_cat_20190206.fits
 2 dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits ../dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits
   - xid: dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits
-  - photoz not done.
-  - cigale not done.
+  - photoz: dmu_products/dmu24/dmu24_ELAIS-N2/data/ELAIS-N2_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
+  - cigale: dmu_products/dmu28/dmu28_ELAIS-N2/data/zphot/HELP_final_results.fits
 ELAIS-S1:
 0 dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits ../dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits
   - xid: dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits
@@ -13788,7 +13788,7 @@ XMM-LSS:
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table length=23</i>
-<table id="table140608177000688-190499" class="table-striped table-bordered table-condensed">
+<table id="table140620039246344-582025" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>field</th><th>dr1_suffix</th><th>last_suffix</th><th>objects</th><th>area_sq_degrees</th><th>file_size_bytes</th><th>file_size_readable</th><th>xid_objects</th><th>photoz_objects</th><th>cigale_objects</th></tr></thead>
 <tr><td>0</td><td>AKARI-NEP</td><td>20180215</td><td>20180215</td><td>531746</td><td>9.194732358779467</td><td>348848640</td><td>348.85 MB</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>1</td><td>AKARI-SEP</td><td>20180221</td><td>20180221</td><td>844172</td><td>8.713306475131118</td><td>538606080</td><td>538.61 MB</td><td>211453</td><td>0</td><td>0</td></tr>
@@ -13797,7 +13797,7 @@ XMM-LSS:
 <tr><td>4</td><td>COSMOS</td><td>20190402</td><td>20190402</td><td>2599374</td><td>5.083863478496816</td><td>10517175360</td><td>10.52 GB</td><td>44310</td><td>694478</td><td>15747</td></tr>
 <tr><td>5</td><td>EGS</td><td>20180501</td><td>20180501</td><td>1412613</td><td>3.566383275122158</td><td>3808480320</td><td>3.81 GB</td><td>0</td><td>1183490</td><td>0</td></tr>
 <tr><td>6</td><td>ELAIS-N1</td><td>20171016</td><td>20180216</td><td>4026292</td><td>13.507484555454763</td><td>5242279680</td><td>5.24 GB</td><td>120282</td><td>2885116</td><td>49986</td></tr>
-<tr><td>7</td><td>ELAIS-N2</td><td>20180218</td><td>20180218</td><td>1783240</td><td>9.167479903991113</td><td>2007964800</td><td>2.01 GB</td><td>86591</td><td>0</td><td>0</td></tr>
+<tr><td>7</td><td>ELAIS-N2</td><td>20180218</td><td>20180218</td><td>1783240</td><td>9.167479903991113</td><td>2007964800</td><td>2.01 GB</td><td>86591</td><td>120961</td><td>6798</td></tr>
 <tr><td>8</td><td>ELAIS-S1</td><td>20180416</td><td>20180416</td><td>1655564</td><td>9.002940646885508</td><td>1970156160</td><td>1.97 GB</td><td>194276</td><td>1102319</td><td>25393</td></tr>
 <tr><td>9</td><td>GAMA-09</td><td>20180601</td><td>20190123</td><td>12937982</td><td>62.01393417284915</td><td>19911611520</td><td>19.91 GB</td><td>1386659</td><td>8834023</td><td>130293</td></tr>
 <tr><td>10</td><td>GAMA-12</td><td>20180218</td><td>20190128</td><td>12369415</td><td>62.70933280772107</td><td>14633066880</td><td>14.63 GB</td><td>1099477</td><td>8591676</td><td>108139</td></tr>
@@ -13836,14 +13836,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140608177000688-190499').dataTable()");
+    console.log("$('#table140620039246344-582025').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140608177000688-190499').dataTable({
+    $('#table140620039246344-582025').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -13908,10 +13908,10 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>XID+: There are 15 fields with XID+ fluxes computed totalling 1135.96 square degrees.
       This is a total of 10465980 objects with an average of 7% of objects on processed areas.
-Photo-zs: There are 15 fields with photozs computed totalling 1232.76 square degrees.
-      This is a total of 93847776 objects with an average of 56% of objects on processed areas.
-CIGALE SEDs: There are 12 fields with SEDs computed totalling 754.85 square degrees.
-      This is a total of 1141465 objects with an average of 1% of objects on processed areas.
+Photo-zs: There are 16 fields with photozs computed totalling 1241.93 square degrees.
+      This is a total of 93968737 objects with an average of 56% of objects on processed areas.
+CIGALE SEDs: There are 13 fields with SEDs computed totalling 764.02 square degrees.
+      This is a total of 1148263 objects with an average of 1% of objects on processed areas.
 </pre>
 </div>
 </div>
