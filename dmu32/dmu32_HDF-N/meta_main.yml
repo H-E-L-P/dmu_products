@@ -12,7 +12,7 @@ flags: dmu_products/dmu6/dmu6_v_HDF-N/data/hdf-n_20180427_flags.fits
 
 xid: None
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_HDF-N/data/HDF-N_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
 
 cigale: None
 

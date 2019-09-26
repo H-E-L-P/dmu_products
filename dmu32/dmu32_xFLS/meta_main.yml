@@ -13,7 +13,7 @@ flags: dmu_products/dmu6/dmu6_v_xFLS/data/xfls_20180501_flags.fits
 xid: [ dmu_products/dmu26/dmu26_XID+MIPS_xFLS/data/dmu26_XID+MIPS_xFLS_cat_20190122.fits,
        dmu_products/dmu26/dmu26_XID+SPIRE_xFLS/data/dmu26_XID+SPIRE_xFLS_cat_20190123.fits ]
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_xFLS/data/xFLS_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
 
 cigale: None
 
