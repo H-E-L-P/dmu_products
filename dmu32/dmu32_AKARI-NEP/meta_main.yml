@@ -10,7 +10,9 @@ depths: dmu_products/dmu1/dmu1_ml_AKARI-NEP/data/depths_akari-nep_20180215.fits
 
 flags: dmu_products/dmu6/dmu6_v_AKARI-NEP/data/akari-nep_20180215_flags.fits
 
-xid: None
+xid: [ dmu_products/dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP_cat_20190227.fits,
+       dmu_products/dmu26/dmu26_XID+PACS_AKARI-NEP/data/dmu26_XID+PACS_AKARI-NEP_cat.fits,
+       dmu_products/dmu26/dmu26_XID+SPIRE_AKARI-NEP/data/dmu26_XID+SPIRE_AKARI-NEP_cat_20190312.fits ]
 
 photoz: None
 
