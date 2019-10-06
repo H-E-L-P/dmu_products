@@ -67,9 +67,15 @@ print('read in MOCs')
 filename = np.sort(glob.glob(f"../../dmu17/dmu17_HELP-SEIP-maps/{field}/data/*help.fits", recursive=True))
 moc_file = np.sort(glob.glob(f"../../dmu17/dmu17_HELP-SEIP-maps/{field}/data/*moc.fits", recursive=True))
 
-Sel_func=pymoc.MOC()
-Sel_func.read('../../dmu4/dmu4_sm_AKARI-NEP/data/holes_AKARI-NEP_O16_MOC.fits')
 
+dmu0_MOC=pymoc.MOC()
+dmu0_MOC.read('../../dmu0/dmu0_NEP-Spitzer/data/NEP-Spitzer-APJ_MOC.fits')
+
+holes=pymoc.MOC()
+holes.read('../../dmu4/dmu4_sm_AKARI-NEP/data/holes_AKARI-NEP_O16_MOC.fits')
+
+
+Sel_func=dmu0_MOC.intersection(holes)
 
 ######################################################################
 

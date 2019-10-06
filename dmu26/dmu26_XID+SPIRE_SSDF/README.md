@@ -40,8 +40,8 @@ file, which you can then go back and fit by editing the `XIDp_run_script_spire_t
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
  ls *cat.fits > cat_files
-module load starlink/hikianalia-64bit
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_SGP_cat.fits
+module load stilts
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_SSDF_cat.fits
 ```
  
 #### Computation 
@@ -55,7 +55,7 @@ NOT AVAILABLE
  
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+SPIRE_SGP_final_processing.ipynb](XID+SPIRE_SGP_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_SSDF_final_processing.ipynb](XID+SPIRE_SSDF_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

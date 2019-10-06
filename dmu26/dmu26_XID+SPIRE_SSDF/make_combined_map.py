@@ -9,7 +9,7 @@ from xidplus import posterior_maps as postmaps
 from astropy import wcs
 
 import os
-output_folder='./output/'
+output_folder='./data/'
 
 with open(output_folder+'Tiles.pkl', "rb") as f:
         Master = pickle.load(f)
@@ -50,7 +50,7 @@ for i in range(0,len(tiles)):
 		failed_tiles.append(tiles[i])
 	
 for i in range(0,len(priors)):
-	hdulists[i].writeto(output_folder+'dmu26_XID+SPIRE_'+bands[i]+'_SSDF_Bayes_Pval_20180508.fits',clobber=True)
+	hdulists[i].writeto(output_folder+'dmu26_XID+SPIRE_'+bands[i]+'_SSDF_Bayes_Pval.fits',clobber=True)
 
 outfile=output_folder+'failed_tiles.pkl'
 with open(outfile, 'wb') as f:
