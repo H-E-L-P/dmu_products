@@ -54,7 +54,7 @@ MIPS_upper=npzfile['arr_1']
 
 # ## Read in PSF
 print('read in PSF')
-MIPS_psf=fits.open('../../dmu17/dmu17_HELP-SEIP-maps/'+field+'/data/output_data/dmu17_MIPS_'+field+'_20190327.fits')
+MIPS_psf=fits.open('../../dmu17/dmu17_HELP_SEIP_maps/'+field+'/data/output_data/dmu17_MIPS_'+field+'_20190327.fits')
 
 centre=np.long((MIPS_psf[1].header['NAXIS1']-1)/2)
 radius=5
@@ -64,8 +64,8 @@ radius=5
 # ## Read in MOCs & Files
 # The selection functions required are the main MOC associated with the masterlist. Here we use the DataFusion-Spitzer MOC.
 print('read in MOCs')
-filename = np.sort(glob.glob(f"../../dmu17/dmu17_HELP-SEIP-maps/{field}/data/*help.fits", recursive=True))
-moc_file = np.sort(glob.glob(f"../../dmu17/dmu17_HELP-SEIP-maps/{field}/data/*moc.fits", recursive=True))
+filename = np.sort(glob.glob(f"../../dmu17/dmu17_HELP_SEIP_maps/{field}/data/*help.fits", recursive=True))
+moc_file = np.sort(glob.glob(f"../../dmu17/dmu17_HELP_SEIP_maps/{field}/data/*moc.fits", recursive=True))
 
 
 dmu0_MOC=pymoc.MOC()
@@ -79,12 +79,12 @@ Sel_func=dmu0_MOC.intersection(holes)
 
 ######################################################################
 
-with open('./data/changed_psf/large_tiles.csv', 'w') as l_tiles_file:
+with open('./data/large_tiles.csv', 'w') as l_tiles_file:
     tiles_writer = csv.writer(l_tiles_file, delimiter=',')
     tiles_writer.writerow(['job_array'])
 l_tiles_file.close()
 
-with open('./data/changed_psf/tiles.csv', 'w') as tiles_file:
+with open('./data/tiles.csv', 'w') as tiles_file:
     tiles_writer = csv.writer(tiles_file, delimiter=',')
     tiles_writer.writerow(['job_array'])
 tiles_file.close()
@@ -101,7 +101,7 @@ for index, mosaic in enumerate (moc_file):
 
     Final=Sel_func.intersection(mosaic_MOC)
 
-    Final.write('./data/changed_psf/testMoc.fits', overwrite=True)
+    Final.write('./data/testMoc.fits', overwrite=True)
     
     if len(Final) == 0:
         print ('MOC not in field')
@@ -144,19 +144,19 @@ for index, mosaic in enumerate (moc_file):
         order_large=6
         tiles_large=moc_routines.get_HEALPix_pixels(order_large,prior_MIPS.sra,prior_MIPS.sdec,unique=True)
     
-        with open('./data/changed_psf/large_tiles.csv', 'a') as l_tiles_file:
+        with open('./data/large_tiles.csv', 'a') as l_tiles_file:
             tiles_writer = csv.writer(l_tiles_file, delimiter=',')
             tiles_writer.writerow([str(len(tiles_large))])
         tiles_file.close()
     
-        with open('./data/changed_psf/tiles.csv', 'a') as tiles_file:
+        with open('./data/tiles.csv', 'a') as tiles_file:
             tiles_writer = csv.writer(tiles_file, delimiter=',')
             tiles_writer.writerow([str(len(tiles))])
         tiles_file.close()
     
     
         print('----- There are '+str(len(tiles))+' tiles required for input catalogue and '+str(len(tiles_large))+' large tiles in mosaic' + str(mosaic[:]))
-        output_folder='./data/changed_psf/'+str(index)+'/'
+        output_folder='./data/'+str(index)+'/'
         os.mkdir(output_folder)
         outfile=output_folder+'Master_prior.pkl'
         with open(outfile, 'wb') as f:
