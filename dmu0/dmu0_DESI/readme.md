@@ -19,3 +19,26 @@ The photometric redshifts will also be served on [VOX](https://herschel-vos.phys
 History:
 
 20190708: First download.
+
+## Fields
+
+The DESI photo-zs are available on the following fields. We will use DESI photo-zs where HELP photo-zs are not available.
+
+|Field                   | HELP photo-zs available |
+|------------------------|-------------------------|
+| Bootes                 | Yes                     |
+| COSMOS                 | Yes                     |
+| EGS                    | Yes                     |
+| ELAIS-N1               | Yes                     |
+| ELAIS-N2               | No                      |
+| GAMA-09                | Yes                     |
+| GAMA-12                | Yes                     |
+| GAMA-15                | Yes                     |
+| HATLAS-NGP             | Yes                     |
+| HDF-N                  | No                      |
+| Herschel-Stripe-82     | Yes                     |
+| Lockman-SWIRE          | Yes                     |
+| SA13                   | No                      |
+| xFLS                   | No                      |
+| XMM-13hr               | No                      |
+| XMM-LSS                | Yes                     |

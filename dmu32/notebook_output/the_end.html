@@ -13155,7 +13155,7 @@ div#notebook {
 <pre>This notebook was run with herschelhelp_internal version: 
 017bb1e (Mon Jun 18 14:58:59 2018 +0100)
 This notebook was executed on: 
-2019-09-20 15:52:23.371318
+2019-09-26 16:02:44.026670
 </pre>
 </div>
 </div>
@@ -13273,7 +13273,7 @@ The text.latex.unicode rcparam was deprecated in Matplotlib 2.2 and will be remo
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table length=23</i>
-<table id="table140608249064136-195252" class="table-striped table-bordered table-condensed">
+<table id="table140405214643760-815752" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>field</th><th>dr1_suffix</th><th>last_suffix</th><th>objects</th><th>area_sq_degrees</th><th>file_size_bytes</th><th>file_size_readable</th></tr></thead>
 <tr><td>0</td><td>AKARI-NEP</td><td>20180215</td><td>20180215</td><td>531746</td><td>9.194732358779467</td><td>348848640</td><td>348.85 MB</td></tr>
 <tr><td>1</td><td>AKARI-SEP</td><td>20180221</td><td>20180221</td><td>844172</td><td>8.713306475131118</td><td>538606080</td><td>538.61 MB</td></tr>
@@ -13321,14 +13321,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140608249064136-195252').dataTable()");
+    console.log("$('#table140405214643760-815752').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140608249064136-195252').dataTable({
+    $('#table140405214643760-815752').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -13600,8 +13600,12 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>AKARI-NEP:
-0 N N
-  - xid not done.
+0 dmu_products/dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP_cat_20190227.fits ../dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP_cat_20190227.fits
+  - xid: dmu_products/dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP_cat_20190227.fits
+1 dmu_products/dmu26/dmu26_XID+PACS_AKARI-NEP/data/dmu26_XID+PACS_AKARI-NEP_cat.fits ../dmu26/dmu26_XID+PACS_AKARI-NEP/data/dmu26_XID+PACS_AKARI-NEP_cat.fits
+  - xid: dmu_products/dmu26/dmu26_XID+PACS_AKARI-NEP/data/dmu26_XID+PACS_AKARI-NEP_cat.fits
+2 dmu_products/dmu26/dmu26_XID+SPIRE_AKARI-NEP/data/dmu26_XID+SPIRE_AKARI-NEP_cat_20190312.fits ../dmu26/dmu26_XID+SPIRE_AKARI-NEP/data/dmu26_XID+SPIRE_AKARI-NEP_cat_20190312.fits
+  - xid: dmu_products/dmu26/dmu26_XID+SPIRE_AKARI-NEP/data/dmu26_XID+SPIRE_AKARI-NEP_cat_20190312.fits
   - photoz not done.
   - cigale not done.
 AKARI-SEP:
@@ -13659,8 +13663,8 @@ ELAIS-N2:
   - xid: dmu_products/dmu26/dmu26_XID+PACS_ELAIS-N2/data/dmu26_XID+PACS_ELAIS-N2_cat_20190206.fits
 2 dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits ../dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits
   - xid: dmu_products/dmu26/dmu26_XID+SPIRE_ELAIS-N2/data/dmu26_XID+SPIRE_ELAIS-N2_cat_20181112.fits
-  - photoz not done.
-  - cigale not done.
+  - photoz: dmu_products/dmu24/dmu24_ELAIS-N2/data/ELAIS-N2_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
+  - cigale: dmu_products/dmu28/dmu28_ELAIS-N2/data/zphot/HELP_final_results.fits
 ELAIS-S1:
 0 dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits ../dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits
   - xid: dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-S1/data/dmu26_XID+MIPS_ELAIS-S1_20180215.fits
@@ -13690,7 +13694,7 @@ GAMA-15:
 HDF-N:
 0 N N
   - xid not done.
-  - photoz not done.
+  - photoz: dmu_products/dmu24/dmu24_HDF-N/data/HDF-N_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
   - cigale not done.
 Herschel-Stripe-82:
 0 dmu_products/dmu26/dmu26_XID+MIPS_Herschel-Stripe-82/data/dmu26_XID+MIPS_Herschel-Stripe-82_cat_20190917.fits ../dmu26/dmu26_XID+MIPS_Herschel-Stripe-82/data/dmu26_XID+MIPS_Herschel-Stripe-82_cat_20190917.fits
@@ -13714,7 +13718,7 @@ HATLAS-NGP:
 SA13:
 0 N N
   - xid not done.
-  - photoz not done.
+  - photoz: dmu_products/dmu24/dmu24_SA13/data/SA13_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
   - cigale not done.
 HATLAS-SGP:
 0 dmu_products/dmu26/dmu26_XID+SPIRE_SGP/data/dmu26_XID+SPIRE_SGP_20180625.fits ../dmu26/dmu26_XID+SPIRE_SGP/data/dmu26_XID+SPIRE_SGP_20180625.fits
@@ -13732,14 +13736,16 @@ SSDF:
   - photoz: dmu_products/dmu24/dmu24_SSDF/data/master_catalogue_ssdf_20180221_photoz_20180612_r_optimised.fits
   - cigale not done.
 xFLS:
-0 N N
-  - xid not done.
-  - photoz not done.
+0 dmu_products/dmu26/dmu26_XID+MIPS_xFLS/data/dmu26_XID+MIPS_xFLS_cat_20190122.fits ../dmu26/dmu26_XID+MIPS_xFLS/data/dmu26_XID+MIPS_xFLS_cat_20190122.fits
+  - xid: dmu_products/dmu26/dmu26_XID+MIPS_xFLS/data/dmu26_XID+MIPS_xFLS_cat_20190122.fits
+1 dmu_products/dmu26/dmu26_XID+SPIRE_xFLS/data/dmu26_XID+SPIRE_xFLS_cat_20190123.fits ../dmu26/dmu26_XID+SPIRE_xFLS/data/dmu26_XID+SPIRE_xFLS_cat_20190123.fits
+  - xid: dmu_products/dmu26/dmu26_XID+SPIRE_xFLS/data/dmu26_XID+SPIRE_xFLS_cat_20190123.fits
+  - photoz: dmu_products/dmu24/dmu24_xFLS/data/xFLS_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
   - cigale not done.
 XMM-13hr:
 0 N N
   - xid not done.
-  - photoz not done.
+  - photoz: dmu_products/dmu24/dmu24_XMM-13hr/data/XMM-13hr_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
   - cigale not done.
 XMM-LSS:
 0 dmu_products/dmu26/dmu26_XID+MIPS_XMM-LSS/data/dmu26_XID+MIPS_XMM-LSS_SPUDS_cat_20181210.fits ../dmu26/dmu26_XID+MIPS_XMM-LSS/data/dmu26_XID+MIPS_XMM-LSS_SPUDS_cat_20181210.fits
@@ -13788,30 +13794,30 @@ XMM-LSS:
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <i>Table length=23</i>
-<table id="table140608177000688-190499" class="table-striped table-bordered table-condensed">
+<table id="table140405143754680-748568" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>field</th><th>dr1_suffix</th><th>last_suffix</th><th>objects</th><th>area_sq_degrees</th><th>file_size_bytes</th><th>file_size_readable</th><th>xid_objects</th><th>photoz_objects</th><th>cigale_objects</th></tr></thead>
-<tr><td>0</td><td>AKARI-NEP</td><td>20180215</td><td>20180215</td><td>531746</td><td>9.194732358779467</td><td>348848640</td><td>348.85 MB</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>AKARI-NEP</td><td>20180215</td><td>20180215</td><td>531746</td><td>9.194732358779467</td><td>348848640</td><td>348.85 MB</td><td>35319</td><td>0</td><td>0</td></tr>
 <tr><td>1</td><td>AKARI-SEP</td><td>20180221</td><td>20180221</td><td>844172</td><td>8.713306475131118</td><td>538606080</td><td>538.61 MB</td><td>211453</td><td>0</td><td>0</td></tr>
 <tr><td>2</td><td>Bootes</td><td>20180520</td><td>20190201</td><td>3481661</td><td>11.42815299095486</td><td>5002044480</td><td>5 GB</td><td>495159</td><td>1657470</td><td>38660</td></tr>
 <tr><td>3</td><td>CDFS-SWIRE</td><td>20180613</td><td>20180613</td><td>2171051</td><td>12.971246403717068</td><td>5705593920</td><td>5.71 GB</td><td>240489</td><td>139532</td><td>9308</td></tr>
 <tr><td>4</td><td>COSMOS</td><td>20190402</td><td>20190402</td><td>2599374</td><td>5.083863478496816</td><td>10517175360</td><td>10.52 GB</td><td>44310</td><td>694478</td><td>15747</td></tr>
 <tr><td>5</td><td>EGS</td><td>20180501</td><td>20180501</td><td>1412613</td><td>3.566383275122158</td><td>3808480320</td><td>3.81 GB</td><td>0</td><td>1183490</td><td>0</td></tr>
 <tr><td>6</td><td>ELAIS-N1</td><td>20171016</td><td>20180216</td><td>4026292</td><td>13.507484555454763</td><td>5242279680</td><td>5.24 GB</td><td>120282</td><td>2885116</td><td>49986</td></tr>
-<tr><td>7</td><td>ELAIS-N2</td><td>20180218</td><td>20180218</td><td>1783240</td><td>9.167479903991113</td><td>2007964800</td><td>2.01 GB</td><td>86591</td><td>0</td><td>0</td></tr>
+<tr><td>7</td><td>ELAIS-N2</td><td>20180218</td><td>20180218</td><td>1783240</td><td>9.167479903991113</td><td>2007964800</td><td>2.01 GB</td><td>86591</td><td>120961</td><td>6798</td></tr>
 <tr><td>8</td><td>ELAIS-S1</td><td>20180416</td><td>20180416</td><td>1655564</td><td>9.002940646885508</td><td>1970156160</td><td>1.97 GB</td><td>194276</td><td>1102319</td><td>25393</td></tr>
 <tr><td>9</td><td>GAMA-09</td><td>20180601</td><td>20190123</td><td>12937982</td><td>62.01393417284915</td><td>19911611520</td><td>19.91 GB</td><td>1386659</td><td>8834023</td><td>130293</td></tr>
 <tr><td>10</td><td>GAMA-12</td><td>20180218</td><td>20190128</td><td>12369415</td><td>62.70933280772107</td><td>14633066880</td><td>14.63 GB</td><td>1099477</td><td>8591676</td><td>108139</td></tr>
 <tr><td>11</td><td>GAMA-15</td><td>20180213</td><td>20190201</td><td>14232880</td><td>61.70114565980842</td><td>16595585280</td><td>16.6 GB</td><td>1236395</td><td>10109159</td><td>117234</td></tr>
-<tr><td>12</td><td>HDF-N</td><td>20180427</td><td>20180427</td><td>130679</td><td>0.6717832558166041</td><td>185996160</td><td>186 MB</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>12</td><td>HDF-N</td><td>20180427</td><td>20180427</td><td>130679</td><td>0.6717832558166041</td><td>185996160</td><td>186 MB</td><td>0</td><td>7451</td><td>0</td></tr>
 <tr><td>13</td><td>Herschel-Stripe-82</td><td>20180307</td><td>20190205</td><td>50196455</td><td>363.22747930641884</td><td>127047306240</td><td>127.05 GB</td><td>76084</td><td>21613821</td><td>0</td></tr>
 <tr><td>14</td><td>Lockman-SWIRE</td><td>20180219</td><td>20180219</td><td>4366298</td><td>22.413863402949218</td><td>5195931840</td><td>5.2 GB</td><td>242065</td><td>1382438</td><td>46719</td></tr>
 <tr><td>15</td><td>NGP</td><td>20180219</td><td>20190204</td><td>6759591</td><td>177.6981971077162</td><td>4954806720</td><td>4.95 GB</td><td>1233547</td><td>3175339</td><td>185290</td></tr>
-<tr><td>16</td><td>SA13</td><td>20180501</td><td>20180501</td><td>9799</td><td>0.27416379328431184</td><td>2721600</td><td>2.72 MB</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>16</td><td>SA13</td><td>20180501</td><td>20180501</td><td>9799</td><td>0.27416379328431184</td><td>2721600</td><td>2.72 MB</td><td>0</td><td>2891</td><td>0</td></tr>
 <tr><td>17</td><td>SGP</td><td>20180221</td><td>20180221</td><td>29790690</td><td>294.5684540900642</td><td>45192530880</td><td>45.19 GB</td><td>3511594</td><td>17057212</td><td>352804</td></tr>
 <tr><td>18</td><td>SPIRE-NEP</td><td>20180220</td><td>20180220</td><td>2674</td><td>0.1280660469377391</td><td>1203840</td><td>1.2 MB</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>19</td><td>SSDF</td><td>20180221</td><td>20180221</td><td>12661903</td><td>111.11624949343539</td><td>8078319360</td><td>8.08 GB</td><td>0</td><td>9268783</td><td>0</td></tr>
-<tr><td>20</td><td>xFLS</td><td>20180501</td><td>20180501</td><td>977148</td><td>7.44043242140754</td><td>1050474240</td><td>1.05 GB</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>21</td><td>XMM-13hr</td><td>20180501</td><td>20180501</td><td>38629</td><td>0.7570240166583633</td><td>10676160</td><td>10.68 MB</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>20</td><td>xFLS</td><td>20180501</td><td>20180501</td><td>977148</td><td>7.44043242140754</td><td>1050474240</td><td>1.05 GB</td><td>52187</td><td>101282</td><td>0</td></tr>
+<tr><td>21</td><td>XMM-13hr</td><td>20180501</td><td>20180501</td><td>38629</td><td>0.7570240166583633</td><td>10676160</td><td>10.68 MB</td><td>0</td><td>10777</td><td>0</td></tr>
 <tr><td>22</td><td>XMM-LSS</td><td>20190328</td><td>20190328</td><td>8705837</td><td>21.75457939331374</td><td>28241838720</td><td>28.24 GB</td><td>287599</td><td>6152920</td><td>61892</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
@@ -13836,14 +13842,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140608177000688-190499').dataTable()");
+    console.log("$('#table140405143754680-748568').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140608177000688-190499').dataTable({
+    $('#table140405143754680-748568').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -13906,12 +13912,12 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>XID+: There are 15 fields with XID+ fluxes computed totalling 1135.96 square degrees.
-      This is a total of 10465980 objects with an average of 7% of objects on processed areas.
-Photo-zs: There are 15 fields with photozs computed totalling 1232.76 square degrees.
-      This is a total of 93847776 objects with an average of 56% of objects on processed areas.
-CIGALE SEDs: There are 12 fields with SEDs computed totalling 754.85 square degrees.
-      This is a total of 1141465 objects with an average of 1% of objects on processed areas.
+<pre>XID+: There are 17 fields with XID+ fluxes computed totalling 1152.60 square degrees.
+      This is a total of 10553486 objects with an average of 7% of objects on processed areas.
+Photo-zs: There are 20 fields with photozs computed totalling 1251.07 square degrees.
+      This is a total of 94091138 objects with an average of 55% of objects on processed areas.
+CIGALE SEDs: There are 13 fields with SEDs computed totalling 764.02 square degrees.
+      This is a total of 1148263 objects with an average of 1% of objects on processed areas.
 </pre>
 </div>
 </div>
