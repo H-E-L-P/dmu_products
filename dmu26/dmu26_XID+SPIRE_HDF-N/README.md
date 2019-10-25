@@ -9,8 +9,7 @@ Description:
 ## HDF-N
 
 ### Prior
-  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
-   MIPS 24 $\mathrm{\mu m}$ flux >= 10 $\mathrm{\mu Jy}$. For the full processing of the
+  This catalogue uses sources from Ldust_prediction and photo_z. For the full processing of the
    prior object list see the Jupyter notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) 
    
 

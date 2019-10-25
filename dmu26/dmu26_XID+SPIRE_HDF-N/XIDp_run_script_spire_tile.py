@@ -11,8 +11,7 @@ from xidplus import moc_routines, catalogue
 from xidplus import posterior_maps as postmaps
 from builtins import input
 
-sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
-sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
+
 
 try:
     taskid = np.int(os.environ['SGE_TASK_ID'])
@@ -25,7 +24,8 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./data/'output_folder='./data/'
+output_folder='./data/'
+
 
 
 #First run: Tiles.pkl
@@ -44,7 +44,7 @@ with open(outfile, 'rb') as f:
 
 tiles=obj['tiles']
 order=obj['order']
-order_large=6#obj['order_large']
+order_large=obj['order_large']
 
 tile_large=moc_routines.tile_in_tile(order,tiles[taskid-1],order_large)
 outfile=output_folder+'Tile_'+str(tile_large)+'_'+str(order_large)+'.pkl'
