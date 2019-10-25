@@ -61,7 +61,7 @@ for i in range(0,len(tiles)):
 		failed_tiles.append(tiles[i])
 	
 
-hdulist24.writeto(output_folder+'dmu26_XID+MIPS_AKARI-NEP_Bayes_Pval'+otput_folder[-2:-1]+'.fits',clobber=True)
+hdulist24.writeto(output_folder+'dmu26_XID+MIPS_AKARI-NEP_Bayes_Pval'+output_folder[-2:-1]+'.fits',clobber=True)
 
 outfile=output_folder+'failed_tiles.pkl'
 with open(outfile, 'wb') as f:

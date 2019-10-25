@@ -1,0 +1,15 @@
+Product: dmu26_XID+SPIRE_XMM-13hr
+
+Version: 1.0
+
+Author: María Campos
+
+Fields: SA13
+
+Selection filter: F_SPIRE_250, F_SPIRE_350, F_SPIRE_500
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products: XMM-13hr_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits, XMM-13hr_Ldust_prediction_results.fits, XMM-13hr_SPIRE250_v1.0.fits, XMM-13hr_SPIRE350_v1.0.fits, XMM-13hr_SPIRE500_v1.0.fits

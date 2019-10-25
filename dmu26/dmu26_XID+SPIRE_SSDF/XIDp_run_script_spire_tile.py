@@ -22,6 +22,8 @@ except KeyError:
     taskid = int(input("Please enter task id: "))
     print("you entered", taskid)
 
+    
+output_folder= './data/'
 
 #First run: Tiles.pkl
 #####################
@@ -37,7 +39,7 @@ with open(outfile, 'rb') as f:
 
 tiles=obj['tiles']
 order=obj['order']
-order_large=6#obj['order_large']
+order_large=obj['order_large']
 
     
 tile_large=moc_routines.tile_in_tile(order,tiles[taskid-1],order_large)
