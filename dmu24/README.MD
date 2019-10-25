@@ -24,30 +24,30 @@ All zeropoint offset files used during the photo-z estimation are stored in the 
 
 ## Fields
 
-HELP Field            | Photo-z Available | Masterlist Used | DR1 Photo-z Suffix
-----------------------|-------------------|-----------------|--------------------
-AKARI-NEP             | No | |
+HELP Field            | Photo-z Available | Masterlist Used | DR1 Photo-z Suffix | DESI photo-z available
+----------------------|-------------------|-----------------|--------------------|----------------------
+AKARI-NEP             | No | | 
 AKARI-SEP             | No | |
-Bootes                | No | |
+Bootes                | Yes | 20180517 | | Yes
 CDFS-SWIRE            | Yes | 20170801 | 20180210
-COSMOS                | Yes | |
-EGS                   | Yes | 20180501 | 20180608
-ELAIS-N1              | Yes | 20170706 | 20170725
-ELAIS-N2              | No | |
+COSMOS                | Yes | | | Yes
+EGS                   | Yes | 20180501 | 20180608 | Yes
+ELAIS-N1              | Yes | 20170706 | 20170725 | Yes
+ELAIS-N2              | No | | | Yes
 ELAIS-S1              | Yes | 20171103 | 20180412
-GAMA-09               | Yes | 20180119 | 20180213
-GAMA-12               | Yes | 20171210 | 20180410
-GAMA-15               | Yes | 20180119 | 20180210
-HDF-N                 | No | |
-Herschel-Stripe-82    | Yes | 20180307 | 20180509
-Lockman-SWIRE         | Yes | 20170710 | 20170802
+GAMA-09               | Yes | 20180119 | 20180213 | Yes
+GAMA-12               | Yes | 20171210 | 20180410 | Yes
+GAMA-15               | Yes | 20180119 | 20180210 | Yes
+HDF-N                 | No | | | Yes
+Herschel-Stripe-82    | Yes | 20180307 | 20180509 | Yes
+Lockman-SWIRE         | Yes | 20170710 | 20170802 | Yes
 NGP                   | Yes | 20180501 | 20180601
-SA13                  | No | |
+SA13                  | No | | | Yes
 SGP                   | Yes | 20180221 | 20180502
 SPIRE-NEP             | No | |
 SSDF                  | Yes | 20180221 | 20180612
-xFLS                  | No | |
-XMM-13hr              | No | |
+xFLS                  | No | | | Yes
+XMM-13hr              | No | | | Yes
 XMM-LSS               | Yes | 20180221 | 20180518
 
 

@@ -12,7 +12,7 @@ flags: None
 
 xid: None
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_SA13/data/SA13_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
 
 cigale: None
 

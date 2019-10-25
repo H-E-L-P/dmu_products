@@ -16,6 +16,6 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_ELAIS-N2/data/dmu26_XID+MIPS_ELAIS-N2_S
 
 photoz: dmu_products/dmu24/dmu24_ELAIS-N2/data/ELAIS-N2_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_ELAIS-N2/data/zphot/HELP_final_results.fits
 
 final: dmu_products/dmu32/dmu32_ELAIS-N2/data/ELAIS-N2_20180218_cigale.fits
