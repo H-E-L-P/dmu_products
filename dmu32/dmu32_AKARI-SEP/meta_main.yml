@@ -14,7 +14,7 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_AKARI-SEP/data/dmu26_XID+MIPS_AKARI-SEP
        dmu_products/dmu26/dmu26_XID+SPIRE_AKARI-SEP/dmu26_XID+SPIRE_AKARI-SEP_cat_20190916.fits,
        dmu_products/dmu26/dmu26_XID+PACS_AKARI-SEP/data/dmu26_XID+PACS_AKARI-SEP_cat_20190924.fits ]
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_AKARI-SEP/data/AKARI-SEP_DESI-DR8_Zou_et_al_2019_photo_z_withhelp_id.fits
 
 cigale: None
 
