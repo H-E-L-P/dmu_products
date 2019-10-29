@@ -12,7 +12,7 @@ flags: dmu_products/dmu6/dmu6_v_SPIRE-NEP/data/spire-nep_20180220_flags.fits
 
 xid: None
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_SPIRE-NEP/data/SPIRE-NEP_DESI-DR8_Zou_et_al_2019_photo_z_withhelp_id.fits
 
 cigale: None
 
