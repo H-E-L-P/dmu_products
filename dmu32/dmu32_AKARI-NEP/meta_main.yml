@@ -16,7 +16,7 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP
 
 photoz: dmu_products/dmu24/dmu24_AKARI-NEP/data/AKARI-NEP_DESI-DR8_Zou_et_al_2019_photo_z_withhelp_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_AKARI-NEP/data/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
