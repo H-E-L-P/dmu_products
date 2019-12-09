@@ -15,4 +15,4 @@ The prior decisions for each field and band are described in the relevant notebo
 XID+ has been developed such that additional model complexity can be added.
 
 XID+SED is an extension that uses SED templates and photometric redshift priors to fit the MIPS and SPIRE maps.
-This available as part of the [XID+ software](www.herschel.sussex.ac.uk) and demonstrated in the paper Hurley et al. 2018.
+This available as part of the [XID+ software](www.herschel.sussex.ac.uk) and demonstrated in the paper Hurley et al in prep.
