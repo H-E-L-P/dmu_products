@@ -26,8 +26,8 @@ All zeropoint offset files used during the photo-z estimation are stored in the 
 
 HELP Field            | Photo-z Available | Masterlist Used | DR1 Photo-z Suffix | DESI photo-z available
 ----------------------|-------------------|-----------------|--------------------|----------------------
-AKARI-NEP             | No | | 
-AKARI-SEP             | No | |
+AKARI-NEP             | No | | Yes
+AKARI-SEP             | No | | Yes
 Bootes                | Yes | 20180517 | | Yes
 CDFS-SWIRE            | Yes | 20170801 | 20180210
 COSMOS                | Yes | | | Yes
@@ -44,7 +44,7 @@ Lockman-SWIRE         | Yes | 20170710 | 20170802 | Yes
 NGP                   | Yes | 20180501 | 20180601
 SA13                  | No | | | Yes
 SGP                   | Yes | 20180221 | 20180502
-SPIRE-NEP             | No | |
+SPIRE-NEP             | No | | Yes
 SSDF                  | Yes | 20180221 | 20180612
 xFLS                  | No | | | Yes
 XMM-13hr              | No | | | Yes
