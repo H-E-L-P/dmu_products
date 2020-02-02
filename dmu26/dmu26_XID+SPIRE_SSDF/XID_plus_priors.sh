@@ -1,4 +1,4 @@
-/bin/bash
+#! /bin/bash
 #$ -S /bin/bash
 #$ -o /its/home/mc741/git_hub/dmu_products/log/out
 #$ -e /its/home/mc741/git_hub/dmu_products/log/err

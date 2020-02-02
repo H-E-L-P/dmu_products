@@ -91,9 +91,9 @@ print('len_cigale: ' + str(len(cigale)))
 
 print('reading SPIRE maps')
 
-pswfits='../../dmu19/dmu19_HELP-SPIRE-maps/data/SSDF_SPIRE250_v1.0.fits'#SPIRE 250 map
-pmwfits='../../dmu19/dmu19_HELP-SPIRE-maps/data/SSDF_SPIRE350_v1.0.fits'#SPIRE 350 map
-plwfits='../../dmu19/dmu19_HELP-SPIRE-maps/data/SSDF_SPIRE500_v1.0.fits'#SPIRE 500 map
+pswfits='../../dmu19/dmu19_SSDF-itermap/data/SSDF-PSWmap-mosaic_MS-20191123.fits'#SPIRE 250 map
+pmwfits='../../dmu19/dmu19_SSDF-itermap/data/SSDF-PMWmap-mosaic_MS-20191123.fits'#SPIRE 350 map
+plwfits='../../dmu19/dmu19_SSDF-itermap/data/SSDF-PLWmap-mosaic_MS-20191123.fits'#SPIRE 500 map
 
 #output folder
 output_folder='./'
@@ -101,40 +101,38 @@ output_folder='./'
 
 # In[15]:
 
-
 from astropy.io import fits
 from astropy import wcs
 
 #-----250-------------
 hdulist = fits.open(pswfits)
 im250phdu=hdulist[0].header
-im250hdu=hdulist[1].header
-
-im250=hdulist[1].data*1.0E3 #convert to mJy
-nim250=hdulist[3].data*1.0E3 #convert to mJy
-w_250 = wcs.WCS(hdulist[1].header)
+im250hdu=hdulist['IMAGE'].header
+im250=hdulist['IMAGE'].data*1.0E3 #convert to mJy
+nim250=hdulist['ERROR'].data*1.0E3 #convert to mJy
+w_250 = wcs.WCS(hdulist['IMAGE'].header)
 pixsize250=3600.0*w_250.wcs.cdelt #pixel size (in arcseconds)
 hdulist.close()
+
 #-----350-------------
 hdulist = fits.open(pmwfits)
 im350phdu=hdulist[0].header
-im350hdu=hdulist[1].header
-
-im350=hdulist[1].data*1.0E3 #convert to mJy
-nim350=hdulist[3].data*1.0E3 #convert to mJy
-w_350 = wcs.WCS(hdulist[1].header)
+im350hdu=hdulist['IMAGE'].header
+im350=hdulist['IMAGE'].data*1.0E3 #convert to mJy
+nim350=hdulist['ERROR'].data*1.0E3 #convert to mJy
+w_350 = wcs.WCS(hdulist['IMAGE'].header)
 pixsize350=3600.0*w_350.wcs.cdelt #pixel size (in arcseconds)
 hdulist.close()
+
 #-----500-------------
 hdulist = fits.open(plwfits)
 im500phdu=hdulist[0].header
-im500hdu=hdulist[1].header
-im500=hdulist[1].data*1.0E3 #convert to mJy
-nim500=hdulist[3].data*1.0E3 #convert to mJy
-w_500 = wcs.WCS(hdulist[1].header)
+im500hdu=hdulist['IMAGE'].header
+im500=hdulist['IMAGE'].data*1.0E3 #convert to mJy
+nim500=hdulist['ERROR'].data*1.0E3 #convert to mJy
+w_500 = wcs.WCS(hdulist['IMAGE'].header)
 pixsize500=3600.0*w_500.wcs.cdelt #pixel size (in arcseconds)
 hdulist.close()
-
 
 
 # In[16]:
@@ -202,7 +200,7 @@ tiles=moc_routines.get_HEALPix_pixels(order,prior250.sra,prior250.sdec,unique=Tr
 order_large=6
 tiles_large=moc_routines.get_HEALPix_pixels(order_large,prior250.sra,prior250.sdec,unique=True)
 print('----- There are '+str(len(tiles))+' tiles required for input catalogue and '+str(len(tiles_large))+' large tiles')
-output_folder='./'
+output_folder='./data/'
 outfile=output_folder+'Master_prior.pkl'
 xidplus.io.pickle_dump({'priors':[prior250,prior350,prior500],'tiles':tiles,'order':order,'version':xidplus.io.git_version()},outfile)
 outfile=output_folder+'Tiles.pkl'
