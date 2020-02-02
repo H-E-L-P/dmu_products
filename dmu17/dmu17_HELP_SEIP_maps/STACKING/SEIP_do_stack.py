@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 from SEIP_stacking import stack_image
 import glob
 
-field = 'SA13'
+field = 'EGS'
 #iminfiles = glob.glob("../"+field+"/data/*.help.fits", recursive=True)
-iminfiles = ['../'+field+'/data/50070360.50070360-0.MIPS.1.help.fits']
-catinfile="../../../dmu16/dmu16_allwise/data/Allwise_PSF_stack_SA13.fits"  
+iminfiles = ['../'+field+'/data/70101880.70101880-0.MIPS.1.help.fits']
+catinfile="../../../dmu16/dmu16_allwise/data/Allwise_PSF_stack_EGS.fits"  
 
 cat=apif.open(catinfile)[1].data
 ra_cat=cat.field('ra')
@@ -72,7 +72,7 @@ stack_hdu = apif.ImageHDU(header=stamp_hd, data=meanStack)
 err_hdu = apif.ImageHDU(data=varStack)
     
 hdu_stamp = apif.HDUList([primary_hdu, stack_hdu, err_hdu])
-hdu_stamp.writeto('./data/dmu17_PSF_MIPS_'+ field + '_20190325.fits')
+hdu_stamp.writeto('./data/dmu17_PSFstack_MIPS_'+ field + '_20191106b.fits')
     
 
 print ('StackCube_shape:', np.shape(StackCube_All))

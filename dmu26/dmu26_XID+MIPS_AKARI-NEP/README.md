@@ -56,9 +56,9 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_AKARI-NEP_cat.fits
 ```
 #### Computation 
 # Details on computational cost of fitting AKARI-NEP:

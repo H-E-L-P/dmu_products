@@ -167,7 +167,7 @@ CASE format OF
       
       ;cov = readfits(cov_file,cov_hd)
       err = readfits(err_file,err_hd)
-       im=readfits(im_file,hd, /silent)
+       im=mrdfits(im_file,hd, /silent)
       cov = im*0.+1.
       cov_hd=hd
 ;       cov=mrdfits(im_file,'coverage', error_action=1, cov_hd, /silent)
