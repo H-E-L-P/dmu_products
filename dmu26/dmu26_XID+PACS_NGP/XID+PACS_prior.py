@@ -10,16 +10,10 @@ import pylab
 import pymoc
 import xidplus
 import numpy as np
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 from astropy.table import Table , join
-from mocpy import MOC
 from astropy.io import fits
 from astropy import wcs
-
-
-# In[2]:
-
-
 import seaborn as sns
 
 
@@ -34,26 +28,6 @@ import seaborn as sns
 Sel_func=pymoc.MOC()
 Sel_func.read('../../dmu4/dmu4_sm_NGP/data/holes_NGP_ukidss_k_O16_20190204_MOC.fits')
 
-filename='../../dmu18/dmu18_HELP-PACS-maps/data/NGP_PACS100_v0.9.fits'
-hdulist = fits.open(filename)
-im100phdu=hdulist['IMAGE'].header
-ngp_moc=MOC.from_image(im100phdu, 13)
-ngp_moc.write('./data/ngp_moc.fits')
-
-
-
-im_moc=pymoc.MOC()
-im_moc.read('./data/ngp_moc.fits')
-
-Final=Sel_func.intersection(im_moc)
-
-
-# In[ ]:
-
-
-#Final.write('./data/testMoc.fits', overwrite=True)
-#Final=pymoc.MOC()
-#Final.read('./data/testMoc.fits')
 
 
 # ## Read in CIGALE predictions catalogue
@@ -73,7 +47,7 @@ cigale['id'].name = 'help_id'
 # In[15]:
 
 
-cigale
+#cigale
 
 
 # ## Read in photoz
@@ -87,7 +61,7 @@ photoz=Table.read('../../dmu24/dmu24_NGP/data/master_catalogue_ngp_20180501_phot
 # In[ ]:
 
 
-photoz
+#photoz
 
 
 # ## Join CIGALE and photoz tables
@@ -123,10 +97,10 @@ prior['DEC'].name='Dec'
 # In[10]:
 
 
-PACS_100='../../dmu18/dmu18_HELP-PACS-maps/data/NGP_PACS100_v0.9.fits'
-PACS_160='../../dmu18/dmu18_HELP-PACS-maps/data/NGP_PACS160_v0.9.fits'
+im100fits='../../dmu18/dmu18_HELP-PACS-maps/data/NGP_PACS100_v0.9.fits'
+im160fits='../../dmu18/dmu18_HELP-PACS-maps/data/NGP_PACS160_v0.9.fits'
 #output folder
-output_folder='./'
+output_folder='./data'
 
 
 # In[11]:
@@ -170,9 +144,9 @@ pacs100_psf=fits.open('../../dmu18/dmu18_NGP/dmu18_PACS_100_PSF_NGP_20190125.fit
 pacs160_psf=fits.open('../../dmu18/dmu18_NGP/dmu18_PACS_160_PSF_NGP_20190125.fits')
 
 centre100=np.long((pacs100_psf[0].header['NAXIS1']-1)/2)
-radius100=15
+radius100=10
 centre160=np.long((pacs160_psf[0].header['NAXIS1']-1)/2)
-radius160=25
+radius160=10
 
 pind100=np.arange(0,radius100+1+radius100,1)*3600*np.abs(pacs100_psf[0].header['CDELT1'])/pixsize100 #get 100 scale in terms of pixel scale of map
 pind160=np.arange(0,radius160+1+radius160,1)*3600*np.abs(pacs160_psf[0].header['CDELT1'])/pixsize160 #get 160 scale in terms of pixel scale of map
@@ -187,14 +161,14 @@ print(pind100)
 # In[14]:
 
 
-import pylab as plt
-plt.figure(figsize=(20,10))
-plt.subplot(1,2,1)
-plt.imshow(pacs100_psf[1].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
-plt.colorbar()
-plt.subplot(1,2,2)
-plt.imshow(pacs160_psf[1].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
-plt.colorbar()
+#import pylab as plt
+#plt.figure(figsize=(20,10))
+#plt.subplot(1,2,1)
+#plt.imshow(pacs100_psf[1].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
+#plt.colorbar()
+#plt.subplot(1,2,2)
+#plt.imshow(pacs160_psf[1].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
+#plt.colorbar()
 
 
 # ## Set XID+ prior class
@@ -203,13 +177,13 @@ plt.colorbar()
 
 
 #---prior100--------
-prior100=xidplus.prior(im100,nim100,im100phdu,im100hdu, moc=Final)#Initialise with map, uncertianty map, wcs info and primary header
-prior100.prior_cat(prior_cat(prior['RA'] ,prior['Dec'] ,'NGP_results_Ldust_prediction.fits',ID=prior['help_id'])#Set input catalogue
+prior100=xidplus.prior(im100,nim100,im100phdu,im100hdu, moc=Sel_func)#Initialise with map, uncertianty map, wcs info and primary header
+prior100.prior_cat(prior['RA'] ,prior['Dec'] ,'NGP_results_Ldust_prediction.fits',ID=prior['help_id'])#Set input catalogue
 prior100.prior_bkg(0.0,5)#Set prior on background (assumes Gaussian pdf with mu and sigma)
 
 #---prior160--------
-prior160=xidplus.prior(im160,nim160,im160phdu,im160hdu, moc=Final)
-prior160.prior_cat(prior_cat(prior['RA'] ,prior['Dec'] ,'NGP_results_Ldust_prediction.fits',ID=prior['help_id'])
+prior160=xidplus.prior(im160,nim160,im160phdu,im160hdu, moc=Sel_func)
+prior160.prior_cat(prior['RA'] ,prior['Dec'] ,'NGP_results_Ldust_prediction.fits',ID=prior['help_id'])
 prior160.prior_bkg(0.0,5)
 
 
