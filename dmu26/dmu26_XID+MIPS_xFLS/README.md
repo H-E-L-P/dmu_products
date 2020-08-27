@@ -1,23 +1,20 @@
-# dmu26_XID+MIPS_ELAIS-N2
+# dmu26_XID+MIPS_xFLS
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
   a natural framework in which to include prior information, and uses the
   Bayesian inference tool Stan to obtain the full posterior probability
-  distribution on flux estimates (see Hurley et al. 2017 for more details).
-y the remaining SWIRE region.
- 
+  distribution on flux estimates (see Hurley et al. 2017 for more details). 
 
-## SWIRE
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
-   prior object list see the Jupyter notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
+   prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
    
 
 ### Running on Apollo
 
-To run on Apollo, first run the notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+To run on Apollo, first run the notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
  hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
  
 ```bash
@@ -40,9 +37,9 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_xFLS_cat.fits
 ```
 #### Computation 
 # Details on computational cost of fitting ELAIS-N1 SWIRE:
@@ -50,13 +47,13 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
  ```bash 
 #OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+#
 ```
  
  
 ### Final data products
 
-  Final stage requires examination and validation of catalogues using [XID+MIPS_ELAIS-N2_final_processing.ipynb](XID+MIPS_ELAIS-N2_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+MIPS_xFLS_final_processing.ipynb](XID+MIPS_xFLS_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

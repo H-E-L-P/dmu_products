@@ -43,8 +43,11 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_Bootes_cat.fits
 ```
  
 #### Computation 
-# Details on computational cost of fitting Bootes:
-
+Details on computational cost of fitting Bootes:
+    
+OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
+======================================================================================================================
+mc741       2483108   9942775.294      4785.002   9947560.29       11503614.517             497.681             58.61
 
 ### Final data products
   Final stage requires examination and validation of catalogues using [XID+SPIRE_Bootes_final_processing.ipynb](XID+SPIRE_Bootes_final_processing.ipynb).

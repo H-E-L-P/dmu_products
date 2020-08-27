@@ -1,4 +1,7 @@
 # dmu26_XID+MIPS_SPIRE-NEP
+**Note**
+This field was run using SEIP-maps.
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

@@ -13,7 +13,7 @@ XMM-LSS was split into two regions, defined by the IRAC coverage. The deep regio
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
    MIPS 24 $\mathrm{\mu m}$ flux >= 20 $\mathrm{\mu Jy}$. For the full processing of the
-   prior object list see the Jupyter notebook [XID+PACS_prior_SPUDS.ipynb](./XID+PACS_prior_SERVS.ipynb) and 
+   prior object list see the Jupyter notebook [XID+PACS_prior_SPUDS.ipynb](./XID+PACS_prior_SPUDS.ipynb).
    
 
 ### Running on Apollo
@@ -45,6 +45,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
 module load stilts
 stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_XMM-LSS_SPUDS_cat.fits
 ```
+
  
 #### Computation 
  Details on computational cost of fitting XMM-LSS:
@@ -53,7 +54,7 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_XMM-LSS_SPUDS_cat.fits
 ```not available```
  
  
-## SWIRE (-SERVS)
+## SWIRE (-SPUDS)
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a

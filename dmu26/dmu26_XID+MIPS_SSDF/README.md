@@ -1,4 +1,9 @@
 # dmu26_XID+MIPS_SSDF
+**Note**
+Given the small number of SEIP-maps available for this field, we decided to use Ldust predictions to run XID+SPIRE. 
+This field was run on ILIFU.
+
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -13,31 +18,51 @@ Description:
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
    prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
    
+#### SEIP-Maps
+In the case of the mosaic maps see [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)
+
 
 ### Running on Apollo
+#### SEIP-Maps
+   
+To run on Apollo, first run the script [XID_plus_priors.sh](./XID_plus_priors.sh). This will create the `Master_prior.pkl` and `Tiles.pkl` file for every SEIP-Map, in separate folders (check [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)).
 
-To run on Apollo, first run the notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
- hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
- 
+We will also obtained two files with the number of hierarchical tiles and main tiles for each case:
+[large_tiles.csv](./data/large_tiles.csv) 
+[tiles.csv](./data/tiles.csv) 
+
+Then generate the hierarchical tiles:
+
 ```bash
-mkdir data
 module load sge
+python XID_plus_hier.py 
+```
+This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-```
-Then fit all tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours:
+where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
+
+
+
+### Running on Ilifu
+The next part was run on Ilifu.
+
+Then fit all tiles, where $n_tiles is the number of main tiles. 
 ```bash
-cd ..
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
+python XID_plus_tile.py
 ```
+
+This python script will iterate over every folder and run the script XID_plus_tile.sh, specifying $n_tiles and memory use for each tile; where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 12G memory and estimated to run for 12 hours. 
+
+
 Then combine the Bayesian maps into one:
  ```bash
- python make_combined_map.py
+ python make_combined.py
  ```
- This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
+ This will call `make_combined_map.py` which pick up any failed tiles and list them in a `failed_tiles.pkl` 
 file, which you can then go back and fit by editing the `XIDp_run_script_mips_tile.py` file so it reads in
  `failed_tiles.pkl` rather than `Tiles.pkl`.
   
- To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
+ To make the final catalogue, I make a list of all the catalogue files and combine them with `make_combined_cat.py`, which creates a list with all cat files in every folder, and uses stilts to join them:
  ```bash
  ls *cat.fits > cat_files
 module load stilts
@@ -49,7 +74,7 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_SSDF_cat.fits
  ```bash 
 #OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+#
 ```
  
  

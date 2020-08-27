@@ -44,12 +44,12 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_ELAIS-N2_cat.fits
 ```
  
 #### Computation 
-# Details on computational cost of fitting ELAIS-N1:
+# Details on computational cost of fitting ELAIS-N2:
  
  ```bash
 # OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21       1728249   5508697.155      9271.880   5517969.040        2589627.605            166.893              0.000
+#
 ``` 
 
 ### Final data products

@@ -1,4 +1,4 @@
-### dmu26_XID+SPIRE_XMM-LSS
+### dmu26_XID+SPIRE_XFLS
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -49,7 +49,7 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_xFLS_cat.fits
   
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+SPIRE_XMM-LSS_final_processing.ipynb](XID+SPIRE_XMM-LSS_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_xFLS_final_processing.ipynb](XID+SPIRE_xFLS_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

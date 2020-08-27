@@ -10,12 +10,12 @@ Description:
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
-   prior object list see the Jupyter notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SERVS.ipynb) 
+   prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
    
 
 ### Running on Apollo
 
-To run on Apollo, first run the notebook [XID+MIPS_prior_SWIRE.ipynb](./XID+MIPS_prior_SWIRE.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+To run on Apollo, first run the notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
  hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
  
 ```bash

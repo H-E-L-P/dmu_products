@@ -1,4 +1,7 @@
 ### dmu26_XID+PACS_EGS
+**Note**
+There were some problems with the output of XID+MIPS_EGS, so we decided to use Ldust priors to run XID+SPIRE and PACS. The data for XID+MIPS_EGS will be abailable for the next release.   
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

@@ -1,4 +1,8 @@
 # dmu26_XID+MIPS_XMM-13hr
+**Note**
+This field doesn't have IRAC information, so we will use Ldust priors to run XID+SPIRE. Notebooks will be left for reference. They can be used using a different prior.
+
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

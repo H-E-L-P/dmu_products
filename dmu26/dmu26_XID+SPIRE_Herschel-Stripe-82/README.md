@@ -1,6 +1,6 @@
-### dmu26_XID+SPIRE_HDF-N
+### dmu26_XID+SPIRE_HS82
 **Note**
-There were some problems with the output of XID+MIPS_HDF-N, so we decided to use Ldust prediction to run XID+SPIRE. The data for XID+MIPS_HDF-N will be abailable for the next release.
+Given the small number of SEIP-maps available for this field, we decided to use Ldust priors to run XID+SPIRE. For next releases we will make available SPIRE data using IRAC priors. 
 
 Description:
 
@@ -9,29 +9,33 @@ Description:
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
 
-## HDF-N
 
 ### Prior
-  This catalogue uses sources from Ldust_prediction and photo_z. For the full processing of the
+  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5, have a $L_dust$ prediction 
+  from CIGALE and photometric redshift and have a resulting flux prediction above a few mJy. For the full processing of the
    prior object list see the Jupyter notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) 
    
 
 ### Running on Apollo
-To run on Apollo, first run the notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+To run on Apollo, first run the python file [XID+SPIRE_prior_cutout.py](./XID+SPIRE_prior_cutout.py) to create the `Master_prior.pkl` and `Tiles.pkl` file for each cutout. Then generate the
  hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
+
 ```bash
-mkdir output
-mv XID_plus_hier.sh
-cd output
 module load sge
-qsub -t 1-$n_hier_tiles -q seb_node.q -jc seb_node.short XID_plus_hier.sh
+python XID_plus_hier.py
 ```
-Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
+
+This script will submit, for each cutout:
+qsub -t 1-%s -l m_mem_free=20G -q seb_node.q XID_plus_hier.sh
+
+Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 20GB memory and estimated to run for 6 hours:
 ```bash
-cd ..
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q seb_node.q XID_plus_tile.sh
+python XID_plus_tile.py
 ```
-Then combine the Bayesian maps into one:
+This script will submit, for each cutout:
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=20G -q seb_node.q XID_plus_tile.sh
+
+The file [make_combined.py](./make_combined.py) will be used to combine the Bayesian maps into one:
  ```bash
  python make_combined_map.py
  ```
@@ -39,20 +43,25 @@ Then combine the Bayesian maps into one:
 file, which you can then go back and fit by editing the `XIDp_run_script_spire_tile.py` file so it reads in
  `failed_tiles.pkl` rather than `Tiles.pkl`.
   
- To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
+make_combined.py can also be used to make the final catalogue, by calling the file [make_combined_cat.py](./make_combined_cat.py), which makes a list of all the catalogue files and combine them with stilts:
  ```bash
+ module load stilts
  ls *cat.fits > cat_files
-module load stilts
-stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_HDF-N_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_HS82_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting HDF-N:
+ Details on computational cost of fitting HS82:
+ 
+
+ ```bash
+NOT AVAILABLE
+``` 
  
  
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+SPIRE_HDF-N_final_processing.ipynb](XID+SPIRE_HDF-N_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_HS82_final_processing.ipynb](XID+SPIRE_HS82_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
@@ -63,7 +72,7 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_HDF-N_cat.fits
 
 
   We note the Gaussian approximation to uncertainties is only valid for sources
-  above ~ 4 mJy at 250, ~4 mJy at 350 and 4 at 500mJy:
+  above ~ 4 mJy at 250, ~6 mJy at 350 and 10 at 500mJy:
 
     
     Column descriptions:

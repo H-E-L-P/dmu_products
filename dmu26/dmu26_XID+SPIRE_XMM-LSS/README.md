@@ -51,7 +51,7 @@ stilts ifmt=fits in=@cat_files_SPUDS out=dmu26_XID+SPIRE_XMM-LSS_SPUDS_cat.fits
  ```bash
 OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 ======================================================================================================================
-pdh21       2094265   6298899.396      7065.750   6974095.545        6168479.561            106.038              0.000
+
 ``` 
  
  ## SWIRE
@@ -99,7 +99,7 @@ stilts ifmt=fits in=@cat_files_SWIRE out=dmu26_XID+SPIRE_XMM-LSS_SWIRE_cat.fits
  ```bash
  OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 ======================================================================================================================
-pdh21       1728249   5508697.155      9271.880   5517969.040        2589627.605            166.893              0.000
+
 ``` 
 
 ### Final data products

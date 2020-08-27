@@ -42,8 +42,8 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
  ls *cat.fits > cat_files
-module load starlink/hikianalia-64bit
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
+module load stilts
+stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N2_cat.fits
 ```
  
 #### Computation 
@@ -52,12 +52,12 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_ELAIS-N1_cat.fits
 ```bash
  OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 ======================================================================================================================
-pdh21      17055281  59784320.915     69961.341  59854282.790       37406648.330           1784.232              0.000
+
 ```
 
 
 ### Final data products
-  Final stage requires examination and validation of catalogues using [XID+PACS_ELAIS-N2_final_processing.ipynb](XID+PACS_ELAIS-N1_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+PACS_ELAIS-N2_final_processing.ipynb](XID+PACS_ELAIS-N2_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
