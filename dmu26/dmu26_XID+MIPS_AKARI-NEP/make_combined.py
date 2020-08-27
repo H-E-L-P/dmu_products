@@ -21,5 +21,5 @@ folders = [f for f in glob.glob('**/', recursive=False)]
 
 for name in folders:
     os.chdir(path+name)
-    print('python ../../make_combined_cat.py')
-    os.system('python ../../make_combined_cat.py')
+    print('python ../../make_combined_map.py')
+    os.system('python ../../make_combined_map.py')
