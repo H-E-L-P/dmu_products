@@ -39,7 +39,7 @@ python XID_plus_hier.py
 ```
 This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
+where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map read from the file [large_tiles.csv].
 
 Then fit all tiles, where $n_tiles is the number of main tiles. 
 ```bash
@@ -48,7 +48,7 @@ python XID_plus_tile.py
 
 This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
-where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
+where $n_tiles is the number of main tiles for each SEIP-Map read from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
 
 Then combine the Bayesian maps into one:
  ```bash

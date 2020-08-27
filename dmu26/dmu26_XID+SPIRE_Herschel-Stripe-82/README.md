@@ -2,6 +2,8 @@
 **Note**
 Given the small number of SEIP-maps available for this field, we decided to use Ldust priors to run XID+SPIRE. For next releases we will make available SPIRE data using IRAC priors. 
 
+In order to select Ldust priors, we make use of 
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -12,13 +14,12 @@ Description:
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5, have a $L_dust$ prediction 
-  from CIGALE and photometric redshift and have a resulting flux prediction above a few mJy. For the full processing of the
-   prior object list see the Jupyter notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) 
+  from CIGALE and photometric redshift and have a resulting 250-flux prediction above 5mJy. For the full processing of the prior object list see the Jupyter notebook [XID+SPIRE_prior-Ldust.ipynb](./XID+SPIRE_prior-Ldust.ipynb) 
    
 
 ### Running on Apollo
-To run on Apollo, first run the python file [XID+SPIRE_prior_cutout.py](./XID+SPIRE_prior_cutout.py) to create the `Master_prior.pkl` and `Tiles.pkl` file for each cutout. Then generate the
- hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
+
+To run on Apollo, first run the python file [XID+SPIRE_prior_cutout.py](./XID+SPIRE_prior_cutout.py) to create the `Master_prior.pkl` and `Tiles.pkl` file for each cutout (we have divided the map into 4 cutouts, due to memory errors). Then generate the hierarchical tiles, where #n_hier_tiles is the number of hierarchical tiles:
 
 ```bash
 module load sge
@@ -28,12 +29,12 @@ python XID_plus_hier.py
 This script will submit, for each cutout:
 qsub -t 1-%s -l m_mem_free=20G -q seb_node.q XID_plus_hier.sh
 
-Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 20GB memory and estimated to run for 6 hours:
+Then fit all main tiles, where #n_tiles is the number of main tiles. Each tile requires 4 cores, 20GB memory and estimated to run for 6 hours:
 ```bash
 python XID_plus_tile.py
 ```
 This script will submit, for each cutout:
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=20G -q seb_node.q XID_plus_tile.sh
+qsub -t 1-#n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=20G -q seb_node.q XID_plus_tile.sh
 
 The file [make_combined.py](./make_combined.py) will be used to combine the Bayesian maps into one:
  ```bash
