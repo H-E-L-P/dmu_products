@@ -8,7 +8,7 @@ contains everything. The reason not to store the data files in Github is that gi
 
 - [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
-it is also possible to query the data from the Virtual Observatory database:
+it is also possible to query the data from the Virtual Observatory at susseX (VOX):
 
 - [https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
 

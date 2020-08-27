@@ -117,5 +117,4 @@ The research leading to these results has received funding from the Cooperation
 Programme (Space) of the European Union’s Seventh Framework Programme
 FP7/2007-2013/ under REA grant agreement n° 607254
 
-================================================================================
-Herschel Extragalactic Legacy Programme
+

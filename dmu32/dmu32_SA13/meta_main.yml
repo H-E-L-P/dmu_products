@@ -10,12 +10,12 @@ depths: dmu_products/dmu1/dmu1_ml_SA13/data/depths_sa13_20180501.fits
 
 flags: None
 
-xid: None
+xid: [ dmu_products/dmu26/dmu26_XID+SPIRE_SA13/data/dmu26_XID+SPIRE_SA13_cat_20191024.fits ]
 
 photoz: dmu_products/dmu24/dmu24_SA13/data/SA13_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_SA13/data/zphot/HELP_final_results.fits
 
-cigale_ldust_prediction: None
+cigale_ldust_prediction: dmu_products/dmu28/dmu28_SA13/data/SA13_Ldust_prediction_results.fits
 
-final: dmu_products/dmu32/dmu32_SA13/data/SA13_20180501_cigale.fits
+final: dmu_products/dmu32/dmu32_SA13/data/SA13.fits

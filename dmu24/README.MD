@@ -20,14 +20,14 @@ The analysis and selection funciton notebooks presented in this folder _are_ int
 
 All zeropoint offset files used during the photo-z estimation are stored in the [dmu24_zeropoints](https://github.com/H-E-L-P/dmu_products/tree/master/dmu24/dmu24_zeropoints) folder structure for reference.
 
-
+For the fields AKARI-NEP, AKARI-SEP, ELAIS-N2, HDF-N, SA13, SPIRE-NEP, xFLS, and XMM-13hr we use the photometric redshifts presented in [Zou et al. (2019)](https://ui.adsabs.harvard.edu/link_gateway/2019ApJS..242....8Z/doi:10.3847/1538-4365/ab1847) based on Legacy Survey $grz$ fluxes and Wise W1, and W2. These are fields without additional data sets to those presented there and therefore where recalcualting them was of little additional benefit. 
 
 ## Fields
 
 HELP Field            | Photo-z Available | Masterlist Used | DR1 Photo-z Suffix | DESI photo-z available
 ----------------------|-------------------|-----------------|--------------------|----------------------
-AKARI-NEP             | No | | 
-AKARI-SEP             | No | |
+AKARI-NEP             | No | | | Yes
+AKARI-SEP             | No | | | Yes
 Bootes                | Yes | 20180517 | | Yes
 CDFS-SWIRE            | Yes | 20170801 | 20180210
 COSMOS                | Yes | | | Yes
@@ -44,7 +44,7 @@ Lockman-SWIRE         | Yes | 20170710 | 20170802 | Yes
 NGP                   | Yes | 20180501 | 20180601
 SA13                  | No | | | Yes
 SGP                   | Yes | 20180221 | 20180502
-SPIRE-NEP             | No | |
+SPIRE-NEP             | No | | | Yes
 SSDF                  | Yes | 20180221 | 20180612
 xFLS                  | No | | | Yes
 XMM-13hr              | No | | | Yes

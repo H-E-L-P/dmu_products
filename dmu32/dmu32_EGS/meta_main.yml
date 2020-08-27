@@ -4,16 +4,17 @@ region: dmu_products/dmu2/dmu2_field_coverages/EGS_MOC.fits
 
 surveys: [ PanSTARRS1-3SS, LegacySurvey, UHS, AEGIS, CANDELS-3D-HST, CFHT-WIRDS, CFHTLS-WIDE, CFHTLS-DEEP, CFHTLenS, CANDELS-EGS, DEEP2, IRAC-EGS, HSC ]
 
-masterlist: dmu_products/dmu1/dmu1_ml_EGS/data/master_catalogue_egs_20180406.fits
+masterlist: dmu_products/dmu1/dmu1_ml_EGS/data/master_catalogue_egs_20180501.fits
 
-depths: dmu_products/dmu1/dmu1_ml_EGS/data/depths_egs_20180406.fits
+depths: dmu_products/dmu1/dmu1_ml_EGS/data/depths_egs_20180501.fits
 
 flags: dmu_products/dmu6/dmu6_v_EGS/data/egs_20180501_flags.fits
 
-xid: [ dmu_products/dmu26/dmu26_XID+SPIRE_EGS/data/dmu26_XID+SPIRE_EGS_cat_20191007.fits ]
+xid: [ dmu_products/dmu26/dmu26_XID+PACS_EGS/data/dmu26_XID+PACS_EGS_cat_20191122.fits,
+       dmu_products/dmu26/dmu26_XID+SPIRE_EGS/data/dmu26_XID+SPIRE_EGS_cat_20191007.fits ]
 
 photoz: dmu_products/dmu24/dmu24_EGS/data/master_catalogue_egs_20180501_photoz_20180608.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_EGS/data/zphot/HELP_final_results.fits
 
-final: dmu_products/dmu32/dmu32_EGS/data/EGS_20180406_cigale.fits
+final: dmu_products/dmu32/dmu32_EGS/data/EGS.fits

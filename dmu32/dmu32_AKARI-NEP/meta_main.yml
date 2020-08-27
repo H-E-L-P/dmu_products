@@ -14,9 +14,9 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_AKARI-NEP/data/dmu26_XID+MIPS_AKARI-NEP
        dmu_products/dmu26/dmu26_XID+PACS_AKARI-NEP/data/dmu26_XID+PACS_AKARI-NEP_cat.fits,
        dmu_products/dmu26/dmu26_XID+SPIRE_AKARI-NEP/data/dmu26_XID+SPIRE_AKARI-NEP_cat_20190312.fits ]
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_AKARI-NEP/data/AKARI-NEP_DESI-DR8_Zou_et_al_2019_photo_z_withhelp_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_AKARI-NEP/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 

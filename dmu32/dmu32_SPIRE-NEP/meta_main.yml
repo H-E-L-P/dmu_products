@@ -10,12 +10,13 @@ depths: dmu_products/dmu1/dmu1_ml_SPIRE-NEP/data/depths_spire-nep_20180220.fits
 
 flags: dmu_products/dmu6/dmu6_v_SPIRE-NEP/data/spire-nep_20180220_flags.fits
 
-xid: None
+xid: [ dmu_products/dmu26/dmu26_XID+MIPS_SPIRE-NEP/data/dmu26_XID+MIPS_SPIRE-NEP_cat_20191107.fits,
+       dmu_products/dmu26/dmu26_XID+SPIRE_SPIRE-NEP/data/dmu26_XID+SPIRE_SPIRE-NEP_cat_20191107.fits ]
 
-photoz: None
+photoz: dmu_products/dmu24/dmu24_SPIRE-NEP/data/SPIRE-NEP_DESI-DR8_Zou_et_al_2019_photo_z_withhelp_id.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_SPIRE-NEP/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
-final: dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP_20180220_cigale.fits
+final: dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP.fits

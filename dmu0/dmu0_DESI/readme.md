@@ -6,7 +6,11 @@ These awere downloaded from:
 
 http://batc.bao.ac.cn/~zouhu/online-data/desi_photoz/
 
-We have downloaded the following files:
+We are now using the DR8 version:
+
+http://batc.bao.ac.cn/~zouhu/online-data/desi_photoz/LS_DR8_total_csp.fits
+
+We originally downloaded the following files for dr6 and dr7:
 
 http://batc.bao.ac.cn/~zouhu/online-data/desi_photoz/dr6dr7_photoz_csp_totcat.fits
 
@@ -17,8 +21,8 @@ http://batc.bao.ac.cn/~zouhu/online-data/desi_photoz/readme
 The photometric redshifts will also be served on [VOX](https://herschel-vos.phys.sussex.ac.uk/)
 
 History:
-
-20190708: First download.
+20191029: DR8 download.
+20190708: First DR6/7 download.
 
 ## Fields
 
@@ -26,6 +30,8 @@ The DESI photo-zs are available on the following fields. We will use DESI photo-
 
 |Field                   | HELP photo-zs available |
 |------------------------|-------------------------|
+| AKARI-NEP              | No                      |
+| AKARI-SEP              | No                      |
 | Bootes                 | Yes                     |
 | COSMOS                 | Yes                     |
 | EGS                    | Yes                     |
@@ -39,6 +45,7 @@ The DESI photo-zs are available on the following fields. We will use DESI photo-
 | Herschel-Stripe-82     | Yes                     |
 | Lockman-SWIRE          | Yes                     |
 | SA13                   | No                      |
+| SPIRE-NEP              | No                      |
 | xFLS                   | No                      |
 | XMM-13hr               | No                      |
 | XMM-LSS                | Yes                     |

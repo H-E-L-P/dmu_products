@@ -6,7 +6,7 @@ SPIRE-NEP.
 | Survey | Telescope / Instrument  | Filters (detection band in bold)  | Location        |
 |--------|-------------------------|:---------------------------------:|-----------------|
 | PanSTARRS-3SS | GPC1             | grizy                          | dmu0_PanSTARRS-3SS |     
-
+| SEIP          | IRAC             | i1 i2 i3 i4                    | dmu0_SEIP |
 
 
 ## Pristine catalogue preparations
@@ -18,7 +18,7 @@ Gaia as reference, and the flagging of possible Gaia objects.
 
 
 - [1.1_PanSTARRS-3SS.ipynb](1.1_PanSTARRS-3SS.ipynb) 
-
+- [1.2_SEIP.ipynb](1.2_SEIP.ipynb)
 
 ## Catalogue merging
 
