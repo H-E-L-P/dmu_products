@@ -5,6 +5,6 @@ This folder contains example notebooks for using the HELP database. It will incl
 
 The VO can also be used with TopCat and stilts to do cross matching and other common table tasks. For instance a cross match can be performed at the command line with stilts:
 
-'''shell
+```shell
 stilts tapskymatch tapurl=“https://herschel-vos.phys.sussex.ac.uk/__system__/tap/run/tap” taptable=“herschelhelp.main” taplon=RA taplat=DEC in=$PATH_TO_MY_TABLE.fits.gz inlon=RA inlat=DEC sr=1./3600. out=matches-help.fits
-'''
+```
