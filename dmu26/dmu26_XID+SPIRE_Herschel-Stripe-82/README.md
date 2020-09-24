@@ -2,8 +2,6 @@
 **Note**
 Given the small number of SEIP-maps available for this field, we decided to use Ldust priors to run XID+SPIRE. For next releases we will make available SPIRE data using IRAC priors. 
 
-In order to select Ldust priors, we make use of 
-
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
