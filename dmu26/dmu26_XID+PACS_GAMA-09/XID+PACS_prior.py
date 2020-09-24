@@ -10,7 +10,7 @@ import pylab
 import pymoc
 import xidplus
 import numpy as np
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 from astropy.table import Table , join
 
 
@@ -28,9 +28,10 @@ import seaborn as sns
 # In[3]:
 
 
-Sel_func=pymoc.MOC()
-Sel_func.read('../../dmu4/dmu4_sm_GAMA-09/data/holes_GAMA-09_ukidss_k_O16_20180417.fits')
-
+#Sel_func=pymoc.MOC()
+#Sel_func.read('../../dmu4/dmu4_sm_GAMA-09/data/holes_GAMA-09_ukidss_k_O16_20180417.fits')
+Final=pymoc.MOC()
+Final.read('./data/testMoc.fits')
 
 # ## Read in CIGALE predictions catalogue
 
@@ -63,7 +64,7 @@ photoz=Table.read('../../dmu24/dmu24_GAMA-09/data/master_catalogue_gama-09_20171
 # In[8]:
 
 
-photoz
+#photoz
 
 
 # ## Join CIGALE and photoz tables
@@ -157,20 +158,20 @@ pind160=np.arange(0,radius160+1+radius160,1)*3600*np.abs(pacs160_psf[0].header['
 # In[16]:
 
 
-print(pind100)
+#print(pind100)
 
 
 # In[17]:
 
 
-import pylab as plt
-plt.figure(figsize=(20,10))
-plt.subplot(1,2,1)
-plt.imshow(pacs100_psf[0].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
-plt.colorbar()
-plt.subplot(1,2,2)
-plt.imshow(pacs160_psf[0].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
-plt.colorbar()
+#import pylab as plt
+#plt.figure(figsize=(20,10))
+#plt.subplot(1,2,1)
+#plt.imshow(pacs100_psf[0].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
+#plt.colorbar()
+#plt.subplot(1,2,2)
+#plt.imshow(pacs160_psf[0].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
+#plt.colorbar()
 
 
 # ## Set XID+ prior class
@@ -179,12 +180,12 @@ plt.colorbar()
 
 
 #---prior100--------
-prior100=xidplus.prior(im100,nim100,im100phdu,im100hdu, moc=Sel_func)#Initialise with map, uncertianty map, wcs info and primary header
+prior100=xidplus.prior(im100,nim100,im100phdu,im100hdu, moc=Final)#Initialise with map, uncertianty map, wcs info and primary header
 prior100.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA09_Ldust_prediction_results.fits',ID=prior['help_id'])#Set input catalogue
 prior100.prior_bkg(0.0,5)#Set prior on background (assumes Gaussian pdf with mu and sigma)
 
 #---prior160--------
-prior160=xidplus.prior(im160,nim160,im160phdu,im160hdu, moc=Sel_func)
+prior160=xidplus.prior(im160,nim160,im160phdu,im160hdu, moc=Final)
 prior160.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA09_Ldust_prediction_results.fits',ID=prior['help_id'])
 prior160.prior_bkg(0.0,5)
 
@@ -210,7 +211,7 @@ tiles=moc_routines.get_HEALPix_pixels(order,prior100.sra,prior100.sdec,unique=Tr
 order_large=6
 tiles_large=moc_routines.get_HEALPix_pixels(order_large,prior100.sra,prior100.sdec,unique=True)
 print('----- There are '+str(len(tiles))+' tiles required for input catalogue and '+str(len(tiles_large))+' large tiles')
-output_folder='./'
+output_folder='./data/'
 xidplus.io.pickle_dump({'priors':[prior100,prior160],'tiles':tiles,'order':order,'version':xidplus.io.git_version()},'Master_prior.pkl')
 outfile=output_folder+'Tiles.pkl'
 with open(outfile, 'wb') as f:

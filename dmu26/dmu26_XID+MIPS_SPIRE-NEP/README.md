@@ -1,4 +1,7 @@
-# dmu26_XID+MIPS_AKARI-NEP
+# dmu26_XID+MIPS_SPIRE-NEP
+**Note**
+This field was run using SEIP-maps.
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -7,7 +10,7 @@ Description:
   distribution on flux estimates (see Hurley et al. 2017 for more details).
  
 
-## AKARI-NEP
+## SPIRE-NEP
 
 ### Prior
   This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
@@ -24,8 +27,8 @@ In the case of the mosaic maps see [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_m
 To run on Apollo, first run the script [XID_plus_priors.sh](./XID_plus_priors.sh). This will create the `Master_prior.pkl` and `Tiles.pkl` file for every SEIP-Map, in separate folders (check [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)).
 
 We will also obtained two files with the number of hierarchical tiles and main tiles for each case:
-[large_tiles.csv](./data/changed_psf/large_tiles.csv) 
-[tiles.csv](./data/changed_psf/tiles.csv) 
+[large_tiles.csv](./data/large_tiles.csv) 
+[tiles.csv](./data/tiles.csv) 
 
 Then generate the hierarchical tiles:
 
@@ -58,21 +61,15 @@ file, which you can then go back and fit by editing the `XIDp_run_script_mips_ti
  ```bash
  ls *cat.fits | cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_SPIRE-NEP_cat.fits
 ```
 #### Computation 
-# Details on computational cost of fitting AKARI-NEP:
- 
- ```bash 
-#OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
-#======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
-```
+# Details on computational cost of fitting SPIRE-NEP:
  
  
 ### Final data products
 
-  Final stage requires examination and validation of catalogues using [XID+MIPS_AKARI-NEP_final_processing.ipynb](XID+MIPS_AKARI-NEP_final_processing.ipynb).
+  Final stage requires examination and validation of catalogues using [XID+MIPS_SPIRE-NEP_final_processing.ipynb](XID+MIPS_SPIRE-NEP_final_processing.ipynb).
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 

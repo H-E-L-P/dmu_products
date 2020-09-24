@@ -41,7 +41,7 @@ file, which you can then go back and fit by editing the `XIDp_run_script_pacs_ti
  ```bash
  ls *cat.fits > cat_files
 module load stilts
-stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_NGPP_cat.fits
+stilts ifmt=fits in=@cat_files out=dmu26_XID+PACS_NGP_cat.fits
 ```
  
 #### Computation 

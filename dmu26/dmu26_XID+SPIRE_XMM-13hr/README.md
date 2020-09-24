@@ -1,4 +1,7 @@
 ### dmu26_XID+SPIRE_XMM-13hr
+**Note**
+This field doesn't have IRAC information, so we will use Ldust priors to run XID+SPIRE.
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

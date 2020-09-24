@@ -3,8 +3,8 @@ import astropy.io.fits as apif
 from stacking import stack_image
 import matplotlib.pyplot as plt
 
-iminfile="../AKARI-SEP/data/dmu17_MIPS_AKARI-SEP_20190905.fits"
-catinfile="../../../dmu16/dmu16_allwise/data/Allwise_PSF_stack_GAIA_AKARI-SEP.fits"
+iminfile="../EGS/data/fidel_egs_24_s1plus_v0.50_help.fits"
+catinfile="../../../dmu16/dmu16_allwise/data/Allwise_PSF_stack_GAIA_EGS.fits"
 
 
 im0=apif.open(iminfile)[1].data

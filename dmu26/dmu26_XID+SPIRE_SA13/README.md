@@ -1,4 +1,7 @@
 ### dmu26_XID+SPIRE_SA13
+**Note**
+There were some problems with the PSF, so we decided to use Ldust priors to run XID+SPIRE.
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

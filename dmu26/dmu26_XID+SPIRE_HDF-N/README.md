@@ -1,4 +1,7 @@
 ### dmu26_XID+SPIRE_HDF-N
+**Note**
+There were some problems with the output of XID+MIPS_HDF-N, so we decided to use Ldust prediction to run XID+SPIRE. The data for XID+MIPS_HDF-N will be abailable for the next release.
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides

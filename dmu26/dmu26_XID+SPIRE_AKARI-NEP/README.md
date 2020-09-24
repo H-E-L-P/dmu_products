@@ -47,6 +47,10 @@ stilts ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_EGS_cat.fits
 #### Computation 
  Details on computational cost of fitting AKARI-NEP:
  
+OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
+======================================================================================================================
+mc741        347621    351819.652      1110.622    352930.274         379654.080            143.886           1423.550
+
  
 
 ### Final data products

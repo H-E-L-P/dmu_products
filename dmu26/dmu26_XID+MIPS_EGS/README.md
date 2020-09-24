@@ -1,4 +1,7 @@
 # dmu26_XID+MIPS_EGS
+**Note**
+There were some problems with the output of this run, so we decided to use Ldust priors to run XID+SPIRE and PACS. The data for XID+MIPS_EGS will be abailable for the next release.   
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -43,12 +46,12 @@ module load stilts
 stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
 ```
 #### Computation 
-# Details on computational cost of fitting ELAIS-N1 SWIRE:
+# Details on computational cost of fitting EGS:
  
  ```bash 
 #OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+
 ```
  
  

@@ -1,78 +1,58 @@
-# dmu26_XID+MIPS_AKARI-NEP
+### dmu26_XID+SPIRE_SPIRE-NEP
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
   a natural framework in which to include prior information, and uses the
   Bayesian inference tool Stan to obtain the full posterior probability
   distribution on flux estimates (see Hurley et al. 2017 for more details).
- 
 
-## AKARI-NEP
 
 ### Prior
-  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5. For the full processing of the
-   prior object list see the Jupyter notebook [XID+MIPS_prior.ipynb](./XID+MIPS_prior.ipynb) 
+  This catalogue uses sources in the masterlist that have a `flag_optnir_det` flag >= 5 and have a
+   MIPS 24 $\mathrm{\mu m}$ flux >= 20 $\mathrm{\mu Jy}$. For the full processing of the
+   prior object list see the Jupyter notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) 
    
-#### SEIP-Maps
-In the case of the mosaic maps see [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)
-
 
 ### Running on Apollo
-
-#### SEIP-Maps
-   
-To run on Apollo, first run the script [XID_plus_priors.sh](./XID_plus_priors.sh). This will create the `Master_prior.pkl` and `Tiles.pkl` file for every SEIP-Map, in separate folders (check [XID+MIPS_prior_mosaic.py](./XID+MIPS_prior_mosaic.py)).
-
-We will also obtained two files with the number of hierarchical tiles and main tiles for each case:
-[large_tiles.csv](./data/changed_psf/large_tiles.csv) 
-[tiles.csv](./data/changed_psf/tiles.csv) 
-
-Then generate the hierarchical tiles:
-
+To run on Apollo, first run the notebook [XID+SPIRE_prior.ipynb](./XID+SPIRE_prior.ipynb) to create the `Master_prior.pkl` and `Tiles.pkl` file. Then generate the
+ hierarchical tiles, where $n_hier_tiles is the number of hierarchical tiles:
+ 
 ```bash
+mkdir data
 module load sge
-python XID_plus_hier.py 
+qsub -t 1-$n_hier_tiles -q seb_node.q -jc seb_node.short XID_plus_hier.sh
 ```
-This python script will iterate over every folder and submit the job:
-qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
-
-Then fit all tiles, where $n_tiles is the number of main tiles. 
+Then fit all main tiles, where $n_tiles is the number of main tiles. Each tile requires 4 cores, 13GB memory and estimated to run for 6 hours:
 ```bash
-python XID_plus_tile.py
+qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=6:00:00 -l m_mem_free=13G -q seb_node.q XID_plus_tile.sh
 ```
-
-This python script will iterate over every folder and submit the job:
-qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
-where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
 
 Then combine the Bayesian maps into one:
  ```bash
  python make_combined_map.py
  ```
- This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
-file, which you can then go back and fit by editing the `XIDp_run_script_mips_tile.py` file so it reads in
+ This will also pick up any failed tiles and list them in a `failed_tiles.pkl` file, which you can then go back and fit by editing the `XIDp_run_script_spire_tile.py` file so it reads in
  `failed_tiles.pkl` rather than `Tiles.pkl`.
   
  To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
  ```bash
- ls *cat.fits | cat_files
+ls *cat.fits > cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_SPIRE-NEP_cat.fits
 ```
+ 
 #### Computation 
-# Details on computational cost of fitting AKARI-NEP:
+# Details on computational cost of fitting SPIRE-NEP:
  
- ```bash 
-#OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
+ ```bash
+# OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
-```
- 
- 
-### Final data products
 
-  Final stage requires examination and validation of catalogues using [XID+MIPS_AKARI-NEP_final_processing.ipynb](XID+MIPS_AKARI-NEP_final_processing.ipynb).
+``` 
+
+### Final data products
+  Final stage requires examination and validation of catalogues using [XID+SPIRE_SPIRE-NEP_final_processing.ipynb](XID+SPIRE_SPIRE-NEP_final_processing.ipynb).
+
   This notebook checks at what flux level the Gaussian approximation to uncertainties is valid and can be treated as a detection. 
   We also add notebooks based on this flux level and the `Pval_res statistic`.
 
@@ -83,23 +63,44 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
 
 
   We note the Gaussian approximation to uncertainties is only valid for sources
-  above ~ 20 uJy at 24 µm:
+
+above ~ 4 mJy at 250, ~4 mJy at 350 and 4 at 500mJy:
 
     
     Column descriptions:
 
-      * help_id                    -  ID
-      * RA                   degrees  Right Ascension (J2000)
-      * Dec                  degrees  Declination (J2000)
-      * F_MIPS_24               uJy  Flux density at 24 µm (Median)
-      * FErr_MIPS_24_u          uJy  Flux density at 24 µm (84th Percentile)
-      * FErr_MIPS_24_l          uJy  Flux density at 250 µm (16th Percentile)
-      * Bkg_MIPS_24           MJy/Sr  Fitted Background of 23 µm map (Median)
-      * Sig_conf_MIPS_24      MJy/Sr  fixed at 0
-      * Rhat_MIPS_24             -  Convergence Statistic (ideally <1.2)
-      * n_eff_MIPS_24            -  Number of effective samples (ideally >40)
-      * Pval_res_MIPS_24               -  Local Goodness of fit measure: 0=good, 1=bad
-      * flag_mips_24         -  combined flag, 0=good, 1=bad
+        * help_id                    -  ID
+        * RA                   degrees  Right Ascension (J2000)
+        * Dec                  degrees  Declination (J2000)
+        * F_SPIRE_250              mJy  Flux density at 250 µm (Median)
+        * FErr_SPIRE_250_u         mJy  Flux density at 250 µm (84th Percentile)
+        * FErr_SPIRE_250_l         mJy  Flux density at 250 µm (16th Percentile)
+        * F_SPIRE_350              mJy  Flux density at 350 µm (Median)
+        * FErr_SPIRE_350_u         mJy  Flux density at 350 µm (84th Percentile)
+        * FErr_SPIRE_350_l         mJy  Flux density at 350 µm (16th Percentile)
+        * F_SPIRE_500              mJy  Flux density at 500 µm (Median)
+        * FErr_SPIRE_500_u         mJy  Flux density at 500 µm (84th Percentile)
+        * FErr_SPIRE_500_l         mJy  Flux density at 500 µm (16th Percentile)
+        * Bkg_SPIRE_250       mJy/Beam  Fitted Background of 250 µm map (Median)
+        * Bkg_SPIRE_350       mJy/Beam  Fitted Background of 350 µm map (Median)
+        * Bkg_SPIRE_500       mJy/Beam  Fitted Background of 500 µm map (Median)
+        * Sig_conf_SPIRE_250  mJy/Beam  Fitted residual noise component due to confusion (Median)
+        * Sig_conf_SPIRE_350  mJy/Beam  Fitted residual noise component due to confusion (Median)
+        * Sig_conf_SPIRE_500  mJy/Beam  Fitted residual noise component due to confusion (Median)
+        * Rhat_SPIRE_250             -  Convergence Statistic (ideally <1.2)
+        * Rhat_SPIRE_350             -  Convergence Statistic (ideally <1.2)
+        * Rhat_SPIRE_500             -  Convergence Statistic (ideally <1.2)
+        * n_eff_SPIRE_250            -  Number of effective samples (ideally >40)
+        * n_eff_SPIRE_350            -  Number of effective samples (ideally >40)
+        * n_eff_SPIRE_500            -  Number of effective samples (ideally >40)
+        * Pval_res_250		     -	Local Goodness of fit measure: 0=good, 1=bad
+        * Pval_res_350		     -	Local Goodness of fit measure: 0=good, 1=bad
+        * Pval_res_500		     -	Local Goodness of fit measure: 0=good, 1=bad
+        * flag_spire_250         -  combined flag, 0=good, 1=bad
+        * flag_spire_350         -  combined flag, 0=good, 1=bad
+        * flag_spire_500         -  combined flag, 0=good, 1=bad
+    
+  
 
 
 Hurley, P.  et al. 2017, MNRAS 464, 885
@@ -109,4 +110,6 @@ Programme (Space) of the European Union’s Seventh Framework Programme
 FP7/2007-2013/ under REA grant agreement n° 607254
 
 ================================================================================
+
 Herschel Extragalactic Legacy Programme
+

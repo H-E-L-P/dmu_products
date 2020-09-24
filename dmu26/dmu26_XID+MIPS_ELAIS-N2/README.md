@@ -44,12 +44,12 @@ module load stilts
 stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
 ```
 #### Computation 
-# Details on computational cost of fitting ELAIS-N1 SWIRE:
+# Details on computational cost of fitting ELAIS-N2 SWIRE:
  
  ```bash 
 #OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+#
 ```
  
  

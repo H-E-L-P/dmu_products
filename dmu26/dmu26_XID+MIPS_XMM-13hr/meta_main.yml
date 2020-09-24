@@ -1,0 +1,15 @@
+Product: dmu26_XID+MIPS_XMM-13hr
+
+Version: 1.0
+
+Author: Maria Campos
+
+Fields: XMM-13hr
+
+Selection filter: F_MIPS_24
+
+Rights: N/A
+
+Acknowledgements: N/A
+
+Related products:  .MIPS.help.fits, dmu17_MIPS_PSF_XMM-13hr_20190308sr.fits, master_catalogue_xmm-13hr_20180501.fits

@@ -32,7 +32,7 @@ output_folder='./data/'
 
 #First run: Tiles.pkl
 #####################
-outfile=output_folder+'Tiles.pkl'
+outfile=output_folder+'Tiles_test.pkl'
 with open(outfile, 'rb') as f:
    obj=pickle.load(f)
 

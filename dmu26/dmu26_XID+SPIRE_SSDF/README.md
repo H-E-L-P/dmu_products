@@ -45,7 +45,7 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+SPIRE_SSDF_cat.fits
 ```
  
 #### Computation 
- Details on computational cost of fitting SGP:
+ Details on computational cost of fitting SSDF:
  
 
  ```bash

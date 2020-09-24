@@ -1,4 +1,8 @@
 # dmu26_XID+MIPS_AKARI-NEP
+**Note**
+This field was run using SEIP-maps.
+
+
 Description:
 
   XID+ is developed using a probabilistic Bayesian framework which provides
@@ -35,7 +39,7 @@ python XID_plus_hier.py
 ```
 This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_hier_tiles -q seb_node.q XID_plus_hier.sh
-where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map red from the file [large_tiles.csv].
+where $n_hier_tiles is the number of hierarchical tiles for each SEIP-Map read from the file [large_tiles.csv].
 
 Then fit all tiles, where $n_tiles is the number of main tiles. 
 ```bash
@@ -44,21 +48,21 @@ python XID_plus_tile.py
 
 This python script will iterate over every folder and submit the job:
 qsub -t 1-$n_tiles -pe openmp 4 -l h_rt=4:00:00 -l m_mem_free=10G -q mps.q XID_plus_tile.sh
-where $n_tiles is the number of main tiles for each SEIP-Map red from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
+where $n_tiles is the number of main tiles for each SEIP-Map read from the file [tiles.csv]. Each tile requires 4 cores, 10G memory and estimated to run for 4 hours. 
 
 Then combine the Bayesian maps into one:
  ```bash
- python make_combined_map.py
+ python make_combined.py
  ```
- This will also pick up any failed tiles and list them in a `failed_tiles.pkl` 
+ This will call `make_combined_map.py` which pick up any failed tiles and list them in a `failed_tiles.pkl` 
 file, which you can then go back and fit by editing the `XIDp_run_script_mips_tile.py` file so it reads in
  `failed_tiles.pkl` rather than `Tiles.pkl`.
   
- To make the final catalogue, I make a list of all the catalogue files and combine them with stilts:
+ To make the final catalogue, I make a list of all the catalogue files and combine them with `make_combined_cat.py`, which creates a list with all cat files in every folder, and uses stilts to join them:
  ```bash
- ls *cat.fits | cat_files
+ ls *cat.fits > cat_files
 module load stilts
-stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
+stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_AKARI-NEP_cat.fits
 ```
 #### Computation 
 # Details on computational cost of fitting AKARI-NEP:
@@ -66,7 +70,7 @@ stilts tcat ifmt=fits in=@cat_files out=dmu26_XID+MIPS_ELAIS-N2_cat.fits
  ```bash 
 #OWNER     WALLCLOCK         UTIME         STIME           CPU             MEMORY                 IO                IOW
 #======================================================================================================================
-#pdh21      12976959  33718893.192     86859.803  33805753.620    17200557506.873           2546.399              0.000
+#
 ```
  
  

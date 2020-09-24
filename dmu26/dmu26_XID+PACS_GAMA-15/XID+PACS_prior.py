@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# # XID+PACS GAMA-12 Prior
+# # XID+PACS GAMA-15 Prior
 
 # In[1]:
 
@@ -10,9 +10,9 @@ import pylab
 import pymoc
 import xidplus
 import numpy as np
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 from astropy.table import Table , join
-from mocpy import MOC
+#from mocpy import MOC
 from astropy.io import fits
 from astropy import wcs
 
@@ -31,28 +31,28 @@ import seaborn as sns
 # In[ ]:
 
 
-Sel_func=pymoc.MOC()
-Sel_func.read('../../dmu4/dmu4_sm_GAMA-15/data/holes_GAMA-15_ukidss_k_O16_20180327.fits')
-filename='../../dmu18/dmu18_HELP-PACS-maps/data/GAMA-15_PACS100_v0.9.fits'
-hdulist = fits.open(filename)
-im100phdu=hdulist['IMAGE'].header
-gama15_moc=MOC.from_image(im100phdu,13, ~np.isnan(hdulist['IMAGE'].data))
-gama15_moc.write('./data/gama15_moc.fits')
+#Sel_func=pymoc.MOC()
+#Sel_func.read('../../dmu4/dmu4_sm_GAMA-15/data/holes_GAMA-15_ukidss_k_O16_20180327.fits')
+#filename='../../dmu18/dmu18_HELP-PACS-maps/data/GAMA-15_PACS100_v0.9.fits'
+#hdulist = fits.open(filename)
+#im100phdu=hdulist['IMAGE'].header
+#gama15_moc=MOC.from_image(im100phdu,13, ~np.isnan(hdulist['IMAGE'].data))
+#gama15_moc.write('./data/gama15_moc.fits')
 
 
 
-im_moc=pymoc.MOC()
-im_moc.read('./data/gama15_moc.fits')
+#im_moc=pymoc.MOC()
+#im_moc.read('./data/gama15_moc.fits')
 
-Final=Sel_func.intersection(im_moc)
+#Final=Sel_func.intersection(im_moc)
 
 
 # In[ ]:
 
 
-Final.write('./data/testMoc.fits', overwrite=True)
-#Final=pymoc.MOC()
-#Final.read('./data/testMoc.fits')
+#Final.write('./data/testMoc.fits', overwrite=True)
+Final=pymoc.MOC()
+Final.read('./data/testMoc.fits')
 
 
 # ## Read in CIGALE predictions catalogue
@@ -72,7 +72,7 @@ cigale['id'].name = 'help_id'
 # In[6]:
 
 
-cigale
+#cigale
 
 
 # In[7]:
@@ -93,7 +93,7 @@ photoz=Table.read('../../dmu24/dmu24_GAMA-15/data/master_catalogue_gama-15_20180
 # In[9]:
 
 
-photoz
+#photoz
 
 
 # ## Join CIGALE and photoz tables
@@ -186,26 +186,26 @@ pind160=np.arange(0,radius160+1+radius160,1)*3600*np.abs(pacs160_psf[0].header['
 # In[20]:
 
 
-centre100
+#centre100
 
 
 # In[21]:
 
 
-print(pind100)
+#print(pind100)
 
 
 # In[22]:
 
 
-import pylab as plt
-plt.figure(figsize=(20,10))
-plt.subplot(1,2,1)
-plt.imshow(pacs100_psf[0].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
-plt.colorbar()
-plt.subplot(1,2,2)
-plt.imshow(pacs160_psf[0].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
-plt.colorbar()
+#import pylab as plt
+#plt.figure(figsize=(20,10))
+#plt.subplot(1,2,1)
+#plt.imshow(pacs100_psf[0].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1])
+#plt.colorbar()
+#plt.subplot(1,2,2)
+#plt.imshow(pacs160_psf[0].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1])
+#plt.colorbar()
 
 
 # ## Set XID+ prior class
@@ -215,12 +215,12 @@ plt.colorbar()
 
 #---prior100--------
 prior100=xidplus.prior(im100,nim100,im100phdu,im100hdu, moc=Final)#Initialise with map, uncertianty map, wcs info and primary header
-prior100.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA-12_Ldust_prediction_results.fits',ID=prior['help_id'])#Set input catalogue
+prior100.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA-15_Ldust_prediction_results.fits',ID=prior['help_id'])#Set input catalogue
 prior100.prior_bkg(0.0,5)#Set prior on background (assumes Gaussian pdf with mu and sigma)
 
 #---prior160--------
 prior160=xidplus.prior(im160,nim160,im160phdu,im160hdu, moc=Final)
-prior160.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA-12_Ldust_prediction_results.fits',ID=prior['help_id'])
+prior160.prior_cat(prior['RA'] ,prior['Dec'] ,'GAMA-15_Ldust_prediction_results.fits',ID=prior['help_id'])
 prior160.prior_bkg(0.0,5)
 
 
@@ -228,9 +228,9 @@ prior160.prior_bkg(0.0,5)
 
 
 # Divide by 1000 so that units are mJy
-prior100.set_prf(pacs100_psf[1].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1]/1000.0,
+prior100.set_prf(pacs100_psf[0].data[centre100-radius100:centre100+radius100+1,centre100-radius100:centre100+radius100+1]/1000.0,
                 pind100,pind100)
-prior160.set_prf(pacs160_psf[1].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1]/1000.0,
+prior160.set_prf(pacs160_psf[0].data[centre160-radius160:centre160+radius160+1,centre160-radius160:centre160+radius160+1]/1000.0,
                 pind160,pind160)
 
 
