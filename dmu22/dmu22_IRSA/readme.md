@@ -1,7 +1,13 @@
-# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP IRSA catalogues
+# ![HELP LOGO](https://avatars1.githubusercontent.com/u/7880370?s=75&v=4) HELP ESA/IRSA catalogues
 
 
 These blind point source SPIRE catalogues were downloaded from IRSA and are intended to be used to compare the HELP blind lists.
+
+https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?submit=Select&projshort=HERSCHEL
+
+They were produced by ESA and are also available here:
+
+https://www.cosmos.esa.int/web/herschel/spire-point-source-catalogue
  
  -------------------------------------------------------------------------------
 
