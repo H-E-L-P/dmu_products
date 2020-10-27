@@ -1,0 +1,904 @@
+field: 
+  tablehead: Field
+  type: text
+  unit: None
+  description: "Name of the field in HELP survey"
+  ucd: meta.id;obs.field
+
+help_id: 
+  tablehead: HELP_Id
+  type: text
+  unit: None
+  description: "HELP identifier, based on J2000 position"
+  ucd: meta.id;meta.main
+
+ra: 
+  tablehead: RA
+  type: double precision
+  unit: deg
+  description: "Right Ascension (J2000)"
+  ucd: pos.eq.ra;meta.main
+
+dec: 
+  tablehead: Dec
+  type: double precision
+  unit: deg
+  description: "Declination (J2000)"
+  ucd: pos.eq.dec;meta.main
+
+hp_idx: 
+  tablehead: HP_Idx
+  type: bigint
+  unit: None
+  description: "HEALPix index of the source position at order 13 using the nested scheme."
+  ucd: pos.healpix
+
+ebv: 
+  tablehead: EBV
+  type: double precision
+  unit: None
+  description: "Galactic extinction (Schlegel et al. 1998) at the object position"
+  ucd: phot.color.excess
+
+redshift: 
+  tablehead: Redshift
+  type: real
+  unit: None
+  description: "Photometric redshift obtained with EAZY."
+  ucd: src.redshift.phot
+
+zspec: 
+  tablehead: zSpec
+  type: real
+  unit: None
+  description: "Spectroscopic redshift collated from the literature."
+  ucd: src.redsfhit
+
+zspec_qual: 
+  tablehead: zSpec_qual
+  type: smallint
+  unit: None
+  description: "Spectroscopic redshift quality flag. FIXME code meaning."
+  ucd: meta.code.qual;src.redshift
+
+zspec_association_flag: 
+  tablehead: zSpec_Association_Flag
+  type: boolean
+  unit: None
+  description: "Boolean flag set to true when the association of a source to it's redshift may be problematic (possible mis-cross-association)."
+  ucd: meta.code;src.redshift
+
+stellarity: 
+  tablehead: stellarity
+  type: real
+  unit: None
+  description: "Index evaluation is the source is point-source: for 0 (not point source) to 1 (point source). Generally name stellarity index."
+  ucd: src.class.starGalaxy
+
+stellarity_origin: 
+  tablehead: stellarity_origin
+  type: text
+  unit: None
+  description: "Name of Survey from which stellarity is calculated."
+  ucd: meta.code;src.class.starGalaxy
+
+f_best_u: 
+  tablehead: f_best_u
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error u band measurement."
+  ucd: phot.flux;em.opt.B
+
+ferr_best_u: 
+  tablehead: ferr_best_u
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_u."
+  ucd: stat.error;phot.flux;em.opt.U
+
+m_best_u: 
+  tablehead: m_best_u
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error u band measurement."
+  ucd: phot.mag;em.opt.U
+
+merr_best_u: 
+  tablehead: merr_best_u
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_u."
+  ucd: stat.error;phot.mag;em.opt.U
+
+flag_best_u: 
+  tablehead: flag_best_u
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in g."
+  ucd: meta.code.qual;em.opt.U
+  
+f_best_g: 
+  tablehead: f_best_g
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error g band measurement."
+  ucd: phot.flux;em.opt.B
+
+ferr_best_g: 
+  tablehead: ferr_best_g
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_g."
+  ucd: stat.error;phot.flux;em.opt.B
+
+m_best_g: 
+  tablehead: m_best_g
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error g band measurement."
+  ucd: phot.mag;em.opt.B
+
+merr_best_g: 
+  tablehead: merr_best_g
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_g."
+  ucd: stat.error;phot.mag;em.opt.B
+
+flag_best_g: 
+  tablehead: flag_best_g
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in g."
+  ucd: meta.code.qual;em.opt.B
+  
+f_best_r: 
+  tablehead: f_best_r
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error r band measurement."
+  ucd: phot.flux;em.opt.R
+
+ferr_best_r: 
+  tablehead: ferr_best_r
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_r."
+  ucd: stat.error;phot.flux;em.opt.R
+
+m_best_r: 
+  tablehead: m_best_r
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error g band measurement."
+  ucd: phot.mag;em.opt.R
+
+merr_best_r: 
+  tablehead: merr_best_r
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_r."
+  ucd: stat.error;phot.mag;em.opt.R
+
+flag_best_r: 
+  tablehead: flag_best_r
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in r."
+  ucd: meta.code.qual;em.opt.R
+  
+f_best_i: 
+  tablehead: f_best_i
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error i band measurement."
+  ucd: phot.flux;em.opt.I
+
+ferr_best_i: 
+  tablehead: ferr_best_i
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_i."
+  ucd: stat.error;phot.flux;em.opt.I
+
+m_best_i: 
+  tablehead: m_best_i
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error i band measurement."
+  ucd: phot.mag;em.opt.I
+
+merr_best_i: 
+  tablehead: merr_best_i
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_i."
+  ucd: stat.error;phot.mag;em.opt.I
+
+flag_best_i: 
+  tablehead: flag_best_i
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in i."
+  ucd: meta.code.qual;em.opt.I
+  
+f_best_z: 
+  tablehead: f_best_z
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error z band measurement."
+  ucd: phot.flux;em.opt.I
+
+ferr_best_z: 
+  tablehead: ferr_best_z
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_z."
+  ucd: stat.error;phot.flux;em.opt.I
+
+m_best_z: 
+  tablehead: m_best_z
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error z band measurement."
+  ucd: phot.mag;em.opt.I
+
+merr_best_z: 
+  tablehead: merr_best_z
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_z."
+  ucd: stat.error;phot.mag;em.opt.I
+
+flag_best_z: 
+  tablehead: flag_best_z
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in z."
+  ucd: meta.code.qual;em.opt.I
+  
+f_best_y: 
+  tablehead: f_best_y
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error y band measurement."
+  ucd: phot.flux;em.opt.I
+
+ferr_best_y: 
+  tablehead: ferr_best_y
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_y."
+  ucd: stat.error;phot.flux;em.opt.I
+
+m_best_y: 
+  tablehead: m_best_y
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error y band measurement."
+  ucd: phot.mag;em.opt.I
+
+merr_best_y: 
+  tablehead: merr_best_y
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_y."
+  ucd: stat.error;phot.mag;em.opt.I
+
+flag_best_y: 
+  tablehead: flag_best_y
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in y."
+  ucd: meta.code.qual;em.opt.I
+  
+f_best_j: 
+  tablehead: f_best_j
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error j band measurement."
+  ucd: phot.flux;em.opt.J
+
+ferr_best_j: 
+  tablehead: ferr_best_j
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_j."
+  ucd: stat.error;phot.flux;em.opt.J
+
+m_best_j: 
+  tablehead: m_best_j
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error j band measurement."
+  ucd: phot.mag;em.opt.J
+
+merr_best_j: 
+  tablehead: merr_best_j
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_j."
+  ucd: stat.error;phot.mag;em.opt.J
+
+flag_best_j: 
+  tablehead: flag_best_j
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in j."
+  ucd: meta.code.qual;em.opt.J
+
+f_best_h: 
+  tablehead: f_best_h
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error h band measurement."
+  ucd: phot.flux;em.opt.H
+
+ferr_best_h: 
+  tablehead: ferr_best_h
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_h."
+  ucd: stat.error;phot.flux;em.opt.H
+
+m_best_h: 
+  tablehead: m_best_h
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error h band measurement."
+  ucd: phot.mag;em.opt.H
+
+merr_best_h: 
+  tablehead: merr_best_h
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_h."
+  ucd: stat.error;phot.mag;em.opt.H
+
+flag_best_h: 
+  tablehead: flag_best_h
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in h."
+  ucd: meta.code.qual;em.opt.H
+  
+f_best_k: 
+  tablehead: f_best_k
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error k band measurement."
+  ucd: phot.flux;em.opt.K
+
+ferr_best_k: 
+  tablehead: ferr_best_k
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_k."
+  ucd: stat.error;phot.flux;em.opt.K
+
+m_best_k: 
+  tablehead: m_best_k
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error  k band measurement."
+  ucd: phot.mag;em.opt.K
+
+merr_best_k: 
+  tablehead: merr_best_k
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_k."
+  ucd: stat.error;phot.mag;em.opt.K
+
+flag_best_k: 
+  tablehead: flag_best_k
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in k."
+  ucd: meta.code.qual;em.opt.K
+  
+f_best_ks: 
+  tablehead: f_best_ks
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the lowest error ks band measurement."
+  ucd: phot.flux;em.opt.K
+
+ferr_best_ks: 
+  tablehead: ferr_best_ks
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_best_ks."
+  ucd: stat.error;phot.flux;em.opt.B
+
+m_best_ks: 
+  tablehead: m_best_ks
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude of the lowest error  ks band measurement."
+  ucd: phot.mag;em.opt.K
+
+merr_best_ks: 
+  tablehead: merr_best_ks
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_best_ks."
+  ucd: stat.error;phot.mag;em.opt.K
+
+flag_best_ks: 
+  tablehead: flag_best_ks
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for spurious measurements in ks."
+  ucd: meta.code.qual;em.opt.K
+
+f_irac_i1: 
+  tablehead: f_irac_i1
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.flux;em.IR.3-4um
+
+ferr_irac_i1: 
+  tablehead: ferr_irac_i1
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_irac_i1."
+  ucd: stat.error;phot.flux;em.IR.3-4um
+
+m_irac_i1: 
+  tablehead: m_irac_i1
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 3-4um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.mag;em.IR.3-4um
+
+merr_irac_i1: 
+  tablehead: merr_irac_i1
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_irac_i1."
+  ucd: stat.error;phot.mag;em.IR.3-4um
+
+flag_irac_i1: 
+  tablehead: flag_irac_i1
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the irac_i1 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.3-4um
+
+f_irac_i2: 
+  tablehead: f_irac_i2
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.flux;em.IR.4-8um
+
+ferr_irac_i2: 
+  tablehead: ferr_irac_i2
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_irac_i2."
+  ucd: stat.error;phot.flux;em.IR.4-8um
+
+m_irac_i2: 
+  tablehead: m_irac_i2
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.mag;em.IR.4-8um
+
+merr_irac_i2: 
+  tablehead: merr_irac_i2
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_irac_i2."
+  ucd: stat.error;phot.mag;em.IR.4-8um
+
+flag_irac_i2: 
+  tablehead: flag_irac_i2
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the irac_i2 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.4-8um
+
+f_irac_i3: 
+  tablehead: f_irac_i3
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.flux;em.IR.4-8um
+
+ferr_irac_i3: 
+  tablehead: ferr_irac_i3
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_irac_i3."
+  ucd: stat.error;phot.flux;em.IR.4-8um
+
+m_irac_i3: 
+  tablehead: m_irac_i3
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 4-8um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.mag;em.IR.4-8um
+
+merr_irac_i3: 
+  tablehead: merr_irac_i3
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_irac_i3."
+  ucd: stat.error;phot.mag;em.IR.4-8um
+
+flag_irac_i3: 
+  tablehead: flag_irac_i3
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the irac_i3 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.4-8um
+
+f_irac_i4: 
+  tablehead: f_irac_i4
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.flux;em.IR.8-15um
+
+ferr_irac_i4: 
+  tablehead: ferr_irac_i4
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_irac_i4."
+  ucd: stat.error;phot.flux;em.IR.8-15um
+
+m_irac_i4: 
+  tablehead: m_irac_i4
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 8-15um band of The Infrared Array Camera (IRAC) on The Spitzer Space Telescope."
+  ucd: phot.mag;em.IR.8-15um
+
+merr_irac_i4: 
+  tablehead: merr_irac_i4
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_irac_i4."
+  ucd: stat.error;phot.mag;em.IR.8-15um
+
+flag_irac_i4: 
+  tablehead: flag_irac_i4
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the irac_i4 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.8-15um
+
+f_mips_24: 
+  tablehead: f_mips_24
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope."
+  ucd: phot.flux;em.IR.15-30um
+
+ferr_mips_24: 
+  tablehead: ferr_mips_24
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_mips_24."
+  ucd: stat.error;phot.flux;em.IR.15-30um
+
+m_mips_24: 
+  tablehead: m_mips_24
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 15-30um band of The Multiband Imaging Photometer (MIPS) on The Spitzer Space Telescope."
+  ucd: phot.mag;em.IR.15-30um
+
+merr_mips_24: 
+  tablehead: merr_mips_24
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_mips_24."
+  ucd: stat.error;phot.mag;em.IR.15-30um
+
+flag_mips_24: 
+  tablehead: flag_mips_24
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the mips_24 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.15-30um
+
+f_pacs_green: 
+  tablehead: f_pacs_green
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+  ucd: phot.flux;em.IR.60-100um
+
+ferr_pacs_green: 
+  tablehead: ferr_pacs_green
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_pacs_green."
+  ucd: stat.error;phot.flux;em.IR.60-100um
+
+m_pacs_green: 
+  tablehead: m_pacs_green
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 60-100um band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+  ucd: phot.mag;em.IR.60-100um
+
+merr_pacs_green: 
+  tablehead: merr_pacs_green
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_pacs_green."
+  ucd: stat.error;phot.mag;em.IR.60-100um
+
+flag_pacs_green: 
+  tablehead: flag_pacs_green
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the pacs_green aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.60-100um
+
+f_pacs_red: 
+  tablehead: f_pacs_red
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+  ucd: phot.flux;em.IR.1500-3000GHz
+
+ferr_pacs_red: 
+  tablehead: ferr_pacs_red
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_pacs_red."
+  ucd: stat.error;phot.flux;em.IR.1500-3000GHz
+
+m_pacs_red: 
+  tablehead: m_pacs_red
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 1500-3000GHz band of Photoconductor Array Camera and Spectrometer (PACS) on The Herschel Space Telescope."
+  ucd: phot.mag;em.IR.1500-3000GHz
+
+merr_pacs_red: 
+  tablehead: merr_pacs_red
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_pacs_red."
+  ucd: stat.error;phot.mag;em.IR.1500-3000GHz
+
+
+flag_pacs_red: 
+  tablehead: flag_pacs_red
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the pacs_red aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.1500-3000GHz
+
+f_spire_250: 
+  tablehead: f_spire_250
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.flux;em.IR.750-1500GHz
+
+ferr_spire_250: 
+  tablehead: ferr_spire_250
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_spire_250."
+  ucd: stat.error;phot.flux;em.IR.750-1500GHz
+
+m_spire_250: 
+  tablehead: m_spire_250
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.mag;em.IR.750-1500GHz
+
+merr_spire_250: 
+  tablehead: merr_spire_250
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_spire_250."
+  ucd: stat.error;phot.mag;em.IR.750-1500GHz
+
+flag_spire_250: 
+  tablehead: flag_spire_250
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the spire_250 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.750-1500GHz
+
+f_spire_350: 
+  tablehead: f_spire_350
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.flux;em.IR.750-1500GHz
+
+ferr_spire_350: 
+  tablehead: ferr_spire_350
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_spire_350."
+  ucd: stat.error;phot.flux;em.IR.750-1500GHz
+
+m_spire_350: 
+  tablehead: m_spire_350
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 750-1500GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.mag;em.IR.750-1500GHz
+
+merr_spire_350: 
+  tablehead: merr_spire_350
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_spire_350."
+  ucd: stat.error;phot.mag;em.IR.750-1500GHz
+
+flag_spire_350: 
+  tablehead: flag_spire_350
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the spire_350 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.750-1500GHz
+
+f_spire_500: 
+  tablehead: f_spire_500
+  type: double precision
+  unit: uJy
+  description: "Total flux density in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.flux;em.IR.400-750GHz
+
+ferr_spire_500: 
+  tablehead: ferr_spire_500
+  type: double precision
+  unit: uJy
+  description: "Uncertainty on f_spire_500."
+  ucd: stat.error;phot.flux;em.IR.400-750GHz
+
+m_spire_500: 
+  tablehead: m_spire_500
+  type: double precision
+  unit: mag
+  description: "Total AB magnitude in the 400-750GHz band of The Spectral and Photometric Imaging Reciever (SPIRE) on The Herschel Space Telescope."
+  ucd: phot.mag;em.IR.400-750GHz
+
+merr_spire_500: 
+  tablehead: merr_spire_500
+  type: double precision
+  unit: mag
+  description: "Uncertainty on m_spire_500."
+  ucd: stat.error;phot.mag;em.IR.400-750GHz
+
+flag_spire_500: 
+  tablehead: flag_spire_500
+  type: boolean
+  unit: None
+  description: "Flag set to true for sources for which niether the spire_500 aperture nor total flux should be used for SED fitting (see documentation)."
+  ucd: meta.code.qual;em.IR.400-750GHz
+
+
+cigale_sfr: 
+  tablehead: CIGALE_SFR
+  type: double precision
+  unit: Msun/yr
+  description: "Star Formation Rate estimated by SED fitting with CIGALE."
+  ucd: phys.SFR
+
+cigale_sfr_err: 
+  tablehead: CIGALE_SFR_err
+  type: double precision
+  unit: Msun/yr
+  description: "Uncertainty on CIGALE_SFR."
+  ucd: stat.error;phys.SFR
+
+cigale_mstar: 
+  tablehead: CIGALE_Mstar
+  type: double precision
+  unit: Msun
+  description: "Stellar Mass estimated by SED fitting with CIGALE."
+  ucd: phys.mass
+
+cigale_mstar_err: 
+  tablehead: CIGALE_Mstar_err
+  type: double precision
+  unit: Msun
+  description: "Uncertainty on CIGALE_Mstar"
+  ucd: stat.error;phys.mass
+
+cigale_dustlumin: 
+  tablehead: CIGALE_DustLumin
+  type: double precision
+  unit: W
+  description: "Dust luminosity estimated by SED fitting with CIGALE using both optical and infra-red information."
+  ucd: phys.dust;phys.luminosity
+
+cigale_dustlumin_err: 
+  tablehead: CIGALE_DustLumin_err
+  type: double precision
+  unit: W
+  description: "Uncertainty on CIGALE_DustLumin."
+  ucd: stat.error;phys.dust;phys.luminosity
+
+cigale_dustlumin_ironly: 
+  tablehead: CIGALE_DustLumin_IRonly
+  type: double precision
+  unit: W
+  description: "Dust luminosity estimated by SED fitting with CIGALE using only the infra-red information."
+  ucd: phys.dust;phys.luminosity
+
+cigale_dustlumin_ironly_err: 
+  tablehead: CIGALE_DustLumin_IRonly_err
+  type: double precision
+  unit: W
+  description: "Uncertainty on CIGALE_DustLumin_IRonly"
+  ucd: stat.error;phys.dust;phys.luminosity
+
+cigale_chi2_opt: 
+  tablehead: cigale_chi2_opt
+  type: double precision
+  unit: None
+  description: "Reduced optical chi squared of best CIGALE fit to all data."
+  ucd: stat.fit.chi2
+
+cigale_chi2_ir: 
+  tablehead: cigale_chi2_ir
+  type: double precision
+  unit: None
+  description: "Reduced infrared chi squared of best CIGALE fit to all data."
+  ucd: stat.fit.chi2
+
+cigale_chi2_red: 
+  tablehead: cigale_chi2_red
+  type: double precision
+  unit: None
+  description: "Reduced chi squared of best CIGALE fit."
+  ucd: stat.fit.chi2
+
+cigale_chi2_ironly: 
+  tablehead: cigale_chi2_ironly
+  type: double precision
+  unit: None
+  description: "Reduced chi squared of best CIGALE fit to infrared data."
+  ucd: stat.fit.chi2
+
+flag_gaia: 
+  tablehead: Flag_Gaia
+  type: smallint
+  unit: None
+  description: "Flag indicating the increasing probability of the source being a Gaia object (see note)."
+  ucd: meta.code
+
+flag_cleaned: 
+  tablehead: Flag_Cleaned
+  type: boolean
+  unit: None
+  description: "Boolean flag denoting that the source was associated to really near object that were removed during the cleaning procedure."
+  ucd: meta.code
+
+flag_merged: 
+  tablehead: Flag_Merged
+  type: boolean
+  unit: None
+  description: "Boolean flag denoting a possible mis-association during the cross-matching of the various catalogues."
+  ucd: meta.code
+
+flag_optnir_obs: 
+  tablehead: Flag_OptNIR_Obs
+  type: smallint
+  unit: None
+  description: "Flag indicating in which wavelength regimes the source was observed (see note)."
+  ucd: meta.code
+
+flag_optnir_det: 
+  tablehead: Flag_OptNIR_Det
+  type: smallint
+  unit: None
+  description: "Flag indicating in which wavelength regimes the source was detected (see note)."
+  ucd: meta.code
