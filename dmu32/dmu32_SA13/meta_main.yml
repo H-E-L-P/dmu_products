@@ -18,4 +18,4 @@ cigale: dmu_products/dmu28/dmu28_SA13/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: dmu_products/dmu28/dmu28_SA13/data/SA13_Ldust_prediction_results.fits
 
-final: dmu_products/dmu32/dmu32_SA13/data/SA13.fits
+final: dmu_products/dmu32/dmu32_SA13/data/SA13_20180501.fits

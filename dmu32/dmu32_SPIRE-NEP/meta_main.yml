@@ -19,4 +19,4 @@ cigale: dmu_products/dmu28/dmu28_SPIRE-NEP/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
-final: dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP.fits
+final: dmu_products/dmu32/dmu32_SPIRE-NEP/data/SPIRE-NEP_20180220.fits

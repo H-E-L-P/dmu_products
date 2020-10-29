@@ -17,4 +17,4 @@ photoz: dmu_products/dmu24/dmu24_EGS/data/master_catalogue_egs_20180501_photoz_2
 
 cigale: dmu_products/dmu28/dmu28_EGS/data/zphot/HELP_final_results.fits
 
-final: dmu_products/dmu32/dmu32_EGS/data/EGS.fits
+final: dmu_products/dmu32/dmu32_EGS/data/EGS_20180501.fits
