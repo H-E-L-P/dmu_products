@@ -2,7 +2,7 @@
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_AKARI-NEP/AKARI-NEP_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_AKARI-SEP/AKARI-SEP_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_Bootes/Bootes_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_CDFS-SWIRE/CDFS-SWIRE
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_CDFS-SWIRE/CDFS-SWIRE_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_COSMOS/COSMOS_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_EGS/EGS_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_ELAIS-N1/ELAIS-N1_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
@@ -17,7 +17,7 @@ jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dm
 
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_Lockman-SWIRE/Lockman-SWIRE_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_NGP/NGP_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_SA13/NGP_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_SA13/SA13_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 ../dmu32_SGP/SGP_catalogue_merging.ipynb --ExecutePreprocessor.kernel_name=helpint
 
