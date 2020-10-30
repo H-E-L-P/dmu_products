@@ -18,4 +18,4 @@ cigale: dmu_products/dmu28/dmu28_COSMOS/data/zphot/final_results.fits
 
 cigale_ldust_prediction: dmu_products/dmu28/dmu28_COSMOS/data/COSMOS_Ldust_prediction_results.fits
 
-final: dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20190402_cigale.fits
+final: dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20190402.fits
