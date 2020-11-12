@@ -7,3 +7,10 @@ The catalogues made on each field are often very large. This is both due to the 
 - './data/$FIELD_best_phot_sources_$DATEMADE.fits', the camera source of each lowest error measurement
 - [./data/HELP_xid_prior_20201029.fits](./data/HELP_xid_prior_20201029.fits), the xid prior list with the best photometry
 - [./data/HELP_A-list_20201029.fits](./data/HELP_A-list_20201029.fits), the list of CIGALE objects with best photometry
+
+
+The files can then be written to csv with stilts for ingestion into VOX:
+
+```Shell
+for f in *_best_phot_20201111.fits; do stilts tpipe $f omode=out ofmt=csv out=./vo/$f.csv; done
+```
