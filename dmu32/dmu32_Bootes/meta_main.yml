@@ -20,4 +20,4 @@ cigale: dmu_products/dmu28/dmu28_Bootes/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
-final: dmu_products/dmu32/dmu32_Bootes/data/Bootes_20190201_cigale.fits
+final: dmu_products/dmu32/dmu32_Bootes/data/Bootes_20190701.fits

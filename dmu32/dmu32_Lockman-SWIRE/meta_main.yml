@@ -14,8 +14,8 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_Lockman-SWIRE/data/dmu26_XID+MIPS_Lockm
 
 photoz: dmu_products/dmu24/dmu24_Lockman-SWIRE/data/master_catalogue_Lockman-SWIRE_20170710_photoz_20170802_r_and_irac1_optimised_UPDATED_IDs_20180219.fits
 
-cigale: dmu_products/dmu28/dmu28_Lockman-SWIRE/data/zphot/best_extcor/HELP_final_results.fits
+cigale: dmu_products/dmu28/dmu28_Lockman-SWIRE/data/zphot/best/HELP_final_results.fits
 
 cigale_ldust_prediction: None
 
-final: dmu_products/dmu32/dmu32_AKARI-NEP/data/AKARI-NEP_20180215_cigale.fits
+final: dmu_products/dmu32/dmu32_Lockman-SWIRE/data/Lockman-SWIRE_20180219.fits

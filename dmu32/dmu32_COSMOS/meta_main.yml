@@ -4,7 +4,7 @@ region: dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.fits
 
 surveys: [ CANDELS-3D-HST, CFHTLS, DECaLS, HSC-DEEP, HSC-UDEEP, KIDS, PanSTARRS-3SS, UKIDSS-LAS, CFHT-WIRDS, COSMOS2015 ]
 
-masterlist: dmu_products/dmu1/dmu1_ml_COSMOS/data/master_catalogue_cosmos_20180516.fits
+masterlist: dmu_products/dmu1/dmu1_ml_COSMOS/data/master_catalogue_cosmos_20190402.fits
 
 depths: dmu_products/dmu1/dmu1_ml_COSMOS/data/depths_cosmos_20180516.fits
 
@@ -18,4 +18,4 @@ cigale: dmu_products/dmu28/dmu28_COSMOS/data/zphot/final_results.fits
 
 cigale_ldust_prediction: dmu_products/dmu28/dmu28_COSMOS/data/COSMOS_Ldust_prediction_results.fits
 
-final: dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20180516_cigale.fits
+final: dmu_products/dmu32/dmu32_COSMOS/data/COSMOS_20190402.fits

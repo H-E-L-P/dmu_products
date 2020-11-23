@@ -1,6 +1,6 @@
-field: SGP
+field: HATLAS-SGP
 
-region: dmu_products/dmu2/dmu2_field_coverages/SGP_MOC.fits
+region: dmu_products/dmu2/dmu2_field_coverages/HATLAS-SGP_MOC.fits
 
 surveys: [ ATLAS, KIDS, PanSTARRS-3SS, VISTA-VIKING, DES ]
 
@@ -18,4 +18,4 @@ cigale: dmu_products/dmu28/dmu28_SGP/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction: dmu_products/dmu28/dmu28_SGP/data/hatlas_sgp_Ldust_prediction_results.fits
 
-final: dmu_products/dmu32/dmu32_SGP/data/SGP_20180221_cigale.fits
+final: dmu_products/dmu32/dmu32_SGP/data/SGP_20180221.fits
