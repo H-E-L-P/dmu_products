@@ -10,26 +10,29 @@ from matplotlib.patches import Ellipse
 from astropy.coordinates import SkyCoord
 from astropy import units as u
 
-loc = "data_HELP_v1.0/"
+#loc = "data_HELP_v1.0/"
+loc = "../dmu19/dmu19_HELP-SPIRE-maps/data/"
 loc2 = "data_HELP_v1.0_cat/"
+loc2="./tmp_data/"
 
 
-all_names =  ['AKARI-NEP_SPIRE','GAMA-09_SPIRE','GAMA-12_SPIRE','GAMA-15_SPIRE','HATLAS-NGP_SPIRE','HATLAS-SGP_SPIRE','SSDF_SPIRE','AKARI-SEP_SPIRE','Bootes_SPIRE','CDFS-SWIRE_SPIRE','COSMOS_SPIRE','EGS_SPIRE',\
-              'ELAIS-N1_SPIRE','ELAIS-N2_SPIRE','ELAIS-S1_SPIRE','HDF-N_SPIRE','Lockman-SWIRE_SPIRE','SA13_SPIRE',\
-              'SPIRE-NEP_SPIRE','xFLS_SPIRE','XMM-13hr_SPIRE','XMM-LSS_SPIRE']
+all_names =  ['Herschel-Stripe-82_SPIRE']#['AKARI-NEP_SPIRE','GAMA-09_SPIRE','GAMA-12_SPIRE','GAMA-15_SPIRE','HATLAS-NGP_SPIRE','HATLAS-SGP_SPIRE','SSDF_SPIRE','AKARI-SEP_SPIRE','Bootes_SPIRE','CDFS-SWIRE_SPIRE','COSMOS_SPIRE','EGS_SPIRE',\
+             # 'ELAIS-N1_SPIRE','ELAIS-N2_SPIRE','ELAIS-S1_SPIRE','HDF-N_SPIRE','Lockman-SWIRE_SPIRE','SA13_SPIRE',\
+              #'SPIRE-NEP_SPIRE','xFLS_SPIRE','XMM-13hr_SPIRE','XMM-LSS_SPIRE']
 
 
 band = ['250','350','500']
+version='1.1'
 for j in range(np.size(all_names)):
 
 
 	################################ source detections
 
-	name = all_names[j]+band[0]+'_v1.0.fits'
+	name = all_names[j]+band[0]+'_v'+version+'.fits'
 	hdulist1 = fits.open(loc+name)
-	name = all_names[j]+band[1]+'_v1.0.fits'
+	name = all_names[j]+band[1]+'_v'+version+'.fits'
 	hdulist2 = fits.open(loc+name)
-	name = all_names[j]+band[2]+'_v1.0.fits'
+	name = all_names[j]+band[2]+'_v'+version+'.fits'
 	hdulist3 = fits.open(loc+name)
 
 	ff = fits.open(loc2+all_names[j]+'250_cat.fits')

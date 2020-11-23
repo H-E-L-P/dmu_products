@@ -49,15 +49,16 @@ def find_peak(hdulist, dmin, negmap = 'FALSE'):
     
     i=0
     while (sortedval[i] > dmin):
-
+        #select neighbouring pixels (i.e. 3 by 3) around pixel of interest for both map and mask
         minimap = map[sortedy[i]-1:sortedy[i]+2, sortedx[i]-1:sortedx[i]+2]
         mask_map = mask[sortedy[i]-1:sortedy[i]+2, sortedx[i]-1:sortedx[i]+2]
+        #indices where map is nonzero
         good = minimap != 0
-
+        #set pixels to zero close to edge of map (i.e. 7 pixels)
         if  (sortedy[i] <= 7) or (sortedx[i] <= 7) or (sortedy[i] >= y_max-7) or (sortedx[i] >= x_max-7) :
             minimap = 0
 
-
+        # if pixel of interest is max for the 3 by 3 minimap and 8 out of 9 pixels are not zero and 2 or less pixels are masked.
         if (sortedval[i] == np.max(minimap)) and (np.size(minimap[good]) >=8) and (np.sum(mask_map) <=2) :
 
             dp.append(sortedval[i])
@@ -101,7 +102,7 @@ def generate_pixelized_psf(fwhm,pixsize,xc=0,yc=0):
     x,y = np.meshgrid(x, y)
     psf = (1./(2*np.pi*gen_sig**2))*np.exp( - ((x-gen_xc)**2.+(y-gen_yc)**2.) / (2*gen_sig**2))
     psf=psf/psf.max()  
-    psf_px = psf.reshape((npix, gen_npix/npix, npix, gen_npix/npix)).mean(3).mean(1)
+    psf_px = psf.reshape((npix, int(gen_npix/npix), npix, int(gen_npix/npix))).mean(3).mean(1)
 
     return psf_px
 
@@ -148,9 +149,8 @@ def generate_pixelized_matched_filter(fwhm, pixsize, nconf, ninstr, xc=0,yc=0, m
     matchedfilt = fftpack.ifft2(fft_mfilt)
     matchedfilt = matchedfilt.real
 
-
-    matchedfilt = matchedfilt.reshape((ny, gen_ny/ny, nx, gen_nx/nx)).mean(3).mean(1)
-    psf = psf.reshape((ny, gen_ny/ny, nx, gen_nx/nx)).mean(3).mean(1)
+    matchedfilt = matchedfilt.reshape((ny, int(gen_ny/ny), nx, int(gen_nx/nx))).mean(3).mean(1)
+    psf = psf.reshape((ny, int(gen_ny/ny), nx, int(gen_nx/nx))).mean(3).mean(1)
 
     #norm = np.sum(psf*matchedfilter)/np.sum(matchedfilter**2.)
     #matchedfilter = norm * matchedfilter 
@@ -280,14 +280,14 @@ def corr_psf_max_MF(hdulist1,hdulist2,hdulist3, ra, dec):
                 cutout1 = hdulist1["MFILT"].data[int(tmpy0-stampsize/2):int(tmpy0+stampsize/2+1),int(tmpx0-stampsize/2):int(tmpx0+stampsize/2+1)]
                 cut_f_n1 = f_n1[int(tmpy0-stampsize/2):int(tmpy0+stampsize/2+1),int(tmpx0-stampsize/2):int(tmpx0+stampsize/2+1)] 
                 wm_cut1 = weightmap1[int(tmpy0-weightsize/2):int(tmpy0+weightsize/2+1),int(tmpx0-weightsize/2):int(tmpx0+weightsize/2+1)] 
-    
+
                 p = cutout1 - np.mean(cutout1)
             
                 for dstep in range(len(dx0step)):                         
                     #ra_tmp, dec_tmp = w1.wcs_pix2world(tmpx0+dx0step[dstep]/10., tmpy0+dy0step[dstep]/10.,0)
                     ra_tmp, dec_tmp = w1.wcs_pix2world(tmpx0+dx0step[dstep]/30.*5, tmpy0+dy0step[dstep]/30.*5,0)
 
-                    psf_use = psf1[dstep] 
+                    psf_use = psf1[dstep]
                     f_b = signal.fftconvolve(psf_use*wm_cut1,matchedfilter1,mode='same')
                     f_noise = signal.fftconvolve(wm_cut1,matchedfilter1**2,mode='same')
                     f_b = f_b[3:8,3:8]/f_noise[3:8,3:8] #/cut_f_n1
