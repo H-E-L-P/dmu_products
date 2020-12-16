@@ -16,7 +16,7 @@ In this folder:
 * SExploring the high-mass end of the stellar mass function of star-forming galaxies at cosmic noon. [Sherman et al 2019](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.3318S/abstract)
 
 
-#### Gneral reading on Stellar mass function:
+#### General reading on Stellar mass function:
 
 * Stellar mass functions: methods, systematics and results for the local Universe. [Weigel et al 2016](https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2150W/abstract)
 
