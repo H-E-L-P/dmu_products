@@ -1,12 +1,12 @@
 # GSMF - Galaxy Stellar Mass Function
+    
+Main aim: providing material and references for the calculation of GSMF in HELP. This is an ongoing project to calculate the high mass end of the GSMF on Herschel-Stripe-82, using the HELP data products. 
 
 In this folder:
 
 - [Notes](./Notes):
     .pdf files with notes about the process.
-    
 
-Main aim: providing material and references for the calculation of GSMF in HELP. This is an ongoing project to calculate the high mass end of the GSMF on Herschel-Stripe-82, using the HELP data products. 
 
 
 ## Literature references
