@@ -1,6 +1,4 @@
-# HELP DMU10 Repository
-
-## GSMF - Galaxy Stellar Mass Function
+# GSMF - Galaxy Stellar Mass Function
 
 In this folder:
 
@@ -38,4 +36,4 @@ Other literature examples using the Pozzetti method:
 
 Masterlist paper
 
-* HELP: a catalogue of 170 million objects, selected at 0.36-4.5 μm, from 1270 deg2 of prime extragalactic fields[Shirley et al 2019](https://ui.adsabs.harvard.edu/abs/2019MNRAS.490..634S/abstract)
+* HELP: a catalogue of 170 million objects, selected at 0.36-4.5 μm, from 1270 deg2 of prime extragalactic fields. [Shirley et al 2019](https://ui.adsabs.harvard.edu/abs/2019MNRAS.490..634S/abstract)
