@@ -5,8 +5,7 @@ Main aim: providing material and references for the calculation of GSMF in HELP.
 In this folder:
 
 - [Notes](./Notes):
-
-    handwritten notes
+Handwritten notes
 
 
 
