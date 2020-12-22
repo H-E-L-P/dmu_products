@@ -8,7 +8,7 @@ HELP data covers 1270 square degrees of extragalactic sky divided into 23 distin
 
 ![Sky coverage](sky_plus_help.jpg)
 
-Overviews of teh data on each field can be found [here](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_Field_overviews/).
+Overviews of the data on each field can be found [here](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_Field_overviews/).
 
  HELP fields           |  
 -----------------------|
