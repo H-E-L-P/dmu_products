@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HELP field Bootes</title>
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+
+</head>
+<body>
+<a href="http://herschel.sussex.ac.uk/">
+<img src="../../TEMPLATES/help_logo_web.png" alt="HELP logo">
+</a>
+<h1>Overview of HELP field Bootes</h1>
+<p>This HELP field is defined by SPIRE coverage of the Bootes field. </p>
+<p>Full information on each of these surveys is available at those links. Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27Bootes%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started.</p>
+
+
+
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+ 
+<!-- insert this snippet where you want Aladin Lite viewer to appear and after the loading of jQuery -->
+<div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+<script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", target: '14 33 16.875  +34 13 43.9188 ',fov:10.141665391768441});
+        
+        
+        aladin.createImageSurvey('help_spire_rgb', 
+                                 'help_spire_rgb', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/', 
+                                 'equatorial', 
+                                 7, 
+                                 {imgFormat: 'png'}
+                                 );
+        
+                         
+
+        aladin.setImageSurvey('help_spire_rgb');
+</script>
+
+
+
+<table style="width:400px">
+  <tr>
+    <th>Key stats:</th>
+    <th></th>
+
+  </tr>
+  <tr>
+    <td>Area</td>
+    <td>11.43 square degrees</td>
+  </tr>
+  <tr>
+    <td>Masterlist objects</td>
+    <td>3398098</td>
+  </tr>
+    <tr>
+    <td>XID+ objects</td>
+    <td>495159</td>
+  </tr>
+    <tr>
+    <td>Photo-z objects</td>
+    <td>1570512</td>
+  </tr>
+    <tr>
+    <td>CIGALE objects</td>
+    <td>38980</td>
+  </tr>
+      <tr>
+    <td>Median g depth</td>
+    <td>PLACEHOLDER</td>
+  </tr>
+      <tr>
+    <td>Median K or Ks depth</td>
+    <td>PLACEHOLDER</td>
+  </tr>
+      <tr>
+    <td>Median IRAC i1 depth</td>
+    <td>PLACEHOLDER</td>
+  </tr>
+      <tr>
+    <td>Median SPIRE 250 depth</td>
+    <td>PLACEHOLDER</td>
+  </tr>
+  
+</table>
+
+<p>The raw files for this field can be downloaded from the following links:</p>
+
+
+<ul>
+  <li>The reduced "best photometry" table: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/Bootes_best_phot_20201111.fits">http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/Bootes_best_phot_20201111.fits</a></li>
+  <li>The full masterlist table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu32/dmu32_Bootes/data/Bootes_20190701.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu32/dmu32_Bootes/data/Bootes_20190701.fits</a></li>
+  <li>The blind source list: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_Bootes/data/dmu22_XID+SPIRE_Bootes_BLIND_Matched_MF.fits">http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_Bootes/data/dmu22_XID+SPIRE_Bootes_BLIND_Matched_MF.fits</a></li>
+  <li>SPIRE imaging at 250, 350, and 500 microns:<a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE250_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE250_v1.0.fits</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE350_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE350_v1.0.fits</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE500_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/Bootes_SPIRE500_v1.0.fits</a></li>
+  <li>Full photo-z table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_Bootes/data/Bootes_opt_spitzer_merged_vac_opt3as_irac4as_all_public_with_help_id.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_Bootes/data/Bootes_opt_spitzer_merged_vac_opt3as_irac4as_all_public_with_help_id.fits</a></li>
+  <li>Full CIGALE table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu28/dmu28_Bootes/data/zphot/HELP_final_results.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu28/dmu28_Bootes/data/zphot/HELP_final_results.fits</a></li>
+  <li>The CIGALE SEDs: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_Bootes/data/zphot/SEDs/">http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_Bootes/data/zphot/SEDs/</a></li>
+  <li>The field definition MOC: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits</a></li>
+  
+</ul>
+
+
+
+<p>This field contains ancillary data sets from the following surveys:</p> 
+<ul><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_DECaLS">DECaLS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_DataFusion-Spitzer">DataFusion-Spitzer</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_IBIS">IBIS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_LegacySurvey">LegacySurvey</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_NDWFS">NDWFS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_PanSTARRS-3SS">PanSTARRS-3SS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_SDWFS">SDWFS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_UHS">UHS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_zBootes">zBootes</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_BootesBrown">BootesBrown</a></li></ul>
+</body>
+</html>
