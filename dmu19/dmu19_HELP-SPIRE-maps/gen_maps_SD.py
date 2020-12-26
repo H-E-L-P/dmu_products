@@ -635,3 +635,134 @@ for field, band in product(hatlas_field_basenames, ["250", "350", "500"]):
     print(f"{field} / {band} processed...")
     print(fwhm[ind], pixsize[ind], nconf[ind], noise)
     hdu_list.close()
+
+
+## Herschel Stripe82
+pixsize = np.array([6., 8., 12.])
+field='Herschel-Stripe-82'
+
+for band in zip(["250", "350", "500"],['PSW','PMW',"PLW"]):
+
+    print(band)
+    obsids = sorted(list(all_obsids['ObsID'][all_obsids['field'] == field]))
+    assert len(obsids) > 0
+
+    orig_hdu_list = fits.open(f"../dmu19_HELP-SPIRE-maps/data/Stripe82-{band[1]}map-mosaic_MS-20200221.FITS")
+
+    image_hdu = orig_hdu_list[1]
+    image_hdu.header['EXTNAME'] = "IMAGE"
+    image_hdu.header['BUNIT'] = "Jy / beam"
+
+    error_hdu = orig_hdu_list[2]
+    assert error_hdu.header['EXTNAME'] == "error"
+    error_hdu.header['EXTNAME'] = "ERROR"
+    error_hdu.header['BUNIT'] = "Jy / beam"
+
+    # The maps contain the coverage and where observed in normal mode (POF5: Photometer Large Map)
+    exposure_hdu = orig_hdu_list[3]
+    assert exposure_hdu.header['EXTNAME'] == "coverage"
+    exposure_hdu.data *= 1 / 18.6  # Conversion of coverage to exposure
+    exposure_hdu.header['EXTNAME'] = "EXPOSURE"
+    exposure_hdu.header['BUNIT'] = "s"
+    exposure_hdu.header['QTTY____'] = "s"
+
+    # The maps do not contain mask maps.
+    mask_hdu = fits.ImageHDU()
+    mask_hdu.header['EXTNAME'] = "MASK"
+    mask_hdu.header.add_comment("The mask map was not available.")
+    mask_hdu.header.add_comment("new mask: mask = exposure == 0")
+
+    mask = np.zeros(np.shape(exposure_hdu.data))
+    mask[exposure_hdu.data == 0] = 1
+    mask_hdu.data = mask
+
+    # nebulised filter maps
+    nebfilt_map = fits.open(f"../dmu19_HELP-SPIRE-maps/data/Stripe82-{band[1]}map-mosaic_MS-20200221-nebulised.FITS")
+    nebfilt_hdu = fits.ImageHDU(header=nebfilt_map[0].header,
+                                data=nebfilt_map[0].data)
+    nebfilt_hdu.header['EXTNAME'] = "NEBFILT"
+    nebfilt_hdu.header['BUNIT'] = "Jy / beam"
+
+    image_hdu.data -= np.nanmean(image_hdu.data)
+    good_filter = np.abs(image_hdu.data - nebfilt_hdu.data) < 0.1  # smaller thatn 100mJy difference
+    nebfilt_hdu.data -= np.nanmean(nebfilt_hdu.data[good_filter])  # Background substration neb
+    nebfilt_hdu.data[~good_filter] = np.nan
+    if band[0] == "250": ind = 0
+    if band[0] == "350": ind = 1
+    if band[0] == "500": ind = 2
+
+    use_for_mf_noise = error_hdu.data < np.sqrt(2) * np.nanmedian(error_hdu.data)
+    noise = np.median(error_hdu.data[use_for_mf_noise])
+
+    if 'CD2_2' in image_hdu.header:
+        delt_pix = np.abs(image_hdu.header['CD2_2'] * 3600. - pixsize[ind])
+        print(image_hdu.header['CD2_2'] * 3600., pixsize[ind])
+    elif 'CDELT2' in image_hdu.header:
+        delt_pix = np.abs(image_hdu.header['CDELT2'] * 3600. - pixsize[ind])
+        print(image_hdu.header['CDELT2'] * 3600., pixsize[ind])
+    if delt_pix > 0.01:
+        print('pix_size_wrong')
+        exit()
+
+    mf, psf = MF.matched_filter(fwhm[ind], pixsize[ind], nconf[ind], noise, whitenoise=True, image=False,
+                                psf_only=False, normalize=False)
+    image_to_convolve = 1.0 * nebfilt_hdu.data
+    error_to_convolve = 1.0 * error_hdu.data
+    conv_map, conv_noise, matchedfilter = MF.do_filtering(image_to_convolve, error_to_convolve, mf, psf)
+
+    mf_hdu = fits.ImageHDU(header=nebfilt_hdu.header,
+                           data=conv_map)
+    mf_hdu.header['EXTNAME'] = "MFILT"
+    mf_hdu.header['BUNIT'] = "Jy / beam"
+    mf_error_hdu = fits.ImageHDU(header=error_hdu.header,
+                                 data=conv_noise)
+    mf_error_hdu.header['EXTNAME'] = "MFILT_ERROR"
+    mf_error_hdu.header['BUNIT'] = "Jy / beam"
+
+    filter_hdu = fits.PrimaryHDU()
+    filter_hdu.header.append(("EXTNAME", "Matchedfilter"))
+    filter_hdu.header.append(("FWHM", fwhm[ind], "FWHM of PSF in NEBFILT map"))
+    filter_hdu.header.append(("nconf", nconf[ind], "confusion noise, Jy/beam"))
+    filter_hdu.header.append(("nins", noise, "instrumental noise, Jy/beam"))
+    filter_hdu.header.append(("pixsize", pixsize[ind], "pixel size, arcsec"))
+
+    filter_hdu = fits.ImageHDU(header=filter_hdu.header,
+                               data=matchedfilter)
+
+    primary_hdu = fits.PrimaryHDU()
+    primary_hdu.header.append((
+        "CREATOR", "Herschel Extragalactic Legacy Project"
+    ))
+    primary_hdu.header.append((
+        "TIMESYS", "UTC", "All dates are in UTC time"
+    ))
+    primary_hdu.header.append((
+        "DATE", datetime.now().replace(microsecond=0).isoformat(),
+        "Date of file creation"
+    ))
+    primary_hdu.header.append((
+        "VERSION", VERSION, "HELP product version"
+    ))
+    primary_hdu.header.append((
+        "TELESCOP", "Herschel", "Name of the telescope"
+    ))
+    primary_hdu.header.append((
+        "INSTRUME", "SPIRE", "Name of the instrument"
+    ))
+    primary_hdu.header.append((
+        "FILTER", f"SPIRE-{band[0]}", "Name of the filter"
+    ))
+    primary_hdu.header.append((
+        "FIELD", field, "Name of the HELP field"
+    ))
+    for idx, obs_id in enumerate(obsids):
+        keyword = "OBSID" + str(idx).zfill(3)
+        primary_hdu.header.append((keyword, obs_id))
+
+    hdu_list = fits.HDUList([primary_hdu, image_hdu, nebfilt_hdu, error_hdu,
+                             exposure_hdu, mask_hdu, mf_hdu, mf_error_hdu, filter_hdu])
+    hdu_list.writeto(f"../dmu19_HELP-SPIRE-maps/data/{field}_SPIRE{band[0]}_v{VERSION}.fits",
+                     checksum=True)
+    print(f"{field} / {band[0]} processed...")
+    print(fwhm[ind], pixsize[ind], nconf[ind], noise)
+    hdu_list.close()

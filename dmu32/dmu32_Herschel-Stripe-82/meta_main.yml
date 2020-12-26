@@ -18,4 +18,4 @@ cigale: None
 
 cigale_ldust_prediction:  dmu_products/dmu28/dmu28_Herschel-Stripe-82/data/herschel_stripe_82_Ldust_prediction.fits
 
-final: dmu_products/dmu32/dmu32_Herschel-Stripe-82/data/Herschel-Stripe-82_20180307_cigale.fits
+final: dmu_products/dmu32/dmu32_Herschel-Stripe-82/data/Herschel-Stripe-82_20180307.fits

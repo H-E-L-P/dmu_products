@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HELP field ELAIS-N1e</title>
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+
+</head>
+<body>
+<a href="http://herschel.sussex.ac.uk/">
+<img src="../../TEMPLATES/help_logo_web.png" alt="HELP logo">
+</a>
+<h1>Overview of HELP field ELAIS-N1</h1>
+<p>This HELP field is defined by SPIRE coverage of the European Large Area Infrared Survey field North 1 (ELAIS-N1). </p>
+<p>Full information on each of these surveys is available at those links. Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started.</p>
+
+
+
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+ 
+<!-- insert this snippet where you want Aladin Lite viewer to appear and after the loading of jQuery -->
+<div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+<script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", target: '10 45 00 +45 00 00',fov:60});
+        
+        
+        aladin.createImageSurvey('help_spire_rgb', 
+                                 'help_spire_rgb', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/', 
+                                 'equatorial', 
+                                 7, 
+                                 {imgFormat: 'png'}
+                                 );
+        
+                         
+
+        aladin.setImageSurvey('help_spire_rgb');
+</script>
+
+
+
+<table style="width:400px">
+  <tr>
+    <th>Key stats:</th>
+    <th></th>
+
+  </tr>
+  <tr>
+    <td>Area</td>
+    <td>13.5 square degrees</td>
+  </tr>
+  <tr>
+    <td>Masterlist objects</td>
+    <td>4 026 292</td>
+  </tr>
+    <tr>
+    <td>XID+ objects</td>
+    <td>269 611 (x %)</td>
+  </tr>
+    <tr>
+    <td>Photo-z objects</td>
+    <td>2 714 686 (x %)</td>
+  </tr>
+    <tr>
+    <td>CIGALE objects</td>
+    <td>49 985 (x %)</td>
+  </tr>
+      <tr>
+    <td>Median g depth</td>
+    <td></td>
+  </tr>
+      <tr>
+    <td>Median K or Ks depth</td>
+    <td></td>
+  </tr>
+      <tr>
+    <td>Median IRAC i1 depth</td>
+    <td></td>
+  </tr>
+      <tr>
+    <td>Median SPIRE 250 depth</td>
+    <td></td>
+  </tr>
+  
+</table>
+
+<p>The raw files for this field can be downloaded from the following links:</p>
+
+
+<ul>
+  <li>The reduced "best photometry" table:</li>
+  <li>The full masterlist table:</li>
+  <li>SPIRE imaging at 250, 350, and 500 microns:</li>
+  <li>Full photo-z table:</li>
+  <li>Full CIGALE table:</li>
+  <li>The CIGALE SEDs:</li>
+  <li>The field definition MOC:</li>
+  
+</ul>
+
+
+
+<p>This field contains ancillary data sets from the following surveys:</p> 
+<ul>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_INTWFC">INT-WFC</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_UKIDSS-DXS">UKIDSS-DXS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_HSC-SSP">HSC-SSP</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_PanSTARRS-3SS">PanSTARRS-3SS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_SpARCS">SpARCS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_SERVS">SERVS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_SWIRE">SWIRE</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_KPNO-FLS">KPNO-FLS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_UHS">UHS</a></li>
+  <li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_LegacySurvey">LegacySurvey</a></li>
+  
+</ul>
+
+</body>
+</html>

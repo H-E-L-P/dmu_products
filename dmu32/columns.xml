@@ -1,6 +1,6 @@
 <resource schema="herschelhelp">
   <meta name="title">Herschel Extragalactic Legacy Programme (HELP)</meta>
-  <meta name="creationDate">20180627</meta>
+  <meta name="creationDate">20201027</meta>
   <meta name="description">
     HELP master catalogue.
   </meta>
@@ -21,6 +21,10 @@
     
     History
     -------
+    
+    ======== ============================================
+    20201027 HELP First public data release with all products on all fields (PDR1)
+    ======== ============================================
 
     ======== ============================================
     20180530 HELP First data release (DR1)
@@ -9991,38 +9995,30 @@
       unit="W"
       description="Uncertainty on CIGALE_DustLumin_IRonly"
       verbLevel="1" />
-    <column name="flag_cigale"
-      tablehead="Flag_CIGALE"
-      type="smallint"
-      ucd="meta.code.qual"
-      description="Flag qualifying the global fitting with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
-      verbLevel="1">
-        <values nullLiteral="-1" />
-    </column>
-    <column name="flag_cigale_opt"
-      tablehead="Flag_CIGALE_Opt"
-      type="smallint"
-      ucd="meta.code.qual"
-      description="Flag qualifying the fitting of the optical part of the spectrum during the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
-      verbLevel="1">
-        <values nullLiteral="-1" />
-    </column>
-    <column name="flag_cigale_ir"
-      tablehead="Flag_CIGALE_IR"
-      type="smallint"
-      ucd="meta.code.qual"
-      description="Flag qualifying the fitting of the infra-red part of the spectrum during the global fit with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
-      verbLevel="1">
-        <values nullLiteral="-1" />
-    </column>
-    <column name="flag_cigale_ironly"
-      tablehead="Flag_CIGALE_IRonly"
-      type="smallint"
-      ucd="meta.code.qual"
-      description="Flag qualifying the fitting using only infra-red data with CIGALE: 1 for a good fit, 0 for a bad fit, -1 if the source was not fitted."
-      verbLevel="1">
-        <values nullLiteral="-1" />
-    </column>
+    <column name="cigale_chi2_opt"
+      tablehead="cigale_chi2_opt"
+      type="double precision"
+      ucd="stat.fit.chi2"
+      description="Reduced optical chi squared of best CIGALE fit to all data."
+      verbLevel="1" />
+    <column name="cigale_chi2_ir"
+      tablehead="cigale_chi2_ir"
+      type="double precision"
+      ucd="stat.fit.chi2"
+      description="Reduced infrared chi squared of best CIGALE fit to all data."
+      verbLevel="1" />
+    <column name="cigale_chi2_red"
+      tablehead="cigale_chi2_red"
+      type="double precision"
+      ucd="stat.fit.chi2"
+      description="Reduced chi squared of best CIGALE fit."
+      verbLevel="1" />
+    <column name="cigale_chi2_ironly"
+      tablehead="cigale_chi2_ironly"
+      type="double precision"
+      ucd="stat.fit.chi2"
+      description="Reduced chi squared of best CIGALE fit to infrared data."
+      verbLevel="1" />
 
     <column name="flag_gaia"
       tablehead="Flag_Gaia"

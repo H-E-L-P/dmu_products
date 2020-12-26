@@ -16,4 +16,4 @@ photoz: dmu_products/dmu24/dmu24_ELAIS-S1/data/master_catalogue_elais-s1_2018022
 
 cigale: dmu_products/dmu28/dmu28_ELAIS-S1/data/zphot/HELP_final_results.fits
 
-final: dmu_products/dmu32/dmu32_ELAIS-S1/data/ELAIS-S1_20180416_cigale.fits
+final: dmu_products/dmu32/dmu32_ELAIS-S1/data/ELAIS-S1_20180416.fits

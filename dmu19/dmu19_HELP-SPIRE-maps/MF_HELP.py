@@ -76,32 +76,48 @@ def matched_filter(fwhm, pixsize, nconf, noise, whitenoise=False, image=False, p
     return (matchedfilt, psf)
 
 
-def  do_filtering(image, noisemap, matchedfilter , psf):
+def do_filtering(image, noisemap, matchedfilter, psf):
+    from astropy.convolution import CustomKernel
+    from astropy.convolution import convolve
 
+    ## add artefact detector
+    grad = get_grad_logerror(noisemap)
+    mask_1 = grad > 0.25
+    mask_2 = np.log10(noisemap) < -2.25
+    ind_artefact = np.logical_and(mask_1, mask_2)
+    noisemap[ind_artefact] = np.nan
 
-    nanvalues = np.isnan(noisemap)  |  np.isnan(image)
-    image[nanvalues] = 0.
+    nanvalues = np.isnan(noisemap) | np.isnan(image)
 
-    max_e = np.nanmax(noisemap)
-    noisemap[nanvalues]=100.*max_e
-    weightmap = 1./noisemap**2.
+    # changed from Steve's code so that NaNs are dealt with properly using astropy convolve
+    image[nanvalues] = np.nan
 
-    norm = np.sum(psf*matchedfilter)/np.sum(matchedfilter**2.)
-    matchedfilter = norm * matchedfilter
+    noisemap[nanvalues] = np.nan
+    weightmap = 1. / noisemap ** 2.
 
+    norm = np.sum(psf * matchedfilter) / np.sum(matchedfilter ** 2.)
+    matchedfilter_kernel = CustomKernel(norm * matchedfilter)
+    matchedfilter_kernel_square = CustomKernel((norm * matchedfilter) ** 2)
 
-    print( 'max filt', np.max(matchedfilter), np.max(psf))
-    conv_image = signal.fftconvolve(image*weightmap,matchedfilter,mode='same')
-    conv_noise = signal.fftconvolve(weightmap,matchedfilter**2.,mode='same')
-    conv_image = conv_image/conv_noise
-    conv_noise = (1./(conv_noise**0.5))
+    print('max filt', np.max(psf))
+    conv_image = convolve(image * weightmap, matchedfilter_kernel)
+    conv_noise = convolve(weightmap, matchedfilter_kernel_square)
+    conv_image = conv_image / conv_noise
+    conv_noise = (1. / (conv_noise ** 0.5))
 
     conv_image[nanvalues] = np.nan
     conv_noise[nanvalues] = np.nan
 
-    conv_image -= np.nanmean(conv_image)  #meansubtraction, ignore, NaN pixels:
-    return (conv_image, conv_noise, matchedfilter )
+    conv_image -= np.nanmean(conv_image)  # meansubtraction, ignore, NaN pixels:
+    return (conv_image, conv_noise, matchedfilter_kernel)
 
-
+def get_grad_logerror(error_map):
+    from astropy.convolution import convolve
+    from astropy.convolution import Gaussian2DKernel
+    dx,dy=np.gradient(np.log10(error_map))
+    grad=np.sqrt(dx**2+dy**2)
+    kernel = Gaussian2DKernel(x_stddev=1)
+    astropy_conv = convolve(grad, kernel)
+    return astropy_conv
 
 

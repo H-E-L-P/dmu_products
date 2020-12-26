@@ -68,7 +68,7 @@ Here is the list of the DMU numbers with their associated responsibility. Some o
  DMU29             |  Radiative transfer models (under development) 
  DMU30             |  Missing (supplementary) Sources (under development) 
  [DMU31](dmu31)    |  Tools
- [DMU32](dmu31)    |  Merged catalogue
+ [DMU32](dmu32)    |  Merged catalogue
 
 
 Running the code
