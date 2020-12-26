@@ -1,10 +1,28 @@
-Product: dmu26_XID+MIPS_ELAIS-N1
+# Product: dmu26_XID+MIPS_ELAIS-N1
+
+# Version: 1.0
+
+# Author: Peter Hurley
+
+# Fields: ELAIS-N1
+
+# Selection filter: F_MIPS_24
+
+# Rights: N/A
+
+# Acknowledgements: N/A
+
+# Related products: wp4_elais-n1_mips24_map_v1.0.fits.gz, dmu17_MIPS_PSF_ELAIS-N1_20170629.fits , master_catalogue_elais-n1_20170627.fits.gz
+
+
+
+Product: dmu26_XID+MIPS_CDFS-SWIRE
 
 Version: 1.0
 
-Author: Peter Hurley
+Author: Maria Campos
 
-Fields: ELAIS-N1
+Fields: CDFS-SWIRE
 
 Selection filter: F_MIPS_24
 
@@ -12,4 +30,5 @@ Rights: N/A
 
 Acknowledgements: N/A
 
-Related products: wp4_elais-n1_mips24_map_v1.0.fits.gz, dmu17_MIPS_PSF_ELAIS-N1_20170629.fits , master_catalogue_elais-n1_20170627.fits.gz
+Related products: wp4_cdfs-swire_mips24_map_v1.0.fits.gz, dmu17_MIPS_PSF_ELAIS-N1_20170818.fits , master_catalogue_cdfs-swire_20180613.fits
+

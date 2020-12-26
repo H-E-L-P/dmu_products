@@ -23,9 +23,6 @@ import os
 
 ##### New masterlist ######################
 
-sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
-sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
-
 output_folder='./data/'
 
 
