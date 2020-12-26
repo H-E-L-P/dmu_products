@@ -1,8 +1,28 @@
+# Product: dmu26_XID+PACS_CDFS-SWIRE
+
+# Version: 1.0
+
+# Author: Peter Hurley
+
+# Fields: CDFS-SWIRE
+
+# Selection filter: F_PACS_100, F_PACS_160
+
+# Rights: N/A
+
+# Acknowledgements: N/A
+
+# Related products: CDFS-SWIRE_PACS100_20160413_img_noise.fits, CDFS-SWIRE_PACS100_20160413_img_wgls.fits, CDFS-SWIRE_PACS160_20160413_img_noise.fits, CDFS-SWIRE_PACS160_20160413_img_wgls.fits, dmu18_PACS_100_PSF_CDFS-SWIRE_20171002.fits, dmu18_PACS_160_PSF_CDFS-SWIRE_20171002.fits dmu26_XID+MIPS_CDFS-SWIRE_cat_20170901.fits
+
+
+
+## New Masterlist
+
 Product: dmu26_XID+PACS_CDFS-SWIRE
 
 Version: 1.0
 
-Author: Peter Hurley
+Author: Maria Campos
 
 Fields: CDFS-SWIRE
 
@@ -12,4 +32,4 @@ Rights: N/A
 
 Acknowledgements: N/A
 
-Related products: CDFS-SWIRE_PACS100_20160413_img_noise.fits, CDFS-SWIRE_PACS100_20160413_img_wgls.fits, CDFS-SWIRE_PACS160_20160413_img_noise.fits, CDFS-SWIRE_PACS160_20160413_img_wgls.fits, dmu18_PACS_100_PSF_CDFS-SWIRE_20171002.fits, dmu18_PACS_160_PSF_CDFS-SWIRE_20171002.fits dmu26_XID+MIPS_CDFS-SWIRE_cat_20170901.fits
+Related products: CDFS-SWIRE_PACS100_20160413_img_noise.fits, CDFS-SWIRE_PACS100_20160413_img_wgls.fits, CDFS-SWIRE_PACS160_20160413_img_noise.fits, CDFS-SWIRE_PACS160_20160413_img_wgls.fits, dmu18_PACS_100_PSF_CDFS-SWIRE_20171002.fits, dmu18_PACS_160_PSF_CDFS-SWIRE_20171002.fits dmu26_XID+MIPS_CDFS-SWIRE_cat_20201208.fits
