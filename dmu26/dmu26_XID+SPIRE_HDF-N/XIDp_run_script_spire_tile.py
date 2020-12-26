@@ -24,7 +24,7 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./data/'
+output_folder='./data/newLdust/'
 
 
 

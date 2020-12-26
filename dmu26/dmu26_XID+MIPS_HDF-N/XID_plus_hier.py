@@ -10,9 +10,8 @@ import string
 import subprocess
 
 
-
 # read in csv file to check how many files there are
-path='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_HDF-N/data/changed_psf/'
+path='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_HDF-N/data/20201109/'#changed_psf/'
 os.chdir(path)
 
 data = pd.read_csv('large_tiles.csv', header=None)

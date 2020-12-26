@@ -12,9 +12,6 @@ from xidplus import posterior_maps as postmaps
 from builtins import input
 
 
-sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
-sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
-
 try:
     taskid = np.int(os.environ['SGE_TASK_ID'])
     task_first=np.int(os.environ['SGE_TASK_FIRST'])
@@ -26,7 +23,7 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./data/'
+output_folder='./data/ipac/3/'
 
 
 #First run: Tiles.pkl
