@@ -8,93 +8,99 @@ Author: Raphael Shirley
 
 fields: 
     - name: AKARI-NEP
-      description: The Infrared Astronomical Satellite AKARI on the North Ecliptic Pole (AKARI-NEP)
+      description: the Infrared Astronomical Satellite AKARI on the North Ecliptic Pole (AKARI-NEP)
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-NEP_MOC.fits
 
     - name: AKARI-SEP   
-      description: The Infrared Astronomical Satellite AKARI on the South Ecliptic Pole (AKARI-SEP)  
+      description: the Infrared Astronomical Satellite AKARI on the South Ecliptic Pole (AKARI-SEP)  
       region: dmu_products/dmu2/dmu2_field_coverages/AKARI-SEP_MOC.fits 
               
     - name: Bootes    
-      description: The Bootes field     
+      description: the Bootes field     
       region: dmu_products/dmu2/dmu2_field_coverages/Bootes_MOC.fits   
            
     - name: CDFS-SWIRE   
-      description: The Chandra Deep Field South (CDFS) Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.         
+      description: the Chandra Deep Field South (CDFS) Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.         
       region: dmu_products/dmu2/dmu2_field_coverages/CDFS-SWIRE_MOC.fits
            
     - name: COSMOS   
-      description: The HELP coverage of the COSMic evOlution Survey field.
+      description: the HELP coverage of the COSMic evOlution Survey field.
       region: dmu_products/dmu2/dmu2_field_coverages/COSMOS_MOC.fits
                     
     - name: EGS 
-      description: The Extended Groth Strip (EGS)
+      description: the Extended Groth Strip (EGS)
       region: dmu_products/dmu2/dmu2_field_coverages/EGS_MOC.fits
                           
     - name: ELAIS-N1  
-      description: The European Large Area Infrared Survey field North 1 (ELAIS-N1).
+      description: the European Large Area Infrared Survey field North 1 (ELAIS-N1)
       region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N1_MOC.fits
                     
     - name: ELAIS-N2   
-      description: The European Large Area Infrared Survey field North 2 (ELAIS-N2). 
+      description: the European Large Area Infrared Survey field North 2 (ELAIS-N2) 
       region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-N2_MOC.fits
                   
     - name: ELAIS-S1  
-      description: The European Large Area Infrared Survey field South 1 (ELAIS-S1).        
+      description: the European Large Area Infrared Survey field South 1 (ELAIS-S1)       
       region: dmu_products/dmu2/dmu2_field_coverages/ELAIS-S1_MOC.fits
              
     - name: GAMA-09    
-      description: The GAlaxy and Mass Assembly 9hr field (GAMA-09)
+      description: the GAlaxy and Mass Assembly 9hr field (GAMA-09)
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-09_MOC.fits
                   
     - name: GAMA-12    
-      description: The GAlaxy and Mass Assembly 12hr field (GAMA-12)   
+      description: the GAlaxy and Mass Assembly 12hr field (GAMA-12)   
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-12_MOC.fits
                 
     - name: GAMA-15  
-      description: The GAlaxy and Mass Assembly 15hr field (GAMA-15) 
+      description: the GAlaxy and Mass Assembly 15hr field (GAMA-15) 
       region: dmu_products/dmu2/dmu2_field_coverages/GAMA-15_MOC.fits
                      
     - name: HDF-N  
-      description: The Hubble Deep Field - North (HDF-N)
+      description: the Hubble Deep Field - North (HDF-N)
       region: dmu_products/dmu2/dmu2_field_coverages/HDF-N_MOC.fits
                        
     - name: Herschel-Stripe-82  
-      description: The Herschel coverage of the Sload Digital Sky Survey (SDSS) Stripe 82 field. 
+      description: the Herschel coverage of the Sload Digital Sky Survey (SDSS) Stripe 82 field. 
       region: dmu_products/dmu2/dmu2_field_coverages/Herschel-Stripe-82_MOC.fits
          
     - name: Lockman-SWIRE     
-      description: The Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
+      description: the Lockman hole Spitzer Wide InfraRed Extragalactic (SWIRE) survey field.      
       region: dmu_products/dmu2/dmu2_field_coverages/Lockman-SWIRE_MOC.fits
       
     - name: HATLAS-NGP   
       other_names: NGP
-      description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the North Galactic Pole (NGP) field.                
+      description: the Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the North Galactic Pole (NGP) field.                
       region: dmu_products/dmu2/dmu2_field_coverages/HATLAS-NGP_MOC.fits
         
-    - name: SA13     
+    - name: SA13   
+      other_names: SSA13  
+      description: the Small Selected Area 13 field (SA13)
       region: dmu_products/dmu2/dmu2_field_coverages/SA13_MOC.fits
                      
     - name: HATLAS-SGP   
       other_names: SGP    
-      description: The Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the South Galactic Pole (SGP) field.  
+      description: the Herschel Astrophysical Terahertz Large Area Survey (HATLAS) program coverage of the South Galactic Pole (SGP) field.  
       region: dmu_products/dmu2/dmu2_field_coverages/HATLAS-NGP_MOC.fits
                    
     - name: SPIRE-NEP   
-      description: The Spitzer Wide InfraRed Extragalactic (SWIRE) survey coverage of the North Ecliptic Pole (NEP) field.
+      description: the Spitzer Wide InfraRed Extragalactic (SWIRE) survey coverage of the North Ecliptic Pole (NEP) field.
       region: dmu_products/dmu2/dmu2_field_coverages/SPIRE-NEP_MOC.fits
                   
     - name: SSDF        
       region: dmu_products/dmu2/dmu2_field_coverages/SSDF_MOC.fits
+      description: the Spitzer-South Pole Telescope Deep Field
                   
     - name: xFLS         
       region: dmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits
+      description: the Spitzer extragalactic First Look Survey (xFLS) field
                  
     - name: XMM-13hr           
       region: dmu_products/dmu2/dmu2_field_coverages/XMM-13hr_MOC.fits
+      description: the XMM-Newton, also known as the High Throughput X-ray Spectroscopy Mission and the X-ray Multi-Mirror Mission 13 hr (XMM-13hr) field
            
     - name: XMM-LSS          
-      region: dmu_products/dmu2/dmu2_field_coverages/XMM-LSS_MOC.fits      
+      region: dmu_products/dmu2/dmu2_field_coverages/XMM-LSS_MOC.fits   
+      description: the XMM-Newton, also known as the High Throughput X-ray Spectroscopy Mission and the X-ray Multi-Mirror Mission Large Survey (XMM-LSS) field
       
 
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HELP field HDF-N</title>
+  <link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
+
+</head>
+<body>
+<a href="http://herschel.sussex.ac.uk/">
+<img src="../../TEMPLATES/help_logo_web.png" alt="HELP logo">
+</a>
+<h1>Overview of HELP field HDF-N</h1>
+<p>This HELP field is defined by SPIRE coverage of the Hubble Deep Field - North (HDF-N). </p>
+<p>Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27HDF-N%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started. To query the flux columns use f_best_g, ferr_best_g, m_best_g, and merr_best_g for the lowest error flux, flux error, AB magnitude, and magnitude error measurement available. All the main broadband optical and near infrared fluxes are available by replacing g with u, g, r, i, z, y, j, h, k, or ks. A full description of all columns is available <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/help_a_list.main">here</a>. You can also query the <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/herschelhelp.main">full table</a> with all specific bands available.</p>
+
+
+
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js" charset="utf-8"></script>
+ 
+<!-- insert this snippet where you want Aladin Lite viewer to appear and after the loading of jQuery -->
+<div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+<script type="text/javascript" src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var aladin = A.aladin('#aladin-lite-div', {survey: "P/DSS2/color", target: '12 36 14.5946  +62 19 13.443 ',fov:2.4588715505998757});
+        
+        
+        aladin.createImageSurvey('help_spire_rgb', 
+                                 'help_spire_rgb', 
+                 'http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/data/spire_rgb/', 
+                                 'equatorial', 
+                                 7, 
+                                 {imgFormat: 'png'}
+                                 );
+        
+                         
+
+        aladin.setImageSurvey('help_spire_rgb');
+</script>
+
+
+
+<table style="width:700px">
+  <tr>
+    <th>Key stats:</th>
+    <th></th>
+
+  </tr>
+  <tr>
+    <td>Area</td>
+    <td>0.67 square degrees</td>
+  </tr>
+  <tr>
+    <td>Masterlist objects</td>
+    <td>130679</td>
+  </tr>
+    <tr>
+    <td>XID+ objects</td>
+    <td>834</td>
+  </tr>
+    <tr>
+    <td>Photo-z objects</td>
+    <td>7435</td>
+  </tr>
+    <tr>
+    <td>CIGALE objects</td>
+    <td>0</td>
+  </tr>
+      <tr>
+    <td>Median g depth</td>
+    <td>AB 23.55 mag, or 1.38 uJy</td>
+  </tr>
+      <tr>
+    <td>Median K or Ks depth</td>
+    <td>AB 27.0 mag, or 0.06 uJy</td>
+  </tr>
+      <tr>
+    <td>Median IRAC i1 depth</td>
+    <td>AB 26.31 mag, or 0.11 uJy</td>
+  </tr>
+      <tr>
+    <td>Median SPIRE 250 depth</td>
+    <td>AB 15.47 mag, or 2362.54 uJy</td>
+  </tr>
+  
+</table>
+
+<p>The raw files for this field can be downloaded from the following links:</p>
+
+
+<ul>
+  <li>The reduced "best photometry" <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/HDF-N_best_phot_20201111.fits">table</a>.</li>
+  <li>The full masterlist <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_HDF-N/data/HDF-N_20180427.fits">table</a>.</li>
+  <li>The blind source <a href="http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_HDF-N/data/dmu22_XID+SPIRE_HDF-N_BLIND_Matched_MF.fits">table</a>.</li>
+  <li>SPIRE <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/HDF-N_SPIRE250_v1.0.fits">250 um image</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/HDF-N_SPIRE350_v1.0.fits">350 um image</a>, and <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/HDF-N_SPIRE500_v1.0.fits">500 um image</a>.</li>
+  <li>Full photo-z <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_HDF-N/data/HDF-N_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits">table</a>.</li>
+  <li>Full CIGALE physical properties <a href="http://hedam.lam.fr/HELP/dataproductsNone">table</a>.</li>
+  <li>The folder of CIGALE <a href="http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_HDF-N/data/zphot/SEDs/">SEDs</a>.</li>
+  <li>The field definition <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/HDF-N_MOC.fits">MOC</a>.</li>
+  
+</ul>
+
+
+
+<p>This field contains ancillary data sets from the following surveys:</p> 
+<ul><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_CANDELS-3D-HST">CANDELS-3D-HST</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_GOODS-ACS">GOODS-ACS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_Hawaii-HDFN">Hawaii-HDFN</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_Ultradeep-Ks-GOODS-N">Ultradeep-Ks-GOODS-N</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_PanSTARRS1-3SS">PanSTARRS1-3SS</a></li><li> <a href="https://github.com/H-E-L-P/dmu_products/tree/master/dmu0/dmu0_CANDELS-GOODS-N">CANDELS-GOODS-N</a></li></ul>
+</body>
+</html>
