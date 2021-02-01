@@ -26,35 +26,36 @@ from xidplus import moc_routines
 # Read in Masterlist and select only sources that are detected in mid-infrared and at least one other wavelength domain (i.e. optical or nir). This will remove most of the objects in the catalogue that are artefacts. We can do this by using the `flag_optnir_det` flag and selecting sources that have a binary value of $>= 5$
 
 field = 'HDF-N'
-date = 'ipac'
-masterfile='n_mips_1_s1_v0.91_srclist.tbl'#'master_catalogue_hdf-n_20201103.fits'#'master_catalogue_hdf-n_20180427.fits'
-masterlist=Table.read('../dmu26_XID+MIPS_HDF-N/data/n_mips_1_s1_v0.91_srclist.tbl', format='ascii.ipac') #fits.open('../../dmu1/dmu1_ml_'+field+'/data/'+masterfile)
-# good=masterlist[1].data['flag_optnir_det']>=5
+date = '20200116_numpyro'
+masterfile='master_catalogue_hdf-n_20201103.fits'#'master_catalogue_hdf-n_20180427.fits' #'n_mips_1_s1_v0.91_srclist.tbl'#
+masterlist=fits.open('../../dmu1/dmu1_ml_'+field+'/data/'+masterfile) # masterlist=Table.read('../dmu26_XID+MIPS_HDF-N/data/n_mips_1_s1_v0.91_srclist.tbl', format='ascii.ipac') #
+ind=masterlist[1].data['flag_optnir_det']>=5
+good = (masterlist[1].data[ind]['f_irac_i1']>=5) |( masterlist[1].data[ind]['f_irac_i2']>=5) | (masterlist[1].data[ind]['f_irac_i3']>=5)| (masterlist[1].data[ind]['f_irac_i4']>=5)
 
-MIPS_lower=np.full(len(masterlist),0.0)
-MIPS_upper=np.full(len(masterlist),1E5)
+# MIPS_lower=np.full(len(masterlist),0.0)
+# MIPS_upper=np.full(len(masterlist),1E5)
 
-# MIPS_lower=np.full(good.sum(),0.0)
-# MIPS_upper=np.full(good.sum(),1E5)
+MIPS_lower=np.full(good.sum(),0.0)
+MIPS_upper=np.full(good.sum(),1E5)
 
-# for i in range(0,good.sum()):
-#     if ~np.isnan(masterlist[1].data['f_irac_i4'][good][i]):
-#         MIPS_lower[i]=masterlist[1].data['f_irac_i4'][good][i]/500.0
-#         MIPS_upper[i]=masterlist[1].data['f_irac_i4'][good][i]*500.0
-#     elif ~np.isnan(masterlist[1].data['f_irac_i3'][good][i]):
-#         MIPS_lower[i]=masterlist[1].data['f_irac_i3'][good][i]/500.0
-#         MIPS_upper[i]=masterlist[1].data['f_irac_i3'][good][i]*500.0
-#     elif ~np.isnan(masterlist[1].data['f_irac_i2'][good][i]):
-#         MIPS_lower[i]=masterlist[1].data['f_irac_i2'][good][i]/500.0
-#         MIPS_upper[i]=masterlist[1].data['f_irac_i2'][good][i]*500.0
-#     elif ~np.isnan(masterlist[1].data['f_irac_i1'][good][i]):
-#         MIPS_lower[i]=masterlist[1].data['f_irac_i1'][good][i]/500.0
-#         MIPS_upper[i]=masterlist[1].data['f_irac_i1'][good][i]*500.0
+for i in range(0,good.sum()):
+    if ~np.isnan(masterlist[1].data['f_irac_i4'][ind][good][i]):
+        MIPS_lower[i]=masterlist[1].data['f_irac_i4'][ind][good][i]/500.0
+        MIPS_upper[i]=masterlist[1].data['f_irac_i4'][ind][good][i]*500.0
+    elif ~np.isnan(masterlist[1].data['f_irac_i3'][ind][good][i]):
+        MIPS_lower[i]=masterlist[1].data['f_irac_i3'][ind][good][i]/500.0
+        MIPS_upper[i]=masterlist[1].data['f_irac_i3'][ind][good][i]*500.0
+    elif ~np.isnan(masterlist[1].data['f_irac_i2'][ind][good][i]):
+        MIPS_lower[i]=masterlist[1].data['f_irac_i2'][ind][good][i]/500.0
+        MIPS_upper[i]=masterlist[1].data['f_irac_i2'][ind][good][i]*500.0
+    elif ~np.isnan(masterlist[1].data['f_irac_i1'][ind][good][i]):
+        MIPS_lower[i]=masterlist[1].data['f_irac_i1'][ind][good][i]/500.0
+        MIPS_upper[i]=masterlist[1].data['f_irac_i1'][ind][good][i]*500.0
         
-# np.savez('./tmp_mips_prior2', MIPS_lower, MIPS_upper)
+np.savez('./tmp_mips_prior_iraccut5', MIPS_lower, MIPS_upper)
 
 
-# npzfile = np.load('./data/tmp_mips_prior2.npz')
+# npzfile = np.load('./data/tmp_mips_prior_iraccut5.npz')
 # MIPS_lower=npzfile['arr_0']
 # MIPS_upper=npzfile['arr_1']
 
@@ -132,6 +133,7 @@ for index, mosaic in enumerate (moc_file):
         
     else:
 ## Read in Map
+
         MIPS_Map=fits.open(filename[index])
 
         w_im = wcs.WCS(MIPS_Map[1].header) 
@@ -142,25 +144,22 @@ for index, mosaic in enumerate (moc_file):
         MIPS_Map[1].header['CRVAL2']=MIPS_Map[2].header['CRVAL2']
 
         data=MIPS_Map[1].data
-        mean_data = np.mean(data[~np.isnan(data)])
+#         mean_data = np.mean(data[~np.isnan(data)])
         
 # ## Set XID+ prior class
         print('setting XID+ priors')
-        prior_MIPS=xidplus.prior(MIPS_Map[1].data - mean_data,MIPS_Map[2].data,MIPS_Map[0].header,MIPS_Map[1].header,moc=Final)
-        prior_MIPS.prior_cat(masterlist['ra'],masterlist['dec'],masterfile,flux_lower=MIPS_lower, flux_upper=MIPS_upper, ID=masterlist['SrcID'])
+    ## mean substracted data
+#         prior_MIPS=xidplus.prior(MIPS_Map[1].data - mean_data,MIPS_Map[2].data,MIPS_Map[0].header,MIPS_Map[1].header,moc=Final)
+#         prior_MIPS.prior_cat(masterlist['ra'],masterlist['dec'],masterfile,flux_lower=MIPS_lower, flux_upper=MIPS_upper, ID=masterlist['SrcID'])
+        
+        prior_MIPS=xidplus.prior(MIPS_Map[1].data,MIPS_Map[2].data,MIPS_Map[0].header,MIPS_Map[1].header,moc=Final)
+        prior_MIPS.prior_cat(masterlist[1].data['ra'][ind][good],masterlist[1].data['dec'][ind][good],masterfile,flux_lower=MIPS_lower, flux_upper=MIPS_upper,ID=masterlist[1].data['help_id'][ind][good])
 
-#         prior_MIPS.prior_cat(masterlist[1].data['ra'][good],masterlist[1].data['dec'][good],masterfile,flux_lower=MIPS_lower, flux_upper=MIPS_upper,ID=masterlist[1].data['help_id'][good])
-
-
-    #prior_MIPS.sra
-
-    #xidplus.plot_map([prior_MIPS])
 
 #         prior_MIPS.set_prf(MIPS_psf[1].data[centre-radius:centre+radius+1,centre-radius:centre+radius+1]/1.0E6,np.arange(0,11/2.0,0.5),np.arange(0,11/2.0,0.5))
-
-# # fix bug on psf resolution
+# # fix bug on psf resolution (not hires)
 #         prior_MIPS.set_prf(MIPS_psf[1].data[centre-radius:centre+radius+1,centre-radius:centre+radius+1]/1.0E6,np.arange(0,11.0,1.0),np.arange(0,11.0,1.0))
-
+# # fix bug on psf resolution (hires)
         prior_MIPS.set_prf(MIPS_psf[1].data[centre-radius:centre+radius+1,centre-radius:centre+radius+1]/1.0E6,np.arange(0,23/2.0,0.5),np.arange(0,23/2.0,0.5))
 
 
@@ -175,16 +174,7 @@ for index, mosaic in enumerate (moc_file):
         order_large=6
         tiles_large=moc_routines.get_HEALPix_pixels(order_large,prior_MIPS.sra,prior_MIPS.sdec,unique=True)
     
-#         with open('./data/changed_psf/large_tiles.csv', 'a') as l_tiles_file:
-#             tiles_writer = csv.writer(l_tiles_file, delimiter=',')
-#             tiles_writer.writerow([str(len(tiles_large))])
-#         tiles_file.close()
-    
-#         with open('./data/changed_psf/tiles.csv', 'a') as tiles_file:
-#             tiles_writer = csv.writer(tiles_file, delimiter=',')
-#             tiles_writer.writerow([str(len(tiles))])
-#         tiles_file.close()
-        
+       
         with open('./data/'+date+'/large_tiles.csv', 'a') as l_tiles_file:
             tiles_writer = csv.writer(l_tiles_file, delimiter=',')
             tiles_writer.writerow([str(len(tiles_large))])

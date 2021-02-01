@@ -15,4 +15,4 @@ path_here
 echo $(pwd)
 
 
-python -c 'from xidplus import HPC;import sys; sys.path.remove("/mnt/pact/im281/HELP/XID_plus");sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python");HPC.hierarchical_tile("Master_prior.pkl", "Tiles.pkl")'
+python -c 'from xidplus import HPC;import sys;HPC.hierarchical_tile("Master_prior.pkl", "Tiles.pkl")'
