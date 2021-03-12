@@ -164,7 +164,7 @@ CASE format OF
       dum = readfits(im_file, primary_hd)
       master_hd=primary_hd
       hd = master_hd
-      i
+      
       ;cov = readfits(cov_file,cov_hd)
       err = readfits(err_file,err_hd)
        im=mrdfits(im_file,hd, /silent)
@@ -350,14 +350,9 @@ ENDIF
 
 IF keyword_set(zero2) THEN BEGIN
     g1=where(cov gt 0., low)
-    PRINT, 'g1 is done'
-    ;PRINT, im[g1]
     mu = mean(im[g1])
-    PRINT, 'mu is done'
     im = im-mu
-    PRINT, 'im is done'
     cov[low] = 0.
-    PRINT, 'cov is done'
 ENDIF
 
 
