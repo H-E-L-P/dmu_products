@@ -11,10 +11,7 @@ from astropy import wcs
 import os
 import sys
 
-sys.path.remove("/mnt/pact/im281/HELP/XID_plus")
-sys.path.remove("/mnt/pact/im281/HELP/herschelhelp_python")
-
-output_folder='./data/'
+output_folder='./data/20201112/3/'
 
 
 
@@ -24,6 +21,7 @@ with open(output_folder+'Tiles.pkl',"rb") as f:
         Master = pickle.load(f)
 tiles=Master['tiles']
 order=Master['order']
+
 
 outfile=output_folder+'Master_prior.pkl'
 with open(outfile, 'rb') as f:

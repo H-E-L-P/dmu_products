@@ -1,12 +1,32 @@
-#! /bin/bash
+# #! /bin/bash
+# #$ -S /bin/bash
+# #$ -o /lustre/scratch/astro/pdh21/log/out
+# #$ -e /lustre/scratch/astro/pdh21/log/err
+# cd /lustre/scratch/astro/pdh21/CDFS-SWIRE/PACS/
+# echo "this is from the run script"
+
+# module load use.own
+# module load fir/software
+# export PATH="/research/astro/fir/HELP/help_python/miniconda3/bin/":$PATH
+
+# python XIDp_run_script_pacs_tile.py
+
+
+
+# New Masterlist 
+
+/bin/bash
 #$ -S /bin/bash
-#$ -o /lustre/scratch/astro/pdh21/log/out
-#$ -e /lustre/scratch/astro/pdh21/log/err
-cd /lustre/scratch/astro/pdh21/CDFS-SWIRE/PACS/
+#$ -o /its/home/mc741/git_hub/dmu_products/log/out
+#$ -e /its/home/mc741/git_hub/dmu_products/log/err
+cd /its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+PACS_CDFS-SWIRE/
+
 echo "this is from the run script"
+. /etc/profile.d/modules.sh
 
-module load use.own
-module load fir/software
+module load gcc
+
 export PATH="/research/astro/fir/HELP/help_python/miniconda3/bin/":$PATH
+source activate herschelhelp
 
-python XIDp_run_script_pacs_tile.py
+python XIDp_run_script_spire_tile.py

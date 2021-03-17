@@ -10,7 +10,7 @@ import string
 
 
 # read in csv file to check how many files there are
-path='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_HDF-N/data/changed_psf/'
+path='/its/home/mc741/git_hub/dmu_products/dmu26/dmu26_XID+MIPS_HDF-N/data/20201104/'#changed_psf/'
 os.chdir(path)
 
 data = pd.read_csv('tiles.csv', header=None)
