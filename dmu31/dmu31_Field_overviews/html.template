@@ -11,7 +11,7 @@
 </a>
 <h1>Overview of HELP field {field}</h1>
 <p>This HELP field is defined by SPIRE coverage of {field_description}. </p>
-<p>Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27{field}%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started.</p>
+<p>Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27{field}%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started. To query the flux columns use f_best_g, ferr_best_g, m_best_g, and merr_best_g for the lowest error flux, flux error, AB magnitude, and magnitude error measurement available. All the main broadband optical and near infrared fluxes are available by replacing g with u, g, r, i, z, y, j, h, k, or ks. A full description of all columns is available <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/help_a_list.main">here</a>. You can also query the <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/herschelhelp.main">full table</a> with all specific bands available.</p>
 
 
 
@@ -89,14 +89,14 @@
 
 
 <ul>
-  <li>The reduced "best photometry" table: <a href="{best_phot}">{best_phot}</a></li>
-  <li>The full masterlist table: <a href="{master_list}">{master_list}</a></li>
-  <li>The blind source list: <a href="{blind_list}">{blind_list}</a></li>
-  <li>SPIRE imaging at 250, 350, and 500 microns:<a href="{spire_250}">{spire_250}</a>, <a href="{spire_350}">{spire_350}</a>, <a href="{spire_500}">{spire_500}</a></li>
-  <li>Full photo-z table: <a href="{photoz_file}">{photoz_file}</a></li>
-  <li>Full CIGALE table: <a href="{cigale_file}">{cigale_file}</a></li>
-  <li>The CIGALE SEDs: <a href="{seds}">{seds}</a></li>
-  <li>The field definition MOC: <a href="{moc}">{moc}</a></li>
+  <li>The reduced "best photometry" <a href="{best_phot}">table</a>.</li>
+  <li>The full masterlist <a href="{master_list}">table</a>.</li>
+  <li>The blind source <a href="{blind_list}">table</a>.</li>
+  <li>SPIRE <a href="{spire_250}">250 um image</a>, <a href="{spire_350}">350 um image</a>, and <a href="{spire_500}">500 um image</a>.</li>
+  <li>Full photo-z <a href="{photoz_file}">table</a>.</li>
+  <li>Full CIGALE physical properties <a href="{cigale_file}">table</a>.</li>
+  <li>The folder of CIGALE <a href="{seds}">SEDs</a>.</li>
+  <li>The field definition <a href="{moc}">MOC</a>.</li>
   
 </ul>
 

@@ -11,7 +11,7 @@
 </a>
 <h1>Overview of HELP field xFLS</h1>
 <p>This HELP field is defined by SPIRE coverage of the Spitzer extragalactic First Look Survey (xFLS) field. </p>
-<p>Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27xFLS%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started.</p>
+<p>Click <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/adql/query/form?__nevow_form__=genForm&query=SELECT%20TOP%2010%20help_id%2C%20redshift%2C%20f_spire_250%2C%20f_best_g%2C%20f_best_ks%2C%20f_irac_i1%2C%20cigale_sfr%20from%20help_a_list.main%20WHERE%20cigale_sfr%20%3E1%20AND%20field%3D%27xFLS%27&_TIMEOUT=5&_FORMAT=HTML&submit=Go">here</a> to get a simple <a href="https://herschel-vos.phys.sussex.ac.uk/">VOX</a> query to get you started. To query the flux columns use f_best_g, ferr_best_g, m_best_g, and merr_best_g for the lowest error flux, flux error, AB magnitude, and magnitude error measurement available. All the main broadband optical and near infrared fluxes are available by replacing g with u, g, r, i, z, y, j, h, k, or ks. A full description of all columns is available <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/help_a_list.main">here</a>. You can also query the <a href="https://herschel-vos.phys.sussex.ac.uk/__system__/dc_tables/show/tableinfo/herschelhelp.main">full table</a> with all specific bands available.</p>
 
 
 
@@ -68,7 +68,7 @@
   </tr>
       <tr>
     <td>Median g depth</td>
-    <td>AB 24.4952397292223 mag, or 0.58 uJy</td>
+    <td>AB 24.5 mag, or 0.58 uJy</td>
   </tr>
       <tr>
     <td>Median K or Ks depth</td>
@@ -76,11 +76,11 @@
   </tr>
       <tr>
     <td>Median IRAC i1 depth</td>
-    <td>AB 21.726382432463616 mag, or 7.4 uJy</td>
+    <td>AB 21.73 mag, or 7.4 uJy</td>
   </tr>
       <tr>
     <td>Median SPIRE 250 depth</td>
-    <td>AB 15.108103967265826 mag, or 3286.69 uJy</td>
+    <td>AB 15.11 mag, or 3286.69 uJy</td>
   </tr>
   
 </table>
@@ -89,14 +89,14 @@
 
 
 <ul>
-  <li>The reduced "best photometry" table: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/xFLS_best_phot_20201111.fits">http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/xFLS_best_phot_20201111.fits</a></li>
-  <li>The full masterlist table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu32/dmu32_xFLS/data/xFLS_20180501.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu32/dmu32_xFLS/data/xFLS_20180501.fits</a></li>
-  <li>The blind source list: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_xFLS/data/dmu22_XID+SPIRE_xFLS_BLIND_Matched_MF.fits">http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_xFLS/data/dmu22_XID+SPIRE_xFLS_BLIND_Matched_MF.fits</a></li>
-  <li>SPIRE imaging at 250, 350, and 500 microns:<a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE250_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE250_v1.0.fits</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE350_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE350_v1.0.fits</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE500_v1.0.fits">http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE500_v1.0.fits</a></li>
-  <li>Full photo-z table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_xFLS/data/xFLS_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_xFLS/data/xFLS_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits</a></li>
-  <li>Full CIGALE table: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu28/dmu28_xFLS/data/zphot/HELP_final_results.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu28/dmu28_xFLS/data/zphot/HELP_final_results.fits</a></li>
-  <li>The CIGALE SEDs: <a href="http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_xFLS/data/zphot/SEDs/">http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_xFLS/data/zphot/SEDs/</a></li>
-  <li>The field definition MOC: <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits">http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits</a></li>
+  <li>The reduced "best photometry" <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_AllSky/data/xFLS_best_phot_20201111.fits">table</a>.</li>
+  <li>The full masterlist <a href="http://hedam.lam.fr/HELP/dataproducts/dmu32/dmu32_xFLS/data/xFLS_20180501.fits">table</a>.</li>
+  <li>The blind source <a href="http://hedam.lam.fr/HELP/dataproducts/dmu22/dmu22_xFLS/data/dmu22_XID+SPIRE_xFLS_BLIND_Matched_MF.fits">table</a>.</li>
+  <li>SPIRE <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE250_v1.0.fits">250 um image</a>, <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE350_v1.0.fits">350 um image</a>, and <a href="http://hedam.lam.fr/HELP/dataproducts/dmu19/dmu19_HELP-SPIRE-maps/data/xFLS_SPIRE500_v1.0.fits">500 um image</a>.</li>
+  <li>Full photo-z <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu24/dmu24_xFLS/data/xFLS_DESI-DR7_Zou_et_al_2019_photo_z_withhelp_id.fits">table</a>.</li>
+  <li>Full CIGALE physical properties <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu28/dmu28_xFLS/data/zphot/HELP_final_results.fits">table</a>.</li>
+  <li>The folder of CIGALE <a href="http://hedam.lam.fr/HELP/dataproducts/dmu28/dmu28_xFLS/data/zphot/SEDs/">SEDs</a>.</li>
+  <li>The field definition <a href="http://hedam.lam.fr/HELP/dataproductsdmu_products/dmu2/dmu2_field_coverages/xFLS_MOC.fits">MOC</a>.</li>
   
 </ul>
 
