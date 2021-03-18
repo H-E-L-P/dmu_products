@@ -23,7 +23,7 @@ except KeyError:
     print("you entered", taskid)
 
 
-output_folder='./output/'
+output_folder='./data/'
 outfile=output_folder+'Tiles.pkl'
 with open(outfile, 'rb') as f:
    obj=pickle.load(f)

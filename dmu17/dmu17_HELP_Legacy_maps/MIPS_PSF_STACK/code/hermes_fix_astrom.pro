@@ -348,7 +348,7 @@ IF keyword_set(zero1) THEN BEGIN
     cov[low] = 0.
 ENDIF
 
-IF keyword_set(zero2) THEN BEGIN 
+IF keyword_set(zero2) THEN BEGIN
     g1=where(cov gt 0., low)
     mu = mean(im[g1])
     im = im-mu

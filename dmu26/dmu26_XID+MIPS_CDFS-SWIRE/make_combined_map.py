@@ -9,17 +9,36 @@ from xidplus import posterior_maps as postmaps
 from astropy import wcs
 
 import os
-output_folder='./output/'
+# output_folder='./output/'
 
-with open(output_folder+'failed_tiles.pkl', "rb") as f:
+# with open(output_folder+'failed_tiles.pkl', "rb") as f:
+#         Master = pickle.load(f)
+# tiles=Master['tiles']
+# order=Master['order']
+
+# outfile=output_folder+'Master_prior.pkl'
+# with open(outfile, 'rb') as f:
+#     obj=pickle.load(f)
+# priors=obj['priors']
+
+##### New masterlist ######################
+
+output_folder='./data/'
+
+
+with open(output_folder+'Tiles.pkl',"rb") as f:
         Master = pickle.load(f)
 tiles=Master['tiles']
 order=Master['order']
+
 
 outfile=output_folder+'Master_prior.pkl'
 with open(outfile, 'rb') as f:
     obj=pickle.load(f)
 priors=obj['priors']
+
+##########################################
+
 
 
 hdulist24=fits.open(output_folder+'dmu26_XID+MIPS_CDFS-SWIRE_Bayes_Pval.fits')
