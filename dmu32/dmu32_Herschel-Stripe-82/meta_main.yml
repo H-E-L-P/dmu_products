@@ -14,7 +14,7 @@ xid: [ dmu_products/dmu26/dmu26_XID+MIPS_Herschel-Stripe-82/data/dmu26_XID+MIPS_
 
 photoz: dmu_products/dmu24/dmu24_Herschel-Stripe-82/data/master_catalogue_herschel-stripe-82_20180307_photoz_20180509.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_Herschel-Stripe-82/data/zphot/HELP_final_results.fits
 
 cigale_ldust_prediction:  dmu_products/dmu28/dmu28_Herschel-Stripe-82/data/herschel_stripe_82_Ldust_prediction.fits
 
