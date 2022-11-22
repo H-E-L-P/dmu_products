@@ -8,7 +8,7 @@ masterlist: dmu_products/dmu1/dmu1_ml_Herschel-Stripe-82/data/master_catalogue_h
 
 depths: dmu_products/dmu1/dmu1_ml_Herschel-Stripe-82/data/depths_herschel-stripe-82_20180307.fits
 
-flags: dmu6/dmu6_v_Herschel-Stripe-82/data/tiles/herschel-stripe-82_20180307_FILENUM_flags.fits
+flags: dmu_products/dmu6/dmu6_v_Herschel-Stripe-82/data/tiles/herschel-stripe-82_20180307_FILENUM_flags.fits
 
 xid: [ dmu_products/dmu26/dmu26_XID+MIPS_Herschel-Stripe-82/data/dmu26_XID+MIPS_Herschel-Stripe-82_cat_20190917.fits ]
 
