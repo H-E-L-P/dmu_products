@@ -10,12 +10,12 @@ depths: dmu_products/dmu1/dmu1_ml_SSDF/data/depths_ssdf_20180221.fits
 
 flags: None
 
-xid: None
+xid: [ dmu_products/dmu26/dmu26_XID+SPIRE_SSDF/data/dmu26_XID+SPIRE_SSDF_cat_20200109.fits ]
 
 photoz: dmu_products/dmu24/dmu24_SSDF/data/master_catalogue_ssdf_20180221_photoz_20180612_r_optimised.fits
 
-cigale: None
+cigale: dmu_products/dmu28/dmu28_SSDF/data/zphot/HELP_final_results.fits
 
-cigale_ldust_prediction: None
+cigale_ldust_prediction: dmu_products/dmu28/dmu28_SSDF/data/SSDF_Ldust_prediction_results.fits	
 
 final: dmu_products/dmu32/dmu32_SSDF/data/SSDF_20180221.fits
