@@ -8,6 +8,12 @@ contains everything. The reason not to store the data files in Github is that gi
 
 - [http://hedam.lam.fr/HELP/dataproducts/](http://hedam.lam.fr/HELP/dataproducts/)
 
+The main 'a-list' catalogue can be queried at CDS allowing fast all-sky queries:
+
+- [https://cdsarc.cds.unistra.fr/viz-bin/cat/VII/299](https://cdsarc.cds.unistra.fr/viz-bin/cat/VII/299)
+
+<!-- This is all currently down:
+
 it is also possible to query the data from the Virtual Observatory at susseX (VOX):
 
 - [https://herschel-vos.phys.sussex.ac.uk/](https://herschel-vos.phys.sussex.ac.uk/)
@@ -17,6 +23,9 @@ The data can be browsed online using the HELP image and catalogue viewer:
 - [http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/viewer/](http://hedam.lam.fr/HELP/dataproducts/dmu31/dmu31_HiPS/viewer/)
 
 These images and catalogues can also be loaded in to Aladin Desktop. The urls for each product are discussed in [dmu31/dmu31_HiPS](dmu31/dmu31_HiPS).
+
+-->
+
 
 The repository is organised as follows:
 
